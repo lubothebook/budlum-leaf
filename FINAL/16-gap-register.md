@@ -22,7 +22,7 @@
 | G-10 | the acoustics of the module | **M** | the sound claim | the module line | the specification of Part 15, H-8 and a bench |
 | G-11 | the microdisplay for the Frame, at about 2 400 ppi | **B** | the Frame product | the partner line | a supplier search and gate CLR-11 |
 | G-12 | the clear panel supply chain at the required transmission and lifetime | **M** | the clear family | the partner line | the clear sample order of Part 13 |
-| G-13 | the folded optics inside the B module ring: 8 elements in 4 groups on a `3.4 + 14.0 mm` path inside `4.00 mm` | **B** | the B module camera and its claims | the partner line | an optical partner, gates CAM-1 and CAM-18 |
+| G-13 | the `50 MP` camera in the `4.00 mm` ring: a small-pixel sensor in a `3.90 mm` column with the window as the first lens | **M** | the camera claims | the partner line | a module sample and gate CAM-21 |
 | G-14 | the safety and eyewear biocompatibility file of the 4-Quadrant (`+`) `LLZO/PEO` solid-state battery (`4 x 3.0 Wh = 12.0 Wh`, `<=36.2 °C`, `ISO 10993`) | **M** | the market entry | the energy line | the abuse set, `ISO 10993` assay, and transport file |
 | G-15 | the certification gap analysis against the Turkish and the European lists | **B** | the pilot | the program line | a written gap table with a date per item |
 | G-16 | the third party security review of the wallet path, the secure element and the optical path | **M** | the security claim and the insurance | the security line | a scope note and two laboratory conversations |
@@ -49,8 +49,12 @@
 | G-37 | the full wrap coupon: R 25.5 mm, 5 000 cycles, the gap budget, the no crease scan and the flat recovery | **B** | the wrap claim and the carried member | the drawing line and the verification line | the coupon design and the wrap rig, gates B-1 to B-6 |
 | G-38 | the common carrier panel study: one substrate, two independent arrays | **m** | the second revision thickness | the partner line | the question to the panel partner, gate DSP-11 |
 | G-39 | the photon-honest interface rules, as a written interface standard | **M** | half of the session cost | the surface line and the network line | Part 18, Section 18.6, gates DST-9 and DST-10 |
+| G-40 | the `508 ppi` micro-LED tile: the best shipping face is about `326 ppi` | **M** | the display density claim | the partner line | a panel partner question and gate DSP-19 |
+| G-41 | the rotating-square tile: the CAD, the coupon, the edge-on hinge and the micro cell of Part 21 | **B** | the stretch claim and the energy figure | the drawing line and the energy line | a `4 x 4` tile coupon, gates MEC-39, MEC-42 and ENR-22 |
+| G-42 | the validator Leaf duty in the Budlum tree: session state, deterministic render, frame receipts, re-execution | **B** | every session that the Leaf shows | the network line | research order RG-18 |
+| G-43 | the floating back skin and the lattice-continuous seam: the seal, the kerf and the swap repeatability | **M** | the stretch and scratch claims | the partner line | skin and seam coupons, gates MEC-40 and MEC-41 |
 
-**The count**. **39 items: 13 blockers, 19 major and 7 minor**. The 13 blockers are G-01 to G-07, G-11, G-13, G-15, G-20, G-36, and G-37. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
+**The count**. **43 items: 14 blockers, 22 major and 7 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
 
 ---
 
@@ -63,7 +67,7 @@
 | the link, the classes, the fail-safe ladder and the distance doctrine | written, with numbers and gates |
 | the firmware interfaces and the refusal set | written, at implementable depth |
 | the Budlum integration boundary and the orders RG-1 to RG-17 | written, with acceptance tests |
-| the verification plan and the claim policy | written, with 251 gates and one record format |
+| the verification plan and the claim policy | written, with 276 gates and one record format |
 | the drawing form and the check discipline | proven: the nine sheets P01 to P09 pass the strict check at zero collisions, zero overflows and zero missing labels |
 
 ---

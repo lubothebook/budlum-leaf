@@ -1,0 +1,30 @@
+[package]
+name = "budlum-leaf-duty"
+version = "0.1.0"
+edition = "2021"
+license = "LicenseRef-PolyForm-Shield-1.0.0"
+description = "RG-18: the validator Leaf duty for the Budlum chain (standalone research crate)"
+
+[workspace]
+
+[dependencies]
+sha2 = "0.11"
+sha3 = "0.12"
+ml-dsa = { version = "=0.1.1", features = ["alloc"] }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.test]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+
+[[bench]]
+name = "render"
+harness = false

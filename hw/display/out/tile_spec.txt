@@ -1,0 +1,79 @@
+========================================================================
+A. THE DRIVE SCHEME: does the pixel circuit fit in 50 x 50 um?
+========================================================================
+pixel area 2500 um2, usable after routing 1500 um2
+  7T1C PAM (OLED class)                   21T3C per pixel  area  1290/ 1920/ 2550 um2  -> ['fits', 'NO', 'NO']
+  8T2C sweep PWM (uLED, minimum)          24T6C per pixel  area  1680/ 2400/ 3120 um2  -> ['NO', 'NO', 'NO']
+  13T3C PWM + PAM + Vth comp. (uLED)      39T9C per pixel  area  2670/ 3840/ 5010 um2  -> ['NO', 'NO', 'NO']
+  verdict: a uLED-grade PWM pixel (13T3C x 3) does not fit an LTPS pixel at 50 um.
+
+  uIC  bus receiver + address match (7 b row addr + strobe)    400 T
+  uIC  back buffer: 144 b shift/load register, 20T DFF        2880 T
+  uIC  front buffer: 144 b latch, 8T                          1152 T
+  uIC  12 b equality comparators, 12 x (12 XNOR + tree)       1800 T
+  uIC  set/reset output latches                                144 T
+  uIC  12 b PWM counter + 4-segment bit-split logic            600 T
+  uIC  current sinks, 2-level PAM, 16 outputs incl. S          128 T
+  uIC  bias, reference trim DAC, POR, test                     600 T
+  uIC total 7704 T  ->  1926 T per pixel (642 T per sub-pixel)
+  40 nm HV, 2.0 MT/mm2 effective     die   3852 um2
+  28 nm HV (DDI class), 5.0 MT/mm2   die   1541 um2
+  street between pixel clusters 38 um. uIC 20 x 85 um = 1700 um2 in the horizontal street, 9 um clear each side
+  uIC share of the 100 x 100 um cell: 17.0 %; uICs per tile 10000, per device 1280000
+  verdict: the 28 nm HV uIC (1 541 um2) fits the 1 700 um2 street slot. The 40 nm uIC (3 852 um2) does not.
+
+========================================================================
+B. THE PWM
+========================================================================
+frame 4.167 ms, 12-bit PWM, LSB 1.017 us, counter clock 0.983 MHz
+bit-split into 4 segments -> flicker fundamental 960 Hz
+2-level PAM (low = 1/16) -> 16 bit effective range, smallest step at 1 000 nits = 15.3 mnit
+uLED rise and fall ~10-50 ns [GENERAL], so the 1.02 us LSB is 20x the edge
+data per uIC per frame: 144 b; per tile per frame 1.44 Mb; raw per tile 345.6 Mb/s
+
+========================================================================
+C. THE TGV SET of the carrier glass
+========================================================================
+  row-bus data, 2 per uIC row (redundant pair)    200
+  clock (H-tree roots), 4 per tile x 2              8
+  latch / frame strobe x 2                          4
+  VLED_GB (3.3 V) power                            16
+  VLED_R (2.8 V) power                             16
+  VDD core (0.9 V)                                  8
+  GND                                              32
+  test, thermistor and seam sense                   4
+  total TGVs per tile 288; per device 36864
+  via d 12 um in 150 um glass (AR 12.5:1), R = 22.8 mOhm
+  data vias: one column at the tile centre line, 100 um pitch (one per uIC row), in the street
+  intersections at (50, 50) um mod 100 um; power vias on a 2.5 mm grid; minimum pitch 100 um = 8.3 d
+
+========================================================================
+D. THE POWER OF ONE TILE, FULL WHITE, D65
+========================================================================
+direct RGB, InGaN R/G/B 5 um @ 500 nits: flux at emitters 184.8 mlm, radiation 0.646 mW, LER 286 lm/W
+     625 nm:  0.245 mW optical,  2.472 mA,   7.69 mW electric (61.80 uA per chip, J = 247 A/cm2 at 100 % duty)
+     528 nm:  0.219 mW optical,  0.775 mA,   2.84 mW electric (19.38 uA per chip, J = 78 A/cm2 at 100 % duty)
+     462 nm:  0.183 mW optical,  0.340 mA,   1.25 mW electric (8.51 uA per chip, J = 34 A/cm2 at 100 % duty)
+     LED power 11.8 mW + overhead 5.4 mW = 17.2 mW per tile, 2.20 W per device full white
+direct RGB, InGaN R/G/B 5 um @ 1000 nits: flux at emitters 369.6 mlm, radiation 1.293 mW, LER 286 lm/W
+     625 nm:  0.490 mW optical,  4.944 mA,  15.38 mW electric (123.59 uA per chip, J = 494 A/cm2 at 100 % duty)
+     528 nm:  0.437 mW optical,  1.551 mA,   5.69 mW electric (38.77 uA per chip, J = 155 A/cm2 at 100 % duty)
+     462 nm:  0.365 mW optical,  0.681 mA,   2.50 mW electric (17.02 uA per chip, J = 68 A/cm2 at 100 % duty)
+     LED power 23.6 mW + overhead 5.4 mW = 28.9 mW per tile, 3.70 W per device full white
+blue 5 um + QD R/G (2 red sites) @ 500 nits: flux at emitters 184.8 mlm, radiation 0.669 mW, LER 276 lm/W
+     630 nm:  0.260 mW optical,  1.287 mA,   4.72 mW electric (16.08 uA per chip, J = 64 A/cm2 at 100 % duty)
+     530 nm:  0.225 mW optical,  0.936 mA,   3.43 mW electric (23.40 uA per chip, J = 94 A/cm2 at 100 % duty)
+     462 nm:  0.184 mW optical,  0.343 mA,   1.26 mW electric (8.59 uA per chip, J = 34 A/cm2 at 100 % duty)
+     LED power 9.4 mW + overhead 5.4 mW = 14.8 mW per tile, 1.89 W per device full white
+blue 5 um + QD R/G (2 red sites) @ 1000 nits: flux at emitters 369.6 mlm, radiation 1.338 mW, LER 276 lm/W
+     630 nm:  0.520 mW optical,  2.573 mA,   9.44 mW electric (32.17 uA per chip, J = 129 A/cm2 at 100 % duty)
+     530 nm:  0.449 mW optical,  1.872 mA,   6.86 mW electric (46.80 uA per chip, J = 187 A/cm2 at 100 % duty)
+     462 nm:  0.369 mW optical,  0.687 mA,   2.52 mW electric (17.17 uA per chip, J = 69 A/cm2 at 100 % duty)
+     LED power 18.8 mW + overhead 5.4 mW = 24.2 mW per tile, 3.10 W per device full white
+
+  overhead: uIC counters and latches (10 000 x 0.16 uW)          1.60 mW
+  overhead: uIC bias and leakage (10 000 x 0.05 uW)              0.50 mW
+  overhead: row buses (346 Mb/s x 0.8 pJ/b)                      0.28 mW
+  overhead: tile hub: DSC decode, demura, 4 retimed ports (avg)  3.00 mW
+  front-mesh IR drop at 1 000 nits, 16 feeds per rail: 0.01 mV (mesh 19.1 mOhm/sq)
+  stretched view: to hold the mean luminance at 25 % stretch the pixels run x1.57, at 41 % x2.00

@@ -1,0 +1,24 @@
+BUDLUM LEAF DOCK L.6.0 · the validator module sizing · gates SW-20, DST-12, RG-18
+
+bench: measured now
+1 · the measured reference (best of 5 runs, one core of this sandbox)
+  93.9 ms per 1600 x 3200 frame, of which SHA-256 of 16 slices 45.0 ms (0.45 GB/s)
+  42 primitives per frame, overdraw 2.25, frame hash prefix 9a, 6b, 5a, be
+  the scalar reference reaches 10.6 frames/s on one core. 240 Hz needs 23 x that
+
+2 · one session at 240 Hz with 2 speculative frames, so 3 renders per frame
+  SHA-256: 14.7 GB/s in 48 sequential streams of 1.28 MB
+  raster: 35.2 reference-core-seconds per second (scalar), 8.31 Gpx/s touched, 332 Gops/s on a GPU
+  memory traffic 81.3 GB/s, frame ring 102 MB
+
+3 · the candidates, 2 sessions + the chain duty
+  module                          hashC  rastC  needC  haveC  memBW     GPU  verdict
+  NVIDIA Jetson Orin NX 16 GB      22.7    0.5   24.7      8   159%     71%  short, 0 sessions max
+  NVIDIA Jetson AGX Orin 32 GB     21.1    0.5   23.1      8    79%     39%  short, 0 sessions max
+  Rockchip RK3588 SoM              21.1   22.0   44.6      4   478%      0%  short, 0 sessions max
+  AMD Ryzen 7 8845HS COM           13.4   11.0   25.9      8   136%      0%  short, 0 sessions max
+
+  the rule of determinism: integer and Q16.16 only, on the CPU and on the GPU alike.
+  Integer GPU arithmetic is bit-exact, so two validators on two kinds of silicon agree.
+  The SHA-256 slice hash is sequential inside a slice. It, not the raster, sets the CPU count.
+  chain duty: RAM 6 GB + frame rings 205 MB, NVMe 1 TB, a PKCS#11 signer (README s4)

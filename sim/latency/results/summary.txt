@@ -1,0 +1,43 @@
+PATHS (mean / p50 / p99 / p99.9 ms; Part 21 mean, p99)
+  wifi_room   12.80  12.79  16.11  17.24   | P21 13.6, 20.0   sum of stage p99 = 20.3
+      stages: touch 1.84, air_up 0.58, net 0.10, render 4.30, encode 1.50, air_down 0.65, decode 1.50, scan 2.33
+  wifi_city   13.90  13.89  17.33  18.45   | P21 14.7, 21.0   sum of stage p99 = 22.1
+      stages: touch 1.84, air_up 0.58, net 1.20, render 4.30, encode 1.50, air_down 0.65, decode 1.50, scan 2.33
+  nr_cell     16.47  16.39  21.54  23.51   | P21 15.4, 21.0   sum of stage p99 = 27.9
+      stages: touch 1.84, air_up 2.83, net 0.30, render 4.30, encode 1.50, air_down 1.86, decode 1.50, scan 2.33
+  far         92.70  92.26 103.03 108.31   | P21 93.5, 100.0   sum of stage p99 = 110.0
+      stages: touch 1.84, air_up 0.58, net 80.00, render 4.30, encode 1.50, air_down 0.65, decode 1.50, scan 2.33
+  predicted    4.37   4.37   7.10   7.43
+  predicted + tile restart   2.42 p99   3.56
+BLER (UL=DL): 0.00:19.7/20.4, 0.01:19.9/21.3, 0.02:20.1/21.7, 0.05:20.8/22.5, 0.10:21.5/23.5, 0.15:22.1/24.2, 0.20:22.7/24.9, 0.30:23.7/26.2, 0.40:24.5/27.5, 0.50:25.4/29.9
+BLER DL only: 0.00:19.8, 0.01:19.9, 0.02:20.0, 0.05:20.3, 0.10:20.8, 0.15:21.1, 0.20:21.4, 0.30:21.9, 0.40:22.3, 0.50:22.8
+TDD (BLER10): DDDSU:16.5/21.5, DDSUU:16.3/21.5, DSUUU:16.4/21.5, DDDDDDDSUU:17.5/25.4, DDDSUDDSUU:16.4/21.5, DDDDDDDDSU:17.9/25.7, DDDSU + S-slot PUSCH:15.9/20.9, DDDSU + mini-slots:15.4/20.5, DDDDDDDSUU + mini-slots:16.5/24.5
+TDD (BLER20): DDDSU:22.7, DDSUU:22.6, DSUUU:22.6, DDDDDDDSUU:27.7, DDDSUDDSUU:22.6, DDDDDDDDSU:27.8, DDDSU + S-slot PUSCH:22.0, DDDSU + mini-slots:21.5, DDDDDDDSUU + mini-slots:27.1
+LOAD priority: 0.00:16.5/21.5, 0.20:16.5/21.5, 0.40:16.5/21.6, 0.60:16.5/21.6, 0.70:16.5/21.6, 0.80:16.5/21.6, 0.90:16.5/21.6, 0.95:16.5/21.6
+LOAD best_effort: 0.00:16.5/21.5, 0.20:16.6/21.7, 0.40:16.9/22.1, 0.60:17.4/23.5, 0.70:17.9/25.3, 0.80:18.9/29.7, 0.90:22.0/43.7, 0.95:28.3/72.3
+LOAD public: 0.00:30.0/40.2, 0.20:30.2/40.4, 0.40:30.5/41.0, 0.60:31.4/42.6, 0.70:32.4/44.7, 0.80:34.4/50.0, 0.90:40.6/69.3, 0.95:53.1/110.1
+HO Rel-15 hard HO: 0.000:21.5/23.5/0.00%, 0.017:21.6/24.4/0.06%, 0.033:21.7/37.2/0.13%, 0.100:22.1/57.5/0.37%, 0.200:23.5/66.7/0.75%, 0.500:47.7/77.6/1.89%
+HO Rel-16 CHO: 0.000:21.5/23.5/0.00%, 0.017:21.6/24.4/0.06%, 0.033:21.7/35.3/0.12%, 0.100:22.1/56.0/0.36%, 0.200:23.3/63.5/0.72%, 0.500:46.2/70.2/1.81%
+HO Rel-18 LTM: 0.000:21.5/23.5/0.00%, 0.017:21.5/23.5/0.00%, 0.033:21.6/23.5/0.00%, 0.100:21.6/23.6/0.01%, 0.200:21.7/23.8/0.01%, 0.500:21.8/24.1/0.03%
+HO Rel-16 DAPS: 0.000:21.5/23.5/0.00%, 0.017:21.5/23.5/0.00%, 0.033:21.6/23.5/0.00%, 0.100:21.6/23.6/0.01%, 0.200:21.6/23.7/0.01%, 0.500:21.8/24.0/0.03%
+GATE max RTT per BLER: 0.00:8.4, 0.05:8.0, 0.10:7.6, 0.15:7.2, 0.20:6.8, 0.30:6.1, 0.40:5.4, 0.50:4.7
+WIFI: 0.1M:16.0/16.9, 0.1S:17.8/20.0, 0.2M:16.1/17.2, 0.2S:18.4/20.7, 0.3M:16.3/17.4, 0.3S:18.9/21.2, 0.4M:16.4/17.7, 0.4S:19.3/21.7, 0.5M:16.6/17.9, 0.5S:19.6/22.0, 0.6M:16.8/18.1, 0.6S:20.0/22.4, 0.7M:17.0/18.4, 0.7S:20.3/22.8
+frame_locked_render: mean 18.64 p99 24.15 p99.9 26.16
+capability2: mean 15.67 p99 20.76 p99.9 22.71
+dynamic_grant_unloaded: mean 18.11 p99 23.18 p99.9 25.19
+operator_edge_rtt2: mean 18.04 p99 23.14 p99.9 25.10
+wifi_room_tile_restart: mean 10.85 p99 13.10 p99.9 14.27
+MITIGATION ladder (worst case):
+  worst case outdoors              mean  19.28 p99  26.01 p99.9   60.72 >30ms 0.422%
+  + robust MCS: BLER 1 %           mean  17.91 p99  22.28 p99.9   59.28 >30ms 0.388%
+  + mini-slot PUSCH / PDSCH        mean  16.83 p99  21.19 p99.9   58.25 >30ms 0.378%
+  + DAPS or LTM handover           mean  16.62 p99  20.66 p99.9   22.05 >30ms 0.005%
+  + capability-2 timing            mean  15.92 p99  19.85 p99.9   21.31 >30ms 0.005%
+  + tile-local scan restart        mean  13.97 p99  17.09 p99.9   18.27 >30ms 0.005%
+MITIGATION ladder (baseline cell):
+  + robust MCS: BLER 1 %           mean  16.04 p99  19.87 p99.9   21.27
+  + mini-slot PUSCH / PDSCH        mean  14.99 p99  18.93 p99.9   20.23
+  + DAPS or LTM handover           mean  14.99 p99  18.93 p99.9   20.23
+  + capability-2 timing            mean  14.18 p99  18.14 p99.9   19.42
+  + tile-local scan restart        mean  12.22 p99  15.25 p99.9   16.67
+runtime 165 s

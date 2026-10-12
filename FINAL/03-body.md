@@ -1,5 +1,7 @@
 # BUDLUM LEAF · THE DIRECTIVE · PART 3 · THE BODY
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The body is `128` rotating PC-capped tiles with `508 ppi` micro-LED layers and lattice-continuous seams. It stretches `25 %`, and `41 %` at most.
+
 ---
 
 ## 3.1 The mass theorem

@@ -1,0 +1,1323 @@
+{
+ "lever": {
+  "V0 service +y outboard soft": {
+   "s_mouth": 9.6,
+   "R_deep": 24.290484140233723,
+   "R_mouth": 34.29048414023372,
+   "q_peak": 10.037390140592448,
+   "deep_wall": "-y"
+  },
+  "V0 service +y outboard stiff": {
+   "s_mouth": 9.6,
+   "R_deep": 25.851913841167974,
+   "R_mouth": 35.85191384116797,
+   "q_peak": 6.943695866429415,
+   "deep_wall": "-y"
+  },
+  "V0 service -y inboard soft": {
+   "s_mouth": 11.5,
+   "R_deep": 17.7006068779501,
+   "R_mouth": 27.7006068779501,
+   "q_peak": 7.314300362789298,
+   "deep_wall": "+y"
+  },
+  "V0 service -y inboard stiff": {
+   "s_mouth": 11.5,
+   "R_deep": 18.608548448153392,
+   "R_mouth": 28.608548448153392,
+   "q_peak": 4.998163839380044,
+   "deep_wall": "+y"
+  },
+  "V0 service +z face soft": {
+   "s_mouth": 10.5,
+   "R_deep": 20.817704426106527,
+   "R_mouth": 30.817704426106527,
+   "q_peak": 8.602357200870467,
+   "deep_wall": "-z"
+  },
+  "V0 service +z face stiff": {
+   "s_mouth": 10.5,
+   "R_deep": 22.012593583269478,
+   "R_mouth": 32.01259358326948,
+   "q_peak": 5.912473483109571,
+   "deep_wall": "-z"
+  },
+  "V0 abuse +y outboard soft": {
+   "s_mouth": 9.6,
+   "R_deep": 48.580968280467445,
+   "R_mouth": 68.58096828046745,
+   "q_peak": 20.074780281184896,
+   "deep_wall": "-y"
+  },
+  "V0 abuse +y outboard stiff": {
+   "s_mouth": 9.6,
+   "R_deep": 51.70382768233595,
+   "R_mouth": 71.70382768233594,
+   "q_peak": 13.88739173285883,
+   "deep_wall": "-y"
+  },
+  "V0 abuse -y inboard soft": {
+   "s_mouth": 11.5,
+   "R_deep": 35.4012137559002,
+   "R_mouth": 55.4012137559002,
+   "q_peak": 14.628600725578597,
+   "deep_wall": "+y"
+  },
+  "V0 abuse -y inboard stiff": {
+   "s_mouth": 11.5,
+   "R_deep": 37.217096896306785,
+   "R_mouth": 57.217096896306785,
+   "q_peak": 9.996327678760087,
+   "deep_wall": "+y"
+  },
+  "V0 abuse +z face soft": {
+   "s_mouth": 10.5,
+   "R_deep": 41.635408852213054,
+   "R_mouth": 61.635408852213054,
+   "q_peak": 17.204714401740933,
+   "deep_wall": "-z"
+  },
+  "V0 abuse +z face stiff": {
+   "s_mouth": 10.5,
+   "R_deep": 44.025187166538956,
+   "R_mouth": 64.02518716653896,
+   "q_peak": 11.824946966219143,
+   "deep_wall": "-z"
+  },
+  "V1 service +y outboard soft": {
+   "s_mouth": 11.25,
+   "R_deep": 18.41923209961951,
+   "R_mouth": 28.41923209961951,
+   "q_peak": 7.61125293372707,
+   "deep_wall": "-y"
+  },
+  "V1 service +y outboard stiff": {
+   "s_mouth": 11.25,
+   "R_deep": 19.38983732199583,
+   "R_mouth": 29.38983732199583,
+   "q_peak": 5.208014156734418,
+   "deep_wall": "-y"
+  },
+  "V1 service -y inboard soft": {
+   "s_mouth": 13.0,
+   "R_deep": 14.05152224824356,
+   "R_mouth": 24.051522248243558,
+   "q_peak": 5.80641415216676,
+   "deep_wall": "+y"
+  },
+  "V1 service -y inboard stiff": {
+   "s_mouth": 13.0,
+   "R_deep": 14.673137520313125,
+   "R_mouth": 24.673137520313126,
+   "q_peak": 3.941131978596501,
+   "deep_wall": "+y"
+  },
+  "V1 service +z face soft": {
+   "s_mouth": 12.5,
+   "R_deep": 15.156154317207593,
+   "R_mouth": 25.156154317207594,
+   "q_peak": 6.262873684796526,
+   "deep_wall": "-z"
+  },
+  "V1 service +z face stiff": {
+   "s_mouth": 12.5,
+   "R_deep": 15.858858085326423,
+   "R_mouth": 25.858858085326425,
+   "q_peak": 4.259610642752965,
+   "deep_wall": "-z"
+  },
+  "V1 abuse +y outboard soft": {
+   "s_mouth": 11.25,
+   "R_deep": 36.83846419923902,
+   "R_mouth": 56.83846419923902,
+   "q_peak": 15.22250586745414,
+   "deep_wall": "-y"
+  },
+  "V1 abuse +y outboard stiff": {
+   "s_mouth": 11.25,
+   "R_deep": 38.77967464399166,
+   "R_mouth": 58.77967464399166,
+   "q_peak": 10.416028313468836,
+   "deep_wall": "-y"
+  },
+  "V1 abuse -y inboard soft": {
+   "s_mouth": 13.0,
+   "R_deep": 28.10304449648712,
+   "R_mouth": 48.103044496487115,
+   "q_peak": 11.61282830433352,
+   "deep_wall": "+y"
+  },
+  "V1 abuse -y inboard stiff": {
+   "s_mouth": 13.0,
+   "R_deep": 29.34627504062625,
+   "R_mouth": 49.34627504062625,
+   "q_peak": 7.882263957193002,
+   "deep_wall": "+y"
+  },
+  "V1 abuse +z face soft": {
+   "s_mouth": 12.5,
+   "R_deep": 30.312308634415185,
+   "R_mouth": 50.31230863441519,
+   "q_peak": 12.525747369593052,
+   "deep_wall": "-z"
+  },
+  "V1 abuse +z face stiff": {
+   "s_mouth": 12.5,
+   "R_deep": 31.717716170652846,
+   "R_mouth": 51.71771617065285,
+   "q_peak": 8.51922128550593,
+   "deep_wall": "-z"
+  }
+ },
+ "beam": {
+  "uniform": 67.49999999999999,
+  "variable": 25.02314038351197,
+  "variable_at_u": 0.0
+ },
+ "fe": {
+  "x=0.0 +y LCP only": {
+   "wall": {
+    "s1_per_Npmm": 13.717216353787645,
+    "at": [
+     14.171,
+     1.766
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 11.512291173548885,
+    "at": [
+     15.992,
+     0.042
+    ]
+   },
+   "max_disp_um_per_Npmm": 3.3088313319815468,
+   "nodes": 18046
+  },
+  "x=0.0 +y PEEK": {
+   "wall": {
+    "s1_per_Npmm": 11.039403260345573,
+    "at": [
+     14.171,
+     1.766
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 20.514022916087537,
+    "at": [
+     15.992,
+     0.042
+    ]
+   },
+   "max_disp_um_per_Npmm": 7.934027558436925,
+   "nodes": 18046
+  },
+  "x=0.0 +y PEEK-GF30": {
+   "wall": {
+    "s1_per_Npmm": 12.85509261558158,
+    "at": [
+     14.171,
+     1.766
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 13.610354667747687,
+    "at": [
+     15.992,
+     0.042
+    ]
+   },
+   "max_disp_um_per_Npmm": 4.250106684220885,
+   "nodes": 18046
+  },
+  "x=0.0 +y Y-TZP": {
+   "wall": {
+    "s1_per_Npmm": 23.160015956047527,
+    "at": [
+     14.171,
+     1.766
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 4.725487983627989,
+    "at": [
+     12.792,
+     -1.992
+    ]
+   },
+   "max_disp_um_per_Npmm": 0.8346177232697312,
+   "nodes": 18046
+  },
+  "x=0.0 -y LCP only": {
+   "wall": {
+    "s1_per_Npmm": 0.07322151141428063,
+    "at": [
+     12.511,
+     -1.266
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 0.04738765658480626,
+    "at": [
+     11.942,
+     -1.992
+    ]
+   },
+   "max_disp_um_per_Npmm": 0.030282929582140957,
+   "nodes": 18046
+  },
+  "x=0.0 -y PEEK": {
+   "wall": {
+    "s1_per_Npmm": 0.02129989310515549,
+    "at": [
+     12.536,
+     1.291
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 0.13623702450580788,
+    "at": [
+     11.792,
+     -0.052
+    ]
+   },
+   "max_disp_um_per_Npmm": 0.042862954916865814,
+   "nodes": 18046
+  },
+  "x=0.0 -y PEEK-GF30": {
+   "wall": {
+    "s1_per_Npmm": 0.053998944461019924,
+    "at": [
+     12.511,
+     -1.266
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 0.07622868032836108,
+    "at": [
+     11.792,
+     -0.052
+    ]
+   },
+   "max_disp_um_per_Npmm": 0.03288763005572319,
+   "nodes": 18046
+  },
+  "x=0.0 -y Y-TZP": {
+   "wall": {
+    "s1_per_Npmm": 0.8162765018828402,
+    "at": [
+     11.811,
+     -0.123
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 0.07095513399279904,
+    "at": [
+     11.642,
+     1.992
+    ]
+   },
+   "max_disp_um_per_Npmm": 0.023021713423946537,
+   "nodes": 18046
+  },
+  "x=0.0 +z LCP only": {
+   "wall": {
+    "s1_per_Npmm": 34.42266980441925,
+    "at": [
+     14.038,
+     1.995
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 5.242762042413553,
+    "at": [
+     12.792,
+     -1.992
+    ]
+   },
+   "max_disp_um_per_Npmm": 6.869828429868344,
+   "nodes": 18046
+  },
+  "x=0.0 +z PEEK": {
+   "wall": {
+    "s1_per_Npmm": 31.27653245904158,
+    "at": [
+     14.038,
+     1.995
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 11.461105720087595,
+    "at": [
+     12.581,
+     1.592
+    ]
+   },
+   "max_disp_um_per_Npmm": 20.1482430429814,
+   "nodes": 18046
+  },
+  "x=0.0 +z PEEK-GF30": {
+   "wall": {
+    "s1_per_Npmm": 33.33064530454986,
+    "at": [
+     14.038,
+     1.995
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 6.190618213196183,
+    "at": [
+     12.476,
+     1.508
+    ]
+   },
+   "max_disp_um_per_Npmm": 9.385782209776968,
+   "nodes": 18046
+  },
+  "x=0.0 +z Y-TZP": {
+   "wall": {
+    "s1_per_Npmm": 49.822972805361836,
+    "at": [
+     14.038,
+     1.995
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 5.605273346926343,
+    "at": [
+     12.792,
+     -1.992
+    ]
+   },
+   "max_disp_um_per_Npmm": 1.6496598418010973,
+   "nodes": 18046
+  },
+  "x=6.0 +y LCP only": {
+   "wall": {
+    "s1_per_Npmm": 160.26593260241347,
+    "at": [
+     13.526,
+     -1.786
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 14.562330356826902,
+    "at": [
+     12.599,
+     1.608
+    ]
+   },
+   "max_disp_um_per_Npmm": 91.67559757384883,
+   "nodes": 12783
+  },
+  "x=6.0 +y PEEK": {
+   "wall": {
+    "s1_per_Npmm": 162.41043058965607,
+    "at": [
+     13.526,
+     -1.786
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 36.79165480796091,
+    "at": [
+     12.897,
+     -1.789
+    ]
+   },
+   "max_disp_um_per_Npmm": 327.63046306602223,
+   "nodes": 12783
+  },
+  "x=6.0 +y PEEK-GF30": {
+   "wall": {
+    "s1_per_Npmm": 161.4125233021441,
+    "at": [
+     13.526,
+     -1.786
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 19.279441697392492,
+    "at": [
+     12.599,
+     1.608
+    ]
+   },
+   "max_disp_um_per_Npmm": 133.92147402175107,
+   "nodes": 12783
+  },
+  "x=6.0 +y Y-TZP": {
+   "wall": {
+    "s1_per_Npmm": 159.17886865009973,
+    "at": [
+     13.526,
+     -1.786
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 8.928156718405345,
+    "at": [
+     12.974,
+     -1.831
+    ]
+   },
+   "max_disp_um_per_Npmm": 11.477926097113977,
+   "nodes": 12783
+  },
+  "x=6.0 +z LCP only": {
+   "wall": {
+    "s1_per_Npmm": 54.05478556545205,
+    "at": [
+     13.423,
+     1.765
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 7.633360958263442,
+    "at": [
+     12.476,
+     1.508
+    ]
+   },
+   "max_disp_um_per_Npmm": 34.19506770799334,
+   "nodes": 12783
+  },
+  "x=6.0 +z PEEK": {
+   "wall": {
+    "s1_per_Npmm": 54.86218885710727,
+    "at": [
+     13.423,
+     1.765
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 18.829676159435273,
+    "at": [
+     12.636,
+     1.637
+    ]
+   },
+   "max_disp_um_per_Npmm": 116.3426452682428,
+   "nodes": 12783
+  },
+  "x=6.0 +z PEEK-GF30": {
+   "wall": {
+    "s1_per_Npmm": 54.478682680632986,
+    "at": [
+     13.423,
+     1.765
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 10.198204176922538,
+    "at": [
+     12.599,
+     1.608
+    ]
+   },
+   "max_disp_um_per_Npmm": 49.06113276623561,
+   "nodes": 12783
+  },
+  "x=6.0 +z Y-TZP": {
+   "wall": {
+    "s1_per_Npmm": 57.68169903323269,
+    "at": [
+     12.781,
+     1.491
+    ]
+   },
+   "body": {
+    "s1_per_Npmm": 3.51815977749537,
+    "at": [
+     12.985,
+     1.836
+    ]
+   },
+   "max_disp_um_per_Npmm": 5.317678987949211,
+   "nodes": 12783
+  }
+ },
+ "verdict": [
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "LCP-GF40",
+   "q_peak": 10.037390140592448,
+   "s_wall": 0.7349528767489778,
+   "allow_wall": 45,
+   "s_lcp": 0.7349528767489778,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "PEEK",
+   "q_peak": 10.037390140592448,
+   "s_wall": 0.21379533704936077,
+   "allow_wall": 60,
+   "s_lcp": 1.3674641665582477,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 10.037390140592448,
+   "s_wall": 0.5420084727354406,
+   "allow_wall": 70,
+   "s_lcp": 0.765137004358265,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "Y-TZP",
+   "q_peak": 6.943695866429415,
+   "s_wall": 5.66797577198734,
+   "allow_wall": 330,
+   "s_lcp": 0.49269087060774397,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "LCP-GF40",
+   "q_peak": 7.314300362789298,
+   "s_wall": 100.33184055296827,
+   "allow_wall": 45,
+   "s_lcp": 100.33184055296827,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "PEEK",
+   "q_peak": 7.314300362789298,
+   "s_wall": 80.74551127212298,
+   "allow_wall": 60,
+   "s_lcp": 150.04572525740704,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 7.314300362789298,
+   "s_wall": 94.02600858183838,
+   "allow_wall": 70,
+   "s_lcp": 99.55022208399794,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "Y-TZP",
+   "q_peak": 4.998163839380044,
+   "s_wall": 115.75755427098157,
+   "allow_wall": 330,
+   "s_lcp": 23.61876316319433,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "LCP-GF40",
+   "q_peak": 8.602357200870467,
+   "s_wall": 296.1161014652323,
+   "allow_wall": 45,
+   "s_lcp": 296.1161014652323,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "PEEK",
+   "q_peak": 8.602357200870467,
+   "s_wall": 269.0519042172952,
+   "allow_wall": 60,
+   "s_lcp": 98.59252532113321,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "PEEK-GF30",
+   "q_peak": 8.602357200870467,
+   "s_wall": 286.7221166452539,
+   "allow_wall": 70,
+   "s_lcp": 53.253909164128046,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "Y-TZP",
+   "q_peak": 5.912473483109571,
+   "s_wall": 294.57700556139116,
+   "allow_wall": 330,
+   "s_lcp": 33.14103002928284,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "LCP-GF40",
+   "q_peak": 20.074780281184896,
+   "s_wall": 1.4699057534979556,
+   "allow_wall": 103.5,
+   "s_lcp": 1.4699057534979556,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "PEEK",
+   "q_peak": 20.074780281184896,
+   "s_wall": 0.42759067409872153,
+   "allow_wall": 90.0,
+   "s_lcp": 2.7349283331164953,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 20.074780281184896,
+   "s_wall": 1.0840169454708812,
+   "allow_wall": 139.5,
+   "s_lcp": 1.53027400871653,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "Y-TZP",
+   "q_peak": 13.88739173285883,
+   "s_wall": 11.33595154397468,
+   "allow_wall": 900.0,
+   "s_lcp": 0.9853817412154879,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "LCP-GF40",
+   "q_peak": 14.628600725578597,
+   "s_wall": 200.66368110593655,
+   "allow_wall": 103.5,
+   "s_lcp": 200.66368110593655,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "PEEK",
+   "q_peak": 14.628600725578597,
+   "s_wall": 161.49102254424596,
+   "allow_wall": 90.0,
+   "s_lcp": 300.0914505148141,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 14.628600725578597,
+   "s_wall": 188.05201716367677,
+   "allow_wall": 139.5,
+   "s_lcp": 199.10044416799587,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "Y-TZP",
+   "q_peak": 9.996327678760087,
+   "s_wall": 231.51510854196314,
+   "allow_wall": 900.0,
+   "s_lcp": 47.23752632638866,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "LCP-GF40",
+   "q_peak": 17.204714401740933,
+   "s_wall": 592.2322029304646,
+   "allow_wall": 103.5,
+   "s_lcp": 592.2322029304646,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "PEEK",
+   "q_peak": 17.204714401740933,
+   "s_wall": 538.1038084345904,
+   "allow_wall": 90.0,
+   "s_lcp": 197.18505064226642,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "PEEK-GF30",
+   "q_peak": 17.204714401740933,
+   "s_wall": 573.4442332905078,
+   "allow_wall": 139.5,
+   "s_lcp": 106.50781832825609,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V0",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "Y-TZP",
+   "q_peak": 11.824946966219143,
+   "s_wall": 589.1540111227823,
+   "allow_wall": 900.0,
+   "s_lcp": 66.28206005856568,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "LCP-GF40",
+   "q_peak": 7.61125293372707,
+   "s_wall": 0.5573074435638736,
+   "allow_wall": 45,
+   "s_lcp": 0.5573074435638736,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "PEEK",
+   "q_peak": 7.61125293372707,
+   "s_wall": 0.1621188738846877,
+   "allow_wall": 60,
+   "s_lcp": 1.036934452452077,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 7.61125293372707,
+   "s_wall": 0.41099962444710303,
+   "allow_wall": 70,
+   "s_lcp": 0.5801957667833813,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+y outboard",
+   "wall": "Y-TZP",
+   "q_peak": 5.208014156734418,
+   "s_wall": 4.25117957761548,
+   "allow_wall": 330,
+   "s_lcp": 0.3695353423274849,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "LCP-GF40",
+   "q_peak": 5.80641415216676,
+   "s_wall": 79.6478391649659,
+   "allow_wall": 45,
+   "s_lcp": 79.6478391649659,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "PEEK",
+   "q_peak": 5.80641415216676,
+   "s_wall": 64.0993473223464,
+   "allow_wall": 60,
+   "s_lcp": 119.1129129778439,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 5.80641415216676,
+   "s_wall": 74.64199169052729,
+   "allow_wall": 70,
+   "s_lcp": 79.0273559588191,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "-y inboard",
+   "wall": "Y-TZP",
+   "q_peak": 3.941131978596501,
+   "s_wall": 91.27667950918412,
+   "allow_wall": 330,
+   "s_lcp": 18.623771806749765,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "LCP-GF40",
+   "q_peak": 6.262873684796526,
+   "s_wall": 215.5848328785373,
+   "allow_wall": 45,
+   "s_lcp": 215.5848328785373,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "PEEK",
+   "q_peak": 6.262873684796526,
+   "s_wall": 195.88097208941588,
+   "allow_wall": 60,
+   "s_lcp": 71.77945741300753,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "PEEK-GF30",
+   "q_peak": 6.262873684796526,
+   "s_wall": 208.7456213751522,
+   "allow_wall": 70,
+   "s_lcp": 38.77105990004846,
+   "allow_lcp": 45,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "service",
+   "dir": "+z face",
+   "wall": "Y-TZP",
+   "q_peak": 4.259610642752965,
+   "s_wall": 212.2264652153108,
+   "allow_wall": 330,
+   "s_lcp": 23.876282004106983,
+   "allow_lcp": 45,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "LCP-GF40",
+   "q_peak": 15.22250586745414,
+   "s_wall": 1.1146148871277473,
+   "allow_wall": 103.5,
+   "s_lcp": 1.1146148871277473,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "PEEK",
+   "q_peak": 15.22250586745414,
+   "s_wall": 0.3242377477693754,
+   "allow_wall": 90.0,
+   "s_lcp": 2.073868904904154,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 15.22250586745414,
+   "s_wall": 0.8219992488942061,
+   "allow_wall": 139.5,
+   "s_lcp": 1.1603915335667625,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+y outboard",
+   "wall": "Y-TZP",
+   "q_peak": 10.416028313468836,
+   "s_wall": 8.50235915523096,
+   "allow_wall": 900.0,
+   "s_lcp": 0.7390706846549698,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "LCP-GF40",
+   "q_peak": 11.61282830433352,
+   "s_wall": 159.2956783299318,
+   "allow_wall": 103.5,
+   "s_lcp": 159.2956783299318,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "PEEK",
+   "q_peak": 11.61282830433352,
+   "s_wall": 128.1986946446928,
+   "allow_wall": 90.0,
+   "s_lcp": 238.2258259556878,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "PEEK-GF30",
+   "q_peak": 11.61282830433352,
+   "s_wall": 149.28398338105458,
+   "allow_wall": 139.5,
+   "s_lcp": 158.0547119176382,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "-y inboard",
+   "wall": "Y-TZP",
+   "q_peak": 7.882263957193002,
+   "s_wall": 182.55335901836824,
+   "allow_wall": 900.0,
+   "s_lcp": 37.24754361349953,
+   "allow_lcp": 103.5,
+   "ok": true
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "LCP-GF40",
+   "q_peak": 12.525747369593052,
+   "s_wall": 431.1696657570746,
+   "allow_wall": 103.5,
+   "s_lcp": 431.1696657570746,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "PEEK",
+   "q_peak": 12.525747369593052,
+   "s_wall": 391.76194417883175,
+   "allow_wall": 90.0,
+   "s_lcp": 143.55891482601507,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "PEEK-GF30",
+   "q_peak": 12.525747369593052,
+   "s_wall": 417.4912427503044,
+   "allow_wall": 139.5,
+   "s_lcp": 77.54211980009693,
+   "allow_lcp": 103.5,
+   "ok": false
+  },
+  {
+   "variant": "V1",
+   "case": "abuse",
+   "dir": "+z face",
+   "wall": "Y-TZP",
+   "q_peak": 8.51922128550593,
+   "s_wall": 424.4529304306216,
+   "allow_wall": 900.0,
+   "s_lcp": 47.752564008213966,
+   "allow_lcp": 103.5,
+   "ok": true
+  }
+ ],
+ "plug_bending_MPa": 35.63585897801038,
+ "capacity_N_at_15mm": {
+  "LCP-GF40": {
+   "+y outboard": {
+    "F_blind_end": 807.45,
+    "F_trough": 0.31,
+    "F_max": 0.31
+   },
+   "-y inboard": {
+    "F_blind_end": 5.65,
+    "F_trough": 999,
+    "F_max": 5.65
+   },
+   "+z face": {
+    "F_blind_end": 2.09,
+    "F_trough": 1.17,
+    "F_max": 1.17
+   }
+  },
+  "PEEK": {
+   "+y outboard": {
+    "F_blind_end": 3700.99,
+    "F_trough": 0.41,
+    "F_max": 0.41
+   },
+   "-y inboard": {
+    "F_blind_end": 9.36,
+    "F_trough": 999,
+    "F_max": 9.36
+   },
+   "+z face": {
+    "F_blind_end": 3.06,
+    "F_trough": 1.54,
+    "F_max": 1.54
+   }
+  },
+  "PEEK-GF30": {
+   "+y outboard": {
+    "F_blind_end": 1703.16,
+    "F_trough": 0.48,
+    "F_max": 0.48
+   },
+   "-y inboard": {
+    "F_blind_end": 9.38,
+    "F_trough": 999,
+    "F_max": 9.38
+   },
+   "+z face": {
+    "F_blind_end": 3.35,
+    "F_trough": 1.81,
+    "F_max": 1.81
+   }
+  },
+  "Y-TZP": {
+   "+y outboard": {
+    "F_blind_end": 776.26,
+    "F_trough": 2.24,
+    "F_max": 2.24
+   },
+   "-y inboard": {
+    "F_blind_end": 36.15,
+    "F_trough": 999,
+    "F_max": 36.15
+   },
+   "+z face": {
+    "F_blind_end": 15.55,
+    "F_trough": 7.85,
+    "F_max": 7.85
+   }
+  },
+  "Ti-6Al-4V": {
+   "+y outboard": {
+    "F_blind_end": 1058.53,
+    "F_trough": 3.05,
+    "F_max": 3.05
+   },
+   "-y inboard": {
+    "F_blind_end": 49.3,
+    "F_trough": 999,
+    "F_max": 49.3
+   },
+   "+z face": {
+    "F_blind_end": 21.2,
+    "F_trough": 10.71,
+    "F_max": 10.71
+   }
+  },
+  "17-4PH H900": {
+   "+y outboard": {
+    "F_blind_end": 1411.37,
+    "F_trough": 4.07,
+    "F_max": 4.07
+   },
+   "-y inboard": {
+    "F_blind_end": 65.73,
+    "F_trough": 999,
+    "F_max": 65.73
+   },
+   "+z face": {
+    "F_blind_end": 28.27,
+    "F_trough": 14.28,
+    "F_max": 14.28
+   }
+  },
+  "Zr-BMG": {
+   "+y outboard": {
+    "F_blind_end": 1646.6,
+    "F_trough": 4.75,
+    "F_max": 4.75
+   },
+   "-y inboard": {
+    "F_blind_end": 76.69,
+    "F_trough": 999,
+    "F_max": 76.69
+   },
+   "+z face": {
+    "F_blind_end": 32.98,
+    "F_trough": 16.66,
+    "F_max": 16.66
+   }
+  }
+ },
+ "elastic_bed_capacity_N": {
+  "13.8 (as decided)": {
+   "LCP-GF40": {
+    "+y": 0.47,
+    "z": 1.12,
+    "min": 0.47
+   },
+   "PEEK": {
+    "+y": 0.77,
+    "z": 1.47,
+    "min": 0.77
+   },
+   "PEEK-GF30": {
+    "+y": 0.78,
+    "z": 1.72,
+    "min": 0.78
+   },
+   "Y-TZP": {
+    "+y": 2.03,
+    "z": 7.68,
+    "min": 2.03
+   },
+   "Ti-6Al-4V": {
+    "+y": 2.77,
+    "z": 10.47,
+    "min": 2.77
+   },
+   "17-4PH H900": {
+    "+y": 3.69,
+    "z": 13.96,
+    "min": 3.69
+   },
+   "Zr-BMG": {
+    "+y": 4.31,
+    "z": 16.29,
+    "min": 4.31
+   }
+  },
+  "13.2 (CR-AUD-1)": {
+   "LCP-GF40": {
+    "+y": 2.03,
+    "z": 1.12,
+    "min": 1.12
+   },
+   "PEEK": {
+    "+y": 3.37,
+    "z": 1.47,
+    "min": 1.47
+   },
+   "PEEK-GF30": {
+    "+y": 3.37,
+    "z": 1.72,
+    "min": 1.72
+   },
+   "Y-TZP": {
+    "+y": 8.82,
+    "z": 7.68,
+    "min": 7.68
+   },
+   "Ti-6Al-4V": {
+    "+y": 12.03,
+    "z": 10.47,
+    "min": 10.47
+   },
+   "17-4PH H900": {
+    "+y": 16.04,
+    "z": 13.96,
+    "min": 13.96
+   },
+   "Zr-BMG": {
+    "+y": 18.72,
+    "z": 16.29,
+    "min": 16.29
+   }
+  }
+ },
+ "passing_10N": {
+  "13.8 (as decided)": [],
+  "13.2 (CR-AUD-1)": [
+   "Ti-6Al-4V",
+   "17-4PH H900",
+   "Zr-BMG"
+  ]
+ }
+}

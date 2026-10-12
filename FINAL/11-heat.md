@@ -1,5 +1,7 @@
 # BUDLUM LEAF · THE DIRECTIVE · PART 11 · THE HEAT DOCTRINE
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the local renderer is a fixed-function compositor in `U1` with four jobs. No program runs on the device. Part 21, Section 21.5.6.
+
 **The order that created this part:** *look at what can be done so that it does not heat up.* `[DECISION]`
 
 ---

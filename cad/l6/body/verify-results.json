@@ -1,0 +1,491 @@
+{
+ "checks": {
+  "C1 tile count": [
+   {
+    "ok": true,
+    "tiles": 128,
+    "per_quadrant": {
+     "Q1": 32,
+     "Q2": 32,
+     "Q3": 32,
+     "Q4": 32
+    }
+   },
+   {
+    "ok": true,
+    "tiles": 128,
+    "per_quadrant": {
+     "Q1": 32,
+     "Q2": 32,
+     "Q3": 32,
+     "Q4": 32
+    }
+   },
+   {
+    "ok": true,
+    "tiles": 128,
+    "per_quadrant": {
+     "Q1": 32,
+     "Q2": 32,
+     "Q3": 32,
+     "Q4": 32
+    }
+   }
+  ],
+  "C2 lattice envelope": [
+   {
+    "ok": true,
+    "stretch_factor": 1.0,
+    "envelope_mm": [
+     80.0,
+     160.0
+    ],
+    "expected_mm": [
+     80.0,
+     160.0
+    ],
+    "area_ratio": 1.0
+   },
+   {
+    "ok": true,
+    "stretch_factor": 1.25442,
+    "envelope_mm": [
+     100.354,
+     200.708
+    ],
+    "expected_mm": [
+     100.354,
+     200.708
+    ],
+    "area_ratio": 1.5736
+   },
+   {
+    "ok": true,
+    "stretch_factor": 1.41421,
+    "envelope_mm": [
+     113.137,
+     226.274
+    ],
+    "expected_mm": [
+     113.137,
+     226.274
+    ],
+    "area_ratio": 2.0
+   }
+  ],
+  "C3 STL bounding box": [
+   {
+    "ok": true,
+    "stl_mm": [
+     79.99,
+     159.99,
+     2.0
+    ],
+    "chamfer_loss_mm": [
+     0.01,
+     0.01
+    ]
+   },
+   {
+    "ok": true,
+    "stl_mm": [
+     100.006,
+     200.359,
+     2.0
+    ],
+    "chamfer_loss_mm": [
+     0.348,
+     0.348
+    ]
+   },
+   {
+    "ok": true,
+    "stl_mm": [
+     112.345,
+     225.482,
+     2.0
+    ],
+    "chamfer_loss_mm": [
+     0.792,
+     0.792
+    ]
+   }
+  ],
+  "C4 tile overlap": [
+   {
+    "ok": true,
+    "max_overlap_mm2": "0.00e+00"
+   },
+   {
+    "ok": true,
+    "max_overlap_mm2": "0.00e+00"
+   },
+   {
+    "ok": true,
+    "max_overlap_mm2": "0.00e+00"
+   }
+  ],
+  "C4 ribbon and ball clash": [
+   {
+    "ok": true,
+    "ribbon_vs_foreign_tile": 0,
+    "ribbon_vs_ribbon": 0,
+    "ball_vs_tile": 0,
+    "ball_to_ribbon_z_gap_mm": 0.02
+   },
+   {
+    "ok": true,
+    "ribbon_vs_foreign_tile": 0,
+    "ribbon_vs_ribbon": 0,
+    "ball_vs_tile": 0,
+    "ball_to_ribbon_z_gap_mm": 0.02
+   },
+   {
+    "ok": true,
+    "ribbon_vs_foreign_tile": 0,
+    "ribbon_vs_ribbon": 0,
+    "ball_vs_tile": 0,
+    "ball_to_ribbon_z_gap_mm": 0.02
+   }
+  ],
+  "C5 hinge corner coincidence": [
+   {
+    "ok": true,
+    "hinges": 232,
+    "max_pivot_gap_mm": "0.0e+00",
+    "max_uses_per_corner": 1,
+    "split_couplers": 24
+   },
+   {
+    "ok": true,
+    "hinges": 232,
+    "max_pivot_gap_mm": "1.4e-14",
+    "max_uses_per_corner": 1,
+    "split_couplers": 24
+   },
+   {
+    "ok": true,
+    "hinges": 232,
+    "max_pivot_gap_mm": "1.4e-14",
+    "max_uses_per_corner": 1,
+    "split_couplers": 24
+   }
+  ],
+  "C6 watertight STL": [
+   {
+    "ok": true,
+    "bodies": 390,
+    "expected": 390,
+    "all_watertight": true,
+    "min_body_volume_mm3": "6.25e-03",
+    "faces": 98000,
+    "size_MB": 4.9
+   },
+   {
+    "ok": true,
+    "bodies": 390,
+    "expected": 390,
+    "all_watertight": true,
+    "min_body_volume_mm3": "6.28e-03",
+    "faces": 98000,
+    "size_MB": 4.9
+   },
+   {
+    "ok": true,
+    "bodies": 390,
+    "expected": 390,
+    "all_watertight": true,
+    "min_body_volume_mm3": "6.30e-03",
+    "faces": 98000,
+    "size_MB": 4.9
+   }
+  ],
+  "C7 ribbon chord": [
+   {
+    "ok": true,
+    "max_chord_mm": 0.56,
+    "ribbon_len_mm": 0.8,
+    "sagitta_mm": 0.2383
+   },
+   {
+    "ok": true,
+    "max_chord_mm": 0.7025,
+    "ribbon_len_mm": 0.8,
+    "sagitta_mm": 0.1636
+   },
+   {
+    "ok": true,
+    "max_chord_mm": 0.792,
+    "ribbon_len_mm": 0.8,
+    "sagitta_mm": 0.0489
+   }
+  ],
+  "C11 kinematic seat": [
+   {
+    "ok": true,
+    "balls": 6,
+    "per_quadrant": {
+     "Q1": 3,
+     "Q2": 3,
+     "Q3": 3,
+     "Q4": 3
+    }
+   }
+  ],
+  "C8 void diagonal": [
+   {
+    "ok": true,
+    "short_mm": 6.014,
+    "long_mm": 19.074,
+    "expected": [
+     6.014,
+     19.074
+    ]
+   },
+   {
+    "ok": true,
+    "short_mm": 14.142,
+    "long_mm": 14.142,
+    "expected": [
+     14.142,
+     14.142
+    ]
+   }
+  ],
+  "C9 facet audit": [
+   {
+    "ok": true,
+    "max_facet_turn_deg": 46.28,
+    "limit_deg": 47.0,
+    "creases_over_limit": 0,
+    "note": "a 90 deg edge split into 2 or more facets turns 45 deg or less"
+   }
+  ],
+  "C9 measured radii (STL vertices)": [
+   {
+    "ok": true,
+    "perimeter_front": 0.65,
+    "perimeter_back": 0.65,
+    "cap_top_break": 0.03,
+    "back_break": 0.03,
+    "plan_corner_R": 6.35,
+    "chamfer_corner_round": 0.03
+   }
+  ],
+  "C9 run-out": [
+   {
+    "ok": true,
+    "perimeter_tile_radius_range_mm": [
+     0.03,
+     0.65
+    ],
+    "run_out_mm": 2.0
+   }
+  ],
+  "C9 kerf and edge pixel untouched": [
+   {
+    "ok": true,
+    "footprint_at_midplane_mm": [
+     9.99,
+     9.99
+    ],
+    "break_inset_at_glass_layer_mm": 0.0,
+    "glass_layer_z_mm": [
+     1.45,
+     1.7
+    ]
+   }
+  ],
+  "C10 cell inside tile": [
+   {
+    "ok": true,
+    "tiles_with_cell_outside": 4,
+    "corner_cell_notch_mm2": 5.804,
+    "body_cell_area_loss_pct": 0.212,
+    "note": "only the four R 6.35 corner tiles clip the cell"
+   }
+  ],
+  "STL total size": [
+   {
+    "ok": true,
+    "total_MB": 14.7
+   }
+  ]
+ },
+ "states": {
+  "rest": {
+   "stretch": 1.0,
+   "envelope": [
+    80.0,
+    160.0
+   ],
+   "stl_bbox": [
+    79.98999786376953,
+    159.99000549316406,
+    2.0
+   ],
+   "coverage": 0.9892283938282068,
+   "coverage_unchamfered": 1.0
+  },
+  "default": {
+   "stretch": 1.2544227502525,
+   "envelope": [
+    100.3538200202,
+    200.7076400404
+   ],
+   "stl_bbox": [
+    100.00557708740234,
+    200.35939025878906,
+    2.0
+   ],
+   "coverage": 0.6286497249044479,
+   "coverage_unchamfered": 0.6354950270600722
+  },
+  "max": {
+   "stretch": 1.414213562373095,
+   "envelope": [
+    113.1370849898476,
+    226.2741699796952
+   ],
+   "stl_bbox": [
+    112.34512329101562,
+    225.48220825195312,
+    2.0
+   ],
+   "coverage": 0.49461419691410347,
+   "coverage_unchamfered": 0.5000000000000001
+  }
+ },
+ "seat": {
+  "Q1": {
+   "balls": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     0.0,
+     70.0
+    ],
+    [
+     20.0,
+     0.0
+    ]
+   ],
+   "vee_axis_deg": [
+    -111.8,
+    98.7,
+    -63.4
+   ],
+   "triangle_mm2": 600.0
+  },
+  "Q2": {
+   "balls": [
+    [
+     0.0,
+     10.0
+    ],
+    [
+     0.0,
+     70.0
+    ],
+    [
+     -20.0,
+     0.0
+    ]
+   ],
+   "vee_axis_deg": [
+    -68.2,
+    81.3,
+    -116.6
+   ],
+   "triangle_mm2": 600.0
+  },
+  "Q3": {
+   "balls": [
+    [
+     0.0,
+     -10.0
+    ],
+    [
+     0.0,
+     -70.0
+    ],
+    [
+     -20.0,
+     0.0
+    ]
+   ],
+   "vee_axis_deg": [
+    68.2,
+    -81.3,
+    116.6
+   ],
+   "triangle_mm2": 600.0
+  },
+  "Q4": {
+   "balls": [
+    [
+     0.0,
+     -10.0
+    ],
+    [
+     0.0,
+     -70.0
+    ],
+    [
+     20.0,
+     0.0
+    ]
+   ],
+   "vee_axis_deg": [
+    111.8,
+    -98.7,
+    63.4
+   ],
+   "triangle_mm2": 600.0
+  }
+ },
+ "edge_radii_measured": {
+  "perimeter_front": 0.65,
+  "perimeter_back": 0.65,
+  "cap_top_break": 0.03,
+  "back_break": 0.03,
+  "plan_corner_R": 6.35,
+  "chamfer_corner_round": 0.03
+ },
+ "cell_notch": {
+  "tiles": [
+   {
+    "tile": [
+     0,
+     0
+    ],
+    "cell_outside_mm2": 5.804
+   },
+   {
+    "tile": [
+     7,
+     0
+    ],
+    "cell_outside_mm2": 5.804
+   },
+   {
+    "tile": [
+     0,
+     15
+    ],
+    "cell_outside_mm2": 5.804
+   },
+   {
+    "tile": [
+     7,
+     15
+    ],
+    "cell_outside_mm2": 5.804
+   }
+  ],
+  "loss_fraction": 0.002119795471146823
+ },
+ "fails": []
+}

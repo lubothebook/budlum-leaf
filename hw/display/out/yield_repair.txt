@@ -1,0 +1,38 @@
+chips per device 20.48 M, uICs 1.28 M, TGVs 36864
+
+  p_chip   p_uIC      r | chip faults uIC faults  repairs repair min | resid/tile P(<5) no sort KGT yield P(<5) KGT
+-------------------------------------------------------------------------------------------------------------------
+   1e-04   1e-04  0.950 |        2048      128.0     1254       43.9 |   4.41e-02        0.3064    0.9569    1.0000
+   1e-04   1e-04  0.990 |        2048      128.0     1254       42.2 |   2.06e-02        0.8423    0.9796    1.0000
+   1e-04   1e-05  0.950 |        2048       12.8     1139       39.9 |   4.01e-02        0.3852    0.9607    1.0000
+   1e-04   1e-05  0.990 |        2048       12.8     1139       38.4 |   1.87e-02        0.8785    0.9815    1.0000
+   1e-05   1e-04  0.950 |         205      128.0      241        8.4 |   8.46e-03        0.9899    0.9916    1.0000
+   1e-05   1e-04  0.990 |         205      128.0      241        8.1 |   3.95e-03        0.9992    0.9961    1.0000
+   1e-05   1e-05  0.950 |         205       12.8      125        4.4 |   4.41e-03        0.9988    0.9956    1.0000
+   1e-05   1e-05  0.990 |         205       12.8      125        4.2 |   2.06e-03        0.9999    0.9979    1.0000
+   1e-06   1e-04  0.950 |          20      128.0      139        4.9 |   4.90e-03        0.9984    0.9951    1.0000
+   1e-06   1e-04  0.990 |          20      128.0      139        4.7 |   2.28e-03        0.9998    0.9977    1.0000
+   1e-06   1e-05  0.950 |          20       12.8       24        0.8 |   8.46e-04        1.0000    0.9992    1.0000
+   1e-06   1e-05  0.990 |          20       12.8       24        0.8 |   3.95e-04        1.0000    0.9996    1.0000
+
+reading the table
+ - 'chip faults' counts every bad chip; the red twin absorbs 90 % of the red ones.
+ - 'repairs' are the laser re-place events per device; 'repair min' is the line time.
+ - 'KGT yield' is the share of tiles that leave repair with zero dead pixels.
+ - with known-good tiles the device count is set by assembly damage only.
+
+  p_chip 1.0e-06: repairs/device      24,    0.8 min
+  p_chip 1.8e-06: repairs/device      33,    1.1 min
+  p_chip 3.2e-06: repairs/device      48,    1.6 min
+  p_chip 5.6e-06: repairs/device      76,    2.5 min
+  p_chip 1.0e-05: repairs/device     125,    4.2 min
+  p_chip 1.8e-05: repairs/device     213,    7.1 min
+  p_chip 3.2e-05: repairs/device     369,   12.3 min
+  p_chip 5.6e-05: repairs/device     646,   21.5 min
+  p_chip 1.0e-04: repairs/device    1139,   38.0 min
+
+  TGV p 1e-05: expected dead uIC rows per device 1.3e-06 (doubled data vias)
+  TGV p 1e-04: expected dead uIC rows per device 1.3e-04 (doubled data vias)
+
+seam rule: the edge band (2 px each side of a cut) has 1 596 px per tile edge pair;
+a dead pixel there doubles the local gap to 100 um, so the KGT bin rejects any edge-band dead pixel.

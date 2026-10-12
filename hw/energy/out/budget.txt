@@ -1,0 +1,39 @@
+stores (Wh, nominal): G target 600 Wh/L 5.90, G model 6.83, S target 750 Wh/L 7.38, S model 8.36, B cell 0.144
+
+use case                                   body      B   batt |         Gt         Gm         St         Sm  (h, body + B cell)
+wallet standby, screen off, Wi-Fi TWT     0.000  0.055  0.061 |      94.88     109.40     118.07     133.48
+rear display glance, body dark            0.000  0.105  0.117 |      49.69      57.29      61.83      69.91
+safe screen, no link                      0.120  0.080  0.219 |      26.42      30.47      32.88      37.17
+static page at 10 Hz                      0.170  0.180  0.385 |      15.05      17.36      18.73      21.18
+music on the 3.5 mm jack, screen off      0.000  0.230  0.256 |      22.67      26.14      28.21      31.90
+voice call on 5G, screen off              0.000  0.730  0.813 |       7.13       8.22       8.87      10.03
+delta session, 250 nits, Wi-Fi            0.800  1.220  2.242 |       2.59       2.98       3.22       3.64
+delta session at 41 % stretch             0.810  1.270  2.310 |       2.51       2.90       3.12       3.53
+50 MP camera, viewfinder and upload       0.800  2.170  3.318 |       1.75       2.02       2.18       2.46
+video session, Wi-Fi                      1.350  1.920  3.646 |       1.59       1.83       1.98       2.24
+video outdoors, 800 nits, 5G              4.240  2.420  7.482 |       0.78       0.89       0.96       1.09
+
+FINAL/21 check, 2.0 W at the loads (2.21 W at the cells): G target 600 Wh/L 2.62 h, G model 3.02 h, S target 750 Wh/L 3.26 h, S model 3.68 h
+FINAL/21 check, 3.0 W at the loads (3.33 W at the cells): G target 600 Wh/L 1.74 h, G model 2.01 h, S target 750 Wh/L 2.16 h, S model 2.45 h
+path to 3.7 h: 2.0 W (0.8 body at 0.95, 1.2 ring at 0.93) on S model: 2.15 W at the cells, 3.80 h
+
+B cell: 20 x 8 x 1.50 mm = 240 mm3, 0.144 Wh, 37.2 mAh at 3.87 V
+  swap holdover (radios kept, decoder idle) 0.40 W   19.7 min at 2.9 C
+  B alone, rear glance 0.105 W                       75.0 min at 0.8 C
+  B alone, wallet standby 0.055 W                   143.3 min at 0.4 C
+  B alone, voice call on 5G 0.73 W                   10.8 min at 5.3 C
+  fit: inner edge of the cell at most 3.18 mm from the centre; camera edge at 3.00 mm; clearance 0.18 mm
+  same cell in the hermetic can build [G]: 0.189 Wh at 788 Wh/L
+  same cell in the hermetic can build [S]: 0.226 Wh at 943 Wh/L
+  B peak 4.50 W from the cell alone would be 33 C: the body bus carries peaks, the cell does not
+
+dock pack: 2 x pouch 70 x 60 x 3.7 mm at 650 Wh/L = 20.20 Wh, 1S2P, 5220 mAh
+dock pack 20 Wh: delivered to the cells by Qi 12.9 Wh, by the 12 pads 17.2 Wh
+  G target 600 Wh/L    refills: Qi 2.13, pads 2.84
+  G model              refills: Qi 1.84, pads 2.46
+  S target 750 Wh/L    refills: Qi 1.71, pads 2.28
+  S model              refills: Qi 1.51, pads 2.02
+  three pad refills of the 750 Wh/L body need a 26.3 Wh dock pack
+
+Qi2.2 25 W into G target 600 Wh/L: 50 % in 8.7 min, 70 % in 12.2 min, full in about 27 min (thermal permitting, ENR-24)
+Qi2.2 25 W into S target 750 Wh/L: 50 % in 10.9 min, 70 % in 15.2 min, full in about 34 min (thermal permitting, ENR-24)

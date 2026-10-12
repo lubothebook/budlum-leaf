@@ -1,0 +1,16 @@
+# The buf gate of the Leaf wire protocol. Same shape as /home/claude/budlum/buf.yaml.
+# Unlike budlum.network, the package budlum.leaf.v1 needs no lint exemption.
+version: v2
+modules:
+  - path: .
+    excludes:
+      - out
+      - tools
+      - tests
+      - model
+lint:
+  use:
+    - STANDARD
+breaking:
+  use:
+    - WIRE_JSON

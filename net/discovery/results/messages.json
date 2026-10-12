@@ -1,0 +1,78 @@
+{
+ "L0 beacon (BLE ext adv AD)": {
+  "bytes": 58,
+  "limit": 254,
+  "fits": true,
+  "carrier": "BLE AUX_ADV_IND",
+  "ble_ms": 0.33,
+  "nan_ms": 0.009
+ },
+ "L0RangingOffer": {
+  "bytes": 1231,
+  "limit": null,
+  "fits": true,
+  "carrier": "BLE L2CAP CoC or NAN",
+  "ble_ms": 7.03,
+  "nan_ms": 0.197
+ },
+ "L0RangingAccept": {
+  "bytes": 7022,
+  "limit": null,
+  "fits": true,
+  "carrier": "BLE L2CAP CoC or NAN",
+  "ble_ms": 40.13,
+  "nan_ms": 1.124
+ },
+ "L0RangingReport": {
+  "bytes": 35,
+  "limit": 127,
+  "fits": true,
+  "carrier": "UWB data frame",
+  "ble_ms": 0.2,
+  "nan_ms": 0.006
+ },
+ "BootstrapQuery": {
+  "bytes": 256,
+  "limit": 256,
+  "fits": true,
+  "carrier": "QUIC stream, padded",
+  "ble_ms": 1.46,
+  "nan_ms": 0.041
+ },
+ "BootstrapReply (5 candidates)": {
+  "bytes": 6623,
+  "limit": null,
+  "fits": true,
+  "carrier": "QUIC stream",
+  "ble_ms": 37.85,
+  "nan_ms": 1.06
+ },
+ "PathProbe (no clock)": {
+  "bytes": 11,
+  "limit": 64,
+  "fits": true,
+  "carrier": "QUIC 1-RTT, padded 64",
+  "ble_ms": 0.06,
+  "nan_ms": 0.002
+ },
+ "CoverageClaim": {
+  "bytes": 3408,
+  "limit": null,
+  "fits": true,
+  "carrier": "transaction",
+  "ble_ms": 19.47,
+  "nan_ms": 0.545
+ },
+ "ChallengeReport": {
+  "bytes": 6817,
+  "limit": null,
+  "fits": true,
+  "carrier": "transaction",
+  "ble_ms": 38.95,
+  "nan_ms": 1.091
+ },
+ "L0 key exchange time": {
+  "ble_ms": 47.2,
+  "nan_ms": 1.32
+ }
+}

@@ -1,0 +1,5 @@
+frame 1600 x 3200, 20 MB RGBA8, 240 frames, 4 cores
+threads 1: render + 16 slice hashes per frame: mean 78.35 ms, p50 74.53 ms, p99 137.23 ms
+threads 4: render + 16 slice hashes per frame: mean 82.65 ms, p50 79.98 ms, p99 124.00 ms
+raster only, one thread: mean 29.91 ms, p50 30.25 ms, p99 58.95 ms
+SHA-256 of one full frame, one thread: 30.84 ms

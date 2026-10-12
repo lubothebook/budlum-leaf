@@ -1,0 +1,129 @@
+{
+ "inputs": {
+  "K_METRO": 3,
+  "K_COVER": 2,
+  "CITY_DENSITY": 4000.0,
+  "SESS_PER_SITE": 256,
+  "PEAK_CONC": 0.15,
+  "WORLD_CITIES": 12000
+ },
+ "regions": {
+  "Turkey": {
+   "cities": 189,
+   "zipf_exponent": 1.22,
+   "largest_city_model": 15686486,
+   "metro_sites_20km": 579,
+   "hex_cells_100km": 29,
+   "cover_extra_sites_100km": {
+    "low": 0,
+    "high": 58
+   },
+   "geometric_sites": {
+    "low": 579,
+    "high": 637
+   },
+   "capacity_sites": {
+    "adoption_1pct": {
+     "C state-hot": 555,
+     "D render-hot": 1009,
+     "concurrent_sessions": 129138
+    },
+    "adoption_10pct": {
+     "C state-hot": 5549,
+     "D render-hot": 10089,
+     "concurrent_sessions": 1291383
+    },
+    "adoption_50pct": {
+     "C state-hot": 27745,
+     "D render-hot": 50445,
+     "concurrent_sessions": 6456913
+    }
+   },
+   "sites_needed": {
+    "adoption_1pct": 637,
+    "adoption_10pct": 5549,
+    "adoption_50pct": 27745
+   },
+   "fibre_rtt_at_20km_ms": 0.392,
+   "fibre_rtt_at_100km_ms": 1.469
+  },
+  "EU-27": {
+   "cities": 571,
+   "zipf_exponent": 0.73,
+   "largest_city_model": 10087136,
+   "metro_sites_20km": 1725,
+   "hex_cells_100km": 147,
+   "cover_extra_sites_100km": {
+    "low": 0,
+    "high": 294
+   },
+   "geometric_sites": {
+    "low": 1725,
+    "high": 2019
+   },
+   "capacity_sites": {
+    "adoption_1pct": {
+     "C state-hot": 2903,
+     "D render-hot": 5279,
+     "concurrent_sessions": 675600
+    },
+    "adoption_10pct": {
+     "C state-hot": 29030,
+     "D render-hot": 52782,
+     "concurrent_sessions": 6756000
+    },
+    "adoption_50pct": {
+     "C state-hot": 145149,
+     "D render-hot": 263907,
+     "concurrent_sessions": 33780000
+    }
+   },
+   "sites_needed": {
+    "adoption_1pct": 2903,
+    "adoption_10pct": 29030,
+    "adoption_50pct": 145149
+   },
+   "fibre_rtt_at_20km_ms": 0.392,
+   "fibre_rtt_at_100km_ms": 1.469
+  },
+  "World": {
+   "cities": 12000,
+   "zipf_exponent": 0.61,
+   "largest_city_model": 37674865,
+   "metro_sites_20km": 36189,
+   "hex_cells_100km": 4003,
+   "cover_extra_sites_100km": {
+    "low": 0,
+    "high": 8006
+   },
+   "geometric_sites": {
+    "low": 36189,
+    "high": 44195
+   },
+   "capacity_sites": {
+    "adoption_1pct": {
+     "C state-hot": 52852,
+     "D render-hot": 96094,
+     "concurrent_sessions": 12300000
+    },
+    "adoption_10pct": {
+     "C state-hot": 528516,
+     "D render-hot": 960938,
+     "concurrent_sessions": 123000000
+    },
+    "adoption_50pct": {
+     "C state-hot": 2642579,
+     "D render-hot": 4804688,
+     "concurrent_sessions": 615000000
+    }
+   },
+   "sites_needed": {
+    "adoption_1pct": 52852,
+    "adoption_10pct": 528516,
+    "adoption_50pct": 2642579
+   },
+   "fibre_rtt_at_20km_ms": 0.392,
+   "fibre_rtt_at_100km_ms": 1.469
+  }
+ }
+}

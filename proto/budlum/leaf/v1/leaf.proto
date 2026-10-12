@@ -1,0 +1,880 @@
+// Budlum Leaf wire protocol, version 1.0 (L.6.0).
+//
+// The protocol between a Leaf (a wallet with fixed-function silicon, no CPU)
+// and the Budlum validator that serves it. Source of truth: FINAL/21 Section
+// 21.5, FINAL/08 and FINAL/10. Conventions follow /home/claude/budlum:
+// proto3, buf v2 STANDARD lint, SHA3-256 hashes, ML-DSA (FIPS 204) keys,
+// BDLM_* domain-separation tags. Unlike budlum.network, this package starts
+// lint-clean: a versioned package name, *_UNSPECIFIED zero values and
+// prefixed enum values.
+//
+// Wire rules (see proto/VERSIONING.md):
+//  * Every message on the wire is a LeafMessage.
+//  * Encoding is canonical: fields in ascending number order, minimal
+//    varints, proto3 defaults omitted, packed repeated scalars, no unknown
+//    fields inside a MAC or signature scope. U6 parses SliceHeader in
+//    hardware and rejects a non-canonical header (ERROR_CODE_NON_CANONICAL).
+//  * A MAC or signature covers the canonical bytes of the message with the
+//    mac/signature/tag field absent. A KMAC takes its BDLM tag as the
+//    customisation string S; a signature signs BDLM tag || bytes.
+//  * Hashes are SHA3-256 (32 bytes). Line-rate tags are KMAC256, 16 bytes.
+//  * Sizes: ML-DSA-44 pk 1312 / sig 2420, ML-DSA-65 pk 1952 / sig 3309,
+//    ML-DSA-87 pk 2592 / sig 4627 bytes.
+//
+// Field numbers 1..15 encode their key in one byte. The hot path messages
+// (Slice, InputBatch, FrameCommit, AudioFrame) take the lowest numbers.
+
+syntax = "proto3";
+
+package budlum.leaf.v1;
+
+// ---------------------------------------------------------------- enums ---
+
+enum SignatureScheme {
+  SIGNATURE_SCHEME_UNSPECIFIED = 0;
+  // Session key held in U7, authorised once by the wallet key.
+  SIGNATURE_SCHEME_ML_DSA_44 = 1;
+  // Validator consensus key (Budlum default validator PQ backend).
+  SIGNATURE_SCHEME_ML_DSA_65 = 2;
+  // Wallet key in U7 (Budlum user/wallet transactions).
+  SIGNATURE_SCHEME_ML_DSA_87 = 3;
+}
+
+enum Codec {
+  CODEC_UNSPECIFIED = 0;
+  CODEC_AV1 = 1;
+  CODEC_HEVC = 2;
+  // Uncompressed 10-bit tile, for bring-up and the safe-screen test only.
+  CODEC_RAW_TILE = 3;
+}
+
+// The class set of FINAL/08 Section 8.4. Fallback order C4, C3, C2, C1, C0b, C0.
+enum FrameClass {
+  FRAME_CLASS_UNSPECIFIED = 0;
+  FRAME_CLASS_C0_SAFE = 1;
+  FRAME_CLASS_C0B_MODEL = 2;
+  FRAME_CLASS_C1_DELTA = 3;
+  FRAME_CLASS_C2_VIDEO = 4;
+  FRAME_CLASS_C3_STILL = 5;
+  FRAME_CLASS_C4_CAMERA_UP = 6;
+}
+
+enum PathKind {
+  PATH_KIND_UNSPECIFIED = 0;
+  PATH_KIND_WIFI = 1;
+  PATH_KIND_CELL = 2;
+  PATH_KIND_MMWAVE = 3;
+  PATH_KIND_SATELLITE = 4;
+  PATH_KIND_RELAY = 5;
+  PATH_KIND_OPTICAL = 6;
+}
+
+// The state words of FINAL/10 Section 10.5, shown on the class line.
+enum DistanceClass {
+  DISTANCE_CLASS_UNSPECIFIED = 0;
+  DISTANCE_CLASS_LOCAL = 1;
+  DISTANCE_CLASS_NEAR = 2;
+  DISTANCE_CLASS_FAR = 3;
+  DISTANCE_CLASS_DEFERRED = 4;
+}
+
+// The discovery layers of FINAL/21 Section 21.5.4.
+enum DiscoveryLayer {
+  DISCOVERY_LAYER_UNSPECIFIED = 0;
+  DISCOVERY_LAYER_L0_ROOM = 1;
+  DISCOVERY_LAYER_L1_METRO = 2;
+  DISCOVERY_LAYER_L1_CELL = 3;
+  DISCOVERY_LAYER_L2_FAR = 4;
+}
+
+// The energy tiers of FINAL/08 Section 8.3.
+enum EnergyTier {
+  ENERGY_TIER_UNSPECIFIED = 0;
+  ENERGY_TIER_HIGHEST = 1;
+  ENERGY_TIER_NORMAL = 2;
+  ENERGY_TIER_REDUCED = 3;
+  ENERGY_TIER_ESSENTIAL = 4;
+  ENERGY_TIER_RESERVE = 5;
+}
+
+enum Sensor {
+  SENSOR_UNSPECIFIED = 0;
+  SENSOR_CAMERA = 1;
+  SENSOR_MICROPHONE = 2;
+  SENSOR_IMU = 3;
+  SENSOR_UWB_RANGING = 4;
+  SENSOR_GAZE = 5;
+  SENSOR_LOCATION = 6;
+}
+
+enum Retention {
+  RETENTION_UNSPECIFIED = 0;
+  RETENTION_EPHEMERAL = 1;
+  RETENTION_SESSION = 2;
+  RETENTION_DAYS_30 = 3;
+  RETENTION_PERMANENT = 4;
+}
+
+enum ToolKind {
+  TOOL_KIND_UNSPECIFIED = 0;
+  TOOL_KIND_FINGER = 1;
+  TOOL_KIND_PEN = 2;
+  TOOL_KIND_PROXIMITY = 3;
+}
+
+enum TouchPhase {
+  TOUCH_PHASE_UNSPECIFIED = 0;
+  TOUCH_PHASE_DOWN = 1;
+  TOUCH_PHASE_MOVE = 2;
+  TOUCH_PHASE_UP = 3;
+  TOUCH_PHASE_CANCEL = 4;
+  TOUCH_PHASE_HOVER = 5;
+}
+
+enum SliceKind {
+  SLICE_KIND_UNSPECIFIED = 0;
+  SLICE_KIND_INTER = 1;
+  SLICE_KIND_INTRA = 2;
+  SLICE_KIND_INTRA_REFRESH = 3;
+  // No change in the tile range: U6 keeps the stored tiles (no full write).
+  SLICE_KIND_SKIP = 4;
+}
+
+enum TriggerKind {
+  TRIGGER_KIND_UNSPECIFIED = 0;
+  TRIGGER_KIND_SCROLL = 1;
+  TRIGGER_KIND_TAP = 2;
+  TRIGGER_KIND_MENU_OPEN = 3;
+  TRIGGER_KIND_KEY = 4;
+  TRIGGER_KIND_DRAG = 5;
+  TRIGGER_KIND_BACK = 6;
+}
+
+// The four jobs of the U1 compositor, FINAL/21 Section 21.5.6.
+enum CompositorJob {
+  COMPOSITOR_JOB_UNSPECIFIED = 0;
+  COMPOSITOR_JOB_PLAIN = 1;
+  COMPOSITOR_JOB_CURSOR = 2;
+  COMPOSITOR_JOB_SCROLL = 3;
+  COMPOSITOR_JOB_GLYPH_ECHO = 4;
+  COMPOSITOR_JOB_STRETCH_WARP = 5;
+}
+
+enum BlendMode {
+  BLEND_MODE_UNSPECIFIED = 0;
+  BLEND_MODE_OPAQUE = 1;
+  BLEND_MODE_ALPHA = 2;
+  BLEND_MODE_ADD = 3;
+}
+
+enum AtlasFormat {
+  ATLAS_FORMAT_UNSPECIFIED = 0;
+  // 8-bit coverage, row major.
+  ATLAS_FORMAT_A8 = 1;
+  // 8-bit coverage, run-length coded in fixed-function U1 logic.
+  ATLAS_FORMAT_A8_RLE = 2;
+  // RGBA 8888 for emoji and icons.
+  ATLAS_FORMAT_RGBA8 = 3;
+}
+
+enum HandoverReason {
+  HANDOVER_REASON_UNSPECIFIED = 0;
+  HANDOVER_REASON_RTT = 1;
+  HANDOVER_REASON_LOSS = 2;
+  HANDOVER_REASON_PRIMARY_LOST = 3;
+  HANDOVER_REASON_PLANNED = 4;
+  HANDOVER_REASON_DISTANCE = 5;
+  HANDOVER_REASON_CHAIN_MISMATCH = 6;
+}
+
+enum CaptureMode {
+  CAPTURE_MODE_UNSPECIFIED = 0;
+  // 8160 x 6144, one full-resolution frame.
+  CAPTURE_MODE_FULL_50MP = 1;
+  // 4080 x 3072 quad-Bayer binned frame.
+  CAPTURE_MODE_BINNED_12MP = 2;
+  // A burst of binned frames plus one full frame, for validator fusion.
+  CAPTURE_MODE_FUSION_BURST = 3;
+  // Binned 4K video frames from the ISP, see model/bitrate.py.
+  CAPTURE_MODE_VIDEO_4K = 4;
+}
+
+enum RawPacking {
+  RAW_PACKING_UNSPECIFIED = 0;
+  RAW_PACKING_RAW10 = 1;
+  RAW_PACKING_RAW12 = 2;
+  RAW_PACKING_RAW10_LOSSLESS = 3;
+  RAW_PACKING_RAW12_LOSSLESS = 4;
+}
+
+// The deadline classes of FINAL/10 Section 10.3, stated before the shutter.
+enum DeadlineClass {
+  DEADLINE_CLASS_UNSPECIFIED = 0;
+  DEADLINE_CLASS_INTERACTIVE_5S = 1;
+  DEADLINE_CLASS_STANDARD_60S = 2;
+  DEADLINE_CLASS_DEFERRABLE = 3;
+}
+
+enum AudioCodec {
+  AUDIO_CODEC_UNSPECIFIED = 0;
+  AUDIO_CODEC_OPUS = 1;
+  AUDIO_CODEC_LC3 = 2;
+  AUDIO_CODEC_PCM16 = 3;
+}
+
+enum AudioDirection {
+  AUDIO_DIRECTION_UNSPECIFIED = 0;
+  AUDIO_DIRECTION_DOWNLINK = 1;
+  AUDIO_DIRECTION_UPLINK_MIC = 2;
+}
+
+// Error codes. Ranges: 1xx version and admission, 2xx integrity, 3xx the
+// refusal set R1..R10 of FINAL/08 Section 8.7, 4xx stream, 5xx path,
+// 6xx handover, 7xx capture and audio, 8xx energy, 9xx internal.
+enum ErrorCode {
+  ERROR_CODE_UNSPECIFIED = 0;
+  ERROR_CODE_VERSION_UNSUPPORTED = 100;
+  ERROR_CODE_CHAIN_ID_MISMATCH = 101;
+  ERROR_CODE_ANCHOR_MISMATCH = 102;
+  ERROR_CODE_VALIDATOR_NOT_ACTIVE = 103;
+  ERROR_CODE_APP_NOT_ON_CHAIN = 104;
+  ERROR_CODE_GRANT_EXPIRED = 105;
+  ERROR_CODE_GRANT_BAD_SIGNATURE = 106;
+  ERROR_CODE_CAPACITY = 107;
+  ERROR_CODE_DISTANCE_PROOF_FAILED = 108;
+  ERROR_CODE_NETWORK_SET_CHANGE_REFUSED = 109;
+  ERROR_CODE_SLICE_MAC_FAILED = 200;
+  ERROR_CODE_INPUT_TAG_FAILED = 201;
+  ERROR_CODE_CHAIN_HASH_MISMATCH = 202;
+  ERROR_CODE_MERKLE_ROOT_MISMATCH = 203;
+  ERROR_CODE_RECEIPT_BAD_SIGNATURE = 204;
+  ERROR_CODE_REPLAY = 205;
+  ERROR_CODE_NON_CANONICAL = 206;
+  ERROR_CODE_UPDATE_BAD_MAC = 207;
+  ERROR_CODE_R1_MODEL_NOT_LEASED = 301;
+  ERROR_CODE_R2_PURPOSE_MISMATCH = 302;
+  ERROR_CODE_R3_LEASE_EXPIRED = 303;
+  ERROR_CODE_R4_SENSOR_NOT_LEASED = 304;
+  ERROR_CODE_R5_PART_RECORD_BAD = 305;
+  ERROR_CODE_R6_OPERATOR_UNTRUSTED = 306;
+  ERROR_CODE_R7_CLASS_NOT_CARRIED = 307;
+  ERROR_CODE_R8_MODEL_UNSIGNED = 308;
+  ERROR_CODE_R9_READ_WITHOUT_GRANT = 309;
+  ERROR_CODE_R10_LABEL_COVERED = 310;
+  ERROR_CODE_CODEC_UNSUPPORTED = 400;
+  ERROR_CODE_FRAME_STORE_FULL = 401;
+  ERROR_CODE_SLICE_LATE = 402;
+  ERROR_CODE_DECODE_ERROR = 403;
+  ERROR_CODE_SPECULATION_EXPIRED = 404;
+  ERROR_CODE_LAYER_LIMIT = 405;
+  ERROR_CODE_ATLAS_LIMIT = 406;
+  ERROR_CODE_PATH_LOST = 500;
+  ERROR_CODE_RTT_OVER_CLASS = 501;
+  ERROR_CODE_L4S_UNAVAILABLE = 502;
+  ERROR_CODE_MTU_TOO_SMALL = 503;
+  ERROR_CODE_PROBE_TIMEOUT = 504;
+  ERROR_CODE_SHADOW_NOT_IN_SYNC = 600;
+  ERROR_CODE_HANDOVER_TOO_LATE = 601;
+  ERROR_CODE_SHADOW_UNKNOWN = 602;
+  ERROR_CODE_CAPTURE_INCOMPLETE = 700;
+  ERROR_CODE_CAPTURE_DEADLINE_MISSED = 701;
+  ERROR_CODE_CAPTURE_HASH_MISMATCH = 702;
+  ERROR_CODE_AUDIO_UNDERRUN = 703;
+  ERROR_CODE_ENERGY_TIER_CHANGE = 800;
+  ERROR_CODE_THERMAL_LIMIT = 801;
+  ERROR_CODE_INTERNAL = 900;
+}
+
+// --------------------------------------------------------- common types ---
+
+message Signature {
+  SignatureScheme scheme = 1;
+  // SHA3-256 of the public key.
+  bytes key_id = 2;
+  bytes value = 3;
+}
+
+message Rect {
+  uint32 x = 1;
+  uint32 y = 2;
+  uint32 w = 3;
+  uint32 h = 4;
+}
+
+// FINAL/08 Section 8.5: the one stored anchor.
+message TrustAnchor {
+  uint64 checkpoint_height = 1;
+  bytes block_hash = 2;
+  bytes validator_set_hash = 3;
+}
+
+message VersionRange {
+  uint32 major = 1;
+  uint32 min_minor = 2;
+  uint32 max_minor = 3;
+}
+
+// The proof that a validator key is in the active set at a finalised height.
+message ActiveSetProof {
+  uint64 finality_height = 1;
+  bytes validator_set_hash = 2;
+  // SHA3-256 of the validator ML-DSA-65 public key.
+  bytes validator_key_hash = 3;
+  uint32 leaf_index = 4;
+  repeated bytes merkle_path = 5;
+  // SHA3-256 of the budlum.network.ProtoFinalityCert at finality_height.
+  bytes finality_cert_digest = 6;
+}
+
+// UWB secure ranging (L0, the room), FINAL/21 Section 21.5.4.
+message UwbDistanceProof {
+  bytes anchor_id = 1;
+  uint32 distance_cm = 2;
+  uint32 time_of_flight_ps = 3;
+  uint32 sts_index = 4;
+  bytes sts_digest = 5;
+}
+
+message DisplayCaps {
+  uint32 width_px = 1;
+  uint32 height_px = 2;
+  uint32 tiles_x = 3;
+  uint32 tiles_y = 4;
+  uint32 tile_px = 5;
+  uint32 refresh_hz = 6;
+  uint32 ppi = 7;
+  uint32 bit_depth = 8;
+  repeated Codec codecs = 9;
+  uint32 frame_store_bytes = 10;
+  uint32 max_slices_per_frame = 11;
+  // Largest stretch in permille (414 = 41.4 %).
+  uint32 max_stretch_permille = 12;
+  uint32 max_layers = 13;
+  uint32 atlas_bytes = 14;
+}
+
+// FINAL/08 Section 8.5: Wallet signs SessionGrant, which authorises a
+// session key in U7. ML-DSA-87 signs once per session, never per tap.
+message SessionGrant {
+  bytes wallet_address = 1;
+  SignatureScheme session_scheme = 2;
+  bytes session_public_key = 3;
+  // The on-chain program entry of the application (FINAL/21 Section 21.5.8).
+  bytes app_program_id = 4;
+  uint64 expiry_height = 5;
+  uint32 scope_flags = 6;
+  repeated FrameClass classes = 7;
+  repeated bytes operators = 8;
+  EnergyTier energy_tier = 9;
+  bytes nonce = 10;
+  Signature wallet_signature = 11;
+}
+
+message ClassRefusal {
+  FrameClass frame_class = 1;
+  ErrorCode code = 2;
+}
+
+// ------------------------------------------------------ hello, admission ---
+
+// Leaf to validator, first message on the control stream.
+message Hello {
+  VersionRange version = 1;
+  uint64 chain_id = 2;
+  // SHA3-256 of the U7 device attestation key.
+  bytes device_id = 3;
+  bytes wallet_public_key = 4;
+  TrustAnchor anchor = 5;
+  DisplayCaps display = 6;
+  SessionGrant grant = 7;
+  PathKind path = 8;
+  DiscoveryLayer discovery = 9;
+  UwbDistanceProof uwb = 10;
+  bytes client_nonce = 11;
+  // Non-zero to resume a session after a path loss.
+  uint64 resume_session_id = 12;
+  uint64 last_frame_shown = 13;
+  // Same strings as budlum.network.ProtoHandshake.supported_schemes.
+  repeated string supported_schemes = 14;
+}
+
+// Validator to Leaf. U7 checks active_set before any slice is shown (SW-22).
+message Admission {
+  uint32 version_major = 1;
+  uint32 version_minor = 2;
+  uint64 session_id = 3;
+  bytes validator_id = 4;
+  bytes validator_public_key = 5;
+  ActiveSetProof active_set = 6;
+  repeated FrameClass admitted_classes = 7;
+  repeated ClassRefusal refused = 8;
+  // U6 key slot of this validator. The key is the QUIC TLS exporter output
+  // with label EXPORTER-BDLM_LEAF_SLICE_MAC_V1, so no key travels on the wire.
+  uint32 key_slot = 9;
+  uint32 key_epoch = 10;
+  DistanceClass distance_class = 11;
+  uint32 measured_rtt_us = 12;
+  bytes server_nonce = 13;
+  // SHA3-256 over BDLM_LEAF_TRANSCRIPT_V1 || Hello || this message, no signature.
+  bytes transcript_hash = 14;
+  uint64 state_height = 15;
+  Signature validator_signature = 16;
+}
+
+// FINAL/08 Section 8.5: Lease { purpose, model, sensors, classes, expiry,
+// retention, subject }. The validator offers, the wallet countersigns.
+message Lease {
+  bytes lease_id = 1;
+  string purpose = 2;
+  bytes model_id = 3;
+  repeated Sensor sensors = 4;
+  repeated FrameClass classes = 5;
+  uint64 expiry_height = 6;
+  Retention retention = 7;
+  bytes subject = 8;
+  bytes app_program_id = 9;
+  bytes issuer_id = 10;
+  Signature issuer_signature = 11;
+  Signature wallet_signature = 12;
+}
+
+message LeaseRevoke {
+  bytes lease_id = 1;
+  ErrorCode reason = 2;
+  Signature signature = 3;
+}
+
+// ---------------------------------------------------------------- input ---
+
+message TouchSample {
+  uint32 contact = 1;
+  ToolKind tool = 2;
+  TouchPhase phase = 3;
+  // Panel coordinates at rest, 1/16 pixel.
+  sint32 x_q4 = 4;
+  sint32 y_q4 = 5;
+  uint32 pressure = 6;
+  // Offset from InputBatch.t0_us.
+  uint32 dt_us = 7;
+}
+
+// A glyph that U1 echoed locally, so the validator renders the same text.
+message KeyEcho {
+  uint32 key_code = 1;
+  uint32 glyph_id = 2;
+  uint32 atlas_id = 3;
+  uint64 echo_frame = 4;
+}
+
+message StretchState {
+  // Global rotating-square angle, millidegrees (17500 = 17.5 degrees).
+  uint32 theta_mdeg = 1;
+  // Q1..Q4 angles when the quadrants differ.
+  repeated sint32 quadrant_theta_mdeg = 2;
+  // Module seat 0..7 (RF-23).
+  uint32 seat = 3;
+}
+
+// One touch scan (480 Hz). U7 extends the input chain over the canonical
+// bytes without `tag` and computes `tag` = KMAC256(K_in, bytes, 128,
+// S = "BDLM_LEAF_INPUT_V1"). The per-second Receipt signs the chain head.
+message InputBatch {
+  uint64 batch_seq = 1;
+  uint64 t0_us = 2;
+  uint64 shown_frame = 3;
+  // Speculative branch U1 showed for this input, 0 for none.
+  uint32 taken_branch = 4;
+  repeated TouchSample touches = 5;
+  repeated KeyEcho keys = 6;
+  StretchState stretch = 7;
+  // ax, ay, az, gx, gy, gz in raw IMU counts.
+  repeated sint32 imu = 8;
+  bytes tag = 15;
+}
+
+// A state-changing action as a full Budlum transaction (wallet signed).
+message ActionTx {
+  uint64 batch_seq = 1;
+  // Canonical bytes of budlum.network.ProtoTransaction.
+  bytes budlum_transaction = 2;
+}
+
+message FrameRequest {
+  uint64 request_seq = 1;
+  uint64 input_batch_seq = 2;
+  uint64 base_frame = 3;
+  FrameClass frame_class = 4;
+  uint32 max_speculative = 5;
+  Rect region = 6;
+  uint32 target_refresh_hz = 7;
+  uint32 deadline_us = 8;
+  // Downlink rate the Leaf measures, from QUIC ACK_ECN and L4S CE marks.
+  uint32 rate_hint_kbps = 9;
+}
+
+// ---------------------------------------------------------------- stream ---
+
+// Parsed by U6 in hardware. Tiles are numbered 0..127 in raster order
+// (8 x 16 tiles of 200 x 200 px at rest).
+message SliceHeader {
+  uint32 key_slot = 1;
+  uint64 frame_no = 2;
+  uint32 slice_no = 3;
+  uint32 slice_count = 4;
+  uint32 first_tile = 5;
+  uint32 tile_count = 6;
+  Codec codec = 7;
+  SliceKind kind = 8;
+  // 0 is the base layer; others name a Layer of LayerUpdate.
+  uint32 layer_id = 9;
+  // 0 is the committed timeline; others name a SpeculativeBranch.
+  uint32 branch_id = 10;
+  uint64 ref_frame = 11;
+  uint32 payload_bytes = 12;
+}
+
+// MAC = KMAC256(K_slot, header || payload, 128, S = "BDLM_LEAF_SLICE_V1"),
+// checked by the U6 inline engine at line rate.
+message Slice {
+  SliceHeader header = 1;
+  bytes payload = 2;
+  bytes mac = 3;
+}
+
+// Datagram mode only: a Slice split to fit one QUIC DATAGRAM, with one XOR
+// parity fragment per group.
+message SliceFragment {
+  uint64 frame_no = 1;
+  uint32 slice_no = 2;
+  uint32 frag_no = 3;
+  uint32 frag_count = 4;
+  bool parity = 5;
+  bytes data = 6;
+}
+
+// One link of the frame hash chain. frame_hash is the Merkle root of the
+// slice hashes; chain_hash = SHA3(BDLM_LEAF_FRAME_CHAIN_V1 || prev || frame_hash).
+message FrameCommit {
+  uint64 frame_no = 1;
+  uint32 branch_id = 2;
+  uint32 slice_count = 3;
+  bytes frame_hash = 4;
+  bytes chain_hash = 5;
+  // Rate-control target, so a shadow encoder stays bit-identical.
+  uint32 rc_target_bits = 6;
+  uint64 present_at_us = 7;
+  uint64 state_height = 8;
+  bytes mac = 15;
+}
+
+message SpeculativeBranch {
+  uint32 branch_id = 1;
+  TriggerKind trigger = 2;
+  Rect hit_region = 3;
+  // Parameter range the branch covers, for example a scroll offset in px.
+  sint32 param_min = 4;
+  sint32 param_max = 5;
+  uint64 first_frame = 6;
+  uint32 frame_count = 7;
+  uint32 layer_id = 8;
+  bytes frame_hash = 9;
+}
+
+// Frames rendered ahead for likely inputs (SW-23). U1 picks one on a match.
+message SpeculativeFrameSet {
+  uint64 base_frame = 1;
+  uint64 valid_until_frame = 2;
+  repeated SpeculativeBranch branches = 3;
+  bytes mac = 15;
+}
+
+message SpeculationResolve {
+  uint32 branch_id = 1;
+  bool committed = 2;
+  uint64 at_frame = 3;
+}
+
+// ------------------------------------------------------- U1 compositor ---
+
+message EchoContext {
+  uint32 atlas_id = 1;
+  sint32 caret_x_q4 = 2;
+  sint32 caret_y_q4 = 3;
+  uint32 line_height_px = 4;
+  uint32 color_rgba = 5;
+  Rect clip = 6;
+}
+
+message Layer {
+  uint32 layer_id = 1;
+  sint32 z = 2;
+  CompositorJob job = 3;
+  Rect dest = 4;
+  Rect source = 5;
+  uint32 surface_w = 6;
+  uint32 surface_h = 7;
+  BlendMode blend = 8;
+  uint32 alpha = 9;
+  sint32 scroll_min = 10;
+  sint32 scroll_max = 11;
+  EchoContext echo = 12;
+  bool warp = 13;
+}
+
+message LayerUpdate {
+  uint64 version = 1;
+  uint64 apply_at_frame = 2;
+  repeated Layer layers = 3;
+  repeated uint32 removed = 4;
+  bytes mac = 15;
+}
+
+message GlyphEntry {
+  uint32 glyph_id = 1;
+  uint32 codepoint = 2;
+  uint32 atlas_x = 3;
+  uint32 atlas_y = 4;
+  uint32 w = 5;
+  uint32 h = 6;
+  sint32 bearing_x = 7;
+  sint32 bearing_y = 8;
+  // Advance in 1/64 px.
+  uint32 advance_q6 = 9;
+}
+
+message GlyphAtlasUpdate {
+  uint32 atlas_id = 1;
+  uint64 version = 2;
+  uint32 atlas_w = 3;
+  uint32 atlas_h = 4;
+  AtlasFormat format = 5;
+  repeated GlyphEntry glyphs = 6;
+  Rect dirty = 7;
+  bytes bitmap = 8;
+  bytes mac = 15;
+}
+
+// --------------------------------------------------- proof and receipts ---
+
+// Once per second (FINAL/21 Section 21.5.4, step 3).
+message MerkleRoot {
+  uint64 epoch = 1;
+  uint64 first_frame = 2;
+  uint64 last_frame = 3;
+  uint32 leaf_count = 4;
+  bytes root = 5;
+  bytes chain_head = 6;
+  uint64 state_height = 7;
+  Signature validator_signature = 8;
+}
+
+message PathStats {
+  PathKind kind = 1;
+  uint32 rtt_p50_us = 2;
+  uint32 rtt_p99_us = 3;
+  uint32 loss_ppm = 4;
+  uint32 ce_ppm = 5;
+  uint32 goodput_kbps = 6;
+}
+
+// U7 countersigns with the session key: the shown frames, the input chain
+// head and the measured round trips. Receipts settle in the slot window.
+message Receipt {
+  uint64 session_id = 1;
+  uint64 epoch = 2;
+  bytes merkle_root = 3;
+  uint32 frames_shown = 4;
+  uint32 frames_reprojected = 5;
+  uint32 frames_speculative = 6;
+  bytes input_chain_head = 7;
+  uint64 last_input_seq = 8;
+  repeated PathStats paths = 9;
+  bytes validator_id = 10;
+  DistanceClass distance_class = 11;
+  Signature leaf_signature = 12;
+}
+
+// ------------------------------------------------------------- handover ---
+
+message ShadowAnnounce {
+  bytes validator_id = 1;
+  bytes public_key = 2;
+  ActiveSetProof active_set = 3;
+  repeated string endpoints = 4;
+  uint32 key_slot = 5;
+  Signature primary_signature = 6;
+}
+
+// Shadow to Leaf on its warm connection, once per frame.
+message ShadowHeartbeat {
+  bytes validator_id = 1;
+  uint64 frame_no = 2;
+  bytes chain_hash = 3;
+  uint32 rtt_us = 4;
+}
+
+// Leaf to both validators. The primary sends to switch_frame - 1 and the
+// shadow sends from switch_frame. Tag by U7 as in InputBatch.
+message HandoverCommand {
+  uint64 switch_frame = 1;
+  uint32 switch_slice = 2;
+  bytes from_validator = 3;
+  bytes to_validator = 4;
+  uint32 new_key_slot = 5;
+  HandoverReason reason = 6;
+  bytes expected_chain_hash = 7;
+  bytes tag = 15;
+}
+
+message HandoverAck {
+  uint64 switch_frame = 1;
+  bytes validator_id = 2;
+  bool accepted = 3;
+  ErrorCode code = 4;
+}
+
+// L1 probing: the Leaf probes 3 to 5 validators once per second.
+message PathProbe {
+  uint64 probe_id = 1;
+  uint64 t_send_us = 2;
+}
+
+message PathProbeAck {
+  uint64 probe_id = 1;
+  uint64 t_send_us = 2;
+  uint32 server_hold_us = 3;
+  uint64 state_height = 4;
+  bytes validator_id = 5;
+}
+
+// --------------------------------------------------------------- camera ---
+
+message CameraCaptureOpen {
+  bytes capture_id = 1;
+  bytes lease_id = 2;
+  CaptureMode mode = 3;
+  uint32 width = 4;
+  uint32 height = 5;
+  RawPacking packing = 6;
+  uint32 frame_count = 7;
+  uint64 total_bytes = 8;
+  DeadlineClass deadline = 9;
+  uint32 exposure_us = 10;
+  uint32 iso = 11;
+  uint32 focus_um = 12;
+  repeated sint32 imu = 13;
+  // SHA3-256 of the local provisional image, stored at once (FINAL/10).
+  bytes provisional_hash = 14;
+  bytes tag = 15;
+}
+
+message CameraRawChunk {
+  bytes capture_id = 1;
+  uint32 frame_index = 2;
+  uint64 offset = 3;
+  bytes data = 4;
+}
+
+// Closes a capture. chunk_root is the Merkle root of SHA3(chunk) leaves.
+message CameraCaptureClose {
+  bytes capture_id = 1;
+  uint32 chunk_count = 2;
+  bytes chunk_root = 3;
+  Signature leaf_signature = 4;
+}
+
+// The finished image arrives as C3 slices; this binds it to the capture.
+message CameraResult {
+  bytes capture_id = 1;
+  uint64 result_frame = 2;
+  bytes result_hash = 3;
+  bytes pipeline_id = 4;
+  Signature validator_signature = 5;
+}
+
+// ---------------------------------------------------------------- audio ---
+
+message AudioFrame {
+  uint32 stream_id = 1;
+  AudioDirection direction = 2;
+  AudioCodec codec = 3;
+  uint64 seq = 4;
+  uint64 pts_us = 5;
+  uint32 duration_us = 6;
+  uint32 channels = 7;
+  bytes payload = 8;
+  // Video frame for lip sync.
+  uint64 sync_frame = 9;
+  // Index into the session's leases; required for AUDIO_DIRECTION_UPLINK_MIC.
+  uint32 lease_ref = 10;
+}
+
+// -------------------------------------------------------------- control ---
+
+// The honest class ladder (FINAL/10 Section 10.4): a change is always shown.
+message ClassStatement {
+  DistanceClass distance = 1;
+  repeated FrameClass active = 2;
+  string line = 3;
+  ErrorCode reason = 4;
+}
+
+// MAC key rollover: the next exporter epoch applies from from_frame.
+message KeyUpdate {
+  uint32 key_slot = 1;
+  uint32 key_epoch = 2;
+  uint64 from_frame = 3;
+}
+
+message Error {
+  ErrorCode code = 1;
+  uint64 ref_seq = 2;
+  string detail = 3;
+  bool fatal = 4;
+}
+
+message Goodbye {
+  ErrorCode code = 1;
+  uint64 last_frame = 2;
+}
+
+// ------------------------------------------------------------- envelope ---
+
+message LeafMessage {
+  // (major << 16) | minor. Set on the first message of each stream or
+  // datagram flow, absent (0 bytes) elsewhere.
+  uint32 wire_version = 1;
+  oneof body {
+    Slice slice = 2;
+    InputBatch input_batch = 3;
+    FrameCommit frame_commit = 4;
+    AudioFrame audio_frame = 5;
+    SliceFragment slice_fragment = 6;
+    FrameRequest frame_request = 7;
+    ShadowHeartbeat shadow_heartbeat = 8;
+    LayerUpdate layer_update = 9;
+    GlyphAtlasUpdate glyph_atlas_update = 10;
+    SpeculativeFrameSet speculative_frame_set = 11;
+    SpeculationResolve speculation_resolve = 12;
+    PathProbe path_probe = 13;
+    PathProbeAck path_probe_ack = 14;
+    MerkleRoot merkle_root = 15;
+    Receipt receipt = 16;
+    Hello hello = 17;
+    Admission admission = 18;
+    Lease lease = 19;
+    LeaseRevoke lease_revoke = 20;
+    ShadowAnnounce shadow_announce = 21;
+    HandoverCommand handover_command = 22;
+    HandoverAck handover_ack = 23;
+    CameraCaptureOpen camera_capture_open = 24;
+    CameraRawChunk camera_raw_chunk = 25;
+    CameraCaptureClose camera_capture_close = 26;
+    CameraResult camera_result = 27;
+    ActionTx action_tx = 28;
+    ClassStatement class_statement = 29;
+    KeyUpdate key_update = 30;
+    Error error = 31;
+    Goodbye goodbye = 32;
+  }
+}

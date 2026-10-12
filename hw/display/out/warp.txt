@@ -1,0 +1,33 @@
+== the rotating-square kinematics ==
+theta   0.0 deg: stretch   0.0 %, area x1.000, pixel coverage 100.0 %, hinge closure error 0.00e+00 um, body 80.0 x 160.0 mm
+theta  17.5 deg: stretch  25.4 %, area x1.574, pixel coverage  63.5 %, hinge closure error 9.41e-12 um, body 100.4 x 200.7 mm
+theta  30.0 deg: stretch  36.6 %, area x1.866, pixel coverage  53.6 %, hinge closure error 1.34e-11 um, body 109.3 x 218.6 mm
+theta  45.0 deg: stretch  41.4 %, area x2.000, pixel coverage  50.0 %, hinge closure error 7.12e-12 um, body 113.1 x 226.3 mm
+note: Part 21.2.3 quotes 61 % and 47.5 % coverage. Full-square pixel glass gives 63.5 % and 50.0 %.
+
+== DSP-17: the shape error of a 25 mm circle and a grid line ==
+(error = largest radial deviation of the lit pixels / radius; line = deviation / body width)
+  theta 17.5: no warp                  circle   7.38 %  line  1.491 %  scale 1.264  fail
+  theta 17.5: U1 warp, exact angles    circle   0.10 %  line  0.031 %  scale 1.254  PASS
+  theta 17.5: U1 warp, 0.1 deg rms     circle   0.17 %  line  0.049 %  scale 1.254  PASS
+  theta 17.5: U1 warp, 0.5 deg rms     circle   0.42 %  line  0.137 %  scale 1.254  PASS
+  theta 17.5: U1 warp, 1.0 deg rms     circle   0.92 %  line  0.261 %  scale 1.254  PASS
+  theta 45.0: no warp                  circle  15.36 %  line  3.109 %  scale 1.438  fail
+  theta 45.0: U1 warp, exact angles    circle   0.10 %  line  0.016 %  scale 1.414  PASS
+  theta 45.0: U1 warp, 0.1 deg rms     circle   0.16 %  line  0.047 %  scale 1.414  PASS
+  theta 45.0: U1 warp, 0.5 deg rms     circle   0.32 %  line  0.081 %  scale 1.414  PASS
+  theta 45.0: U1 warp, 1.0 deg rms     circle   0.69 %  line  0.111 %  scale 1.414  PASS
+  the sampling floor of a 50 um pixel on a 25 mm circle is 0.10 %
+
+== the U1 warp requirement, derived ==
+  output: 5.12 Mpx per frame, x240 = 1.23 Gpx/s, bilinear = 4.92 Gtap/s
+  theta 17.5: source window per tile 251 x 251 px (zoom mode reads 200 x 200 canvas px), canvas for the 'more room' mode 2007 x 4014 = 24.2 MB raw at 24 b
+  theta 45.0: source window per tile 283 x 283 px (zoom mode reads 200 x 200 canvas px), canvas for the 'more room' mode 2263 x 4525 = 30.7 MB raw at 24 b
+  angle error 0.1 deg moves a tile corner by 0.25 px
+  angle error 0.5 deg moves a tile corner by 1.23 px
+  coordinate format: 13 b integer + 4 b fraction (1/16 px = 3.125 um, the seam shift step)
+  angle input: per tile, 16 b, from the hinge sensors via the back channel, at 480 Hz
+  warp latency: applied at scan-out, angles at most one frame (4.2 ms) old -> SW-21 under 10 ms
+
+wrote out/stretched_view.png
+DSP-17 (model): PASS at 0.5 deg rms angle error or better

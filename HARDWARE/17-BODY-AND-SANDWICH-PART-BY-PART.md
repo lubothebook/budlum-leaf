@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 17 · THE 2.20 MM (72 G) 4-QUADRANT (+) BODY AND 90° B MODULE (22 G), PART BY PART
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The body is `128` rotating PC-capped tiles. The B module is `10.8 g`, `4.00 mm` thick, with a `1.00 mm` LCP bar and no titanium hinge.
+
 **Revision L.5.0 · 2026-10-12**.
 The Budlum Leaf 160 cancels the bulky external bottom battery pack (`çok kaba duruyor`). Also, divides the `80.0 x 160.0 x 2.00 mm` (`68.0 g`) body across a central `+` cross (`x = 0`. `y = 0`) into **four equal `40.0 x 80.0 x 2.00 mm` (`17.0 g`) snap-together polycarbonate screen-battery quadrants (`Q1..Q4`)**. Combined with the **`20.0 g` `90°`-bent-stem B module**, the complete device weighs **`88.0 g`** (`84` modeled internal subparts, `pafta/P19`).
 

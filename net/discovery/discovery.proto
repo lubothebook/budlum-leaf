@@ -1,0 +1,177 @@
+// Budlum Leaf discovery protocol, version 1.0 (L.6.0).
+//
+// Finding the nearest validator in three layers, and the coverage proof.
+// Source of truth: FINAL/21 Section 21.5.4. Spec: net/discovery/SPEC.md.
+// Gates SW-24 and DST-12.
+//
+// Conventions follow proto/budlum/leaf/v1/leaf.proto (team Proto): proto3,
+// canonical encoding, SHA3-256 hashes, ML-DSA (FIPS 204) signatures,
+// BDLM_* domain tags. The in-session messages (Hello, Admission,
+// PathProbe, PathProbeAck, ShadowAnnounce, ShadowHeartbeat,
+// HandoverCommand, Receipt, UwbDistanceProof) live in leaf.proto and are
+// not repeated here. This file adds what happens before a session and on
+// chain.
+//
+// Key encapsulation is ML-KEM-768 (FIPS 203): encapsulation key 1184 bytes,
+// ciphertext 1088 bytes, shared secret 32 bytes.
+
+syntax = "proto3";
+
+package budlum.leaf.discovery.v1;
+
+import "budlum/leaf/v1/leaf.proto";
+
+// ------------------------------------------------------- L0, the room ---
+
+// The L0 beacon is not protobuf. It is a fixed 40-byte Service Data AD
+// structure in a BLE 5 extended advertisement (AUX_ADV_IND), and the same
+// 40 bytes are the Service Specific Info of a Wi-Fi Aware (NAN) Publish.
+// Layout (big endian), see messages.py BEACON:
+//   0   u8   version            = 1
+//   1   u8   flags              bit0 UWB, bit1 NAN, bit2 dock validator,
+//                               bit3 accepts L0 sessions now
+//   2   u64  chain_id
+//   10  u8[16] validator_key_hash_prefix   first 16 bytes of SHA3-256(pk)
+//   26  u32  finality_epoch_low  the epoch of the beacon's active-set view
+//   30  u8   uwb_channel        5 or 9
+//   31  u8   uwb_preamble_code  9..12 (HRP BPRF) or 25..32 (HPRF)
+//   32  u16  load_permille      render load, 0..1000
+//   34  u16  l2cap_psm          the BLE L2CAP CoC for L0RangingOffer
+//   36  u32  beacon_counter     anti-replay hint, not a security property
+// The beacon is unsigned. A beacon is a hint, never a proof. The proof is
+// the UWB ranging bound to the validator key, then the Admission.
+
+// Leaf to validator, over BLE L2CAP CoC or a NAN data path.
+// The Leaf names no wallet and no device here.
+message L0RangingOffer {
+  uint32 version = 1;
+  uint64 chain_id = 2;
+  // ML-KEM-768 encapsulation key, fresh per ranging session.
+  bytes kem_ek = 3;
+  bytes leaf_nonce = 4;              // 32 bytes
+  uint32 uwb_channel = 5;
+  uint32 rounds = 6;                 // DS-TWR rounds, default 8
+  uint32 sts_mode = 7;               // 802.15.4z STS packet config 1 or 3
+}
+
+// Validator to Leaf. U7 verifies the signature and the active-set proof
+// once (the same check as SW-22), so a relay cannot inject another key.
+message L0RangingAccept {
+  bytes kem_ct = 1;                  // ML-KEM-768 ciphertext
+  bytes validator_nonce = 2;         // 32 bytes
+  bytes validator_public_key = 3;    // ML-DSA-65, 1952 bytes
+  budlum.leaf.v1.ActiveSetProof active_set = 4;
+  uint32 sts_session_id = 5;
+  // ML-DSA-65 over BDLM_LEAF_L0_RANGING_V1 || offer || this message
+  // without the signature. The STS key is
+  // KMAC256(shared_secret, "BDLM_LEAF_STS_V1" || transcript hash), 16 bytes.
+  budlum.leaf.v1.Signature validator_signature = 6;
+}
+
+// Validator to Leaf after each DS-TWR round, over the UWB data frame.
+// KMAC256 tag under the STS key, 16 bytes. The Leaf computes
+// ToF = (Tround1 * Tround2 - Treply1 * Treply2) / (Tround1 + Tround2 + Treply1 + Treply2).
+message L0RangingReport {
+  uint32 sts_session_id = 1;
+  uint32 round = 2;
+  uint64 t_reply1_ps = 3;
+  uint64 t_round2_ps = 4;
+  uint32 first_path_index = 5;       // the receiver's first-path estimate
+  bytes tag = 15;
+}
+
+// ------------------------------------------------------ L1, the metro ---
+
+// Leaf to the anycast bootstrap address, over QUIC with no client
+// certificate, no resumption ticket and no 0-RTT. Padded to 256 bytes.
+message BootstrapQuery {
+  uint32 version = 1;
+  uint64 chain_id = 2;
+  uint64 known_finality_height = 3;  // rounded down to a multiple of 1024
+  uint32 want = 4;                   // 3 to 5
+  budlum.leaf.v1.PathKind path = 5;
+  bytes query_nonce = 6;             // 16 random bytes
+  bytes padding = 15;
+}
+
+// One candidate, proven against the registry root of a finalised state.
+message Candidate {
+  bytes validator_key_hash = 1;      // SHA3-256 of the ML-DSA-65 key
+  repeated string endpoints = 2;     // "quic://[2001:db8::1]:4433"
+  uint64 service_cell_h3 = 3;        // H3 resolution 5, about 253 km^2
+  uint64 verified_cell_h3 = 4;       // H3 resolution 3, set by the PoL
+  uint32 latency_p99_us = 5;         // the latency map, this cell, last epoch
+  uint32 free_sessions = 6;
+  uint32 flags = 7;                  // bit0 edge (L1 cell), bit1 anycast member
+  repeated bytes registry_proof = 8; // Merkle path to registry_root
+  uint32 registry_index = 9;
+}
+
+message BootstrapReply {
+  uint64 finality_height = 1;
+  bytes state_root = 2;
+  bytes registry_root = 3;
+  repeated bytes registry_root_proof = 4;  // registry_root in state_root
+  repeated Candidate candidates = 5;
+  bytes responder_key_hash = 6;
+  bytes query_nonce = 7;
+  budlum.leaf.v1.Signature responder_signature = 8;
+}
+
+// The on-chain record a validator adds to its RoleId(1) registry entry
+// (src/registry/role.rs) to serve Leaf sessions.
+message LeafServiceRecord {
+  bytes validator_key_hash = 1;
+  repeated string endpoints = 2;
+  bool anycast_member = 3;
+  uint64 declared_cell_h3 = 4;       // resolution 5
+  uint32 render_sessions = 5;        // capacity at 1600 x 3200, 240 Hz
+  budlum.leaf.v1.VersionRange leaf_protocol = 6;
+  // L1 cell: the 3GPP edge deployment, TS 23.558.
+  string plmn_id = 7;                // MCC-MNC, empty when not at an edge
+  string eas_id = 8;                 // EAS profile identifier at the EES
+  uint32 shadow_slots = 9;
+  budlum.leaf.v1.Signature validator_signature = 10;
+}
+
+// --------------------------------------- coverage and proof of location ---
+
+// On chain, once per coverage epoch (one day). Stake-bonded.
+message CoverageClaim {
+  bytes validator_key_hash = 1;
+  uint64 claimed_cell_h3 = 2;        // resolution 3, about 12 400 km^2
+  sint32 lat_e5 = 3;                 // the claimed point, 1e-5 degrees
+  sint32 lon_e5 = 4;
+  uint64 epoch = 5;
+  budlum.leaf.v1.Signature validator_signature = 6;
+}
+
+// The chain draws K = 24 challengers per claim by VRF over the epoch
+// beacon: 16 in six sectors round the claim, 8 from the tenure pool.
+// Each challenger runs n >= 20 probes at random times in the epoch, from
+// addresses the prover cannot tell from Leaf sessions, then reports.
+message ChallengeReport {
+  bytes claim_hash = 1;
+  bytes challenger_key_hash = 2;
+  uint32 samples = 3;
+  uint32 min_rtt_us = 4;             // min-filtered network round trip
+  uint32 min_render_loop_us = 5;     // a render-in-the-loop request, min
+  uint32 expected_rtt_us = 6;        // from the latency map for the claim
+  bool consistent = 7;               // min_rtt <= expected (1 + tau) + delta
+  // The prover countersigns each echo, so a challenger cannot invent a
+  // session that never ran. Timing itself is not provable; the robust
+  // count over 24 challengers carries the trust.
+  bytes echo_transcript_hash = 8;
+  budlum.leaf.v1.Signature prover_countersignature = 9;
+  budlum.leaf.v1.Signature challenger_signature = 10;
+}
+
+// Computed on chain from the reports. No slash on a fail alone.
+message ClaimVerdict {
+  bytes claim_hash = 1;
+  uint32 inconsistent = 2;
+  uint32 reports = 3;
+  bool passed = 4;                   // inconsistent < R_REJ (6 of 24)
+  bool verifiable_cell = 5;          // >= 2 tenured validators in >= 5 sectors
+  uint32 consecutive_fails = 6;      // 3 in a row: claim withdrawn, bond slashed 5 %
+}

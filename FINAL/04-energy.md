@@ -1,5 +1,7 @@
 # BUDLUM LEAF · THE DIRECTIVE · PART 4 · THE 4-QUADRANT (+) BIOCOMPATIBLE SOLID-STATE BATTERY AND QI2.2 WIRELESS CHARGING
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The body holds `5.7` to `7.2 Wh` in `128` micro cells, with no loss to the stretch. The B module adds `0.14 Wh` and the dock carries a `20 Wh` pack.
+
 ---
 
 ## 4.1 The mechanical, electrical, and eyewear-safety standard (`HARDWARE/11`, `HARDWARE/15`)

@@ -1,0 +1,168 @@
+{
+ "power": [
+  {
+   "option": "base U3",
+   "RL": 16.0,
+   "v_rms": 1.0,
+   "p_mw": 62.5,
+   "spl_100dB_per_mW": 118.0
+  },
+  {
+   "option": "base U3",
+   "RL": 32.0,
+   "v_rms": 1.0,
+   "p_mw": 31.2,
+   "spl_100dB_per_mW": 114.9
+  },
+  {
+   "option": "base U3",
+   "RL": 300.0,
+   "v_rms": 1.0,
+   "p_mw": 3.3,
+   "spl_100dB_per_mW": 105.2
+  },
+  {
+   "option": "HiFi DAC",
+   "RL": 16.0,
+   "v_rms": 1.584,
+   "p_mw": 156.8,
+   "spl_100dB_per_mW": 122.0
+  },
+  {
+   "option": "HiFi DAC",
+   "RL": 32.0,
+   "v_rms": 2.0,
+   "p_mw": 125.0,
+   "spl_100dB_per_mW": 121.0
+  },
+  {
+   "option": "HiFi DAC",
+   "RL": 300.0,
+   "v_rms": 2.0,
+   "p_mw": 13.3,
+   "spl_100dB_per_mW": 111.2
+  }
+ ],
+ "crosstalk": [
+  {
+   "RL": 16.0,
+   "case": "device side, no sense",
+   "R_gnd_ohm": 0.03,
+   "xtalk_db": -54.6
+  },
+  {
+   "RL": 16.0,
+   "case": "Kelvin sense on R2",
+   "R_gnd_ohm": 0.002,
+   "xtalk_db": -78.1
+  },
+  {
+   "RL": 32.0,
+   "case": "device side, no sense",
+   "R_gnd_ohm": 0.03,
+   "xtalk_db": -60.6
+  },
+  {
+   "RL": 32.0,
+   "case": "Kelvin sense on R2",
+   "R_gnd_ohm": 0.002,
+   "xtalk_db": -84.1
+  }
+ ],
+ "buttons": [
+  {
+   "button": "A play/pause/hook",
+   "R_lo": 0,
+   "R_hi": 70,
+   "V_lo": 0.0,
+   "V_hi": 0.083
+  },
+  {
+   "button": "D voice command",
+   "R_lo": 110,
+   "R_hi": 180,
+   "V_lo": 0.129,
+   "V_hi": 0.204
+  },
+  {
+   "button": "B volume up",
+   "R_lo": 210,
+   "R_hi": 290,
+   "V_lo": 0.235,
+   "V_hi": 0.314
+  },
+  {
+   "button": "C volume down",
+   "R_lo": 360,
+   "R_hi": 680,
+   "V_lo": 0.38,
+   "V_hi": 0.638
+  }
+ ],
+ "button_min_gap_V": 0.031,
+ "detection": [
+  {
+   "vector": "no plug",
+   "state": "EMPTY",
+   "ok": true
+  },
+  {
+   "vector": "32 ohm 3-pole",
+   "state": "3-POLE headphone",
+   "ok": true
+  },
+  {
+   "vector": "CTIA headset",
+   "state": "4-POLE CTIA headset",
+   "ok": true
+  },
+  {
+   "vector": "OMTP headset",
+   "state": "4-POLE OMTP: swap MIC and GND in the codec, then re-measure",
+   "ok": true
+  },
+  {
+   "vector": "300 ohm 3-pole",
+   "state": "3-POLE headphone",
+   "ok": true
+  },
+  {
+   "vector": "line in, 10 k",
+   "state": "LINE IN of an amplifier",
+   "ok": true
+  },
+  {
+   "vector": "salt water, no plug",
+   "state": "MOISTURE (ionic leak): bias off, retry in 10 s",
+   "ok": true
+  },
+  {
+   "vector": "dry foreign body",
+   "state": "MOISTURE OR FOREIGN BODY: bias off, retry in 10 s",
+   "ok": true
+  }
+ ],
+ "stream": [
+  {
+   "stream": "default 48 kHz 24 bit stereo",
+   "raw_mbps": 2.3,
+   "packet_10ms_bytes": 2880
+  },
+  {
+   "stream": "HiFi 96 kHz 24 bit stereo",
+   "raw_mbps": 4.61,
+   "packet_10ms_bytes": 5760
+  },
+  {
+   "stream": "HiFi 192 kHz 24 bit stereo",
+   "raw_mbps": 9.22,
+   "packet_10ms_bytes": 11520
+  },
+  {
+   "stream": "uplink 2 mics 48 kHz 24 bit",
+   "raw_mbps": 2.3,
+   "packet_10ms_bytes": 2880
+  }
+ ],
+ "pass": true
+}

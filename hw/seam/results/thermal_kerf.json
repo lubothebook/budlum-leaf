@@ -1,0 +1,110 @@
+{
+ "validation": {
+  "clt": 3.104657260550308,
+  "timoshenko": 3.1046572605503076,
+  "rel_err": 1.4303968927357436e-16
+ },
+ "final21_claim_40mm": {
+  "cantilever_mm": 2.4837258084402465,
+  "centre_sag_mm": 0.6209314521100616
+ },
+ "glg": {
+  "nominal 0.100/0.050/0.100 dT -33": {
+   "kappa": -6.878490822089584e-16,
+   "edge_lift_nm": -8.59811352761198e-12,
+   "edge_slope_urad": -3.4392454110447923e-12
+  },
+  "nominal 0.100/0.050/0.100 dT +27": {
+   "kappa": 2.314378544987166e-16,
+   "edge_lift_nm": 2.892973181233958e-12,
+   "edge_slope_urad": 1.157189272493583e-12
+  },
+  "tolerance 0.095/0.050/0.105 dT -33": {
+   "kappa": 0.04629358519439748,
+   "edge_lift_nm": 578.6698149299685,
+   "edge_slope_urad": 231.4679259719874
+  },
+  "tolerance 0.095/0.050/0.105 dT +27": {
+   "kappa": -0.03787656970450711,
+   "edge_lift_nm": -473.45712130633893,
+   "edge_slope_urad": -189.38284852253557
+  },
+  "tolerance 0.105/0.050/0.095 dT -33": {
+   "kappa": -0.04629358519439795,
+   "edge_lift_nm": -578.6698149299743,
+   "edge_slope_urad": -231.46792597198976
+  },
+  "tolerance 0.105/0.050/0.095 dT +27": {
+   "kappa": 0.03787656970450712,
+   "edge_lift_nm": 473.457121306339,
+   "edge_slope_urad": 189.3828485225356
+  }
+ },
+ "cap_on_glass": {
+  "silicone OCA -10 C": {
+   "G_MPa": 0.06,
+   "kl": 0.23219092939768599,
+   "edge_slope_urad": -231.7775202957139,
+   "edge_lift_nm": -724.0443958826763,
+   "u_rel_um": -9.782415882120977,
+   "curl_ratio": 0.026363770192066815
+  },
+  "silicone OCA +50 C": {
+   "G_MPa": 0.06,
+   "kl": 0.23219092939768599,
+   "edge_slope_urad": 189.6361529692205,
+   "edge_lift_nm": 592.3999602676429,
+   "u_rel_um": 8.003794812644436,
+   "curl_ratio": 0.026363770192066815
+  },
+  "acrylic OCA -10 C": {
+   "G_MPa": 2.0892961308540396,
+   "kl": 1.3674214556187272,
+   "edge_slope_urad": -4714.706776395959,
+   "edge_lift_nm": -14564.40122405284,
+   "u_rel_um": -6.3943622153943505,
+   "curl_ratio": 0.521528733509127
+  },
+  "acrylic OCA +50 C": {
+   "G_MPa": 0.03,
+   "kl": 0.1641886374514276,
+   "edge_slope_urad": 95.8347709110001,
+   "edge_lift_nm": 299.4296222755793,
+   "u_rel_um": 8.074686865333645,
+   "curl_ratio": 0.013329194347654338
+  }
+ },
+ "kerf": {
+  "silicone OCA": {
+   "kerf_ref_um": 26.007589625288873,
+   "kerf_50_um": 10.0,
+   "kerf_m10_um": 45.57242138953083
+  },
+  "acrylic OCA": {
+   "kerf_ref_um": 26.149373730667286,
+   "kerf_50_um": 10.0,
+   "kerf_m10_um": 38.93809816145598
+  },
+  "free cap (bound)": {
+   "kerf_ref_um": 26.686,
+   "kerf_50_um": 10.0,
+   "kerf_m10_um": 47.080000000000005
+  }
+ },
+ "final21_kerf_note": "FINAL/21 gives 37 um at -10 C. Over 60 K the cap grows 37 um against the glass, so the kerf is 10 + 37 = 47 um when the cap is free.",
+ "glass_gap_change_um": 0.084,
+ "z_per_K_nm": 118.50192031245162,
+ "zstep_budget_um": {
+  "seat repeat, 99.9 % [kinematic_seat.py]": 0.02684863002279288,
+  "face-referenced ball and vee setting, two sides RSS": 0.19798989873223333,
+  "layer thickness tolerance x CTE, worst case": 0.17300492894467961,
+  "bond line +-2 um x 60 ppm/K": 0.00792,
+  "tile-to-tile curl difference at the edge pixel (20 um lever)": 0.009258717038879496,
+  "preload change and wear (symmetric vee, zero in z)": 0.0
+ },
+ "zstep_total_worst_um": 0.4150221747385853,
+ "zstep_total_rss_um": 0.2645751398269696,
+ "zstep_gradient_nm_per_K": 118.50192031245162,
+ "zstep_gradient_limit_K": 8.438681815141225,
+ "gate_MEC40_step_pass": true
+}

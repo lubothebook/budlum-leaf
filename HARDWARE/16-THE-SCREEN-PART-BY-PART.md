@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 16 · THE 4-QUADRANT (+) SEAMLESS T-OLED + PDLC + AgNW/ITO SCREEN, PART BY PART
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: each tile carries a `508 ppi` micro-LED layer on glass under a hard-coated PC cap. The seams are lattice-continuous, so no seam shows. `U1` warps the image tile by tile.
+
 **Revision L.5.0 · 2026-10-12**.
 This file specifies the **`80.0 x 160.0 x 2.00 mm` (`68.0 g`) 4-Quadrant (`+`) seamless display-battery sheet**. Also, the `<15 µm` (`n = 1.585`) zero-scratch optical seam (`pafta/P09`, `pafta/P18`).
 

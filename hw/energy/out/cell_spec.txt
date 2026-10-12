@@ -1,0 +1,55 @@
+BUDLUM LEAF  hermetic micro cell  9.25 x 9.25 x 0.90 mm  (ENR-22)
+cell envelope volume  76.88 mm3
+inner cavity          9.190 x 9.190 x 0.840 mm
+anode side 8.690 mm, cathode side 8.490 mm, net cathode area 68.87 mm2
+
+[G] graphite / LiCoO2 4.45 V
+  cathodes 3 (2-sided), anodes 4 (2 outer single-sided)
+  loading 3.34 mAh/cm2/side, cathode coat 46.1 um, anode coat 63.1 um
+  height um: cath 303.6 + anode 402.5 + sep 42.0 + pad 62.0 + liners 10.0 + tol 20.0 = 840.0 of 840.0
+  swell allowance 43.4 um (taken by the pad at 70 % compression)
+  capacity 13.79 mAh  energy 0.0534 Wh (192 J)  at 3.87 V nominal
+  stack 1036 Wh/L   cell 694 Wh/L   target 600   margin +15.7 %
+  DCIR about 4.8 ohm, mass about 0.115 g, 465 Wh/kg
+    sens: lateral margin -0.05 mm/side       711 Wh/L
+    sens: lateral margin +0.00 mm/side       694 Wh/L
+    sens: lateral margin +0.05 mm/side       677 Wh/L
+    sens: lateral margin +0.10 mm/side       660 Wh/L
+    sens: loading cap 3.0 mAh/cm2            666 Wh/L
+    sens: loading cap 3.5 mAh/cm2            694 Wh/L
+    sens: loading cap 4.0 mAh/cm2            694 Wh/L
+    sens: loading cap 4.5 mAh/cm2            694 Wh/L
+    sens: anode swell 10 % (rev + EOL)       694 Wh/L
+    sens: anode swell 22 % (rev + EOL)       636 Wh/L
+    sens: anode swell 35 % (rev + EOL)       608 Wh/L
+    sens: anode swell 50 % (rev + EOL)       555 Wh/L
+
+[S] Si-C composite / LiCoO2 4.48 V
+  cathodes 3 (2-sided), anodes 4 (2 outer single-sided)
+  loading 4.16 mAh/cm2/side, cathode coat 55.6 um, anode coat 47.4 um
+  height um: cath 360.9 + anode 308.3 + sep 42.0 + pad 98.9 + liners 10.0 + tol 20.0 = 840.0 of 840.0
+  swell allowance 69.2 um (taken by the pad at 70 % compression)
+  capacity 17.19 mAh  energy 0.0653 Wh (235 J)  at 3.80 V nominal
+  stack 1334 Wh/L   cell 850 Wh/L   target 750   margin +13.3 %
+  DCIR about 4.4 ohm, mass about 0.114 g, 574 Wh/kg
+    sens: lateral margin -0.05 mm/side       871 Wh/L
+    sens: lateral margin +0.00 mm/side       850 Wh/L
+    sens: lateral margin +0.05 mm/side       829 Wh/L
+    sens: lateral margin +0.10 mm/side       809 Wh/L
+    sens: loading cap 3.0 mAh/cm2            815 Wh/L
+    sens: loading cap 3.5 mAh/cm2            815 Wh/L
+    sens: loading cap 4.0 mAh/cm2            817 Wh/L
+    sens: loading cap 4.5 mAh/cm2            850 Wh/L
+    sens: anode swell 10 % (rev + EOL)       912 Wh/L
+    sens: anode swell 22 % (rev + EOL)       850 Wh/L
+    sens: anode swell 35 % (rev + EOL)       791 Wh/L
+    sens: anode swell 50 % (rev + EOL)       733 Wh/L
+
+128-cell roll-up
+  cell volume x 128 = 9.841 cm3 (FINAL/21 used 9.56 cm3)
+  [G] at target 600 Wh/L: 5.90 Wh, per quadrant 1.476 Wh;  at model: 6.83 Wh, per quadrant 1.707 Wh
+  [S] at target 750 Wh/L: 7.38 Wh, per quadrant 1.845 Wh;  at model: 8.36 Wh, per quadrant 2.091 Wh
+
+B cell, 20.0 x 8.0 x 1.50 mm, in the same 30 um can build
+  [G] 4 cathodes, 4.50 mAh/cm2, 48.8 mAh, 0.1888 Wh, 788 Wh/L (target 0.14 Wh at 600 Wh/L)
+  [S] 5 cathodes, 4.38 mAh/cm2, 59.5 mAh, 0.2261 Wh, 943 Wh/L (target 0.14 Wh at 600 Wh/L)

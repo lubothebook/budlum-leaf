@@ -1,0 +1,238 @@
+{
+ "cases": [
+  {
+   "name": "wallet standby, screen off, Wi-Fi TWT",
+   "source": "h",
+   "body_W": 0,
+   "b_W": 0.055,
+   "battery_W": 0.06112404244040901,
+   "hours": {
+    "G target 600 Wh/L": 94.88456753255913,
+    "G model": 109.40009418583955,
+    "S target 750 Wh/L": 118.06857216676762,
+    "S model": 133.48394632037696
+   }
+  },
+  {
+   "name": "rear display glance, body dark",
+   "source": "h",
+   "body_W": 0,
+   "b_W": 0.105,
+   "battery_W": 0.11671379655278546,
+   "hours": {
+    "G target 600 Wh/L": 49.691883085792604,
+    "G model": 57.29379214372244,
+    "S target 750 Wh/L": 61.83355035268762,
+    "S model": 69.90671746600191
+   }
+  },
+  {
+   "name": "safe screen, no link",
+   "source": "F04",
+   "body_W": 0.12000000000000001,
+   "b_W": 0.08,
+   "battery_W": 0.21949023269176451,
+   "hours": {
+    "G target 600 Wh/L": 26.423628339511122,
+    "G model": 30.46593881646972,
+    "S target 750 Wh/L": 32.879952458452976,
+    "S model": 37.17285411719433
+   }
+  },
+  {
+   "name": "static page at 10 Hz",
+   "source": "F04",
+   "body_W": 0.16999999999999998,
+   "b_W": 0.18,
+   "battery_W": 0.3852952737093455,
+   "hours": {
+    "G target 600 Wh/L": 15.05268485897683,
+    "G model": 17.355458154528108,
+    "S target 750 Wh/L": 18.730643504971056,
+    "S model": 21.176170476866396
+   }
+  },
+  {
+   "name": "music on the 3.5 mm jack, screen off",
+   "source": "h",
+   "body_W": 0,
+   "b_W": 0.23,
+   "battery_W": 0.25578169351253377,
+   "hours": {
+    "G target 600 Wh/L": 22.674524721276825,
+    "G model": 26.143293947939732,
+    "S target 750 Wh/L": 28.21479644181948,
+    "S model": 31.898601842669365
+   }
+  },
+  {
+   "name": "voice call on 5G, screen off",
+   "source": "h",
+   "body_W": 0,
+   "b_W": 0.7300000000000001,
+   "battery_W": 0.8133891624773436,
+   "hours": {
+    "G target 600 Wh/L": 7.130324081446741,
+    "G model": 8.22112748543814,
+    "S target 750 Wh/L": 8.872540659405477,
+    "S model": 10.030965221063251
+   }
+  },
+  {
+   "name": "delta session, 250 nits, Wi-Fi",
+   "source": "F04",
+   "body_W": 0.8,
+   "b_W": 1.22,
+   "battery_W": 2.2422646872619554,
+   "hours": {
+    "G target 600 Wh/L": 2.586549378290431,
+    "G model": 2.982242033238953,
+    "S target 750 Wh/L": 3.21854438371971,
+    "S model": 3.6387668442315375
+   }
+  },
+  {
+   "name": "delta session at 41 % stretch",
+   "source": "h",
+   "body_W": 0.8099999999999999,
+   "b_W": 1.27,
+   "battery_W": 2.309728658896483,
+   "hours": {
+    "G target 600 Wh/L": 2.510999857260692,
+    "G model": 2.895134878395123,
+    "S target 750 Wh/L": 3.1245351648569732,
+    "S model": 3.532483509945344
+   }
+  },
+  {
+   "name": "50 MP camera, viewfinder and upload",
+   "source": "h",
+   "body_W": 0.8,
+   "b_W": 2.17,
+   "battery_W": 3.3179437702350887,
+   "hours": {
+    "G target 600 Wh/L": 1.7479887347183907,
+    "G model": 2.0153976266831677,
+    "S target 750 Wh/L": 2.1750906331630384,
+    "S model": 2.459076755065653
+   }
+  },
+  {
+   "name": "video session, Wi-Fi",
+   "source": "F04",
+   "body_W": 1.35,
+   "b_W": 1.92,
+   "battery_W": 3.645618051519124,
+   "hours": {
+    "G target 600 Wh/L": 1.5908765676599776,
+    "G model": 1.8342502987150686,
+    "S target 750 Wh/L": 1.97958982921778,
+    "S model": 2.23805080090607
+   }
+  },
+  {
+   "name": "video outdoors, 800 nits, 5G",
+   "source": "F17+h",
+   "body_W": 4.24,
+   "b_W": 2.42,
+   "battery_W": 7.481984610778726,
+   "hours": {
+    "G target 600 Wh/L": 0.7751590833860807,
+    "G model": 0.8937436185536364,
+    "S target 750 Wh/L": 0.9645607136912929,
+    "S model": 1.0904965493040224
+   }
+  }
+ ],
+ "stores": {
+  "G target 600 Wh/L": 5.904583679999999,
+  "G model": 6.8288,
+  "S target 750 Wh/L": 7.380729599999999,
+  "S model": 8.36224
+ },
+ "b_cell": {
+  "swap holdover (radios kept, decoder idle) 0.40 W": {
+   "minutes": 19.699199999999994,
+   "c_rate": 2.923976608187135
+  },
+  "B alone, rear glance 0.105 W": {
+   "minutes": 75.04457142857142,
+   "c_rate": 0.7675438596491229
+  },
+  "B alone, wallet standby 0.055 W": {
+   "minutes": 143.26690909090905,
+   "c_rate": 0.402046783625731
+  },
+  "B alone, voice call on 5G 0.73 W": {
+   "minutes": 10.79408219178082,
+   "c_rate": 5.336257309941521
+  },
+  "fit_clearance_mm": 0.18033988749894903
+ },
+ "dock": {
+  "Wh": 20.0,
+  "usable": 0.95,
+  "eta_boost": 0.94,
+  "eta_qi": 0.72,
+  "eta_contact_dock": 0.95,
+  "eta_contact_leaf": 0.9503999999999999,
+  "delivered_qi_Wh": 12.8592,
+  "delivered_contact_Wh": 17.154719999999998,
+  "refills": {
+   "G target 600 Wh/L": {
+    "qi": 2.12598530173596,
+    "contact": 2.836154859975418
+   },
+   "G model": {
+    "qi": 1.8441945846718677,
+    "contact": 2.4602340523175763
+   },
+   "S target 750 Wh/L": {
+    "qi": 1.7089251951325934,
+    "contact": 2.2797789305279488
+   },
+   "S model": {
+    "qi": 1.5117372658189752,
+    "contact": 2.0167218418478665
+   }
+  },
+  "wh_for_3_refills_S_pads": 26.318341307814986
+ },
+ "charge": {
+  "G target 600 Wh/L": {
+   "t50_min": 8.683211294117648,
+   "t70_min": 12.156495811764705,
+   "t100_min": 27.042000887394956
+  },
+  "S target 750 Wh/L": {
+   "t50_min": 10.854014117647058,
+   "t70_min": 15.195619764705881,
+   "t100_min": 33.80250110924369
+  }
+ },
+ "final21_check": {
+  "2.0 W G target 600 Wh/L": 2.618945902983892,
+  "2.0 W G model": 3.0195946074765114,
+  "2.0 W S target 750 Wh/L": 3.258856644324258,
+  "2.0 W S model": 3.6843423901354044,
+  "3.0 W G target 600 Wh/L": 1.7393954199456212,
+  "3.0 W G model": 2.0054896988719677,
+  "3.0 W S target 750 Wh/L": 2.1643976360636703,
+  "3.0 W S model": 2.446987649348342
+ },
+ "path_to_3p7h": {
+  "battery_W": 2.1481731641251702,
+  "hours": 3.798147438138551
+ },
+ "dock_cell": {
+  "L": 70.0,
+  "W": 60.0,
+  "H": 3.7,
+  "whl": 650.0,
+  "n": 2,
+  "v": 3.87,
+  "Wh_each": 10.101,
+  "Wh_pack": 20.202,
+  "mAh_pack": 5220.155038759691
+ }
+}

@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 20 · THE 90°-BENT-STEM BUDLUM B MODULE · FLAT RING ON SCREEN, SOLE USB-C, CAMERA, REAR PANEL AND ZERO-CPU CORE
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The module is `4.00 mm` thick and the bar is `32.0 x 4.0 x 1.00 mm`, lying on the top edge, as `cad/monogram_letter.py` draws it. USB-C is a separate part.
+
 **Revision L.5.0 · 2026-10-12 (authoritative specification of the `20.0 g`, 32-part `90°`-bent-stem B module)**.
 Modeled 1:1 from `uploads/b.png` (`40.0 x 32.0 mm` plan silhouette), the Budlum B module bends **only its straight antenna. Also, USB-C stem (`çubuk`) at a `90°` right angle (`dik açıyla`)** so that **only the stem stays up along the screen edge**. While the **entire circular ring (`yuvarlak`) lies flat on top of the screen surface** (`pafta/P14`, `pafta/P15`, `pafta/P21`, `pafta/P22`, `cad/models/monogram-module.stl`). `[DECISION]`
 

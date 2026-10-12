@@ -1,0 +1,63 @@
+{
+ "params": {
+  "N_ROUNDS": 8,
+  "BOUND_M": 10.0,
+  "SPREAD_M": 0.6,
+  "SIGMA_NS": 0.25
+ },
+ "honest_error_cm": {
+  "mean": -0.04,
+  "sd": 3.76,
+  "p99_abs": 9.78
+ },
+ "honest_pass": {
+  "1.0": 1.0,
+  "5.0": 1.0,
+  "9.5": 1.0
+ },
+ "relay": {
+  "analog RF relay, 5 m cable": {
+   "measured_m": 9.18,
+   "passes": true
+  },
+  "analog RF relay, 30 m cable": {
+   "measured_m": 44.85,
+   "passes": false
+  },
+  "digital relay, 100 ns": {
+   "measured_m": 31.96,
+   "passes": false
+  },
+  "digital relay, 1 us": {
+   "measured_m": 301.77,
+   "passes": false
+  },
+  "Wi-Fi bridge to next flat, 50 us": {
+   "measured_m": 14991.62,
+   "passes": false
+  },
+  "fibre to a validator 10 km away": {
+   "measured_m": 14681.99,
+   "passes": false
+  }
+ },
+ "ghost_peak": {
+  "1": {
+   "success": 0.03983,
+   "analytic": 0.04
+  },
+  "2": {
+   "success": 0.001665,
+   "analytic": 0.0016
+  },
+  "4": {
+   "success": 5e-06,
+   "analytic": 2.56e-06
+  },
+  "8": {
+   "success": 0.0,
+   "analytic": 6.5536000000000015e-12
+  }
+ },
+ "ghost_peak_note": "N = 8 gives 0.04^8 = 6.6e-12 per session when rounds are independent"
+}

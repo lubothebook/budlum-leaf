@@ -1,0 +1,288 @@
+{
+ "geometry": {
+  "inner_side": 9.19,
+  "inner_h": 0.84,
+  "anode_side": 8.69,
+  "cath_side": 8.49,
+  "cath_area_mm2": 68.8736,
+  "cell_volume_mm3": 76.8826
+ },
+ "can": {
+  "L": 9.25,
+  "W": 9.25,
+  "H": 0.9,
+  "r_corner": 0.4,
+  "t_wall": 0.03,
+  "material": "316L stainless (Ti Gr.1 option), case negative"
+ },
+ "lateral_margins_mm": {
+  "weld_clear": 0.1,
+  "frame": 0.05,
+  "sep_over": 0.1,
+  "an_over": 0.1,
+  "edge_dead": 0.02
+ },
+ "variants": {
+  "G": {
+   "variant": "G",
+   "name": "graphite / LiCoO2 4.45 V",
+   "n_cathodes": 3,
+   "n_anodes": 4,
+   "loading_mAh_cm2": 3.336,
+   "t_cathode_coat_um": 46.1,
+   "t_anode_coat_um": 63.1,
+   "t_al_um": 9.0,
+   "t_cu_um": 6.0,
+   "t_sep_um": 7.0,
+   "stack_um": {
+    "cathodes": 303.6,
+    "anodes": 402.5,
+    "separators": 42.0,
+    "swell_allowance": 43.4,
+    "compliance_pad": 62.0,
+    "liners": 10.0,
+    "tolerance": 20.0,
+    "total": 840.0,
+    "inner_height": 840.0
+   },
+   "cathode_area_mm2": 68.87,
+   "capacity_mAh": 13.79,
+   "v_nom": 3.87,
+   "v_max": 4.45,
+   "v_min": 3.0,
+   "energy_Wh": 0.05335,
+   "energy_J": 192.1,
+   "whl_stack": 1036.0,
+   "whl_cell": 694.0,
+   "target_whl": 600.0,
+   "margin_vs_target": 0.157,
+   "dcir_ohm": 4.84,
+   "mass_g": 0.115,
+   "wh_kg": 465.0,
+   "sensitivity": [
+    [
+     "lateral margin -0.05 mm/side",
+     711.0
+    ],
+    [
+     "lateral margin +0.00 mm/side",
+     694.0
+    ],
+    [
+     "lateral margin +0.05 mm/side",
+     677.0
+    ],
+    [
+     "lateral margin +0.10 mm/side",
+     660.0
+    ],
+    [
+     "loading cap 3.0 mAh/cm2",
+     666.0
+    ],
+    [
+     "loading cap 3.5 mAh/cm2",
+     694.0
+    ],
+    [
+     "loading cap 4.0 mAh/cm2",
+     694.0
+    ],
+    [
+     "loading cap 4.5 mAh/cm2",
+     694.0
+    ],
+    [
+     "anode swell 10 % (rev + EOL)",
+     694.0
+    ],
+    [
+     "anode swell 22 % (rev + EOL)",
+     636.0
+    ],
+    [
+     "anode swell 35 % (rev + EOL)",
+     608.0
+    ],
+    [
+     "anode swell 50 % (rev + EOL)",
+     555.0
+    ]
+   ]
+  },
+  "S": {
+   "variant": "S",
+   "name": "Si-C composite / LiCoO2 4.48 V",
+   "n_cathodes": 3,
+   "n_anodes": 4,
+   "loading_mAh_cm2": 4.16,
+   "t_cathode_coat_um": 55.6,
+   "t_anode_coat_um": 47.4,
+   "t_al_um": 9.0,
+   "t_cu_um": 6.0,
+   "t_sep_um": 7.0,
+   "stack_um": {
+    "cathodes": 360.9,
+    "anodes": 308.3,
+    "separators": 42.0,
+    "swell_allowance": 69.2,
+    "compliance_pad": 98.9,
+    "liners": 10.0,
+    "tolerance": 20.0,
+    "total": 840.0,
+    "inner_height": 840.0
+   },
+   "cathode_area_mm2": 68.87,
+   "capacity_mAh": 17.19,
+   "v_nom": 3.8,
+   "v_max": 4.48,
+   "v_min": 2.8,
+   "energy_Wh": 0.06533,
+   "energy_J": 235.2,
+   "whl_stack": 1334.0,
+   "whl_cell": 850.0,
+   "target_whl": 750.0,
+   "margin_vs_target": 0.133,
+   "dcir_ohm": 4.36,
+   "mass_g": 0.114,
+   "wh_kg": 574.0,
+   "sensitivity": [
+    [
+     "lateral margin -0.05 mm/side",
+     871.0
+    ],
+    [
+     "lateral margin +0.00 mm/side",
+     850.0
+    ],
+    [
+     "lateral margin +0.05 mm/side",
+     829.0
+    ],
+    [
+     "lateral margin +0.10 mm/side",
+     809.0
+    ],
+    [
+     "loading cap 3.0 mAh/cm2",
+     815.0
+    ],
+    [
+     "loading cap 3.5 mAh/cm2",
+     815.0
+    ],
+    [
+     "loading cap 4.0 mAh/cm2",
+     817.0
+    ],
+    [
+     "loading cap 4.5 mAh/cm2",
+     850.0
+    ],
+    [
+     "anode swell 10 % (rev + EOL)",
+     912.0
+    ],
+    [
+     "anode swell 22 % (rev + EOL)",
+     850.0
+    ],
+    [
+     "anode swell 35 % (rev + EOL)",
+     791.0
+    ],
+    [
+     "anode swell 50 % (rev + EOL)",
+     733.0
+    ]
+   ]
+  }
+ },
+ "pack_cell_volume_cm3": 9.841,
+ "b_cell": {
+  "G": {
+   "variant": "G",
+   "name": "graphite / LiCoO2 4.45 V",
+   "n_cathodes": 4,
+   "n_anodes": 5,
+   "loading_mAh_cm2": 4.495,
+   "t_cathode_coat_um": 62.1,
+   "t_anode_coat_um": 85.0,
+   "t_al_um": 9.0,
+   "t_cu_um": 6.0,
+   "t_sep_um": 7.0,
+   "stack_um": {
+    "cathodes": 532.8,
+    "anodes": 709.9,
+    "separators": 56.0,
+    "swell_allowance": 77.9,
+    "compliance_pad": 111.3,
+    "liners": 10.0,
+    "tolerance": 20.0,
+    "total": 1440.0,
+    "inner_height": 1440.0
+   },
+   "cathode_area_mm2": 135.71,
+   "capacity_mAh": 48.8,
+   "v_nom": 3.87,
+   "v_max": 4.45,
+   "v_min": 3.0,
+   "energy_Wh": 0.18885,
+   "energy_J": 679.9,
+   "whl_stack": 1072.0,
+   "whl_cell": 788.0,
+   "target_whl": 600.0,
+   "margin_vs_target": 0.313,
+   "dcir_ohm": 1.84,
+   "mass_g": 0.257,
+   "wh_kg": 736.0,
+   "can_mm": [
+    20.0,
+    8.0,
+    1.5
+   ]
+  },
+  "S": {
+   "variant": "S",
+   "name": "Si-C composite / LiCoO2 4.48 V",
+   "n_cathodes": 5,
+   "n_anodes": 6,
+   "loading_mAh_cm2": 4.383,
+   "t_cathode_coat_um": 58.6,
+   "t_anode_coat_um": 49.9,
+   "t_al_um": 9.0,
+   "t_cu_um": 6.0,
+   "t_sep_um": 7.0,
+   "stack_um": {
+    "cathodes": 631.3,
+    "anodes": 535.1,
+    "separators": 70.0,
+    "swell_allowance": 121.5,
+    "compliance_pad": 173.6,
+    "liners": 10.0,
+    "tolerance": 20.0,
+    "total": 1440.0,
+    "inner_height": 1440.0
+   },
+   "cathode_area_mm2": 135.71,
+   "capacity_mAh": 59.49,
+   "v_nom": 3.8,
+   "v_max": 4.48,
+   "v_min": 2.8,
+   "energy_Wh": 0.22605,
+   "energy_J": 813.8,
+   "whl_stack": 1347.0,
+   "whl_cell": 943.0,
+   "target_whl": 750.0,
+   "margin_vs_target": 0.257,
+   "dcir_ohm": 1.33,
+   "mass_g": 0.268,
+   "wh_kg": 845.0,
+   "can_mm": [
+    20.0,
+    8.0,
+    1.5
+   ]
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "refusals": {
+  "inactive": "key is not an active validator",
+  "slashed": "key is not an active validator",
+  "not in the set": "key is not an active validator",
+  "app not on chain": "app is not an on-chain program entry",
+  "identity theft in the handshake": "handshake signature invalid",
+  "root signed by another key": "root signature is not from the session validator",
+  "root over frames not shown": "root does not match the shown frames"
+ },
+ "slice_into_empty_slot": "01000000000000000f0000000000000005000000000000002c0100000000000014c040550e4a4df7c87a243d0add49709b4a1679a87ff04e4ea5e575cd9f9e1ef219faa976c678adf4640a5bd006b06e4ae66da2a68c9540868485e3b36265741cd1c108780b9b113938daf4475bffdd41a9d5721df448d14391d21cd336db73255a2874b9728a84ff2ed484a8ae3209aadd66a032d67869c515b177f3985336d69a7041c213072d8bcb53ba0848aa69314302977c8a2faaa90152cd01e068df5a510f9aacefe1f8e70dbb9dab9d29cbf82f301073b80817adf93acbe83c5bf407df68dce4d772ac7a961f34bec879315bb7ef5b7a064d2abe709179650bae758d587c6195d3cd2cc72902d35857a58f80a364f9198b4e45d58849ff72bdbf86f1a763b7b32cc3dff6a79b8d11d0889b724b2500fa3138ad5ec9a89f84e982c70d655e8a752728e7e380aa8b00000000c677a2fb54dbface449a6b7b1c60dd20",
+ "expect": "refused; U6 NO_KEY; safe screen"
+}

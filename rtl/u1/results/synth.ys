@@ -1,0 +1,10 @@
+
+read_verilog -sv /home/claude/budlum-leaf/rtl/u1/u1_lane.v
+hierarchy -top u1_lane
+proc; flatten; opt -full; wreduce; alumacc; share; opt
+memory -nomap; opt_clean
+techmap; opt -fast
+abc -g AND,NAND,OR,NOR,XOR,XNOR,ANDNOT,ORNOT,MUX
+opt_clean
+stat
+stat -tech cmos

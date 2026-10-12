@@ -1,0 +1,46 @@
+== DSP-19 geometry: the lattice-continuous seam ==
+pitch 50.0 um (508.0 ppi), 200 x 200 px, tile pitch 10.000 mm
+chip 5.0 um, quad sub-pitch 7.0 um, chip gap 2.0 um
+tile lattice: 40000 centres; 2x2 block: 160000 centres; emitters per 2x2 block: 640000
+
+ kerf  edge c  glass mm  int max          seam V          seam H  corner  colour  margin
+  0.0   25.00   10.0000   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   19.00
+  1.0   24.50    9.9990   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   18.50
+  2.0   24.00    9.9980   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   18.00
+  3.0   23.50    9.9970   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   17.50
+  4.0   23.00    9.9960   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   17.00
+  5.0   22.50    9.9950   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   16.50
+  6.0   22.00    9.9940   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   16.00
+  7.0   21.50    9.9930   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   15.50
+  8.0   21.00    9.9920   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   15.00
+  9.0   20.50    9.9910   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   14.50
+ 10.0   20.00    9.9900   50.000  50.000- 50.000  50.000- 50.000  70.711  50.000   14.00
+
+kerf  6.0 um: largest empty circle radius, corner 35.355 um, interior 35.355 um (ideal 35.355)
+   chip-to-cut margin 16.00 um  (rule 16.0 um: met; chipping 10.0 um: clear)
+   clear space chip to chip across the seam 38.0 um
+   colour R: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour G: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour B: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour S: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+kerf 10.0 um: largest empty circle radius, corner 35.355 um, interior 35.355 um (ideal 35.355)
+   chip-to-cut margin 14.00 um  (rule 16.0 um: below; chipping 10.0 um: clear)
+   clear space chip to chip across the seam 38.0 um
+   colour R: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour G: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour B: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+   colour S: max same-colour gap 50.000 um (across V seam 50.000, across H seam 50.000)
+
+full face kerf  6.0: 1600 x 3200 px, x gaps 50.000..50.000, y gaps 50.000..50.000 um
+full face kerf 10.0: 1600 x 3200 px, x gaps 50.000..50.000, y gaps 50.000..50.000 um
+
+seam gap against the rest error of the tile pitch (kerf has no effect):
+   pitch error -4 um -> seam gap 46.0 um  pass
+   pitch error -2 um -> seam gap 48.0 um  pass
+   pitch error -1 um -> seam gap 49.0 um  pass
+   pitch error +0 um -> seam gap 50.0 um  pass
+   pitch error +1 um -> seam gap 51.0 um  FAIL DSP-19
+   pitch error +2 um -> seam gap 52.0 um  FAIL DSP-19
+
+wrote out/seam_corner_zoom.png, out/tile_lattice_kerf6.npz, out/block2x2_lattice_kerf*.npz
+DSP-19 geometry: PASS

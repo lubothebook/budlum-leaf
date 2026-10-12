@@ -1,0 +1,308 @@
+{
+ "fingers": [
+  {
+   "contact": "T tip pair (detent)",
+   "t": 0.18,
+   "b": 3.2,
+   "L": 5.0,
+   "preload_def": 0.27,
+   "k": 3.16,
+   "F_work": 1.01,
+   "F_max": 2.51,
+   "sigma": 727,
+   "sigma_over_Sy": 0.73
+  },
+  {
+   "contact": "R1 ring 1",
+   "t": 0.18,
+   "b": 1.6,
+   "L": 4.0,
+   "preload_def": 0.01,
+   "k": 3.086,
+   "F_work": 0.65,
+   "F_max": 0.8,
+   "sigma": 371,
+   "sigma_over_Sy": 0.37
+  },
+  {
+   "contact": "R2 ring 2 (x2 Kelvin)",
+   "t": 0.18,
+   "b": 1.6,
+   "L": 4.0,
+   "preload_def": 0.01,
+   "k": 3.086,
+   "F_work": 0.65,
+   "F_max": 0.8,
+   "sigma": 371,
+   "sigma_over_Sy": 0.37
+  }
+ ],
+ "detect": {
+  "type": "NC leaf on the back of T, opens at 0.15 mm of T travel",
+  "contact_force_N": 0.3,
+  "travel_mm": 0.27
+ },
+ "clip": {
+  "material": "Cu-Ti C1990, Au over Ni",
+  "t": 0.1,
+  "wrap_deg": 240,
+  "length": 1.9,
+  "grip_N": 2.0,
+  "note": "also the structural liner in CR-AUD-1 when made in 17-4PH"
+ },
+ "insertion_N": 3.49,
+ "withdrawal_N": 4.18,
+ "resistance": [
+  {
+   "contact": "T tip pair (detent)",
+   "a_um": 13.8,
+   "Rc_mohm": 1.67
+  },
+  {
+   "contact": "R1 ring 1",
+   "a_um": 11.0,
+   "Rc_mohm": 2.08
+  },
+  {
+   "contact": "R2 ring 2 (x2 Kelvin)",
+   "a_um": 11.0,
+   "Rc_mohm": 2.08
+  }
+ ],
+ "wear": [
+  {
+   "contact": "T",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "hard Au",
+   "slide_m": 116.0,
+   "depth_um": 1.65
+  },
+  {
+   "contact": "T",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "AuAgCu inlay",
+   "slide_m": 116.0,
+   "depth_um": 1.42
+  },
+  {
+   "contact": "T",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "PdNi",
+   "slide_m": 116.0,
+   "depth_um": 1.01
+  },
+  {
+   "contact": "T",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "hard Au",
+   "slide_m": 116.0,
+   "depth_um": 5.22
+  },
+  {
+   "contact": "T",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "AuAgCu inlay",
+   "slide_m": 116.0,
+   "depth_um": 4.49
+  },
+  {
+   "contact": "T",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "PdNi",
+   "slide_m": 116.0,
+   "depth_um": 3.21
+  },
+  {
+   "contact": "T",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "hard Au",
+   "slide_m": 116.0,
+   "depth_um": 16.51
+  },
+  {
+   "contact": "T",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "AuAgCu inlay",
+   "slide_m": 116.0,
+   "depth_um": 14.19
+  },
+  {
+   "contact": "T",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "PdNi",
+   "slide_m": 116.0,
+   "depth_um": 10.15
+  },
+  {
+   "contact": "R1",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "hard Au",
+   "slide_m": 86.0,
+   "depth_um": 1.13
+  },
+  {
+   "contact": "R1",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "AuAgCu inlay",
+   "slide_m": 86.0,
+   "depth_um": 0.98
+  },
+  {
+   "contact": "R1",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "PdNi",
+   "slide_m": 86.0,
+   "depth_um": 0.7
+  },
+  {
+   "contact": "R1",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "hard Au",
+   "slide_m": 86.0,
+   "depth_um": 3.59
+  },
+  {
+   "contact": "R1",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "AuAgCu inlay",
+   "slide_m": 86.0,
+   "depth_um": 3.09
+  },
+  {
+   "contact": "R1",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "PdNi",
+   "slide_m": 86.0,
+   "depth_um": 2.21
+  },
+  {
+   "contact": "R1",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "hard Au",
+   "slide_m": 86.0,
+   "depth_um": 11.35
+  },
+  {
+   "contact": "R1",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "AuAgCu inlay",
+   "slide_m": 86.0,
+   "depth_um": 9.76
+  },
+  {
+   "contact": "R1",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "PdNi",
+   "slide_m": 86.0,
+   "depth_um": 6.98
+  },
+  {
+   "contact": "R2",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "hard Au",
+   "slide_m": 58.0,
+   "depth_um": 0.93
+  },
+  {
+   "contact": "R2",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "AuAgCu inlay",
+   "slide_m": 58.0,
+   "depth_um": 0.8
+  },
+  {
+   "contact": "R2",
+   "K": 1e-07,
+   "case": "lubricated, mild",
+   "surface": "PdNi",
+   "slide_m": 58.0,
+   "depth_um": 0.57
+  },
+  {
+   "contact": "R2",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "hard Au",
+   "slide_m": 58.0,
+   "depth_um": 2.95
+  },
+  {
+   "contact": "R2",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "AuAgCu inlay",
+   "slide_m": 58.0,
+   "depth_um": 2.53
+  },
+  {
+   "contact": "R2",
+   "K": 1e-06,
+   "case": "lubricated, typical",
+   "surface": "PdNi",
+   "slide_m": 58.0,
+   "depth_um": 1.81
+  },
+  {
+   "contact": "R2",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "hard Au",
+   "slide_m": 58.0,
+   "depth_um": 9.32
+  },
+  {
+   "contact": "R2",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "AuAgCu inlay",
+   "slide_m": 58.0,
+   "depth_um": 8.01
+  },
+  {
+   "contact": "R2",
+   "K": 1e-05,
+   "case": "dry, severe",
+   "surface": "PdNi",
+   "slide_m": 58.0,
+   "depth_um": 5.73
+  }
+ ],
+ "plating": {
+  "inlay": "AuAgCu clad inlay 6.0 um over PdNi 1.0 um over Ni 2.0 um on Cu-Ti, PFPE lube",
+  "wearable_um": 7.0
+ },
+ "seal": {
+  "contact_stress_MPa": 1.46,
+  "clamp_N": 19.9,
+  "p_ip68_MPa": 0.0147,
+  "p_proof_MPa": 0.0294,
+  "ratio": 49.7,
+  "heat_stakes": 4
+ },
+ "pass": {
+  "forces": true,
+  "wear": true,
+  "seal": true,
+  "fingers": true
+ }
+}

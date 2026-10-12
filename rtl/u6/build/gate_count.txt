@@ -1,0 +1,15 @@
+$_MUX_              6457
+$_XOR_              6384
+$_SDFFE_PP0P_       5296
+$_AND_              1767
+$_NOT_              1727
+$_SDFFE_PP0N_        691
+$_OR_                445
+$_SDFF_PP0_           65
+$pmux                 34
+$add                   5
+$gt                    2
+$lt                    1
+$ge                    1
+flip-flops          6052
+NAND2-eq (unminimised) 64 kGE

@@ -1,6 +1,6 @@
 # BUDLUM LEAF · PROGRAM STATE
 
-**Revision:** L.5.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
+**Revision:** L.6.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
 **Owner:** the Leaf Program Lead. It is rewritten in every working block (Volume XII, Section 7).
 
 ---
@@ -23,6 +23,19 @@
 | `LEAF/pafta/P01` to `P22`, and `E01` to `E03` | **all 25 SVG sheets pass `OVER 0, COVERED 0, COLLIDE 0`**: `E01..E03` engineering sections, `P01..P13` core sheets, and `P14..P22` part-by-part sheets |
 
 ---
+
+## 2a · The closed decisions of Revision L.6.0 (2026-10-12 · stretch, `1.00 mm` bar, projection)
+
+Part 21 (`FINAL/21-stretch-stem-and-projection.md`) holds the numbers. It wins over the L.5.0 list below where they differ.
+
+- **The body stretches with no loss of battery**. `128` rotating PC-capped tiles give `25 %` stretch, and `41 %` at most. The body holds `5.7` to `7.2 Wh`.
+- **The display stays `508 ppi`**. Micro-LED tiles meet in lattice-continuous seams, so no seam shows. The quadrants stay removable. Qi2.2 stays.
+- **The B module is `4.00 mm` thick and its bar is `1.00 mm`**. The bar is `32.0 x 4.0 x 1.00 mm` LCP-GF40 on the top edge. It holds the antennas and the body link only.
+- **USB-C is a separately sold port part**. The `3.5 mm` jack sits in the ring rim. The camera stays `50 MP`: a small-pixel sensor in a `3.90 mm` column.
+- **"Zero CPU" means no general-purpose processor and no operating system**. Fixed-function chips and a `16 MB` frame store are allowed.
+- **The validators run the Leaf as they run the chain**. Session state is chain state, and the nearest validator renders at frame speed. Finality follows in the `6` s slot (research order RG-18).
+- **The radio set is `U2A` Wi-Fi 7, `U2B` `60 GHz` and UWB, and `U5` 5G standalone**. The Leaf is a wallet on the nearest validator. The dock validator is optional, and `30 ms` holds outdoors.
+- **Not yet redrawn**: the 25 sheets, the STL models and the renders still show L.5.0.
 
 ## 2 · The closed decisions of Revision L.5.0 (2026-10-12 · 4-Quadrant `+` Puzzle-Interlocking Body & `90°` Natural-Gap Bent B Module)
 

@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 15 · THE 4-QUADRANT (+) SOLID-STATE BATTERY AND QI2.2 WIRELESS SYSTEM, PART BY PART (25 PARTS)
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The four pouch cells are replaced by `128` hermetic micro cells, one per rotating tile. The body holds `5.7 Wh` at `600 Wh/L` and `7.2 Wh` at `750 Wh/L`.
+
 **Revision L.5.0 · 2026-10-12**.
 `11-THE-ENERGY-SHEET.md` states the operation of the 4-Quadrant (`+`) biocompatible `LLZO/PEO` solid-state battery (`4 x 3.0 Wh = 12.0 Wh` / `3 200 mAh`). Universal `Qi2.2` wireless charging, and eyewear safety (`<=36.2 C`, `ISO 10993`). This file lists all **25 part groups** of the energy and `+` seam system across `Q1..Q4` (`pafta/P11`, `pafta/P12`, `pafta/P17`).
 

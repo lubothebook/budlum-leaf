@@ -1,0 +1,10 @@
+seat field: 12 leaves at 0.80 mm pitch = 9.6 mm
+mirror check (front/back seat): pass
+B module, video 1.92 W                   worst leaf 0.28 A (1:GND 0.28, 2:VBUS 0.28, 11:VBUS 0.28, 12:GND 0.28), leaf loss 5.7 mW, PASS
+B module, peak 4.50 W at 3.40 V          worst leaf 0.74 A (1:GND 0.74, 2:VBUS 0.74, 11:VBUS 0.74, 12:GND 0.74), leaf loss 38.9 mW, PASS
+B module, B cell charge 1C plus video    worst leaf 0.30 A (1:GND 0.30, 2:VBUS 0.30, 11:VBUS 0.30, 12:GND 0.30), leaf loss 6.6 mW, PASS
+port part, 27 W at 9 V (PD fixed)        worst leaf 1.50 A (1:GND 1.50, 5:VHV 1.50, 8:VHV 1.50, 12:GND 1.50), leaf loss 162.0 mW, PASS
+port part, 27 W at 15 V                  worst leaf 0.90 A (1:GND 0.90, 5:VHV 0.90, 8:VHV 0.90, 12:GND 0.90), leaf loss 58.3 mW, PASS
+dock pads, 25 W at 12 V                  worst leaf 1.04 A (1:GND 1.04, 5:VHV 1.04, 8:VHV 1.04, 12:GND 1.04), leaf loss 78.1 mW, PASS
+dead-pad probe on SBA/SBB: 1.8 V through 1.0 MOhm, 200 us every 250 ms: average 0.0014 uA (MON-16 limit 1 uA)
+power leaves at rest: 0 V, 1 MOhm to GND, so no DC across wet pads

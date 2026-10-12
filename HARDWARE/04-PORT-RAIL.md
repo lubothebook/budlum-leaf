@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 04 · THE PORTLESS QI2.2 BODY AND THE SOLE USB-C IN THE 90° BENT B STEM
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. USB-C leaves the B module and becomes a separately sold port part on a free body edge. The B bar is `32.0 x 4.0 x 1.00 mm` LCP on the top edge.
+
 **Revision L.5.0 · 2026-10-12**.
 This file settles two linked rules: **where wireless charging lives** and **where USB Type-C lives**. The 4-quadrant (`+`) screen body has **zero USB-C ports and zero buttons** and charges wirelessly on any `Qi / Qi2.2` pad. **USB Type-C lives exclusively on the `90°`-bent stem of the B camera module** (`pafta/P10`, `pafta/P16`).
 

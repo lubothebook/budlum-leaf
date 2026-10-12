@@ -1,0 +1,48 @@
+
+== rest: theta = 0.0 deg ==
+  [PASS] C1 tile count: tiles=128, per_quadrant={'Q1': 32, 'Q2': 32, 'Q3': 32, 'Q4': 32}
+  [PASS] C2 lattice envelope: stretch_factor=1.0, envelope_mm=[80.0, 160.0], expected_mm=[80.0, 160.0], area_ratio=1.0
+  [PASS] C3 STL bounding box: stl_mm=[79.99, 159.99, 2.0], chamfer_loss_mm=[0.01, 0.01]
+  [PASS] C4 tile overlap: max_overlap_mm2=0.00e+00
+  [PASS] C4 ribbon and ball clash: ribbon_vs_foreign_tile=0, ribbon_vs_ribbon=0, ball_vs_tile=0, ball_to_ribbon_z_gap_mm=0.02
+  [PASS] C5 hinge corner coincidence: hinges=232, max_pivot_gap_mm=0.0e+00, max_uses_per_corner=1, split_couplers=24
+  [PASS] C6 watertight STL: bodies=390, expected=390, all_watertight=True, min_body_volume_mm3=6.25e-03, faces=98000, size_MB=4.9
+  [PASS] C7 ribbon chord: max_chord_mm=0.56, ribbon_len_mm=0.8, sagitta_mm=0.2383
+  [INFO] I1 coverage: tiles 98.9 % (unchamfered 100.0 %)
+  [PASS] C11 kinematic seat: balls=6, per_quadrant={'Q1': 3, 'Q2': 3, 'Q3': 3, 'Q4': 3}
+
+== default: theta = 17.5 deg ==
+  [PASS] C1 tile count: tiles=128, per_quadrant={'Q1': 32, 'Q2': 32, 'Q3': 32, 'Q4': 32}
+  [PASS] C2 lattice envelope: stretch_factor=1.25442, envelope_mm=[100.354, 200.708], expected_mm=[100.354, 200.708], area_ratio=1.5736
+  [PASS] C3 STL bounding box: stl_mm=[100.006, 200.359, 2.0], chamfer_loss_mm=[0.348, 0.348]
+  [PASS] C4 tile overlap: max_overlap_mm2=0.00e+00
+  [PASS] C4 ribbon and ball clash: ribbon_vs_foreign_tile=0, ribbon_vs_ribbon=0, ball_vs_tile=0, ball_to_ribbon_z_gap_mm=0.02
+  [PASS] C5 hinge corner coincidence: hinges=232, max_pivot_gap_mm=1.4e-14, max_uses_per_corner=1, split_couplers=24
+  [PASS] C6 watertight STL: bodies=390, expected=390, all_watertight=True, min_body_volume_mm3=6.28e-03, faces=98000, size_MB=4.9
+  [PASS] C7 ribbon chord: max_chord_mm=0.7025, ribbon_len_mm=0.8, sagitta_mm=0.1636
+  [PASS] C8 void diagonal: short_mm=6.014, long_mm=19.074, expected=[6.014, 19.074]
+  [INFO] I1 coverage: tiles 62.9 % (unchamfered 63.5 %)
+
+== max: theta = 45.0 deg ==
+  [PASS] C1 tile count: tiles=128, per_quadrant={'Q1': 32, 'Q2': 32, 'Q3': 32, 'Q4': 32}
+  [PASS] C2 lattice envelope: stretch_factor=1.41421, envelope_mm=[113.137, 226.274], expected_mm=[113.137, 226.274], area_ratio=2.0
+  [PASS] C3 STL bounding box: stl_mm=[112.345, 225.482, 2.0], chamfer_loss_mm=[0.792, 0.792]
+  [PASS] C4 tile overlap: max_overlap_mm2=0.00e+00
+  [PASS] C4 ribbon and ball clash: ribbon_vs_foreign_tile=0, ribbon_vs_ribbon=0, ball_vs_tile=0, ball_to_ribbon_z_gap_mm=0.02
+  [PASS] C5 hinge corner coincidence: hinges=232, max_pivot_gap_mm=1.4e-14, max_uses_per_corner=1, split_couplers=24
+  [PASS] C6 watertight STL: bodies=390, expected=390, all_watertight=True, min_body_volume_mm3=6.30e-03, faces=98000, size_MB=4.9
+  [PASS] C7 ribbon chord: max_chord_mm=0.792, ribbon_len_mm=0.8, sagitta_mm=0.0489
+  [PASS] C8 void diagonal: short_mm=14.142, long_mm=14.142, expected=[14.142, 14.142]
+  [INFO] I1 coverage: tiles 49.5 % (unchamfered 50.0 %)
+
+== C9 edge softening ==
+  [PASS] C9 facet audit: max_facet_turn_deg=46.28, limit_deg=47.0, creases_over_limit=0, note=a 90 deg edge split into 2 or more facets turns 45 deg or less
+  [PASS] C9 measured radii (STL vertices): perimeter_front=0.65, perimeter_back=0.65, cap_top_break=0.03, back_break=0.03, plan_corner_R=6.35, chamfer_corner_round=0.03
+  [PASS] C9 run-out: perimeter_tile_radius_range_mm=[0.03, 0.65], run_out_mm=2.0
+  [PASS] C9 kerf and edge pixel untouched: footprint_at_midplane_mm=[9.99, 9.99], break_inset_at_glass_layer_mm=0.0, glass_layer_z_mm=[1.45, 1.7]
+
+== C10 cell envelope ==
+  [PASS] C10 cell inside tile: tiles_with_cell_outside=4, corner_cell_notch_mm2=5.804, body_cell_area_loss_pct=0.212, note=only the four R 6.35 corner tiles clip the cell
+  [PASS] STL total size: total_MB=14.7
+
+ALL PASS

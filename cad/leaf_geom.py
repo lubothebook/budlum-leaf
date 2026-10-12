@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# BUDLUM LEAF · cad/leaf_geom.py · revision L.5.0 · 2026-10-12
+# BUDLUM LEAF · cad/leaf_geom.py · revision L.6.0 · 2026-10-12
+#
+# L.6.0 soft edges (TEAM-BRIEF section 4): the body perimeter face edges carry a true r 0.65 mm
+# quarter-circle fillet (stack() profile fixed: the top roll was inverted and left the front edge
+# sharp), the plan corners stay R 6.35 mm, the + seam sides keep a 0.03 mm edge break only.
 #
 # Shared parametric geometry for the Budlum Leaf family:
 #   - 4-Quadrant Plus (+) Seamless Snap-Together Polycarbonate Screen-Battery Tiles:
@@ -32,9 +36,14 @@ def corner_radius(short_side):
 corner_cut = corner_radius
 
 
+BODY_EDGE_R = 0.65     # [DECISION] TEAM-BRIEF 4: body outer perimeter, front and back face edges
+SEAM_EDGE_BREAK = 0.03 # [DECISION] TEAM-BRIEF 4: interior tile cap top edges, kerf unchanged
+
+
 def edge_fillet(thickness):
-    """Soft tactile edge rounding so no 90° outer edge feels sharp in the hand."""
-    return round(min(0.68, thickness * 0.31), 2)
+    """Soft tactile edge fillet of the body face edges: r 0.65 mm (TEAM-BRIEF 4), never more than
+    0.49 of the thickness so a flat side land always remains."""
+    return round(min(BODY_EDGE_R, thickness * 0.49), 2)
 
 
 def _arc(cx, cy, r, a0, a1, n):
@@ -65,7 +74,7 @@ def rounded_rect(w, h, R, d=0.0, n=16):
 outline = rounded_rect
 
 
-def quadrant_outline(qx, qy, qw=40.0, qh=80.0, r_outer=6.35, r_inner=0.18, d=0.0, n=12):
+def quadrant_outline(qx, qy, qw=40.0, qh=80.0, r_outer=6.35, r_inner=0.18, d=0.0, n=12, d_seam=None):
     """Counter-clockwise outer perimeter of one quadrant tile (qw x qh = 40 x 80 mm)
     centered at its local origin (0, 0):
       - The ONE outer phone corner `(qx, qy)` (`qx, qy in {-1, +1}`) uses the user's exact
@@ -73,8 +82,15 @@ def quadrant_outline(qx, qy, qw=40.0, qh=80.0, r_outer=6.35, r_inner=0.18, d=0.0
       - The THREE internal seams meeting along the `+` cross (`x = 0` and `y = 0`) use an
         ultra-tight optical half-lap radius `r_inner = 0.18 mm` so all 4 tiles mate with zero
         gap (`< 15 µm` index-matched `n = 1.585` fluorosilicone boundary).
+    L.6.0: `d` insets the two outer body sides (the r 0.65 face-edge fillet), `d_seam` insets the
+    two + seam sides (the 0.03 mm edge break); `d_seam = None` insets every side by `d`.
     """
-    hw, hh = qw / 2.0 - d, qh / 2.0 - d
+    if d_seam is None:
+        d_seam = d
+    xr = qw / 2.0 - (d if qx == +1 else d_seam)
+    xl = -qw / 2.0 + (d if qx == -1 else d_seam)
+    yt = qh / 2.0 - (d if qy == +1 else d_seam)
+    yb = -qh / 2.0 + (d if qy == -1 else d_seam)
     corner_specs = [
         (+1, +1, 0.0),
         (-1, +1, 90.0),
@@ -83,9 +99,10 @@ def quadrant_outline(qx, qy, qw=40.0, qh=80.0, r_outer=6.35, r_inner=0.18, d=0.0
     ]
     raw_corners = []
     for (sx, sy, a0) in corner_specs:
-        r_c = max((r_outer if (sx == qx and sy == qy) else r_inner) - d * 0.6, 0.04)
-        cx = sx * (hw - r_c)
-        cy = sy * (hh - r_c)
+        outer = (sx == qx and sy == qy)
+        r_c = max((r_outer - d) if outer else (r_inner - d_seam), 0.04)
+        cx = (xr if sx > 0 else xl) - sx * r_c
+        cy = (yt if sy > 0 else yb) - sy * r_c
         seg = _arc(cx, cy, r_c, math.radians(a0), math.radians(a0 + 90.0), n)
         raw_corners.append(seg)
     pts = []
@@ -296,21 +313,59 @@ def mesh_from_rings(rings, inner_rings=None):
     return verts, faces
 
 
-def stack(pts_fn, z0, z1, edge_round, steps=8):
-    """A prism whose top and bottom perimeter edges are softened by a quarter-circle roll of radius edge_round."""
+def fillet_inset(z, z0, z1, r):
+    """Inset of a quarter-circle edge fillet of radius r at height z on a side wall from z0 to z1."""
+    if r <= 0.0:
+        return 0.0
+    e = None
+    if z < z0 + r:
+        e = (z0 + r) - z
+    elif z > z1 - r:
+        e = z - (z1 - r)
+    if e is None:
+        return 0.0
+    e = min(e, r)
+    return r - math.sqrt(max(r * r - e * e, 0.0))
+
+
+def fillet_heights(z0, z1, r, steps):
+    """Heights of a side wall that carries a quarter-circle fillet of radius r at both face edges,
+    sampled at equal angle steps (steps segments per fillet, so each facet turns 90/steps deg)."""
     zs = []
     for i in range(steps + 1):
-        z = z0 + edge_round * i / steps
-        d = edge_round - math.sqrt(max(edge_round ** 2 - (edge_round - (z - z0)) ** 2, 0.0))
-        zs.append((z, d))
-    if z1 - z0 > 2.0 * edge_round:
-        zs.append((z1 - edge_round, 0.0))
-    for i in range(1, steps + 1):
-        e = edge_round * i / steps
-        z = z1 - edge_round + e
-        d = edge_round - math.sqrt(max(edge_round ** 2 - (edge_round - e) ** 2, 0.0))
-        zs.append((z, d))
-    return [(z, pts_fn(d)) for (z, d) in zs]
+        a = (math.pi / 2.0) * i / steps
+        zs.append(z0 + r - r * math.cos(a))
+    for i in range(steps + 1):
+        a = (math.pi / 2.0) * i / steps
+        zs.append(z1 - r + r * math.sin(a))
+    if z1 - z0 <= 2.0 * r + 1e-9:
+        zs = zs[: steps + 1] + zs[steps + 2:]
+    return zs
+
+
+def stack(pts_fn, z0, z1, edge_round, steps=8):
+    """A prism whose top and bottom perimeter edges are softened by a true quarter-circle fillet of
+    radius edge_round (equal-angle facets). L.6.0: the top roll used to run inverted (inset r just
+    under the face, 0 at the face) and left the face edge sharp; it is now the mirror of the bottom."""
+    r = min(edge_round, (z1 - z0) / 2.0)
+    return [(z, pts_fn(fillet_inset(z, z0, z1, r))) for z in fillet_heights(z0, z1, r, steps)]
+
+
+def stack_multi(pts_fn, z0, z1, radii, steps=8):
+    """Like stack(), but pts_fn takes one inset per radius in `radii`, so different sides of the
+    same outline carry different fillets (body r 0.65 outside, 0.03 break on the seam sides).
+    The heights are the union of the fillet heights of every radius."""
+    zs = set()
+    for r in radii:
+        r = min(r, (z1 - z0) / 2.0)
+        for z in fillet_heights(z0, z1, r, steps):
+            zs.add(round(z, 9))
+    zs = sorted(zs)
+    out = []
+    for z in zs:
+        ds = [fillet_inset(z, z0, z1, min(r, (z1 - z0) / 2.0)) for r in radii]
+        out.append((z, pts_fn(*ds)))
+    return out
 
 
 def write_stl(path, verts, faces, name="budlum"):
@@ -449,7 +504,7 @@ def main():
     for (tag, w, h, th, title) in specs:
         R = corner_radius(min(w, h))
         er = edge_fillet(th)
-        v, f = mesh_from_rings(stack(lambda d, w=w, h=h, R=R: rounded_rect(w, h, R, d, 20), 0.0, th, er, steps=8))
+        v, f = mesh_from_rings(stack(lambda d, w=w, h=h, R=R: rounded_rect(w, h, R, d, 20), 0.0, th, er, steps=10))
         n = write_stl(os.path.join(out, "%s-body.stl" % tag), v, f, "budlum %s quad" % tag)
         plan_svg(os.path.join(out, "%s-plan.svg" % tag), w, h, th, title)
         print("%-10s  %6.1f x %6.1f x %.2f mm  R=%.2f  edge_r=%.2f  %6d tris" % (tag, w, h, th, R, er, n))
