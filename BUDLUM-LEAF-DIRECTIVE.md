@@ -171,7 +171,11 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 
 ### 0.78 The block of 2026-10-12: Revision L.6.0, the stretch, the `1.00 mm` stem and the projection
 
-**The orders of Ayaz that opened Revision L.6.0**. *The stem is `1 mm`, and the body stretches.* *The validators run the Leaf as they run Budlum.* *Distance must not matter.* *The camera stays `50 MP`.*
+**The orders of Ayaz that opened Revision L.6.0**.
+
+1. *The stem is `1 mm`, and the body stretches.*
+2. *The validators run the Leaf as they run Budlum, so distance must not matter.*
+3. *The camera stays `50 MP`.*
 
 | The change | Where |
 |---|---|
