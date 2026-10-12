@@ -20,7 +20,7 @@
 
 | Parameter | Value | Gate |
 | --- | --- | --- |
-| stem envelope | `8.0 x 32.0 x 1.00 mm`, `r = 0.40 mm` edges | MON-20 |
+| stem envelope | `8.0 x 32.0 x 1.00 mm`, `r = 0.40 mm` edges | MON-23 |
 | stem pry strength | `5 N` at the tip, margin `1.5` in LCP-GF40 | MEC-42 |
 | ring envelope | `Ø32.0 x 4.00 mm` | MON-1 |
 | Wi-Fi | `2 x 2` Wi-Fi 7, multi-link `5 + 6 GHz`, A1 and A3 | RF-22 |

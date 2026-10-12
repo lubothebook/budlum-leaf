@@ -18,7 +18,7 @@ Modeled from `uploads/b.png`. The stem (`çubuk`) is bent `90°` to the ring in 
 
 | No | Part | Material and specification | Dimensions (`mm`) | Mass (`g`) | Gate |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Stem shell with the moulded `90°` corner | LCP, 40 % glass fibre, `r = 0.40 mm` edges | `8.0 x 32.0 x 1.00` | `0.44` | MON-20, MEC-42 |
+| 1 | Stem shell with the moulded `90°` corner | LCP, 40 % glass fibre, `r = 0.40 mm` edges | `8.0 x 32.0 x 1.00` | `0.44` | MON-23, MEC-42 |
 | 2 | A1 inverted-F and A2 coupled arm | laser direct structured copper on the stem | `29.4 x 5.5 x 0.05` | `0.02` | RF-9, RF-22 |
 | 3 | A4 `1 x 4` `60 GHz` patch array | two-layer LCP flex on the mmWave layer | `14.0 x 3.2 x 0.10` | `0.05` | RF-19 |
 | 4 | Dock contact leaves | `12` hard-gold spring leaves, `0.15 mm` stroke | `30.0 x 2.0 x 0.20` | `0.08` | MON-18, MON-16 |

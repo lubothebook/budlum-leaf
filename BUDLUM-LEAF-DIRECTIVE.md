@@ -115,7 +115,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 18 | **The screen cost, the bend and the seal**: the two currencies, the photon-honest interface, the full wrap at R 25.5 mm, the gasketed carrier | B-1 to B-10, MEC-20 to MEC-24, ENR-9, DST-9, DST-10, DSP-11 |
 | 19 | **The second face, the custom shape, the patent screen and the ledger**: the Duo rule, the SZ rule and the freedom to operate | DUO-1 to DUO-6, SZ-1 to SZ-5, PRG-12, PRG-14 to PRG-16 |
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
-| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-20 to MON-22, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
+| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-21 to MON-23, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
 
 ### 0.7 What is fixed and what is open
 
@@ -179,7 +179,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 
 | The change | Where |
 |---|---|
-| **the body stretches about `8 %`**: a polycarbonate face of solid islands and serpentine PC lanes, at `9.4 Wh` | Part 21, Section 21.2 |
+| **the body stretches about `13 %`**, the most possible: PC islands and serpentine PC lanes, at `1.7 Wh` | Part 21, Section 21.2 |
 | **the B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**, with no hinge and no metal shell | Part 21, Section 21.3; `HARDWARE/05`, `HARDWARE/13` |
 | **the USB-C receptacle moves to the ring rim**, so the EU common charger rule still holds | Part 21, Section 21.3.4 |
 | **the camera stays `50 MP`**: a flat `1/1.56"` sensor and a double-fold periscope across the ring | Part 21, Section 21.3.5 |
@@ -3837,7 +3837,7 @@ These are the choices that the program line took while Ayaz was away. Each one i
 | the body bends at `R 25.5 mm` and does not stretch | `HARDWARE/12`, Part 18 | the body bends and also stretches. Section 21.2 `[DECISION]` |
 | the conductors are `AgNW/ITO` | `HARDWARE/02`, `HARDWARE/16` | ITO cracks near `1 %` strain. The conductors are AgNW only |
 | "Zero CPU and Zero RAM" | `HARDWARE/02`, `HARDWARE/19` | no general-purpose processor and no operating system. Fixed-function silicon and a frame store are allowed. Section 21.5.1 |
-| the interaction budget is served by "a local scene renderer" | Part 11, `MASTER/14` | a fixed-function compositor inside `U1` serves it. Section 21.5.6 |
+| the interaction budget is served by "a local scene renderer" | Part 10, `MASTER/14` | a fixed-function compositor inside `U1` serves it. Section 21.5.6 |
 | one `U2` SiP holds Wi-Fi 7, UWB and `60 GHz` | `HARDWARE/13`, part 17 | no such single part exists. The radio set splits into `U2A` and `U2B`. Section 21.4.2 |
 | 5G antennas exist and no modem exists | `HARDWARE/19`, A5 and A6 | a 5G RedCap modem `U5` joins the ring. Section 21.4.3 |
 | a `50 MP`, `12.8 x 9.6 mm` sensor with a folded `13.8 mm` barrel lives in a `4.00 mm` ring | `HARDWARE/13`, parts 20 to 27 | `50 MP` stays. A `1/1.56"` sensor lies flat and a double-fold D-cut periscope uses the ring area. Section 21.3.5 |
@@ -3872,19 +3872,24 @@ Polycarbonate replaces glass because it does not shatter. It stays the face of t
 4. **The puzzle locks stay rigid**. The `24` dovetail locks hold the tiles together. The strain happens inside each tile, so the `<15 µm` seam does not open under stretch. `[HYPOTHESIS]` gate MEC-40.
 5. **The thickness stays `2.00 mm`**. The island layer replaces the continuous cell layer at the same height.
 
-### 21.2.3 The stretch arithmetic
+### 21.2.3 The stretch arithmetic, corrected on the full repository scan
 
-The global strain of a tile is the bridge share of the pitch times the bridge strain: `ε_global = (gap / pitch) x ε_bridge`.
+The global strain of a tile is the lane share of the pitch times the lane strain: `ε_global = (lane / pitch) x ε_lane`. A serpentine PC lane carries about `30 %` while no PC part passes its own limit (Section 21.2.1). The first L.6.0 table used `50 %`. That was an error, and it is withdrawn.
 
-| The option | The island | The gap | The pitch | `ε_global` at `ε_bridge = 50 %` | Cells per tile | Energy per device |
+**The energy base is also corrected**. The L.5.0 cell claimed `3.0 Wh` in `35 x 75 x 1.08 mm`. That is about `1 060 Wh/L`, which no flexible cell reaches. This part uses `600 Wh/L` over `0.90 mm` of active cell. `[HYPOTHESIS]` On that base the L.5.0 body holds about `5.7 Wh`, not `12.0 Wh`.
+
+| The option | The island | The lane | The pitch | `ε_global` | Cells per tile | Energy per device |
 |---|---|---|---|---|---|---|
-| A | `8.0 mm` | `1.0 mm` | `9.0 mm` | `5.6 %` | `4 x 8 = 32` | `9.4 Wh` |
-| **B, the default** | `8.0 mm` | `1.5 mm` | `9.5 mm` | **`7.9 %`** | `4 x 8 = 32` | **`9.4 Wh`** |
-| C | `7.0 mm` | `2.0 mm` | `9.0 mm` | `11.1 %` | `4 x 8 = 32` | `7.2 Wh` |
+| continuous cell, no stretch | n.a. | n.a. | n.a. | bend only | `1` | `5.7 Wh` |
+| A | `8.0 mm` | `1.5 mm` | `9.5 mm` | `4.7 %` | `4 x 8 = 32` | `4.4 Wh` |
+| B | `7.0 mm` | `2.0 mm` | `9.0 mm` | `6.7 %` | `4 x 8 = 32` | `3.4 Wh` |
+| **M, the maximum** | `5.0 mm` | `4.0 mm` | `9.0 mm` | **`13.3 %`** | `4 x 8 = 32` | **`1.7 Wh`** |
 
-The energy column scales the L.5.0 cell (`35.0 x 75.0 mm`, `3.0 Wh`) by the island area on a `38 x 78 mm` usable tile. `[HYPOTHESIS]`
+**The decision**. Ayaz ordered the most stretch that is possible. Option M is the default: about `13 %` in every direction with a polycarbonate face. `[DECISION]` gate MEC-39 and ENR-22.
 
-**The decision**. Option B is the default: about `8 %` elastic stretch in every direction, and `9.4 Wh` instead of `12.0 Wh`. Stretch costs about one fifth of the energy. Option C is the path if Ayaz asks for `10 %` or more. `[DECISION]` gate MEC-39 and ENR-22.
+**The cost, stated plainly**. Option M keeps about `1.7 Wh` in the body. A Leaf that streams video draws about `2` to `3 W`, so it runs under one hour on the body cells. The energy question goes to Ayaz with the scan report. `[HYPOTHESIS]`
+
+**Past `13 %`**. More stretch needs lanes wider than the islands. The face then stops being mostly polycarbonate, and the cells fall below `1 Wh`. No option past M is recorded.
 
 ### 21.2.4 What stretch does to the display, the touch and the image
 
@@ -4004,7 +4009,7 @@ Each of these carries firmware on its own small core. That is allowed: Section 2
 
 **The antenna gains a few dB. The distance to the serving validator decides the latency.** The best Wi-Fi for Leaf is an access point in the room. A validator sits inside it. `[DECISION]`
 
-**The Leaf Dock, redefined**. One box holds a Wi-Fi 7 access point, a `60 GHz` radio and a full Budlum validator. It is the "validator in the room" of Part 11, made the default path. Gate SW-20 and Section 21.5.4.
+**The Leaf Dock, redefined**. One box holds a Wi-Fi 7 access point, a `60 GHz` radio and a full Budlum validator. It is the "validator in the room" of Part 10, made the default path. Gate SW-20 and Section 21.5.4.
 
 ---
 
@@ -4016,7 +4021,7 @@ Each of these carries firmware on its own small core. That is allowed: Section 2
 
 **What is allowed**. Fixed-function silicon with signed firmware: the radios, the modem, the video decoder, the TCON, the ISP, the power chip and the secure element. Also a frame store, because a decoder needs one.
 
-**Why the frame store is needed**. A Leaf 160 face is about `1 600 x 3 150` pixels, near `15 MB` per frame. A slice decoder with a compressed frame store holds it in about `16 MB`. `[HYPOTHESIS]`
+**Why the frame store is needed**. A Leaf 160 face is about `1 600 x 3 200` pixels, near `15 MB` per frame. A slice decoder with a compressed frame store holds it in about `16 MB`. `[HYPOTHESIS]`
 
 ### 21.5.2 The principle: the Leaf is a part of the chain
 
@@ -4046,7 +4051,7 @@ Light in fibre covers `1 000 km` in about `5 ms` each way. `[GENERAL]` No design
 | 2 | **Any validator can serve**. The session is chain state, so every validator holds it | the Leaf picks the nearest validator, not a fixed server |
 | 3 | **Nearest by measurement**. The path manager of Part 5 probes the validators and takes the lowest round trip | the choice follows the user as the user moves |
 | 4 | **A handover costs one frame**. The new validator already holds the state | no session moves and no reload |
-| 5 | **A density rule for the network**. The program targets a serving validator within `100 km` of every user | about `1 ms` of fibre each way, plus the routing |
+| 5 | **A density rule for the network**. The program targets a serving validator within `100 km` of every user | about `0.5 ms` of fibre each way, plus the routing |
 | 6 | **Speculative frames**. The validator renders the likely next states ahead: the next scroll page, the pressed button, the opened menu | a predicted action shows from the frame store with no network wait |
 | 7 | **The local compositor**. `U1` moves the cursor, the scroll offset, the typed glyph and the stretch warp | continuous motion never waits for the network |
 | 8 | **The far case is stated**. With no validator near, the class line shows `far`, and steps 6 and 7 carry the motion | the user is never left with a frozen surface |
@@ -4062,7 +4067,7 @@ Light in fibre covers `1 000 km` in about `5 ms` each way. `[GENERAL]` No design
 
 ### 21.5.6 The local compositor
 
-The interaction budget of Part 11 is under `10 ms`. `U1` holds a fixed-function compositor for four jobs only: the cursor, the scroll offset, the typed glyph echo and the stretch warp. The validator sends the layers, the glyph atlas and the speculative frames. `U1` only moves, picks and composes them. It runs no program. `[DECISION]` gate SW-21.
+The interaction budget of Part 10 is under `10 ms`. `U1` holds a fixed-function compositor for four jobs only: the cursor, the scroll offset, the typed glyph echo and the stretch warp. The validator sends the layers, the glyph atlas and the speculative frames. `U1` only moves, picks and composes them. It runs no program. `[DECISION]` gate SW-21.
 
 ### 21.5.7 The latency budget, input to photon
 
@@ -4079,7 +4084,7 @@ The interaction budget of Part 11 is under `10 ms`. `U1` holds a fixed-function 
 | **total, a new action** | **`21.2 ms`** | **`24.7 ms`** | **`100.7 ms`** |
 | **total, a predicted action** | **`about 8 ms`** | **`about 8 ms`** | **`about 8 ms`** |
 
-A predicted action skips the network: the touch scan, the pick in `U1` and the scan-out. All rows are `[HYPOTHESIS]` until gate DST-11 measures them. **The reading**. With the dock or a validator within `100 km`, the Leaf meets `30 ms` for any action. Far away, predicted actions still answer in about `8 ms`. `[DECISION]`
+A predicted action skips the network: the touch scan, the pick in `U1` and the scan-out. All rows are `[HYPOTHESIS]` until gate DST-11 measures them. **The reading**. With the dock or a validator within `100 km` over Wi-Fi, the target is `30 ms` for any action. On 5G the air path adds about `8` to `12 ms` each way, so the outdoor target is open. Far away, predicted actions still target about `8 ms`. `[HYPOTHESIS]`
 
 ### 21.5.8 Only decentralised applications
 
@@ -4123,11 +4128,11 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 
 | Gate | The test | The pass condition |
 |---|---|---|
-| **MEC-39** | the island-bridge tile at `ε_global = 7.9 %`, biaxial | `10 000` cycles, no open trace, no island crack |
+| **MEC-39** | the island-and-lane tile at `ε_global = 13.3 %`, biaxial | `10 000` cycles, no open trace, no island crack |
 | **MEC-40** | the puzzle seam under tile stretch | the seam stays under `15 µm` at full stretch |
 | **MEC-41** | the PC face: island caps and serpentine PC lanes at full stretch | no crack in a cap or a ribbon after `10 000` cycles, and the cap hard coat intact |
 | **MEC-42** | the `1.00 mm` LCP-GF40 stem: a `5 N` tip pry, `10 000` cycles | no crack, and the set under `0.2 mm` |
-| **ENR-22** | the micro-cell grid: the energy of a tile | at least `2.35 Wh` per tile at Option B |
+| **ENR-22** | the micro-cell grid: the energy of a tile | at least `0.43 Wh` per tile at Option M |
 | **ENR-23** | the cell island fuse: a short in one cell | the fuse opens, and the other cells stay in service |
 | **DSP-17** | the stretch warp: a circle and a grid at full stretch | the shape error under `1 %` |
 | **DSP-18** | the touch under stretch | no false touch at full stretch, position error under `1 mm` |
@@ -4135,7 +4140,7 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 | **RF-21** | the body slot antennas under stretch | the return loss inside the limit, flat and stretched |
 | **RF-22** | the stem and ring pair as `2 x 2` MIMO | the envelope correlation under `0.3` |
 | **RF-23** | the eight seats, front and back on four edges | each seat inside `1.5 dB` of the best seat |
-| **MON-20** | the stem thickness | `1.00 mm ± 0.05 mm` on every unit |
+| **MON-23** | the stem thickness | `1.00 mm ± 0.05 mm` on every unit |
 | **MON-21** | the module drop, `1.5 m`, six faces | the stem intact and the seat still holds |
 | **MON-22** | the rim USB-C: `10 000` plug cycles and `IP68` | the receptacle holds and the seal passes |
 | **CAM-21** | the `50 MP` flat sensor and double-fold D-cut periscope inside the `4.00 mm` ring | it fits with the window at `f/2.2` or faster, and the local image meets CAM-9 |

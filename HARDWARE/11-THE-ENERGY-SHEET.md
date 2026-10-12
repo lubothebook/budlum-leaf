@@ -1,6 +1,6 @@
 # BUDLUM LEAF · HARDWARE · 11 · THE 4-QUADRANT (+) BIOCOMPATIBLE SOLID-STATE BATTERY AND EYEWEAR SAFETY
 
-> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. Each tile holds a `4 x 8` grid of `8.0 mm` micro cells on islands, with a fuse in each bridge. The device energy is `9.4 Wh` at the default stretch option.
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. Each tile holds a `4 x 8` grid of `5.0 mm` micro cells on islands, with a fuse in each lane. The device energy is about `1.7 Wh` at the maximum stretch, on a realistic `600 Wh/L`.
 
 **Revision L.5.0 · 2026-10-12**.
 This file specifies the **`4 x 3.0 Wh = 12.0 Wh` (`3 200 mAh`) `LLZO/PEO-Ceramic` all-solid-state battery**, universal **`Qi2.2` wireless charging**,. Also, **eyewear / human-health safety architecture** inside the four `40.0 x 80.0 x 2.00 mm` (`17.0 g`) polycarbonate screen quadrants (`pafta/P11`, `pafta/P12`, `pafta/P17`).

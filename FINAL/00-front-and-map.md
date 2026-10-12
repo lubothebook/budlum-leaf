@@ -109,7 +109,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 18 | **The screen cost, the bend and the seal**: the two currencies, the photon-honest interface, the full wrap at R 25.5 mm, the gasketed carrier | B-1 to B-10, MEC-20 to MEC-24, ENR-9, DST-9, DST-10, DSP-11 |
 | 19 | **The second face, the custom shape, the patent screen and the ledger**: the Duo rule, the SZ rule and the freedom to operate | DUO-1 to DUO-6, SZ-1 to SZ-5, PRG-12, PRG-14 to PRG-16 |
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
-| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-20 to MON-22, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
+| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-21 to MON-23, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
 
 ### 0.7 What is fixed and what is open
 
@@ -173,7 +173,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 
 | The change | Where |
 |---|---|
-| **the body stretches about `8 %`**: a polycarbonate face of solid islands and serpentine PC lanes, at `9.4 Wh` | Part 21, Section 21.2 |
+| **the body stretches about `13 %`**, the most possible: PC islands and serpentine PC lanes, at `1.7 Wh` | Part 21, Section 21.2 |
 | **the B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**, with no hinge and no metal shell | Part 21, Section 21.3; `HARDWARE/05`, `HARDWARE/13` |
 | **the USB-C receptacle moves to the ring rim**, so the EU common charger rule still holds | Part 21, Section 21.3.4 |
 | **the camera stays `50 MP`**: a flat `1/1.56"` sensor and a double-fold periscope across the ring | Part 21, Section 21.3.5 |

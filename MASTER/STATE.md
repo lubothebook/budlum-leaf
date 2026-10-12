@@ -28,7 +28,7 @@
 
 Part 21 (`FINAL/21-stretch-stem-and-projection.md`) holds the numbers. It wins over the L.5.0 list below where they differ.
 
-- **The body stretches**. A polycarbonate face of solid islands and serpentine PC lanes gives about `8 %` stretch. The energy is `9.4 Wh` at the default option.
+- **The body stretches**. A polycarbonate face of solid islands and serpentine PC lanes gives about `13 %` stretch, the most possible. The energy is about `1.7 Wh`, and that is a question to Ayaz.
 - **The B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**. No hinge, no titanium, no aluminium. It holds the antennas and the dock contacts only.
 - **USB-C moves to the ring rim**. The camera stays `50 MP`: a flat `1/1.56"` sensor with a double-fold periscope across the ring.
 - **"Zero CPU" means no general-purpose processor and no operating system**. Fixed-function chips and a `16 MB` frame store are allowed.

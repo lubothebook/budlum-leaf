@@ -1,6 +1,6 @@
 # BUDLUM LEAF · HARDWARE · 12 · THE BEND LAW · THE 100% FULL-AREA BENDABLE 2.00 MM (+) POLYCARBONATE LAMINATE
 
-> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the body bends at `R 25.5 mm` and also stretches about `8 %` in every direction. The strain lives in serpentine PC lanes between solid PC islands, so no PC part passes `2 %`.
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the body bends at `R 25.5 mm` and also stretches about `13 %` in every direction. The strain lives in serpentine PC lanes between solid PC islands, so no PC part passes `2 %`.
 
 **Revision L.5.0 · 2026-10-12**.
 A Budlum Leaf is **not** a folding phone with a narrow hinge or rigid ceramic plates. All `100 percent` of its `80 x 160 x 2.00 mm` (`R = 6.35 mm`, `68.0 g`) body bends as polycarbonate. Each `40 x 80 x 2.00 mm` (`17.0 g`) quadrant (`Q1..Q4`) uses optical **Siloxane-Polycarbonate (`PC-PDMS`, `ISO 10993`)** and `G = 0.035 MPa` silicone `OCA`. The entire screen bends to **`R 25.5 mm`** at **`0.35 percent` outer strain** (`1.4 N` force) and recovers flat within `0.05 mm` (`pafta/P11`, `pafta/P22`).
