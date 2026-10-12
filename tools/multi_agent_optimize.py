@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
 BUDLUM LEAF · tools/multi_agent_optimize.py · Revision L.5.0
-Multi-Agent Self-Optimization Orchestrator (Arena API + Local Deterministic Verification).
+Multi-Agent Self-Optimization Orchestrator (local deterministic verification only).
 
-Security rule:
-  - NEVER hardcode, persist, or log raw API keys (sk-arena-..., ghp_..., etc.).
-  - Reads ARENA_API_KEY and ARENA_API_BASE strictly from environment variables at runtime.
+L.6.0: the remote Arena mode was removed. It never worked and it could send
+ANTHROPIC_AUTH_TOKEN to a third-party host. Research agents now run in the
+Claude Code session, not from this script.
 
 Architecture:
   Connects 4 specialized domain agents in parallel and synthesizes a unified optimization verdict:
@@ -22,8 +22,6 @@ import os
 import struct
 import subprocess
 import sys
-import urllib.error
-import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -155,108 +153,7 @@ def agent_prose_and_gates():
     }
 
 
-def _resolve_arena_key():
-    for var in ("ARENA_API_KEY", "ANTHROPIC_AUTH_TOKEN"):
-        val = os.environ.get(var, "").strip()
-        if val:
-            return val
-    for token_path in ("/tmp/.arena_token", os.path.expanduser("~/.arena/token")):
-        if os.path.isfile(token_path):
-            with open(token_path, encoding="utf-8") as f:
-                val = f.read().strip()
-                if val:
-                    return val
-    return ""
-
-
-def query_remote_arena_agent(role_name, prompt_summary):
-    """Live Arena Gateway consultation using ARENA_API_KEY or ~/.arena/token (never stored in repo)."""
-    api_key = _resolve_arena_key()
-    if not api_key:
-        return {"role": role_name, "mode": "local_deterministic", "status": "no_key_in_env"}
-    api_base = os.environ.get("ARENA_API_BASE", "https://api.preview.arena.ai/v1/chat/completions").strip()
-    model = os.environ.get("ARENA_MODEL", "coding-router-preview").strip()
-    session_id = f"ses_budlum_{role_name.lower()}"
-    payload = json.dumps(
-        {
-            "model": model,
-            "max_tokens": 256,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": (
-                        "You are opencode, an interactive CLI tool that helps users with software engineering tasks. "
-                        f"You are acting as the {role_name} specialist for Budlum Leaf Revision L.5.0. "
-                        "Do not call any tools. Reply in 1 concise Turkish sentence confirming the audit status."
-                    ),
-                },
-                {"role": "user", "content": prompt_summary},
-            ],
-            "tools": [
-                {
-                    "type": "function",
-                    "function": {
-                        "name": "bash",
-                        "description": "Executes a bash command",
-                        "parameters": {
-                            "type": "object",
-                            "properties": {"command": {"type": "string"}},
-                            "required": ["command"],
-                        },
-                    },
-                }
-            ],
-            "tool_choice": "auto",
-            "stream": True,
-            "stream_options": {"include_usage": True},
-        }
-    ).encode("utf-8")
-    req = urllib.request.Request(
-        api_base,
-        data=payload,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {api_key}",
-            "User-Agent": "opencode/1.19.0 ai-sdk/provider-utils/4.0.23 runtime/bun/1.3.14",
-            "x-opencode-session-id": session_id,
-            "x-session-affinity": session_id,
-            "x-session-id": session_id,
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            raw = resp.read().decode("utf-8", errors="replace")
-            routed_model = model
-            chunks = []
-            for line in raw.splitlines():
-                if line.startswith("data: ") and line[6:].strip() != "[DONE]":
-                    try:
-                        obj = json.loads(line[6:])
-                        if obj.get("model"):
-                            routed_model = obj["model"]
-                        for choice in obj.get("choices", []):
-                            delta = choice.get("delta", {}).get("content")
-                            if delta:
-                                chunks.append(delta)
-                    except ValueError:
-                        pass
-            msg = "".join(chunks).strip()
-            return {
-                "role": role_name,
-                "mode": f"arena_gateway/{routed_model}",
-                "status": "ok",
-                "response": msg,
-            }
-    except urllib.error.HTTPError as exc:
-        err_body = exc.read().decode("utf-8", errors="replace").strip()
-        return {"role": role_name, "mode": "arena_gateway_http_error", "status": f"HTTP {exc.code}: {err_body[:160]}"}
-    except (urllib.error.URLError, TimeoutError, ValueError) as exc:
-        return {"role": role_name, "mode": "arena_api_fallback_local", "status": str(type(exc).__name__)}
-
-
 def main():
-    use_remote = "--remote" in sys.argv
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         f_cad = pool.submit(agent_cad_geometry)
         f_paf = pool.submit(agent_pafta_layout)
@@ -265,20 +162,10 @@ def main():
         results = [f_cad.result(), f_paf.result(), f_hw.result(), f_pr.result()]
 
     all_passed = all(r["passed"] for r in results)
-    remote_notes = []
-    if use_remote:
-        summary = json.dumps(results, ensure_ascii=False)
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-            futs = [pool.submit(query_remote_arena_agent, r["agent"], summary) for r in results]
-            remote_notes = [f.result() for f in futs]
 
     for r in results:
         status = "PASS" if r["passed"] else "FAIL"
         print(f"[{status}] {r['agent']}: {json.dumps({k: v for k, v in r.items() if k != 'agent'}, ensure_ascii=False)}")
-    if remote_notes:
-        for rn in remote_notes:
-            resp_txt = f" -> {rn['response']}" if rn.get("response") else ""
-            print(f"[ARENA] {rn['role']} ({rn['mode']}): {rn['status']}{resp_txt}")
 
     print(f"MULTI-AGENT SELF-OPTIMIZATION VERDICT: {'ALL 4 AGENTS PASSED' if all_passed else 'ACTION REQUIRED'}")
     sys.exit(0 if all_passed else 1)
