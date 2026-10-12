@@ -78,7 +78,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 23 | the launch plan | too early; parked |
 | 24 | the deliverable order | all three lines at once, and the program is continuous |
 | 25 | the Field mode position | a cinema mode |
-| 26 | the camera and the ports | **the B module (`12.0 g`, L.6.0)**: a `1.00 mm` LCP antenna stem bent `90°`. The flat ring holds the `13 MP` camera, USB-C in the rim and the silicon |
+| 26 | the camera and the ports | **the B module (`12.7 g`, L.6.0)**: a `1.00 mm` LCP antenna stem bent `90°`. The flat ring holds the `50 MP` camera, USB-C and the silicon |
 | 27 | the far validator | everything on the validator, and the far case must be solved (Part 10) |
 | 28 | the uplink wait | accepted, and the expected time is shown before the shutter |
 | 29 | the heat | mitigate it (Part 11) |
@@ -115,7 +115,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 18 | **The screen cost, the bend and the seal**: the two currencies, the photon-honest interface, the full wrap at R 25.5 mm, the gasketed carrier | B-1 to B-10, MEC-20 to MEC-24, ENR-9, DST-9, DST-10, DSP-11 |
 | 19 | **The second face, the custom shape, the patent screen and the ledger**: the Duo rule, the SZ rule and the freedom to operate | DUO-1 to DUO-6, SZ-1 to SZ-5, PRG-12, PRG-14 to PRG-16 |
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
-| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-20 to MON-22, CAM-21, SW-20 to SW-22, DST-11, RG-18 |
+| 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-20 to MON-22, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
 
 ### 0.7 What is fixed and what is open
 
@@ -130,7 +130,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 |---|---|---|
 | "176 ppd at the eye" for the Frame came from the flat screen formula and is wrong | the near eye rule: **pixels across divided by the field across**. The Frame uses a 4K class microdisplay at about 2 400 ppi. The Field mode is about 20 to 25 ppd | Part 15, H-1 |
 | two thickness values for one face (0.46 and 0.59) | the ledger is single: 0.46 + 2.88 + 0.46 + 0.06 + 0.04 = **3.90 mm nominal, 4.00 mm maximum** | Part 15, H-2 |
-| the gate count said 90 in one part and 89 in another | **272 gates: 238 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
+| the gate count said 90 in one part and 89 in another | **274 gates: 240 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
 
 **The rule introduced by the pass**. An audit of the numbers and of the physics runs at every revision. Its findings are published in this part, and not quietly fixed. `[DECISION]`
 
@@ -147,7 +147,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | `tools/check_crossrefs.py` with `tools/canon.json` | **PRG-15** | one number per count, held in one file, measured against every claim |
 | `pafta/check_sheets.py` | the drawing line | the overflow, the collision and the covered text of every sheet |
 
-**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 272 gates of 238 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 21 major and 8 minor. `[DECISION]`
+**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 274 gates of 240 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 22 major and 7 minor. `[DECISION]`
 
 ### 0.77 The block of 2026-10-12: 4-Quadrant (`+`) 2.00 mm (`68 g`) solid-state body, universal `Qi2.2`, and `90°`-bent-stem B module (`20 g`)
 
@@ -171,19 +171,19 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 
 ### 0.78 The block of 2026-10-12: Revision L.6.0, the stretch, the `1.00 mm` stem and the projection
 
-**Three orders of Ayaz opened Revision L.6.0**. *The stem is `1 mm`, and the body stretches.* *Projection means the validators compute and the Leaf shows.* *The other review points are approved.*
+**The orders of Ayaz that opened Revision L.6.0**. *The stem is `1 mm`, and the body stretches.* *The validators run the Leaf as they run Budlum.* *Distance must not matter.* *The camera stays `50 MP`.*
 
 | The change | Where |
 |---|---|
-| **the body stretches about `8 %`** through PC-siloxane islands and elastomer bridges, at `9.4 Wh` | Part 21, Section 21.2 |
+| **the body stretches about `8 %`**: a polycarbonate face of solid islands and serpentine PC lanes, at `9.4 Wh` | Part 21, Section 21.2 |
 | **the B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**, with no hinge and no metal shell | Part 21, Section 21.3; `HARDWARE/05`, `HARDWARE/13` |
 | **the USB-C receptacle moves to the ring rim**, so the EU common charger rule still holds | Part 21, Section 21.3.4 |
-| **the camera becomes a `13 MP` module that fits the ring**, and gap G-13 is no longer a blocker | Part 21, Section 21.3.5 |
+| **the camera stays `50 MP`**: a flat `1/1.56"` sensor and a double-fold periscope across the ring | Part 21, Section 21.3.5 |
 | **the strongest Wi-Fi**: stem and ring antennas as `2 x 2`, multi-link `5 + 6 GHz`, and the Leaf Dock in the room | Part 21, Section 21.4 |
 | **"Zero CPU" is defined**: no general-purpose processor and no operating system; fixed-function chips and a frame store are allowed | Part 21, Section 21.5.1 |
-| **the projection path**: a bonded render operator streams off-chain, and the chain leases, settles and judges | Part 21, Section 21.5; research order RG-18 |
+| **the validators run the Leaf as they run the chain**: the nearest validator renders, and distance is removed in eight steps | Part 21, Section 21.5; research order RG-18 |
 | **a 5G RedCap modem** joins the B module | Part 21, Section 21.4.2 |
-| **twenty-one new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
+| **twenty-three new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
 
 **The rule of the block**. Part 21 wins over every older part it names, until that part is rewritten. The sheets and the STL models still show L.5.0 and are listed for redraw. `[DECISION]`
 
@@ -923,7 +923,7 @@ PathPlan      { primary, mirrors[2], floor }
 
 # BUDLUM LEAF · THE DIRECTIVE · PART 6 · THE 90°-BENT-STEM B MODULE, THE SOLE USB-C PORT, THE PEN AND THE SOUND
 
-> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. Part 21 and `HARDWARE/05` define the B module. It has a `1.00 mm` LCP stem, no hinge, USB-C in the ring rim and a `13 MP` camera.
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. Part 21 and `HARDWARE/05` define the B module. It has a `1.00 mm` LCP stem, no hinge, USB-C in the ring rim and a `50 MP` flat-sensor periscope camera.
 
 **The standing of this part at Revision L.5.0, of 2026-10-12**. Modeled 1:1 from `uploads/b.png` (`20.0 g`), **only the stem (`çubuk`, `8 x 32 x 4.5 mm`) bends at a `90°` right angle (`dik açıyla`)**. Its **circular ring (`yuvarlak`, `32 x 32 x 4.0 mm`) lies flat on top of the screen**. Moving the `90°`-bent stem around the 4 edges docks the B module to the **Front (`+Z`) or Back (`-Z`)** of the screen.
 
@@ -1718,7 +1718,7 @@ The hub holds the last decoded video frame and shifts, scales, or rotates it loc
 
 # BUDLUM LEAF · THE DIRECTIVE · PART 11 · THE HEAT DOCTRINE
 
-> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the local renderer is a fixed-function compositor in `U1` with four jobs. No program runs on the device. Part 21, Section 21.5.4.
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the local renderer is a fixed-function compositor in `U1` with four jobs. No program runs on the device. Part 21, Section 21.5.6.
 
 **The order that created this part:** *look at what can be done so that it does not heat up.* `[DECISION]`
 
@@ -2569,7 +2569,7 @@ PageManifest { page_class: C0b|C1|C2|C3, sensors: [SensorId], labels: bool,
 | G-10 | the acoustics of the module | **M** | the sound claim | the module line | the specification of Part 15, H-8 and a bench |
 | G-11 | the microdisplay for the Frame, at about 2 400 ppi | **B** | the Frame product | the partner line | a supplier search and gate CLR-11 |
 | G-12 | the clear panel supply chain at the required transmission and lifetime | **M** | the clear family | the partner line | the clear sample order of Part 13 |
-| G-13 | the B module camera: L.6.0 replaces the folded `50 MP` optics with a `13 MP` `1/3.06"` class module that fits `4.00 mm` | **m** | the camera quality claim only | the partner line | a module sample and gate CAM-21 |
+| G-13 | the `50 MP` camera in the `4.00 mm` ring: a flat `1/1.56"` sensor, two prisms and a `2.6 mm` D-cut lens group | **M** | the camera claims | the partner line | a module sample and gate CAM-21 |
 | G-14 | the safety and eyewear biocompatibility file of the 4-Quadrant (`+`) `LLZO/PEO` solid-state battery (`4 x 3.0 Wh = 12.0 Wh`, `<=36.2 °C`, `ISO 10993`) | **M** | the market entry | the energy line | the abuse set, `ISO 10993` assay, and transport file |
 | G-15 | the certification gap analysis against the Turkish and the European lists | **B** | the pilot | the program line | a written gap table with a date per item |
 | G-16 | the third party security review of the wallet path, the secure element and the optical path | **M** | the security claim and the insurance | the security line | a scope note and two laboratory conversations |
@@ -2598,10 +2598,10 @@ PageManifest { page_class: C0b|C1|C2|C3, sensors: [SensorId], labels: bool,
 | G-39 | the photon-honest interface rules, as a written interface standard | **M** | half of the session cost | the surface line and the network line | Part 18, Section 18.6, gates DST-9 and DST-10 |
 | G-40 | the stretch zone pixel density: island panels reach about `100` to `250 ppi`, not `508 ppi` | **M** | the display density claim | the partner line | a panel partner question and gate DSP-17 |
 | G-41 | the island-bridge tile: the CAD, the coupon and the micro-cell grid of Part 21 | **B** | the stretch claim and the energy figure | the drawing line and the energy line | the tile coupon at Option B, gates MEC-39 and ENR-22 |
-| G-42 | the render operator role in the Budlum tree: bond, lease, frame receipts, settlement | **B** | every session that the Leaf shows | the network line | research order RG-18 |
-| G-43 | the self-healing stretchable cover: material, supplier and optical clarity | **M** | the scratch claim | the partner line | three material samples and gate MEC-41 |
+| G-42 | the validator Leaf duty in the Budlum tree: session state, deterministic render, frame receipts, re-execution | **B** | every session that the Leaf shows | the network line | research order RG-18 |
+| G-43 | the serpentine PC lane: the cut, the seal and the optical look of the lanes at full stretch | **M** | the stretch and scratch claims | the partner line | three material samples and gate MEC-41 |
 
-**The count**. **43 items: 14 blockers, 21 major and 8 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
+**The count**. **43 items: 14 blockers, 22 major and 7 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
 
 ---
 
@@ -2614,7 +2614,7 @@ PageManifest { page_class: C0b|C1|C2|C3, sensors: [SensorId], labels: bool,
 | the link, the classes, the fail-safe ladder and the distance doctrine | written, with numbers and gates |
 | the firmware interfaces and the refusal set | written, at implementable depth |
 | the Budlum integration boundary and the orders RG-1 to RG-17 | written, with acceptance tests |
-| the verification plan and the claim policy | written, with 272 gates and one record format |
+| the verification plan and the claim policy | written, with 274 gates and one record format |
 | the drawing form and the check discipline | proven: the nine sheets P01 to P09 pass the strict check at zero collisions, zero overflows and zero missing labels |
 
 ---
@@ -3522,7 +3522,7 @@ The closing rule of the audit is: **a finding is closed by an edited file and a 
 | F-03 the slip of two free faces | S1 | the layers decouple, every interface shears, and the slip is **0.35 to 0.6 mm at R 25.5 mm** at 0.4 to 0.8 MPa | **B-5**, **B-6** | Part 18 Section 18.7.2 and `HARDWARE/12` Section 3. **Closed, and the 9 mm channel of the book model is withdrawn** |
 | F-04 polycarbonate under strain | S1 | the worst cover strain is **0.10 percent**, which is twelve times below the 1.21 percent crazing point, so polycarbonate is banned nowhere | **B-7**, **MEC-20** | Part 18, Sections 18.7.2 and 18.7.6. **Closed, and the crease insert is withdrawn** |
 | F-05 the runtime at a low cell density | S1 | the range column of the fill table, and the hours table of Section 17.13 rewritten on the base case | **ENR-7** | Part 17, Sections 17.3 and 17.13. **Closed** |
-| F-06 the gap count | S2 | the count is **43 items: 14 blockers, 21 major, 8 minor** at L.6.0, from the table itself | **PRG-15**, the count check | Part 16, Section 16.1. **Closed** |
+| F-06 the gap count | S2 | the count is **43 items: 14 blockers, 22 major, 7 minor** at L.6.0, from the table itself | **PRG-15**, the count check | Part 16, Section 16.1. **Closed** |
 | F-07 two gate counts | S2 | one count, held in `tools/canon.json` and checked by a tool, so that a second count cannot survive | **PRG-15** | Part 12, Section 12.4, and Part 15, H-3. **Closed** |
 | F-08 two water classes | S2 | **one claim: IP67, with IP68 as the target**, measured with a module fitted and with none. The plain slip lip variant stays IP54 and is not sold as water resistant | **MEC-19** | Parts 1, 3, 15 and 17. **Closed** |
 | F-09 "160 by 80 by 4.00" as a target | S2 | **4.00 mm is the maximum envelope**. The order states the thickness, and the claim states the density it was computed at | **MEC-15** | Part 0.5, `MASTER/STATE.md`, Part 17 Section 17.5. **Closed** |
@@ -3815,7 +3815,10 @@ These are the choices that the program line took while Ayaz was away. Each one i
 
 1. *"1 mm çubuk ve esneme olması şart."* The B stem is `1.00 mm` thick. The screen body stretches, and bending alone is not enough.
 2. *"Yansıtmadan kastım, işlemin ağırlıkla validatörden gelmesi."* Projection means the Leaf shows what the network computes. It does not mean an optical projector.
-3. *"Diğer dediklerini onaylıyorum."* Four review points are approved. A 5G modem joins the B module. "Zero CPU" means no general processor. The B shell has no metal. The camera fits the ring.
+3. *"Diğer dediklerini onaylıyorum."* Three review points are approved. A 5G modem joins the B module. "Zero CPU" means no general processor. The B shell has no metal.
+4. *"Validatörler Budlum'u çalıştırdığı gibi bizim cihazımızı çalıştırıyor."* The validators run the Leaf as they run the chain. Distance must not be a problem. Section 21.5.
+5. *"50 MP kamera olacak."* The ring has the area for it, so the camera stays at `50 MP`. Section 21.3.5.
+6. *"Esnemesi mümkün, polikarbonat cam yerine kullanılıyor."* The polycarbonate face stays, and it stretches. Section 21.2.
 
 ---
 
@@ -3830,11 +3833,11 @@ These are the choices that the program line took while Ayaz was away. Each one i
 | the body bends at `R 25.5 mm` and does not stretch | `HARDWARE/12`, Part 18 | the body bends and also stretches. Section 21.2 `[DECISION]` |
 | the conductors are `AgNW/ITO` | `HARDWARE/02`, `HARDWARE/16` | ITO cracks near `1 %` strain. The conductors are AgNW only |
 | "Zero CPU and Zero RAM" | `HARDWARE/02`, `HARDWARE/19` | no general-purpose processor and no operating system. Fixed-function silicon and a frame store are allowed. Section 21.5.1 |
-| the interaction budget is served by "a local scene renderer" | Part 11, `MASTER/14` | a fixed-function compositor inside `U1` serves it. Section 21.5.4 |
+| the interaction budget is served by "a local scene renderer" | Part 11, `MASTER/14` | a fixed-function compositor inside `U1` serves it. Section 21.5.6 |
 | one `U2` SiP holds Wi-Fi 7, UWB and `60 GHz` | `HARDWARE/13`, part 17 | no such single part exists. The radio set splits into `U2A` and `U2B`. Section 21.4.2 |
 | 5G antennas exist and no modem exists | `HARDWARE/19`, A5 and A6 | a 5G RedCap modem `U5` joins the ring. Section 21.4.3 |
-| a `50 MP`, `12.8 x 9.6 mm` sensor with a folded `13.8 mm` barrel lives in a `4.00 mm` ring | `HARDWARE/13`, parts 20 to 27 | it does not fit (gap G-13). A `1/3.06"` class module replaces it. Section 21.3.5 |
-| the module mass is `20.0 g` | `HARDWARE/05` | the old list summed to `22.00 g`. The L.6.0 list sums to `12.0 g`. `HARDWARE/13` |
+| a `50 MP`, `12.8 x 9.6 mm` sensor with a folded `13.8 mm` barrel lives in a `4.00 mm` ring | `HARDWARE/13`, parts 20 to 27 | `50 MP` stays. A `1/1.56"` sensor lies flat and a double-fold D-cut periscope uses the ring area. Section 21.3.5 |
+| the module mass is `20.0 g` | `HARDWARE/05` | the old list summed to `22.00 g`. The L.6.0 list sums to `12.7 g`. `HARDWARE/13` |
 
 **The rule of this part**. Where an older part and this part disagree, this part wins until the older part is rewritten. `[DECISION]`
 
@@ -3842,23 +3845,26 @@ These are the choices that the program line took while Ayaz was away. Each one i
 
 ## 21.2 The stretch
 
-### 21.2.1 Why polycarbonate alone cannot stretch
+### 21.2.1 How a polycarbonate face stretches
 
-| The material | The elastic strain | The use in L.6.0 |
+Polycarbonate replaces glass because it does not shatter. It stays the face of the Leaf. `[DECISION]`
+
+| The material or form | The elastic strain | The use in L.6.0 |
 |---|---|---|
-| polycarbonate (PC) | about `2 %` before yield, `6 %` at yield `[GENERAL]` | the rigid islands and the puzzle locks |
-| PC-siloxane copolymer | tougher than PC, still a few percent `[GENERAL]` | the island shells, for impact |
+| solid polycarbonate (PC) | about `2 %` and back, `6 %` at yield `[GENERAL]` | the island caps, the frame and the puzzle locks |
+| PC film cut into serpentine ribbons (kirigami) | `10 %` to `30 %` of the lane, while the PC itself stays under `2 %` `[GENERAL]` | the lanes between the islands |
+| PC-siloxane copolymer | tougher than PC under impact `[GENERAL]` | the island shells |
+| serpentine copper or AgNW | `30 %` to `100 %` of the lane, metal under `1 %` `[GENERAL]` | the conductors in the lanes |
 | ITO | cracks near `1 %` `[GENERAL]` | removed |
-| serpentine copper or AgNW on an elastomer | `30 %` to `100 %` of the bridge, with the metal under `1 %` `[GENERAL]` | the bridges |
-| TPU, SEBS or PDMS elastomer | `100 %` and more `[GENERAL]` | the matrix that carries the islands |
+| a clear elastomer seal, `30 µm` | `100 %` and more `[GENERAL]` | under the ribbons only, for the seal |
 
-**The conclusion**. A stretching sheet is not one material. It is rigid islands that carry the active parts, joined by elastomer bridges that carry the strain. The polycarbonate stays where it is strong: in the islands, the frame and the puzzle locks. `[DECISION]`
+**The conclusion**. The face is polycarbonate from edge to edge. Solid PC covers the islands. Serpentine PC ribbons cover the lanes. The geometry carries the stretch, so no PC part passes its own `2 %` limit. `[DECISION]`
 
-### 21.2.2 The island-bridge body
+### 21.2.2 The polycarbonate island-and-ribbon body
 
 1. **The islands**. Each tile `Q1..Q4` holds a grid of PC-siloxane islands. An island carries pixels, a micro cell, a driver or a contact.
-2. **The bridges**. Serpentine AgNW and copper traces on a TPU matrix join the islands. Every trace is a horseshoe serpentine, so the metal bends and does not elongate.
-3. **The cover**. A self-healing polyurethane elastomer cover replaces the hard-coated PC face. A hard coat cracks when it stretches. A self-healing cover closes a fine scratch at room temperature. `[HYPOTHESIS]` gate MEC-41.
+2. **The island caps**. Each island is covered by a solid, hard-coated PC cap. A cap does not strain, so its hard coat does not crack. This keeps the scratch resistance of L.5.0. `[HYPOTHESIS]` gate MEC-41.
+3. **The lanes**. Between the islands, the PC face is cut into serpentine ribbons. AgNW and copper traces follow the same serpentines. A `30 µm` clear elastomer under the ribbons keeps the seal.
 4. **The puzzle locks stay rigid**. The `24` dovetail locks hold the tiles together. The strain happens inside each tile, so the `<15 µm` seam does not open under stretch. `[HYPOTHESIS]` gate MEC-40.
 5. **The thickness stays `2.00 mm`**. The island layer replaces the continuous cell layer at the same height.
 
@@ -3938,16 +3944,22 @@ The free stem is a cantilever when the module is off the screen. On the screen, 
 2. The receptacle is `8.9 x 7.3 x 3.10 mm`. It fits the `4.00 mm` ring height and not the `1.00 mm` stem.
 3. **The decision**. A mid-mount USB-C receptacle sits in the ring rim, opposite the stem. The smaller camera of Section 21.3.5 frees the depth. `[DECISION]` gate MON-22.
 
-### 21.3.5 The camera that fits
+### 21.3.5 The `50 MP` camera in the ring
 
-| The item | L.5.0 | L.6.0 |
-|---|---|---|
-| the sensor | `50 MP`, `12.8 x 9.6 mm` | `13 MP`, `1/3.06"` class, about `4.7 x 3.5 mm` |
-| the optics | folded prism and a `13.8 mm` barrel | a direct `4P` stack, module height about `3.4 mm` `[HYPOTHESIS]` |
-| the fit in a `4.00 mm` ring | no (gap G-13) | yes, with `0.6 mm` for window and shell |
-| the quality path | local | the validator develops the final image (Part 11, the split) |
+The ring is `Ø32.0 mm` across and `4.00 mm` thick. The area is large and the height is small. So the sensor lies flat, and the light path runs across the ring. `[DECISION]`
 
-**Why this is right for Leaf**. The network develops the photograph, so a large sensor buys less than it costs here. The `1.00 mm` stem and the rim receptacle need the space. `[DECISION]` gate CAM-21. Gap G-13 closes to a gate.
+| The item | The value |
+|---|---|
+| the sensor | `50 MP`, `1/1.56"` class, about `8.2 x 6.1 mm` active, lying flat on the mid-plane shield |
+| the light path | front window, prism 1 turns the light across the ring, a D-cut lens group, prism 2 turns it down onto the sensor |
+| the lens group | D-cut elements, `2.6 mm` high and `5.0 mm` wide, so the pupil is wider than the height allows a round lens |
+| the focal length | about `5.7 mm`, a `24 mm` equivalent wide view |
+| the aperture | about `f/2.2` `[HYPOTHESIS]` |
+| the stabiliser | sensor shift in the plane, which needs no height |
+| the optics zone | `z = 0.90..3.70 mm`. The front window takes `z = 3.70..4.00 mm` |
+| the layout | the optics on the ring centre line, the USB-C receptacle in the rim opposite the stem |
+
+**The honest limit**. The `2.6 mm` height sets the aperture. Folded and D-cut optics of this class ship in phones today. `[GENERAL]` The ring version is new, so gate CAM-21 and gap G-13 keep it under test.
 
 ---
 
@@ -3986,13 +3998,13 @@ Each of these carries firmware on its own small core. That is allowed: Section 2
 
 ### 21.4.4 The strongest signal is the shortest path
 
-**The antenna gains a few dB. The distance to the frame renderer decides the latency.** The best Wi-Fi for Leaf is an access point in the room. The render node sits inside it. `[DECISION]`
+**The antenna gains a few dB. The distance to the serving validator decides the latency.** The best Wi-Fi for Leaf is an access point in the room. A validator sits inside it. `[DECISION]`
 
-**The Leaf Dock, redefined**. One box holds a Wi-Fi 7 access point, a `60 GHz` radio and a bonded Budlum render node. It is the "validator in the room" of Part 11, made the default path. Gate SW-20.
+**The Leaf Dock, redefined**. One box holds a Wi-Fi 7 access point, a `60 GHz` radio and a full Budlum validator. It is the "validator in the room" of Part 11, made the default path. Gate SW-20 and Section 21.5.4.
 
 ---
 
-## 21.5 The projection: the network computes, the Leaf shows
+## 21.5 The projection: the validators run the Leaf
 
 ### 21.5.1 What "Zero CPU" means from now on
 
@@ -4002,50 +4014,74 @@ Each of these carries firmware on its own small core. That is allowed: Section 2
 
 **Why the frame store is needed**. A Leaf 160 face is about `1 600 x 3 150` pixels, near `15 MB` per frame. A slice decoder with a compressed frame store holds it in about `16 MB`. `[HYPOTHESIS]`
 
-### 21.5.2 What the Budlum tree says about validators
+### 21.5.2 The principle: the Leaf is a part of the chain
 
-| The reading | The fact | The consequence |
+**The validators run the Leaf as they run Budlum**. The state of every Leaf session is chain state. The applications are on-chain programs. The validators execute them in the same way that they execute blocks. The Leaf holds no state that the network cannot rebuild. `[DECISION]`
+
+| The reading of the Budlum tree | The fact `[TREE]` | The consequence |
 |---|---|---|
-| `src/consensus/pos.rs` | the slot is `6` seconds `[TREE]` | a frame can never pass through a block |
-| `src/ai/types.rs` | AI results come from a bonded operator role, with deadlines in blocks `[TREE]` | a bonded operator model already exists |
-| `README.md` | Budlum is a settlement layer `[TREE]` | the chain settles and judges, and does not stream |
+| `src/registry/role.rs` | `VALIDATOR` is `RoleId(1)`, the role that produces blocks and finality | the same validators run the Leaf. No new role is needed |
+| `src/consensus/pos.rs` | the slot is `6` seconds | the frame path does not wait for a block |
+| `src/ai/types.rs` | bonded results, with deadlines counted in blocks | a signed, bonded result is already a pattern in the tree |
+| `budzero/` | an in-tree zkVM with STARK proofs | a frame result can carry a proof later |
 
-**The architecture**. A **render operator** is a bonded Budlum role, in the pattern of the AI operator. It streams frames off-chain, directly to the Leaf. The chain opens the session lease, settles it per slot window and judges disputes. `[DECISION]` research order RG-18 in Section 21.7.
+### 21.5.3 Two speeds inside one validator
 
-### 21.5.3 The projection path, part by part
+1. **The state speed**. A user action becomes a transaction. Consensus orders it and finalises it in the slot of `6` s.
+2. **The frame speed**. The serving validator applies the same action to its copy of the state at once. It renders and streams the frame at once. It does not wait for the slot.
+3. **The rule that joins them**. The frame is optimistic. If finality orders the actions differently, the next frame shows the final state. This is rare, because one user's session has one writer. `[DECISION]`
+4. **The honesty of the frame**. Rendering is deterministic. Another validator re-executes a sample of the frames from the same state and compares the hash chain. A mismatch is slashed like a double sign. `[DECISION]` research order RG-18.
 
-1. The touch grid scans at `240 Hz`. `U1` signs the input in a batch with the secure element.
-2. `U2A` sends the input to the render operator.
-3. The operator renders, encodes in low-latency slices and signs a hash chain of the frames.
-4. `U2A` receives the slices. `U6` decodes each slice as it arrives.
-5. `U1` composes the slice into the frame store and scans it out.
-6. The secure element signs a receipt over the frame hashes it showed. The receipts settle the session.
+### 21.5.4 Why distance stops being a problem
 
-### 21.5.4 The local compositor
+Light in fibre covers `1 000 km` in about `5 ms` each way. `[GENERAL]` No design beats that. So the design removes the distance, in eight steps. `[DECISION]`
 
-The interaction budget of Part 11 is under `10 ms`, and no network meets it. `U1` holds a fixed-function compositor for four jobs only: the cursor, the scroll offset, the typed glyph echo and the stretch warp. The operator sends the layers and the glyph atlas. `U1` only moves and composes them. It runs no program. `[DECISION]` gate SW-21.
+| No. | The mechanism | The effect |
+|---|---|---|
+| 1 | **The Leaf Dock is a validator**. It runs a full Budlum validator node beside the access point | at home the serving validator is `1` to `3 m` away |
+| 2 | **Any validator can serve**. The session is chain state, so every validator holds it | the Leaf picks the nearest validator, not a fixed server |
+| 3 | **Nearest by measurement**. The path manager of Part 5 probes the validators and takes the lowest round trip | the choice follows the user as the user moves |
+| 4 | **A handover costs one frame**. The new validator already holds the state | no session moves and no reload |
+| 5 | **A density rule for the network**. The program targets a serving validator within `100 km` of every user | about `1 ms` of fibre each way, plus the routing |
+| 6 | **Speculative frames**. The validator renders the likely next states ahead: the next scroll page, the pressed button, the opened menu | a predicted action shows from the frame store with no network wait |
+| 7 | **The local compositor**. `U1` moves the cursor, the scroll offset, the typed glyph and the stretch warp | continuous motion never waits for the network |
+| 8 | **The far case is stated**. With no validator near, the class line shows `far`, and steps 6 and 7 carry the motion | the user is never left with a frozen surface |
 
-### 21.5.5 The latency budget, input to photon
+### 21.5.5 The projection path, part by part
 
-| The step | Dock in the room | Metro edge | Far validator |
+1. The touch grid scans at `240 Hz`. `U7` signs the input batch.
+2. `U2A` sends the input to the nearest validator, as a transaction and as a frame request.
+3. The validator applies the input to the session state and renders the frame, plus the speculative frames.
+4. It encodes in low-latency slices and signs a hash chain of the frames.
+5. `U6` decodes each slice as it arrives. `U1` composes it into the frame store and scans it out.
+6. `U7` signs a receipt over the frame hashes it showed. The receipts settle the session in the slot window.
+
+### 21.5.6 The local compositor
+
+The interaction budget of Part 11 is under `10 ms`. `U1` holds a fixed-function compositor for four jobs only: the cursor, the scroll offset, the typed glyph echo and the stretch warp. The validator sends the layers, the glyph atlas and the speculative frames. `U1` only moves, picks and composes them. It runs no program. `[DECISION]` gate SW-21.
+
+### 21.5.7 The latency budget, input to photon
+
+| The step | Dock validator | Validator within `100 km` | Far validator |
 |---|---|---|---|
 | the touch scan, half of `240 Hz` | `2.0 ms` | `2.0 ms` | `2.0 ms` |
 | the air uplink | `1.0 ms` | `1.0 ms` | `1.0 ms` |
-| the network, one way, twice | `1.0 ms` | `16.0 ms` | `80.0 ms` |
-| the render | `6.0 ms` | `6.0 ms` | `6.0 ms` |
+| the network, both ways | `0.5 ms` | `4.0 ms` | `80.0 ms` |
+| the execute and render | `6.0 ms` | `6.0 ms` | `6.0 ms` |
 | the slice encode | `3.0 ms` | `3.0 ms` | `3.0 ms` |
 | the air downlink | `2.0 ms` | `2.0 ms` | `2.0 ms` |
 | the slice decode | `2.5 ms` | `2.5 ms` | `2.5 ms` |
 | the scan-out, half of `120 Hz` | `4.2 ms` | `4.2 ms` | `4.2 ms` |
-| **total** | **`21.7 ms`** | **`36.7 ms`** | **`100.7 ms`** |
+| **total, a new action** | **`21.2 ms`** | **`24.7 ms`** | **`100.7 ms`** |
+| **total, a predicted action** | **`about 8 ms`** | **`about 8 ms`** | **`about 8 ms`** |
 
-All rows are `[HYPOTHESIS]` until gate DST-11 measures them. **The reading**. The dock meets a `30 ms` target. A metro edge meets `50 ms`. A far validator needs the local compositor for every motion. `[DECISION]`
+A predicted action skips the network: the touch scan, the pick in `U1` and the scan-out. All rows are `[HYPOTHESIS]` until gate DST-11 measures them. **The reading**. With the dock or a validator within `100 km`, the Leaf meets `30 ms` for any action. Far away, predicted actions still answer in about `8 ms`. `[DECISION]`
 
-### 21.5.6 Only decentralised applications
+### 21.5.8 Only decentralised applications
 
-1. The secure element accepts a stream only from an operator whose key is bonded on the Budlum chain.
-2. The session lease names the application by its on-chain registry entry.
-3. A stream with no valid lease shows nothing but the local safe screen. Gate SW-22.
+1. `U7` accepts a frame stream only from a key that is an active Budlum validator.
+2. The session names the application by its on-chain program entry.
+3. A stream that fails either check shows nothing but the local safe screen. Gate SW-22.
 
 ---
 
@@ -4063,7 +4099,7 @@ All rows are `[HYPOTHESIS]` until gate DST-11 measures them. **The reading**. Th
 | `U7` | ring PCBA | secure element: the wallet keys, the lease check, the receipts |
 | `U8` | ring PCBA | IMU for the seat, the face and the tuner |
 | `U3`, `U4` | ring PCBA | audio codec, power and dead-pad chip |
-| camera | ring centre | `13 MP` `1/3.06"` class module and ISP |
+| camera | ring centre | `50 MP` `1/1.56"` flat sensor, double-fold D-cut periscope, ISP |
 | USB-C | ring rim | mid-mount receptacle, PD and DisplayPort |
 | magnets | ring underside | `8` N52H, away from A1 |
 
@@ -4075,7 +4111,7 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 
 | Order | The work | The acceptance test |
 |---|---|---|
-| **RG-18** | a render operator role: bond, session lease, frame receipt hash chain, slot window settlement and dispute | a lease opens, `10 000` frames stream off-chain, the receipts settle in one slot window, and a forged frame loses the bond |
+| **RG-18** | the validator Leaf duty: session state as chain state, deterministic render, frame hash chain, sampled re-execution, receipts and slashing | `10 000` frames stream from one validator, a second validator re-executes a sample and matches, and a forged frame is slashed |
 
 ---
 
@@ -4085,7 +4121,7 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 |---|---|---|
 | **MEC-39** | the island-bridge tile at `ε_global = 7.9 %`, biaxial | `10 000` cycles, no open trace, no island crack |
 | **MEC-40** | the puzzle seam under tile stretch | the seam stays under `15 µm` at full stretch |
-| **MEC-41** | the self-healing cover: a `0.5 N` scratch, then room temperature | the scratch is not visible within `24 h` |
+| **MEC-41** | the PC face: island caps and serpentine PC lanes at full stretch | no crack in a cap or a ribbon after `10 000` cycles, and the cap hard coat intact |
 | **MEC-42** | the `1.00 mm` LCP-GF40 stem: a `5 N` tip pry, `10 000` cycles | no crack, and the set under `0.2 mm` |
 | **ENR-22** | the micro-cell grid: the energy of a tile | at least `2.35 Wh` per tile at Option B |
 | **ENR-23** | the cell island fuse: a short in one cell | the fuse opens, and the other cells stay in service |
@@ -4098,8 +4134,10 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 | **MON-20** | the stem thickness | `1.00 mm ± 0.05 mm` on every unit |
 | **MON-21** | the module drop, `1.5 m`, six faces | the stem intact and the seat still holds |
 | **MON-22** | the rim USB-C: `10 000` plug cycles and `IP68` | the receptacle holds and the seal passes |
-| **CAM-21** | the `13 MP` module inside the `4.00 mm` ring | it fits with the window, and the local image meets CAM-9 |
-| **SW-20** | the Leaf Dock as access point and render node | a session runs at the dock class |
+| **CAM-21** | the `50 MP` flat sensor and double-fold D-cut periscope inside the `4.00 mm` ring | it fits with the window at `f/2.2` or faster, and the local image meets CAM-9 |
+| **SW-20** | the Leaf Dock as access point and full validator | it joins consensus and serves a session at the dock class |
 | **SW-21** | the local compositor: cursor, scroll, glyph echo, warp | each job under `10 ms`, with no program run on the device |
-| **SW-22** | the lease check: an unbonded operator | the stream is refused and the safe screen shows |
-| **DST-11** | input to photon, three distances | the dock under `30 ms`, metro edge under `50 ms` at the 99th percentile |
+| **SW-22** | the stream check: a key that is not an active validator | the stream is refused and the safe screen shows |
+| **SW-23** | the speculative frames: scroll, button and menu | a predicted action shows in under `10 ms` with the network cut |
+| **DST-11** | input to photon, three distances | the dock and a validator within `100 km` under `30 ms` at the 99th percentile |
+| **DST-12** | the validator handover while the user moves | the switch costs at most one frame and no reload |

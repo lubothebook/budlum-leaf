@@ -22,7 +22,7 @@
 | G-10 | the acoustics of the module | **M** | the sound claim | the module line | the specification of Part 15, H-8 and a bench |
 | G-11 | the microdisplay for the Frame, at about 2 400 ppi | **B** | the Frame product | the partner line | a supplier search and gate CLR-11 |
 | G-12 | the clear panel supply chain at the required transmission and lifetime | **M** | the clear family | the partner line | the clear sample order of Part 13 |
-| G-13 | the B module camera: L.6.0 replaces the folded `50 MP` optics with a `13 MP` `1/3.06"` class module that fits `4.00 mm` | **m** | the camera quality claim only | the partner line | a module sample and gate CAM-21 |
+| G-13 | the `50 MP` camera in the `4.00 mm` ring: a flat `1/1.56"` sensor, two prisms and a `2.6 mm` D-cut lens group | **M** | the camera claims | the partner line | a module sample and gate CAM-21 |
 | G-14 | the safety and eyewear biocompatibility file of the 4-Quadrant (`+`) `LLZO/PEO` solid-state battery (`4 x 3.0 Wh = 12.0 Wh`, `<=36.2 °C`, `ISO 10993`) | **M** | the market entry | the energy line | the abuse set, `ISO 10993` assay, and transport file |
 | G-15 | the certification gap analysis against the Turkish and the European lists | **B** | the pilot | the program line | a written gap table with a date per item |
 | G-16 | the third party security review of the wallet path, the secure element and the optical path | **M** | the security claim and the insurance | the security line | a scope note and two laboratory conversations |
@@ -51,10 +51,10 @@
 | G-39 | the photon-honest interface rules, as a written interface standard | **M** | half of the session cost | the surface line and the network line | Part 18, Section 18.6, gates DST-9 and DST-10 |
 | G-40 | the stretch zone pixel density: island panels reach about `100` to `250 ppi`, not `508 ppi` | **M** | the display density claim | the partner line | a panel partner question and gate DSP-17 |
 | G-41 | the island-bridge tile: the CAD, the coupon and the micro-cell grid of Part 21 | **B** | the stretch claim and the energy figure | the drawing line and the energy line | the tile coupon at Option B, gates MEC-39 and ENR-22 |
-| G-42 | the render operator role in the Budlum tree: bond, lease, frame receipts, settlement | **B** | every session that the Leaf shows | the network line | research order RG-18 |
-| G-43 | the self-healing stretchable cover: material, supplier and optical clarity | **M** | the scratch claim | the partner line | three material samples and gate MEC-41 |
+| G-42 | the validator Leaf duty in the Budlum tree: session state, deterministic render, frame receipts, re-execution | **B** | every session that the Leaf shows | the network line | research order RG-18 |
+| G-43 | the serpentine PC lane: the cut, the seal and the optical look of the lanes at full stretch | **M** | the stretch and scratch claims | the partner line | three material samples and gate MEC-41 |
 
-**The count**. **43 items: 14 blockers, 21 major and 8 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
+**The count**. **43 items: 14 blockers, 22 major and 7 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
 
 ---
 
@@ -67,7 +67,7 @@
 | the link, the classes, the fail-safe ladder and the distance doctrine | written, with numbers and gates |
 | the firmware interfaces and the refusal set | written, at implementable depth |
 | the Budlum integration boundary and the orders RG-1 to RG-17 | written, with acceptance tests |
-| the verification plan and the claim policy | written, with 272 gates and one record format |
+| the verification plan and the claim policy | written, with 274 gates and one record format |
 | the drawing form and the check discipline | proven: the nine sheets P01 to P09 pass the strict check at zero collisions, zero overflows and zero missing labels |
 
 ---

@@ -1,6 +1,6 @@
 # BUDLUM LEAF · HARDWARE · 05 · THE B MODULE · ONE MILLIMETRE STEM, FLAT RING, CAMERA, RADIOS AND PROJECTION SILICON
 
-**Revision L.6.0 · 2026-10-12 · the single source of truth for the B module (`12.0 g`, 32 parts)**. The decisions live in `FINAL/21-stretch-stem-and-projection.md`. The part list lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
+**Revision L.6.0 · 2026-10-12 · the single source of truth for the B module (`12.7 g`, 32 parts)**. The decisions live in `FINAL/21-stretch-stem-and-projection.md`. The part list lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 
 ---
 
@@ -11,8 +11,8 @@
 3. **No hinge and no metal shell**. The `90°` corner is moulded. The shells are LCP-GF40.
 4. **The module flips**. It seats on any of the four edges, on the front or the back face. The IMU reports the seat, and the tuners follow it.
 5. **The ring holds the rest**. Camera, rear round panel, audio, bridge cell, USB-C in the rim, and the silicon `U1` to `U8`.
-6. **No general-purpose processor**. Every chip is fixed-function with signed firmware. The network computes, and the Leaf shows. This is the projection of Part 21.
-7. **Only bonded streams**. `U7` shows a stream only from a render operator bonded on the Budlum chain.
+6. **No general-purpose processor**. Every chip is fixed-function with signed firmware. The validators run the Leaf as they run the chain, and the Leaf shows. This is the projection of Part 21.
+7. **Only validator streams**. `U7` shows a stream only from an active Budlum validator.
 
 ---
 
@@ -27,8 +27,8 @@
 | cellular | 5G RedCap with eSIM, `U5` | RF-17 |
 | dock link | `60 GHz` `1 x 4` array, `U2B` | RF-19 |
 | decoder | AV1 and HEVC slices, `16 MB` frame store, `U6` | SW-21 |
-| camera | `13 MP`, `1/3.06"` class, `3.40 mm` module | CAM-21 |
+| camera | `50 MP`, `1/1.56"` flat sensor, double-fold D-cut periscope, about `f/2.2` | CAM-21 |
 | USB-C | mid-mount receptacle in the ring rim, `IP68` | MON-22 |
 | dock contacts | `12` gold spring leaves in the stem contact band | MON-18 |
 | magnets | `8` N52H in the ring underside | MON-5 |
-| mass | `12.0 g` | MON-13 |
+| mass | `12.7 g` | MON-13 |

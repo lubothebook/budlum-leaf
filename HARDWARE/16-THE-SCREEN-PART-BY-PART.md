@@ -1,6 +1,6 @@
 # BUDLUM LEAF · HARDWARE · 16 · THE 4-QUADRANT (+) SEAMLESS T-OLED + PDLC + AgNW/ITO SCREEN, PART BY PART
 
-> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the screen is an island-bridge panel. The stretch zone targets `250 ppi`, the cover is a self-healing elastomer, and `U1` warps the image by the measured strain.
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the screen is an island-bridge panel. The stretch zone targets `250 ppi`. The face stays polycarbonate, with hard-coated caps on the islands and serpentine PC lanes between them. `U1` warps the image by the measured strain.
 
 **Revision L.5.0 · 2026-10-12**.
 This file specifies the **`80.0 x 160.0 x 2.00 mm` (`68.0 g`) 4-Quadrant (`+`) seamless display-battery sheet**. Also, the `<15 µm` (`n = 1.585`) zero-scratch optical seam (`pafta/P09`, `pafta/P18`).
