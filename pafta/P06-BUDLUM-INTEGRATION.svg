@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P06 Budlum integration and research gaps">
+  <title>BUDLUM LEAF · P06 BUDLUM INTEGRATION AND RESEARCH GAPS</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P06 · BUDLUM INTEGRATION AND RESEARCH GAPS</text>
+  <text class="t lbl" x="40" y="74">The device adds no new system. Every function maps onto a layer that exists in the tree today. This plate names the layers, the artefacts, and the seventeen things that are still missing.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · THE MAP ===== -->
+  <rect class="panel" x="40" y="100" width="1520" height="300" rx="4"/>
+  <text class="t h2" x="58" y="124">A · THE MAP · device, validator, database, and the artefact in the tree that carries each one</text>
+
+  <rect x="58" y="140" width="250" height="230" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t h3" x="70" y="162">THE DEVICE</text>
+  <g class="t lbls">
+    <text x="70" y="182">display leaves, drivers, touch</text>
+    <text x="70" y="200">continuous flexible battery core</text>
+    <text x="70" y="218">camera module, sensors, privacy</text>
+    <text x="70" y="236">radio and printed antennas</text>
+    <text x="70" y="254">hardware decoder, secure element</text>
+    <text x="70" y="272">wallet authority, never a key root</text>
+    <text x="70" y="296">it holds a cache, never the only copy</text>
+    <text x="70" y="320">safe screen and wallet approval are local</text>
+    <text x="70" y="344">"a perception surface, a wallet authority</text>
+    <text x="70" y="358">and a link" - that is the whole bill of materials</text>
+  </g>
+
+  <path d="M 316 200 L 372 200" stroke="#8a2b1f" stroke-width="2"/><path d="M 364 194 L 376 200 L 364 206 Z" fill="#8a2b1f"/>
+  <path d="M 372 290 L 316 290" stroke="#8a2b1f" stroke-width="2"/><path d="M 324 284 L 312 290 L 324 296 Z" fill="#8a2b1f"/>
+
+  <rect x="384" y="140" width="360" height="230" rx="4" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+  <text class="t h3" x="396" y="162">THE VALIDATOR · three roles, three stakes</text>
+  <g class="t lbls">
+    <text x="396" y="182">VALIDATOR, RoleId 1: the duty, blocks and votes</text>
+    <text x="396" y="200">STORAGE_OPERATOR, RoleId 5: shards and challenges</text>
+    <text x="396" y="218">AI_OPERATOR, RoleId 8: compute and results</text>
+    <text x="396" y="238">RoleId is an open u32, so the registry stays extensible</text>
+    <text x="396" y="258">effort tiers 0.5x to 10x: an operator advertises the depth</text>
+    <text x="396" y="272">its hardware can serve, and a request above it is refused</text>
+    <text x="396" y="286">rather than answered with cheaper work: it fails closed</text>
+    <text x="396" y="308">the operator posts a compute bond, so a bad result costs it</text>
+    <text x="396" y="332">the device keeps only what a network cannot supply:</text>
+    <text x="396" y="346">scanout, the decoder, the secure element, the radios</text>
+  </g>
+
+  <path d="M 750 200 L 806 200" stroke="#8a2b1f" stroke-width="2"/><path d="M 798 194 L 810 200 L 798 206 Z" fill="#8a2b1f"/>
+
+  <rect x="818" y="140" width="330" height="230" rx="4" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+  <text class="t h3" x="830" y="162">B.U.D. · Broad Universal Database</text>
+  <g class="t lbls">
+    <text x="830" y="182">a multi-format, lossless, quantum-resistant storage</text>
+    <text x="830" y="196">core, the .bud v2 container, with a byte-level format</text>
+    <text x="830" y="210">contract that carries its own measurements</text>
+    <text x="830" y="232">content addressing, deals, challenge and response,</text>
+    <text x="830" y="246">a QR and receipt line, and a settlement module</text>
+    <text x="830" y="268">POLLEN stands in front of it: a consent-gated market</text>
+    <text x="830" y="282">where a read without a grant is refused, strictly</text>
+    <text x="830" y="304">session state, panel calibration, the geometry manifest</text>
+    <text x="830" y="318">and the component records live here, not in the device</text>
+    <text x="830" y="342">therefore the provider can change and the device cannot</text>
+  </g>
+
+  <path d="M 1154 200 L 1210 200" stroke="#8a2b1f" stroke-width="2"/><path d="M 1202 194 L 1214 200 L 1202 206 Z" fill="#8a2b1f"/>
+
+  <rect x="1222" y="140" width="320" height="230" rx="4" fill="#f7f0f8" stroke="#5c3f8a" stroke-width="1.2"/>
+  <text class="t h3" x="1234" y="162">THE SURFACES THE USER SEES</text>
+  <g class="t lbls">
+    <text x="1234" y="182">Budscan: the decentralised browser. a name is</text>
+    <text x="1234" y="196">classified, checked against the name rule, resolved</text>
+    <text x="1234" y="210">through BNS or ENS, then fetched by one of four</text>
+    <text x="1234" y="224">fetchers, each declaring its own strength</text>
+    <text x="1234" y="246">the gateway emits evidence-labelled profiles and a</text>
+    <text x="1234" y="260">wallet context atlas: every statement carries a status</text>
+    <text x="1234" y="282">Lubot: a reading AI, an Android bridge today, with</text>
+    <text x="1234" y="296">secrets masked on the device before a question</text>
+    <text x="1234" y="310">leaves it</text>
+    <text x="1234" y="336" class="lblb">these are the applications the device needs,</text>
+    <text x="1234" y="350" class="lblb">none of them can run on the device itself</text>
+  </g>
+  <text class="t lbls" x="58" y="388">the honest note: Budscan is a Gecko-based browser, the gateway is a service and Lubot is a client. the device renders frames; the engines run where the compute is.</text>
+
+  <!-- ===== B · WHAT ALREADY EXISTS ===== -->
+  <rect class="panel" x="40" y="420" width="760" height="392" rx="4"/>
+  <text class="t h2" x="58" y="444">B · WHAT ALREADY EXISTS AND THE DEVICE REUSES IT</text>
+  <line class="rule" x1="58" y1="454" x2="782" y2="454"/>
+  <g class="t lbls">
+    <text x="58" y="474">src/network/mobile.rs · the Mobile Self profile: a node</text>
+    <text x="58" y="488">on a phone, a battery-aware challenge policy, relay</text>
+    <text x="58" y="502">and STUN traversal, self-hosted B.U.D. storage and</text>
+    <text x="58" y="516">lightweight stateless sync.</text>
+    <text x="58" y="540">src/light_client/ · succinct verification from one trust</text>
+    <text x="58" y="554">anchor: BLS finality certificates and the post-quantum</text>
+    <text x="58" y="568">quorum blob, with a transport-agnostic sync plan.</text>
+    <text x="58" y="592">crates/budscan · the same discipline inside the</text>
+    <text x="58" y="606">browser, with evidence labels and a light client.</text>
+    <text x="58" y="630">crates/wallet-core · ML-DSA-87 signing with BIP39 and</text>
+    <text x="58" y="644">SLIP-0010. a wallet, and explicitly not a relayer.</text>
+    <text x="58" y="668">src/relayer/ · a permissionless relayer with a policy, a</text>
+    <text x="58" y="682">worker, user intents, solver bids and settlement.</text>
+    <text x="58" y="706">src/account_abstraction/ · quantum accounts, private</text>
+    <text x="58" y="720">transfer authorization, TEE attestation, and a real</text>
+    <text x="58" y="734">t-of-n multisig: t separate signatures verified one by</text>
+    <text x="58" y="748">one. secret sharing was removed by design.</text>
+  </g>
+  <line class="rule" x1="400" y1="464" x2="400" y2="776"/>
+  <g class="t lbls">
+    <text x="418" y="474">src/ai_inference/ · the model registry, the compute</text>
+    <text x="418" y="488">bond, effort tiers, the perception declaration V3</text>
+    <text x="418" y="502">enforced fail-closed at admission, STARK verification</text>
+    <text x="418" y="516">on the transaction path.</text>
+    <text x="418" y="540">src/pollen/ · the Data Rights gate: an AI read of stored</text>
+    <text x="418" y="554">data is refused without a grant, and there is no override.</text>
+    <text x="418" y="578">crates/note-packing · one packing for a note field</text>
+    <text x="418" y="592">element, defined once, with compressed and encrypted</text>
+    <text x="418" y="606">payloads and deterministic QR frames.</text>
+    <text x="418" y="630">src/gateway/ · evidence-labelled profiles and the wallet</text>
+    <text x="418" y="644">context atlas, read-only by construction.</text>
+    <text x="418" y="668">docs/VALIDATOR_ROLES.md · the three roles and the</text>
+    <text x="418" y="682">separate stakes, and the hardware-honesty rule of the</text>
+    <text x="418" y="696">effort tiers.</text>
+    <text x="418" y="720" class="lblb">every one of these was read over an API for this study.</text>
+    <text x="418" y="734" class="lblb">no source tree is stored in the local workspace (W1).</text>
+    <text x="418" y="762">the tree is the source of truth, and it is read, not copied.</text>
+  </g>
+
+  <!-- ===== C · THE GAPS ===== -->
+  <rect class="panel" x="820" y="420" width="740" height="392" rx="4"/>
+  <text class="t h2" x="838" y="444">C · WHAT IS STILL MISSING · seventeen work orders for this device</text>
+  <line class="rule" x1="838" y1="454" x2="1542" y2="454"/>
+  <g class="t lbls">
+    <text x="838" y="474">RG-1 · a thin-client device profile: what a device with no SoC keeps and what it delegates.</text>
+    <text x="838" y="494">RG-2 · the finality verification budget on a small secure element: BLS pairing and the post-quantum blob, measured.</text>
+    <text x="838" y="514">RG-3 · a home for the display protocol. Pixel-Delta is a client transport, not a consensus layer. This is an architecture decision for Ayaz.</text>
+    <text x="838" y="534">RG-4 · a live session handoff between operators: a session binding and a single-use resume token.</text>
+    <text x="838" y="554">RG-5 · a stream perception declaration. V3 is per request and a viewfinder is continuous: a time lease is required.</text>
+    <text x="838" y="574">RG-6 · a home and a reader for the component records: the schema, the storage in B.U.D. and a view in Budscan.</text>
+    <text x="838" y="594">RG-7 · the signature transport budget: 4 627 bytes for an ML-DSA-87 signature and 2 592 for a public key. What travels, and over which path.</text>
+    <text x="838" y="614">RG-8 · session-key authorization through the account-abstraction registry, so the wallet authorizes once instead of signing every tap.</text>
+    <text x="838" y="634">RG-9 · the reverse battery policy: telemetry from the device to the validator so the render mode follows the cell state.</text>
+    <text x="838" y="654">RG-10 · a relayer reachability and fee plan for a device behind a carrier NAT.</text>
+    <text x="838" y="674">RG-11 · can a compute-free device still serve storage, and what is the lowest challenge cost that stays a verification and not a promise.</text>
+    <text x="838" y="694">RG-12 · the optical transfer feature: a signed receipt or a small payload as QR frames when there is no radio at all.</text>
+    <text x="838" y="714">RG-13 · a device and part identity anchor, so a replaced panel, core or module is authorized by the wallet and not by a factory key.</text>
+    <text x="838" y="734">RG-14 · the Budscan render target: the engine at the validator, the frames and the delta protocol at the device.</text>
+    <text x="838" y="754">RG-15 · a device telemetry schema for the battery, the thermal state, the panel and the link, under the Pollen rules.</text>
+    <text x="838" y="774">RG-16 · an evidence UI rule: how an evidence label is rendered by a panel with no render engine.</text>
+  </g>
+  <line class="rule" x1="838" y1="784" x2="1542" y2="784"/>
+  <text class="t lbls" x="838" y="800">RG-17 · the naming rule of plate P02: the D-Web Passport is an identity profile, and the hardware record of a part is a COMPONENT RECORD.</text>
+
+  <!-- ===== D · THE INVENTION ===== -->
+  <rect class="panel" x="40" y="820" width="1520" height="172" rx="4"/>
+  <text class="t h2" x="58" y="844">D · THE INVENTION, STATED CAREFULLY · and the prior art that must be screened first</text>
+  <g class="t lbls">
+    <text x="58" y="866" class="lblb">THE CLAIM SET FOR THE ATTORNEY</text>
+    <text x="58" y="884">a device that keeps only the display, the radio, the battery and a perception module, and takes</text>
+    <text x="58" y="900">all compute from a permissionless network of bonded operators under a wallet authority, with the</text>
+    <text x="58" y="918">session portable across operators and no device change, and a signed perception declaration that the</text>
+    <text x="58" y="936">network checks before it reads, enforced fail-closed at admission. a continuous 4-layer flexible battery</text>
+    <text x="58" y="954">between two displays and an upright top-edge B module with bar antenna, front camera, and rear round AMOLED.</text>
+    <text x="58" y="970">quality of service is chosen by trust first and latency second, with a stated ladder to satellite message mode.</text>
+  </g>
+  <line class="rule" x1="700" y1="842" x2="700" y2="982"/>
+  <g class="t lbls">
+    <text x="720" y="866" class="lblb">THE PRIOR ART, RECORDED, NOT HIDDEN</text>
+    <text x="720" y="884">thin clients and remote display, older than this program by decades</text>
+    <text x="720" y="902">cloud gaming and cloud phones: one provider, one subscription, the identity of the provider</text>
+    <text x="720" y="920">lapdocks and phone-as-computer docks: the phone stays the brain and nothing moves off it</text>
+    <text x="720" y="938">magnetic camera modules: a phone in 2025, a whole module system on a phone in 2026</text>
+    <text x="720" y="960" class="lblb">the difference this program must prove: the provider is a bonded, wallet-authorized set rather than a company,</text>
+    <text x="720" y="974" class="lblb">and the identity, the data and the session survive a change of provider.</text>
+  </g>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P06</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P06 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">BUDLUM INTEGRATION</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

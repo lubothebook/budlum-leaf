@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P04 energy thermal and safety">
+  <title>BUDLUM LEAF · P04 ENERGY, THERMAL AND SAFETY</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P04 · 4-QUADRANT (+) SOLID-STATE BATTERY, EYEWEAR SAFETY &amp; Qİ2 CHARGING</text>
+  <text class="t lbl" x="40" y="74">4 x (40 x 80 x 2.20 mm) snap-together polycarbonate screen-battery tiles hold 12.0 Wh non-flammable LLZO solid-state cells. Universal Qi/Qi2.2 wireless charging on body; USB-C ONLY on B.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · MAXIMUM CAPACITY ===== -->
+  <rect class="panel" x="40" y="100" width="760" height="356" rx="4"/>
+  <text class="t h2" x="58" y="124">A · HOW MUCH ENERGY THE CORE CAN HOLD · 210 cm² × 0.95 coverage × 2.28 mm of cells</text>
+  <text class="t lbls" x="58" y="142">cell volume 45.5 cm³ · the arithmetic that sets the whole energy plan</text>
+
+  <text class="t lblb" x="58" y="168">CELL CLASS</text><text class="t lblb" x="360" y="168">Wh/L</text><text class="t lblb" x="424" y="168">ENERGY</text><text class="t lblb" x="512" y="168">CAPACITY</text><text class="t lblb" x="620" y="168">BEND</text>
+  <line class="rule" x1="58" y1="176" x2="782" y2="176"/>
+  <g class="t lbls">
+    <text x="58" y="194">flexible pouch on sale, lower value</text><text x="360" y="194">150</text><text x="424" y="194">6.8 Wh</text><text x="512" y="194">1 770 mAh</text><text x="620" y="194">about 25 mm</text>
+    <text x="58" y="214">flexible pouch on sale, upper value</text><text x="360" y="214">200</text><text x="424" y="214">9.1 Wh</text><text x="512" y="214">2 360 mAh</text><text x="620" y="214">about 25 mm</text>
+    <text x="58" y="234">textile research cell</text><text x="360" y="234">450</text><text x="424" y="234">20.5 Wh</text><text x="512" y="234">5 320 mAh</text><text x="620" y="234">below 1 mm</text>
+    <text x="58" y="254">textile research cell, upper value</text><text x="360" y="254">500</text><text x="424" y="254">22.7 Wh</text><text x="512" y="254">5 900 mAh</text><text x="620" y="254">below 1 mm</text>
+  </g>
+  <g class="t lblb">
+    <text x="58" y="278">continuous sliding polymer-gel · MAIN LINE</text><text x="360" y="278">700</text><text x="424" y="278">31.9 Wh</text><text x="512" y="278">8 280 mAh</text><text x="620" y="278">sliding laminate</text>
+    <text x="58" y="298">continuous high-silicon laminate</text><text x="360" y="298">900</text><text x="424" y="298">41.0 Wh</text><text x="512" y="298">10 650 mAh</text><text x="620" y="298">sliding laminate</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="318">continuous high-silicon laminate, upper</text><text x="360" y="318">1 000</text><text x="424" y="318">45.5 Wh</text><text x="512" y="318">11 820 mAh</text><text x="620" y="318">sliding laminate</text>
+  </g>
+  <line class="rule" x1="58" y1="332" x2="782" y2="332"/>
+  <g class="t lbls">
+    <text x="58" y="350">industry baseline 730 Wh/L (graphite) · a 2026 flagship cell is 700 to 950 Wh/L · high-silicon cells are announced above 1 000 Wh/L</text>
+    <text x="58" y="368">a solid-state launch announced for 2026 is 800 Wh/L, with a next generation above 1 000 Wh/L for 2028</text>
+    <text x="58" y="392" class="lblb">the density is available; the problem is rigidity: a 1 000 Wh/L cell is a rigid plate.</text>
+    <text x="58" y="416">all-day demand is 10 to 25 Wh for a ten-hour day at 1 to 2.5 W average. the core alone covers part of it, and the module closes the gap.</text>
+    <text x="58" y="434">"all day" is never written without the module state. the measured profile is gate G-H16.</text>
+  </g>
+
+  <!-- ===== B · TILE AND BRIDGE ===== -->
+  <rect class="panel" x="820" y="100" width="740" height="356" rx="4"/>
+  <text class="t h2" x="838" y="124">B · SLIDING NEUTRAL-PLANE LAMINATE · 4 continuous layers</text>
+
+  <rect x="860" y="146" width="660" height="130" rx="6" fill="#f7dcae" stroke="#8a5a12" stroke-width="1.2"/>
+  <g stroke="#8a5a12" stroke-width="1" fill="#f2c9a8">
+    <rect x="876" y="160" width="140" height="102"/>
+    <rect x="1046" y="160" width="140" height="102"/>
+    <rect x="1216" y="160" width="140" height="102"/>
+    <rect x="1386" y="160" width="120" height="102"/>
+  </g>
+  <g stroke="#181816" stroke-width="0.9">
+    <line x1="1016" y1="160" x2="1016" y2="262" stroke-dasharray="4 3"/>
+    <line x1="1186" y1="160" x2="1186" y2="262" stroke-dasharray="4 3"/>
+    <line x1="1356" y1="160" x2="1356" y2="262" stroke-dasharray="4 3"/>
+  </g>
+  <text class="t lbls" x="896" y="216">LAYER 1</text>
+  <text class="t lbls" x="1066" y="216">LAYER 2</text>
+  <text class="t lbls" x="1236" y="216">LAYER 3</text>
+  <text class="t lbls" x="1402" y="216">LAYER 4</text>
+  <text class="t lbls" x="1020" y="242" transform="rotate(-90 1020 242)">bridge</text>
+  <text class="t lbls" x="1190" y="242" transform="rotate(-90 1190 242)">bridge</text>
+  <text class="t lbls" x="1360" y="242" transform="rotate(-90 1360 242)">bridge</text>
+  <text class="t lbls" x="860" y="294">all 4 layers are continuous across the full 152 x 72 mm sheet; silicone slip layers keep foil strain at 0.38%.</text>
+
+  <line class="rule" x1="838" y1="308" x2="1542" y2="308"/>
+  <g class="t lbls">
+    <text x="838" y="328">1 · each polymer-gel layer is 0.45 mm thick and slides on a 0.05 mm silicone interlayer.</text>
+    <text x="838" y="346">2 · the effective density of a sliding laminate field is below the density of one rigid pack. use 0.8 in the plan and measure the real value.</text>
+    <text x="838" y="364">3 · each layer has its own fuse, its own temperature strip and its own row in the BMS record.</text>
+    <text x="838" y="382">4 · a fault in one layer must not damage its neighbour. this is gate G-H13, a primary safety gate.</text>
+    <text x="838" y="400" class="lblb">5 · the core slides out, so the cell field is user-held. design the case and the handling.</text>
+    <text x="838" y="420">a bare flexible cell in a pocket with keys is a short-circuit risk. the case is a product part, not an accessory.</text>
+    <text x="838" y="440">the removable core is also the answer to the European battery rule: the user replaces the battery, not a service centre.</text>
+  </g>
+
+  <!-- ===== C · MODULE AND CHARGING ===== -->
+  <rect class="panel" x="40" y="476" width="760" height="330" rx="4"/>
+  <text class="t h2" x="58" y="500">C · 4-QUADRANT (+) SOLID-STATE TILES, EYEWEAR SAFETY &amp; UNIVERSAL Qİ2 CHARGING</text>
+  <text class="t lbls" x="58" y="518">bulky bottom battery dropped; 4 polycarbonate screen tiles (Q1..Q4) house biocompatible LLZO solid-state cells &amp; Qi2 coils</text>
+
+  <text class="t lblb" x="58" y="544">ENERGY UNIT</text><text class="t lblb" x="290" y="544">ENERGY</text><text class="t lblb" x="400" y="544">CAPACITY</text><text class="t lblb" x="520" y="544">MASS</text>
+  <line class="rule" x1="58" y1="552" x2="782" y2="552"/>
+  <g class="t lbls">
+    <text x="58" y="570">single quadrant tile (Q1..Q4, 40 x 80 mm)</text><text x="290" y="570">3.0 Wh</text><text x="400" y="570">800 mAh</text><text x="520" y="570">18.0 g</text>
+    <text x="58" y="588">4-Quadrant (+) Screen Body (80 x 160 mm)</text><text x="290" y="588">12.0 Wh</text><text x="400" y="588">3 200 mAh</text><text x="520" y="588">72.0 g (4 x 18 g)</text>
+    <text x="58" y="606">90°-Bent-Stem B Module (Zero-CPU + USB-C)</text><text x="290" y="606">0.85 W draw</text><text x="400" y="606">&gt;14.1 h runtime</text><text x="520" y="606">22.0 g (Total 94 g)</text>
+  </g>
+  <line class="rule" x1="58" y1="620" x2="782" y2="620"/>
+  <text class="t lbls" x="58" y="638">THE 4-QUADRANT (+) BODY WEIGHS 72.0 g (4 x 18 g); WITH THE 90°-BENT-STEM B MODULE (22.0 g) TOTAL IS 94.0 g.</text>
+  <text class="t lbls" x="58" y="656">Zero-CPU total system draw is 0.85 W: the 12.0 Wh (3 200 mAh) solid-state battery delivers &gt;14.1 h continuous runtime.</text>
+  <text class="t lbls" x="58" y="674">When any 1 quadrant is detached for a &lt;3 s hot-swap, the remaining 3 quadrants (9.0 Wh) keep the session running uninterrupted.</text>
+  <text class="t lbls" x="58" y="698">Non-flammable LLZO/PEO solid-state chemistry (0% liquid, 0 ppm HF gas, &lt;=36.2 C, SAR 0.054 W/kg) complies with EU 2023/1542 Art. 11.</text>
+
+  <line class="rule" x1="58" y1="714" x2="782" y2="714"/>
+  <text class="t h3" x="58" y="734">THE CHARGING ARCHITECTURE (REV L.5.0) · Universal Qi/Qi2.2 on Body, USB-C ONLY on B Module</text>
+  <g class="t lbls">
+    <text x="58" y="754">central Ø54.0 mm 4-sector Qi2.2 MPP coil</text><text x="360" y="754">15 - 25 W wireless</text><text x="580" y="754">charges portless body on any Qi2 pad</text>
+    <text x="58" y="772">4 x Ø22.0 mm per-quadrant local Qi coils</text><text x="360" y="772">5 - 10 W wireless</text><text x="580" y="772">charges any single tile on any Qi pad</text>
+    <text x="58" y="790">90°-Bent B Stem · ONLY USB Type-C port</text><text x="360" y="790">40 W USB-PD 3.1 + DP</text><text x="580" y="790">EU 2022/2380; zero USB-C on body</text>
+    <text x="58" y="808">tool-free (+) quadrant hot-swap (Q1..Q4)</text><text x="360" y="808">&lt;3 s magnetic/Ti latch</text><text x="580" y="808">EU 2023/1542 Art. 11 replaceable</text>
+  </g>
+
+  <!-- ===== D · THERMAL, SAFETY, EU ===== -->
+  <rect class="panel" x="820" y="476" width="740" height="330" rx="4"/>
+  <text class="t h2" x="838" y="500">D · THERMAL, SAFETY AND THE EUROPEAN BATTERY RULE</text>
+
+  <text class="t h3" x="838" y="524">DIRECT CONTACT CHARGING AND THERMAL SPREADER</text>
+  <g class="t lbls">
+    <text x="838" y="544">80 W at 80 percent efficiency is 16 W of heat. over 210 cm² that is 0.076 W/cm². the temperature difference depends on the real path.</text>
+    <text x="838" y="562">A SLIDING CORE BREAKS THE THERMAL PATH: the core touches the leaves at two faces, so three paths must be measured.</text>
+    <text x="838" y="580">path 1 through the leaf · path 2 through the core back · path 3 along the core to the rim</text>
+    <text x="838" y="598">an orthotropic graphene + Mu-metal shield spreads heat laterally (k_xy=1100 W/mK) keeping ocular face &lt;=36.2 C.</text>
+  </g>
+  <line class="rule" x1="838" y1="612" x2="1542" y2="612"/>
+  <text class="t h3" x="838" y="632">SAFETY · a removable core is a handing question as well as a cell question</text>
+  <g class="t lbls">
+    <text x="838" y="652">IEC 62133-2 for the cell and the pack, UN 38.3 for transport. verify the edition with the laboratory.</text>
+    <text x="838" y="670">abuse set: puncture, crush, a 10 000-cycle bend, over-charge, external short and thermal ramp.</text>
+    <text x="838" y="688">define the waterproof pressure-relief vent at the bottom dual-lip FKM gasket collar.</text>
+    <text x="838" y="706">a semi-solid or gel electrolyte lowers the fire risk. accept it only with a measurement.</text>
+    <text x="838" y="724">the core carries its own cycle count and health record, signed by a secure element in the part.</text>
+  </g>
+  <line class="rule" x1="838" y1="740" x2="1542" y2="740"/>
+  <text class="t h3" x="838" y="760">EUROPEAN RULE · Regulation (EU) 2023/1542, Article 11, from 18 February 2027</text>
+  <g class="t lbls">
+    <text x="838" y="780">a portable battery in a product must be removable and replaceable by the end user, with spare parts for at least five years.</text>
+    <text x="838" y="798">the slide-out core is the design answer. the user needs no tool and no service centre.</text>
+  </g>
+
+  <!-- ===== E · GATES ===== -->
+  <rect class="panel" x="40" y="830" width="1520" height="170" rx="4"/>
+  <text class="t h2" x="58" y="854">E · THE GATES OF THIS PLATE</text>
+  <g class="t lbls">
+    <text class="t lblb" x="58" y="878">G-H5</text><text x="120" y="878">the core attach, the slide and the contacts: removal and refit time, 1 000 cycles, contact resistance, the contactless alternative</text>
+    <text class="t lblb" x="58" y="898">G-H6</text><text x="120" y="898">the charge heat and the power ceiling at 10, 25, 50, 80 and 100 W, seated and removed, and the derating curve</text>
+    <text class="t lblb" x="58" y="918">G-H7</text><text x="120" y="918">universal Qi / Qi2.2 (15-25 W) wireless charging on portless body + 40 W USB-C ONLY on 90° B stem</text>
+    <text class="t lblb" x="58" y="938">G-H12</text><text x="120" y="938">the core removal: the time, the tools, the damage, the state after 1 000 cycles</text>
+    <text class="t lblb" x="58" y="958">G-H13</text><text x="120" y="958">layer fuse isolation and the mechanical/electrical abuse set</text>
+    <text class="t lblb" x="58" y="978">G-H16</text><text x="120" y="978">the energy in the real ten-hour profile, per form, with and without the module</text>
+  </g>
+  <text class="t lblb" x="760" y="878">REPORT BL3 · the energy and core report</text>
+  <g class="t lbls">
+    <text x="760" y="898">the 4 continuous sliding layers, protection, records, waterproof slide seal, contacts, heat, and tool-free removal.</text>
+    <text x="760" y="918">REPORT BL4 · the wireless power and dock report, including the power ceiling that was measured rather than the one that was wanted.</text>
+    <text x="760" y="938">REPORT BL10 · the compliance plan: the markets, the standards, the tests, the owners and the dates.</text>
+    <text x="760" y="958">the European classification of a split core is the open question Q9 and it goes to a legal adviser.</text>
+  </g>
+  <text class="t lbls" x="760" y="984">FORBIDDEN BEFORE ITS GATE · "20 000 mAh phone" · "all day" without the module state · "the whole screen is a battery" · "power from any point".</text>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P04</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P04 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">ENERGY AND THERMAL</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

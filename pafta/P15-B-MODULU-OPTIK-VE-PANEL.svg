@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="Yuvarlak kısım ekran üstünde (50MP OIS + Ø22.4 mm AMOLED), sadece 90° bükümlü çubuk (anten + tek Type-C) yukarıda">
+  <title>BUDLUM LEAF · 90° BÜKÜMLÜ B MODÜLÜ OPTİK YOL, ARKA PANEL VE ÖNE/ARKAYA TAKILMA</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">B MODÜLÜ · EKRAN ÜSTÜNDE YUVARLAK KAMERA/PANEL VE 90° BÜKÜMLÜ ÇUBUK</text>
+<text class="s" x="40" y="78">B modülünün yuvarlak halkası (Ø32.0 mm dış, Ø24.0 mm iç açıklık) doğrudan ekranın üzerine oturur; sadece soldaki anten + Type-C çubuğu 90° dik açıyla</text>
+<text class="s" x="40" y="97">bükülerek ekran kenarında/yukarısında dik kalır. Böylece modül ekranın 4 yönüne ve ÖN veya ARKA yüzüne takılabilir.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="660" height="430" rx="6"/>
+<text class="t h2" x="60" y="180">A · ARKA YUVARLAK AMOLED VE 90° DİK BÜKÜMLÜ ÇUBUK</text>
+<circle cx="220.0" cy="345.0" r="128" fill="#93a68c" stroke="#5c6b58" stroke-width="1.6"/>
+<circle cx="220.0" cy="345.0" r="96" fill="#121e2b" stroke="#5c6b58" stroke-width="1.4"/>
+<circle cx="220.0" cy="345.0" r="89" fill="#0d1824" stroke="#68c892" stroke-width="1.2"/>
+<circle cx="294.0" cy="345.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="291.5" cy="364.2" r="2.5" fill="#8ce2ac"/>
+<circle cx="284.1" cy="382.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="272.3" cy="397.3" r="2.5" fill="#8ce2ac"/>
+<circle cx="257.0" cy="409.1" r="2.5" fill="#8ce2ac"/>
+<circle cx="239.2" cy="416.5" r="2.5" fill="#8ce2ac"/>
+<circle cx="220.0" cy="419.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="200.8" cy="416.5" r="2.5" fill="#8ce2ac"/>
+<circle cx="183.0" cy="409.1" r="2.5" fill="#8ce2ac"/>
+<circle cx="167.7" cy="397.3" r="2.5" fill="#8ce2ac"/>
+<circle cx="155.9" cy="382.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="148.5" cy="364.2" r="2.5" fill="#8ce2ac"/>
+<circle cx="146.0" cy="345.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="148.5" cy="325.8" r="2.5" fill="#8ce2ac"/>
+<circle cx="155.9" cy="308.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="167.7" cy="292.7" r="2.5" fill="#8ce2ac"/>
+<circle cx="183.0" cy="280.9" r="2.5" fill="#8ce2ac"/>
+<circle cx="200.8" cy="273.5" r="2.5" fill="#8ce2ac"/>
+<circle cx="220.0" cy="271.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="239.2" cy="273.5" r="2.5" fill="#8ce2ac"/>
+<circle cx="257.0" cy="280.9" r="2.5" fill="#8ce2ac"/>
+<circle cx="272.3" cy="292.7" r="2.5" fill="#8ce2ac"/>
+<circle cx="284.1" cy="308.0" r="2.5" fill="#8ce2ac"/>
+<circle cx="291.5" cy="325.8" r="2.5" fill="#8ce2ac"/>
+<line x1="220.0" y1="345.0" x2="220.0" y2="299.0" stroke="#eef4f8" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="220.0" y1="345.0" x2="252.0" y2="345.0" stroke="#8ce2ac" stroke-width="3.6" stroke-linecap="round"/>
+<text class="lblb" x="372" y="220">Yuvarlak AMOLED Panel (Ø22.4 mm)</text>
+<text class="lbls" x="372" y="244">• Ekran yüzeyinin üstüne paralel oturur</text>
+<text class="lbls" x="372" y="264">• 1-120 Hz LTPO · 220 x 220 px · 600 nit</text>
+<text class="lbls" x="372" y="284">• Saat, kronometre, bildirim ve vizör</text>
+<text class="lbls" x="372" y="304">• Önde 50MP OIS ile Cu-Grafit kalkanla ayrılır</text>
+<text class="lbls" x="372" y="324">• Simetrik N52H halka ile öne/arkaya takılır</text>
+<text class="lblb" x="372" y="364">90° Dik Bükümlü Çubuk (Anten + Type-C)</text>
+<text class="lbls" x="372" y="388">• Sadece çubuk kısmı 90° dik açıyla bükülür</text>
+<text class="lbls" x="372" y="408">• 3-bant LCP anten + 60 GHz mmWave dizisi</text>
+<text class="lbls" x="372" y="428">• Cihazdaki TEK USB Type-C (40W PD 3.1) priz</text>
+<text class="lbls" x="372" y="448">• ±90° menteşe ile 4 yöne ve öne/arkaya takılır</text>
+<text class="lbls" x="60" y="516">Ekran gövdesinde Type-C yoktur; kablolu şarj ve tüm aktif iletişim B modülündedir.</text>
+<text class="lbls" x="60" y="538">Gözlük modunda 90° anten çubuğu gözden uzakta kalarak SAR değerini 0.054 W/kg yapar.</text>
+<rect class="glass" x="720" y="152" width="640" height="430" rx="6"/>
+<text class="t h2" x="740" y="180">B · 4.00 MM İÇİNDE KATLANMIŞ OPTİK YOL VE Z-İSTİFİ</text>
+<text class="lbls" x="740" y="212">ön safir pencere (z = 4.00 mm) · 84° görüş açısı</text>
+<line x1="800" y1="228" x2="800" y2="300" stroke="#18507e" stroke-width="2.4"/>
+<rect class="mod" x="782" y="300" width="36" height="26" rx="4"/>
+<text class="lbls" x="826" y="318">G1 · asferik giriş mercekleri</text>
+<text class="lbls" x="740" y="264">3.40 mm dikey</text>
+<path d="M 800 326 L 800 372 L 700 372 L 700 470" fill="none" stroke="#18507e" stroke-width="2.4"/>
+<path d="M 786 372 L 814 372 L 800 348 Z" class="steel"/>
+<text class="lbls" x="820" y="356">45° katlama prizması</text>
+<text class="lbls" x="806" y="410">14.0 mm yatay yol (halka içinde)</text>
+<rect class="mod" x="682" y="412" width="36" height="24" rx="4"/>
+<text class="lbls" x="740" y="430">5P asferik lens grubu</text>
+<rect class="mod" x="682" y="440" width="36" height="20" rx="4"/>
+<text class="lbls" x="740" y="456">4-eksen OIS bakır bobin aktüatörleri</text>
+<rect class="steel" x="680" y="466" width="40" height="14" rx="3"/>
+<text class="lbls" x="740" y="478">0.15 mm Cu-Grafit EM/termal kalkan</text>
+<rect class="dead" x="676" y="486" width="48" height="18" rx="3"/>
+<text class="lbls" x="740" y="500">50 MP CMOS sensör (12.8 x 9.6 mm) + 6L PCB</text>
+<text class="lbls" x="740" y="530">Yuvarlak halka ekranın üstüne oturur; sadece 90° çubuk yukarıda kalır.</text>
+<text class="lbls" x="740" y="550">Arka yarıda (z = 0.00..0.85 mm) Ø22.4 mm Yuvarlak LTPO AMOLED çalışır.</text>
+<rect class="glass" x="40" y="600" width="660" height="272" rx="6"/>
+<text class="t h2" x="60" y="628">C · 90° ÇUBUK, KAMERA VE SİSTEM BEYNİ ÖZETİ</text>
+<text class="lblb" x="60" y="656">90° dik çubuk</text>
+<text class="lbls" x="230" y="656">Sadece anten + TEK Type-C (40W) yukarıda/kenarda dik</text>
+<text class="lblb" x="60" y="682">yuvarlak halka</text>
+<text class="lbls" x="230" y="682">32x32x4 mm · doğrudan ekranın üzerine paralel oturur</text>
+<text class="lblb" x="60" y="708">öne/arkaya takım</text>
+<text class="lbls" x="230" y="708">±90° titanyum menteşe ile ön/arka ve 4 yöne takılır</text>
+<text class="lblb" x="60" y="734">sistem beyni</text>
+<text class="lbls" x="230" y="734">4-Karo Ana TCON + Sıfır-CPU UWB/60GHz mmWave SiP</text>
+<text class="lblb" x="60" y="760">halka içi ses</text>
+<text class="lbls" x="230" y="760">2 x MEMS mikrofon + 9.0 x 3.2 mm hoparlör + flaş</text>
+<text class="lblb" x="60" y="786">toplam kütle</text>
+<text class="lbls" x="230" y="786">20.0 g · r 0.55 mm yumuşak kenar · IP68 su geçirmez</text>
+<text class="s" x="60" y="826">B modülü olmadan ekran sadece kablosuz şarj alır; diğer her şey için B</text>
+<text class="s" x="60" y="845">şarttır.</text>
+<rect class="glass" x="720" y="600" width="640" height="272" rx="6"/>
+<text class="t h2" x="740" y="628">D · KAPILAR MON-1 … MON-20 (REV L.5.0)</text>
+<text class="lblb" x="740" y="656">MON-1..2</text>
+<text class="lbls" x="860" y="656">Sadece çubuğu 90° dik bükülen, yuvarlağı ekran üstünde B</text>
+<text class="lblb" x="740" y="682">MON-3..4</text>
+<text class="lbls" x="860" y="682">Önde 50MP OIS kamera, arkada Ø22.4 mm AMOLED panel</text>
+<text class="lblb" x="740" y="708">MON-5</text>
+<text class="lbls" x="860" y="708">±90° menteşe ile ekranın önüne/arkasına ve 4 yönüne takım</text>
+<text class="lblb" x="740" y="734">MON-6..8</text>
+<text class="lbls" x="860" y="734">Cihazdaki TEK USB-C (40W) 90° bükümlü çubuk içinde</text>
+<text class="lblb" x="740" y="760">MON-9</text>
+<text class="lbls" x="860" y="760">B'nin tüm 90° kenarları r 0.55 mm yumuşatılmış</text>
+<text class="lblb" x="740" y="786">MON-10..12</text>
+<text class="lbls" x="860" y="786">4-Karo Ana TCON, UWB/mmWave SiP, 3 ms Dead-Pad, IP68</text>
+<text class="lblb" x="740" y="812">MON-13..20</text>
+<text class="lbls" x="860" y="812">Gözlük modunda SAR 0.054 W/kg ve 50.000 çevrim menteşe</text>
+<text class="lbls" x="740" y="850">Kamera dönmez; modülün kendisi ±90° menteşeyle öne veya arkaya takılır.</text>
+</svg>

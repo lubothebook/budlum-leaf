@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1320" width="1500" height="1320" role="img" aria-label="Budlum Leaf Revision L.5.0: 4-Quadrant (+) Snap-Together Polycarbonate Screen-Battery Body, Biocompatible Eyewear-Safe Solid-State Battery, Portless Qi2 Body, and 90-Degree Bent-Stem B Module">
+  <title>BUDLUM LEAF · BL-DWG-002 · REV L.5.0</title>
+  <desc>4-Quadrant (+) Snap-Together Polycarbonate Screen-Battery Body (80 x 160 x 2.00 mm, 68 g, 12 Wh LLZO Solid-State), Portless Universal Qi2.2 Wireless Charging, and 90-Degree Bent-Stem B Module (20 g, ONLY USB-C). Revision L.5.0, 2026-10-12.</desc>
+
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:19px;font-weight:700;letter-spacing:.5px}
+    .h2{font-size:13px;font-weight:700;letter-spacing:.4px}
+    .lbl{font-size:11px}
+    .lblb{font-size:11px;font-weight:700}
+    .lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}
+    .dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10.5px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#c9c9c2;stroke-width:1}
+    .panel{fill:none;stroke:#c9c9c2;stroke-width:1}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="1500" height="1320"/>
+
+  <!-- TITLE -->
+  <text class="t h1" x="40" y="46">BUDLUM LEAF · 4-QUADRANT (+) SCREEN-BATTERY (72 G), PORTLESS Qİ2 BODY &amp; 90° B MODULE (22 G)</text>
+  <text class="t lbl" x="40" y="66">Drawing BL-DWG-002 · Revision L.5.0 · 2026-10-12 · 4 x (40 x 80 x 2.00 mm) (+) Polycarbonate Tiles (12 Wh LLZO Solid-State, Qi2.2) · 90°-Bent-Stem B Module (ONLY USB-C)</text>
+  <line class="dim" x1="40" y1="80" x2="1460" y2="80"/>
+
+  <!-- ================= A · 2.20 MM 4-QUADRANT (+) SCREEN-BATTERY STACK ================= -->
+  <rect class="panel" x="40" y="100" width="690" height="460" rx="6"/>
+  <text class="t h2" x="58" y="126">A · THE 2.20 MM 4-QUADRANT (+) SCREEN-BATTERY STACK (18 G / TILE)</text>
+  <text class="t lbls" x="58" y="144">Bulky bottom battery dropped: 4 snap-together 40 x 80 x 2.00 mm tiles hold 4 x 3.0 Wh = 12.0 Wh LLZO solid-state cells.</text>
+
+  <!-- stack -->
+  <rect x="250" y="180" width="465" height="34" fill="#cfe3f7" stroke="#18507e" stroke-width="1"/>
+  <text class="t lblb" x="262" y="202">Front ISO 10993 Polycarbonate (0.20) + DC-Dimming T-OLED (0.14)</text>
+
+  <rect x="250" y="214" width="465" height="172" fill="#e6d6f2" stroke="#5a3b7a" stroke-width="1"/>
+  <rect x="262" y="222" width="445" height="12" fill="#dcecff" stroke="#18507e" stroke-width="0.6"/>
+  <text class="t lbls" x="268" y="232">AgNW/ITO + Corning edge-wrapped 0.00 mm zero-bezel conductors (0.04 mm)</text>
+  <rect x="262" y="238" width="445" height="14" fill="#d8e3d5" stroke="#3b5e4c" stroke-width="0.6"/>
+  <text class="t lbls" x="268" y="249">PDLC Privacy + Orthotropic Graphene / Mu-Metal Ocular Shield (0.09 mm)</text>
+  <rect x="262" y="254" width="445" height="102" fill="#eef4ff" stroke="#18507e" stroke-width="0.6"/>
+  <text class="t lblb" x="272" y="274">Non-Flammable LLZO / PEO-Ceramic Solid-State Cell (3.0 Wh / Tile)</text>
+  <text class="t lbls" x="272" y="292">0% liquid solvent, 0% LiPF6 salt, 0.0 ppm toxic HF gas, 0% swelling</text>
+  <text class="t lbls" x="272" y="308">Eyewear-safe: ocular face &lt;=36.2 C, ELF &lt;0.08 uT, SAR = 0.054 W/kg</text>
+  <text class="t lbls" x="272" y="326">&lt;15 um n=1.585 self-healing optical seam lip (zero scratch / zero line)</text>
+  <text class="t lbls" x="272" y="344">Universal Qi2.2 MPP (Ø54 mm) + local Ø22 mm Qi coil (zero USB-C on body)</text>
+  <rect x="262" y="358" width="445" height="18" fill="#dcecff" stroke="#18507e" stroke-width="0.6"/>
+  <text class="t lblb" x="272" y="371">(+) TITANIUM HUB + 24 N52H MAGNETS + 64 GOLD MICRO-LEAVES</text>
+
+  <rect x="250" y="386" width="465" height="34" fill="#cfe3f7" stroke="#18507e" stroke-width="1"/>
+  <text class="t lblb" x="262" y="408">Back ISO 10993 Polycarbonate (0.20) + DC-Dimming T-OLED (0.14)</text>
+
+  <!-- dimensions -->
+  <g class="dim">
+    <line x1="200" y1="180" x2="200" y2="420"/>
+    <line x1="190" y1="180" x2="210" y2="180"/>
+    <line x1="190" y1="214" x2="210" y2="214"/>
+    <line x1="190" y1="386" x2="210" y2="386"/>
+    <line x1="190" y1="420" x2="210" y2="420"/>
+    <line x1="150" y1="180" x2="150" y2="420"/>
+    <line x1="142" y1="180" x2="158" y2="180"/>
+    <line x1="142" y1="420" x2="158" y2="420"/>
+  </g>
+  <text class="dimt" x="214" y="200">0.52</text>
+  <text class="dimt" x="214" y="300">1.16 LLZO</text>
+  <text class="dimt" x="214" y="406">0.52</text>
+  <text class="dimt" x="118" y="300" transform="rotate(-90 118 300)">2.20 MM</text>
+
+  <!-- A notes -->
+  <text class="t lbls" x="58" y="448">1. Phone divides across the center (+) into 4 equal 40 x 80 x 2.00 mm polycarbonate tiles (Q1..Q4, 4 x 17 g = 68 g).</text>
+  <text class="t lbls" x="58" y="466">2. 12 um n=1.585 optical elastomer lip + Corning edge-wrapped electrodes make the (+) joint 100% invisible (0 scratch).</text>
+  <text class="t lbls" x="58" y="484">3. Each tile holds a 3.0 Wh non-flammable LLZO/PEO solid-state battery (12.0 Wh total, EU 2023/1542 &lt;3 s swap).</text>
+  <text class="t lbls" x="58" y="502">4. Portless body has ZERO USB-C and ZERO buttons; charges on any Qi / Qi2.2 wireless pad (15-25 W).</text>
+  <text class="t lbls" x="58" y="520">5. 90°-Bent-Stem B module holds the ONLY USB Type-C port, Zero-CPU UWB/60GHz SiP, Master TCON, and 50MP cam.</text>
+
+  <!-- ================= B · 4-QUADRANT (+) TILES & 90°-BENT-STEM B MODULE ================= -->
+  <rect class="panel" x="750" y="100" width="710" height="460" rx="6"/>
+  <text class="t h2" x="768" y="126">B · 4-QUADRANT (+) SOLID-STATE TILES &amp; 90°-BENT-STEM B MODULE</text>
+  <text class="t lbls" x="768" y="144">4 tiles snap across the (+) cross; ONLY the B stem is bent at 90° while the round ring sits ON the screen.</text>
+
+  <!-- sleeve -->
+  <path d="M 770 180 L 770 420 L 822 420 L 822 404 L 788 404 L 788 196 L 822 196 L 822 180 Z" fill="#ddded9" stroke="#181816" stroke-width="1"/>
+  <text class="t lbls" x="762" y="438">2.00 mm quad</text>
+
+  <!-- core -->
+  <rect x="832" y="196" width="380" height="208" rx="4" fill="#d8e3d5" stroke="#3b5e4c" stroke-width="1.2"/>
+  <text class="t lblb" x="846" y="222">4-QUADRANT (+) TILES · 4 x 3.0 Wh = 12.0 Wh LLZO</text>
+  <text class="t lbls" x="846" y="244">Central Grade-5 Titanium Cruciform (+) Hub + 8 micro-dovetail pins</text>
+  <text class="t lbls" x="846" y="264">24 bipolar N52H magnets + 64 gold micro-leaves (3 ms Dead-Pad)</text>
+  <text class="t lbls" x="846" y="284">&lt;15 um n=1.585 phenyl-fluorosilicone self-healing optical seam (IP68)</text>
+  <text class="t lbls" x="846" y="304">Biocompatible ISO 10993 PC + &lt;=36.2 C ocular thermal limiter</text>
+  <text class="t lbls" x="846" y="324">Bifilar current-canceling tabs + Mu-metal shield (ELF &lt;0.08 uT)</text>
+  <text class="t lbls" x="846" y="344">Universal Qi2.2 MPP Ø54 mm 4-sector coil + 4x Ø22 mm local Qi coils</text>
+  <text class="t lbls" x="846" y="364">EU 2023/1542 Art. 11: &lt;3 s tool-free hot-swap of any single quadrant</text>
+
+  <path d="M 1220 300 L 1284 300" stroke="#8a2b1f" stroke-width="2"/>
+  <path d="M 1284 294 L 1296 300 L 1284 306 Z" fill="#8a2b1f"/>
+  <text class="dimt" x="1220" y="288">&lt;3 s (+) swap</text>
+
+  <!-- B2 90°-Bent-Stem B module -->
+  <line class="rule" x1="768" y1="450" x2="1442" y2="450"/>
+  <text class="t h2" x="768" y="472">B2 · THE 90°-BENT-STEM B MODULE (22.0 G · 32 INTERNAL PARTS)</text>
+  <rect x="770" y="486" width="180" height="32" rx="4" fill="#93a68c" stroke="#181816" stroke-width="1"/>
+  <text class="t lblb" x="780" y="506">90°-BENT B STEM</text>
+  <rect x="770" y="522" width="180" height="32" rx="4" fill="#cfe3f7" stroke="#18507e" stroke-width="1"/>
+  <text class="t lblb" x="780" y="542">RING ON SCREEN</text>
+  <text class="t lbls" x="968" y="498">• ONLY the stem (cubuk, 32 x 4 x 1 mm) bends at 90° and stays above edge.</text>
+  <text class="t lbls" x="968" y="514">• Round ring (32 x 32 x 4.00 mm) lies flat ON TOP OF the screen surface.</text>
+  <text class="t lbls" x="968" y="530">• Houses the ONLY USB Type-C (40W), LCP + 60GHz antenna, TCON, UWB.</text>
+  <text class="t lbls" x="968" y="546">• +/-90° Ti hinge docks to FRONT or BACK of screen and all 4 edges.</text>
+
+  <!-- ================= C · 12-EDGE SOFTENED PRISM ================= -->
+  <rect class="panel" x="40" y="580" width="690" height="352" rx="6"/>
+  <text class="t h2" x="58" y="606">C · 80.0 x 160.0 x 4.00 MM RECTANGULAR PRISM · ALL 12 EDGES SOFTENED</text>
+
+  <rect x="84" y="664" width="104" height="208" rx="4.2" fill="#eef5fd" stroke="#18507e" stroke-width="1.6"/>
+  <path d="M 84.00 661.40 L 84.00 625.00 A 2.60 2.60 0 0 1 89.20 625.00 L 89.20 643.20 A 15.60 15.60 0 0 0 100.90 658.30 A 20.80 20.80 0 1 1 115.20 664.00 L 86.60 664.00 A 2.60 2.60 0 0 1 84.00 661.40 Z" fill="#93a68c" stroke="#181816" stroke-width="1.2"/>
+  <circle cx="115.2" cy="643.2" r="15.6" fill="#20262b" stroke="#181816" stroke-width="1"/>
+  <circle cx="115.2" cy="643.2" r="7.8" fill="#2c5882" stroke="#9ec7ea" stroke-width="0.8"/>
+  <text class="t lbls" x="82" y="894">Upright 80 x 160 mm</text>
+  <text class="t lbls" x="82" y="908">+ top-left upright B</text>
+
+  <text class="t lblb" x="230" y="652">Geometry of the 12 Softened Prism Edges (No 32 mm Oval Corners)</text>
+  <text class="t lbls" x="230" y="674">• 4 vertical corner edges: small tactile radius R = 6.35 mm (screen corner R = 1.40 mm).</text>
+  <text class="t lbls" x="230" y="694">• 4 front + 4 back horizontal perimeter edges: softened with r = 0.80 mm radius transition.</text>
+  <text class="t lbls" x="230" y="714">• Flat edge gripping land along all 4 sides: 4.00 - 2(0.80) = 2.40 mm.</text>
+  <text class="t lbls" x="230" y="734">• Active screen area per face: 76.4 x 156.4 mm = 11,947 mm² (100% open, 0 mm² covered).</text>
+  <text class="t lbls" x="230" y="754">• Resolution: 1,528 x 3,128 px at 508 ppi (1-144 Hz LTPO, 1,200 nits peak).</text>
+  <text class="t lbls" x="230" y="774">• B module (40.0 x 32.0 x 4.00 mm) all 90° edges softened at r = 0.55 mm.</text>
+  <line class="rule" x1="230" y1="792" x2="712" y2="792"/>
+  <text class="t lblb" x="230" y="812">Why Small Edge Softening Replaces Giant 32 mm Corners</text>
+  <text class="t lbls" x="230" y="832">A 32 mm corner radius on an 80 mm wide screen cuts off the corners into a capsule and wastes</text>
+  <text class="t lbls" x="230" y="850">869 mm² of display. With R = 6.35 mm corners and r = 0.80 mm on all 12 prism edges, the</text>
+  <text class="t lbls" x="230" y="868">phone keeps a true rectangular screen while eliminating every sharp 90° edge in the hand.</text>
+
+  <!-- ================= D · ENERGY ================= -->
+  <rect class="panel" x="750" y="580" width="710" height="352" rx="6"/>
+  <text class="t h2" x="768" y="606">D · 4-QUADRANT (+) BIOCOMPATIBLE SOLID-STATE BATTERY FAMILY</text>
+  <text class="t lbls" x="768" y="624">Leaf 160 4-Quadrant (+) Body: 4 x (40.0 x 80.0 x 2.00 mm) tiles = 12.0 Wh non-flammable LLZO/PEO + Qi2.2 coils</text>
+
+  <text class="t lblb" x="768" y="654">Member / Architecture</text>
+  <text class="t lblb" x="1010" y="654">Layers</text>
+  <text class="t lblb" x="1110" y="654">Delivered</text>
+  <text class="t lblb" x="1200" y="654">Mass</text>
+  <text class="t lblb" x="1280" y="654">Strain @ R25.5</text>
+  <line class="rule" x1="768" y1="660" x2="1442" y2="660"/>
+
+  <g class="t lbls">
+    <text x="768" y="682">Panasonic CG-064065 reference cell</text><text x="1010" y="682">1 x 0.55 mm</text><text x="1110" y="682">0.23 Wh</text><text x="1200" y="682">1.0 g</text><text x="1280" y="682">&gt;99% @ 1000 bends</text>
+    <text x="768" y="704">Bulky external bottom battery (dropped)</text><text x="1010" y="704">4.00 mm chin</text><text x="1110" y="704">46.0 g</text><text x="1200" y="704">—</text><text x="1280" y="704">bulky extra volume</text>
+    <text x="768" y="726">18 or 88 rigid squares (refused)</text><text x="1010" y="726">rigid tiles</text><text x="1110" y="726">cracks</text><text x="1200" y="726">—</text><text x="1280" y="726">snaps at tile joints</text>
+  </g>
+  <g class="t lblb">
+    <text x="768" y="754">Budlum Leaf 80 Single Quadrant</text><text x="1010" y="754">2.00 mm LLZO</text><text x="1110" y="754">3.0 Wh</text><text x="1200" y="754">17 g</text><text x="1280" y="754">0.38% (elastic)</text>
+    <text x="768" y="776">Budlum Leaf 160 4-Quadrant (+) Body</text><text x="1010" y="776">2.00 mm LLZO</text><text x="1110" y="776">12.0 Wh</text><text x="1200" y="776">68 g</text><text x="1280" y="776">0.38% (elastic)</text>
+    <text x="768" y="798">Budlum Leaf 240 6-Quadrant Body</text><text x="1010" y="798">2.00 mm LLZO</text><text x="1110" y="798">24.0 Wh</text><text x="1200" y="798">108 g</text><text x="1280" y="798">0.38% (elastic)</text>
+    <text x="768" y="820">Budlum Leaf 480 Multi-Tile Body</text><text x="1010" y="820">2.40 mm LLZO</text><text x="1110" y="820">48.0 Wh</text><text x="1200" y="820">240 g</text><text x="1280" y="820">0.38% (elastic)</text>
+  </g>
+
+  <line class="rule" x1="768" y1="836" x2="1442" y2="836"/>
+  <text class="t lblb" x="768" y="856">Why the LLZO/PEO Solid-State Battery is Safe for Eyewear, Hand &amp; Pocket</text>
+  <text class="t lbls" x="768" y="874">Inorganic LLZO ceramic + PEO polymer electrolyte has 0% liquid solvent and 0% LiPF6 (0.0 ppm HF gas, non-flammable).</text>
+  <text class="t lbls" x="768" y="892">Orthotropic graphene + Mu-metal shield and NTC limiter keep ocular face &lt;=36.2 C, ELF &lt;0.08 uT, and SAR 0.054 W/kg.</text>
+  <text class="t lbls" x="768" y="910">Portless body charges on any Qi / Qi2.2 wireless pad; the ONLY USB Type-C port sits inside the 90°-bent B stem.</text>
+
+  <!-- ================= E · SPLIT AND LINK ================= -->
+  <rect class="panel" x="40" y="952" width="1420" height="328" rx="6"/>
+  <text class="t h2" x="58" y="978">E · SYSTEM ARCHITECTURE (REV L.5.0) · 4-QUADRANT (+) BODY + 90°-BENT-STEM B MODULE</text>
+
+  <rect x="58" y="994" width="440" height="176" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lblb" x="72" y="1016">IN THE HAND · 68 g 4-Quadrant (+) Body + 20 g B = 88 g</text>
+  <g class="t lbls">
+    <text x="72" y="1036">• 80.0 x 160.0 x 2.00 mm body: 4 x (40 x 80 mm) (+) tiles (&lt;15 um n=1.585)</text>
+    <text x="72" y="1054">• Dual ISO 10993 polycarbonate + DC-dimming T-OLED + PDLC privacy</text>
+    <text x="72" y="1072">• 4 x 3.0 Wh = 12.0 Wh LLZO solid-state battery + Qi2.2/Qi wireless coils</text>
+    <text x="72" y="1090">• 90°-Bent-Stem B module (20 g, r 0.55 mm softened edges):</text>
+    <text x="72" y="1108">  - ONLY the stem bends at 90° (holds LCP/60GHz antenna + ONLY USB-C)</text>
+    <text x="72" y="1126">  - Round ring sits ON screen: 50MP OIS cam + rear Ø22.4 mm AMOLED</text>
+    <text x="72" y="1144">  - +/-90° Ti hinge docks to FRONT or BACK of screen and all 4 edges</text>
+  </g>
+
+  <path d="M 514 1046 L 556 1046" stroke="#1f6b4a" stroke-width="2"/>
+  <path d="M 556 1040 L 568 1046 L 556 1052 Z" fill="#1f6b4a"/>
+  <path d="M 556 1072 L 514 1072" stroke="#1f6b4a" stroke-width="2"/>
+  <path d="M 514 1066 L 502 1072 L 514 1078 Z" fill="#1f6b4a"/>
+
+  <rect x="576" y="994" width="400" height="176" rx="4" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+  <text class="t lblb" x="590" y="1016">AT A DISTANCE · Room or Cloud Validator + B.U.D.</text>
+  <g class="t lbls">
+    <text x="590" y="1036">• Heavy CPU / GPU / AI compute runs on room or cloud validators</text>
+    <text x="590" y="1054">• Compositor, encoder, and AI model execution with STARK verification</text>
+    <text x="590" y="1072">• Fail-closed settlement: no proof, no credit</text>
+    <text x="590" y="1090">• User state and geometry manifest stored in B.U.D.</text>
+    <text x="590" y="1108">• B module 6L PCBA holds Quad-Tile Master TCON + UWB/60GHz SiP</text>
+    <text x="590" y="1126">• Without B module, body charges wirelessly; all active tasks require B</text>
+    <text x="590" y="1144">• Each quadrant tile swaps tool-free in &lt;3 s (EU 2023/1542 Art. 11)</text>
+  </g>
+
+  <line class="rule" x1="1000" y1="994" x2="1000" y2="1170"/>
+  <g class="t lbls">
+    <text x="1020" y="1016" class="lblb">THE ANTENNA &amp; Qİ2 WIRELESS SET</text>
+    <text x="1020" y="1036">• 90°-Bent B stem: Wi-Fi 7 tri-band + BT 5.4 + UWB LCP</text>
+    <text x="1020" y="1054">• 90°-Bent B stem ridge: 1x4 60 GHz mmWave patch array</text>
+    <text x="1020" y="1072">• 90°-Bent B stem: ONLY USB Type-C (40W PD 3.1 + DP 2.1)</text>
+    <text x="1020" y="1090">• Central (+) Qi2.2 MPP Ø54 mm 4-sector coil (15-25 W)</text>
+    <text x="1020" y="1108">• 4 x Ø22 mm local Qi coils (single tile wireless charge)</text>
+    <text x="1020" y="1126">• Eyewear mode Head/Eye SAR = 0.054 W/kg (&lt;0.08 uT ELF)</text>
+    <text x="1020" y="1144">• Multipath MPTCP / QUIC with fail-safe local screen mode</text>
+  </g>
+
+  <line class="rule" x1="58" y1="1186" x2="1442" y2="1186"/>
+  <text class="t lblb" x="58" y="1210">VERIFICATION SUMMARY · REVISION L.5.0</text>
+  <g class="t lbls">
+    <text x="58" y="1230">• 4-Quadrant (+) Screen-Battery Body: 4 x (40 x 80 x 2.00 mm) = 80 x 160 x 2.00 mm (68 g, 52 internal parts), &lt;15 um n=1.585 zero-scratch optical seam (F-01 to F-10).</text>
+    <text x="58" y="1248">• 90°-Bent-Stem B Module: 20.0 g (32 internal parts), ONLY stem bent at 90° (LCP/60GHz antenna + ONLY USB-C), round ring ON screen, reversible Front/Back &amp; 4 edges (MON-1 to MON-20).</text>
+    <text x="58" y="1266">• Biocompatible Eyewear-Safe LLZO Solid-State Battery (4 x 3.0 Wh = 12.0 Wh, &lt;=36.2 C, 0 HF, SAR 0.054 W/kg) + Portless Universal Qi/Qi2.2 Wireless Charging (ENR-11 to ENR-21).</text>
+  </g>
+
+  <line class="dim" x1="40" y1="1296" x2="1460" y2="1296"/>
+  <text class="note" x="40" y="1310">Closed items: K1 = 2.00 mm 4-quadrant (+) body (68 g) + 4.00 mm B ring (20 g = 88 g total) · Q1 = Universal Qi2.2 wireless on body, USB-C ONLY on B stem · Revision L.5.0, 2026-10-12.</text>
+</svg>

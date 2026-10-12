@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Ortadan + bolunmus 4 parcali ciziksiz polikarbonat ekran-batarya govdesi: n=1.585 optik dudak, T-OLED, PDLC ve LLZO kati-hal pil">
+  <title>BUDLUM LEAF · 4-PARÇALI (+) ÇİZİKSİZ EKRAN-BATARYA KAROLARI (52 İÇ PARÇA)</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">4-PARÇALI (+) ÇİZİKSİZ EKRAN-BATARYA · n=1.585 OPTİK DUDAK VE 52 İÇ PARÇA</text>
+<text class="s" x="40" y="78">80.0 x 160.0 x 2.00 mm (68.0 g) ekran gövdesi ortadan artı (+) şeklinde 4 eşit tak-çıkar polikarbonat karoya (Q1-Q4; 40x80x2.00 mm) bölünür. İç +</text>
+<text class="s" x="40" y="97">kenarlarındaki 12 µm n=1.585 kendi kendini onaran optik dudak ve Corning kenar-sarımlı elektrotlar sayesinde 4 parça birleştiğinde hiçbir çizik veya</text>
+<text class="s" x="40" y="116">sınır görünmez; her karoda 3.0 Wh katı-hal pil bulunur.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="700" height="340" rx="6"/>
+<text class="t h2" x="60" y="180">A · 2.20 MM KARO İSTİFİ · PC, OCA, T-OLED, PDLC, KALKAN VE KATI-HAL PİL</text>
+<rect x="70" y="200.0" width="150.0" height="15.0" rx="2" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="212.0">ön ISO 10993 tıbbi polikarbonat + SiO2 kaplama · 200 µm</text>
+<rect x="70" y="228.0" width="117.5" height="15.0" rx="2" fill="#f7dcae" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="240.0">ön silikon elastomer OCA kayma katmanı · 50 µm</text>
+<rect x="70" y="256.0" width="140.0" height="15.0" rx="2" fill="#eef4ff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="268.0">ön titreşimsiz DC-dimming T-OLED + kenar sarım · 140 µm</text>
+<rect x="70" y="284.0" width="125.0" height="15.0" rx="2" fill="#dcecff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="296.0">ön AgNW/ITO + PDLC + grafen/Mu-metal kalkan · 130 µm</text>
+<rect x="70" y="312.0" width="180.0" height="15.0" rx="2" fill="#b8ebd8" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="324.0">MERKEZ YANMAZ LLZO KATI-HAL PİL (3 Wh) + Qİ2 BOBİN · 1160 µm</text>
+<rect x="70" y="340.0" width="125.0" height="15.0" rx="2" fill="#dcecff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="352.0">arka AgNW/ITO + PDLC + grafen/Mu-metal kalkan · 130 µm</text>
+<rect x="70" y="368.0" width="140.0" height="15.0" rx="2" fill="#eef4ff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="380.0">arka titreşimsiz DC-dimming T-OLED + GIP sürücü · 140 µm</text>
+<rect x="70" y="396.0" width="117.5" height="15.0" rx="2" fill="#f7dcae" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="408.0">arka silikon OCA kayma katmanı + esnek omurga · 50 µm</text>
+<rect x="70" y="424.0" width="150.0" height="15.0" rx="2" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="280" y="436.0">arka ISO 10993 tıbbi polikarbonat + R 0.55 kenar · 200 µm</text>
+<text class="lbls" x="70" y="462">12 µm n=1.585 optik dudak polikarbonat (n=1.586) ile kırılma indisi eşleşmelidir (&lt;%0.0001 yansıma).</text>
+<text class="lbls" x="70" y="480">Toplam kalınlık 2.00 mm, kütle 4 x 17.0 g = 68.0 g; B modülü arkasında Ø22.4 mm AMOLED vardır.</text>
+<rect class="glass" x="760" y="152" width="600" height="340" rx="6"/>
+<text class="t h2" x="780" y="180">B · 4-KARO (+) ÇİZİKSİZ EKRAN SAYILARI</text>
+<text class="lbls" x="780" y="208">tam ekran ölçüsü</text>
+<text class="lbls" x="935" y="208">80.0 x 160.0 x 2.00 mm (4 x 40x80 mm karo)</text>
+<text class="lbls" x="780" y="229">orta (+) optik derz</text>
+<text class="lbls" x="935" y="229">&lt;15 µm n=1.585 elastomer · sıfır çizik / sıfır iz</text>
+<text class="lbls" x="780" y="250">iç çerçeve (bezel)</text>
+<text class="lbls" x="935" y="250">0.00 mm (Corning kenar-sarımlı elektrotlar)</text>
+<text class="lbls" x="780" y="271">çözünürlük</text>
+<text class="lbls" x="935" y="271">3 128 x 1 528 px · 508 ppi · 120 Hz DC-dimming</text>
+<text class="lbls" x="780" y="292">göz ışık güvenliği</text>
+<text class="lbls" x="935" y="292">IEC 62471 Grup 0 · &lt;415 nm mavi ışık kesimli</text>
+<text class="lbls" x="780" y="313">dokunma ve kalem</text>
+<text class="lbls" x="935" y="313">240 Hz AgNW/ITO · + derzinde kesintisiz izleme</text>
+<text class="lbls" x="780" y="334">katı-hal batarya</text>
+<text class="lbls" x="935" y="334">4 x 3.0 Wh = 12.0 Wh (3 200 mAh) yanmaz LLZO</text>
+<text class="lbls" x="780" y="355">kablosuz şarj</text>
+<text class="lbls" x="935" y="355">Ø54 mm Qi2.2 MPP (15-25W) + 4x Ø22 mm Qi</text>
+<text class="lbls" x="780" y="376">gövdede Type-C</text>
+<text class="lbls" x="935" y="376">yoktur (cihazdaki TEK Type-C 90° B çubuğunda)</text>
+<text class="lbls" x="780" y="397">B modülü yerleşimi</text>
+<text class="lbls" x="935" y="397">yuvarlak halka ekran üstünde, 90° çubuk dik</text>
+<text class="lbls" x="780" y="456">B modülündeki 4-Karo Ana TCON + derz sınırındaki pikselleri</text>
+<text class="lbls" x="780" y="474">gerçek zamanlı LUT ile kalibre ederek parlaklık farkını sıfırlar.</text>
+<rect class="glass" x="40" y="508" width="700" height="292" rx="6"/>
+<text class="t h2" x="60" y="536">C · İÇ YAPI: (+) OPTİK DERZ, Ti ARTl GÖBEK VE Qİ2 HALKASI</text>
+<rect x="74.0" y="588.0" width="320.0" height="160.0" rx="6.4" fill="#dcecff" stroke="#18507e" stroke-width="2.0"/>
+<line x1="234.0" y1="588.0" x2="234.0" y2="748.0" stroke="#1b8a6b" stroke-width="2.0"/>
+<line x1="74.0" y1="668.0" x2="394.0" y2="668.0" stroke="#1b8a6b" stroke-width="2.0"/>
+<circle cx="234.0" cy="668.0" r="48.0" fill="none" stroke="#d89818" stroke-width="2.2" stroke-dasharray="6 3"/>
+<rect fill="#d8dbe0" stroke="#181816" stroke-width="1.3" x="226.0" y="660.0" width="16" height="16" rx="3"/>
+<text class="lbls" x="410" y="594">Ortadan + şeklinde 4 eşit tak-çıkar karo (Q1..Q4).</text>
+<text class="lbls" x="410" y="616">12 µm n=1.585 kendi kendini onaran optik dudak.</text>
+<text class="lbls" x="410" y="638">Merkez (0,0) Grade-5 Titanyum Artı (+) kilit göbeği.</text>
+<text class="lbls" x="410" y="660">8 konik Ti kırlangıç pim (&lt;2.5 µm Z-eşdüzlemliliği).</text>
+<text class="lbls" x="410" y="682">24 N52H mıknatıs + 64 altın mikro-yaprak kontak.</text>
+<text class="lbls" x="410" y="704">Merkezde Ø54 mm Qi2.2 + her karoda Ø22 mm Qi bobin.</text>
+<text class="lbls" x="410" y="742">Gövde: 2.00 mm · 68.0 g · 12.0 Wh katı-hal pil.</text>
+<rect class="glass" x="760" y="508" width="600" height="292" rx="6"/>
+<text class="t h2" x="780" y="536">D · POLİKARBONAT + KATI-HAL PİL ESNEMESİ · ÜÇ DURUM</text>
+<text class="lbls" x="790" y="566">1 · düz tam ekran · 160.0 x 80.0 x 2.00 mm · sıfır çizik (+)</text>
+<line x1="790" y1="582" x2="1320" y2="582" stroke="#18507e" stroke-width="6" stroke-linecap="round"/>
+<text class="lbls" x="790" y="622">2 · gözlük vizör kavisi · R 60 mm · göz sıcaklığı &lt;=36.2 °C</text>
+<path d="M 790 656 Q 1055 616 1320 656" fill="none" stroke="#18507e" stroke-width="6" stroke-linecap="round"/>
+<text class="lbls" x="790" y="696">3 · tam esneme sınırı · R 25.5 mm · OCA ile gerinim yalnız %0.38</text>
+<path d="M 830 756 Q 1055 676 1280 756" fill="none" stroke="#18507e" stroke-width="6" stroke-linecap="round"/>
+<text class="lbls" x="790" y="784">Esnek LLZO/PEO katı-hal pil ve OCA sayesinde 200 000 bükülmede kırılmaz.</text>
+<rect class="glass" x="40" y="816" width="700" height="160" rx="6"/>
+<text class="t h2" x="60" y="844">E · HER ÇEYREK KARONUN 13 İÇ PARÇASI (×4 = 52 PARÇA)</text>
+<text class="lbls" x="60" y="872">1-2 ön/arka 0.20 mm ISO 10993 tıbbi polikarbonat + SiO2</text>
+<text class="lbls" x="60" y="890">3-4 12 µm n=1.585 (+) optik dudak + 8 dişli esnek omurga</text>
+<text class="lbls" x="60" y="908">5-6 ön/arka 0.05 mm silikon OCA kayma katmanı (%0.38)</text>
+<text class="lbls" x="60" y="926">7-8 ön/arka 0.14 mm DC-dimming T-OLED + kenar sarım</text>
+<text class="lbls" x="60" y="944">9 0.09 mm PDLC + ortotropik grafen ve Mu-metal kalkan</text>
+<text class="lbls" x="394" y="872">10 35x75x1.08 mm yanmaz LLZO/PEO katı-hal pil (3.0 Wh)</text>
+<text class="lbls" x="394" y="890">11 çift-telli (bifilar) akım-iptalli kulaklar + NTC (&lt;=36.2 C)</text>
+<text class="lbls" x="394" y="908">12 90° Qi2.2 MPP sektör + Ø22 mm Qi bobin + U_QI PMIC</text>
+<text class="lbls" x="394" y="926">13 Ti Artı (+) göbek + 2 kırlangıç + 6 N52H + 16 altın yaprak</text>
+<text class="lbls" x="394" y="944">Toplam: 4 karo × 13 parça = 52 iç parça (68.0 g, 12.0 Wh)</text>
+<rect class="glass" x="760" y="816" width="600" height="160" rx="6"/>
+<text class="t h2" x="780" y="844">F · KAPILAR VE ÇİZİKSİZ (+) EKRAN DOĞRULAMASI</text>
+<text class="lbls" x="780" y="866">F-01: 4 x (40x80x2.00 mm) = 80x160x2.00 mm (68 g) + ekran</text>
+<text class="lbls" x="780" y="883">F-02: 12 µm n=1.585 optik dudak ile &lt;%0.0001 yansıma (0 çizik)</text>
+<text class="lbls" x="780" y="900">F-03: Corning kenar-sarımlı 0.00 mm iç çerçevesiz T-OLED</text>
+<text class="lbls" x="780" y="917">F-04: yanmaz LLZO katı-hal pil (12.0 Wh, 0 ppm HF, ISO 10993)</text>
+<text class="lbls" x="780" y="934">F-05: gözlük güvenliği (&lt;=36.2 C, ELF &lt;0.08 µT, SAR 0.054 W/kg)</text>
+<text class="lbls" x="780" y="951">F-06: portsuz gövdede Qi2.2 şarj, tek Type-C 90° B çubuğunda</text>
+<text class="lbls" x="780" y="968">F-07: AB 2023/1542 Md. 11 uyumlu &lt;3 sn aletsiz karo değişimi</text>
+</svg>

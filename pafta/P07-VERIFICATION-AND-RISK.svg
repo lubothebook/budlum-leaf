@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P07 verification risk and index">
+  <title>BUDLUM LEAF · P07 VERIFICATION, RISK AND INDEX</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P07 · VERIFICATION, RISK AND INDEX</text>
+  <text class="t lbl" x="40" y="74">Five steps from a simulation to a build, the risks that can stop it, and the index of the whole set. This sheet closes the drawing package.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · VERIFICATION LADDER ===== -->
+  <rect class="panel" x="40" y="100" width="760" height="310" rx="4"/>
+  <text class="t h2" x="58" y="124">A · THE FIVE STEPS · each one answers a different question</text>
+
+  <g>
+    <rect x="58" y="142" width="140" height="64" rx="3" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+    <text class="t lblb" x="70" y="164">STEP 1</text><text class="t lbls" x="70" y="180">simulation</text><text class="t lbls" x="70" y="194">strain, heat, radio</text>
+
+    <rect x="212" y="142" width="140" height="64" rx="3" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+    <text class="t lblb" x="224" y="164">STEP 2</text><text class="t lbls" x="224" y="180">coupon</text><text class="t lbls" x="224" y="194">layer by layer</text>
+
+    <rect x="366" y="142" width="140" height="64" rx="3" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+    <text class="t lblb" x="378" y="164">STEP 3</text><text class="t lbls" x="378" y="180">sub-assembly</text><text class="t lbls" x="378" y="194">leaf, core, module</text>
+
+    <rect x="520" y="142" width="140" height="64" rx="3" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+    <text class="t lblb" x="532" y="164">STEP 4</text><text class="t lbls" x="532" y="180">prototype</text><text class="t lbls" x="532" y="194">a working set</text>
+
+    <rect x="674" y="142" width="118" height="64" rx="3" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+    <text class="t lblb" x="686" y="164">STEP 5</text><text class="t lbls" x="686" y="180">pilot</text><text class="t lbls" x="686" y="194">real users</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="232">1 · A MODEL IS NOT A MEASUREMENT. Step 1 proposes, steps 2 and 3 decide. A gate never closes on a simulation.</text>
+    <text x="58" y="250">2 · the coupon proves the stack, the neutral axis, the hard coat and the adhesive in isolation, cheaply and fast.</text>
+    <text x="58" y="268">3 · the sub-assembly proves the parts that interact: the bend band, the slide, the contacts, the antennas, the heat path.</text>
+    <text x="58" y="286">4 · the prototype proves the system: two faces as one surface, the bend at the class radius, the core swap, the fail-safe ladder.</text>
+    <text x="58" y="304">5 · the pilot proves the product. The latency class, the energy profile and the input rates are measured on real users, on real networks.</text>
+    <text x="58" y="322">6 · every step captures raw data into a B.U.D. record with the instrument and its calibration date.</text>
+    <text x="58" y="344">A CLAIM MAY NOT SKIP A STEP. A tier-2 claim needs step 2, a tier-1 claim needs step 3, and any wording that reaches the market needs step 5.</text>
+    <text x="58" y="366">The calibration method is itself a deliverable, because a result that cannot be reproduced is not a result.</text>
+    <text x="58" y="388">No step consumes a part that another step already measured, except for a destructive test, which is stated in the record.</text>
+  </g>
+
+  <!-- ===== B · TEST ASSETS ===== -->
+  <rect class="panel" x="820" y="100" width="740" height="310" rx="4"/>
+  <text class="t h2" x="838" y="124">B · WHAT THE LABORATORY MUST HAVE</text>
+  <g class="t lbls">
+    <text x="838" y="148">a two-axis bend rig with a controlled radius and a controlled speed, and a thermal chamber around it</text>
+    <text x="838" y="170">a coupon and pull station for the stack: delamination, creep and peel, at temperature</text>
+    <text x="838" y="192">an instrumented core rig: 1 000 slide cycles with contact resistance and temperature logged</text>
+    <text x="838" y="214">a wired and contact charge bench: 40 W USB-C PD on the side Port Rail and 27 W on Desk Dock gold pins</text>
+    <text x="838" y="236">an antenna range: efficiency and pattern in a free hold and in a hand hold, flat and at the class radius</text>
+    <text x="838" y="258">a display metrology set: colour, uniformity, luminance after bending, plus a seam measurement</text>
+    <text x="838" y="280">a battery cycler and flex rig: 10 000 bends at R 25.5 mm plus the abuse set</text>
+    <text x="838" y="302">a link and latency set: two endpoints, an impairment emulator for delay, jitter, loss and bandwidth, and a real network capture</text>
+    <text x="838" y="324">a small secure-element board, for the signature and the finality verification budgets</text>
+    <text x="838" y="346">a metrology set: a micrometer on every layer, a microscope for the crease, a gauge for the seam, a scale for every configuration</text>
+    <text x="838" y="368">one calibrated reference instrument per measured quantity, and one owner per instrument</text>
+    <text x="838" y="390">the report format of BL1 to BL16, filled from raw data, with the same file naming rule</text>
+  </g>
+
+  <!-- ===== C · RISK ===== -->
+  <rect class="panel" x="40" y="430" width="1520" height="330" rx="4"/>
+  <text class="t h2" x="58" y="454">C · THE RISK REGISTER · the ten things that can stop this program, with the gate that answers each one</text>
+  <text class="t lblb" x="58" y="478">RISK</text><text class="t lblb" x="640" y="478">SEVERITY</text><text class="t lblb" x="760" y="478">LIKELIHOOD</text><text class="t lblb" x="900" y="478">THE ANSWER, AND THE GATE THAT OWNS IT</text>
+  <line class="rule" x1="58" y1="486" x2="1542" y2="486"/>
+  <g class="t lbls">
+    <text x="58" y="504">a flexible display with an arbitrary cut outline cannot be supplied</text><text x="640" y="504">high</text><text x="760" y="504">medium</text><text x="900" y="504">two suppliers, and sheet samples from O1 to O3 before the shape is frozen</text>
+    <text x="58" y="526">the cover and its hard coat fail before the class radius</text><text x="640" y="526">high</text><text x="760" y="526">medium high</text><text x="900" y="526">a hard-coat study, and a tiered claim: 0.5 mm for a tight bend, 1 and 2 mm for a gentle one</text>
+    <text x="58" y="548">the sliding core breaks the thermal path and charge power must fall</text><text x="640" y="548">high</text><text x="760" y="548">medium</text><text x="900" y="548">G-H6 derating curve, heat spreaders in the leaves, a charge profile that follows temperature</text>
+    <text x="58" y="570">the anchor layer and the module magnet cost antenna gain</text><text x="640" y="570">medium</text><text x="760" y="570">high</text><text x="900" y="570">G-H10, patterned windows through the core, and the module as a second antenna site</text>
+    <text x="58" y="592">the link in a real city does not reach the video class</text><text x="640" y="592">high</text><text x="760" y="592">medium</text><text x="900" y="592">state the class per market, site the edge node near the user, and never promise the city everywhere</text>
+    <text x="58" y="614">the cell cannot be bought, or the density is below the plan</text><text x="640" y="614">medium</text><text x="760" y="614">medium</text><text x="900" y="614">plan the core at 900 Wh/L, test 750 and 1 000, and let the module close the gap</text>
+    <text x="58" y="636">a removable core is classified differently in the European rule</text><text x="640" y="636">medium</text><text x="760" y="636">low medium</text><text x="900" y="636">Q9 goes to a legal adviser now, before the industrial design is frozen</text>
+    <text x="58" y="658">the device cannot boot with no core and no support cell</text><text x="640" y="658">high</text><text x="760" y="658">low medium</text><text x="900" y="658">O1 and O2 measure a supercapacitor and a printed back message, so the brick risk is closed by evidence</text>
+    <text x="58" y="680">the satellite promise is made before the service can carry it</text><text x="640" y="680">medium</text><text x="760" y="680">high</text><text x="900" y="680">a message-only wording, measured rates only, and a price stated beside every satellite claim</text>
+    <text x="58" y="702">the session does not survive a validator change</text><text x="640" y="702">medium</text><text x="760" y="702">medium</text><text x="900" y="702">RG-4, a session binding and a single-use resume token, proved in G-H20</text>
+  </g>
+  <line class="rule" x1="58" y1="714" x2="1542" y2="714"/>
+  <text class="t lbls" x="58" y="734">A RISK WITHOUT AN OWNER IS A WISH. Every row above has a gate, a report or a question number, and every one of those has one owner.</text>
+  <text class="t lbls" x="58" y="752">The three highest-severity rows are the three that decide the product: the display supply, the bend of the cover, and the charge heat.</text>
+
+  <!-- ===== D · INDEX ===== -->
+  <rect class="panel" x="40" y="780" width="760" height="200" rx="4"/>
+  <text class="t h2" x="58" y="804">D · THE PACKAGE · the 25 sheets of this set (E01..E03, P01..P22)</text>
+  <g class="t lbls">
+    <text x="58" y="824" class="lblb">BL-P01 general arrangement · 4-Quadrant (+) 80 x 160 x 2.20 mm body + 90°-Bent-Stem B module</text>
+    <text x="58" y="840" class="lblb">BL-P02 stack, materials and bend · 2.20 mm 11-layer ISO 10993 PC + LLZO solid-state cell + Qi2</text>
+    <text x="58" y="856" class="lblb">BL-P03 form and shape · softened prism family (Leaf 80, 160, 480), r 0.55 mm edges</text>
+    <text x="58" y="872" class="lblb">BL-P04 energy, thermal and safety · 4 x 3.0 Wh = 12.0 Wh LLZO solid-state + eyewear safety (&lt;=36.2 C)</text>
+    <text x="58" y="888" class="lblb">BL-P05 link and fail-safe · the budget, the physics of distance, the radio, the fail-safe ladder</text>
+    <text x="58" y="904" class="lblb">BL-P06 Budlum integration · the map, what exists, seventeen work orders, the claim set</text>
+    <text x="58" y="920" class="lblb">BL-P07 verification · the five steps, the laboratory, the risk register, this index</text>
+    <text x="58" y="934" class="lblb">BL-P08 energy architecture · 4-quadrant (+) solid-state battery tiles, EU 2023/1542, runtime</text>
+    <text x="58" y="948" class="lblb">BL-P09 screen cost, whole-area bend and seal · &lt;15 um n=1.585 (+) optical seam, R 25.5 mm bend, IP68</text>
+    <text x="58" y="962" class="lblb">BL-P10 charge and 90°-Bent-Stem B module · universal Qi2.2 on body, ONLY USB-C in 90° B stem</text>
+    <text x="58" y="976">Sheets E01..E03 and P11..P22 complete the 25-sheet engineering package at Revision L.5.0.</text>
+  </g>
+
+  <!-- ===== E · OPEN DECISIONS ===== -->
+  <rect class="panel" x="820" y="780" width="740" height="200" rx="4"/>
+  <text class="t h2" x="838" y="804">E · CLOSED ARCHITECTURAL DECISIONS · Revision L.5.0</text>
+  <g class="t lbls">
+    <text x="838" y="826">K1 · 80 x 160 x 2.20 mm (72 g) body split in (+) cross into 4 snap-together 40 x 80 mm tiles (Q1..Q4).</text>
+    <text x="838" y="846">B1 · &lt;15 um n=1.585 self-healing optical seam lip + Corning edge-wrap (zero scratch / zero line).</text>
+    <text x="838" y="866">M1 · 90°-Bent-Stem B module (22 g): ONLY the stem is bent at 90°; round ring sits flat ON screen.</text>
+    <text x="838" y="886">M2 · +/-90° reversible Ti hinge docks B module to Front/Back faces and all 4 edges (Top/Bottom/Left/Right).</text>
+    <text x="838" y="906">E1 · 4 x 3.0 Wh = 12.0 Wh non-flammable LLZO solid-state battery (&lt;=36.2 C, 0 HF, SAR 0.054 W/kg).</text>
+    <text x="838" y="926">Q1 · Portless body charges on any Qi/Qi2.2 pad (15-25 W); the ONLY USB Type-C (40 W) is in the 90° B stem.</text>
+    <text x="838" y="946">S1 · EU 2023/1542 Art. 11 &lt;3 s tool-free quadrant hot-swap; 84 total modeled internal parts (94.0 g).</text>
+    <text x="838" y="968">All 251 verification gates and 39 gap items are tracked in tools/canon.json.</text>
+  </g>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P07</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P07 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">VERIFICATION AND RISK</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

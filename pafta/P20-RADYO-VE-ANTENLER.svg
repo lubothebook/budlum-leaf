@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="90 derece bukumlu B cubugunda 3-bant LCP anten ve 1x4 60 GHz mmWave dizi, gozluk modunda 0.054 W/kg SAR ve govdede Qi2 sarj">
+  <title>BUDLUM LEAF · 90° B ÇUBUĞU ANTENLERİ (LCP + 60 GHz), GÖZLÜK SAR GÜVENLİĞİ VE Qİ2 BOBİNLERİ</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">ANTEN VE Qİ2 · 90° B ÇUBUĞUNDA LCP + 60 GHz DİZİ VE GÖVDEDE Qİ2.2 BOBİNLERİ</text>
+<text class="s" x="40" y="78">Revizyon L.5.0'da tüm RF vericileri B modülünün 90° dik açıyla bükülmüş çubuğu içindedir (3-bant LCP Wi-Fi 7 / BT 5.4 / UWB anten + 1x4 60 GHz mmWave</text>
+<text class="s" x="40" y="97">yama dizi). Böylece gözlük modunda anten gözden uzakta kalır ve SAR değeri 0.054 W/kg olur. Portsuz 4-karo ekran gövdesinde ise Ø54 mm Qi2.2 MPP ve 4x</text>
+<text class="s" x="40" y="116">Ø22 mm Qi kablosuz şarj bobinleri yer alır.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="820" height="330" rx="6"/>
+<text class="t h2" x="60" y="180">A · HARİTA · 90° B ÇUBUĞUNDA LCP + 60 GHz ANTEN VE GÖVDEDE Qİ2 BOBİNLERİ</text>
+<rect x="135.0" y="224.0" width="108.0" height="216.0" rx="4.3" fill="#dcecff" stroke="#18507e" stroke-width="1.8"/>
+<line x1="189.0" y1="224.0" x2="189.0" y2="440.0" stroke="#1b8a6b" stroke-width="1.5" stroke-dasharray="4 2"/>
+<line x1="135.0" y1="332.0" x2="243.0" y2="332.0" stroke="#1b8a6b" stroke-width="1.5" stroke-dasharray="4 2"/>
+<circle cx="189.0" cy="332.0" r="32.4" fill="none" stroke="#d89818" stroke-width="2.0" stroke-dasharray="6 3"/>
+<rect x="139.1" y="211.8" width="8.6" height="55.4" rx="3" fill="#7f927a" stroke="#5c6b58" stroke-width="1.4"/>
+<rect x="140.7" y="213.9" width="4.3" height="35.1" rx="2" fill="#daa84a" stroke="#8a5a12" stroke-width="1.0"/>
+<circle cx="171.4" cy="245.6" r="21.6" fill="#93a68c" stroke="#5c6b58" stroke-width="1.5"/>
+<circle cx="171.4" cy="245.6" r="16.2" fill="#46505a"/>
+<text class="lblb" x="275" y="212">1 · 90° Dik Bükümlü B Çubuğunda LCP + 1x4 60 GHz Anten</text>
+<text class="lbls" x="275" y="234">• Sadece çubuk kısmı 90° dik bükülerek ekran kenarında yukarıda kalır</text>
+<text class="lbls" x="275" y="254">• A1/A2/A3 3-bant LCP anten: Wi-Fi 7 (2.4/5/6 GHz), BT 5.4 ve UWB</text>
+<text class="lbls" x="275" y="274">• ANT1..ANT4: çubuk sırtında 1x4 faz-dizili 60 GHz altın yama antenler</text>
+<text class="lbls" x="275" y="294">• Gözlük modunda anten şakak dışında kalarak SAR&#39;ı 0.054 W/kg yapar</text>
+<text class="lbls" x="275" y="314">• Cihazdaki TEK USB Type-C (40W PD 3.1) prizi de bu 90° çubuktadır</text>
+<text class="lblb" x="275" y="352">2 · Yuvarlak B Halkasında U2 SiP ve Gövdede Evrensel Qi2.2 Şarj</text>
+<text class="lbls" x="275" y="374">• Ekran üstüne oturan 6L halka PCB&#39;de U2 UWB/60GHz mmWave SiP</text>
+<text class="lbls" x="275" y="394">• 4 karo merkezde birleşince Ø54.0 mm Qi2.2 MPP (15-25 W) bobin olur</text>
+<text class="lbls" x="275" y="414">• Her karoda ayrıca bağımsız Ø22.0 mm Qi bobin + nanokristal EM zırh</text>
+<text class="lbls" x="275" y="434">• B modülü 4 yöne ve ekranın önüne/arkasına takılarak hüzmeyi korur</text>
+<rect class="glass" x="880" y="152" width="480" height="330" rx="6"/>
+<text class="t h2" x="900" y="180">B · ANTENLER, Qİ2 BOBİNLERİ VE EM KALKAN</text>
+<text class="lbls" x="900" y="208">90° çubuk A1 (2.4 GHz)</text>
+<text class="lbls" x="1085" y="208">25.0 mm LCP monopol · +2.4 dBi</text>
+<text class="lbls" x="900" y="230">90° çubuk A2 (Wi-Fi 7)</text>
+<text class="lbls" x="1085" y="230">12.8 mm 5-7 GHz kol · +3.4 dBi</text>
+<text class="lbls" x="900" y="252">90° çubuk A3 (UWB)</text>
+<text class="lbls" x="1085" y="252">9.6 mm yarık · 6.5-8.5 GHz · +2.6 dBi</text>
+<text class="lbls" x="900" y="274">90° çubuk ANT1..4</text>
+<text class="lbls" x="1085" y="274">1x4 60 GHz altın yama · +8.2 dBi</text>
+<text class="lbls" x="900" y="296">B halka U2 SiP</text>
+<text class="lbls" x="1085" y="296">UWB + 60 GHz mmWave 0-gecikmeli SiP</text>
+<text class="lbls" x="900" y="318">Merkez Qi2.2 bobin</text>
+<text class="lbls" x="1085" y="318">4x 90° sektör = Ø54 mm MPP (15-25 W)</text>
+<text class="lbls" x="900" y="340">Çeyrek Qi bobinleri</text>
+<text class="lbls" x="1085" y="340">4x Ø22 mm tekil karo şarj bobini</text>
+<text class="lbls" x="900" y="362">Göz EM kalkanı</text>
+<text class="lbls" x="1085" y="362">Mu-metal + bifilar kulak (&lt;0.08 µT)</text>
+<text class="lbls" x="900" y="408">90° dik bükümlü B çubuğu 4 kenara ve öne/arkaya takılabildiği için</text>
+<text class="lbls" x="900" y="428">kullanıcı tutuşuna göre en açık RF görüş açısına yerleştirilebilir.</text>
+<text class="lbls" x="900" y="448">Baş/Göz SAR değeri 0.054 W/kg ile ICNIRP sınırının 37 kat altındadır.</text>
+<rect class="glass" x="40" y="496" width="820" height="192" rx="6"/>
+<text class="t h2" x="60" y="524">C · SIFIR-CPU 60 GHz / UWB GÖRÜNTÜ AKIŞI VE ±90° KOAKSİYEL KÖPRÜ</text>
+<text class="s" x="60" y="550">90° dik açıyla bükülmüş çubuk içindeki 3-bant LCP anten ve 1x4 60 GHz mmWave yama dizisi,</text>
+<text class="s" x="60" y="569">±90° tersinir titanyum menteşeden geçen 50 Ohm esnek LCP mikro-koaksiyel köprü ile yuvarlak</text>
+<text class="s" x="60" y="588">halkadaki U2 alıcı-verici SiP çipine bağlanır.</text>
+<text class="s" x="60" y="616">U2 SiP çipi aldığı sıkıştırılmamış kareleri doğrudan yanındaki U1 4-Karo Ana TCON çipine</text>
+<text class="s" x="60" y="635">iletir; U1 ise 12 altın yüzey pedi ve + barası üzerinden 4 polikarbonat karoyu sıfır çizik</text>
+<text class="s" x="60" y="654">ve sıfır gecikmeyle sürer.</text>
+<rect class="glass" x="880" y="496" width="480" height="192" rx="6"/>
+<text class="t h2" x="900" y="524">D · GÖZLÜK MODUNDA EM VE ANTEN GÜVENLİĞİ</text>
+<text class="s" x="900" y="552">Cihaz gözlük/vizör olarak göze takıldığında,</text>
+<text class="s" x="900" y="571">karoların içindeki çift-telli (bifilar) pil</text>
+<text class="s" x="900" y="590">kulakları ve Mu-metal folyo manyetik alanı &lt;0.08 µT</text>
+<text class="s" x="900" y="609">düzeyine indirir. RF antenler ise ekran içinde</text>
+<text class="s" x="900" y="628">değil, kenardaki 90° B çubuğunda göz küresinden</text>
+<text class="s" x="900" y="647">42-68 mm uzakta durur; böylece göz dokusunda ısınma</text>
+<text class="s" x="900" y="666">veya yüksek SAR oluşmaz.</text>
+<rect class="glass" x="40" y="704" width="820" height="150" rx="6"/>
+<text class="t h2" x="60" y="732">E · 90° BÜKÜMLÜ B MODÜLÜ VE 4-KARO (+) GÖVDE PAYLAŞIMI</text>
+<text class="lbls" x="60" y="760">90° B çubuğu (anten)</text>
+<text class="lbls" x="235" y="760">Wi-Fi 7 (2.4/5/6 GHz), BT 5.4, UWB + 1x4 60 GHz mmWave faz-dizili yama anten</text>
+<text class="lbls" x="60" y="775">90° B çubuğu (Type-C)</text>
+<text class="lbls" x="235" y="775">Cihazdaki TEK USB Type-C (40W PD 3.1 + DP 2.1, IP68) + U_PD kontrolcü</text>
+<text class="lbls" x="60" y="790">Yuvarlak B halkası</text>
+<text class="lbls" x="235" y="790">6L Sıfır-CPU PCB: U1 4-Karo Ana TCON + U2 UWB/mmWave SiP + U3 Ses DSP</text>
+<text class="lbls" x="60" y="805">B halka içi kamera/ses</text>
+<text class="lbls" x="235" y="805">50 MP OIS kamera + Ø22.4 mm arka AMOLED + 2x MEMS mikrofon + hoparlör</text>
+<text class="lbls" x="60" y="820">4-Karo (+) merkez Qi2</text>
+<text class="lbls" x="235" y="820">4x 90° sektör birleşimiyle Ø54.0 mm Qi2.2 MPP (15-25 W) kablosuz şarj</text>
+<text class="lbls" x="60" y="835">4-Karo (+) tekil Qi</text>
+<text class="lbls" x="235" y="835">Her karoda bağımsız Ø22.0 mm Qi bobin + U_QI PMIC (her şarj pediyle uyumlu)</text>
+<rect class="glass" x="880" y="704" width="480" height="150" rx="6"/>
+<text class="t h2" x="900" y="732">F · KAPILAR RF-9 … RF-20 VE MON-11 (REV L.5.0)</text>
+<text class="lbls" x="900" y="760">MON-11: Sadece 90° B çubuğunda LCP + 60 GHz anten dizisi</text>
+<text class="lbls" x="900" y="776">RF-9: A1/A2/A3 + ANT1..ANT4 VSWR (1.5:1 altı) doğrulaması</text>
+<text class="lbls" x="900" y="792">RF-10: ±90° tersinir menteşede 50 Ohm LCP koaksiyel köprü</text>
+<text class="lbls" x="900" y="808">RF-11: 4 yöne ve öne/arkaya takımda 360° hüzme kilidi</text>
+<text class="lbls" x="900" y="824">RF-12: Gözlük modunda Baş/Göz SAR = 0.054 W/kg (&lt;2.0 W/kg)</text>
+<text class="lbls" x="900" y="840">RF-16: Portsuz gövdede Qi / Qi2.2 (15-25 W) evrensel şarj</text>
+<rect class="glass" x="40" y="868" width="1320" height="108" rx="6"/>
+<text class="t h2" x="60" y="896">G · 21 RADYO, ANTEN, Qİ2 KABLOSUZ ŞARJ VE YÜKSEK HIZLI İLETİM PARÇASI</text>
+<text class="lbls" x="60" y="924">1 90° B çubuk gövdesi (r 0.55) · 2 A1 2.4 GHz LCP kol · 3 A2 5-7 GHz Wi-Fi 7 kol · 4 A3 UWB yarığı · 5 pi-eşleme ağı</text>
+<text class="lbls" x="60" y="942">6 ±90° menteşe LCP koaksiyel köprü · 7-10 ANT1..ANT4 4x 60 GHz altın yama anten · 11 B halka U2 UWB/60GHz mmWave SiP</text>
+<text class="lbls" x="60" y="960">12 U1 4-Karo Ana TCON · 13-16 4x 90° Qi2.2 MPP bobin sektörü (Ø54 mm) · 17-20 4x Ø22 mm Qi bobin · 21 Mu-metal/grafen EM kalkan</text>
+</svg>

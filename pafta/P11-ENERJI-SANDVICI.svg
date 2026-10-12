@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="4 parcali (+) polikarbonat ekran-batarya karosunun 2.00 mm 11-katmanli biyouyumlu kati-hal pil ve Qi2 kablosuz sarj istifi">
+  <title>BUDLUM LEAF · 2.20 MM 4-KARO (+) POLİKARBONAT EKRAN-BATARYA VE Qİ2 İSTİFİ</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">2.20 MM 4-KARO (+) EKRAN-BATARYA KESİTİ · KATI-HAL PİL, GÖZ KALKANI VE Qİ2</text>
+<text class="s" x="40" y="78">Revizyon L.5.0 ile kaba alt batarya çıkıntısı kaldırılmış, pil 4 çeyrek polikarbonat ekran karosunun (40x80x2.00 mm, 4x 17 g = 68 g) içine</text>
+<text class="s" x="40" y="97">gömülmüştür. Her karo 11 simetrik katmandan oluşur: biyouyumlu ISO 10993 PC, OCA, T-OLED, PDLC, grafen/Mu-metal kalkan, yanmaz LLZO katı-hal pil ve</text>
+<text class="s" x="40" y="116">Qi2 bobin.</text>
+<line class="rule" x1="40" y1="116" x2="1360" y2="116"/>
+<rect class="glass" x="40" y="132" width="760" height="504" rx="6"/>
+<text class="t h2" x="70" y="160">A · 2.20 MM (18 G / KARO) 11-KATMANLI BİYOUYUMLU EKRAN-BATARYA İSTİFİ</text>
+<rect x="90" y="180.0" width="490" height="17.0" rx="3" fill="#e8eef7" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="192.5">ön ISO 10993-5/-10 BPA'sız tıbbi polikarbonat + SiO2 kaplama · 200 µm</text>
+<rect x="90" y="201.5" width="490" height="17.0" rx="3" fill="#f7dcae" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="214.0">ön silikon elastomer OCA kayma katmanı (%0.38 gerinim) · 50 µm</text>
+<rect x="90" y="223.0" width="490" height="17.0" rx="3" fill="#cfe4ff" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="235.5">ön titreşimsiz DC-dimming T-OLED (&lt;415 nm mavi ışık kesimli) · 140 µm</text>
+<rect x="90" y="244.5" width="490" height="17.0" rx="3" fill="#dcecff" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="257.0">ön AgNW/ITO + Corning kenar-sarımlı 0 mm çerçevesiz elektrot · 40 µm</text>
+<rect x="90" y="266.0" width="490" height="17.0" rx="3" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="278.5">ön PDLC gizlilik + ortotropik grafen/Mu-metal göz kalkanı · 90 µm</text>
+<rect x="90" y="287.5" width="490" height="84.0" rx="3" fill="#b8ebd8" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="333.5">MERKEZ YANMAZ LLZO/PEO KATI-HAL PİL (3.0 Wh) + Qİ2 BOBİN · 1160 µm</text>
+<rect x="90" y="376.0" width="490" height="17.0" rx="3" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="388.5">arka PDLC gizlilik + ortotropik grafen/Mu-metal göz kalkanı · 90 µm</text>
+<rect x="90" y="397.5" width="490" height="17.0" rx="3" fill="#dcecff" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="410.0">arka AgNW/ITO + 240 Hz kapasitif dokunma ve kalem ağı · 40 µm</text>
+<rect x="90" y="419.0" width="490" height="17.0" rx="3" fill="#cfe4ff" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="431.5">arka titreşimsiz DC-dimming T-OLED + GIP satır sürücü · 140 µm</text>
+<rect x="90" y="440.5" width="490" height="17.0" rx="3" fill="#f7dcae" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="453.0">arka silikon elastomer OCA kayma katmanı · 50 µm</text>
+<rect x="90" y="462.0" width="490" height="17.0" rx="3" fill="#e8eef7" stroke="#5b6169" stroke-width="1.1"/>
+<text class="lbls" x="104" y="474.5">arka ISO 10993-5/-10 BPA'sız tıbbi polikarbonat yüzey · 200 µm</text>
+<text class="lbls" x="90" y="596">Toplam: 2.00 mm kalınlık, 4 x 17.0 g = 68.0 g gövde; 4 x 3.0 Wh = 12.0 Wh (3 200 mAh) yanmaz katı-hal pil.</text>
+<text class="lbls" x="90" y="616">Gözlük modunda göz tarafı sıcaklığı &lt;=36.2 C, ELF manyetik alan &lt;0.08 µT ve SAR = 0.054 W/kg ile tam güvenlidir.</text>
+<rect class="glass" x="820" y="132" width="540" height="300" rx="6"/>
+<text class="t h2" x="840" y="160">B · 90° BÜKÜMLÜ B MODÜLÜ VE (+) ARTl KENETLENME</text>
+<rect x="845" y="184.0" width="145" height="16.0" rx="2" fill="#d8dbe0" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="198.0">90° dik bükümlü çubuk: sadece anten + TEK Type-C yukarıda</text>
+<rect x="845" y="205.0" width="145" height="16.0" rx="2" fill="#f7dcae" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="219.0">±90° tersinir titanyum menteşe (öne/arkaya ve 4 yöne takım)</text>
+<rect x="845" y="226.0" width="145" height="16.0" rx="2" fill="#cfe4ff" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="240.0">yuvarlak halka ekran üstünde: 6L Sıfır-CPU PCB + 4-Karo TCON</text>
+<rect x="845" y="247.0" width="145" height="16.0" rx="2" fill="#d8f0dc" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="261.0">U2 UWB/60GHz mmWave SiP + çubukta 1x4 faz-dizili anten</text>
+<rect x="845" y="268.0" width="145" height="12.0" rx="2" fill="#dcecff" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="278.0">önde 50 MP OIS kamera + katlanmış prizma + 5P asferik lens</text>
+<rect x="845" y="285.0" width="145" height="12.0" rx="2" fill="#ffe9a8" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="295.0">ortada 0.15 mm Cu-Grafit kalkan + arkada Ø22.4 mm AMOLED</text>
+<rect x="845" y="302.0" width="145" height="12.0" rx="2" fill="#d8dbe0" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="312.0">merkez (0,0) Titanyum Artı (+) göbek + 64 altın mikro-yaprak</text>
+<rect x="845" y="319.0" width="145" height="12.0" rx="2" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.0"/>
+<text class="lbls" x="1000" y="329.0">12 µm n=1.585 kendi kendini onaran çiziksiz optik dudak (IP68)</text>
+<text class="s" x="840" y="382">Ekran gövdesinin altında Type-C veya buton yoktur; gövde</text>
+<text class="s" x="840" y="401">her Qi/Qi2 pedde kablosuz şarj olur, Type-C sadece 90° B</text>
+<text class="s" x="840" y="420">çubuğundadır.</text>
+<rect class="glass" x="820" y="446" width="540" height="190" rx="6"/>
+<text class="t h2" x="840" y="474">C · &lt;15 µm (n=1.585) ÇİZİKSİZ (+) BİRLEŞİM VE HOT-SWAP</text>
+<rect class="body4" x="850" y="496" width="150" height="32" rx="5"/>
+<rect class="gsk" x="1000" y="494" width="12" height="36" rx="2"/>
+<rect class="body4" x="1012" y="496" width="150" height="32" rx="5"/>
+<text class="lbls" x="868" y="516">Q1 KARO (3 Wh)</text>
+<text class="lbls" x="1030" y="516">Q2 KARO (3 Wh)</text>
+<text class="lbls" x="850" y="548">12 µm n=1.585 OPTİK DUDAK + Ti ARTl GÖBEK + 64 ALTIN YAPRAK</text>
+<text class="s" x="840" y="572">4 çeyrek karo birleştiğinde n=1.585 optik elastomer</text>
+<text class="s" x="840" y="591">dudak Fresnel yansımasını &lt;%0.0001 düzeyine indirir;</text>
+<text class="s" x="840" y="610">ekranda hiçbir çizik görünmez. 3 karo çalışırken 1 karo</text>
+<text class="s" x="840" y="629">3 saniyede kesintisiz değiştirilir.</text>
+<rect class="glass" x="40" y="652" width="1320" height="308" rx="6"/>
+<text class="t h2" x="60" y="682">D · 4-KARO (+) EKRAN-BATARYA VE 90° BÜKÜMLÜ B MODÜLÜ İÇ PARÇA TABLOSU</text>
+<text class="lblb" x="60" y="710">ISO 10993 tıbbi polikarbonat</text>
+<text class="lbls" x="265" y="710">2 x 0.20 mm / karo</text>
+<text class="s" x="405" y="710">BPA/ftalat içermeyen biyouyumlu optik polikarbonat + 3H SiO2 kaplama</text>
+<text class="lblb" x="60" y="734">çiziksiz (+) optik dudak</text>
+<text class="lbls" x="265" y="734">12 µm (n = 1.585)</text>
+<text class="s" x="405" y="734">fenil-florosilikon kendi kendini onaran dudak (&lt;%0.0001 yansıma, sıfır çizik)</text>
+<text class="lblb" x="60" y="758">yanmaz LLZO/PEO katı-hal pil</text>
+<text class="lbls" x="265" y="758">4 x 3.0 Wh = 12 Wh</text>
+<text class="s" x="405" y="758">inorganik seramik-polimer elektrolit · %0 sıvı, %0 LiPF6, 0.0 ppm HF gazı</text>
+<text class="lblb" x="60" y="782">gözlük ve sağlık kalkanı</text>
+<text class="lbls" x="265" y="782">&lt;=36.2 C / 0.054 SAR</text>
+<text class="s" x="405" y="782">ortotropik grafen + Mu-metal folyo + çift-telli (bifilar) akım iptali (&lt;0.08 µT)</text>
+<text class="lblb" x="60" y="806">evrensel Qi / Qi2.2 bobinleri</text>
+<text class="lbls" x="265" y="806">Ø54 mm + 4x Ø22 mm</text>
+<text class="s" x="405" y="806">merkezde 4-sektörlü 15-25W Qi2.2 MPP bobini + her karoda bağımsız Qi bobin</text>
+<text class="lblb" x="60" y="830">merkez Titanyum Artı (+) göbek</text>
+<text class="lbls" x="265" y="830">64 altın yaprak</text>
+<text class="s" x="405" y="830">Grade-5 Ti 4-yollu kilit + 8 mikro-kırlangıç pim (&lt;2.5 µm adım) + 24 N52H</text>
+<text class="lblb" x="60" y="854">90° dik bükümlü B çubuğu</text>
+<text class="lbls" x="265" y="854">6.4 x 44.0 x 4.5 mm</text>
+<text class="s" x="405" y="854">sadece anten + cihazdaki TEK USB-C (40W PD 3.1, IP68) çubuğu yukarıda dik</text>
+<text class="lblb" x="60" y="878">±90° tersinir boyun menteşesi</text>
+<text class="lbls" x="265" y="878">Grade-5 Titanyum</text>
+<text class="s" x="405" y="878">B modülünün ekranın 4 yönüne ve ÖN veya ARKA yüzüne takılmasını sağlar</text>
+<text class="lblb" x="60" y="902">yuvarlak B halkası (ekran üstü)</text>
+<text class="lbls" x="265" y="902">32 x 32 x 4.00 mm</text>
+<text class="s" x="405" y="902">6L Sıfır-CPU PCB + 4-Karo TCON + UWB/60GHz SiP + 50MP OIS + Ø22.4 AMOLED</text>
+<text class="s" x="60" y="936">4 çeyrek ekran-batarya karosu (52 iç parça) ve 90° bükümlü B modülü (32 iç parça) toplam 84 iç parçayla 3B modellenmiştir.</text>
+</svg>

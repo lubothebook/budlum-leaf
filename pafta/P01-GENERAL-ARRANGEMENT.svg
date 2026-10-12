@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P01 general arrangement">
+  <title>BUDLUM LEAF · P01 GENERAL ARRANGEMENT</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <!-- TITLE BAND -->
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P01 · GENERAL ARRANGEMENT (4-QUADRANT + SCREEN-BATTERY &amp; 90° B MODULE)</text>
+  <text class="t lbl" x="40" y="74">80.0 x 160.0 x 2.20 mm (72 g = 4 x 18 g) 4-Quadrant (+) Snap-Together Polycarbonate Screen-Battery (12 Wh LLZO Solid-State, Qi2.2) + 90°-Bent-Stem B Module (22 g, ONLY USB-C).</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ============ 1 · THE THREE VIEWS ============ -->
+  <rect class="panel" x="40" y="100" width="740" height="300" rx="4"/>
+  <text class="t h2" x="58" y="124">1 · ORTHOGRAPHIC VIEWS · 4 x (40 x 80 x 2.20 mm) (+) Screen-Battery + 90°-Bent-Stem B</text>
+
+  <!-- front -->
+  <rect x="90" y="176" width="120" height="170" rx="5" fill="#eef5fd" stroke="#18507e" stroke-width="1.4"/>
+  <path d="M 90.0 173.0 L 90.0 131.0 A 3.0 3.0 0 0 1 96.0 131.0 L 96.0 152.0 A 18.0 18.0 0 0 0 109.5 169.4 A 24.0 24.0 0 1 1 126.0 176.0 L 93.0 176.0 A 3.0 3.0 0 0 1 90.0 173.0 Z" fill="#93a68c" stroke="#181816" stroke-width="1.2"/>
+  <circle cx="126" cy="152" r="18" fill="#18507e" stroke="#181816" stroke-width="1.0"/>
+  <circle cx="126" cy="152" r="10" fill="#2c6696"/>
+  <text class="t h3" x="90" y="362">FRONT · 76.4 x 156.4 mm</text>
+  <text class="t lbls" x="90" y="378">11 947 mm² open + top-left B</text>
+
+  <!-- side -->
+  <rect x="320" y="146" width="24" height="200" fill="#cfe3f7" stroke="#18507e" stroke-width="1"/>
+  <rect x="344" y="146" width="122" height="200" fill="#f7dcae" stroke="#8a5a12" stroke-width="1"/>
+  <rect x="466" y="146" width="24" height="200" fill="#cfe3f7" stroke="#18507e" stroke-width="1"/>
+  <g class="dim">
+    <line x1="500" y1="146" x2="500" y2="346"/><line x1="492" y1="146" x2="508" y2="146"/><line x1="492" y1="346" x2="508" y2="346"/>
+    <line x1="530" y1="146" x2="530" y2="346"/><line x1="522" y1="146" x2="538" y2="146"/><line x1="522" y1="346" x2="538" y2="346"/>
+  </g>
+  <text class="dimt" x="506" y="250">4.00</text>
+  <text class="dimt" x="536" y="250">2.20</text>
+  <text class="t lbls" x="500" y="140">total</text>
+  <text class="t lbls" x="532" y="140">battery</text>
+  <text class="t h3" x="320" y="362">SECTION · 4.00 mm stack</text>
+  <text class="t lbls" x="320" y="378">0.43 face A · 2.20 battery · 0.43 face B</text>
+
+  <!-- back with upright B module on top edge -->
+  <rect x="600" y="176" width="120" height="170" rx="5" fill="#eef5fd" stroke="#18507e" stroke-width="1.4"/>
+  <path d="M 720.0 173.0 L 720.0 131.0 A 3.0 3.0 0 0 0 714.0 131.0 L 714.0 152.0 A 18.0 18.0 0 0 1 700.5 169.4 A 24.0 24.0 0 1 0 684.0 176.0 L 717.0 176.0 A 3.0 3.0 0 0 0 720.0 173.0 Z" fill="#93a68c" stroke="#181816" stroke-width="1.2"/>
+  <circle cx="684" cy="152" r="18" fill="#18222c" stroke="#18507e" stroke-width="1"/>
+  <circle cx="684" cy="152" r="13" fill="none" stroke="#64c896" stroke-width="1.2"/>
+  <rect x="720" y="216" width="10" height="72" rx="2" fill="#f7dcae" stroke="#8a5a12" stroke-width="1"/>
+  <text class="t h3" x="600" y="362">BACK · round AMOLED</text>
+  <text class="t lbls" x="600" y="378">nothing on faces · side rail</text>
+
+  <!-- ============ 2 · THE CORE ============ -->
+  <rect class="panel" x="800" y="100" width="760" height="300" rx="4"/>
+  <text class="t h2" x="818" y="124">2 · THE 4-QUADRANT (+) SOLID-STATE BATTERY AND THE 90°-BENT-STEM B MODULE</text>
+  <path d="M 820 158 L 820 372 L 866 372 L 866 356 L 836 356 L 836 174 L 866 174 L 866 158 Z" fill="#ddded9" stroke="#181816" stroke-width="1"/>
+  <text class="t lbls" x="812" y="390">quad tiles: r 0.55 mm edges</text>
+  <text class="t h3" x="1310" y="188">90°-BENT-STEM B MODULE</text>
+  <text class="t lbls" x="1310" y="208">only the antenna stem (cubuk, 6.4 x</text>
+  <text class="t lbls" x="1310" y="222">44 mm) is bent at 90 degrees via a</text>
+  <text class="t lbls" x="1310" y="236">+/-90 deg Ti hinge to stay above edge.</text>
+  <text class="t lbls" x="1310" y="250">round ring (32 x 32 x 4.00 mm) lies</text>
+  <text class="t lbls" x="1310" y="264">flat ON TOP OF the screen surface.</text>
+  <text class="t lbls" x="1310" y="284">Ø24 mm ring bore holds 50MP OIS cam,</text>
+  <text class="t lbls" x="1310" y="298">2 mics, speaker, and flash in front;</text>
+  <text class="t lbls" x="1310" y="312">Ø22.4 mm round AMOLED on the back.</text>
+  <text class="t lbls" x="1310" y="326">reversibly docks Front/Back &amp; 4 edges.</text>
+  <text class="t lbls" x="1310" y="346">90° stem houses the ONLY USB Type-C</text>
+  <text class="t lbls" x="1310" y="360">(40 W PD 3.1 + DP 2.1, IP68) and</text>
+  <text class="t lbls" x="1310" y="374">LCP Wi-Fi 7/BT/UWB + 60GHz array.</text>
+  <rect x="876" y="174" width="330" height="184" fill="#f7dcae" stroke="#8a5a12" stroke-width="1"/>
+  <text class="t lblb" x="890" y="198">4-QUADRANT (+) BATTERY · 4 x 3 Wh = 12 Wh</text>
+  <text class="t lbls" x="890" y="218">4 snap-together 40 x 80 x 2.20 mm PC tiles (Q1..Q4)</text>
+  <text class="t lbls" x="890" y="238">&lt;15 um n=1.585 optical seam lip (zero scratch/line)</text>
+  <text class="t lbls" x="890" y="258">non-flammable LLZO solid-state cell (0% liquid, 0 HF)</text>
+  <text class="t lbls" x="890" y="278">eyewear-safe: &lt;=36.2 C, &lt;0.08 uT, SAR 0.054, ISO 10993</text>
+  <text class="t lbls" x="890" y="298">tool-free &lt;3 s quadrant hot-swap (EU 2023/1542 Art. 11)</text>
+  <text class="t lbls" x="890" y="322">portless body: Ø54 mm Qi2.2 MPP (15-25W) + 4x Ø22 mm</text>
+  <text class="t lbls" x="890" y="338">Qi coils charge on any wireless pad; zero USB-C on body</text>
+  <path d="M 1210 266 L 1274 266" stroke="#8a2b1f" stroke-width="2"/>
+  <path d="M 1274 260 L 1286 266 L 1274 272 Z" fill="#8a2b1f"/>
+  <text class="dimt" x="1222" y="250">slide out</text>
+  <line class="rule" x1="818" y1="398" x2="1542" y2="398"/>
+
+  <!-- ============ 3 · FORMS ============ -->
+  <rect class="panel" x="40" y="420" width="740" height="270" rx="4"/>
+  <text class="t h2" x="58" y="444">3 · ONE SYSTEM, FIVE FORMS · THE USER CHANGES THE FORM, THE SYSTEM DOES NOT</text>
+
+  <rect x="70" y="466" width="92" height="140" rx="10" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="84" y="626">phone</text>
+  <text class="t lbls" x="84" y="640">one face live</text>
+
+  <rect x="180" y="466" width="140" height="140" rx="6" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <line x1="180" y1="536" x2="320" y2="536" stroke="#8a2b1f" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text class="t lbls" x="210" y="626">tablet</text>
+  <text class="t lbls" x="192" y="640">both faces, one session</text>
+
+  <rect x="338" y="466" width="130" height="140" rx="6" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <rect x="380" y="612" width="46" height="16" fill="#ddded9" stroke="#181816" stroke-width="1"/>
+  <text class="t lbls" x="360" y="646">desk · stand</text>
+
+  <circle cx="540" cy="536" r="46" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <circle cx="516" cy="536" r="16" fill="none" stroke="#18507e" stroke-width="1"/>
+  <circle cx="564" cy="536" r="16" fill="none" stroke="#18507e" stroke-width="1"/>
+  <text class="t lbls" x="492" y="600">glasses · waveguide</text>
+  <text class="t lbls" x="492" y="614">prescription lens</text>
+
+  <rect x="620" y="500" width="140" height="72" rx="8" fill="#efe9f8" stroke="#5c3f8a" stroke-width="1.2"/>
+  <text class="t lbls" x="640" y="530">AR and VR field</text>
+  <text class="t lbls" x="628" y="548">two faces, top B module</text>
+  <text class="t lbls" x="628" y="562">one spacer sets the IPD</text>
+  <text class="t lbls" x="628" y="598">the cheapest stereo path</text>
+  <text class="t lbls" x="628" y="612">this architecture offers</text>
+
+  <line class="rule" x1="58" y1="656" x2="762" y2="656"/>
+  <text class="t lbls" x="58" y="674">FORM CHANGE RULE: the identity, the protocol, the security model, the permission set and the data location never change with the form.</text>
+
+  <!-- ============ 4 · MASS AND THICKNESS ============ -->
+  <rect class="panel" x="800" y="420" width="760" height="270" rx="4"/>
+  <text class="t h2" x="818" y="444">4 · MASS AND THICKNESS BUDGET · Leaf 160 (80.0 x 160.0 x 2.20 mm 4-Quadrant Body)</text>
+
+  <text class="t h3" x="818" y="472">THICKNESS · symmetric 2.20 mm 11-layer quadrant stack</text>
+  <line class="rule" x1="818" y1="480" x2="1542" y2="480"/>
+  <text class="t lbls" x="818" y="498">front/back ISO 10993 PC + T-OLED</text><text class="t lbls" x="1050" y="498">2 x 0.43 mm</text><text class="t lbls" x="1180" y="498">0.20 mm medical PC, 0.05 mm OCA, 0.14 mm T-OLED, 0.04 mm AgNW</text>
+  <text class="t lbls" x="818" y="516">PDLC + graphene/Mu-metal shield</text><text class="t lbls" x="1050" y="516">2 x 0.09 mm</text><text class="t lbls" x="1180" y="516">switchable privacy + ocular thermal (&lt;=36.2 C) &amp; ELF (&lt;0.08 uT) shield</text>
+  <text class="t lbls" x="818" y="534">LLZO solid-state cell + Qi2 coil</text><text class="t lbls" x="1050" y="534">1.16 mm</text><text class="t lbls" x="1180" y="534">4 x 3.0 Wh = 12.0 Wh non-flammable LLZO/PEO + Qi2.2/Qi coils</text>
+  <text class="t lblb" x="818" y="552">TOTAL</text><text class="t lblb" x="1050" y="552">2.20 mm</text><text class="t lbls" x="1180" y="552">&lt;15 um n=1.585 (+) optical seam; 90° B ring is 4.00 mm on screen</text>
+
+  <line class="rule" x1="818" y1="566" x2="1542" y2="566"/>
+  <text class="t h3" x="818" y="586">MASS · measured per configuration (HARDWARE/03 · Rev L.5.0)</text>
+  <line class="rule" x1="818" y1="594" x2="1542" y2="594"/>
+  <text class="t lbls" x="818" y="612">4 x polycarbonate + T-OLED + PDLC shells</text><text class="t lbls" x="1050" y="612">27.2 g</text>
+  <text class="t lbls" x="818" y="628">4 x 3.0 Wh LLZO solid-state cells + Qi2 coils</text><text class="t lbls" x="1050" y="628">38.4 g</text>
+  <text class="t lbls" x="818" y="644">(+) Titanium hub, 24 N52H, 64 gold leaves</text><text class="t lbls" x="1050" y="644">6.4 g</text>
+  <text class="t lblb" x="818" y="662">4-Quadrant (+) Body (4 x 18 g)</text><text class="t lblb" x="1050" y="662">72.0 g</text>
+  <text class="t lbls" x="818" y="678">90°-Bent-Stem B module (+22.0 g) · Total</text><text class="t lbls" x="1050" y="678">94.0 g (84 parts)</text>
+
+  <!-- ============ 5 · THE HARDWARE MINIMUM ============ -->
+  <rect class="panel" x="40" y="710" width="1520" height="290" rx="4"/>
+  <text class="t h2" x="58" y="734">5 · THE HARDWARE MINIMUM AND THE DISTANCE · four groups in the hand, everything else at a validator</text>
+
+  <rect x="58" y="750" width="330" height="150" rx="3" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t h3" x="70" y="772">IN THE HAND</text>
+  <text class="t lbls" x="70" y="792">display leaves, drivers, timing controller, touch</text>
+  <text class="t lbls" x="70" y="810">continuous battery, protection, spreader, IP68 seal</text>
+  <text class="t lbls" x="70" y="828">camera module: camera, battery, sensors, privacy</text>
+  <text class="t lbls" x="70" y="846">radio: printed edge antennas, front ends, modem</text>
+  <text class="t lbls" x="70" y="864">hardware decoder, secure element, power control</text>
+  <text class="t lbls" x="70" y="884">safe screen and wallet approval: local, no link needed</text>
+
+  <rect x="410" y="750" width="330" height="150" rx="3" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+  <text class="t h3" x="422" y="772">AT A DISTANCE · a validator</text>
+  <text class="t lbls" x="422" y="792">processor, graphics processor, main memory, storage</text>
+  <text class="t lbls" x="422" y="810">compositor, encoder, AI engine, model runs</text>
+  <text class="t lbls" x="422" y="828">the operator posts a compute bond</text>
+  <text class="t lbls" x="422" y="846">the executor verifies a STARK when required</text>
+  <text class="t lbls" x="422" y="864">the default is fail-closed: no proof, no credit</text>
+  <text class="t lbls" x="422" y="884">three roles with separate stakes: consensus, storage, AI</text>
+
+  <rect x="762" y="750" width="330" height="150" rx="3" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+  <text class="t h3" x="774" y="772">IN B.U.D.</text>
+  <text class="t lbls" x="774" y="792">the data of the user, content-addressed</text>
+  <text class="t lbls" x="774" y="810">the session state, therefore the provider can change</text>
+  <text class="t lbls" x="774" y="828">the calibration of the two panels</text>
+  <text class="t lbls" x="774" y="846">the geometry manifest and the component records</text>
+  <text class="t lbls" x="774" y="864">the .bud container is lossless, multi-format and</text>
+  <text class="t lbls" x="774" y="882">quantum-resistant in its format contract</text>
+
+  <rect x="1114" y="750" width="428" height="150" rx="3" fill="#f7f0f8" stroke="#5c3f8a" stroke-width="1.2"/>
+  <text class="t h3" x="1126" y="772">THE DEVICE IS A PERCEPTION SURFACE AND A WALLET</text>
+  <text class="t lbls" x="1126" y="792">it is not a computer. that sentence decides the bill of materials,</text>
+  <text class="t lbls" x="1126" y="808">the battery budget and the whole software stack.</text>
+  <text class="t lbls" x="1126" y="832">strongest product argument: a screen lives five to seven years,</text>
+  <text class="t lbls" x="1126" y="848">a processor two to three. this device changes its compute</text>
+  <text class="t lbls" x="1126" y="864">by changing the validator, not by changing the device.</text>
+  <text class="t lbls" x="1126" y="884">forbidden before its gate: "no hardware", "the device needs no computer".</text>
+
+  <line class="rule" x1="58" y1="916" x2="1542" y2="916"/>
+  <text class="t lbls" x="58" y="936">DECISIONS FROM AYAZ (REV L.5.0): Bulky bottom battery dropped · 80 x 160 x 2.20 mm body split in (+) cross into 4 snap-together 40 x 80 mm polycarbonate tiles (&lt;15 um n=1.585 zero-scratch seam)</text>
+  <text class="t lbls" x="58" y="952">· 90°-Bent-Stem B module (22 g): ONLY the antenna + USB-C stem is bent at 90° and stays above edge; the round camera/AMOLED ring lies flat on the screen (reversible Front/Back &amp; 4 edges)</text>
+  <text class="t lbls" x="58" y="968">· Biocompatible eyewear-safe LLZO solid-state battery (4 x 3 Wh = 12 Wh, &lt;=36.2 C, 0 HF, SAR 0.054 W/kg) · Portless body charges on any Qi/Qi2 wireless pad; USB-C is ONLY on the B module</text>
+  <text class="t lbls" x="58" y="988">CLOSED: K1 = 2.20 mm 4-quadrant (+) body (72 g) + 4.00 mm B ring (22 g = 94 g total) · Universal Qi2.2 wireless charging on body · EU 2023/1542 Art. 11 &lt;3 s tool-free quadrant swap.</text>
+
+  <!-- TITLE BLOCK -->
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P01</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P01 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">GENERAL ARRANGEMENT</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>
