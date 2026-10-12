@@ -1,0 +1,226 @@
+[
+ {
+  "name": "valid f0 s0",
+  "words": 7,
+  "cycles": 57,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f0 s1",
+  "words": 7,
+  "cycles": 57,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f0 s2",
+  "words": 7,
+  "cycles": 57,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f0 s3",
+  "words": 332,
+  "cycles": 838,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f1 s0",
+  "words": 21,
+  "cycles": 95,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f1 s1",
+  "words": 381,
+  "cycles": 959,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f1 s2",
+  "words": 6,
+  "cycles": 56,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f1 s3",
+  "words": 8,
+  "cycles": 58,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f2 s0",
+  "words": 24,
+  "cycles": 98,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f2 s1",
+  "words": 14,
+  "cycles": 64,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f2 s2",
+  "words": 71,
+  "cycles": 217,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "valid f2 s3",
+  "words": 134,
+  "cycles": 352,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "forged: payload byte flipped",
+  "words": 69,
+  "cycles": 215,
+  "err": 1,
+  "expect": 1,
+  "pass_": true
+ },
+ {
+  "name": "forged: tag bit flipped",
+  "words": 69,
+  "cycles": 215,
+  "err": 1,
+  "expect": 1,
+  "pass_": true
+ },
+ {
+  "name": "forged: header seq changed",
+  "words": 69,
+  "cycles": 215,
+  "err": 1,
+  "expect": 1,
+  "pass_": true
+ },
+ {
+  "name": "forged: header y0 changed",
+  "words": 69,
+  "cycles": 215,
+  "err": 1,
+  "expect": 1,
+  "pass_": true
+ },
+ {
+  "name": "forged: tag under another session key",
+  "words": 11,
+  "cycles": 61,
+  "err": 1,
+  "expect": 1,
+  "pass_": true
+ },
+ {
+  "name": "valid after forgeries",
+  "words": 69,
+  "cycles": 215,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "replay: frame 0 slice 1 again",
+  "words": 7,
+  "cycles": 57,
+  "err": 2,
+  "expect": 2,
+  "pass_": true
+ },
+ {
+  "name": "replay: the last valid slice again",
+  "words": 69,
+  "cycles": 215,
+  "err": 2,
+  "expect": 2,
+  "pass_": true
+ },
+ {
+  "name": "handover: shadow slice on slot 1",
+  "words": 104,
+  "cycles": 298,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ },
+ {
+  "name": "handover: primary's copy of the same slice",
+  "words": 104,
+  "cycles": 298,
+  "err": 2,
+  "expect": 2,
+  "pass_": true
+ },
+ {
+  "name": "wrong validator: slot 0 has no key",
+  "words": 44,
+  "cycles": 142,
+  "err": 3,
+  "expect": 3,
+  "pass_": true
+ },
+ {
+  "name": "length: one word short",
+  "words": 30,
+  "cycles": 104,
+  "err": 4,
+  "expect": 4,
+  "pass_": true
+ },
+ {
+  "name": "length: one word long",
+  "words": 32,
+  "cycles": 106,
+  "err": 4,
+  "expect": 4,
+  "pass_": true
+ },
+ {
+  "name": "length: payload over 64 KiB",
+  "words": 6,
+  "cycles": 7,
+  "err": 4,
+  "expect": 4,
+  "pass_": true
+ },
+ {
+  "name": "version 2",
+  "words": 31,
+  "cycles": 105,
+  "err": 5,
+  "expect": 5,
+  "pass_": true
+ },
+ {
+  "name": "valid after framing errors",
+  "words": 31,
+  "cycles": 105,
+  "err": 0,
+  "expect": 0,
+  "pass_": true
+ }
+]

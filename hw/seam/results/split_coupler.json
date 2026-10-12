@@ -1,0 +1,81 @@
+{
+ "ribbon": {
+  "area_mm2": 0.015,
+  "break_N": 3.465,
+  "k_axial_N_per_um": 0.046875
+ },
+ "gate_pin": {
+  "double_shear_N": 12.44070690821558,
+  "bearing_N": 13.2,
+  "mass_ug": 20.040847855780008,
+  "spring_g_rating": 203458.05710032547
+ },
+ "design_load_N": 6.93,
+ "z_capture_N": 30.799999999999994,
+ "sma_-10C": {
+  "R_ohm": 8.55,
+  "mass_ug": 18.996818077175774,
+  "E_heat_uJ": 2128.9734019090893,
+  "t_heat_ms": 16.600182471026034,
+  "P_pulse_mW": 192.37500000000003,
+  "P_hold_mW": 17.31375,
+  "stroke_mm": 0.18,
+  "stroke_margin": 1.2,
+  "force_margin": 1.7399999999999998,
+  "cool_ms": 180.0,
+  "V_pulse": 1.2825
+ },
+ "sma_+23C": {
+  "R_ohm": 8.55,
+  "mass_ug": 18.996818077175774,
+  "E_heat_uJ": 1604.262289799417,
+  "t_heat_ms": 12.5088677567206,
+  "P_pulse_mW": 192.37500000000003,
+  "P_hold_mW": 17.31375,
+  "stroke_mm": 0.18,
+  "stroke_margin": 1.2,
+  "force_margin": 1.7399999999999998,
+  "cool_ms": 180.0,
+  "V_pulse": 1.2825
+ },
+ "sma_+50C": {
+  "R_ohm": 8.55,
+  "mass_ug": 18.996818077175774,
+  "E_heat_uJ": 1174.9531980733218,
+  "t_heat_ms": 9.161428445016151,
+  "P_pulse_mW": 192.37500000000003,
+  "P_hold_mW": 17.31375,
+  "stroke_mm": 0.18,
+  "stroke_margin": 1.2,
+  "force_margin": 1.7399999999999998,
+  "cool_ms": 180.0,
+  "V_pulse": 1.2825
+ },
+ "release_energy_J": 0.4538515212343636,
+ "release_peak_W": 2.3085000000000004,
+ "insertion_per_gate_N": 0.03515314648475179,
+ "insertion_quadrant_N": 0.4218377578170215,
+ "misfit": {
+  "assembly_um": 0.5,
+  "thermal_um": 0.4224000000000001,
+  "force_N": 0.043237500000000005
+ },
+ "shock": {
+  "quadrant_g": 13.568,
+  "ribbon_limit_g": 312.39181235935604,
+  "coupler_limit_g": 624.7836247187121
+ },
+ "contact_mohm": 12.978214777116516,
+ "data": {
+  "quadrant_Gbps": 7.3728,
+  "lanes_long_edge": 8,
+  "per_lane_Gbps": 1.152
+ },
+ "pass": {
+  "gate_vs_design": true,
+  "sma_stroke": true,
+  "sma_force": true,
+  "heat_under_50ms": true,
+  "misfit_in_budget": true
+ }
+}

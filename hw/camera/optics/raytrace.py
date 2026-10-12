@@ -63,7 +63,10 @@ for _k, (_nd, _vd) in POLYMERS.items():
 
 
 def n_of(mat, wl):
-    return float(_MAT[mat.upper() if mat.upper() in _MAT else mat](wl))
+    f = _MAT[mat.upper() if mat.upper() in _MAT else mat]
+    if np.ndim(wl) == 0:
+        return float(f(wl))
+    return f(np.asarray(wl, float))
 
 
 # --------------------------------------------------------------------------
@@ -187,7 +190,7 @@ def trace(lens, P, D, wl, upto=None, z_image=None, keep=False):
         # Newton intersection
         z0 = zv[i]
         t = (z0 - P[:, 2]) / D[:, 2]
-        for _ in range(12):
+        for _it in range(10):
             X = P + t[:, None] * D
             r = np.hypot(X[:, 0], X[:, 1])
             s = lens.sag(i, r)
@@ -197,7 +200,10 @@ def trace(lens, P, D, wl, upto=None, z_image=None, keep=False):
                 drdt = np.where(r > 1e-12, (X[:, 0] * D[:, 0] + X[:, 1] * D[:, 1]) / r, 0.0)
             fp = D[:, 2] - dsr * drdt
             fp = np.where(np.abs(fp) < 1e-9, 1e-9, fp)
-            t = t - f / fp
+            dt = f / fp
+            t = t - dt
+            if _it >= 3 and np.nanmax(np.abs(dt)) < 1e-11:
+                break
         X = P + t[:, None] * D
         r = np.hypot(X[:, 0], X[:, 1])
         valid &= lens.sag_valid(i, r) & np.isfinite(t) & (np.abs(f) < 1e-7)
@@ -214,7 +220,7 @@ def trace(lens, P, D, wl, upto=None, z_image=None, keep=False):
         rad = 1.0 - mu * mu * (1.0 - cosi * cosi)
         valid &= rad > 0
         rad = np.maximum(rad, 0.0)
-        D = mu * D + (np.sqrt(rad) - mu * cosi)[:, None] * Nrm
+        D = np.reshape(mu, (-1, 1)) * D + (np.sqrt(rad) - mu * cosi)[:, None] * Nrm
         D /= np.linalg.norm(D, axis=1)[:, None]
         P = X
         if keep:
@@ -323,6 +329,41 @@ def rays_for_field(lens, theta_deg, pupil_xy, wl, z0=-1.0, iters=4):
         P[:, 0] += dx
         P[:, 1] += dy
     return P, D
+
+
+def rays_batch(lens, thetas, pupil_xy, wls, z0=-1.0, iters=4):
+    """All (field, wavelength, pupil point) combinations in one batch.
+    Returns P, D, wl (per ray), and index arrays (field, wave, pupil)."""
+    thetas = np.atleast_1d(thetas); wls = np.atleast_1d(wls)
+    F, Wv, Pu = np.meshgrid(np.arange(len(thetas)), np.arange(len(wls)),
+                            np.arange(len(pupil_xy)), indexing="ij")
+    F = F.ravel(); Wv = Wv.ravel(); Pu = Pu.ravel()
+    th = np.radians(thetas[F])
+    wl = wls[Wv]
+    D = np.stack([np.zeros_like(th), np.sin(th), np.cos(th)], 1)
+    sa = np.array([stop_semi_aperture(lens, w) for w in wls])[Wv]
+    target = pupil_xy[Pu] * sa[:, None]
+    P = np.zeros((len(F), 3))
+    P[:, 2] = z0
+    P[:, 1] = z0 * np.tan(th)
+    P[:, :2] += pupil_xy[Pu] * lens.epd / 2
+    h = 1e-4
+    for _ in range(iters):
+        hit, v = _stop_hit(lens, P, D, wl)
+        err = target - hit
+        if np.max(np.abs(err)) < 1e-8:
+            break
+        Px = P.copy(); Px[:, 0] += h
+        Py = P.copy(); Py[:, 1] += h
+        hx, _ = _stop_hit(lens, Px, D, wl)
+        hy, _ = _stop_hit(lens, Py, D, wl)
+        J11 = (hx[:, 0] - hit[:, 0]) / h; J21 = (hx[:, 1] - hit[:, 1]) / h
+        J12 = (hy[:, 0] - hit[:, 0]) / h; J22 = (hy[:, 1] - hit[:, 1]) / h
+        det = J11 * J22 - J12 * J21
+        det = np.where(np.abs(det) < 1e-12, 1e-12, det)
+        P[:, 0] += (J22 * err[:, 0] - J12 * err[:, 1]) / det
+        P[:, 1] += (-J21 * err[:, 0] + J11 * err[:, 1]) / det
+    return P, D, wl, F, Wv, Pu
 
 
 _SA_CACHE = {}

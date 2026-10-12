@@ -1,0 +1,58 @@
+========================================================================
+A. BANDWIDTH
+========================================================================
+raw 24 b/px 29.49 Gb/s, raw 30 b/px 36.86 Gb/s
+  DSC 1.2b, 8 bpp (24 b in, 3:1)       9.83 Gb/s payload,  10.75 Gb/s on the wire,   76.8 Mb/s per tile
+  DSC 1.2b, 10 bpp (30 b in, 3:1)     12.29 Gb/s payload,  13.43 Gb/s on the wire,   96.0 Mb/s per tile
+  VDC-M 1.2, 6 bpp (30 b in, 5:1)      7.37 Gb/s payload,   8.06 Gb/s on the wire,   57.6 Mb/s per tile
+design case: DSC 10 bpp, one 200 x 200 slice per tile -> 13.43 Gb/s total, 104.9 Mb/s per tile
+the stream size does not change with stretch: U1 sends the warped 200 x 200 tile images.
+
+========================================================================
+B. THE 12 BAR LEAVES
+========================================================================
+leaf  1..12 at 0.8 mm pitch: VSYS GND D0+ D0- GND BC+ BC- GND D1- D1+ GND VSYS
+mirror (front/back flip, 180 deg turn) maps the map onto itself, up to lane and polarity swap: True
+two display pairs at 10 Gb/s: 19.39 Gb/s payload capacity, need 13.85 -> margin 40 %
+one pair lost: VDC-M 6 bpp needs 7.82 Gb/s on 9.70 -> fits
+display uses 4 leaves (D0, D1) + the shared GND; BC is the 400 Mb/s back channel
+(touch at 480 Hz, hinge angles, seam sense, tile telemetry, enumeration).
+
+========================================================================
+C. THE HINGE MESH
+========================================================================
+128 tiles, 232 hinges (each tile joins its 4 edge neighbours at its 4 corners)
+  seat top edge (3,0)       degree 3: LP optimum  4.44 Gb/s, XY 12.59, XY/YX split  7.08, LP with one root hinge broken  6.66 Gb/s
+  seat bottom edge (4,15)   degree 3: LP optimum  4.44 Gb/s, XY 12.59, XY/YX split  7.08, LP with one root hinge broken  6.66 Gb/s
+  seat left edge (0,7)      degree 3: LP optimum  4.44 Gb/s, XY  6.72, XY/YX split  6.24, LP with one root hinge broken  6.66 Gb/s
+  seat right edge (7,8)     degree 3: LP optimum  4.44 Gb/s, XY  6.72, XY/YX split  6.24, LP with one root hinge broken  6.66 Gb/s
+  verdict: plain XY routing overloads the root row; the hub runs a route table from the LP.
+  the validators compute the tables (no CPU on the device); U1 loads them at enumeration.
+  bound: total / degree = 4.44 Gb/s for a degree-3 seat
+
+========================================================================
+D. LANES AND LINES PER HINGE, AND THE COPPER FIT
+========================================================================
+  1 lane(s) x 3.2 Gb/s = 3.10 Gb/s payload: worst load 6.66 -> no (221 % used)
+  2 lane(s) x 3.2 Gb/s = 6.21 Gb/s payload: worst load 6.66 -> no (111 % used)
+  3 lane(s) x 3.2 Gb/s = 9.31 Gb/s payload: worst load 6.66 -> fits (74 % used)
+  chosen: 3 lanes + 1 back-channel pair + 5 guard grounds = 13 lines: G D0+ D0- G D1+ D1- G D2+ D2- G BC+ BC- G
+  ribbon 1.2 mm tall, 0.1 mm keep-out each end, w/s 15/15 um: 33 lines on one neutral-plane copper layer
+  display share 13/33 = 39 % of the ribbon; 20 lines left for power, balance and Qi strands
+  strain at 25 %: ribbon surface 0.48 %, centred 2 um Cu 0.077 % (Cu thin-film endurance ~0.2-0.3 % [GENERAL])
+  strain at 41 %: ribbon surface 1.23 %, centred 2 um Cu 0.197 % (Cu thin-film endurance ~0.2-0.3 % [GENERAL])
+  line R over the 0.8 mm hinge 0.46 Ohm; skin depth at 1.6 GHz 1.65 um
+  hinge pair impedance ~191 Ohm diff., electrical length 1.9 deg at Nyquist, |S11| 0.023 (-32.6 dB): a lumped step, harmless
+
+========================================================================
+E. ADDRESSING AND LATENCY
+========================================================================
+  seat top edge (3,0)       farthest tile 19 hops
+  seat bottom edge (4,15)   farthest tile 19 hops
+  seat left edge (0,7)      farthest tile 15 hops
+  seat right edge (7,8)     farthest tile 15 hops
+  retime per hop ~25 ns -> worst 0.47 us
+  rolling tile latch: one tile row of the frame arrives in 0.260 ms; emission centroid of a 4-segment PWM 0.52 ms later
+  packet: [dest x 3 b | dest y 4 b | type 4 b | line 8 b | len 12 b | payload | CRC-32]
+  broadcast type for frame sync; the sync carries a hop count so every hub
+  latches at the same instant to within 1 us.

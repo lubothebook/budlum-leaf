@@ -60,9 +60,18 @@ def pad8(b):
     return b + bytes((-len(b)) % 8)
 
 
+def canon_header(header):
+    """The header with the key-slot bit cleared. The slot picks the key, so a
+    wrong slot already fails the tag. Clearing it makes the digest the same
+    from the primary and from the shadow validator."""
+    h = bytearray(header)
+    h[2] &= ~F_SLOT & 0xFF
+    return bytes(h)
+
+
 def slice_digest(sid, header, payload):
-    """d = SHA3-256(sid || header || payload padded to 8 bytes). Keyless, public."""
-    return sha3_256(sid + header + pad8(payload))
+    """d = SHA3-256(sid || canon(header) || payload padded to 8 bytes). Keyless, public."""
+    return sha3_256(sid + canon_header(header) + pad8(payload))
 
 
 def slice_tag(key, digest):
@@ -111,7 +120,7 @@ class U6Checker:
             return dict(err=BAD_VERSION)
         slot = h["flags"] & F_SLOT
         body = b"".join(w.to_bytes(8, "little") for w in words[:4 + m])
-        d = sha3_256(self.sid + body)
+        d = sha3_256(self.sid + canon_header(body[:32]) + body[32:])
         res = dict(digest=d, seq=h["seq"], frame_no=h["frame_no"],
                    slice_index=h["slice_index"], flags=h["flags"])
         if self.prefix[slot] is None:
@@ -209,7 +218,7 @@ class Validator:
 
     def server_hello(self, ch, nonce):
         xk = x25519.X25519PrivateKey.from_private_bytes(H(b"x", self.seed, nonce))
-        kem_ct, kem_ss = mlkem.MLKEM768PublicKey.from_public_bytes(ch["kem_pub"]).encapsulate()
+        kem_ss, kem_ct = mlkem.MLKEM768PublicKey.from_public_bytes(ch["kem_pub"]).encapsulate()
         sh = dict(ed_pub=self.ed_pub, pq_pub=self.pq_pub, x_pub=xk.public_key().public_bytes_raw(),
                   kem_ct=kem_ct, nonce=nonce)
         t = transcript(ch, sh)

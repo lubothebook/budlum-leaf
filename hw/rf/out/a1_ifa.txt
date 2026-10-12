@@ -1,0 +1,45 @@
+A1 inverted-F, 2.4 GHz, in the 1.00 mm LCP bar
+  cs2d line: Z0 = 108.5 Ohm, eps_eff = 1.96; air Z0 = 152.0 Ohm
+  layout: short x = 30, feed x = 32, tuner x = 38, open end x = 50 mm (arm 20.0 mm)
+  [1] MoM in air, no tuner leg, lossless (the TL reference)
+    MoM air:  2.700 GHz  Z =    10.83   +79.43j  eta_rad = 1.000
+    MoM air:  2.800 GHz  Z =    22.52   +92.96j  eta_rad = 1.000
+    MoM air:  2.900 GHz  Z =    52.01  +104.71j  eta_rad = 1.000
+    MoM air:  3.000 GHz  Z =    99.42   +78.60j  eta_rad = 1.000
+    MoM air:  3.100 GHz  Z =    91.46   +20.44j  eta_rad = 1.000
+    MoM air:  3.200 GHz  Z =    57.49    +5.40j  eta_rad = 1.000
+    MoM air:  3.300 GHz  Z =    37.32    +8.92j  eta_rad = 1.000
+      MoM air parallel resonance 3.036 GHz, R = 103 Ohm
+      TL air, analytic legs (1.17 nH), unfitted: 3.288 GHz  -> error +8.3 %
+      TL fitted to MoM: Z0 x 1.60, Ls = 0.79 nH, Lf = 0.44 nH, Ce = 50.7 fF, Gr = 0.230 mS. Relative rms error of Y: 2.3 %
+  [2] MoM with capacitor legs for the LCP (21.1 pF/m every 2 mm), lossless
+    MoM lcp:  2.000 GHz  Z =     8.82   +72.81j  eta_rad = 1.000
+    MoM lcp:  2.100 GHz  Z =    43.52  +113.22j  eta_rad = 1.000
+    MoM lcp:  2.200 GHz  Z =   156.55   -31.68j  eta_rad = 1.000
+    MoM lcp:  2.300 GHz  Z =    27.60   -28.89j  eta_rad = 1.000
+    MoM lcp:  2.400 GHz  Z =    10.22    -3.60j  eta_rad = 1.000
+    MoM lcp:  2.500 GHz  Z =     5.54    +8.86j  eta_rad = 1.000
+    MoM lcp:  2.600 GHz  Z =     3.64   +16.54j  eta_rad = 1.000
+      MoM: 2.197 GHz (R = 157 Ohm).  TL with cs2d eps_eff, no refit: 2.174 GHz  -> error -1.0 %
+  [3] tuner states (SP4T, Ron 1.0 Ohm, Coff 0.16 pF per path, C0G caps Q 80)
+      C_on =      off:  parallel resonance 1.900 GHz
+      C_on =   0.3 pF:  parallel resonance 1.900 GHz
+      C_on =   0.5 pF:  parallel resonance 1.900 GHz
+      C_on =   0.8 pF:  parallel resonance 1.900 GHz
+      C_on =   1.2 pF:  parallel resonance 1.900 GHz
+      C_on =   1.8 pF:  parallel resonance 1.900 GHz
+      C_on =   2.7 pF:  parallel resonance 1.900 GHz
+      C_on =   3.9 pF:  parallel resonance 2.900 GHz
+      state low (ch 1-4)   : C_on = 3.00 pF
+      state mid (ch 5-8)   : C_on = 3.00 pF
+      state high (ch 9-13) : C_on = 3.00 pF
+  [4] feed impedance at 2.442 GHz, mid state: 0.2 +31.6j Ohm
+      L-match to 50 Ohm: series-shunt: series C 2.29 pF at the antenna, shunt C 20.50 pF at the port
+  [5] return loss, bandwidth and efficiency budget (SS304 can ground)
+      low (ch 1-4)   : -6 dB bandwidth   5.0 MHz (0.21 %), radiation eff -15.22 dB, total over +/-25 MHz: mean -23.40 dB, worst -27.13 dB
+      mid (ch 5-8)   : -6 dB bandwidth   5.0 MHz (0.20 %), radiation eff -15.34 dB, total over +/-25 MHz: mean -22.17 dB, worst -23.98 dB
+      high (ch 9-13) : -6 dB bandwidth   5.0 MHz (0.20 %), radiation eff -15.48 dB, total over +/-25 MHz: mean -23.67 dB, worst -27.84 dB
+  [6] MoM check of the design at the mid state, with conductor loss
+    MoM final_SS304:  2.400 GHz  Z =     0.20   +31.85j  eta_rad = 0.108
+    MoM final_SS304:  2.420 GHz  Z =     0.20   +32.16j  eta_rad = 0.107
+    MoM final_SS304:  2.440 GHz  Z =     0.20   +32.48j  eta_rad = 0.106

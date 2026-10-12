@@ -1,0 +1,16 @@
+vertical budget above the board: 2.30 mm; spreader 0.80 mm over parts up to 1.50 mm
+parts taller than 1.50 mm take a spreader cut-out: speaker 2.20 mm (fits 2.30), cell 1.50 mm
+analytic: a flat 20x8 cell beside the hole puts a corner at r 15.38 mm against the edge r 14.75 mm: DOES NOT FIT
+
+sc   placed  failed   demand      top    fill   bottom  errors  failed parts
+S0       28       3    661.4    549.0     63%      0.0       0  U5 5G modem, SPK speaker, BT1 cell 20x8
+S1       27       5    663.9    549.0     75%      0.0       0  U5 5G modem, SPK speaker, BT1b cell, U7 SE, U8 IMU
+S2       29       3    663.9    582.7     74%      0.0       0  U5 5G modem, SPK speaker, BT1b cell
+S3       29       3    492.9    582.7     56%      0.0       0  U5 5G modem, SPK speaker, U4 PMIC
+S4       29       3    492.9    582.7     44%    169.5       0  U5 5G modem, SPK speaker, U4 PMIC
+S5       28       3    476.7    582.7     34%    169.5       0  U5 5G modem, SPK speaker, U16 TCON+codec
+
+demand = sum of part areas with skirt, courtyard and can (cells left out when stacked).
+top/bottom = board area free of cut-outs, mm^2. fill = placed area / available area.
+S4 bottom-face parts: -
+S5 bottom-face parts: -

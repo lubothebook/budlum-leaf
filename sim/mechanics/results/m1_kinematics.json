@@ -1,0 +1,52 @@
+{
+  "chamfer_mm": 0.6,
+  "n_tiles": 128,
+  "default": {
+    "theta_deg": 17.5,
+    "two_theta_deg": 35.0,
+    "stretch": 0.25442275025250005,
+    "W_mm": 99.99297306079488,
+    "H_mm": 200.34679308099487,
+    "area_ratio": 1.573576436351046,
+    "fill_ideal": 0.6354950270600722,
+    "fill_pixels": 0.63091946286524,
+    "diamond_short_mm": 6.014115990085463,
+    "diamond_long_mm": 19.07433901496454,
+    "diamond_area_mm2": 57.35764363510461,
+    "overlap_mm2": 0.0,
+    "poisson": -0.990709383333036,
+    "hinge_closure_um": 5.551115123125783e-11
+  },
+  "maximum": {
+    "theta_deg": 45.0,
+    "two_theta_deg": 90.0,
+    "stretch": 0.4142135623730949,
+    "W_mm": 112.28855685242372,
+    "H_mm": 225.42564184227132,
+    "area_ratio": 1.9999999999999996,
+    "fill_ideal": 0.5000000000000001,
+    "fill_pixels": 0.4963999999999996,
+    "diamond_short_mm": 14.14213562373095,
+    "diamond_long_mm": 14.142135623730953,
+    "diamond_area_mm2": 100.00000000000001,
+    "overlap_mm2": 0.0,
+    "poisson": -0.722939974894415,
+    "hinge_closure_um": 5.551115123125783e-11
+  },
+  "max_overlap_mm2": 6.594724766273439e-12,
+  "poisson_range": [
+    -0.9924357570661048,
+    -0.722939974894415
+  ],
+  "final21_claims": {
+    "stretch_17p5": 0.254,
+    "stretch_45": 0.414,
+    "fill_25": 0.61,
+    "fill_41": 0.475,
+    "gap_6mm": 6.0,
+    "body_45": [
+      113,
+      226
+    ]
+  }
+}

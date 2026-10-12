@@ -37,20 +37,30 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 @dataclass
 class BodyParams:
-    a: float = 10.0               # tile edge [DECISION] 21.2.1
+    a: float = 10.0               # tile cell pitch at rest [DECISION] 21.2.1
+    kerf: float = 0.010           # cut between tiles, <= 10 um [DECISION] 21.2.4
     nx: int = 8                   # columns [DECISION]
     ny: int = 16                  # rows [DECISION]
     t: float = 2.00               # tile thickness [DECISION] 21.2.7
     chamfer: float = 0.55         # chamfer leg; set by the ribbon length rule
     rib_len: float = 0.80         # ribbon free length [DECISION] 21.2.2
     rib_thk: float = 0.0125       # 12.5 um polyimide [DECISION]
-    rib_z0: float = 0.76          # ribbon bottom
+    rib_z0: float = 0.68          # ribbon bottom, above the seat balls
     rib_h: float = 1.20           # ribbon height, inside 1.2-1.5 mm [DECISION]
     rib_embed: float = 0.03       # bond length into each chamfer face
-    rib_seg: int = 12             # arc segments
+    rib_seg: int = 6              # arc segments
     split_gap: float = 0.02       # cut of a split coupler
-    ball_d: float = 0.70          # Si3N4 seat ball [HYPOTHESIS]
-    ball_zc: float = 0.40         # ball centre height, below the ribbons
+    ball_d: float = 0.60          # Si3N4 seat ball [HYPOTHESIS]
+    ball_zc: float = 0.36         # ball centre height, below the ribbons
+    # edge softening, order of Ayaz 2026-10-12, HARDWARE/06 doctrine
+    r_perim: float = 0.65         # outer perimeter front and back face edges
+    R_corner: float = 6.35        # the four outer plan corners
+    r_break: float = 0.03         # cap top edge, back edge and chamfer corners
+    n_perim: int = 6              # segments of a 0.65 mm quarter fillet
+    n_break: int = 2              # segments of a 0.03 mm edge break
+    n_corner: int = 8             # segments of the R 6.35 mm plan corner
+    run_out: float = 2.0          # run-out of r_perim to r_break at a hinge chamfer
+    n_run: int = 6                # samples of the run-out
     qi_od: float = 45.0           # Qi coil outer diameter 44-46 mm [DECISION]
     qi_id: float = 20.0           # Qi coil inner diameter [HYPOTHESIS]
     # seat ball sites: target positions at rest, snapped to split couplers
@@ -106,21 +116,85 @@ class Body:
         t = self.tiles[k]
         return self.local_corners @ t["R"].T + t["c"]
 
-    def chamfer_local(self):
-        h, c = self.p.a / 2, self.p.chamfer
-        pts = []
-        for cx, cy in self.local_corners:
-            sx, sy = np.sign(cx), np.sign(cy)
-            # the two chamfer points of this corner, CCW order
-            if sx * sy > 0:
-                pts += [(cx, cy - sy * c), (cx - sx * c, cy)]
+    def plan_local(self, k):
+        """The plan outline of tile k in its own frame, CCW.
+
+        Returns (vertices, radii). radii[m] is the front and back edge
+        fillet radius at vertex m:
+        * r_perim on an outer perimeter face and on the R 6.35 mm corner,
+        * r_break on every interior face, chamfer and chamfer round,
+        * a smoothstep run-out from r_perim to r_break over run_out mm
+          where a perimeter face meets a hinge chamfer.
+        """
+        p = self.p
+        t = self.tiles[k]
+        c = p.chamfer
+        perim = {0: t["j"] == p.ny - 1, 1: t["i"] == 0,
+                 2: t["j"] == 0, 3: t["i"] == p.nx - 1}   # sides top, left, bottom, right
+        # the physical tile is the 10 mm cell less the kerf: 9.990 mm
+        C = self.local_corners * (p.a - p.kerf) / p.a
+
+        def rounded(V, din, dout, r, n):
+            turn = math.atan2(din[0] * dout[1] - din[1] * dout[0], np.dot(din, dout))
+            tl = r * math.tan(turn / 2)
+            A = V - tl * din
+            O = A + r * np.array([-din[1], din[0]])
+            a0 = math.atan2(A[1] - O[1], A[0] - O[0])
+            return [O + r * np.array([math.cos(a0 + turn * m / n), math.sin(a0 + turn * m / n)])
+                    for m in range(n + 1)]
+
+        feats = []          # per corner: (points, radius, kind)
+        for kc in range(4):
+            V = C[kc]
+            din = (C[kc] - C[(kc - 1) % 4]) / (p.a - p.kerf)
+            dout = (C[(kc + 1) % 4] - C[kc]) / (p.a - p.kerf)
+            if perim[(kc - 1) % 4] and perim[kc]:
+                feats.append((rounded(V, din, dout, p.R_corner, p.n_corner), p.r_perim, "R"))
             else:
-                pts += [(cx - sx * c, cy), (cx, cy - sy * c)]
-        return np.array(pts)
+                A, B = V - c * din, V + c * dout
+                dch = (B - A) / np.linalg.norm(B - A)
+                pts = rounded(A, din, dch, p.r_break, p.n_break) + \
+                    rounded(B, dch, dout, p.r_break, p.n_break)
+                feats.append((pts, p.r_break, "C"))
+        verts, radii = [], []
+
+        def smooth(u):
+            u = min(max(u, 0.0), 1.0)
+            return u * u * (3 - 2 * u)
+
+        for kc in range(4):
+            pts, r, kind = feats[kc]
+            verts += pts
+            radii += [r] * len(pts)
+            if not perim[kc]:
+                continue
+            S = np.array(pts[-1])
+            nxt = feats[(kc + 1) % 4]
+            E = np.array(nxt[0][0])
+            Ls = np.linalg.norm(E - S)
+            u = (E - S) / Ls
+            ss = []
+            if kind == "C":
+                ss += [p.run_out * m / p.n_run for m in range(1, p.n_run + 1)]
+            if nxt[2] == "C":
+                ss += [Ls - p.run_out * m / p.n_run for m in range(p.n_run, 0, -1)]
+            for sv in sorted(set(np.round(ss, 9))):
+                if 1e-6 < sv < Ls - 1e-6:
+                    w = 1.0
+                    if kind == "C":
+                        w = min(w, smooth(sv / p.run_out))
+                    if nxt[2] == "C":
+                        w = min(w, smooth((Ls - sv) / p.run_out))
+                    verts.append(S + sv * u)
+                    radii.append(p.r_break + (p.r_perim - p.r_break) * w)
+        return np.array(verts), np.array(radii)
 
     def tile_poly2d(self, k):
         t = self.tiles[k]
-        return self.chamfer_local() @ t["R"].T + t["c"]
+        return self.plan_local(k)[0] @ t["R"].T + t["c"]
+
+    def chamfer_mid_dist(self):
+        return (self.p.chamfer + self.p.kerf) / math.sqrt(2)
 
     def to_state(self, k, xy_rest):
         """Carry a rest-state point of tile k into this state."""
@@ -167,7 +241,7 @@ class Body:
         p = self.p
         A, B = self.tiles[h["a"]], self.tiles[h["b"]]
         P = h["P"]
-        r_m = p.chamfer / math.sqrt(2)
+        r_m = (p.chamfer + p.kerf) / math.sqrt(2)   # pivot to chamfer midpoint
         uA = (A["c"] - P) / np.linalg.norm(A["c"] - P)
         uB = (B["c"] - P) / np.linalg.norm(B["c"] - P)
         MA, MB = P + r_m * uA, P + r_m * uB
@@ -202,7 +276,7 @@ class Body:
         p = self.p
         A, B = self.tiles[h["a"]], self.tiles[h["b"]]
         P = h["P"]
-        r_m = p.chamfer / math.sqrt(2)
+        r_m = (p.chamfer + p.kerf) / math.sqrt(2)   # pivot to chamfer midpoint
         MA = P + r_m * (A["c"] - P) / np.linalg.norm(A["c"] - P)
         MB = P + r_m * (B["c"] - P) / np.linalg.norm(B["c"] - P)
         d = float(np.linalg.norm(MB - MA))
@@ -293,6 +367,98 @@ def prism_convex(poly, z0, z1):
     return trimesh.Trimesh(v, np.array(f), process=False)
 
 
+def fillet_levels(r, n, t):
+    """z levels of a quarter fillet of radius r at the bottom and the top."""
+    phi = np.linspace(0, math.pi / 2, n + 1)
+    zb = r - r * np.sin(phi)
+    return np.concatenate([zb, t - zb])
+
+
+def fillet_inset(r, z, t):
+    """Inset of a face with radius r fillets on its front and back edges."""
+    zz = np.minimum(z, t - z)
+    if zz >= r:
+        return 0.0
+    return r - math.sqrt(max(r * r - (r - zz) ** 2, 0.0))
+
+
+def tile_layers(verts, radii, p):
+    """The z levels and the plan loops of a softened tile.
+
+    Each plan vertex moves inward along its miter vector by the inset of
+    its own quarter fillet, so every vertex column traces an exact
+    quarter circle of its radius at the front and at the back.
+    """
+    n = len(verts)
+    e = np.roll(verts, -1, axis=0) - verts
+    e /= np.linalg.norm(e, axis=1)[:, None]
+    nrm = np.c_[e[:, 1], -e[:, 0]]                 # outward normals of CCW edges
+    n1, n2 = np.roll(nrm, 1, axis=0), nrm
+    miter = (n1 + n2) / (1 + np.einsum("ij,ij->i", n1, n2))[:, None]
+    zs = set(np.round(fillet_levels(p.r_break, p.n_break, p.t), 9))
+    for r in set(np.round(radii, 9)):
+        if r > p.r_break + 1e-9:
+            zs |= set(np.round(fillet_levels(p.r_perim, p.n_perim, p.t), 9))
+            break
+    zs = sorted(zs)
+    loops = []
+    for z in zs:
+        d = np.array([fillet_inset(r, z, p.t) for r in radii])
+        loops.append(verts - d[:, None] * miter)
+    return np.array(zs), loops
+
+
+def loop_at(verts, radii, p, z):
+    """The plan loop of a softened tile at one height z."""
+    zs, loops = tile_layers(verts, radii, p)
+    e = np.roll(verts, -1, axis=0) - verts
+    e /= np.linalg.norm(e, axis=1)[:, None]
+    nrm = np.c_[e[:, 1], -e[:, 0]]
+    n1 = np.roll(nrm, 1, axis=0)
+    miter = (n1 + nrm) / (1 + np.einsum("ij,ij->i", n1, nrm))[:, None]
+    d = np.array([fillet_inset(r, z, p.t) for r in radii])
+    return verts - d[:, None] * miter
+
+
+def softened_tile(verts, radii, p):
+    zs, loops = tile_layers(verts, radii, p)
+    n, m = len(verts), len(zs)
+    V = [np.c_[lp, np.full(n, z)] for lp, z in zip(loops, zs)]
+    cen = verts.mean(axis=0)
+    V.append([[cen[0], cen[1], zs[0]], [cen[0], cen[1], zs[-1]]])
+    V = np.vstack(V)
+    cb, ct = m * n, m * n + 1
+    top = (m - 1) * n
+    F = []
+    for k in range(n):
+        k2 = (k + 1) % n
+        F.append([cb, k2, k])
+        F.append([ct, top + k, top + k2])
+    for L in range(m - 1):
+        a0, b0 = L * n, (L + 1) * n
+        for k in range(n):
+            k2 = (k + 1) % n
+            F.append([a0 + k, a0 + k2, b0 + k2])
+            F.append([a0 + k, b0 + k2, b0 + k])
+    mesh = trimesh.Trimesh(V, np.array(F), process=False)
+    mesh.merge_vertices()
+    mesh.update_faces(mesh.nondegenerate_faces())
+    mesh.update_faces(mesh.unique_faces())
+    mesh.remove_unreferenced_vertices()
+    return mesh
+
+
+def tile_mesh(body, k):
+    verts, radii = body.plan_local(k)
+    m = softened_tile(verts, radii, body.p)
+    t = body.tiles[k]
+    T = np.eye(4)
+    T[:2, :2] = t["R"]
+    T[:2, 3] = t["c"]
+    m.apply_transform(T)
+    return m
+
+
 def strip_offsets(path, w):
     """Left and right offset lines of a polyline, with mitred joints."""
     path = np.asarray(path, float)
@@ -335,13 +501,13 @@ def build_mesh(body: Body):
     p = body.p
     parts = {"tiles": [], "ribbons": [], "balls": []}
     for k in range(len(body.tiles)):
-        parts["tiles"].append(prism_convex(body.tile_poly2d(k), 0.0, p.t))
+        parts["tiles"].append(tile_mesh(body, k))
     for h in body.hinges:
         for path in body.ribbon_paths(h):
             parts["ribbons"].append(extrude_strip(path, p.rib_thk, p.rib_z0, p.rib_z0 + p.rib_h))
     for hi in body.seat_hinges():
         P = body.hinges[hi]["P"]
-        s = trimesh.creation.icosphere(subdivisions=2, radius=p.ball_d / 2)
+        s = trimesh.creation.icosphere(subdivisions=1, radius=p.ball_d / 2)
         s.apply_translation([P[0], P[1], p.ball_zc])
         parts["balls"].append(s)
     return parts
@@ -383,7 +549,7 @@ def draw_plan(ax, body: Body, title=True):
     ax.set_xticks([])
     ax.set_yticks([])
     if title:
-        ax.set_title(f"θ = {body.theta_deg:g}°\n{2*ext[0]:.1f} x {2*ext[1]:.1f} mm",
+        ax.set_title(f"θ = {body.theta_deg:g}°\n{2*ext[0]:.1f} x {2*ext[1]:.1f} mm lattice",
                      fontsize=9)
 
 
@@ -408,8 +574,44 @@ def write_plans(p, outdir):
     for ax, (name, th) in zip(axs, STATES):
         draw_plan(ax, Body(p, th))
     fig.suptitle("Budlum Leaf L.6.0 rotating-square body, top view, same scale", fontsize=10)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
     fn = os.path.join(outdir, "plan-three-states.png")
+    fig.savefig(fn, dpi=200)
+    files.append(fn)
+    plt.close(fig)
+    # hinge detail: a seam node with a seat ball, and a plain node
+    from matplotlib.patches import Polygon as MPoly, Circle
+    fig, axs = plt.subplots(2, 3, figsize=(10.5, 7.2))
+    for col, (name, th) in enumerate(STATES):
+        b = Body(p, th)
+        seat = b.seat_hinges()[0]
+        plain = next(hi for hi, h in enumerate(b.hinges)
+                     if b.tiles[h["a"]]["i"] == 2 and b.tiles[h["a"]]["j"] == 3)
+        for row, hi in enumerate((seat, plain)):
+            ax = axs[row, col]
+            P0 = b.hinges[hi]["P"]
+            for k in range(len(b.tiles)):
+                poly = b.tile_poly2d(k)
+                if np.min(np.linalg.norm(poly - P0, axis=1)) < 4:
+                    ax.add_patch(MPoly(poly, closed=True, fc=QCOL[b.tiles[k]["q"]], ec="#334", lw=0.5))
+            for h in b.hinges:
+                if np.linalg.norm(h["P"] - P0) < 3:
+                    for path in b.ribbon_paths(h):
+                        ax.plot(path[:, 0], path[:, 1], color="#b02020" if h["split"] else "#222", lw=1.2)
+                    ax.plot(*h["P"], "k+", ms=5, mew=0.6)
+            if row == 0:
+                ax.add_patch(Circle(P0, p.ball_d / 2, fc="#1b4d9e", ec="none", alpha=0.45))
+            ax.set_xlim(P0[0] - 1.6, P0[0] + 1.6)
+            ax.set_ylim(P0[1] - 1.6, P0[1] + 1.6)
+            ax.set_aspect("equal")
+            ax.set_xticks([])
+            ax.set_yticks([])
+            ax.set_title(f"θ = {th:g}°, " + ("seam split coupler + seat ball" if row == 0 else "plain hinge"),
+                         fontsize=8)
+    fig.suptitle("Hinge detail, 3.2 x 3.2 mm windows: 0.80 mm PI ribbon on chamfer midpoints, + = pivot",
+                 fontsize=9)
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
+    fn = os.path.join(outdir, "plan-hinge-detail.png")
     fig.savefig(fn, dpi=200)
     files.append(fn)
     plt.close(fig)

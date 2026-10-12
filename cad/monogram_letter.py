@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-# BUDLUM LEAF · cad/monogram_letter.py · revision L.5.0 · 2026-10-12
+# BUDLUM LEAF · cad/monogram_letter.py · revision L.6.0 · 2026-10-12
+#
+# L.6.0 soft edges (TEAM-BRIEF section 4), true quarter-circle fillets on the shell:
+#   ring outer top and bottom edges r 0.40 mm, inner bore edges r 0.25 mm, bar long edges
+#   r 0.20 mm (the R 2.0 end of b.png stays), moulded 90 deg corner outside edge r 0.30 mm,
+#   gap (valley) edges r 0.25 mm. The 2D outline and every nominal dimension are unchanged.
 #
 # Exact analytical 2D & 3D geometry of the Budlum `b` module (`uploads/b.png` 1:1, IoU = 0.9995):
 #   1. In 2D (`uploads/b.png`, 40.0 x 32.0 mm in (u, v) coordinates):
@@ -179,38 +184,52 @@ def _fold_uv_to_3d(u, v, s_thick):
         return (x, y, z)
 
 
-def _build_structured_strip_3d(uv_pairs_fn):
-    """Given `uv_pairs_fn(d)` returning a list of `( (u_a, v_a), (u_b, v_b) )` cross-section pairs
-    along a strip (closed if first == last, or open with end caps), build a closed, watertight 3D mesh
-    through `_fold_uv_to_3d(u, v, s_th)` across `sd_layers`.
-    Every triangle stays strictly between `(u_a, v_a)` and `(u_b, v_b)` — ZERO chords ever cross
-    the circular bore (`Ø24.0 mm`) or the valley gap (`boşluk`)!
-    """
-    sd_layers = [
-        (0.00, 0.36),
-        (0.10, 0.14),
-        (0.24, 0.03),
-        (0.36, 0.00),
-        (0.64, 0.00),
-        (0.76, 0.03),
-        (0.90, 0.14),
-        (1.00, 0.36),
-    ]
-    L = len(sd_layers)
-    sample_pairs = uv_pairs_fn(0.0)
-    M = len(sample_pairs)
+# ── L.6.0 soft-edge radii of the shell (TEAM-BRIEF section 4) ──
+R_RING_OUT = 0.40     # [DECISION] ring outer top and bottom edges
+R_BORE = 0.25         # [DECISION] ring inner bore edges
+R_BAR = 0.20          # [DECISION] bar long edges
+R_CORNER = 0.30       # [DECISION] moulded 90 deg corner, outside edge
+R_GAP = 0.25          # gap (valley) edges, same family as the bore
+FILLET_STEPS = 6      # facets per quarter fillet: each facet turns 15 deg
+U_TO_Z = 2.80 / 3.6   # the bar maps u to z at 0.778 mm per mm
+
+
+def _thick_at(u):
+    """Shell thickness at u: 2.00 mm on the face, 1.00 mm on the bar, linear through the bend."""
+    if u >= 4.8:
+        return 2.00
+    if u <= 3.6:
+        return STEM_THICK
+    t = (4.8 - u) / 1.2
+    return 2.00 * (1.0 - t) + STEM_THICK * t
+
+
+def fillet_profile(r, T, n=FILLET_STEPS):
+    """[(height, inset)] down one side wall of thickness T, from the back face (height 0) to the
+    front face (height T), with a quarter-circle fillet of radius r at both face edges."""
+    r = min(r, 0.49 * T)
+    out = []
+    for i in range(n + 1):
+        a = (math.pi / 2.0) * i / n
+        out.append((r - r * math.cos(a), r - r * math.sin(a)))
+    for i in range(n + 1):
+        a = (math.pi / 2.0) * i / n
+        out.append((T - r + r * math.sin(a), r - r * math.cos(a)))
+    return out
+
+
+def _build_strip(M, side_a, side_b, L):
+    """Closed, watertight strip solid. side_a(i, k) and side_b(i, k) return the 3D point of layer k
+    (0 = back face edge, L-1 = front face edge) on the two side walls at station i (0..M-1).
+    Every triangle stays between the two sides: no chord crosses the bore or the gap."""
     verts = []
-    # Side A vertices (k = 0..L-1, i = 0..M-1)
-    for (s_th, d) in sd_layers:
-        pairs = uv_pairs_fn(d)
-        for (pa, _) in pairs:
-            verts.append(_fold_uv_to_3d(pa[0], pa[1], s_th))
+    for k in range(L):
+        for i in range(M):
+            verts.append(side_a(i, k))
     off_b = len(verts)
-    # Side B vertices (k = 0..L-1, i = 0..M-1)
-    for (s_th, d) in sd_layers:
-        pairs = uv_pairs_fn(d)
-        for (_, pb) in pairs:
-            verts.append(_fold_uv_to_3d(pb[0], pb[1], s_th))
+    for k in range(L):
+        for i in range(M):
+            verts.append(side_b(i, k))
 
     def ia(k, i):
         return k * M + i
@@ -219,32 +238,31 @@ def _build_structured_strip_3d(uv_pairs_fn):
         return off_b + k * M + i
 
     faces = []
-    # Side walls across thickness layers k = 0..L-2
     for k in range(L - 1):
         for i in range(M - 1):
             faces.append((ia(k, i), ia(k, i + 1), ia(k + 1, i + 1)))
             faces.append((ia(k, i), ia(k + 1, i + 1), ia(k + 1, i)))
             faces.append((ib(k, i), ib(k + 1, i + 1), ib(k, i + 1)))
             faces.append((ib(k, i), ib(k + 1, i), ib(k + 1, i + 1)))
-
-    # Bottom cap (k = 0) and top cap (k = L - 1) strictly between side A and side B
     for i in range(M - 1):
         faces.append((ia(0, i), ib(0, i + 1), ia(0, i + 1)))
         faces.append((ia(0, i), ib(0, i), ib(0, i + 1)))
         faces.append((ia(L - 1, i), ia(L - 1, i + 1), ib(L - 1, i + 1)))
         faces.append((ia(L - 1, i), ib(L - 1, i + 1), ib(L - 1, i)))
-
-    # End caps at i = 0 and i = M - 1 (if open strip)
-    p0a, p0b = sample_pairs[0]
-    p1a, p1b = sample_pairs[-1]
-    if math.hypot(p0a[0] - p1a[0], p0a[1] - p1a[1]) > 1e-4 or math.hypot(p0b[0] - p1b[0], p0b[1] - p1b[1]) > 1e-4:
+    pa0, pa1 = verts[ia(L // 2, 0)], verts[ia(L // 2, M - 1)]
+    closed = math.dist(pa0, pa1) < 1e-6
+    if not closed:
         for k in range(L - 1):
             faces.append((ia(k, 0), ia(k + 1, 0), ib(k + 1, 0)))
             faces.append((ia(k, 0), ib(k + 1, 0), ib(k, 0)))
             faces.append((ia(k, M - 1), ib(k + 1, M - 1), ia(k + 1, M - 1)))
             faces.append((ia(k, M - 1), ib(k, M - 1), ib(k + 1, M - 1)))
-
     return verts, faces
+
+
+def _fold_h(u, v, h):
+    """Fold a point at height h (mm above the back face) through _fold_uv_to_3d."""
+    return _fold_uv_to_3d(u, v, h / _thick_at(u))
 
 
 def b_solid_from_rings(outer_rings=None, inner_rings=None):
@@ -252,76 +270,99 @@ def b_solid_from_rings(outer_rings=None, inner_rings=None):
     from three exact, structured, non-overlapping parametric strips of `uploads/b.png`:
       1. Circular Ring (`yuvarlak`, centered at (u=24, v=16), R_in = 12.0 mm, R_out = 16.0 mm):
          strictly annular around the Ø24.0 mm bore so ZERO triangles ever cross the bore!
-      2. Curved Bridge (`boğaz`, u = 3.6 .. 24.0 mm, v = 0.0 .. 16.0 mm between the valley arc
+         L.6.0: outer face edges r 0.40 mm, bore edges r 0.25 mm.
+      2. Curved Bridge (`boğaz`, u = 3.6 .. 23.5 mm, v = 0.0 .. 16.0 mm between the valley arc
          R_val = 12.0 mm centered at (16, 16) and the bottom/ring contour):
          curves smoothly through the 90° bend at u = 3.6 .. 4.8 mm!
+         L.6.0: outer edge r 0.40 mm blending to r 0.30 mm at the moulded corner, gap edge r 0.25 mm.
       3. Horizontal Top `Çubuk` (`u = 0.0 .. 4.0 mm, v = 0.0 .. 32.0 mm` with R = 2.0 mm end cap):
          bent 90° across the gap (`boşluk`) so it sits horizontally on top of the 2.00 mm screen edge
-         with a 1.00 mm (`bir milim`) slim profile!
+         with a 1.00 mm (`bir milim`) slim profile! L.6.0: long edges r 0.20 mm.
     """
-    # Strip 1: Closed Annular Ring (`yuvarlak`, u_c = 24.0, v_c = 16.0, R_in = 12.0, R_out = 16.0)
-    def ring_pairs(d):
-        r_i = RING_RI + d * 0.7
-        r_o = RING_RO - d * 0.7
-        N = 128
-        out = []
-        for i in range(N + 1):
-            ang = 2.0 * math.pi * i / N
-            ca, sa = math.cos(ang), math.sin(ang)
-            out.append(((24.0 + r_o * ca, 16.0 + r_o * sa), (24.0 + r_i * ca, 16.0 + r_i * sa)))
-        return out
+    n = FILLET_STEPS
+    L = 2 * (n + 1)
 
-    # Strip 2: Curved Bridge (`boğaz`) connecting the ring (u <= 24.0, v = 0..4.381) to the `çubuk` (u = 3.6..4.0, v = 0..16.0)
-    def bridge_pairs(d):
-        r_val = VALLEY_R + d * 0.6
-        r_o = RING_RO - d * 0.6
-        N = 48
-        out = []
-        # Parameter s in [0, 1] from u = 3.6 (at the 90° bend into the `çubuk`) to u = 23.5 (bottom of ring)
-        for i in range(N + 1):
-            t = i / float(N)
-            u = 3.6 + (23.5 - 3.6) * t
-            v_bot = d * 0.6
-            # Upper boundary of bridge: valley arc centered at (16.0, 16.0) for u <= 12.5, then outer ring arc for u > 12.5
-            if u <= 12.5:
-                du = max(-r_val, min(r_val, u - 16.0))
-                v_top = 16.0 - math.sqrt(max(0.0, r_val * r_val - du * du))
-            else:
-                du = max(-r_o, min(r_o, u - 24.0))
-                v_top = 16.0 - math.sqrt(max(0.0, r_o * r_o - du * du))
-            v_top = max(v_bot + 0.4, v_top)
-            out.append(((u, v_bot), (u, v_top)))
-        return out
+    # Strip 1: closed annular ring, uv centre (24, 16): 2.00 mm thick, flat on the face.
+    N1 = 128
+    pa = fillet_profile(R_RING_OUT, 2.00)
+    pb = fillet_profile(R_BORE, 2.00)
 
-    # Strip 3: Straight Bar (`çubuk`, u in [0.0, 4.0], v in [0.0, 32.0]) with R = 2.0 mm bottom-left fillet and R = 2.0 mm top semicircle cap
-    def stem_pairs(d):
-        d_c = min(0.32, d * 0.6)
-        r_cap = max(0.4, CAP_R - d_c)
-        N = 64
-        out = []
-        v_min = d_c + 0.05
-        v_max = 32.0 - d_c - 0.05
-        for i in range(N + 1):
-            t = i / float(N)
-            v = v_min + (v_max - v_min) * t
-            u_left = d_c
-            u_right = 4.0 - d_c
-            # Bottom-left quarter-circle fillet centered at (2.0, 2.0)
+    def ring_a(i, k):
+        ang = 2.0 * math.pi * i / N1
+        h, d = pa[k]
+        r = RING_RO - d
+        return _fold_h(24.0 + r * math.cos(ang), 16.0 + r * math.sin(ang), h)
+
+    def ring_b(i, k):
+        ang = 2.0 * math.pi * i / N1
+        h, d = pb[k]
+        r = RING_RI + d
+        return _fold_h(24.0 + r * math.cos(ang), 16.0 + r * math.sin(ang), h)
+
+    v1, f1 = _build_strip(N1 + 1, ring_a, ring_b, L)
+
+    # Strip 2: curved bridge from u = 3.6 (into the bend) to u = 23.5 (bottom of the ring).
+    N2 = 48
+    us = [3.6 + (23.5 - 3.6) * i / float(N2) for i in range(N2 + 1)]
+
+    def r_side_a(u):
+        # moulded corner r 0.30 through the bend, blending to the ring family r 0.40 by u = 7.0
+        if u <= 5.5:
+            return R_CORNER
+        if u >= 7.0:
+            return R_RING_OUT
+        return R_CORNER + (R_RING_OUT - R_CORNER) * (u - 5.5) / 1.5
+
+    def v_top(u, d):
+        r_val = VALLEY_R + d
+        r_o = RING_RO - d
+        if u <= 12.5:
+            du = max(-r_val, min(r_val, u - 16.0))
+            return 16.0 - math.sqrt(max(0.0, r_val * r_val - du * du))
+        du = max(-r_o, min(r_o, u - 24.0))
+        return 16.0 - math.sqrt(max(0.0, r_o * r_o - du * du))
+
+    def bridge_a(i, k):
+        u = us[i]
+        h, d = fillet_profile(r_side_a(u), _thick_at(u))[k]
+        return _fold_h(u, d, h)
+
+    def bridge_b(i, k):
+        u = us[i]
+        h, d = fillet_profile(R_GAP, _thick_at(u))[k]
+        ha, da = fillet_profile(r_side_a(u), _thick_at(u))[k]
+        return _fold_h(u, max(da + 0.4, v_top(u, d)), h)
+
+    v2, f2 = _build_strip(N2 + 1, bridge_a, bridge_b, L)
+
+    # Strip 3: straight bar (u 0 .. 4, v 0 .. 32) with the R 2.0 bottom-left fillet and the R 2.0
+    # top semicircle cap of b.png. The bar is 1.00 mm thick (y) and u maps to z at 0.778 mm/mm.
+    N3 = 64
+
+    def bar_pt(i, k, side):
+        u_mid = 2.0
+        d = fillet_profile(R_BAR, STEM_THICK)[k][1]
+        du = d / U_TO_Z            # inset across the bar width, in u
+        dv = d                     # inset at the bar ends, in v (= x, mm)
+        v_min = 0.05 + dv
+        v_max = 32.0 - 0.05 - dv
+        v = v_min + (v_max - v_min) * i / float(N3)
+        r_cap = CAP_R - du
+        if side < 0:
+            u = du
             if v < 2.0:
-                dv = 2.0 - v
-                u_left = max(d_c, 2.0 - math.sqrt(max(0.0, r_cap * r_cap - dv * dv)))
-            # Top semicircle cap centered at (2.0, 30.0)
-            if v > 30.0:
-                dv = v - 30.0
-                hw = math.sqrt(max(0.02, r_cap * r_cap - dv * dv))
-                u_left = 2.0 - hw
-                u_right = 2.0 + hw
-            out.append(((u_left, v), (u_right, v)))
-        return out
+                dv2 = 2.0 - v
+                u = max(du, 2.0 - math.sqrt(max(0.0, r_cap * r_cap - dv2 * dv2)))
+        else:
+            u = 4.0 - du
+        if v > 30.0:
+            dv2 = v - 30.0
+            hw = math.sqrt(max(0.02, r_cap * r_cap - dv2 * dv2))
+            u = u_mid - hw if side < 0 else u_mid + hw
+        h = fillet_profile(R_BAR, _thick_at(u))[k][0]
+        return _fold_h(u, v, h)
 
-    v1, f1 = _build_structured_strip_3d(ring_pairs)
-    v2, f2 = _build_structured_strip_3d(bridge_pairs)
-    v3, f3 = _build_structured_strip_3d(stem_pairs)
+    v3, f3 = _build_strip(N3 + 1, lambda i, k: bar_pt(i, k, -1), lambda i, k: bar_pt(i, k, +1), L)
 
     verts = v1 + v2 + v3
     off2 = len(v1)

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# BUDLUM LEAF · cad/leaf_v2.py · revision L.5.0 · 2026-10-12
+# BUDLUM LEAF · cad/leaf_v2.py · revision L.6.0 · 2026-10-12
+#
+# L.6.0 soft edges (TEAM-BRIEF section 4): quadrant frame outer face edges r 0.65 mm, + seam sides
+# 0.03 mm edge break, B windows and bezels 0.10 mm edge break, B dock pads 0.15 mm (the most a
+# 0.34 mm pad takes), B shell per monogram_letter.py. Run with --stl-only to skip the renders.
 #
 # Full internal & structural 3D multi-part model of Budlum Leaf 160 (Revision L.5.0, 84 subparts):
 #   1. 4-Quadrant Plus (+) Puzzle-Interlocking Polycarbonate Screen-Battery Body:
@@ -45,6 +49,8 @@ from leaf_geom import (
     circle,
     mesh_from_rings,
     stack,
+    stack_multi,
+    SEAM_EDGE_BREAK,
     write_stl,
 )
 from monogram_letter import (
@@ -69,7 +75,7 @@ T_BODY = 2.00       # Exact 2.00 mm (`2 milim`) 4-Quadrant (+) screen-battery bo
 QUAD_W = 40.0       # Each quadrant is 40.0 x 80.0 x 2.00 mm (17.0 g -> 68.0 g total body)
 QUAD_H = 80.0
 CORNER_R = 6.35     # Exact 6.35 mm (`63.5 px` at 10 px/mm, IoU = 0.999987 against `Group 911.png`)
-EDGE_R = 0.62
+EDGE_R = 0.65       # [DECISION] TEAM-BRIEF 4: body perimeter face edges r 0.65 mm
 MOD_T = 2.00        # 2.00 mm front-ring depth + 1.00 mm (`bir milim`) horizontal top `çubuk`
 
 
@@ -115,10 +121,14 @@ def cyl_part(cx, cy, r, z0, z1, bevel=0.06, n=32):
     return mesh_from_rings(rings)
 
 
-def ring_part(cx, cy, r_out, r_in, z0, z1, bevel=0.06, n=48):
-    b_c = max(0.01, min(bevel, (z1 - z0) * 0.42, (r_out - r_in) * 0.35))
-    o_rings = stack(lambda d: shift(circle(r_out, n, d), cx, cy), z0, z1, b_c, steps=4)
-    i_rings = stack(lambda d: shift(circle(r_in, n, -d), cx, cy), z0, z1, b_c, steps=4)
+def ring_part(cx, cy, r_out, r_in, z0, z1, bevel=0.06, n=48, bevel_in=None):
+    lim = min((z1 - z0) * 0.42, (r_out - r_in) * 0.35)
+    b_o = max(0.01, min(bevel, lim))
+    b_i = max(0.01, min(bevel if bevel_in is None else bevel_in, lim))
+    rings = stack_multi(lambda do, di: (shift(circle(r_out, n, do), cx, cy), shift(circle(r_in, n, -di), cx, cy)),
+                        z0, z1, (b_o, b_i), steps=4)
+    o_rings = [(z, p[0]) for (z, p) in rings]
+    i_rings = [(z, p[1]) for (z, p) in rings]
     return mesh_from_rings(o_rings, i_rings)
 
 
@@ -314,8 +324,8 @@ def monogram_parts(with_panel=True):
     v_ics, f_ics = merge(ic_parts)
 
     # 7. Front Ø24.0 mm Sapphire Crystal Window + Chamfered Titanium Bezel (z = 1.72..2.02 mm)
-    v_bez, f_bez = ring_part(cx, cy, 12.35, 10.60, 1.70, 2.02, bevel=0.05, n=64)
-    v_sap_f, f_sap_f = cyl_part(cx, cy, 10.60, 1.80, 1.99, bevel=0.03, n=64)
+    v_bez, f_bez = ring_part(cx, cy, 12.35, 10.60, 1.70, 2.02, bevel=0.10, n=64)
+    v_sap_f, f_sap_f = cyl_part(cx, cy, 10.60, 1.80, 1.99, bevel=0.10, n=64)
 
     # 8. 50 MP CMOS Image Sensor (12.8 x 9.6 x 0.65 mm) + Gold Wire-Bond Substrate (z = 0.46..0.82 mm)
     v_cmos_sub, f_cmos_sub = box_part(cx, cy, 13.4, 10.2, 0.8, 0.46, 0.60, bevel=0.03)
@@ -338,16 +348,16 @@ def monogram_parts(with_panel=True):
         ring_part(cx, cy, 5.10, 2.80, 1.59, 1.76, bevel=0.03, n=48),
     ]
     v_lens, f_lens = merge(lens_parts)
-    v_pupil, f_pupil = cyl_part(cx, cy, 2.85, 1.74, 2.02, bevel=0.02, n=40)
+    v_pupil, f_pupil = cyl_part(cx, cy, 2.85, 1.74, 2.02, bevel=0.10, n=40)
 
     # 11. Acoustic & Illumination Ring Components inside Ø24.0 mm bore:
     #     2x MEMS Microphones, 9.0 x 3.2 mm Micro-Speaker Box, Dual-CCT LED Flash
     v_spk, f_spk = box_part(cx, cy - 9.0, 8.4, 2.7, 0.6, 0.75, 1.95, bevel=0.04)
-    v_mic1, f_mic1 = cyl_part(cx - 8.2, cy + 5.8, 1.20, 1.10, 2.01, bevel=0.03, n=24)
-    v_mic2, f_mic2 = cyl_part(cx - 8.2, cy - 5.8, 1.20, 1.10, 2.01, bevel=0.03, n=24)
+    v_mic1, f_mic1 = cyl_part(cx - 8.2, cy + 5.8, 1.20, 1.10, 2.01, bevel=0.10, n=24)
+    v_mic2, f_mic2 = cyl_part(cx - 8.2, cy - 5.8, 1.20, 1.10, 2.01, bevel=0.10, n=24)
     v_mics, f_mics = merge([(v_mic1, f_mic1), (v_mic2, f_mic2)])
-    v_fl1, f_fl1 = cyl_part(cx + 8.2, cy + 5.8, 1.50, 1.10, 2.02, bevel=0.03, n=28)
-    v_fl2, f_fl2 = cyl_part(cx + 8.2, cy - 5.8, 1.10, 1.10, 2.02, bevel=0.03, n=24)
+    v_fl1, f_fl1 = cyl_part(cx + 8.2, cy + 5.8, 1.50, 1.10, 2.02, bevel=0.10, n=28)
+    v_fl2, f_fl2 = cyl_part(cx + 8.2, cy - 5.8, 1.10, 1.10, 2.02, bevel=0.10, n=24)
     v_flash, f_flash = merge([(v_fl1, f_fl1), (v_fl2, f_fl2)])
 
     # 12. Middle 0.10 mm Copper-Graphite EM & Thermal Shield (z = 0.36..0.46 mm, 0% Z-overlap)
@@ -359,7 +369,7 @@ def monogram_parts(with_panel=True):
         ang = math.radians(k * 45.0 + 22.5)
         mx = cx + 13.6 * math.cos(ang)
         my = cy + 13.6 * math.sin(ang)
-        dock_mags.append(cyl_part(mx, my, 1.05, -0.04, 0.32, bevel=0.02, n=20))
+        dock_mags.append(cyl_part(mx, my, 1.05, -0.04, 0.32, bevel=0.15, n=20))
     v_dmags, f_dmags = merge(dock_mags)
 
     dock_pins = []
@@ -367,7 +377,7 @@ def monogram_parts(with_panel=True):
         ang = math.radians(k * 30.0)
         px = cx + 12.55 * math.cos(ang)
         py = cy + 12.55 * math.sin(ang)
-        dock_pins.append(cyl_part(px, py, 0.40, -0.06, 0.28, bevel=0.02, n=16))
+        dock_pins.append(cyl_part(px, py, 0.40, -0.06, 0.28, bevel=0.15, n=16))
     v_dpins, f_dpins = merge(dock_pins)
 
     parts = [
@@ -397,8 +407,8 @@ def monogram_parts(with_panel=True):
 
     if with_panel:
         # 14. Rear Ø22.4 mm Active Round LTPO AMOLED Display (z = 0.00..0.36 mm)
-        v_pbez, f_pbez = ring_part(cx, cy, 12.35, 11.20, -0.02, 0.24, bevel=0.04, n=64)
-        v_pscr, f_pscr = cyl_part(cx, cy, 11.20, 0.08, 0.35, bevel=0.02, n=64)
+        v_pbez, f_pbez = ring_part(cx, cy, 12.35, 11.20, -0.02, 0.24, bevel=0.10, n=64)
+        v_pscr, f_pscr = cyl_part(cx, cy, 11.20, 0.08, 0.35, bevel=0.10, n=64)
         v_pring, f_pring = ring_part(cx, cy, 9.80, 9.10, -0.03, 0.12, bevel=0.02, n=64)
         v_pdot, f_pdot = cyl_part(cx, cy, 1.10, -0.04, 0.12, bevel=0.02, n=28)
         v_ph1, f_ph1 = box_part(cx, cy + 3.4, 0.90, 6.2, 0.25, -0.04, 0.12, bevel=0.02)
@@ -439,14 +449,16 @@ def quad_plus_body_parts(explode_q4=0.0):
 
         # 2.1 Outer Biocompatible ISO 10993 Polycarbonate Perimeter Frame of this 40 x 80 x 2.00 mm Quadrant
         #     (Exact Group 911.png outer corner radius R = 6.35 mm, < 15 µm index-matched + seam)
-        o_rings = stack(
-            lambda d, sx=sx, sy=sy, cx=cx, cy=cy: shift(quadrant_outline(sx, sy, QUAD_W, QUAD_H, CORNER_R, 0.18, d, 12), cx, cy),
-            0.0, T_BODY, EDGE_R, steps=5
+        # L.6.0: outer body sides r 0.65 fillet, + seam sides 0.03 break, inner window lip r 0.39
+        fr_rings = stack_multi(
+            lambda d, ds, di, sx=sx, sy=sy, cx=cx, cy=cy: (
+                shift(quadrant_outline(sx, sy, QUAD_W, QUAD_H, CORNER_R, 0.18, d, 12, d_seam=ds), cx, cy),
+                shift(quadrant_outline(sx, sy, QUAD_W - 2.6, QUAD_H - 2.6, CORNER_R - 1.2, 0.15, -di, 12), cx, cy),
+            ),
+            0.0, T_BODY, (EDGE_R, SEAM_EDGE_BREAK, EDGE_R * 0.6), steps=6
         )
-        i_rings = stack(
-            lambda d, sx=sx, sy=sy, cx=cx, cy=cy: shift(quadrant_outline(sx, sy, QUAD_W - 2.6, QUAD_H - 2.6, CORNER_R - 1.2, 0.15, -d, 12), cx, cy),
-            0.0, T_BODY, EDGE_R * 0.6, steps=5
-        )
+        o_rings = [(z, p[0]) for (z, p) in fr_rings]
+        i_rings = [(z, p[1]) for (z, p) in fr_rings]
         v_qframe, f_qframe = mesh_from_rings(o_rings, i_rings)
         parts.append(("%s_pc_frame" % qtag, v_qframe, f_qframe, (0.76, 0.88, 0.96), 0.44))
 
@@ -669,6 +681,8 @@ def main():
         "STL tris · frame=%d screen=%d battery=%d bent=%d b_mod=%d device=%d"
         % (n_fr, n_sc, n_ba, n_bb, n_mo, n_dv)
     )
+    if "--stl-only" in sys.argv:
+        return
 
     # ── Render 1 & 2: Turned & 90°-Bent-at-Gap `b` Module Front & Back (`render-module.png`, `render-module-back.png`)
     b_centered = place_parts(b_parts, -MON_W / 2.0, -STEM_H / 2.0, -0.5)

@@ -1,0 +1,1 @@
+viewport 400x800, frames 10000, inputs 2061, seconds signed 42, sample rate 62500/1000000, frames re-rendered by the second validator 626, matched bit for bit 626, speculative frames per frame 1, reconciliations 6 (diverged 0), wall time 129.5 s

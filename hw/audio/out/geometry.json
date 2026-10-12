@@ -1,0 +1,191 @@
+{
+ "bore_r_span": [
+  12.0,
+  15.600000000000001
+ ],
+ "wall_r_span": [
+  11.8,
+  15.8
+ ],
+ "outer_wall_at_x0": 0.3999999999999986,
+ "window_plane_clearance": 0.7464346247147269,
+ "inner_wall_intrusion_midplane": 0.1999999999999993,
+ "inner_wall_intrusion_halfspan_x": 2.1817424229271407,
+ "closed_outer_halfspan": 2.5219040425836954,
+ "closed_outer_length": 5.043808085167391,
+ "closed_bore_length": 4.843808085167391,
+ "x_bottom": -2.321904042583695,
+ "x_bore_breaks_rim": 3.5552777669262294,
+ "x_capture_ends_r16": 8.096912991998863,
+ "x_cradle_ends_r16": 10.583005244258363,
+ "x_inboard_wall_ends_r16": 10.805554127392078,
+ "shoulder_seat": {
+  "13.8": {
+   "x_shoulder": 11.478,
+   "boss_needed": 0.606
+  },
+  "14.0": {
+   "x_shoulder": 11.678,
+   "boss_needed": 0.744
+  },
+  "15.0": {
+   "x_shoulder": 12.678,
+   "boss_needed": 1.457
+  }
+ },
+ "trough_length_to_shoulder": 9.15619191483261,
+ "x_capture_ends_boss0.5": 9.0448880590088,
+ "x_capture_ends_boss1.0": 9.927738916792684,
+ "entry_angle_to_rim_tangent_deg": 30.401547663243015,
+ "wrap_table": [
+  {
+   "x": -2.32,
+   "s": 0.0,
+   "wrap_r16": 360.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 0,
+   "s": 2.32,
+   "wrap_r16": 360.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 2.5,
+   "s": 4.82,
+   "wrap_r16": 360.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 3.56,
+   "s": 5.88,
+   "wrap_r16": 356.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 5,
+   "s": 7.32,
+   "wrap_r16": 282.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 6,
+   "s": 8.32,
+   "wrap_r16": 250.0,
+   "wrap_boss1": 360.0
+  },
+  {
+   "x": 7,
+   "s": 9.32,
+   "wrap_r16": 218.1,
+   "wrap_boss1": 320.1
+  },
+  {
+   "x": 8.1,
+   "s": 10.42,
+   "wrap_r16": 179.9,
+   "wrap_boss1": 259.1
+  },
+  {
+   "x": 9,
+   "s": 11.32,
+   "wrap_r16": 143.0,
+   "wrap_boss1": 220.4
+  },
+  {
+   "x": 9.93,
+   "s": 12.25,
+   "wrap_r16": 91.7,
+   "wrap_boss1": 179.9
+  },
+  {
+   "x": 10.5,
+   "s": 12.82,
+   "wrap_r16": 32.7,
+   "wrap_boss1": 152.3
+  },
+  {
+   "x": 11.68,
+   "s": 14.0,
+   "wrap_r16": 0.0,
+   "wrap_boss1": 72.9
+  }
+ ],
+ "contacts": [
+  {
+   "contact": "T  tip, detent in the neck",
+   "signal": "L",
+   "s": 2.4,
+   "x": 0.08,
+   "plug_zone": "tip neck",
+   "margin": 0.3,
+   "margin_after_scatter": 0.14,
+   "region": "closed end",
+   "inboard_wall": true
+  },
+  {
+   "contact": "D  detect leaf behind T",
+   "signal": "DET",
+   "s": 2.4,
+   "x": 0.08,
+   "plug_zone": "tip neck",
+   "margin": 0.3,
+   "margin_after_scatter": 0.14,
+   "region": "closed end",
+   "inboard_wall": true
+  },
+  {
+   "contact": "R1 ring 1",
+   "signal": "R",
+   "s": 5.4,
+   "x": 3.08,
+   "plug_zone": "ring 1",
+   "margin": 0.9,
+   "margin_after_scatter": 0.67,
+   "region": "closed, rim wall thinning",
+   "inboard_wall": true
+  },
+  {
+   "contact": "R2 ring 2",
+   "signal": "GND, Kelvin pair",
+   "s": 8.2,
+   "x": 5.88,
+   "plug_zone": "ring 2",
+   "margin": 0.9,
+   "margin_after_scatter": 0.59,
+   "region": "trough, captured",
+   "inboard_wall": true
+  },
+  {
+   "contact": "S  sleeve C-clip",
+   "signal": "MIC",
+   "s": 11.2,
+   "x": 8.88,
+   "plug_zone": "sleeve",
+   "margin": 1.1,
+   "margin_after_scatter": 0.72,
+   "region": "trough, cradle and boss",
+   "inboard_wall": true
+  }
+ ],
+ "pcba_notch": {
+  "y_from": 11.600000000000001,
+  "x_from": -2.52,
+  "x_to": 9.51
+ },
+ "a3_conflict_arc_deg": [
+  49.6,
+  100.4
+ ],
+ "a3_detour_inboard_r": 11.600000000000001,
+ "overmold_below_ring_underside": {
+  "4": 0.0,
+  "5": 0.5,
+  "6": 1.0,
+  "7": 1.5
+ },
+ "jack_sector_deg": [
+  47.5,
+  102.1
+ ]
+}

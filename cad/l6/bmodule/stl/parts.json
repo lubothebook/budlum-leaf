@@ -1,0 +1,677 @@
+{
+ "params": {
+  "module_t": 4.0,
+  "body_t": 2.0,
+  "edge_y": 36.0,
+  "bar_len": 32.0,
+  "bar_w": 4.0,
+  "bar_h": 1.0,
+  "cap_r": 2.0,
+  "ring_c": [
+   16.0,
+   16.0
+  ],
+  "ring_ro": 16.0,
+  "ring_ri": 12.0,
+  "valley_c": [
+   16.0,
+   24.0
+  ],
+  "valley_r": 12.0,
+  "neck_t": 2.0,
+  "skin": 0.3,
+  "wall": 0.6,
+  "bar_layers": [
+   0.25,
+   0.1,
+   0.4,
+   0.05,
+   0.2
+  ],
+  "f_ring_out": 0.4,
+  "f_ring_bore": 0.25,
+  "f_bar": 0.2,
+  "f_corner": 0.3,
+  "f_jack": 0.2,
+  "f_window": 0.1,
+  "f_neck_top": 0.25,
+  "f_neck_bot": 0.2,
+  "cam_c": [
+   0.0,
+   0.5
+  ],
+  "cam_xy": [
+   7.0,
+   6.0
+  ],
+  "cam_h": 3.9,
+  "l1_d": 3.0,
+  "cam_nose_xy": [
+   6.3,
+   5.1
+  ],
+  "disp_hole": [
+   6.5,
+   5.3
+  ],
+  "rear_pocket_d": 0.2,
+  "jack_off": 13.8,
+  "jack_bore": 3.6,
+  "jack_wall": 0.2,
+  "jack_closed": 5.0,
+  "jack_trough": 9.0,
+  "z_amoled": [
+   0.3,
+   0.7
+  ],
+  "z_shield": [
+   0.7,
+   0.85
+  ],
+  "z_pcba": [
+   0.9,
+   1.45
+  ],
+  "z_chip0": 1.46,
+  "z_cell": [
+   1.5,
+   3.0
+  ],
+  "z_spk": [
+   0.9,
+   3.1
+  ],
+  "z_spreader": [
+   2.47,
+   3.27
+  ],
+  "z_gasket": [
+   3.3,
+   3.7
+  ],
+  "z_mag": [
+   0.3,
+   1.4
+  ],
+  "z_flex": [
+   1.45,
+   1.55
+  ],
+  "z_a3": [
+   1.6,
+   2.4
+  ],
+  "keep_x": 11.4,
+  "keep_y": 3.0
+ },
+ "info": {
+  "s_closed0": -2.5219040425836954,
+  "s_closed1": 2.4780959574163046,
+  "s_mouth": -11.521904042583696,
+  "flex_len": 16.049999999999997,
+  "neck_plan_area": 802.2877137837366
+ },
+ "parts": {
+  "bar_shell": {
+   "no": 1,
+   "file": "bmodule-p01-bar-shell.stl",
+   "material": "LCP-GF40 bar, bridge and moulded 90\u00b0 corner",
+   "density": 1.7,
+   "group": "bar",
+   "note": "",
+   "volume_mm3": 756.9258,
+   "bounds": [
+    0.0,
+    14.45,
+    -2.0,
+    35.9,
+    37.0,
+    2.0
+   ]
+  },
+  "a1_a2_copper": {
+   "no": 2,
+   "file": "bmodule-p02-a1-a2-copper.stl",
+   "material": "LDS copper",
+   "density": 8.96,
+   "group": "bar",
+   "note": "",
+   "volume_mm3": 5.292,
+   "bounds": [
+    1.3,
+    36.75,
+    -1.8,
+    30.7,
+    36.8,
+    1.8
+   ]
+  },
+  "a4_array": {
+   "no": 3,
+   "file": "bmodule-p03-a4-array.stl",
+   "material": "2-layer LCP flex, 1 x 4 patches",
+   "density": 2.4,
+   "group": "bar",
+   "note": "",
+   "volume_mm3": 4.48,
+   "bounds": [
+    16.5,
+    36.25,
+    -1.6,
+    30.5,
+    36.35,
+    1.6
+   ]
+  },
+  "body_leaves": {
+   "no": 4,
+   "file": "bmodule-p04-body-leaves.stl",
+   "material": "12 hard-gold spring leaves, field 9.6",
+   "density": 8.8,
+   "group": "bar",
+   "note": "x 6.20 .. 15.80",
+   "volume_mm3": 4.5,
+   "bounds": [
+    6.35,
+    36.0,
+    -1.75,
+    15.65,
+    36.25,
+    1.25
+   ]
+  },
+  "corner_flex": {
+   "no": 5,
+   "file": "bmodule-p05-corner-flex.stl",
+   "material": "20-line LCP flex, 0.10",
+   "density": 2.2,
+   "group": "bar",
+   "note": "length 16.05",
+   "volume_mm3": 5.5164,
+   "bounds": [
+    0.4,
+    23.75,
+    -0.1,
+    5.5,
+    36.55,
+    1.55
+   ]
+  },
+  "ring_shell": {
+   "no": 6,
+   "file": "bmodule-p06-ring-shell.stl",
+   "material": "LCP-GF40, no metal",
+   "density": 1.7,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 395.1573,
+   "bounds": [
+    0.0,
+    0.0,
+    -0.0,
+    32.0,
+    32.0,
+    4.0
+   ]
+  },
+  "front_window": {
+   "no": 7,
+   "file": "bmodule-p07-front-window.stl",
+   "material": "sapphire, AR coat, L1 seat",
+   "density": 3.98,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 133.4277,
+   "bounds": [
+    4.0,
+    4.0,
+    3.7,
+    28.0,
+    28.0,
+    4.0
+   ]
+  },
+  "rear_window": {
+   "no": 8,
+   "file": "bmodule-p08-rear-window.stl",
+   "material": "sapphire, oleophobic, 0.20 camera pocket",
+   "density": 3.98,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 128.6567,
+   "bounds": [
+    4.0,
+    4.0,
+    0.0,
+    28.0,
+    28.0,
+    0.3
+   ]
+  },
+  "rear_amoled": {
+   "no": 9,
+   "file": "bmodule-p09-rear-amoled.stl",
+   "material": "round LTPO AMOLED \u00d823.2, 6.5 x 5.3 hole",
+   "density": 2.6,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 169.048,
+   "bounds": [
+    4.4,
+    4.4,
+    0.3,
+    27.6,
+    27.6,
+    0.7
+   ]
+  },
+  "cu_graphite_shield": {
+   "no": 10,
+   "file": "bmodule-p10-cu-graphite-shield.stl",
+   "material": "Cu-graphite, \u00d823.6",
+   "density": 3.5,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 65.5984,
+   "bounds": [
+    4.2,
+    4.2,
+    0.7,
+    27.8,
+    27.8,
+    0.85
+   ]
+  },
+  "camera_column": {
+   "no": 11,
+   "file": "bmodule-p11-camera-column.stl",
+   "material": "50 MP column, L1 in the window",
+   "density": 2.6,
+   "group": "ring",
+   "note": "3.60 body + 0.30 L1 = 3.90",
+   "volume_mm3": 145.4231,
+   "bounds": [
+    12.5,
+    13.5,
+    0.1,
+    19.5,
+    19.5,
+    4.0
+   ]
+  },
+  "led_flash": {
+   "no": 12,
+   "file": "bmodule-p12-led-flash.stl",
+   "material": "2700K + 5600K CSP",
+   "density": 3.0,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 2.496,
+   "bounds": [
+    19.65,
+    15.0,
+    1.46,
+    21.25,
+    17.4,
+    2.11
+   ]
+  },
+  "micro_speaker": {
+   "no": 13,
+   "file": "bmodule-p13-micro-speaker.stl",
+   "material": "balanced micro-speaker 9.0 x 3.2 x 2.2",
+   "density": 4.0,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 353.298,
+   "bounds": [
+    1.4,
+    4.6,
+    0.9,
+    11.5,
+    20.5,
+    3.1
+   ]
+  },
+  "mems_mics": {
+   "no": 14,
+   "file": "bmodule-p14-mems-mics.stl",
+   "material": "2 x MEMS, ePTFE",
+   "density": 2.5,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 8.748,
+   "bounds": [
+    4.0,
+    7.2,
+    1.46,
+    11.2,
+    27.8,
+    2.36
+   ]
+  },
+  "ring_pcba": {
+   "no": 15,
+   "file": "bmodule-p15-ring-pcba.stl",
+   "material": "8-layer HDI, \u00d830.0 x 0.55",
+   "density": 2.8,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 5.6956,
+   "bounds": [
+    14.1243,
+    14.2598,
+    0.9,
+    28.0567,
+    25.7488,
+    1.45
+   ]
+  },
+  "u1_tcon": {
+   "no": 16,
+   "file": "bmodule-p16-u1-tcon.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 12.168,
+   "bounds": [
+    13.4,
+    24.8,
+    1.46,
+    18.6,
+    30.0,
+    1.91
+   ]
+  },
+  "u2a_wifi7": {
+   "no": 17,
+   "file": "bmodule-p17-u2a-wifi7.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 15.0,
+   "bounds": [
+    20.5,
+    19.7,
+    1.46,
+    25.5,
+    24.7,
+    2.06
+   ]
+  },
+  "u2b_60ghz_uwb": {
+   "no": 18,
+   "file": "bmodule-p18-u2b-60ghz-uwb.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 13.5,
+   "bounds": [
+    13.5,
+    19.85,
+    1.46,
+    18.5,
+    24.35,
+    2.06
+   ]
+  },
+  "u5_modem": {
+   "no": 19,
+   "file": "bmodule-p19-u5-modem.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 64.0,
+   "bounds": [
+    3.8,
+    13.5,
+    1.46,
+    11.8,
+    23.5,
+    2.26
+   ]
+  },
+  "u6_decoder": {
+   "no": 20,
+   "file": "bmodule-p20-u6-decoder.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 25.2,
+   "bounds": [
+    21.35,
+    13.4,
+    1.46,
+    27.35,
+    19.4,
+    2.16
+   ]
+  },
+  "u7_secure": {
+   "no": 21,
+   "file": "bmodule-p21-u7-secure.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 1.6,
+   "bounds": [
+    22.3,
+    25.0,
+    1.46,
+    24.3,
+    27.0,
+    1.86
+   ]
+  },
+  "u8_imu": {
+   "no": 22,
+   "file": "bmodule-p22-u8-imu.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 2.8,
+   "bounds": [
+    11.3,
+    25.0,
+    1.46,
+    13.3,
+    27.0,
+    2.16
+   ]
+  },
+  "u3_audio": {
+   "no": 23,
+   "file": "bmodule-p23-u3-audio.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 4.096,
+   "bounds": [
+    2.6,
+    10.0,
+    1.46,
+    5.8,
+    13.2,
+    1.86
+   ]
+  },
+  "u4_power": {
+   "no": 23,
+   "file": "bmodule-p23-u4-power.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 4.096,
+   "bounds": [
+    25.8,
+    19.6,
+    1.46,
+    29.0,
+    22.8,
+    1.86
+   ]
+  },
+  "a3_loop": {
+   "no": 24,
+   "file": "bmodule-p24-a3-loop.stl",
+   "material": "LDS loop \u00d831 class",
+   "density": 8.96,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 2.7542,
+   "bounds": [
+    0.6,
+    0.6,
+    1.6,
+    31.4,
+    26.7777,
+    2.4
+   ]
+  },
+  "aperture_tuners": {
+   "no": 25,
+   "file": "bmodule-p25-aperture-tuners.stl",
+   "material": "3 switched networks",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 1.8,
+   "bounds": [
+    9.5,
+    3.5,
+    1.46,
+    27.3,
+    24.0,
+    1.86
+   ]
+  },
+  "jack_sleeve": {
+   "no": 26,
+   "file": "bmodule-p26-jack-sleeve.stl",
+   "material": "3.5 mm sleeve, \u00d83.6 bore, 0.20 wall, blind end",
+   "density": 8.5,
+   "group": "ring",
+   "note": "closed end s = -2.52 .. 2.48",
+   "volume_mm3": 14.4448,
+   "bounds": [
+    27.8,
+    13.4781,
+    0.0,
+    31.8,
+    18.6781,
+    4.0
+   ]
+  },
+  "cell_mux": {
+   "no": 27,
+   "file": "bmodule-p27-cell-mux.stl",
+   "material": "die / package",
+   "density": 2.4,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 3.6,
+   "bounds": [
+    19.0,
+    25.0,
+    1.46,
+    22.0,
+    28.0,
+    1.86
+   ]
+  },
+  "seat_magnets": {
+   "no": 28,
+   "file": "bmodule-p28-seat-magnets.stl",
+   "material": "8 x N52H in the sliding pad",
+   "density": 7.5,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 1020.2819,
+   "bounds": [
+    -3.2577,
+    -3.9732,
+    0.3,
+    35.6904,
+    35.2577,
+    1.4
+   ]
+  },
+  "b_cell": {
+   "no": 29,
+   "file": "bmodule-p29-b-cell.stl",
+   "material": "Li-ion 20 x 8 x 1.5, 0.14 Wh",
+   "density": 2.6,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 15.36,
+   "bounds": [
+    5.2,
+    13.2,
+    1.5,
+    6.0,
+    26.0,
+    3.0
+   ]
+  },
+  "gaskets": {
+   "no": 30,
+   "file": "bmodule-p30-gaskets.stl",
+   "material": "FKM 60A, \u00d830.0 x 3.6 x 0.40",
+   "density": 1.85,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 72.9708,
+   "bounds": [
+    1.0,
+    1.0,
+    3.3,
+    31.0,
+    25.51,
+    3.7
+   ]
+  },
+  "spreader_pcm": {
+   "no": 31,
+   "file": "bmodule-p31-spreader-pcm.stl",
+   "material": "graphite + PCM, \u00d828 x 0.80",
+   "density": 1.2,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 218.689,
+   "bounds": [
+    8.0157,
+    2.0,
+    2.47,
+    30.0,
+    24.1265,
+    3.27
+   ]
+  },
+  "shield_cans": {
+   "no": 32,
+   "file": "bmodule-p32-shield-cans.stl",
+   "material": "nickel silver over U2A, U2B, U5",
+   "density": 8.7,
+   "group": "ring",
+   "note": "",
+   "volume_mm3": 19.669,
+   "bounds": [
+    3.65,
+    13.35,
+    1.46,
+    25.65,
+    24.85,
+    2.41
+   ]
+  }
+ }
+}

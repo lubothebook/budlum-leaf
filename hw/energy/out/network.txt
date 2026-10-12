@@ -1,0 +1,27 @@
+1S128P body bus, 8 x 16 tiles
+hinge line: Cu 18.7 mOhm, EGaIn 14.7 mOhm, both 8.2 mOhm; fuse neck 84 mOhm
+fuse: melt I2t 1.76e-04 A2s, hinge melt I2t 8.90e-02 A2s, selectivity x506
+fuse: Rth 4340 K/W, steady fusing current 1.69 A, rise 0.06 A 1.3 K, 0.10 A 3.6 K, 0.30 A 32.8 K, 1.00 A 364.6 K
+[G] video 3.27 W (body 1.35, B 1.92)       worst seat (0, 15): Vseat 3.783 V, cell 5.3..17.6 mA (x3.31), hinge max 0.287 A, seam max 0.135 A, net loss 23.2 mW, cell loss 40 mW
+[G] outdoor video 5G (body 4.24, B 2.42)   worst seat (0, 15): Vseat 3.730 V, cell 12.5..28.2 mA (x2.26), hinge max 0.367 A, seam max 0.174 A, net loss 37.9 mW, cell loss 154 mW
+[G] peak (body 4.24, B 4.50)               worst seat (0, 15): Vseat 3.646 V, cell 15.2..45.2 mA (x2.97), hinge max 0.698 A, seam max 0.330 A, net loss 137.3 mW, cell loss 293 mW
+[S] video 3.27 W (body 1.35, B 1.92)       worst seat (7, 15): Vseat 3.787 V, cell 5.2..18.5 mA (x3.56), hinge max 0.286 A, seam max 0.130 A, net loss 22.3 mW, cell loss 37 mW
+[S] outdoor video 5G (body 4.24, B 2.42)   worst seat (7, 15): Vseat 3.739 V, cell 12.3..29.3 mA (x2.39), hinge max 0.365 A, seam max 0.166 A, net loss 36.5 mW, cell loss 140 mW
+[S] peak (body 4.24, B 4.50)               worst seat (0, 15): Vseat 3.659 V, cell 14.9..47.2 mA (x3.17), hinge max 0.694 A, seam max 0.316 A, net loss 131.7 mW, cell loss 268 mW
+[G] peak with every seam coupler powered, seat (0,0): hinge max 0.670 A, seam 0.152 A
+[G] video, Q1 removed, seat (7,0): Vseat 3.775 V, cell max 19.2 mA, seam max 0.217 A
+[G] video, Q2 removed, seat (0,15): Vseat 3.779 V, cell max 18.4 mA, seam max 0.123 A
+[G] video to empty, seat (0,15), balance k=0.0: 1.80 h, largest SOC spread 19.5 %, SOC left 4.0 %, load energy 5.89 Wh
+[G] video to empty, seat (0,15), balance k=2.0: 1.80 h, largest SOC spread 2.2 %, SOC left 3.7 %, load energy 5.89 Wh
+[S] video to empty, seat (0,15), balance k=0.0: 2.25 h, largest SOC spread 19.7 %, SOC left 3.8 %, load energy 7.36 Wh
+[S] video to empty, seat (0,15), balance k=2.0: 2.24 h, largest SOC spread 2.3 %, SOC left 3.9 %, load energy 7.33 Wh
+[G] Qi2.2 25 W: 20.4 W to cells, cell 35.3..48.9 mA, 3.54 C max (2.79 C mean), hinge 0.611 A, seam 0.000 A, heat 5.79 W
+[S] Qi2.2 25 W: 20.4 W to cells, cell 35.1..50.2 mA, 2.92 C max (2.25 C mean), hinge 0.613 A, seam 0.000 A, heat 5.71 W
+cell short at (0, 0): fault 14.9 A through its fuse, opens in 0.79 us; other cells max 0.337 A; hinge max 7.78 A
+cell short at (3, 7): fault 19.9 A through its fuse, opens in 0.45 us; other cells max 0.242 A; hinge max 6.69 A
+cell short at (4, 12): fault 16.8 A through its fuse, opens in 0.62 us; other cells max 0.312 A; hinge max 6.78 A
+cell short at (7, 15): fault 14.9 A through its fuse, opens in 0.79 us; other cells max 0.337 A; hinge max 7.78 A
+bus short at (0, 0): 28.9 A, cell max 0.75 A, hinge max 14.74 A, hinge melts after 0.41 ms (TCM trips in 0.02 ms)
+bus short at (3, 7): 54.5 A, cell max 0.73 A, hinge max 18.10 A, hinge melts after 0.27 ms (TCM trips in 0.02 ms)
+[G] one cell holds 192 J; adiabatic tile rise 362 K: a contained event needs the vent and the spread of ENR-15
+[S] one cell holds 235 J; adiabatic tile rise 443 K: a contained event needs the vent and the spread of ENR-15

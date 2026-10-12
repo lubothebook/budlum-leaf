@@ -1,0 +1,385 @@
+{
+ "nre": {
+  "low": {
+   "lines": 199.0,
+   "contingency": 29.849999999999998,
+   "total": 228.85
+  },
+  "base": {
+   "lines": 299.5,
+   "contingency": 74.875,
+   "total": 374.375
+  },
+  "high": {
+   "lines": 448.0,
+   "contingency": 156.79999999999998,
+   "total": 604.8000000000001
+  }
+ },
+ "nre_lines": [
+  {
+   "item": "508 ppi micro-LED tile: partner NRE, masks, transfer and repair tooling",
+   "owner": "hw/display",
+   "low": 25.0,
+   "base": 38.0,
+   "high": 60.0,
+   "basis": "two partner programmes in parallel, 3 tile spins"
+  },
+  {
+   "item": "pixel uIC, 28 nm: design, IP, 2 mask sets",
+   "owner": "hw/display",
+   "low": 8.0,
+   "base": 12.0,
+   "high": 18.0,
+   "basis": "28 nm mask set about 1.5-3 M USD each"
+  },
+  {
+   "item": "TGV glass carrier and black cut process",
+   "owner": "hw/display",
+   "low": 3.0,
+   "base": 5.0,
+   "high": 8.0,
+   "basis": "glass partner development and laser cells"
+  },
+  {
+   "item": "hermetic micro cell: can, feedthrough, Si-C, formation line pilot",
+   "owner": "hw/energy",
+   "low": 12.0,
+   "base": 18.0,
+   "high": 30.0,
+   "basis": "custom can line and 3 sample generations"
+  },
+  {
+   "item": "TCM protection IC per tile, custom",
+   "owner": "hw/energy",
+   "low": 4.0,
+   "base": 6.0,
+   "high": 9.0,
+   "basis": "mixed-signal derivative of a shipping protection IC"
+  },
+  {
+   "item": "U1 TCON and compositor ASIC",
+   "owner": "rtl/u1",
+   "low": 18.0,
+   "base": 28.0,
+   "high": 40.0,
+   "basis": "one spin plus a metal fix, 12 nm class"
+  },
+  {
+   "item": "U6 slice decoder and frame store ASIC, AV1 and HEVC IP",
+   "owner": "rtl/u6",
+   "low": 14.0,
+   "base": 22.0,
+   "high": 32.0,
+   "basis": "decoder IP licence plus one spin"
+  },
+  {
+   "item": "5G modem SiP, 10.0 x 8.0 x 0.80 mm, RF front end",
+   "owner": "hw/rf",
+   "low": 6.0,
+   "base": 9.0,
+   "high": 15.0,
+   "basis": "OSAT SiP NRE and modem vendor engineering"
+  },
+  {
+   "item": "body mechanics: hinge, skin, caps, kinematic seats, rigs",
+   "owner": "sim/mechanics",
+   "low": 4.0,
+   "base": 6.0,
+   "high": 10.0,
+   "basis": "coupons, cycle rigs, 3 body iterations"
+  },
+  {
+   "item": "B module: LCP-GF40 moulds, LDS, gaskets, jack",
+   "owner": "hw/rf",
+   "low": 3.0,
+   "base": 4.5,
+   "high": 7.0,
+   "basis": "4 mould tools x 2 iterations"
+  },
+  {
+   "item": "50 MP camera column with sapphire L1",
+   "owner": "hw/camera",
+   "low": 4.0,
+   "base": 6.0,
+   "high": 10.0,
+   "basis": "custom 5-element lens and module line set-up"
+  },
+  {
+   "item": "Leaf Dock and Leaf pad, regulated 22 C",
+   "owner": "hw/dock",
+   "low": 1.5,
+   "base": 2.5,
+   "high": 4.0,
+   "basis": "the pad holds the 25 W sustained case"
+  },
+  {
+   "item": "firmware integrity, U7 applet, boot chain",
+   "owner": "fw/boot, fw/u7",
+   "low": 3.0,
+   "base": 5.0,
+   "high": 8.0,
+   "basis": "secure element applet and evaluation"
+  },
+  {
+   "item": "validator Leaf duty RG-18, protocol, discovery",
+   "owner": "validator/leaf-duty",
+   "low": 15.0,
+   "base": 24.0,
+   "high": 35.0,
+   "basis": "40 engineers over 3 years"
+  },
+  {
+   "item": "hardware, system and program staff",
+   "owner": "program",
+   "low": 55.0,
+   "base": 75.0,
+   "high": 100.0,
+   "basis": "120 engineers over 4.5 years at 140 k USD loaded"
+  },
+  {
+   "item": "prototype builds: EVT 200, DVT 500, PVT 2 000",
+   "owner": "program",
+   "low": 6.0,
+   "base": 9.5,
+   "high": 16.0,
+   "basis": "see BUILDS below"
+  },
+  {
+   "item": "certification: Qi2.2, GCF, PTCRB, radio, safety, battery, SAR",
+   "owner": "program",
+   "low": 2.5,
+   "base": 4.0,
+   "high": 6.0,
+   "basis": "laboratory quotes of the class"
+  },
+  {
+   "item": "factory: test line, fixtures, calibration stations",
+   "owner": "program",
+   "low": 15.0,
+   "base": 25.0,
+   "high": 40.0,
+   "basis": "one line in Turkey, one in Asia"
+  }
+ ],
+ "builds": {
+  "low": 5.6,
+  "base": 8.8,
+  "high": 14.4
+ },
+ "unit": {
+  "100000": {
+   "low": {
+    "total": 2163.9269999999997,
+    "lines": {
+     "micro-LED tiles x 128": 1695.9999999999998,
+     "micro cells x 128": 90.4,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 40,
+     "TCM protection IC x 128": 13,
+     "Qi2.2 sector coils, shield, rectifier": 6,
+     "touch grid, AgNW, on the caps": 8,
+     "U1 and U6 ASICs with 16 MB store": 30,
+     "U5 5G modem SiP with RF front end and eSIM": 48,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 14,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 9,
+     "50 MP camera column with sapphire L1": 22,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 22,
+     "rear round AMOLED": 6,
+     "ring PCBA, 8-layer HDI, assembly": 10,
+     "B cell 0.14 Wh": 1.5,
+     "final assembly, calibration, test, provisioning": 60,
+     "packaging, logistics, warranty reserve 3 %": 25,
+     "cellular SEP royalties": 63.02699999999999
+    }
+   },
+   "base": {
+    "total": 3948.5531428571426,
+    "lines": {
+     "micro-LED tiles x 128": 3218.285714285714,
+     "micro cells x 128": 139.2,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 60,
+     "TCM protection IC x 128": 19,
+     "Qi2.2 sector coils, shield, rectifier": 9,
+     "touch grid, AgNW, on the caps": 12,
+     "U1 and U6 ASICs with 16 MB store": 45,
+     "U5 5G modem SiP with RF front end and eSIM": 60,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 18,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 12,
+     "50 MP camera column with sapphire L1": 30,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 30,
+     "rear round AMOLED": 8,
+     "ring PCBA, 8-layer HDI, assembly": 14,
+     "B cell 0.14 Wh": 2.2,
+     "final assembly, calibration, test, provisioning": 85,
+     "packaging, logistics, warranty reserve 3 %": 35,
+     "cellular SEP royalties": 151.86742857142858
+    }
+   },
+   "high": {
+    "total": 7769.904545454545,
+    "lines": {
+     "micro-LED tiles x 128": 6562.90909090909,
+     "micro cells x 128": 216.0,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 90,
+     "TCM protection IC x 128": 26,
+     "Qi2.2 sector coils, shield, rectifier": 13,
+     "touch grid, AgNW, on the caps": 18,
+     "U1 and U6 ASICs with 16 MB store": 65,
+     "U5 5G modem SiP with RF front end and eSIM": 80,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 24,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 16,
+     "50 MP camera column with sapphire L1": 42,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 42,
+     "rear round AMOLED": 12,
+     "ring PCBA, 8-layer HDI, assembly": 20,
+     "B cell 0.14 Wh": 3,
+     "final assembly, calibration, test, provisioning": 120,
+     "packaging, logistics, warranty reserve 3 %": 50,
+     "cellular SEP royalties": 369.99545454545455
+    }
+   }
+  },
+  "1000000": {
+   "low": {
+    "total": 883.122,
+    "lines": {
+     "micro-LED tiles x 128": 640.0,
+     "micro cells x 128": 41.6,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 22,
+     "TCM protection IC x 128": 6.4,
+     "Qi2.2 sector coils, shield, rectifier": 3.5,
+     "touch grid, AgNW, on the caps": 4,
+     "U1 and U6 ASICs with 16 MB store": 14,
+     "U5 5G modem SiP with RF front end and eSIM": 34,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 9,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 5.5,
+     "50 MP camera column with sapphire L1": 13,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 12,
+     "rear round AMOLED": 3.5,
+     "ring PCBA, 8-layer HDI, assembly": 6,
+     "B cell 0.14 Wh": 0.9,
+     "final assembly, calibration, test, provisioning": 28,
+     "packaging, logistics, warranty reserve 3 %": 14,
+     "cellular SEP royalties": 25.721999999999998
+    }
+   },
+   "base": {
+    "total": 1575.190117647059,
+    "lines": {
+     "micro-LED tiles x 128": 1204.7058823529412,
+     "micro cells x 128": 66.0,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 32,
+     "TCM protection IC x 128": 9.6,
+     "Qi2.2 sector coils, shield, rectifier": 5,
+     "touch grid, AgNW, on the caps": 6,
+     "U1 and U6 ASICs with 16 MB store": 20,
+     "U5 5G modem SiP with RF front end and eSIM": 42,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 12,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 7.5,
+     "50 MP camera column with sapphire L1": 18,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 17,
+     "rear round AMOLED": 5,
+     "ring PCBA, 8-layer HDI, assembly": 8.5,
+     "B cell 0.14 Wh": 1.3,
+     "final assembly, calibration, test, provisioning": 40,
+     "packaging, logistics, warranty reserve 3 %": 20,
+     "cellular SEP royalties": 60.584235294117654
+    }
+   },
+   "high": {
+    "total": 2855.1249999999995,
+    "lines": {
+     "micro-LED tiles x 128": 2269.8666666666663,
+     "micro cells x 128": 104.0,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 48,
+     "TCM protection IC x 128": 14,
+     "Qi2.2 sector coils, shield, rectifier": 7.5,
+     "touch grid, AgNW, on the caps": 9,
+     "U1 and U6 ASICs with 16 MB store": 30,
+     "U5 5G modem SiP with RF front end and eSIM": 55,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 16,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 10,
+     "50 MP camera column with sapphire L1": 25,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 24,
+     "rear round AMOLED": 7,
+     "ring PCBA, 8-layer HDI, assembly": 12,
+     "B cell 0.14 Wh": 1.8,
+     "final assembly, calibration, test, provisioning": 58,
+     "packaging, logistics, warranty reserve 3 %": 28,
+     "cellular SEP royalties": 135.95833333333334
+    }
+   }
+  },
+  "5000000": {
+   "low": {
+    "total": 464.09848421052635,
+    "lines": {
+     "micro-LED tiles x 128": 296.42105263157896,
+     "micro cells x 128": 26.96,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 15,
+     "TCM protection IC x 128": 4.5,
+     "Qi2.2 sector coils, shield, rectifier": 2.5,
+     "touch grid, AgNW, on the caps": 3,
+     "U1 and U6 ASICs with 16 MB store": 9,
+     "U5 5G modem SiP with RF front end and eSIM": 27,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 7,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 4.2,
+     "50 MP camera column with sapphire L1": 10,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 9,
+     "rear round AMOLED": 2.8,
+     "ring PCBA, 8-layer HDI, assembly": 4.5,
+     "B cell 0.14 Wh": 0.7,
+     "final assembly, calibration, test, provisioning": 18,
+     "packaging, logistics, warranty reserve 3 %": 10,
+     "cellular SEP royalties": 13.517431578947368
+    }
+   },
+   "base": {
+    "total": 803.440695652174,
+    "lines": {
+     "micro-LED tiles x 128": 553.7391304347826,
+     "micro cells x 128": 41.6,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 22,
+     "TCM protection IC x 128": 6.4,
+     "Qi2.2 sector coils, shield, rectifier": 3.5,
+     "touch grid, AgNW, on the caps": 4.5,
+     "U1 and U6 ASICs with 16 MB store": 13,
+     "U5 5G modem SiP with RF front end and eSIM": 34,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 9.5,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 5.8,
+     "50 MP camera column with sapphire L1": 14,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 13,
+     "rear round AMOLED": 4,
+     "ring PCBA, 8-layer HDI, assembly": 6.5,
+     "B cell 0.14 Wh": 1.0,
+     "final assembly, calibration, test, provisioning": 26,
+     "packaging, logistics, warranty reserve 3 %": 14,
+     "cellular SEP royalties": 30.901565217391305
+    }
+   },
+   "high": {
+    "total": 1414.6625294117646,
+    "lines": {
+     "micro-LED tiles x 128": 1028.5176470588235,
+     "micro cells x 128": 67.28,
+     "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles": 34,
+     "TCM protection IC x 128": 9.6,
+     "Qi2.2 sector coils, shield, rectifier": 5,
+     "touch grid, AgNW, on the caps": 7,
+     "U1 and U6 ASICs with 16 MB store": 20,
+     "U5 5G modem SiP with RF front end and eSIM": 44,
+     "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB": 13,
+     "U7 secure element, U8 IMU, U3 audio, U4 power, NOR": 8,
+     "50 MP camera column with sapphire L1": 19,
+     "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics": 18,
+     "rear round AMOLED": 5.5,
+     "ring PCBA, 8-layer HDI, assembly": 9,
+     "B cell 0.14 Wh": 1.4,
+     "final assembly, calibration, test, provisioning": 38,
+     "packaging, logistics, warranty reserve 3 %": 20,
+     "cellular SEP royalties": 67.36488235294118
+    }
+   }
+  }
+ }
+}

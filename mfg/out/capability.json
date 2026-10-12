@@ -1,0 +1,303 @@
+{
+ "bar": {
+  "ctq": "bar 1.00",
+  "nominal": 1.0,
+  "tol": 0.05,
+  "worst_case_tol": 0.056,
+  "worst_case_ok": false,
+  "rss_sigma": 0.007944250191875323,
+  "mc_mean": 1.000988781551358,
+  "mc_sigma": 0.007950578324003473,
+  "cpk": 2.054828233927459,
+  "ppm": 0.0004248055530031809,
+  "gauge_sigma_max_um": 1.666666666666667
+ },
+ "module_free": {
+  "ctq": "module 4.00, free stack",
+  "nominal": 4.0,
+  "tol": 0.05,
+  "worst_case_tol": 0.055,
+  "worst_case_ok": false,
+  "rss_sigma": 0.009574271077563382,
+  "mc_mean": 4.004009278419254,
+  "mc_sigma": 0.009596661434212636,
+  "cpk": 1.597455597658387,
+  "ppm": 0.8332456202566969,
+  "gauge_sigma_max_um": 1.666666666666667
+ },
+ "module_pth": {
+  "ctq": "module 4.00, press-to-height",
+  "nominal": 4.0,
+  "tol": 0.05,
+  "mc_mean": 4.001,
+  "mc_sigma": 0.0043716256828680005,
+  "cpk": 3.7362149731487753,
+  "ppm": 1.8585498666520916e-23
+ },
+ "seam_opt": {
+  "glass_kerf_nominal_um": 8.0,
+  "pitch_target_um": -3.0,
+  "pitch_target_mm": 9.997,
+  "edge_margin_um": 15.0,
+  "device_yield_seam_and_chip": 0.9999907795615524,
+  "seam": {
+   "tile": {
+    "pairs": 208,
+    "sigma_e": 0.5,
+    "p_gap_pair": 2.5070449933853606e-08,
+    "p_kerf_pair": 1.8503625730478462e-08,
+    "cpk_gap": 1.8169366874345616,
+    "cpk_kerf": 1.8348563312828048,
+    "kerf_mean": 5.159576912160573,
+    "kerf_sigma": 0.8660254037844386,
+    "yield": 0.99999093663323
+   },
+   "quadrant": {
+    "pairs": 24,
+    "sigma_e": 0.35,
+    "p_gap_pair": 9.910827007733161e-14,
+    "p_kerf_pair": 8.100230357322916e-10,
+    "cpk_gap": 2.4499978229317194,
+    "cpk_kerf": 2.0106461098964714,
+    "kerf_mean": 5.159576912160573,
+    "kerf_sigma": 0.788986691902975,
+    "yield": 0.9999999805570676
+   },
+   "device_yield": 0.9999909171904738
+  },
+  "tile_chip_yield": 0.9999999989247642,
+  "min_cpk": 1.8169366874345616
+ },
+ "seam_display_nominal": {
+  "tile": {
+   "pairs": 208,
+   "sigma_e": 0.5,
+   "p_gap_pair": 0.6211178805523,
+   "p_kerf_pair": 5.8419433926715385e-06,
+   "cpk_gap": -0.10280602111293485,
+   "cpk_kerf": 1.4611348409460234,
+   "kerf_mean": 6.159576912160573,
+   "kerf_sigma": 0.8660254037844386,
+   "yield": 2.1297429282392268e-88
+  },
+  "quadrant": {
+   "pairs": 24,
+   "sigma_e": 0.35,
+   "p_gap_pair": 0.6652478247688002,
+   "p_kerf_pair": 8.033292351198639e-07,
+   "cpk_gap": -0.14227611909475452,
+   "cpk_kerf": 1.5991634916404165,
+   "kerf_mean": 6.159576912160573,
+   "kerf_sigma": 0.788986691902975,
+   "yield": 3.920607920326918e-12
+  },
+  "device_yield": 8.349886992714956e-100
+ },
+ "seam_sigma_place_for_995": 0.6799999999999995,
+ "chipping": {
+  "tile_edge_mm": 38.71126983722081,
+  "sweep": [
+   {
+    "scale_um": 1.5,
+    "p_tile_over_10": 0.0,
+    "device_yield_128": 1.0
+   },
+   {
+    "scale_um": 2.0,
+    "p_tile_over_10": 1.0752357892940267e-09,
+    "device_yield_128": 0.9999998623698284
+   },
+   {
+    "scale_um": 2.5,
+    "p_tile_over_10": 8.712721564885229e-06,
+    "device_yield_128": 0.9988853884227822
+   },
+   {
+    "scale_um": 3.0,
+    "p_tile_over_10": 0.00115644551254801,
+    "device_yield_128": 0.8623356636841722
+   },
+   {
+    "scale_um": 3.5,
+    "p_tile_over_10": 0.021821573561083385,
+    "device_yield_128": 0.05936278645273035
+   },
+   {
+    "scale_um": 4.0,
+    "p_tile_over_10": 0.1389520726559268,
+    "device_yield_128": 4.82500409182759e-09
+   }
+  ]
+ },
+ "cap_kerf_part21": {
+  "sigma": 2.4238399287081647,
+  "swing_60K": 40.5,
+  "kerf_hot_mean": 7.0,
+  "kerf_cold_mean": 47.5,
+  "kerf_assembly_23C": 25.225,
+  "cpk_touch": 0.9626598298415404,
+  "cpk_show": 0.3438070820862644,
+  "p_touch_pair": 0.00193862576975781,
+  "p_show_pair": 0.1511716608881869,
+  "device_yield": 1.9529520994960098e-17
+ },
+ "cap_kerf_best": {
+  "window_um": 9.5,
+  "k_hot_um": 7.75,
+  "at_best": {
+   "sigma": 2.4238399287081647,
+   "swing_60K": 40.5,
+   "kerf_hot_mean": 4.75,
+   "kerf_cold_mean": 45.25,
+   "kerf_assembly_23C": 22.975,
+   "cpk_touch": 0.6532334559639025,
+   "cpk_show": 0.6532334559639025,
+   "p_touch_pair": 0.025015411074183327,
+   "p_show_pair": 0.025015411074183327,
+   "device_yield": 7.851569943513649e-06
+  },
+  "sigma_size_and_centre_for_995": 0.6199999999999988
+ },
+ "cap_kerf_oca": {
+  "window_um": 12.5,
+  "k_hot_um": 6.25,
+  "at_best": {
+   "sigma": 2.4238399287081647,
+   "swing_60K": 40.5,
+   "kerf_hot_mean": 3.25,
+   "kerf_cold_mean": 43.75,
+   "kerf_assembly_23C": 21.475,
+   "cpk_touch": 0.8595177052156611,
+   "cpk_show": 0.8595177052156611,
+   "p_touch_pair": 0.0049607522691343725,
+   "p_show_pair": 0.0049607522691343725,
+   "device_yield": 0.09950799287258434
+  },
+  "sigma_size_and_centre_for_995": 0.859999999999999
+ },
+ "seat_model": {
+  "preload_N_per_ball": 1.0,
+  "hertz_approach_um": 0.3373730895478598,
+  "hysteresis_um": 0.03373730895478598,
+  "sigma_um": 0.05023656661559525
+ },
+ "seat_cap": {
+  "sigma_um": 0.05023656661559525,
+  "cpk": 6.63527298519351,
+  "p_swap_over": 3.623218072655378e-88,
+  "p_any_over_in_10k": 0.0,
+  "sigma_needed_for_99pct": 0.2044717796480591
+ },
+ "seat_cap_dirty": {
+  "sigma_um": 0.15818885114104325,
+  "cpk": 2.1071860053912963,
+  "p_swap_over": 2.5893912356666243e-10,
+  "p_any_over_in_10k": 2.5893875718052684e-06,
+  "sigma_needed_for_99pct": 0.2044717796480591
+ },
+ "seat_cap_particle": {
+  "sigma_um": 0.30417710733275627,
+  "cpk": 1.095852795288376,
+  "p_swap_over": 0.001010602309173158,
+  "p_any_over_in_10k": 0.9999593752519818,
+  "sigma_needed_for_99pct": 0.2044717796480591
+ },
+ "radii": [
+  {
+   "edge": "body perimeter, front and back face edges",
+   "r": 0.65,
+   "tol": 0.1,
+   "where": "44 perimeter tiles",
+   "process": "moulded PC edge cap",
+   "mean": 0.66,
+   "sigma": 0.025,
+   "cpk": 1.1999999999999995,
+   "ppm": 164.52113406523827,
+   "flash_risk": false
+  },
+  {
+   "edge": "tile PC-cap top edges and chamfer corners",
+   "r": 0.03,
+   "tol": 0.01,
+   "where": "128 caps",
+   "process": "tilted-beam laser bevel",
+   "mean": 0.03,
+   "sigma": 0.003,
+   "cpk": 1.1111111111111112,
+   "ppm": 858.1206663936725,
+   "flash_risk": false
+  },
+  {
+   "edge": "B ring outer top and bottom edges",
+   "r": 0.4,
+   "tol": 0.05,
+   "where": "ring shell",
+   "process": "LCP mould, steel radius",
+   "mean": 0.40800000000000003,
+   "sigma": 0.01,
+   "cpk": 1.3999999999999995,
+   "ppm": 13.349064761884735,
+   "flash_risk": true
+  },
+  {
+   "edge": "B ring inner bore edges",
+   "r": 0.25,
+   "tol": 0.05,
+   "where": "ring shell",
+   "process": "LCP mould, steel radius",
+   "mean": 0.258,
+   "sigma": 0.01,
+   "cpk": 1.3999999999999995,
+   "ppm": 13.349064761884735,
+   "flash_risk": true
+  },
+  {
+   "edge": "B bar long edges",
+   "r": 0.2,
+   "tol": 0.05,
+   "where": "bar skin shot",
+   "process": "LCP mould, steel radius",
+   "mean": 0.20800000000000002,
+   "sigma": 0.01,
+   "cpk": 1.3999999999999995,
+   "ppm": 13.349064761884735,
+   "flash_risk": true
+  },
+  {
+   "edge": "B moulded 90 deg corner, outside edge",
+   "r": 0.3,
+   "tol": 0.05,
+   "where": "bar to ring corner",
+   "process": "LCP mould, steel radius",
+   "mean": 0.308,
+   "sigma": 0.012,
+   "cpk": 1.166666666666666,
+   "ppm": 233.30040749133525,
+   "flash_risk": true
+  },
+  {
+   "edge": "jack mouth",
+   "r": 0.2,
+   "tol": 0.05,
+   "where": "ring rim",
+   "process": "LCP mould, core-pin radius",
+   "mean": 0.20600000000000002,
+   "sigma": 0.01,
+   "cpk": 1.4666666666666661,
+   "ppm": 5.423261497962201,
+   "flash_risk": true
+  },
+  {
+   "edge": "windows",
+   "r": 0.1,
+   "tol": 0.03,
+   "where": "sapphire L1 and rear cover",
+   "process": "CNC edge grind and polish",
+   "mean": 0.1,
+   "sigma": 0.007,
+   "cpk": 1.4285714285714284,
+   "ppm": 18.21529714896801,
+   "flash_risk": false
+  }
+ ]
+}
