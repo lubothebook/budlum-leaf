@@ -1,0 +1,36 @@
+[package]
+name = "budlum-leaf-u7"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.97"
+description = "U7 secure-element applet logic of the Budlum Leaf wallet (no_std)"
+license = "LicenseRef-PolyForm-Shield-1.0.0"
+publish = false
+
+# Standalone: not a member of any workspace.
+[workspace]
+
+[features]
+default = []
+# Enables `std` for host-side test tooling only. The applet itself is no_std + alloc.
+std = []
+
+[dependencies]
+# The same crates and majors as /home/claude/budlum/Cargo.toml.
+sha2 = { version = "0.11", default-features = false }
+sha3 = { version = "0.12", default-features = false }
+ed25519-dalek = { version = "3.0.0", default-features = false }
+bls12_381 = { version = "0.8.0", default-features = false, features = ["groups", "pairings", "alloc", "experimental"] }
+sha2_09 = { package = "sha2", version = "0.9.9", default-features = false }
+ml-dsa = { version = "0.1.1", default-features = false, features = ["alloc"] }
+subtle = { version = "2", default-features = false }
+zeroize = { version = "1", default-features = false }
+
+[dev-dependencies]
+ed25519-dalek = { version = "3.0.0", default-features = false, features = ["fast"] }
+
+[profile.release]
+panic = "abort"
+overflow-checks = true
+lto = true
+codegen-units = 1
