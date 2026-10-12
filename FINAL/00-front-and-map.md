@@ -72,7 +72,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 23 | the launch plan | too early; parked |
 | 24 | the deliverable order | all three lines at once, and the program is continuous |
 | 25 | the Field mode position | a cinema mode |
-| 26 | the camera and the ports | **the B module (`12.7 g`, L.6.0)**: a `1.00 mm` LCP antenna stem bent `90°`. The flat ring holds the `50 MP` camera, USB-C and the silicon |
+| 26 | the camera and the ports | **the B module (`10.8 g`, `4.00 mm`, L.6.0)**: a `1.00 mm` antenna bar on the top edge and a ring |
 | 27 | the far validator | everything on the validator, and the far case must be solved (Part 10) |
 | 28 | the uplink wait | accepted, and the expected time is shown before the shutter |
 | 29 | the heat | mitigate it (Part 11) |
@@ -124,7 +124,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 |---|---|---|
 | "176 ppd at the eye" for the Frame came from the flat screen formula and is wrong | the near eye rule: **pixels across divided by the field across**. The Frame uses a 4K class microdisplay at about 2 400 ppi. The Field mode is about 20 to 25 ppd | Part 15, H-1 |
 | two thickness values for one face (0.46 and 0.59) | the ledger is single: 0.46 + 2.88 + 0.46 + 0.06 + 0.04 = **3.90 mm nominal, 4.00 mm maximum** | Part 15, H-2 |
-| the gate count said 90 in one part and 89 in another | **274 gates: 240 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
+| the gate count said 90 in one part and 89 in another | **276 gates: 242 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
 
 **The rule introduced by the pass**. An audit of the numbers and of the physics runs at every revision. Its findings are published in this part, and not quietly fixed. `[DECISION]`
 
@@ -141,7 +141,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | `tools/check_crossrefs.py` with `tools/canon.json` | **PRG-15** | one number per count, held in one file, measured against every claim |
 | `pafta/check_sheets.py` | the drawing line | the overflow, the collision and the covered text of every sheet |
 
-**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 274 gates of 240 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 22 major and 7 minor. `[DECISION]`
+**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 276 gates of 242 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 22 major and 7 minor. `[DECISION]`
 
 ### 0.77 The block of 2026-10-12: 4-Quadrant (`+`) 2.00 mm (`68 g`) solid-state body, universal `Qi2.2`, and `90°`-bent-stem B module (`20 g`)
 
@@ -163,25 +163,27 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 
 **The rule of the block**. **A decision is recorded with its engineering numbers, and every drawing, 3D model, and part table agrees with it**. `[DECISION]`
 
-### 0.78 The block of 2026-10-12: Revision L.6.0, the stretch, the `1.00 mm` stem and the projection
+### 0.78 The block of 2026-10-12: Revision L.6.0, the stretch, the `1.00 mm` bar and the projection
 
 **The orders of Ayaz that opened Revision L.6.0**.
 
-1. *The stem is `1 mm`, and the body stretches.*
+1. *The bar is `1 mm` in a `4 mm` module, and the body stretches with no loss of battery.*
 2. *The validators run the Leaf as they run Budlum, so distance must not matter.*
-3. *The camera stays `50 MP`.*
+3. *The camera stays `50 MP`, `508 ppi` stays, seams stay invisible, and `30 ms` holds outdoors.*
+4. *The Leaf is a wallet. It connects to the nearest validator.*
 
 | The change | Where |
 |---|---|
-| **the body stretches about `13 %`**, the most possible: PC islands and serpentine PC lanes, at `1.7 Wh` | Part 21, Section 21.2 |
-| **the B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**, with no hinge and no metal shell | Part 21, Section 21.3; `HARDWARE/05`, `HARDWARE/13` |
-| **the USB-C receptacle moves to the ring rim**, so the EU common charger rule still holds | Part 21, Section 21.3.4 |
-| **the camera stays `50 MP`**: a flat `1/1.56"` sensor and a double-fold periscope across the ring | Part 21, Section 21.3.5 |
+| **the body stretches `25 %`, and `41 %` at most**: rotating PC-capped tiles keep the full `5.7 Wh`, and `7.2 Wh` with silicon anodes | Part 21, Section 21.2 |
+| **`508 ppi` micro-LED tiles with lattice-continuous, invisible seams**, and Qi2.2 on the tile body | Part 21, Sections 21.2.3 to 21.2.6 |
+| **the B bar is `32.0 x 4.0 x 1.00 mm` LCP-GF40 on the top edge**, in a `4.00 mm` module | Part 21, Section 21.3; `HARDWARE/05`, `HARDWARE/13` |
+| **USB-C is a separately sold port part**, and the `3.5 mm` jack takes the ring rim | Part 21, Sections 21.3.4 and 21.3.6 |
+| **the camera stays `50 MP`**: a small-pixel sensor in a `3.90 mm` vertical column at `f/2.0`, with focus and stabiliser | Part 21, Section 21.3.5 |
 | **the strongest Wi-Fi**: stem and ring antennas as `2 x 2`, multi-link `5 + 6 GHz`, and the Leaf Dock in the room | Part 21, Section 21.4 |
 | **"Zero CPU" is defined**: no general-purpose processor and no operating system; fixed-function chips and a frame store are allowed | Part 21, Section 21.5.1 |
-| **the validators run the Leaf as they run the chain**: the nearest validator renders, and distance is removed in eight steps | Part 21, Section 21.5; research order RG-18 |
-| **a 5G RedCap modem** joins the B module | Part 21, Section 21.4.2 |
-| **twenty-three new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
+| **the validators run the Leaf as they run the chain**: the Leaf is a wallet on the nearest validator, with zero-frame handover | Part 21, Section 21.5; research order RG-18 |
+| **a full 5G standalone modem** joins the B module for `30 ms` outdoors | Part 21, Sections 21.4.2 and 21.5.7 |
+| **twenty-four new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
 
 **The rule of the block**. Part 21 wins over every older part it names, until that part is rewritten. The sheets and the STL models still show L.5.0 and are listed for redraw. `[DECISION]`
 

@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 14 · THE PORTLESS QI2.2 BODY AND 90° BENT B STEM USB-C INTERFACE, PART BY PART (42 PARTS)
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The titanium stem shells and saddles are withdrawn. The B bar is `32.0 x 4.0 x 1.00 mm` LCP-GF40, and USB-C is a separate port part.
+
 **Revision L.5.0 · 2026-10-12**.
 `04-PORT-RAIL.md` states the portless `Qi2.2` wireless charging body and the sole `USB Type-C` receptacle inside the `90°`-bent B stem. **This file states all 42 parts** of the wireless receiver network (`14` body parts across `Q1..Q4`) and the `90°` B stem `USB-C`. Also, optional side-rail I/O assembly (`28` parts) (`pafta/P10`, `pafta/P16`). `[DECISION]`
 

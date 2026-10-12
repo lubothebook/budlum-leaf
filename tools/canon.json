@@ -3,10 +3,10 @@
  "assembly_gate": "PRG-16",
  "count_gate": "PRG-15",
  "stamp": "revision L.6.0, 2026-10-12",
- "device_and_network_gates": 240,
+ "device_and_network_gates": 242,
  "program_gates": 16,
  "research_gates": 18,
- "gates_total": 274,
+ "gates_total": 276,
  "gap_items": 43,
  "gap_blockers": 14,
  "gap_major": 22,
@@ -19,5 +19,5 @@
  "prose_stamp": "revision L.6.0, 2026-10-12: FINAL, HARDWARE and MASTER at 0 em dashes, 0 long sentences, 0 long cells, 0 warn words; AUDIT arena reports and NEREDE-NE-VAR.md carry findings from before L.6.0",
  "numbered_parts": 21,
  "long_cells": 0,
- "geometry_stamp": "revision L.6.0, 2026-10-12: stretchable 4-Quadrant (+) body 80.0 x 160.0 x 2.00 mm with a polycarbonate face of solid islands and serpentine PC lanes (about 13 percent stretch, 1.7 Wh at 600 Wh/L, AgNW only), Qi2.2 charging, and B module 12.7 g with a 8.0 x 32.0 x 1.00 mm LCP-GF40 stem, no hinge, USB-C in the ring rim and a 50 MP flat-sensor periscope camera"
+ "geometry_stamp": "revision L.6.0, 2026-10-12: stretchable 4-Quadrant (+) body 80.0 x 160.0 x 2.00 mm of 128 rotating PC-capped tiles (25 percent stretch, 41 percent at most, 5.7 to 7.2 Wh in micro cells, 508 ppi micro-LED, lattice-continuous seams), Qi2.2 charging, and a 4.00 mm B module of 10.8 g with a 32.0 x 4.0 x 1.00 mm LCP-GF40 bar on the top edge, no hinge, no USB-C, a 3.5 mm jack and a 50 MP vertical-column camera"
 }
