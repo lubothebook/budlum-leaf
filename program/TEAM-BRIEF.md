@@ -44,3 +44,22 @@
 5. **The prose rules of the repo apply to every `.md`**: no em dash, sentences of 25 words or less, steps of 20 words or less, table cells of 25 words or less, no "should", "may", "might" or "could". Check with `python3 tools/check_prose.py <file>`.
 6. **Name the gates.** Link each result to the gates of Part 21, Section 21.8.
 7. **Each team writes a `README.md`** in its directory: what is there, how to run it, the key results and the open issues.
+
+## 4 · The soft edges (Ayaz, 2026-10-12)
+
+Ayaz ordered the sharp touch edges to be softened. Only the edges are rounded, never a whole face or side. `[DECISION]`
+
+| The edge | The radius |
+|---|---|
+| body outer perimeter, front and back face edges | `r = 0.65 mm` |
+| body plan corners | `R = 6.35 mm`, unchanged |
+| interior tile PC-cap top edges and chamfered tile corners | `0.03 mm` edge break, kerf and edge-pixel rules unchanged |
+| B ring outer top and bottom edges | `r = 0.40 mm` |
+| B ring inner bore edges | `r = 0.25 mm` |
+| B bar long edges | `r = 0.20 mm`; the `R 2.0` end of `b.png` stays |
+| B moulded `90°` corner, outside edge | `r = 0.30 mm` |
+| jack mouth | `r = 0.20 mm` |
+| windows | `0.10 mm` edge break |
+| dock and port part outer edges | `r = 0.50 mm` |
+
+Every CAD model, STL, sheet and render shows these radii in the geometry, not only in text.
