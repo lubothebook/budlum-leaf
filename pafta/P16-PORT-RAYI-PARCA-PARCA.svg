@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="Ortadaki (+) ciziksiz 4-karo kenetlenme barasi, portsuz govdede Qi2 kablosuz sarj ve 90 derece B cubugundaki tek Type-C">
+  <title>BUDLUM LEAF · (+) ÇİZİKSİZ 4-KARO BARASI, Qİ2 BOBİNLERİ VE 90° B ÇUBUĞUNDA TEK TYPE-C</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">(+) ÇİZİKSİZ 4-KARO BARASI, Qİ2 KABLOSUZ ŞARJ VE B ÇUBUĞUNDA TEK TYPE-C</text>
+<text class="s" x="40" y="80">Ekran gövdesinin altında veya kenarlarında kesinlikle Type-C portu ya da buton yoktur. 4 polikarbonat ekran-batarya karosu ortadaki artı (+)</text>
+<text class="s" x="40" y="99">hattında 12 µm n=1.585 optik dudak, Titanyum Artı göbek, 24 N52H mıknatıs ve 64 altın mikro-yaprak kontakla sıfır çizikle birleşir. Gövde her Qi/Qi2</text>
+<text class="s" x="40" y="118">pedde kablosuz şarj olur; cihazdaki TEK USB Type-C (40W PD 3.1) 90° bükümlü B çubuğundadır.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="820" height="380" rx="6"/>
+<text class="t h2" x="60" y="180">A · KESİT · (+) ORTA BİRLEŞİM HATTI (n=1.585 OPTİK DUDAK VE Ti ARTl GÖBEK)</text>
+<rect class="steel" x="90" y="330" width="700" height="26" rx="4"/>
+<text class="lbls" x="96" y="322">Q1 ve Q2 iç + kenarı · Grade-5 Titanyum Artı (+) göbek + 8 mikro-kırlangıç pim</text>
+<rect class="gd" x="330" y="318" width="34" height="8" rx="3"/>
+<rect class="gd" x="390" y="318" width="34" height="8" rx="3"/>
+<rect class="gd" x="450" y="318" width="34" height="8" rx="3"/>
+<text class="lbls" x="330" y="312">64 altın yaprak</text>
+<rect class="gd" x="250" y="318" width="16" height="8" rx="3"/>
+<text class="lbls" x="140" y="312">3 ms Dead-Pad IC</text>
+<rect class="live" x="520" y="318" width="16" height="8" rx="2"/>
+<text class="lbls" x="470" y="312">Ti kırlangıç pim</text>
+<rect class="steel" x="600" y="318" width="60" height="8" rx="3"/>
+<text class="lbls" x="590" y="312">24x N52H mıknatıs</text>
+<rect class="gsk" x="270" y="304" width="12" height="14" rx="3"/>
+<rect class="gsk" x="690" y="304" width="12" height="14" rx="3"/>
+<text class="lbls" x="712" y="316">n=1.585 dudak</text>
+<rect class="body4" x="240" y="240" width="500" height="60" rx="8"/>
+<text class="lbls" x="250" y="234">4x (40.0 × 80.0 × 2.00 mm) polikarbonat ekran-batarya karosu (LLZO katı-hal pil)</text>
+<text class="lbls" x="250" y="268">Corning kenar-sarımlı 0 mm çerçevesiz elektrot</text>
+<rect class="mod" x="300" y="286" width="380" height="10" rx="3"/>
+<text class="lbls" x="310" y="294">Ø54 mm 4-sektör Qi2.2 MPP bobini + yerel Qi PMIC</text>
+<rect class="gd" x="330" y="296" width="30" height="10" rx="3"/>
+<rect class="gd" x="390" y="296" width="30" height="10" rx="3"/>
+<rect class="gd" x="450" y="296" width="30" height="10" rx="3"/>
+<text class="lbls" x="530" y="264">16 altın yaprak / iç kenar</text>
+<rect class="mag" x="600" y="296" width="60" height="10" rx="3"/>
+<text class="lbls" x="530" y="282">6x N52H çift-kutuplu / kenar</text>
+<line x1="240" y1="304" x2="740" y2="304" stroke="#8a5a12" stroke-width="1.2"/>
+<text class="lbls" x="90" y="382">12 µm n=1.585 fenil-florosilikon optik dudak Fresnel yansımasını &lt;%0.0001 düzeyine indirir (0 çizik)</text>
+<text class="lbls" x="90" y="402">8 konik Titanyum mikro-kırlangıç pim 4 karoyu &lt;2.5 µm Z-eşdüzlemliliği ile kilitler</text>
+<text class="lbls" x="90" y="422">AB 2023/1542 Md. 11: Herhangi bir karo aletsiz &lt;3 saniyede sökülüp takılır (kesintisiz hot-swap)</text>
+<text class="lbls" x="90" y="470">3 ms kriptografik el sıkışması (Dead-Pad) tamamlanmadan 64 altın yaprak kontağa akım verilmez.</text>
+<text class="lbls" x="90" y="490">Kendi kendini onaran florosilikon optik dudak + hattını IP68 toz ve su geçirmez yapar.</text>
+<rect class="glass" x="880" y="152" width="480" height="380" rx="6"/>
+<text class="t h2" x="900" y="180">B · 90° B ÇUBUĞUNDA TEK TYPE-C VE GÖVDEDE Qİ2</text>
+<rect class="steel" x="920" y="214" width="150" height="46" rx="8"/>
+<text class="lbls" x="930" y="242">TEK USB-C (B çubukta)</text>
+<text class="lbls" x="920" y="284">90° dik bükümlü B çubuğu içinde (4.8 x 8.8 mm)</text>
+<text class="lbls" x="920" y="302">40 W USB-PD 3.1 (20 V / 2.0 A) + DP 2.1</text>
+<text class="lbls" x="920" y="320">kırmızı IP68 radyal silikon O-ring conta</text>
+<rect class="steel" x="920" y="340" width="180" height="46" rx="8"/>
+<text class="lbls" x="930" y="368">U_PD + U1..U4 (B halkada)</text>
+<text class="lbls" x="920" y="410">4-Karo Ana TCON + UWB/60GHz mmWave SiP</text>
+<text class="lbls" x="920" y="428">Ses DSP &amp; Codec + 3 ms Dead-Pad PMIC</text>
+<circle class="steel" cx="1250" cy="237" r="24"/>
+<circle cx="1250" cy="237" r="12" fill="#ffe9a8" stroke="#8a5a12" stroke-width="2"/>
+<text class="lbls" x="1175" y="284">Gövdede Qi / Qi2.2 Şarj</text>
+<text class="lbls" x="1175" y="302">Merkez Ø54 mm 4-sektör MPP</text>
+<text class="lbls" x="1175" y="320">4x Ø22 mm tekil karo bobini</text>
+<text class="lbls" x="1175" y="338">15-25 W evrensel kablosuz</text>
+<text class="lbls" x="1175" y="356">Gövdede sıfır port / buton</text>
+<text class="lbls" x="900" y="474">Ekran gövdesinde Type-C yoktur; sadece kablosuz şarj alır (Qi / Qi2.2).</text>
+<text class="lbls" x="900" y="494">Cihazdaki TEK Type-C portu ve tüm aktif iletişim B kamera modülündedir.</text>
+<rect class="glass" x="40" y="552" width="660" height="272" rx="6"/>
+<text class="t h2" x="60" y="580">C · (+) 64 ALTIN YAPRAK VE B YÜZEY PEDLERİ DAĞILIMI</text>
+<text class="lblb" x="60" y="610">Yaprak 1..4 / kenar</text>
+<text class="lbls" x="235" y="610">VBAT+ ve GND (3.85 V)</text>
+<text class="lbls" x="430" y="610">12 mΩ paralel katı-hal pil</text>
+<text class="lblb" x="60" y="636">Yaprak 5..6 / kenar</text>
+<text class="lbls" x="235" y="636">Qi2.2 AC bobin köprüsü</text>
+<text class="lbls" x="430" y="636">4 sektörü Ø54 mm halkada birleştirir</text>
+<text class="lblb" x="60" y="662">Yaprak 7..8 / kenar</text>
+<text class="lbls" x="235" y="662">Dead-Pad + 1-Wire kripto</text>
+<text class="lbls" x="430" y="662">3 ms ECDSA-P256 doğrulama</text>
+<text class="lblb" x="60" y="688">Yaprak 9..14 / kenar</text>
+<text class="lbls" x="235" y="688">MIPI DSI-2 diferansiyel</text>
+<text class="lbls" x="430" y="688">4-Karo T-OLED sıfır-çizik senkron</text>
+<text class="lblb" x="60" y="714">Yaprak 15..16 / kenar</text>
+<text class="lbls" x="235" y="714">PDLC AC + 240 Hz AgNW</text>
+<text class="lbls" x="430" y="714">gizlilik kilidi ve dokunma/kalem</text>
+<text class="lbls" x="60" y="762">4 çeyrek karo birleştiğinde merkezde tam bir Ø54.0 mm Qi2.2 MPP alıcı bobini oluşur.</text>
+<text class="lbls" x="60" y="782">Tek bir karo çıkarıldığında kendi Ø22.0 mm bobiniyle herhangi bir Qi pedde şarj olur.</text>
+<text class="lbls" x="60" y="802">B modülü ekranın önüne veya arkasına 12 altın yüzey pedi ile kenetlenir.</text>
+<rect class="glass" x="720" y="552" width="640" height="272" rx="6"/>
+<text class="t h2" x="740" y="580">D · KAPILAR RL-1 … RL-18 VE F-01 … F-10 (REV L.5.0)</text>
+<text class="lbls" x="740" y="610">RL-1 90° B çubuğunda TEK USB-C (10 000 çevrim, IP68)</text>
+<text class="lbls" x="740" y="628">RL-2 40 W USB-PD 3.1 (B modülü üzerinden şarj/veri)</text>
+<text class="lbls" x="740" y="646">RL-3 Gövdede sıfır Type-C ve sıfır fiziksel buton</text>
+<text class="lbls" x="740" y="664">RL-4 Gövdede evrensel Qi / Qi2.2 (15-25 W) kablosuz şarj</text>
+<text class="lbls" x="740" y="682">RL-5 4-Karo Ana TCON · RL-6 UWB/60GHz mmWave SiP</text>
+<text class="lbls" x="740" y="700">RL-7 AB 2023/1542 &lt;3 sn Hot-Swap · RL-8 64 altın yaprak</text>
+<text class="lbls" x="740" y="718">RL-9 12 µm n=1.585 çiziksiz + optik dudak (&lt;%0.0001 yansıma)</text>
+<text class="lbls" x="740" y="736">RL-10 Merkez Grade-5 Titanyum Artı (+) göbek (&lt;2.5 µm adım)</text>
+<text class="lbls" x="740" y="754">RL-11..13 24x N52H çift-kutuplu mıknatıs ve 1.5 m düşme</text>
+<text class="lbls" x="740" y="772">RL-14 3 ms Dead-Pad kripto · RL-15 Göz sıcaklığı &lt;=36.2 C</text>
+<text class="lbls" x="740" y="790">RL-16..18 ±90° tersinir menteşe ile öne/arkaya ve 4 yöne takım</text>
+<text class="lbls" x="740" y="808">F-01..10 Yanmaz LLZO katı-hal pil (0 HF gazı, SAR 0.054 W/kg)</text>
+<text class="lbls" x="740" y="830">(+) kenetlenme barası ve 90° B modülü 10 000 tak-çıkar çevrimine dayanır.</text>
+<rect class="glass" x="40" y="844" width="1320" height="112" rx="6"/>
+<text class="t h2" x="60" y="872">E · (+) 4-KARO VE 90° B MODÜLÜ KENETLENME MONTAJININ ON ADIMI</text>
+<text class="lbls" x="58" y="902">1 ISO 10993 PC kabuk</text>
+<text class="lbls" x="186" y="902">2 LLZO katı-hal pil</text>
+<text class="lbls" x="314" y="902">3 Qi2.2 + Qi bobinler</text>
+<text class="lbls" x="442" y="902">4 Mu-metal/grafen</text>
+<text class="lbls" x="570" y="902">5 T-OLED + kenar sarım</text>
+<text class="lbls" x="698" y="902">6 n=1.585 optik dudak</text>
+<text class="lbls" x="826" y="902">7 Ti Artı (+) göbek</text>
+<text class="lbls" x="954" y="902">8 64 altın yaprak</text>
+<text class="lbls" x="1082" y="902">9 90° B tek Type-C</text>
+<text class="lbls" x="1210" y="902">10 IP68 + Dead-Pad</text>
+<text class="lbls" x="60" y="932">&lt;15 µm optik derz görünmezliği, 3 ms Dead-Pad kesme süresi ve Qi2.2 verimi her birimde ölçülür.</text>
+</svg>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P10 the charge path the upright B module and the side rail">
+  <title>BUDLUM LEAF · P10 · THE CHARGE PATH, THE UPRIGHT B MODULE, AND THE SIDE RAIL</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+    .bar{fill:#cfe3f7;stroke:#18507e;stroke-width:1}
+    .barw{fill:#f7dcae;stroke:#8a5a12;stroke-width:1}
+    .barg{fill:#eef7ee;stroke:#3f6b3f;stroke-width:1}
+    .barr{fill:#f2c9c4;stroke:#8a2b1f;stroke-width:1}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <!-- TITLE BAND -->
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P10 · UNIVERSAL Qİ2 CHARGING, 90°-BENT-STEM B &amp; ONLY USB-C IN B</text>
+  <text class="t lbl" x="40" y="74">Portless 4-Quadrant (+) body charges on any Qi/Qi2.2 wireless pad (15-25 W). ONLY the B stem is bent at 90° (holding the ONLY USB-C port); the round ring sits flat ON TOP OF the screen.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ================= A · UNIVERSAL WIRELESS ON BODY, ZERO USB-C ON BODY ================= -->
+  <rect class="panel" x="40" y="100" width="740" height="310" rx="4"/>
+  <text class="t h2" x="58" y="124">A · PORTLESS Qİ / Qİ2.2 WIRELESS BODY &amp; ZERO USB-C ON THE SCREEN BODY</text>
+  <g class="t lbls">
+    <text x="58" y="150">there is NO USB Type-C port and NO physical button anywhere on the 4-piece screen body</text>
+    <text x="58" y="168">central Ø54.0 mm 4-sector Qi2.2 MPP receiver coil (90 deg sector in each quadrant Q1..Q4)</text>
+    <text x="58" y="186">4 x Ø22.0 mm standalone per-quadrant Qi sub-coils + nanocrystalline magnetic shielding</text>
+    <text x="58" y="204">the assembled phone charges at 15-25 W on any standard Qi / Qi2 / MagSafe wireless pad</text>
+    <text x="58" y="222">any single detached quadrant tile also charges independently at 5-10 W on any wireless pad</text>
+  </g>
+  <line class="rule" x1="58" y1="238" x2="762" y2="238"/>
+  <g class="t lbls">
+    <text x="58" y="258">bulky external bottom battery pack is eliminated: batteries live inside the 4 polycarbonate tiles</text>
+    <text x="58" y="276">4 x 3.0 Wh = 12.0 Wh (3 200 mAh) non-flammable LLZO/PEO all-solid-state battery (0% liquid, 0 HF)</text>
+    <text x="58" y="298">Rule Q-1 (Rev L.5.0): the screen body charges ONLY wirelessly; wired USB-C is ONLY on the B module</text>
+    <text x="58" y="322">without the B camera module, the screen body can only charge wirelessly on a pad</text>
+    <text x="58" y="344">all other functions (wired USB-C, Zero-CPU UWB/mmWave, TCON, camera, audio) require the B module</text>
+    <text x="58" y="372">each quadrant tile swaps by hand in under 3 s across the (+) cross (EU 2023/1542 Article 11)</text>
+    <text x="58" y="390">&lt;15 um n=1.585 self-healing optical seam lip ensures zero scratch and zero visible seam line</text>
+  </g>
+
+  <!-- ================= B · THE CHARGE PATH ================= -->
+  <rect class="panel" x="800" y="100" width="760" height="310" rx="4"/>
+  <text class="t h2" x="818" y="124">B · THE CHARGE PATHS (REV L.5.0) · Universal Qi2 Wireless + B-Module USB-C</text>
+  <g class="t lblb">
+    <text x="818" y="152">THE PATH</text><text x="1050" y="152">THE POWER</text><text x="1200" y="152">ARCHITECTURE</text>
+  </g>
+  <g class="t lbls">
+    <text x="818" y="176">Qi2.2 MPP wireless on 4-tile body</text><text x="1050" y="176">15 - 25 W wireless</text><text x="1200" y="176">Ø54 mm 4-sector coil around (0,0)</text>
+    <text x="818" y="196">Qi wireless on single detached tile</text><text x="1050" y="196">5 - 10 W wireless</text><text x="1200" y="196">Ø22 mm local coil + U_QI PMIC</text>
+    <text x="818" y="216">ONLY USB-C in 90°-Bent B Stem</text><text x="1050" y="216">40 W PD 3.1 + DP 2.1</text><text x="1200" y="216">routes power via 12 surface pads</text>
+    <text x="818" y="236">(+) Cross 64 gold micro-leaves</text><text x="1050" y="236">40 W inter-tile bus</text><text x="1200" y="236">12 mΩ parallel + 3 ms Dead-Pad</text>
+  </g>
+  <line class="rule" x1="818" y1="252" x2="1542" y2="252"/>
+  <g class="t lbls">
+    <text x="818" y="272">16 gold micro-leaf contacts per internal (+) edge (64 total) + central Titanium Cruciform Hub</text>
+    <text x="818" y="290">6 bipolar N52H magnets + 2 tapered Ti micro-dovetail pins per edge (&lt;2.5 um Z-step)</text>
+    <text x="818" y="308">contacts are recessed inside the 12 um n=1.585 optical lip and dead until 3 ms ECDSA handshake</text>
+    <text x="818" y="326">when 1 quadrant is pulled for hot-swap, the other 3 quadrants (9.0 Wh) sustain the session</text>
+    <text x="818" y="348">hardware NTC thermal limiter caps ocular surface temperature at &lt;=36.2 °C in eyewear mode</text>
+    <text x="818" y="366">bifilar current-canceling tabs + Mu-metal foil keep ELF magnetic field below 0.08 µT</text>
+    <text x="818" y="384">antenna isolated in the 90° B stem away from the eye keeps Head/Eye SAR at 0.054 W/kg</text>
+    <text x="818" y="404">10 000 mate cycles across the (+) cross and the B module surface dock (IP68 sealed)</text>
+  </g>
+
+  <!-- ================= C · THE 90°-BENT-STEM B MODULE ================= -->
+  <rect class="panel" x="40" y="430" width="740" height="330" rx="4"/>
+  <text class="t h2" x="58" y="454">C · THE 90°-BENT-STEM B MODULE (ONLY STEM ABOVE EDGE, RING ON SCREEN)</text>
+  <g class="t lbls">
+    <text x="58" y="480">ONLY the straight antenna stem (cubuk, 6.4 x 44.0 mm) is bent at a 90-degree right angle</text>
+    <text x="58" y="498">only the 90°-bent stem stays up/on the edge while the round ring (32 x 32 x 4.00 mm) lies ON screen</text>
+    <text x="58" y="516">+/-90° reversible Grade-5 Titanium neck hinge lets the B module attach to FRONT or BACK of screen</text>
+    <text x="58" y="534">docks along all 4 orientations (Top, Bottom, Left, Right edges) with r = 0.55 mm softened edges</text>
+  </g>
+  <line class="rule" x1="58" y1="550" x2="762" y2="550"/>
+  <g class="t lbls">
+    <text x="58" y="570">the 90°-bent stem houses the 3-band LCP antenna (Wi-Fi 7, BT 5.4, UWB) + 1x4 60 GHz patch array</text>
+    <text x="58" y="588">the 90°-bent stem also houses the device's ONLY USB Type-C (40W PD 3.1 + DP 2.1, IP68) port</text>
+    <text x="58" y="606">the circular ring (Ø32.0 mm outer / Ø24.0 mm inner bore) sits flat on the polycarbonate screen</text>
+    <text x="58" y="624">front of ring bore holds the 50 MP OIS CMOS sensor, folded prism, 5P lens, 2 mics, speaker, flash</text>
+    <text x="58" y="642">back of ring bore holds the Ø22.4 mm round LTPO AMOLED (220 x 220 px, 1-120 Hz) + Cu-Graphite shield</text>
+    <text x="58" y="664">6-layer annular Zero-CPU PCBA holds U1 Quad-Tile Master TCON + U2 UWB/60GHz SiP + U3 Audio DSP</text>
+    <text x="58" y="682">symmetric bipolar N52H magnet ring + 12 gold pogo/optical surface pads + IP68 FKM gasket</text>
+    <text x="58" y="700">retention: 8.5 N normal pull, 10 000 cycles, IP68 sealed (1.5 m, 30 min)</text>
+    <text x="58" y="718">mass: 22.0 g (4-Quadrant (+) body is 72.0 g = 4 x 18 g; complete device is 94.0 g, 84 internal parts)</text>
+    <text x="58" y="740">camera barrel does not internally rotate; instead the whole B module attaches to Front or Back</text>
+  </g>
+
+  <!-- ================= D · 4-QUADRANT (+) SOLID-STATE TILES ================= -->
+  <rect class="panel" x="800" y="430" width="760" height="330" rx="4"/>
+  <text class="t h2" x="818" y="454">D · 4-QUADRANT (+) SOLID-STATE BATTERY TILES &amp; EYEWEAR BIOCOMPATIBILITY</text>
+  <g class="t lbls">
+    <text x="818" y="480">each 40.0 x 80.0 x 2.20 mm polycarbonate tile (Q1..Q4, 18.0 g) encapsulates a 3.0 Wh LLZO cell</text>
+    <text x="818" y="498">non-flammable oxide-ceramic/PEO electrolyte: 0% liquid solvent, 0% LiPF6, 0.0 ppm HF gas, 0% swelling</text>
+    <text x="818" y="516">safe for direct eye proximity in glasses/visor mode (&lt;=36.2 C, ELF &lt;0.08 uT, SAR 0.054 W/kg)</text>
+  </g>
+  <g class="t lblb">
+    <text x="818" y="546">CONFIGURATION</text><text x="1030" y="546">THICKNESS</text><text x="1150" y="546">ENERGY</text><text x="1290" y="546">ACTIVE SESSION</text>
+  </g>
+  <g class="t lbls">
+    <text x="818" y="570">1 Quadrant Tile (Q1..Q4)</text><text x="1030" y="570">2.20 mm</text><text x="1150" y="570">3.0 Wh (800 mAh)</text><text x="1290" y="570">3.5 h (standalone Qi)</text>
+    <text x="818" y="590">3 Quadrants (during hot-swap)</text><text x="1030" y="590">2.20 mm</text><text x="1150" y="590">9.0 Wh (2 400 mAh)</text><text x="1290" y="590">10.6 h uninterrupted</text>
+    <text x="818" y="610">4-Quadrant (+) Full Body</text><text x="1030" y="610">2.20 mm</text><text x="1150" y="610">12.0 Wh (3 200 mAh)</text><text x="1290" y="610">&gt;14.1 h (Qi2.2 wireless)</text>
+    <text x="818" y="630">4-Quadrant Body + 90° B Module</text><text x="1030" y="630">2.20 / 4.00</text><text x="1150" y="630">12.0 Wh (94.0 g)</text><text x="1290" y="630">&gt;14.1 h + 50MP + USB-C</text>
+    <text x="818" y="650">With 4 spare tiles (&lt;3 s swap)</text><text x="1030" y="650">2.20 mm</text><text x="1150" y="650">24.0 Wh (6 400 mAh)</text><text x="1290" y="650">&gt;28.2 h continuous</text>
+  </g>
+  <line class="rule" x1="818" y1="666" x2="1542" y2="666"/>
+  <g class="t lbls">
+    <text x="818" y="686">90°-Bent-Stem B module (22.0 g) carries the device's ONLY USB Type-C (40W PD 3.1 + DP 2.1, IP68)</text>
+    <text x="818" y="704">also carries U1 Quad-Tile Master TCON, U2 UWB/60GHz mmWave SiP, U3 Audio DSP, and 50 MP OIS camera</text>
+    <text x="818" y="722">satisfies EU Common Charger Directive 2022/2380 and EU Battery Regulation 2023/1542 Article 11</text>
+    <text x="818" y="744">when B is detached, the 4-quadrant screen body is 100% portless/buttonless and charges on any Qi2 pad</text>
+  </g>
+
+  <!-- ================= E · WHY NOT BEHIND THE SCREEN ================= -->
+  <rect class="panel" x="40" y="780" width="740" height="230" rx="4"/>
+  <text class="t h2" x="58" y="804">E · WHY NOT BEHIND THE SCREEN · the refused reading, with numbers</text>
+  <g class="t lbls">
+    <text x="58" y="830">a flexible OLED passes 2.9 percent of the light at the camera area, with haze and a yellow shift</text>
+    <text x="58" y="848">a transparent OLED passes about 20 percent, and its pixel grid blurs along one axis</text>
+    <text x="58" y="866">the industry ships a 4 MP class under-display camera, and states a 30 percent degradation</text>
+    <text x="58" y="884">the pixel opening cuts whole spatial frequencies, and computation cannot bring them back</text>
+    <text x="58" y="902">the upright B module carries a 1-inch-class 50 MP / 12.5 MP sensor with an unobstructed lens</text>
+    <text x="58" y="920">the panel bends over its whole area to R 25.5 mm, and a reduced-stack window is a stress riser</text>
+    <text x="58" y="938">the top-edge B module gives a real lens in front and a Ø22.4 mm round AMOLED viewfinder in back</text>
+    <text x="58" y="960">the review trigger: a 20 MP class at 70 percent transmission on a flexible panel. no date</text>
+    <text x="58" y="978">the refusal stands until that part exists, and Part 19, Section 19.3 keeps the row</text>
+  </g>
+
+  <!-- ================= F · THE TRIAL ================= -->
+  <rect class="panel" x="800" y="780" width="760" height="230" rx="4"/>
+  <text class="t h2" x="818" y="804">F · THE TRIAL · fourteen tests, thirty coupons, one fixture</text>
+  <g class="t lbls">
+    <text x="818" y="830">1 top-edge retention (25 N) · 2 shear and peel · 3 1 000 attach cycles · 4 drop fitted (1.2 m)</text>
+    <text x="818" y="848">5 contact wear at 20 000 and 50 000 mates · 6 4-layer battery bend at R 25.5 mm (0.38% strain)</text>
+    <text x="818" y="866">7 magnetic field and touch map · 8 top-edge seat identity handshake in 1 000 trials (3 ms)</text>
+    <text x="818" y="884">9 100% open 11 947 mm² screen + Ø22.4 mm rear round AMOLED · 10 viewfinder latency (&lt;16 ms)</text>
+    <text x="818" y="902">11 thermal rise fitted (&lt;43 °C) · 12 IP68 seal in five states · 13 wall/desk hold · 14 ergonomics</text>
+    <text x="818" y="924">the fixture: a two-axis pull rig with a top-edge seat fixture, built before the first coupon</text>
+    <text x="818" y="942">the gates: MEC-25..32, CAM-1..20, MON-1..20, RL-1..12, DSP-12..14, and ENR-10..13</text>
+    <text x="818" y="960">MEC-6 and RF-3 test the 15-25 W Qi2.2 wireless body, the 40 W B-stem USB-C, and SAR 0.054 W/kg</text>
+    <text x="818" y="978">decisions K1, B1, M1, M2, E1, Q1, S1 stand in Part 20, Section 20.6 (Revision L.5.0)</text>
+  </g>
+
+  <!-- FOOTER -->
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P10</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P10 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">CHARGE · B MODULE</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

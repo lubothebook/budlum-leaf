@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P02 stack materials and bend">
+  <title>BUDLUM LEAF · P02 STACK, MATERIALS AND BEND</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P02 · STACK, MATERIALS AND BEND</text>
+  <text class="t lbl" x="40" y="74">Every layer with its budget, its material and its job. The bend is a measured limit, and the limit belongs to the cover and its hard coat.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · EXPLODED STACK ===== -->
+  <rect class="panel" x="40" y="100" width="600" height="440" rx="4"/>
+  <text class="t h2" x="58" y="124">A · THE TWO SUB-ASSEMBLIES, LAYER BY LAYER</text>
+  <text class="t lbls" x="58" y="140">row height is not linear: thin layers are drawn with a minimum height so they stay readable</text>
+
+  <g stroke="#181816" stroke-width="0.8">
+    <!-- leaf -->
+    <rect x="70" y="154" width="210" height="16" fill="#e9e9e4"/>
+    <rect x="70" y="170" width="210" height="20" fill="#cfe3f7"/>
+    <rect x="70" y="190" width="210" height="14" fill="#efe3c8"/>
+    <rect x="70" y="204" width="210" height="14" fill="#e7e2f4"/>
+    <rect x="70" y="218" width="210" height="16" fill="#bfe6d4"/>
+    <rect x="70" y="234" width="210" height="16" fill="#ddded9"/>
+    <!-- core -->
+    <rect x="70" y="262" width="210" height="14" fill="#c9a86a"/>
+    <rect x="70" y="276" width="210" height="14" fill="#d9c7ea"/>
+    <rect x="70" y="290" width="210" height="12" fill="#e8e8e3"/>
+    <rect x="70" y="302" width="210" height="58" fill="#f6d9a8"/>
+    <rect x="70" y="360" width="210" height="14" fill="#e0cba2"/>
+    <rect x="70" y="374" width="210" height="14" fill="#c9c9c2"/>
+    <rect x="70" y="388" width="210" height="14" fill="#e8e8e3"/>
+    <rect x="70" y="402" width="210" height="14" fill="#bfe6d4"/>
+  </g>
+  <line x1="60" y1="154" x2="60" y2="250" stroke="#18507e" stroke-width="1"/>
+  <text class="t lbls" x="46" y="206" transform="rotate(-90 46 206)" fill="#18507e">SCREEN 0.43</text>
+  <line x1="60" y1="262" x2="60" y2="416" stroke="#8a5a12" stroke-width="1"/>
+  <text class="t lbls" x="46" y="344" transform="rotate(-90 46 344)" fill="#8a5a12">BATTERY 2.20</text>
+
+  <g class="t lbls">
+    <text x="292" y="165">hard coat · 0.01 · scratch resistance, 0.63% strain at R 25.5 mm</text>
+    <text x="292" y="183">polycarbonate cover · 0.15 · shatter-free impact window</text>
+    <text x="292" y="201">optical clear adhesive · 0.035 · low modulus, neutral-axis tuning</text>
+    <text x="292" y="215">touch, Ag-Cu metal mesh · 0.035 · never brittle ITO</text>
+    <text x="292" y="230">flexible AMOLED + TFE + PI · 0.11 · 144 Hz, 508 ppi</text>
+    <text x="292" y="247">backing polycarbonate + PSA · 0.09 · closes the 0.43 mm screen</text>
+    <text x="292" y="273">graphite-Cu spreader + PTFE slip liner · 0.47 mm per side</text>
+    <text x="292" y="287">silicone slip interlayers · 3 x 0.05 · between the 4 cell layers</text>
+    <text x="292" y="301">outer Al-polymer pouch · 2 x 0.125 · continuous sealed skin</text>
+    <text x="292" y="320">4 continuous polymer-gel cell layers of 0.45 · 1.80 mm active</text>
+    <text x="292" y="336">each layer: own fuse, own temperature strip, own BMS channel</text>
+    <text x="292" y="352">split neutral plane · 0.38% collector strain at R 25.5 mm</text>
+    <text x="292" y="371">bend-rated heat spreader · 0.15 · full-area graphite-Cu (rule H14)</text>
+    <text x="292" y="385">bottom extraction cap · 4.0 mm · flush with r 0.80 mm prism edge</text>
+    <text x="292" y="399" class="lblb">dual-lip FKM gasket · IP68 water seal (1.5 m, 30 min)</text>
+  </g>
+  <text class="t lbls" x="292" y="418">barrier target: below 10⁻⁶ g/m²/day for the whole</text>
+  <text class="t lbls" x="292" y="430">encapsulation, measured after a bend.</text>
+  <text class="t lbls" x="70" y="446">The core is one part and it is the middle of the sandwich. The two leaves and the rim form the sleeve.</text>
+  <text class="t lbls" x="70" y="462">The layers slide against each other in the band. They are not bonded. Slip allowance: 5 mm per side.</text>
+  <text class="t lbls" x="70" y="482">Near the neutral axis of the stack the cells see less strain than their thickness suggests.</text>
+  <text class="t lbls" x="70" y="502">Two contact faces break the thermal path to the core. A measured cost, not an opinion (G-H6).</text>
+  <text class="t lbls" x="70" y="522">The slide wears the contacts. Compare a contactless inductive or capacitive link (G-H5).</text>
+
+  <!-- ===== B · MATERIALS ===== -->
+  <rect class="panel" x="660" y="100" width="480" height="440" rx="4"/>
+  <text class="t h2" x="678" y="124">B · MATERIAL REGISTER · one term, one meaning</text>
+  <line class="rule" x1="678" y1="134" x2="1122" y2="134"/>
+  <text class="t lblb" x="678" y="154">PART</text><text class="t lblb" x="880" y="154">MATERIAL</text>
+  <line class="rule" x1="678" y1="162" x2="1122" y2="162"/>
+  <g class="t lbls">
+    <text x="678" y="180">leaf carrier</text><text x="880" y="180">polycarbonate, standard or high heat</text>
+    <text x="678" y="198">window</text><text x="880" y="198">polycarbonate 0.25 with a hard coat</text>
+    <text x="678" y="216">optical adhesive</text><text x="880" y="216">bend-rated, low modulus, low creep</text>
+    <text x="678" y="234">structural rim</text><text x="880" y="234">carbon fiber composite, broken at the band</text>
+    <text x="678" y="252">core body</text><text x="880" y="252">polycarbonate carriers and cell layers</text>
+    <text x="678" y="270">cell sheets</text><text x="880" y="270">4-layer sliding polymer-gel pouch</text>
+    <text x="678" y="288">anchor layer</text><text x="880" y="288">patterned steel foil 30 to 50 µm</text>
+    <text x="678" y="306">edge contacts</text><text x="880" y="306">a separate part from the anchor</text>
+    <text x="678" y="324">heat spreader</text><text x="880" y="324">foil laminate, mesh, graphite, ceramic polymer</text>
+    <text x="678" y="342">magnets, core</text><text x="880" y="342">flexible polymer magnet strips</text>
+    <text x="678" y="360">magnets, module</text><text x="880" y="360">the module carries its own magnet set</text>
+    <text x="678" y="378">connector</text><text x="880" y="378">USB-C receptacle, and a 3.5 mm analog jack</text>
+    <text x="678" y="396">module body</text><text x="880" y="396">metal allowed: it is not in the bend path (H6)</text>
+  </g>
+  <line class="rule" x1="678" y1="412" x2="1122" y2="412"/>
+  <text class="t h3" x="678" y="432">TWO NAMES THAT MUST NOT BE CONFUSED</text>
+  <text class="t lbls" x="678" y="450">a. the D-Web Passport in the Budlum gateway is an identity profile with</text>
+  <text class="t lbls" x="678" y="464">evidence labels. it is not a hardware part.</text>
+  <text class="t lbls" x="678" y="484">b. the hardware record of a core or a module is therefore called a</text>
+  <text class="t lbls" x="678" y="498">COMPONENT RECORD in this program, never a passport, so that one</text>
+  <text class="t lbls" x="678" y="512">term keeps one meaning across the tree. it is signed by a</text>
+  <text class="t lbls" x="678" y="532">secure element in the part, stored as a content-addressed B.U.D. object.</text>
+
+  <!-- ===== C · TOLERANCE AND NEUTRAL AXIS ===== -->
+  <rect class="panel" x="1160" y="100" width="400" height="440" rx="4"/>
+  <text class="t h2" x="1178" y="124">C · TOLERANCE, RESERVE, NEUTRAL AXIS</text>
+    <text class="t lbls" x="1178" y="142">4.00 mm is a maximum, not a target. Three sub-assemblies with a</text>
+    <text class="t lbls" x="1178" y="156">tolerance of plus or minus 0.05 each, spread over 0.30 mm. The</text>
+    <text class="t lbls" x="1178" y="170">design targets 3.90 and holds the maximum at or below 4.00.</text>
+    <line class="rule" x1="1178" y1="182" x2="1542" y2="182"/>
+    <text class="t lblb" x="1178" y="202">THE TRADE LIST, IN ORDER</text>
+      <text class="t lbls" x="1178" y="220">1 · cover 0.25 to 0.20 mm</text>
+      <text class="t lbls" x="1178" y="236">2 · magnetic anchor layer 0.05 to 0.03 mm</text>
+      <text class="t lbls" x="1178" y="252">3 · slip layer 0.03 to 0.02 mm</text>
+      <text class="t lbls" x="1178" y="268">4 · one cell sheet fewer</text>
+      <text class="t lbls" x="1178" y="284">5 · seal film 0.05 to 0.03 mm</text>
+    <text class="t lbls" x="1178" y="304">each trade carries the measured value it costs.</text>
+    <line class="rule" x1="1178" y1="318" x2="1542" y2="318"/>
+    <text class="t lblb" x="1178" y="338">NEUTRAL AXIS</text>
+      <text class="t lbls" x="1178" y="356">target: the active and transistor layers sit within 10 percent of</text>
+      <text class="t lbls" x="1178" y="370">the leaf thickness from the leaf neutral axis.</text>
+      <text class="t lbls" x="1178" y="384">the adhesive is a tool: a thicker low-modulus layer on the</text>
+      <text class="t lbls" x="1178" y="398">compressive side moves the neutral axis.</text>
+      <text class="t lbls" x="1178" y="412">creep moves the axis over time and temperature: measure it after</text>
+      <text class="t lbls" x="1178" y="426">1 000 hours at 60 C, then re-derive the axis.</text>
+      <text class="t lbls" x="1178" y="440">record the layer tolerance: a tolerance is a design input.</text>
+    <text class="t lbls" x="1178" y="458">mono check · strain = t / (2 × R)</text>
+    <text class="t lbls" x="1178" y="474">the formula is the conservative case for a bonded stack. a sliding</text>
+    <text class="t lbls" x="1178" y="488">stack and a flexible cell both beat it. measure the real limit and</text>
+    <text class="t lbls" x="1178" y="502">never trust the formula either way.</text>
+
+  <!-- ===== D · BEND ===== -->
+  <rect class="panel" x="40" y="560" width="1520" height="270" rx="4"/>
+  <text class="t h2" x="58" y="584">D · THE DURABILITY BEND · 180 degrees, radius set by strain, and the band is a part with its own rules</text>
+
+  <path d="M 90 740 A 96 96 0 0 1 282 740" fill="none" stroke="#181816" stroke-width="26" stroke-linecap="round"/>
+  <path d="M 90 740 A 96 96 0 0 1 282 740" fill="none" stroke="#cfe3f7" stroke-width="8"/>
+  <line x1="186" y1="644" x2="186" y2="690" stroke="#8a2b1f" stroke-width="1"/>
+  <line x1="178" y1="690" x2="194" y2="690" stroke="#8a2b1f" stroke-width="1"/>
+  <text class="dimt" x="196" y="652">inner radius R</text>
+  <text class="t lbls" x="196" y="668">R at or above 25 mm: the hard coat reaches 0.50 percent strain</text>
+  <text class="t lbls" x="196" y="686">below 12 mm: the hard coat fails before the display does</text>
+  <text class="t lbls" x="196" y="716">the band is about 90 mm wide for R = 25 at 180 degrees: a soft U, not a crease.</text>
+  <text class="t lbls" x="196" y="734">no component, no rigid board, no magnet, no connector, no stiffener (rule H7).</text>
+  <text class="t lbls" x="196" y="752">the band carries: display layers, adhesive, touch mesh, flex circuits, core cells.</text>
+  <text class="t lbls" x="196" y="778">TEST SET · screening 1 000 cycles · qualification 10 000 · destruction 100 000, at -20, 0 and 60 C.</text>
+  <text class="t lbls" x="196" y="796">ACCEPTANCE · capacity loss below 5 percent · no dead line · touch works · no delamination.</text>
+  <text class="t lbls" x="196" y="812">a monitored flex trace below a 10 percent rise · the core still slides · crease below its limit.</text>
+
+  <line class="rule" x1="740" y1="600" x2="740" y2="812"/>
+  <text class="t lblb" x="764" y="606">STRAIN TABLE · t / (2 × R)</text>
+  <text class="t lblb" x="764" y="628">R</text><text class="t lblb" x="856" y="628">cover 0.25</text><text class="t lblb" x="1000" y="628">hard coat 0.01</text><text class="t lblb" x="1148" y="628">cell sheet 0.38</text><text class="t lblb" x="1320" y="628">verdict</text>
+  <line class="rule" x1="764" y1="636" x2="1542" y2="636"/>
+  <g class="t lbls">
+    <text x="764" y="654">12 mm</text><text x="856" y="654">1.04 %</text><text x="1000" y="654">0.04 %</text><text x="1148" y="654">1.58 %</text><text x="1320" y="654">the hard coat is at risk</text>
+    <text x="764" y="674">25 mm</text><text x="856" y="674">0.50 %</text><text x="1000" y="674">0.02 %</text><text x="1148" y="674">0.76 %</text><text x="1320" y="674">at the hard-coat limit</text>
+    <text x="764" y="694">40 mm</text><text x="856" y="694">0.31 %</text><text x="1000" y="694">0.01 %</text><text x="1148" y="694">0.48 %</text><text x="1320" y="694">safe</text>
+    <text x="764" y="714">50 mm</text><text x="856" y="714">0.25 %</text><text x="1000" y="714">0.01 %</text><text x="1148" y="714">0.38 %</text><text x="1320" y="714">safe</text>
+  </g>
+  <line class="rule" x1="764" y1="728" x2="1542" y2="728"/>
+  <text class="t lbls" x="764" y="748">published anchors for the cell line: a flexible lithium-ion cell at more than 20 000 flex cycles and a 10 mm radius, and a textile cell below 1 mm.</text>
+  <text class="t lbls" x="764" y="766">the formula does not know about sliding layers. that is why the table sets the test radii and the gate sets the claim.</text>
+  <text class="t lbls" x="764" y="792">FORBIDDEN BEFORE THE GATE · "unbreakable when folded" · "foldable phone" · "the device folds in half".</text>
+  <text class="t lbls" x="764" y="810">the device bends and it survives the bend. it does not stay folded. the claim is the measured radius.</text>
+
+  <!-- ===== E · GATES ===== -->
+  <rect class="panel" x="40" y="850" width="1520" height="150" rx="4"/>
+  <text class="t h2" x="58" y="874">E · THE GATES OF THIS PLATE</text>
+  <g class="t lbls">
+    <text class="t lblb" x="58" y="898">G-H1</text><text x="120" y="898">the complete sandwich in a 180 degree bend, capacity, image, touch, crease, the core still slides</text>
+    <text class="t lblb" x="58" y="918">G-H2</text><text x="120" y="918">every layer, including each metal part of rule H14, at the class radius</text>
+    <text class="t lblb" x="58" y="938">G-H3</text><text x="120" y="938">cover, hard coat, edge joint: pencil hardness, steel wool, pen drop, joint step height</text>
+    <text class="t lblb" x="58" y="958">G-H4</text><text x="120" y="958">the bend flex and the inter-field bridge: a monitored trace below a 10 percent rise</text>
+    <text class="t lblb" x="58" y="978">G-H11</text><text x="120" y="978">the measured thickness of every layer and of the total, at the maximum tolerance</text>
+  </g>
+  <text class="t lbls" x="760" y="898">REPORT BL2 · the display stack report: stack, neutral axis, leaves, adhesive, barrier, touch, driver, bend flex, decoder route.</text>
+  <text class="t lbls" x="760" y="918">REPORT BL7 · the mechanical report: the materials, the assembly, the bend band, the sleeve, the service, the ingress, the drop, the crease.</text>
+  <text class="t lbls" x="760" y="938">REPORT BL8 · the durability report: the bend life, the crease, the flex, the failure modes.</text>
+  <text class="t lbls" x="760" y="958">REPORT BL11 · the mass and thickness budget, per configuration.</text>
+  <text class="t lbls" x="760" y="984">a gate result without raw data is an opinion. every instrument carries a calibration date in the record.</text>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P02</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P02 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">STACK AND MATERIALS</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="4 ceyrek polikarbonat ekran-batarya karosu (52 ic parca): yanmaz LLZO kati-hal pil, gozluk saglik kalkani ve Qi2 kablosuz sarj">
+  <title>BUDLUM LEAF · 4-PARÇALI (+) POLİKARBONAT KATI-HAL PİL VE Qİ2 KAROLARI (52 İÇ PARÇA)</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">4-PARÇALI (+) POLİKARBONAT KATI-HAL PİL VE Qİ2 KAROLARI · 52 İÇ PARÇA</text>
+<text class="s" x="40" y="78">Kaba alt batarya modülü kaldırılmıştır: telefon ortasından artı (+) şeklinde 4 eşit tak-çıkar polikarbonat ekran-batarya karosuna (Q1-Q4; 40x80x2.00</text>
+<text class="s" x="40" y="97">mm, 4x 17 g = 68 g) bölünmüştür. Her karoda gözlük/el/cep sağlığına uygun yanmaz LLZO/PEO katı-hal pil (3.0 Wh x 4 = 12.0 Wh), Mu-metal/grafen göz</text>
+<text class="s" x="40" y="116">kalkanı ve evrensel Qi2.2/Qi kablosuz şarj bobini yer alır.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="820" height="340" rx="6"/>
+<text class="t h2" x="60" y="180">A · 4-KARO (+) İÇ KESİTİ · LLZO KATI-HAL PİL, GÖZ KALKANI VE Qİ2 BOBİNLERİ</text>
+<rect fill="#dcecff" stroke="#18507e" stroke-width="2.0" x="84.0" y="200.0" width="704.0" height="216.0" rx="14"/>
+<rect fill="#b8ebd8" stroke="#1b8a6b" stroke-width="1.3" x="101.6" y="210.8" width="325.6" height="91.8" rx="6"/>
+<circle cx="264.4" cy="256.7" r="24" fill="none" stroke="#c88a18" stroke-width="1.4" stroke-dasharray="4 2"/>
+<text class="lbls" x="132.4" y="259.4">Q1 · 3.0 Wh LLZO</text>
+<rect fill="#b8ebd8" stroke="#1b8a6b" stroke-width="1.3" x="444.8" y="210.8" width="325.6" height="91.8" rx="6"/>
+<circle cx="607.6" cy="256.7" r="24" fill="none" stroke="#c88a18" stroke-width="1.4" stroke-dasharray="4 2"/>
+<text class="lbls" x="475.6" y="259.4">Q3 · 3.0 Wh LLZO</text>
+<rect fill="#b8ebd8" stroke="#1b8a6b" stroke-width="1.3" x="101.6" y="313.4" width="325.6" height="91.8" rx="6"/>
+<circle cx="264.4" cy="359.3" r="24" fill="none" stroke="#c88a18" stroke-width="1.4" stroke-dasharray="4 2"/>
+<text class="lbls" x="132.4" y="362.0">Q2 · 3.0 Wh LLZO</text>
+<rect fill="#b8ebd8" stroke="#1b8a6b" stroke-width="1.3" x="444.8" y="313.4" width="325.6" height="91.8" rx="6"/>
+<circle cx="607.6" cy="359.3" r="24" fill="none" stroke="#c88a18" stroke-width="1.4" stroke-dasharray="4 2"/>
+<text class="lbls" x="475.6" y="362.0">Q4 · 3.0 Wh LLZO</text>
+<line x1="436.0" y1="200.0" x2="436.0" y2="416.0" stroke="#1b8a6b" stroke-width="2.2"/>
+<line x1="84.0" y1="308.0" x2="788.0" y2="308.0" stroke="#1b8a6b" stroke-width="2.2"/>
+<circle cx="436.0" cy="308.0" r="54" fill="none" stroke="#d89818" stroke-width="2.6" stroke-dasharray="10 4"/>
+<rect fill="#d8dbe0" stroke="#181816" stroke-width="1.4" x="426.0" y="298.0" width="20" height="20" rx="3"/>
+<text class="lbls" x="60" y="446">• Gözlük ve İnsan Sağlığı: Yanmaz LLZO/PEO katı-hal pil (%0 sıvı, 0 ppm HF gazı), &lt;=36.2 C göz sıcaklığı ve SAR 0.054 W/kg.</text>
+<text class="lbls" x="60" y="464">• Çiziksiz (+) Ekran: 12 µm n=1.585 optik elastomer dudak + Corning kenar-sarımlı elektrotlar ile sıfır görünür birleşim izi.</text>
+<text class="lbls" x="60" y="482">• Portsuz Evrensel Şarj: Gövdede Type-C yoktur; Ø54 mm Qi2.2 MPP + 4x Ø22 mm Qi bobin ile her kablosuz pedde şarj olur.</text>
+<rect class="glass" x="880" y="152" width="480" height="340" rx="6"/>
+<text class="t h2" x="900" y="180">B · KARO HACMİ, ENERJİ VE SAĞLIK HESABI</text>
+<text class="lblb" x="900" y="208">birim</text>
+<text class="lblb" x="974" y="208">kalınlık</text>
+<text class="lblb" x="1048" y="208">yoğunluk</text>
+<text class="lblb" x="1122" y="208">enerji</text>
+<text class="lblb" x="1196" y="208">kapasite</text>
+<text class="lblb" x="1270" y="208">kütle</text>
+<text class="lbls" x="900" y="228">Tek Karo (Q)</text>
+<text class="lbls" x="974" y="228">2.00 mm</text>
+<text class="lbls" x="1048" y="228">750 Wh/L</text>
+<text class="lbls" x="1122" y="228">3.0 Wh</text>
+<text class="lbls" x="1196" y="228">800 mAh</text>
+<text class="lbls" x="1270" y="228">17 g</text>
+<text class="lbls" x="900" y="248">4-Karo (+)</text>
+<text class="lbls" x="974" y="248">2.00 mm</text>
+<text class="lbls" x="1048" y="248">750 Wh/L</text>
+<text class="lbls" x="1122" y="248">12.0 Wh</text>
+<text class="lbls" x="1196" y="248">3.20 Ah</text>
+<text class="lbls" x="1270" y="248">68 g</text>
+<text class="lbls" x="900" y="268">+ B Modülü</text>
+<text class="lbls" x="974" y="268">4.00 mm</text>
+<text class="lbls" x="1048" y="268">Sıfır-CPU</text>
+<text class="lbls" x="1122" y="268">12.0 Wh</text>
+<text class="lbls" x="1196" y="268">3.20 Ah</text>
+<text class="lbls" x="1270" y="268">88 g</text>
+<text class="lbls" x="900" y="288">Leaf 240/480</text>
+<text class="lbls" x="974" y="288">2.40 mm</text>
+<text class="lbls" x="1048" y="288">850 Wh/L</text>
+<text class="lbls" x="1122" y="288">48.0 Wh</text>
+<text class="lbls" x="1196" y="288">12.8 Ah</text>
+<text class="lbls" x="1270" y="288">240 g</text>
+<text class="s" x="900" y="326">Sıfır-CPU mimarisinde CPU ve RAM bulut/hub</text>
+<text class="s" x="900" y="345">düğümündedir; 4 karo + B modülü toplam gücü yalnız</text>
+<text class="s" x="900" y="364">0.85 W'tır. Polikarbonat karoların içindeki 4 x 3.0</text>
+<text class="s" x="900" y="383">Wh = 12.0 Wh (3 200 mAh) yanmaz LLZO katı-hal pil</text>
+<text class="s" x="900" y="402">&gt;14.1 saat kesintisiz ekran süresi verir. AB</text>
+<text class="s" x="900" y="421">2023/1542 Md. 11 uyarınca her karo 3 saniyede</text>
+<text class="s" x="900" y="440">aletsiz takılıp çıkarılabilir.</text>
+<text class="lbls" x="900" y="472">ENR-11..21 kapıları biyouyumlu LLZO katı-hal pili ve Qi2 şarjı doğrular.</text>
+<rect class="glass" x="40" y="508" width="820" height="330" rx="6"/>
+<text class="t h2" x="60" y="536">C · 4 ÇEYREK KARONUN 52 İÇ PARÇASI (HER KARODA 13 PARÇA × 4)</text>
+<text class="lbls" x="60" y="564">1 (x4) ön 0.20 mm ISO 10993 tıbbi polikarbonat + SiO2 kaplama</text>
+<text class="lbls" x="60" y="600">2 (x4) arka 0.20 mm ISO 10993 tıbbi polikarbonat + R 0.55 kenar</text>
+<text class="lbls" x="60" y="636">3 (x4) 12 µm n=1.585 fenil-florosilikon çiziksiz (+) optik dudak</text>
+<text class="lbls" x="60" y="672">4 (x4) 8 oluklu dış polikarbonat esnek omurga (toplam 32 diş)</text>
+<text class="lbls" x="60" y="708">5 (x4) ön/arka 0.05 mm silikon OCA kayma katmanı (%0.38 gerinim)</text>
+<text class="lbls" x="60" y="744">6 (x4) ön/arka 0.14 mm DC-dimming T-OLED + kenar-sarımlı elektrot</text>
+<text class="lbls" x="60" y="780">7 (x4) 0.09 mm PDLC gizlilik + ortotropik grafen/Mu-metal kalkan</text>
+<text class="lbls" x="452" y="564">8 (x4) 35x75x1.08 mm yanmaz LLZO/PEO-Seramik katı-hal pil (3 Wh)</text>
+<text class="lbls" x="452" y="600">9 (x4) çift-telli (bifilar) akım-iptalli folyo kulaklar + NTC (&lt;=36.2 C)</text>
+<text class="lbls" x="452" y="636">10 (x4) 90° merkez Qi2.2 MPP bobin sektörü (birleşince Ø54 mm)</text>
+<text class="lbls" x="452" y="672">11 (x4) Ø22.0 mm bağımsız çeyrek Qi alıcı bobini + nanokristal zırh</text>
+<text class="lbls" x="452" y="708">12 (x4) U_QI yerel kablosuz şarj düzeltici + 3 ms Dead-Pad BMS çipi</text>
+<text class="lbls" x="452" y="744">13 (x4) Ti Artı (+) göbek çeyreği + 2 kırlangıç pim + 6 N52H + 16 yaprak</text>
+<text class="lbls" x="452" y="780">Toplam: 4 çeyrek karo × 13 iç alt-montaj = 52 modellenmiş iç parça</text>
+<rect class="glass" x="880" y="508" width="480" height="180" rx="6"/>
+<text class="t h2" x="900" y="536">D · GÖZLÜK SAĞLIĞI VE Qİ2 ŞARJ SAYILARI</text>
+<text class="lbls" x="900" y="562">katı-hal pil kimyası      LLZO oksit-seramik + PEO (%0 sıvı)</text>
+<text class="lbls" x="900" y="576">zehirli gaz / yanma       0.0 ppm HF gazı · UL94 V-0 yanmaz</text>
+<text class="lbls" x="900" y="590">göz yüzeyi sıcaklığı      &lt;=36.2 °C (donanım NTC + grafen kalkan)</text>
+<text class="lbls" x="900" y="604">manyetik alan (ELF)       &lt;0.08 µT (bifilar akım iptali + Mu-metal)</text>
+<text class="lbls" x="900" y="618">özgül soğurma (SAR)       0.054 W/kg (90° B çubukta uzak anten)</text>
+<text class="lbls" x="900" y="632">biyouyumluluk             ISO 10993-5/-10 tıbbi polikarbonat</text>
+<text class="lbls" x="900" y="646">kablosuz şarj             Qi2.2 MPP Ø54 mm (15-25W) + 4x Ø22 mm Qi</text>
+<text class="lbls" x="900" y="660">gövde port / buton        0 adet (Type-C yalnız 90° B çubuğunda)</text>
+<text class="lbls" x="900" y="674">AB 2023/1542 Md. 11       &lt;3 saniyede aletsiz tak-çıkar karo değişimi</text>
+<rect class="glass" x="880" y="704" width="480" height="134" rx="6"/>
+<text class="t h2" x="900" y="730">E · 3 SN KESİNTİSİZ KARO HOT-SWAP · ALTI ADIM</text>
+<text class="lbls" x="900" y="752">1 değiştirilecek çeyrek karoyu + hattından çek</text>
+<text class="lbls" x="900" y="766">2 Dead-Pad IC o karonun 16 altın yaprağını 0.1 ms keser</text>
+<text class="lbls" x="900" y="780">3 kalan 3 karo (9.0 Wh) sistemi kesintisiz besler</text>
+<text class="lbls" x="900" y="794">4 ekran ve UWB/mmWave oturumu hiç kapanmaz</text>
+<text class="lbls" x="900" y="808">5 dolu karo Ti kırlangıç pim ve N52H ile + hatta oturur</text>
+<text class="lbls" x="900" y="822">6 n=1.585 dudak çiziksiz kapanır, 3 ms sonra güç birleşir</text>
+<rect class="glass" x="40" y="854" width="1320" height="122" rx="6"/>
+<text class="t h2" x="60" y="882">F · KAPILAR ENR-11 … ENR-21 VE F-01 … F-10 (REV L.5.0)</text>
+<text class="lbls" x="60" y="910">ENR-11 4x 3.0 Wh = 12.0 Wh yanmaz LLZO katı-hal pil · ENR-12 ISO 10993 tıbbi PC · ENR-13 &lt;=36.2 C göz kalkanı · ENR-14 0 ppm HF</text>
+<text class="lbls" x="60" y="930">ENR-15 AB 2023/1542 &lt;3 sn Hot-Swap · ENR-16 3 ms Dead-Pad · ENR-17 Evrensel Qi/Qi2.2 şarj · ENR-18..21 SAR 0.054 W/kg + IP68</text>
+<text class="lbls" x="60" y="954">4 çeyrek ekran-batarya karosunun tüm 52 iç parçası ve 90° B modülünün 32 iç parçası (toplam 84 parça) 3B CAD modelindedir.</text>
+</svg>

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Orijinal b.png ters çevrilip doğal boşluğundan ek parçasız 90° bükülür: 1 mm yatay çubuk ekran üstünde, yuvarlak kısım bize bakar">
+  <title>BUDLUM LEAF · BOŞLUKTAN 90° BÜKÜLEN YATAY 1 MM ÇUBUKLU B MODÜLÜ (ANTEN, TEK TYPE-C, KAMERA)</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">BUDLUM B MODÜLÜ · TERS ÇEVRİLİP BOŞLUKTAN 90° BÜKÜLEN 1 MM YATAY ÇUBUK VE YUVARLAK KAMERA</text>
+<text class="s" x="40" y="78">Orijinal b.png tasarımı (2B açılımda 40.0 x 32.0 mm, IoU = 0.9995) kesilmeden ve hiçbir ekstra menteşe parçası eklenmeden ters çevrilir ve çubuk ile</text>
+<text class="s" x="40" y="97">yuvarlak arasındaki doğal boşluktan 90° dik açıyla bükülür: böylece 1.00 mm (bir milim) çubuk yukarıda yatay olarak durur ve 2.00 mm ekranın üst</text>
+<text class="s" x="40" y="116">kenarına tam oturur; çubuk hariç kalan yuvarlak kısım (Ø32/Ø24 mm) ise ekran yüzeyinde bize doğru bakarak durur. Cihazdaki TEK USB Type-C portu bu</text>
+<text class="s" x="40" y="135">1.00 mm yatay üst çubuk içindedir.</text>
+<line class="rule" x1="40" y1="142" x2="1360" y2="142"/>
+<rect class="glass" x="40" y="154" width="650" height="426" rx="6"/>
+<text class="t h2" x="60" y="180">A · BOŞLUKTAN 90° BÜKÜLEN B MODÜLÜ · ÖN VE ARKA GÖRÜNÜM</text>
+<line x1="80.0" y1="232.0" x2="282.4" y2="232.0" stroke="#18507e" stroke-width="1.8" stroke-dasharray="5 3"/>
+<path d="M 88.1 343.7 L 88.3 347.4 L 88.7 351.2 L 89.3 354.8 L 90.0 358.5 L 90.9 362.1 L 91.9 365.7 L 93.1 369.2 L 94.4 372.7 L 95.9 376.1 L 97.6 379.5 L 99.3 382.8 L 101.2 386.0 L 103.3 389.1 L 105.5 392.1 L 107.8 395.0 L 110.2 397.9 L 112.8 400.6 L 115.5 403.2 L 118.2 405.7 L 121.1 408.0 L 124.1 410.3 L 127.2 412.4 L 130.4 414.3 L 133.6 416.2 L 136.9 417.9 L 140.3 419.4 L 143.8 420.8 L 147.3 422.0 L 150.9 423.1 L 154.5 424.1 L 158.1 424.9 L 161.8 425.5 L 165.5 425.9 L 169.2 426.2 L 172.9 426.4 L 176.7 426.4 L 180.4 426.2 L 184.1 425.9 L 187.8 425.4 L 191.5 424.7 L 195.1 423.9 L 198.7 422.9 L 202.3 421.8 L 205.8 420.5 L 209.2 419.1 L 212.6 417.5 L 215.9 415.8 L 219.1 413.9 L 222.3 411.9 L 225.3 409.8 L 228.3 407.5 L 231.2 405.1 L 233.9 402.6 L 236.6 400.0 L 239.1 397.3 L 241.5 394.4 L 243.8 391.5 L 246.0 388.4 L 248.0 385.3 L 249.9 382.1 L 251.6 378.8 L 253.2 375.4 L 254.7 372.0 L 256.0 368.5 L 257.1 364.9 L 258.1 361.3 L 259.0 357.7 L 259.7 354.0 L 260.2 350.3 L 260.5 346.6 L 260.8 342.9 L 260.8 339.2 L 260.7 335.5 L 260.4 331.7 L 260.0 328.0 L 259.4 324.4 L 258.6 320.7 L 257.7 317.1 L 256.6 313.5 L 255.4 310.0 L 254.0 306.5 L 252.5 303.1 L 250.9 299.8 L 249.1 296.5 L 247.1 293.3 L 245.0 290.2 L 242.8 287.2 L 240.5 284.3 L 238.0 281.5 L 235.4 278.8 L 232.7 276.3 L 229.9 273.8 L 227.0 271.5 L 224.0 269.3 L 220.9 267.2 L 217.7 265.3 L 214.5 263.5 L 211.1 261.8 L 207.7 260.3 L 204.2 258.9 L 200.7 257.7 L 197.1 256.6 L 193.5 255.7 L 189.9 255.0 L 186.2 254.4 L 182.5 254.0 L 178.8 253.7 L 175.0 253.6 L 171.3 253.7 L 167.6 253.9 L 163.9 254.2 L 160.2 254.8 L 156.5 255.5 L 152.9 256.3 L 149.3 257.3 L 145.8 258.5 L 142.3 259.8 L 138.8 261.3 L 135.5 262.9 L 132.2 264.6 L 129.0 266.5 L 125.8 268.5 L 122.8 270.7 L 119.9 273.0 L 117.0 275.4 L 114.3 277.9 L 111.7 280.6 L 109.9 290.5 L 109.7 300.5 L 111.1 310.5 L 113.9 320.1 L 118.3 329.2 L 123.9 337.5 L 130.8 344.8 L 138.8 350.9 L 147.6 355.8 L 157.0 359.2 L 166.9 361.2 L 176.9 361.6 L 186.9 360.4 L 196.5 357.7 L 205.7 353.5 L 214.1 348.0 L 221.5 341.3 L 227.8 333.5 L 232.9 324.8 L 236.5 315.4 L 238.6 305.6 L 239.2 295.6 L 238.2 285.6 L 235.7 275.8 L 231.7 266.6 L 226.4 258.1 L 219.8 250.5 L 212.1 244.1 L 203.5 238.9 L 194.2 235.1 L 184.4 232.8 L 174.4 232.0 L 179.1 232.0 L 183.9 232.0 L 188.6 232.0 L 193.3 232.0 L 198.0 232.0 L 202.8 232.0 L 207.5 232.0 L 212.2 232.0 L 216.9 232.0 L 221.7 232.0 L 226.4 232.0 L 231.1 232.0 L 235.8 232.0 L 240.6 232.0 L 245.3 232.0 L 250.0 232.0 L 251.1 232.0 L 252.1 231.9 L 253.1 231.9 L 254.1 231.8 L 255.1 231.7 L 256.0 231.5 L 256.9 231.4 L 257.6 231.2 L 258.3 231.0 L 259.0 230.8 L 259.5 230.6 L 260.0 230.3 L 260.3 230.1 L 260.6 229.8 L 260.7 229.6 L 260.8 229.3 L 260.7 229.0 L 260.6 228.8 L 260.3 228.5 L 260.0 228.3 L 259.5 228.0 L 259.0 227.8 L 258.3 227.6 L 257.6 227.4 L 256.9 227.2 L 256.0 227.1 L 255.1 226.9 L 254.1 226.8 L 253.1 226.7 L 252.1 226.7 L 251.1 226.6 L 250.0 226.6 L 244.6 226.6 L 239.2 226.6 L 233.8 226.6 L 228.4 226.6 L 223.0 226.6 L 217.6 226.6 L 212.2 226.6 L 206.8 226.6 L 201.4 226.6 L 196.0 226.6 L 190.6 226.6 L 185.2 226.6 L 179.8 226.6 L 174.4 226.6 L 169.0 226.6 L 163.6 226.6 L 158.2 226.6 L 152.8 226.6 L 147.4 226.6 L 142.0 226.6 L 136.6 226.6 L 131.2 226.6 L 125.8 226.6 L 120.4 226.6 L 115.0 226.6 L 109.6 226.6 L 104.2 226.6 L 98.8 226.6 L 97.7 226.6 L 96.7 226.7 L 95.7 226.7 L 94.7 226.8 L 93.7 226.9 L 92.8 227.1 L 91.9 227.2 L 91.2 227.4 L 90.5 227.6 L 89.8 227.8 L 89.3 228.0 L 88.8 228.3 L 88.5 228.5 L 88.2 228.8 L 88.1 229.0 L 88.0 229.3 L 88.0 230.5 L 88.0 231.8 L 88.0 236.1 L 88.0 241.0 L 88.0 246.0 L 88.0 250.9 L 88.0 255.8 L 88.0 260.8 L 88.0 265.8 L 88.0 270.7 L 88.0 275.7 L 88.0 280.6 L 88.0 285.6 L 88.0 290.5 L 88.0 295.4 L 88.0 300.4 L 88.0 305.4 L 88.0 310.3 L 88.0 315.2 L 88.0 320.2 L 88.0 325.1 L 88.0 330.1 L 88.0 335.1 L 88.0 340.0 Z M 239.1 343.2 L 238.9 346.4 L 238.5 349.5 L 238.0 352.6 L 237.3 355.7 L 236.4 358.8 L 235.4 361.8 L 234.3 364.8 L 233.0 367.7 L 231.5 370.5 L 230.0 373.3 L 228.3 376.0 L 226.4 378.6 L 224.5 381.1 L 222.4 383.5 L 220.2 385.8 L 217.9 388.0 L 215.5 390.1 L 213.0 392.0 L 210.4 393.9 L 207.7 395.6 L 204.9 397.1 L 202.1 398.6 L 199.2 399.9 L 196.2 401.0 L 193.2 402.0 L 190.1 402.9 L 187.0 403.6 L 183.9 404.1 L 180.8 404.5 L 177.6 404.7 L 174.4 404.8 L 171.2 404.7 L 168.0 404.5 L 164.9 404.1 L 161.8 403.6 L 158.7 402.9 L 155.6 402.0 L 152.6 401.0 L 149.6 399.9 L 146.7 398.6 L 143.9 397.1 L 141.1 395.6 L 138.4 393.9 L 135.8 392.0 L 133.3 390.1 L 130.9 388.0 L 128.6 385.8 L 126.4 383.5 L 124.3 381.1 L 122.4 378.6 L 120.5 376.0 L 118.8 373.3 L 117.3 370.5 L 115.8 367.7 L 114.5 364.8 L 113.4 361.8 L 112.4 358.8 L 111.5 355.7 L 110.8 352.6 L 110.3 349.5 L 109.9 346.4 L 109.7 343.2 L 109.6 340.0 L 109.7 336.8 L 109.9 333.6 L 110.3 330.5 L 110.8 327.4 L 111.5 324.3 L 112.4 321.2 L 113.4 318.2 L 114.5 315.2 L 115.8 312.3 L 117.3 309.5 L 118.8 306.7 L 120.5 304.0 L 122.4 301.4 L 124.3 298.9 L 126.4 296.5 L 128.6 294.2 L 130.9 292.0 L 133.3 289.9 L 135.8 288.0 L 138.4 286.1 L 141.1 284.4 L 143.9 282.9 L 146.7 281.4 L 149.6 280.1 L 152.6 279.0 L 155.6 278.0 L 158.7 277.1 L 161.8 276.4 L 164.9 275.9 L 168.0 275.5 L 171.2 275.3 L 174.4 275.2 L 177.6 275.3 L 180.8 275.5 L 183.9 275.9 L 187.0 276.4 L 190.1 277.1 L 193.2 278.0 L 196.2 279.0 L 199.2 280.1 L 202.1 281.4 L 204.9 282.9 L 207.7 284.4 L 210.4 286.1 L 213.0 288.0 L 215.5 289.9 L 217.9 292.0 L 220.2 294.2 L 222.4 296.5 L 224.5 298.9 L 226.4 301.4 L 228.3 304.0 L 230.0 306.7 L 231.5 309.5 L 233.0 312.3 L 234.3 315.2 L 235.4 318.2 L 236.4 321.2 L 237.3 324.3 L 238.0 327.4 L 238.5 330.5 L 238.9 333.6 L 239.1 336.8 L 239.2 340.0 Z" fill="#8fa882" stroke="#5c6b58" stroke-width="1.5" fill-rule="evenodd"/>
+<rect x="109.6" y="227.4" width="94.5" height="3.9" rx="1.5" fill="#daa84a" stroke="#8a5a12" stroke-width="0.9"/>
+<rect x="211.1" y="227.2" width="33.5" height="4.1" rx="1.5" fill="#d8e0e8" stroke="#48525c" stroke-width="0.9"/>
+<rect x="244.6" y="227.1" width="4.9" height="4.3" rx="1" fill="#d84038"/>
+<circle cx="174.4" cy="340.0" r="72.9" fill="none" stroke="#246c48" stroke-width="10.8" stroke-dasharray="24 7"/>
+<circle cx="174.4" cy="340.0" r="64.8" fill="#46505a" stroke="#5c6b58" stroke-width="1.2"/>
+<rect x="136.6" y="311.9" width="75.6" height="56.2" rx="3" fill="#2a7652" stroke="#7bd4a2" stroke-width="1.0"/>
+<rect x="142.0" y="316.2" width="10.8" height="9.7" rx="2" fill="#da8e4a"/>
+<rect x="196.0" y="316.2" width="10.8" height="9.7" rx="2" fill="#da8e4a"/>
+<rect x="142.0" y="353.0" width="10.8" height="9.7" rx="2" fill="#da8e4a"/>
+<rect x="196.0" y="353.0" width="10.8" height="9.7" rx="2" fill="#da8e4a"/>
+<circle cx="174.4" cy="340.0" r="30.2" fill="#183452" stroke="#8ab4d4" stroke-width="1.1"/>
+<circle cx="174.4" cy="340.0" r="20.5" fill="#2d6898"/>
+<circle cx="174.4" cy="340.0" r="8.1" fill="#a8d8f0"/>
+<circle cx="125.8" cy="361.6" r="4.9" fill="#f6e39c"/>
+<text class="lblb" x="68" y="204">1 · ÖN YÜZ (1 MM YATAY ÇUBUK + KAMERA)</text>
+<text class="lbls" x="68" y="468">1 mm yatay üst çubukta LCP anten + TEK USB-C</text>
+<text class="lbls" x="68" y="486">bize bakan yuvarlak halkada 6L Sıfır-CPU PCB</text>
+<text class="lbls" x="68" y="504">50MP OIS sensör, 2 MEMS mikrofon, hoparlör</text>
+<line x1="390.0" y1="232.0" x2="592.4" y2="232.0" stroke="#18507e" stroke-width="1.8" stroke-dasharray="5 3"/>
+<g transform="translate(968.8,0) scale(-1,1)"><path d="M 398.1 343.7 L 398.3 347.4 L 398.7 351.2 L 399.3 354.8 L 400.0 358.5 L 400.9 362.1 L 401.9 365.7 L 403.1 369.2 L 404.4 372.7 L 405.9 376.1 L 407.6 379.5 L 409.3 382.8 L 411.2 386.0 L 413.3 389.1 L 415.5 392.1 L 417.8 395.0 L 420.2 397.9 L 422.8 400.6 L 425.5 403.2 L 428.2 405.7 L 431.1 408.0 L 434.1 410.3 L 437.2 412.4 L 440.4 414.3 L 443.6 416.2 L 446.9 417.9 L 450.3 419.4 L 453.8 420.8 L 457.3 422.0 L 460.9 423.1 L 464.5 424.1 L 468.1 424.9 L 471.8 425.5 L 475.5 425.9 L 479.2 426.2 L 482.9 426.4 L 486.7 426.4 L 490.4 426.2 L 494.1 425.9 L 497.8 425.4 L 501.5 424.7 L 505.1 423.9 L 508.7 422.9 L 512.3 421.8 L 515.8 420.5 L 519.2 419.1 L 522.6 417.5 L 525.9 415.8 L 529.1 413.9 L 532.3 411.9 L 535.3 409.8 L 538.3 407.5 L 541.2 405.1 L 543.9 402.6 L 546.6 400.0 L 549.1 397.3 L 551.5 394.4 L 553.8 391.5 L 556.0 388.4 L 558.0 385.3 L 559.9 382.1 L 561.6 378.8 L 563.2 375.4 L 564.7 372.0 L 566.0 368.5 L 567.1 364.9 L 568.1 361.3 L 569.0 357.7 L 569.7 354.0 L 570.2 350.3 L 570.5 346.6 L 570.8 342.9 L 570.8 339.2 L 570.7 335.5 L 570.4 331.7 L 570.0 328.0 L 569.4 324.4 L 568.6 320.7 L 567.7 317.1 L 566.6 313.5 L 565.4 310.0 L 564.0 306.5 L 562.5 303.1 L 560.9 299.8 L 559.1 296.5 L 557.1 293.3 L 555.0 290.2 L 552.8 287.2 L 550.5 284.3 L 548.0 281.5 L 545.4 278.8 L 542.7 276.3 L 539.9 273.8 L 537.0 271.5 L 534.0 269.3 L 530.9 267.2 L 527.7 265.3 L 524.5 263.5 L 521.1 261.8 L 517.7 260.3 L 514.2 258.9 L 510.7 257.7 L 507.1 256.6 L 503.5 255.7 L 499.9 255.0 L 496.2 254.4 L 492.5 254.0 L 488.8 253.7 L 485.0 253.6 L 481.3 253.7 L 477.6 253.9 L 473.9 254.2 L 470.2 254.8 L 466.5 255.5 L 462.9 256.3 L 459.3 257.3 L 455.8 258.5 L 452.3 259.8 L 448.8 261.3 L 445.5 262.9 L 442.2 264.6 L 439.0 266.5 L 435.8 268.5 L 432.8 270.7 L 429.9 273.0 L 427.0 275.4 L 424.3 277.9 L 421.7 280.6 L 419.9 290.5 L 419.7 300.5 L 421.1 310.5 L 423.9 320.1 L 428.3 329.2 L 433.9 337.5 L 440.8 344.8 L 448.8 350.9 L 457.6 355.8 L 467.0 359.2 L 476.9 361.2 L 486.9 361.6 L 496.9 360.4 L 506.5 357.7 L 515.7 353.5 L 524.1 348.0 L 531.5 341.3 L 537.8 333.5 L 542.9 324.8 L 546.5 315.4 L 548.6 305.6 L 549.2 295.6 L 548.2 285.6 L 545.7 275.8 L 541.7 266.6 L 536.4 258.1 L 529.8 250.5 L 522.1 244.1 L 513.5 238.9 L 504.2 235.1 L 494.4 232.8 L 484.4 232.0 L 489.1 232.0 L 493.9 232.0 L 498.6 232.0 L 503.3 232.0 L 508.0 232.0 L 512.8 232.0 L 517.5 232.0 L 522.2 232.0 L 526.9 232.0 L 531.6 232.0 L 536.4 232.0 L 541.1 232.0 L 545.8 232.0 L 550.5 232.0 L 555.3 232.0 L 560.0 232.0 L 561.1 232.0 L 562.1 231.9 L 563.1 231.9 L 564.1 231.8 L 565.1 231.7 L 566.0 231.5 L 566.9 231.4 L 567.6 231.2 L 568.3 231.0 L 569.0 230.8 L 569.5 230.6 L 570.0 230.3 L 570.3 230.1 L 570.6 229.8 L 570.7 229.6 L 570.8 229.3 L 570.7 229.0 L 570.6 228.8 L 570.3 228.5 L 570.0 228.3 L 569.5 228.0 L 569.0 227.8 L 568.3 227.6 L 567.6 227.4 L 566.9 227.2 L 566.0 227.1 L 565.1 226.9 L 564.1 226.8 L 563.1 226.7 L 562.1 226.7 L 561.1 226.6 L 560.0 226.6 L 554.6 226.6 L 549.2 226.6 L 543.8 226.6 L 538.4 226.6 L 533.0 226.6 L 527.6 226.6 L 522.2 226.6 L 516.8 226.6 L 511.4 226.6 L 506.0 226.6 L 500.6 226.6 L 495.2 226.6 L 489.8 226.6 L 484.4 226.6 L 479.0 226.6 L 473.6 226.6 L 468.2 226.6 L 462.8 226.6 L 457.4 226.6 L 452.0 226.6 L 446.6 226.6 L 441.2 226.6 L 435.8 226.6 L 430.4 226.6 L 425.0 226.6 L 419.6 226.6 L 414.2 226.6 L 408.8 226.6 L 407.7 226.6 L 406.7 226.7 L 405.7 226.7 L 404.7 226.8 L 403.7 226.9 L 402.8 227.1 L 401.9 227.2 L 401.2 227.4 L 400.5 227.6 L 399.8 227.8 L 399.3 228.0 L 398.8 228.3 L 398.5 228.5 L 398.2 228.8 L 398.1 229.0 L 398.0 229.3 L 398.0 230.5 L 398.0 231.8 L 398.0 236.1 L 398.0 241.0 L 398.0 246.0 L 398.0 250.9 L 398.0 255.8 L 398.0 260.8 L 398.0 265.8 L 398.0 270.7 L 398.0 275.7 L 398.0 280.6 L 398.0 285.6 L 398.0 290.5 L 398.0 295.4 L 398.0 300.4 L 398.0 305.4 L 398.0 310.3 L 398.0 315.2 L 398.0 320.2 L 398.0 325.1 L 398.0 330.1 L 398.0 335.1 L 398.0 340.0 Z M 549.1 343.2 L 548.9 346.4 L 548.5 349.5 L 548.0 352.6 L 547.3 355.7 L 546.4 358.8 L 545.4 361.8 L 544.3 364.8 L 543.0 367.7 L 541.5 370.5 L 540.0 373.3 L 538.3 376.0 L 536.4 378.6 L 534.5 381.1 L 532.4 383.5 L 530.2 385.8 L 527.9 388.0 L 525.5 390.1 L 523.0 392.0 L 520.4 393.9 L 517.7 395.6 L 514.9 397.1 L 512.1 398.6 L 509.2 399.9 L 506.2 401.0 L 503.2 402.0 L 500.1 402.9 L 497.0 403.6 L 493.9 404.1 L 490.8 404.5 L 487.6 404.7 L 484.4 404.8 L 481.2 404.7 L 478.0 404.5 L 474.9 404.1 L 471.8 403.6 L 468.7 402.9 L 465.6 402.0 L 462.6 401.0 L 459.6 399.9 L 456.7 398.6 L 453.9 397.1 L 451.1 395.6 L 448.4 393.9 L 445.8 392.0 L 443.3 390.1 L 440.9 388.0 L 438.6 385.8 L 436.4 383.5 L 434.3 381.1 L 432.4 378.6 L 430.5 376.0 L 428.8 373.3 L 427.3 370.5 L 425.8 367.7 L 424.5 364.8 L 423.4 361.8 L 422.4 358.8 L 421.5 355.7 L 420.8 352.6 L 420.3 349.5 L 419.9 346.4 L 419.7 343.2 L 419.6 340.0 L 419.7 336.8 L 419.9 333.6 L 420.3 330.5 L 420.8 327.4 L 421.5 324.3 L 422.4 321.2 L 423.4 318.2 L 424.5 315.2 L 425.8 312.3 L 427.3 309.5 L 428.8 306.7 L 430.5 304.0 L 432.4 301.4 L 434.3 298.9 L 436.4 296.5 L 438.6 294.2 L 440.9 292.0 L 443.3 289.9 L 445.8 288.0 L 448.4 286.1 L 451.1 284.4 L 453.9 282.9 L 456.7 281.4 L 459.6 280.1 L 462.6 279.0 L 465.6 278.0 L 468.7 277.1 L 471.8 276.4 L 474.9 275.9 L 478.0 275.5 L 481.2 275.3 L 484.4 275.2 L 487.6 275.3 L 490.8 275.5 L 493.9 275.9 L 497.0 276.4 L 500.1 277.1 L 503.2 278.0 L 506.2 279.0 L 509.2 280.1 L 512.1 281.4 L 514.9 282.9 L 517.7 284.4 L 520.4 286.1 L 523.0 288.0 L 525.5 289.9 L 527.9 292.0 L 530.2 294.2 L 532.4 296.5 L 534.5 298.9 L 536.4 301.4 L 538.3 304.0 L 540.0 306.7 L 541.5 309.5 L 543.0 312.3 L 544.3 315.2 L 545.4 318.2 L 546.4 321.2 L 547.3 324.3 L 548.0 327.4 L 548.5 330.5 L 548.9 333.6 L 549.1 336.8 L 549.2 340.0 Z" fill="#8fa882" stroke="#5c6b58" stroke-width="1.5" fill-rule="evenodd"/></g>
+<circle cx="484.4" cy="340.0" r="64.8" fill="#121e2b" stroke="#5c6b58" stroke-width="1.2"/>
+<circle cx="484.4" cy="340.0" r="60.5" fill="#0d1824" stroke="#68c892" stroke-width="1.0"/>
+<circle cx="534.1" cy="340.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="532.4" cy="352.9" r="1.9" fill="#8ce2ac"/>
+<circle cx="527.4" cy="364.8" r="1.9" fill="#8ce2ac"/>
+<circle cx="519.5" cy="375.1" r="1.9" fill="#8ce2ac"/>
+<circle cx="509.2" cy="383.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="497.3" cy="388.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="484.4" cy="389.7" r="1.9" fill="#8ce2ac"/>
+<circle cx="471.5" cy="388.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="459.6" cy="383.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="449.3" cy="375.1" r="1.9" fill="#8ce2ac"/>
+<circle cx="441.4" cy="364.8" r="1.9" fill="#8ce2ac"/>
+<circle cx="436.4" cy="352.9" r="1.9" fill="#8ce2ac"/>
+<circle cx="434.7" cy="340.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="436.4" cy="327.1" r="1.9" fill="#8ce2ac"/>
+<circle cx="441.4" cy="315.2" r="1.9" fill="#8ce2ac"/>
+<circle cx="449.3" cy="304.9" r="1.9" fill="#8ce2ac"/>
+<circle cx="459.6" cy="297.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="471.5" cy="292.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="484.4" cy="290.3" r="1.9" fill="#8ce2ac"/>
+<circle cx="497.3" cy="292.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="509.2" cy="297.0" r="1.9" fill="#8ce2ac"/>
+<circle cx="519.5" cy="304.9" r="1.9" fill="#8ce2ac"/>
+<circle cx="527.4" cy="315.2" r="1.9" fill="#8ce2ac"/>
+<circle cx="532.4" cy="327.1" r="1.9" fill="#8ce2ac"/>
+<line x1="484.4" y1="340.0" x2="484.4" y2="309.8" stroke="#eef4f8" stroke-width="3.0" stroke-linecap="round"/>
+<line x1="484.4" y1="340.0" x2="504.9" y2="340.0" stroke="#8ce2ac" stroke-width="3.0" stroke-linecap="round"/>
+<text class="lblb" x="382" y="204">2 · ARKA YÜZ (N52H HALKA + AMOLED)</text>
+<text class="lbls" x="382" y="468">kameranın arkasında Ø22.4 aktif LTPO AMOLED</text>
+<text class="lbls" x="382" y="486">ek parçasız doğal boşluktan 90° bükülerek oturur</text>
+<text class="lbls" x="382" y="504">sadece 1.00 mm yatay çubuk ekran üstünde durur</text>
+<text class="lbls" x="60" y="544">Yuvarlak gövde: Ø32.0 / Ø24.0 mm (bize bakar) · Yatay üst çubuk: 32.0 x 4.0 x 1.00 mm · toplam 20.0 g</text>
+<text class="lbls" x="60" y="564">Yatay 1 mm çubuğu ile ekranın 4 yönüne (üst, alt, sol, sağ) ve ön/arka yüzüne saniyeler içinde takılır</text>
+<rect class="glass" x="710" y="154" width="650" height="426" rx="6"/>
+<text class="t h2" x="730" y="180">B · DOĞAL BOŞLUKTAN 90° BÜKÜM KESİTİ (1 MM ÇUBUK + YUVARLAK)</text>
+<rect x="804.8" y="356.0" width="451.4" height="24.4" rx="3" fill="#dcecff" stroke="#18507e" stroke-width="1.4"/>
+<rect x="829.2" y="361.9" width="402.6" height="11.7" rx="2" fill="#46a892"/>
+<rect x="756.0" y="331.6" width="48.8" height="48.8" rx="5.1" fill="#78906c" stroke="#5c6b58" stroke-width="1.5"/>
+<rect x="763.3" y="335.3" width="15.9" height="39.0" rx="1.5" fill="#daa84a"/>
+<rect x="781.6" y="337.7" width="17.1" height="34.2" rx="1.5" fill="#d8e0e8" stroke="#d84038" stroke-width="1.0"/>
+<rect x="853.6" y="331.6" width="48.8" height="24.4" rx="5.1" fill="#8fa882" stroke="#5c6b58" stroke-width="1.4"/>
+<rect x="1195.2" y="331.6" width="48.8" height="24.4" rx="5.1" fill="#8fa882" stroke="#5c6b58" stroke-width="1.4"/>
+<rect x="902.4" y="331.8" width="292.8" height="18.1" rx="3" fill="#687482" stroke="#48525c" stroke-width="1.2"/>
+<rect x="948.8" y="331.7" width="200.1" height="3.7" rx="2" fill="#24588a"/>
+<rect x="902.4" y="350.4" width="292.8" height="5.4" rx="2" fill="#203040" stroke="#48525c" stroke-width="1.2"/>
+<text class="lbls" x="756.0" y="317.0">1 mm yatay çubuk (anten+Type-C)</text>
+<text class="lbls" x="981.7" y="317.0">yuvarlak kısım: bize doğru bakar (50MP + AMOLED)</text>
+<text class="lbls" x="878.0" y="395.0">altta 2.00 mm polikarbonat ekran-katı-hal pil karosu</text>
+<text class="lbls" x="756.0" y="410.9">ek menteşe parçası olmadan B boşluğundan 90° bükülür</text>
+<text class="lbls" x="730" y="476">• Orijinal b.png ters çevrilir; ek parça eklenmeden doğal boşluğundan 90° dik bükülür.</text>
+<text class="lbls" x="730" y="496">• 1.00 mm (bir milim) çubuk yukarıda yatay olarak 2.00 mm ekranın üst kenarına tam oturur.</text>
+<text class="lbls" x="730" y="516">• Cihazdaki TEK USB Type-C (40W PD 3.1) prizi bu 1.00 mm yatay üst çubuk içindedir (IP68).</text>
+<text class="lbls" x="730" y="536">• Bize bakan yuvarlak halkada Sıfır-CPU UWB/mmWave alıcı, 4-Karo TCON, 50MP OIS ve AMOLED vardır.</text>
+<rect class="glass" x="40" y="596" width="650" height="158" rx="6"/>
+<text class="t h2" x="60" y="622">C · DOĞAL BOŞLUKTAN 90° BÜKÜM VE 4 YÖNE / ÖNE-ARKAYA TAKIM</text>
+<text class="lbls" x="60" y="646">B harfi ters çevrilip çubuk ile yuvarlak arasındaki doğal boşluktan 90° bükülür.</text>
+<text class="lbls" x="60" y="666">1.00 mm (bir milim) çubuk yukarıda yatay durarak 2.00 mm ekranın üst kenarına tam oturur.</text>
+<text class="lbls" x="60" y="686">Çubuk alanı hariç kalan yuvarlak kısım ekran yüzeyinde bize doğru bakarak durur.</text>
+<text class="lbls" x="60" y="706">Bükmek için yeni bir menteşe parçası eklenmez; B&#39;nin kendi boşluğu bükülmeye izin verir.</text>
+<text class="lbls" x="60" y="726">Ekranın üst, alt, sol, sağ kenarına ve ön (+Z) veya arka (-Z) yüzüne saniyeler içinde takılır.</text>
+<rect class="glass" x="710" y="596" width="650" height="158" rx="6"/>
+<text class="t h2" x="730" y="622">D · ZORUNLU SİSTEM BEYNİ, TEK TYPE-C VE ARKA AMOLED PANEL</text>
+<text class="lbls" x="730" y="646">Ekran gövdesinde Type-C yoktur; sadece kablosuz şarj alır. Diğer her şey için B modülü şarttır.</text>
+<text class="lbls" x="730" y="666">1.00 mm yatay üst çubukta 40W USB-C PD 3.1 + DP 2.1, 3-bant LCP anten ve 60 GHz dizisi vardır.</text>
+<text class="lbls" x="730" y="686">Halka PCB üzerinde 4-Karo Ana TCON ekran sürücüsü, UWB/mmWave SiP ve Ses DSP çalışır.</text>
+<text class="lbls" x="730" y="706">Önde 50 MP 4-eksen OIS katlanmış kamera + 5P lens; arkada Ø22.4 mm Yuvarlak LTPO AMOLED.</text>
+<text class="lbls" x="730" y="726">Gözlük modunda yatay üst çubuk gözden uzakta durarak SAR değerini 0.054 W/kg altına indirir.</text>
+<rect class="glass" x="40" y="770" width="1320" height="106" rx="6"/>
+<text class="t h2" x="60" y="798">E · DOĞRULAMA KAPILARI MON-1 … MON-20 (REVİZYON L.5.0)</text>
+<text class="lbls" x="60" y="822">MON-1 orijinal b.png ters çevrilip boşluktan 90° bükülür · MON-2 1.00 mm yatay üst çubuk · MON-3 yuvarlak kısım bize bakar</text>
+<text class="lbls" x="60" y="840">MON-4 ek menteşe parçası yok · MON-5 tek USB-C yatay çubukta · MON-6 4-Karo Ana TCON + UWB/mmWave SiP · MON-7 50MP OIS + 5P lens</text>
+<text class="lbls" x="60" y="858">MON-8 Ø22.4 arka AMOLED · MON-9 r 0.42 mm yumuşak kenar · MON-10 3 ms Dead-Pad · MON-11..20 IP68, SAR 0.054 W/kg ve 20.0 g kütle</text>
+</svg>

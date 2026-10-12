@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P08 energy architecture">
+  <title>BUDLUM LEAF · P08 · ENERGY ARCHITECTURE</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+    .bar{fill:#cfe3f7;stroke:#18507e;stroke-width:1}
+    .bars{fill:#f7dcae;stroke:#8a5a12;stroke-width:1}
+    .baru{fill:#eef7ee;stroke:#3f6b3f;stroke-width:1}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <!-- TITLE BAND -->
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P08 · THE ENERGY ARCHITECTURE</text>
+  <text class="t lbl" x="40" y="74">The compute left the device. The energy did not have to leave with it. The cell spreads into the panel, and the sandwich stops being necessary.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ================= A · THE BODIES ================= -->
+  <rect class="panel" x="40" y="100" width="740" height="300" rx="4"/>
+  <text class="t h2" x="58" y="124">A · THE BODIES · thickness to scale, 1 mm = 55 px</text>
+  <rect class="bar" x="250" y="138" width="66" height="13"/>
+  <text class="t lblb" x="60" y="148">BARE</text>
+  <text class="t lbls" x="486" y="148">1.20 mm · 20 g · no cell · works on power</text>
+  <rect class="bars" x="250" y="164" width="89" height="13"/>
+  <text class="t lblb" x="60" y="174">SHEET 60</text>
+  <text class="t lbls" x="486" y="174">1.62 mm · 37 g · 2.6 Wh · 1.0 h at the base case</text>
+  <rect class="bars" x="250" y="190" width="111" height="13"/>
+  <text class="t lblb" x="60" y="200">SHEET 100</text>
+  <text class="t lbls" x="486" y="200">2.02 mm · 46 g · 5.5 Wh · 2.2 h at the base case</text>
+  <rect class="bars" x="250" y="216" width="156" height="13"/>
+  <text class="t lblb" x="60" y="226">SHEET 182</text>
+  <text class="t lbls" x="486" y="226">2.84 mm · 67 g · 14.0 Wh · 5.5 h at the base case</text>
+  <rect class="bars" x="250" y="242" width="181" height="13"/>
+  <text class="t lblb" x="60" y="252">SHEET 228</text>
+  <text class="t lbls" x="486" y="252">3.30 mm · 79 g · 20.1 Wh · 7.9 h at the base case</text>
+  <rect class="baru" x="250" y="268" width="214" height="13"/>
+  <text class="t lblb" x="60" y="278">SANDWICH</text>
+  <text class="t lbls" x="486" y="278">3.90 mm · 78 g · 20 Wh · 7.9 h · the reference</text>
+  <g class="t lbls">
+    <text x="60" y="310">the Leaf 160 baseline is the 2.20 mm (72 g = 4 x 18 g) 4-Quadrant (+) Screen-Battery Body (12.0 Wh LLZO)</text>
+    <text x="60" y="326">four 0.45 mm polymer-gel layers slide on three 0.05 mm silicone interlayers (0.38% strain at R 25.5 mm)</text>
+    <text x="60" y="342">sheet 100 is 1.9 mm thinner than today and still carries half a working day</text>
+  </g>
+
+  <!-- ================= B · ONE FACE WITH THE SHEET ================= -->
+  <rect class="panel" x="800" y="100" width="760" height="300" rx="4"/>
+  <text class="t h2" x="818" y="124">B · ONE FACE WITH THE SHEET · layer by layer</text>
+  <g class="t lbls">
+    <text x="818" y="148">hard coat</text><text x="986" y="148">10 µm</text><text x="1104" y="148">scratch and the strain limit of the cover</text>
+    <text x="818" y="165">cover</text><text x="986" y="165">150 µm</text><text x="1104" y="165">polycarbonate, high heat grade</text>
+    <text x="818" y="182">optical adhesive</text><text x="986" y="182">50 µm</text><text x="1104" y="182">low modulus, bend rated, the neutral axis tool</text>
+    <text x="818" y="199">touch</text><text x="986" y="199">50 µm</text><text x="1104" y="199">metal mesh, no indium tin oxide in a bend</text>
+    <text x="818" y="216">panel</text><text x="986" y="216">60 µm</text><text x="1104" y="216">the emissive stack and the encapsulation</text>
+    <text x="818" y="233">backplane</text><text x="986" y="233">30 µm</text><text x="1104" y="233">polyimide with the 144 Hz copper row line</text>
+  </g>
+  <rect class="bars" x="930" y="240" width="150" height="14"/>
+  <text class="t lblb" x="818" y="250">ENERGY SHEET</text>
+  <text class="t lbls" x="986" y="250">0.6 to 2.28</text>
+  <text class="t lbls" x="1104" y="250">the cell at the neutral axis, 110 cm²</text>
+  <g class="t lbls">
+    <text x="818" y="267">backing</text><text x="986" y="267">120 µm</text><text x="1104" y="267">polycarbonate, closes the stack</text>
+    <text x="818" y="284">spine, seal and weld</text><text x="986" y="284">100 µm</text><text x="1104" y="284">the body of part 3</text>
+    <text x="818" y="308">the face above the sheet is 0.43 mm; the sheet sits at the center of the 4.00 mm prism</text>
+    <text x="818" y="324">the sheet uses 4 continuous 0.45 mm layers separated by 0.05 mm silicone slip layers</text>
+    <text x="818" y="340">all 4 layers run continuously across 72.0 x 152.0 mm with zero rigid tiles or cutouts</text>
+    <text x="818" y="356">the carrier includes a 0.15 mm flexing graphite-copper heat spreader across 109.4 cm²</text>
+  </g>
+
+  <!-- ================= C · THE FILLS ================= -->
+  <rect class="panel" x="40" y="415" width="740" height="330" rx="4"/>
+  <text class="t h2" x="58" y="439">C · THE FILLS · what each thickness buys · a Leaf 160</text>
+  <g class="t lblb">
+    <text x="60" y="466">THE FILL</text><text x="150" y="466">SHEET</text><text x="240" y="466">NAMEPLATE</text>
+    <text x="340" y="466">EFFECTIVE</text><text x="440" y="466">A DELTA SESSION</text><text x="580" y="466">BODY</text><text x="670" y="466">MASS</text>
+  </g>
+  <g class="t lbls">
+    <text x="60" y="490">BARE · no cell</text><text x="150" y="490">none</text><text x="240" y="490">0</text>
+    <text x="340" y="490">0</text><text x="440" y="490">on power</text><text x="580" y="490">1.20 mm</text><text x="670" y="490">20 g</text>
+    <text x="60" y="510">SHEET 60</text><text x="150" y="510">0.60 mm</text><text x="240" y="510">5.9 Wh</text>
+    <text x="340" y="510">4.7 Wh</text><text x="440" y="510">2.3 h</text><text x="580" y="510">1.62 mm</text><text x="670" y="510">37 g</text>
+    <text x="60" y="530">SHEET 100</text><text x="150" y="530">1.00 mm</text><text x="240" y="530">9.9 Wh</text>
+    <text x="340" y="530">7.9 Wh</text><text x="440" y="530">3.9 h</text><text x="580" y="530">2.02 mm</text><text x="670" y="530">46 g</text>
+    <text x="60" y="550">SHEET 182</text><text x="150" y="550">1.82 mm</text><text x="240" y="550">18.0 Wh</text>
+    <text x="340" y="550">14.4 Wh</text><text x="440" y="550">7.1 h</text><text x="580" y="550">2.84 mm</text><text x="670" y="550">67 g</text>
+    <text x="60" y="570">SHEET 228</text><text x="150" y="570">2.28 mm</text><text x="240" y="570">22.6 Wh</text>
+    <text x="340" y="570">18.1 Wh</text><text x="440" y="570">8.9 h</text><text x="580" y="570">3.30 mm</text><text x="670" y="570">79 g</text>
+    <text x="60" y="590">SANDWICH</text><text x="150" y="590">2.88 mm bay</text><text x="240" y="590">20 Wh</text>
+    <text x="340" y="590">16 Wh</text><text x="440" y="590">7.9 h</text><text x="580" y="590">3.90 mm</text><text x="670" y="590">78 g</text>
+    <text x="60" y="610">plus the module</text><text x="150" y="610">3.00 mm</text><text x="240" y="610">+20 Wh</text>
+    <text x="340" y="610">+16 Wh</text><text x="440" y="610">+4.9 h</text><text x="580" y="610">+4.00 mm</text><text x="670" y="610">+80 g</text>
+    <text x="60" y="642">each 40 x 80 x 2.20 mm polycarbonate quadrant houses a 3.0 Wh LLZO solid-state cell + Qi2 coil (12.0 Wh total)</text>
+    <text x="60" y="658">the same 20 Wh needs 22.2 cm³: as a cassette 2.88 mm, as a sheet 1.82 mm</text>
+    <text x="60" y="674">the module adds 20 Wh and pairs with any fill; a Bare Leaf with the module runs 7.9 h</text>
+    <text x="60" y="690">the cassette keeps the removable answer if the slip lip of gate ENR-8 fails</text>
+    <text x="60" y="706">every value here is a hypothesis until ENR-7 and ENR-8 run on samples</text>
+  </g>
+
+  <!-- ================= D · WHY A CELL EXISTS ================= -->
+  <rect class="panel" x="800" y="415" width="760" height="330" rx="4"/>
+  <text class="t h2" x="818" y="439">D · WHY A CELL EXISTS · the bill that cannot move off the device</text>
+  <g class="t lbls">
+    <text x="818" y="466">the light · the panel is the product, the photons are made in the hand</text>
+    <text x="1280" y="466">0.60 to 1.10 W</text>
+    <text x="818" y="486">the hub · the decoder, the local renderer and the reprojection unit</text>
+    <text x="1280" y="486">0.70 to 1.20 W</text>
+    <text x="818" y="506">the radio · the link is the product, the bytes cross the air here</text>
+    <text x="1280" y="506">0.40 to 0.60 W</text>
+    <text x="818" y="526">the authority · the wallet must answer with no network</text>
+    <text x="1280" y="526">0.12 W</text>
+    <text x="818" y="546">the compute · it is at the validator, and the voice is a fixed function chip</text>
+    <text x="1280" y="546">0 W</text>
+  </g>
+  <g class="t lblb">
+    <text x="818" y="574">a delta session</text><text x="1000" y="574">2.02 W</text><text x="1100" y="574">eight hours is 16.2 Wh</text>
+    <text x="818" y="594">a video session</text><text x="1000" y="594">3.27 W</text><text x="1100" y="594">four hours is 13.1 Wh</text>
+  </g>
+  <g class="t lbls">
+    <text x="818" y="624">a carried surface of 2026 spends 2 to 5 W on its own silicon; a Leaf spends 0.70 W</text>
+    <text x="818" y="640">harvesting: indoor light is 10 to 100 µW/cm²: 2.5 to 25 mW over 256 cm²</text>
+    <text x="818" y="656">against a 2 000 mW need that is 80 to 800 times short, so no surface lives on light</text>
+    <text x="818" y="672">therefore a cell exists. the open question was only how thick, and where</text>
+    <text x="818" y="688">the answer of this sheet: spread it, put it where the strain is zero, thin the body</text>
+    <text x="818" y="704">and let the module and the hub carry the rest of the energy</text>
+  </g>
+
+  <!-- ================= E · BUYING, LAW, GATES ================= -->
+  <rect class="panel" x="40" y="760" width="1520" height="250" rx="4"/>
+  <text class="t h2" x="58" y="784">E · THE TWO WAYS TO BUY, THE TWO LEGAL ROUTES, AND WHAT MUST BE MEASURED</text>
+  <text class="t h3" x="60" y="812">THE TWO PRODUCTS</text>
+  <g class="t lbls">
+    <text x="60" y="834">LEAF SCREEN · the surface, the sheet, the wallet</text>
+    <text x="60" y="850">LEAF HUB · a separate hardware unit: 40 to 100 Wh, the ports,</text>
+    <text x="60" y="866">the sound, the near services, the validator board as an option</text>
+    <text x="60" y="882">LEAF MODULE · the camera, the sound set, the pen dock, 20 Wh</text>
+    <text x="60" y="898">a user buys a screen; an operator buys a hub and earns</text>
+    <text x="60" y="914">pay as you go: the effort tier in ms and the bytes of the class</text>
+  </g>
+  <text class="t h3" x="560" y="812">THE TWO LEGAL ROUTES</text>
+  <g class="t lbls">
+    <text x="560" y="834">A · the slip sheet: a 0.4 mm lip, 300 cycles, no tool</text>
+    <text x="560" y="850">it keeps the European removability answer for 0.06 mm</text>
+    <text x="560" y="866">B · the sealed sheet: thinner, and it needs a written opinion</text>
+    <text x="560" y="882">per market before it may ship. the real energy source being</text>
+    <text x="560" y="898">the validator does not change the law about the cell inside</text>
+    <text x="560" y="914">the recommendation is A; B is a market variant, gated</text>
+  </g>
+  <text class="t h3" x="1060" y="812">THE NEW GATES</text>
+  <g class="t lbls">
+    <text x="1060" y="834">ENR-7 the sheet energy · ENR-8 the slip cycles and the seal</text>
+    <text x="1060" y="850">MEC-15 the thin body · MEC-16 the sheet at the neutral axis</text>
+    <text x="1060" y="866">MEC-17 the charge heat · MEC-18 the mass · PRG-12 the law</text>
+    <text x="1060" y="882">the claim waits for the gates, and the gates wait for a cell partner</text>
+  </g>
+  <text class="t lbl" x="60" y="960">The compute left the device; the energy did not have to leave with it. The cell spreads, the sandwich stops, and the middle of the body is free.</text>
+  <text class="t note" x="60" y="984">A review with a recommendation, D-8, and not a settled decision. Nothing on this sheet is a claim until ENR-7, ENR-8, MEC-16 and PRG-12 have raw data.</text>
+
+  <!-- FOOTER -->
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P08</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P08 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">ENERGY ARCHITECTURE</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: 1 mm = 55 px</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

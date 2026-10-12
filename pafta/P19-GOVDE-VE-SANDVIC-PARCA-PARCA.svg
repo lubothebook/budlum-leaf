@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Budlum Leaf Rev L.5.0 84 ic parca: 4-parcali (+) polikarbonat ekran-batarya (68 g, 52 parca) ve 90 derece B modulu (20 g, 32 parca)">
+  <title>BUDLUM LEAF · 4-KARO (+) EKRAN-BATARYA (72 G) VE 90° BÜKÜMLÜ B MODÜLÜ (22 G) · 84 İÇ PARÇA</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">4-KARO (+) EKRAN-BATARYA (72 G) VE 90° B MODÜLÜ (22 G) · 84 İÇ PARÇA</text>
+<text class="s" x="40" y="78">Revizyon L.5.0 ile kaba alt batarya çıkıntısı kaldırılmış, pil 4 çeyrek polikarbonat ekran karosunun (4x 40x80x2.00 mm = 68.0 g, 12.0 Wh yanmaz LLZO</text>
+<text class="s" x="40" y="97">katı-hal pil, 52 iç parça) içine alınmıştır. B modülünün ise sadece anten+Type-C çubuğu 90° dik açıyla bükülür; yuvarlak kamera/AMOLED halka ekranın</text>
+<text class="s" x="40" y="116">üstüne oturur (20.0 g, 32 iç parça; toplam 84 iç parça, 88.0 g).</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="700" height="400" rx="6"/>
+<text class="t h2" x="60" y="180">A · 2.20 MM 4-KARO (+) GÖVDE VE 90° BÜKÜMLÜ B MODÜLÜ KATMANLARI</text>
+<rect x="70" y="200.0" width="132.0" height="15.0" rx="2" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="212.0">karo: ön ISO 10993 tıbbi polikarbonat + SiO2 kaplama · 200 µm</text>
+<rect x="70" y="217.9" width="126.0" height="15.0" rx="2" fill="#f7dcae" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="229.9">karo: ön silikon OCA kayma katmanı (%0.38 gerinim) · 50 µm</text>
+<rect x="70" y="235.1" width="150.0" height="15.0" rx="2" fill="#eef4ff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="247.1">karo: ön DC-dimming T-OLED + Corning kenar sarım · 140 µm</text>
+<rect x="70" y="255.3" width="134.0" height="15.0" rx="2" fill="#dcecff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="267.3">karo: ön AgNW/ITO + PDLC + grafen/Mu-metal kalkan · 130 µm</text>
+<rect x="70" y="273.5" width="226.0" height="15.0" rx="2" fill="#b8ebd8" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="285.5">karo: MERKEZ YANMAZ LLZO KATI-HAL PİL (4x 3 Wh = 12 Wh)</text>
+<rect x="70" y="303.2" width="154.0" height="15.0" rx="2" fill="#ffe9a8" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="315.2">karo: Ø54 mm 4-sektör Qi2.2 MPP + 4x Ø22 mm Qi bobin + PMIC</text>
+<rect x="70" y="323.9" width="150.0" height="15.0" rx="2" fill="#eef4ff" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="335.9">karo: arka PDLC + grafen/Mu-metal + AgNW + T-OLED + PC</text>
+<rect x="70" y="344.1" width="146.0" height="15.0" rx="2" fill="#e6d6f2" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="356.1">(+) hat: 12 µm n=1.585 çiziksiz optik dudak + Ti Artı (+) göbek</text>
+<rect x="70" y="363.8" width="150.0" height="15.0" rx="2" fill="#c9ccd1" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="375.8">(+) hat: 8 Ti kırlangıç pim + 24 N52H mıknatıs + 64 altın yaprak</text>
+<rect x="70" y="384.0" width="162.0" height="15.0" rx="2" fill="#d8dbe0" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="396.0">B çubuk: 90° dik bükümlü çubuk + ±90° tersinir Ti boyun menteşesi</text>
+<rect x="70" y="405.7" width="158.0" height="15.0" rx="2" fill="#ffe9a8" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="417.7">B çubuk: CİHAZDAKİ TEK USB TYPE-C (40W PD 3.1, IP68) + U_PD</text>
+<rect x="70" y="426.9" width="150.0" height="15.0" rx="2" fill="#f7dcae" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="438.9">B çubuk: 3-bant LCP anten (Wi-Fi 7/BT/UWB) + 1x4 60 GHz dizi</text>
+<rect x="70" y="447.1" width="162.0" height="15.0" rx="2" fill="#d8f0dc" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="459.1">B halka: 6L Sıfır-CPU PCB (4-Karo Ana TCON + UWB/mmWave SiP)</text>
+<rect x="70" y="468.8" width="146.0" height="15.0" rx="2" fill="#8f948f" stroke="#5b6169" stroke-width="1.2"/>
+<text class="lbls" x="370" y="480.8">B halka: 50 MP OIS kamera + Cu-Grafit kalkan + Ø22.4 mm AMOLED</text>
+<text class="lbls" x="70" y="510">4 çeyrek ekran-batarya karosu birleştiğinde 80x160x2.00 mm (68 g) çiziksiz tek ekran oluşturur.</text>
+<text class="lbls" x="70" y="528">Gövdede Type-C veya buton yoktur; her Qi / Qi2.2 şarj pedinde 15-25 W kablosuz şarj olur.</text>
+<text class="lbls" x="70" y="546">90° bükümlü B modülü ekranın üstüne oturur; 4 yöne ve ekranın önüne/arkasına takılabilir.</text>
+<rect class="glass" x="760" y="152" width="600" height="400" rx="6"/>
+<text class="t h2" x="780" y="180">B · TÜM SİSTEMİN 14 PARÇA GRUBU VE KÜTLELERİ</text>
+<text class="lbls" x="780" y="210">1 4x ISO 10993 PC kabuk</text>
+<text class="lbls" x="945" y="210">11.2 g</text>
+<text class="lbls" x="780" y="234">2 4x çift T-OLED + OCA</text>
+<text class="lbls" x="945" y="234">8.4 g</text>
+<text class="lbls" x="780" y="258">3 4x PDLC + AgNW ağları</text>
+<text class="lbls" x="945" y="258">4.0 g</text>
+<text class="lbls" x="780" y="282">4 4x grafen/Mu-metal</text>
+<text class="lbls" x="945" y="282">3.6 g</text>
+<text class="lbls" x="780" y="306">5 4x 3 Wh LLZO katı pil</text>
+<text class="lbls" x="945" y="306">32.0 g</text>
+<text class="lbls" x="780" y="330">6 Qi2.2 + 4x Qi bobin</text>
+<text class="lbls" x="945" y="330">6.4 g</text>
+<text class="lbls" x="780" y="354">7 (+) Ti göbek + 64 yaprak</text>
+<text class="lbls" x="945" y="354">6.4 g</text>
+<text class="lbls" x="1080" y="210">8 90° B çubuk + halka</text>
+<text class="lbls" x="1245" y="210">7.2 g</text>
+<text class="lbls" x="1080" y="234">9 ±90° Ti boyun menteşesi</text>
+<text class="lbls" x="1245" y="234">1.2 g</text>
+<text class="lbls" x="1080" y="258">10 TEK USB-C 40W + IP68</text>
+<text class="lbls" x="1245" y="258">1.4 g</text>
+<text class="lbls" x="1080" y="282">11 LCP anten + 60GHz dizi</text>
+<text class="lbls" x="1245" y="282">0.7 g</text>
+<text class="lbls" x="1080" y="306">12 6L PCB + TCON + UWB</text>
+<text class="lbls" x="1245" y="306">3.2 g</text>
+<text class="lbls" x="1080" y="330">13 50MP OIS + 5P + prizma</text>
+<text class="lbls" x="1245" y="330">4.9 g</text>
+<text class="lbls" x="1080" y="354">14 Ø22.4 AMOLED + N52H</text>
+<text class="lbls" x="1245" y="354">3.4 g</text>
+<text class="lbls" x="780" y="400">4-Parçalı (+) Polikarbonat Ekran-Batarya Gövdesi (Grup 1..7): 68.0 g (4 x 17.0 g, 52 parça).</text>
+<text class="lbls" x="780" y="420">90° Dik Bükümlü B Kamera, Sıfır-CPU ve Tek Type-C Modülü (Grup 8..14): 20.0 g (32 parça).</text>
+<text class="lbls" x="780" y="440">Tam donanımlı toplam cihaz kütlesi: 68.0 g + 20.0 g = 88.0 g (toplam 84 iç parça).</text>
+<text class="lbls" x="780" y="460">Toplam katı-hal pil enerjisi: 4 x 3.0 Wh = 12.0 Wh (3 200 mAh) · &gt;14.1 saat aktif ekran süresi.</text>
+<text class="lbls" x="780" y="490">AB 2023/1542 Md. 11 uyarınca her çeyrek ekran-batarya karosu 3 sn içinde elle değiştirilir.</text>
+<rect class="glass" x="40" y="568" width="700" height="250" rx="6"/>
+<text class="t h2" x="60" y="596">C · HER İÇ PARÇA VE MODÜL NASIL BAĞLANIR</text>
+<text class="lbls" x="60" y="622">çiziksiz (+) dudak</text>
+<text class="lbls" x="195" y="622">12 µm n=1.585 fenil-florosilikon dudak ile 4 karo arasında sıfır görünür iz</text>
+<text class="lbls" x="60" y="647">Ti Artı (+) göbek</text>
+<text class="lbls" x="195" y="647">merkez (0,0) 4-yollu kilit + 8 konik Ti kırlangıç pim (&lt;2.5 µm adım)</text>
+<text class="lbls" x="60" y="672">64 altın yaprak</text>
+<text class="lbls" x="195" y="672">her iç kenarda 16 mikro-yaprak kontak + 6 çift-kutuplu N52H mıknatıs</text>
+<text class="lbls" x="60" y="697">LLZO katı-hal pil</text>
+<text class="lbls" x="195" y="697">her polikarbonat karonun içinde 35x75x1.08 mm yanmaz seramik-polimer hücre</text>
+<text class="lbls" x="60" y="722">Qi2.2 + Qi bobinler</text>
+<text class="lbls" x="195" y="722">merkezde 4 sektörlü Ø54 mm MPP halka + her karoda bağımsız Ø22 mm bobin</text>
+<text class="lbls" x="60" y="747">90° bükümlü B çubuk</text>
+<text class="lbls" x="195" y="747">±90° Ti menteşe ile sadece anten+Type-C çubuğu ekran kenarında dik kalır</text>
+<text class="lbls" x="60" y="772">yuvarlak B halkası</text>
+<text class="lbls" x="195" y="772">ekranın 4 yönüne ve ÖN/ARKA yüzüne simetrik N52H + 12 pedle oturur</text>
+<text class="lbls" x="60" y="804">Hem 4 çeyrek ekran-batarya karosu hem de 90° B modülü aletsiz takılıp çıkarılır.</text>
+<rect class="glass" x="760" y="568" width="600" height="250" rx="6"/>
+<text class="t h2" x="780" y="596">D · ÇİZİKSİZ (+) OPTİK FİZİĞİ, GÖZLÜK SAĞLIĞI VE B KİLİDİ</text>
+<text class="lbls" x="780" y="624">1. Çiziksiz (+) Ekran: n=1.585 optik elastomer dudak polikarbonatla</text>
+<text class="lbls" x="780" y="646">   indis eşleşmelidir (R &lt; %0.0001); Corning kenar sarımıyla çerçeve 0 mm'dir.</text>
+<text class="lbls" x="780" y="668">2. Gözlük ve Cep Sağlığı: Yanmaz LLZO katı-hal pil sıfır sıvı ve sıfır HF</text>
+<text class="lbls" x="780" y="690">   gazı içerir; göz yüzeyi &lt;=36.2 °C, ELF &lt;0.08 µT ve SAR 0.054 W/kg'dır.</text>
+<text class="lbls" x="780" y="712">3. Portsuz Qi2 Gövde: Gövdede Type-C yoktur, her kablosuz pedde şarj</text>
+<text class="lbls" x="780" y="734">   olur; kablolu Type-C (40W) ve aktif beyin sadece 90° B modülündedir.</text>
+<text class="lbls" x="780" y="756">4. Öne/Arkaya B Takımı: Sadece çubuğu 90° bükülen B modülü ekranın</text>
+<text class="lbls" x="780" y="778">   4 yönüne ve ön/arka yüzüne saniyeler içinde takılır (IP68).</text>
+<rect class="glass" x="40" y="836" width="700" height="140" rx="6"/>
+<text class="t h2" x="60" y="864">E · GÖZLÜK, EL VE CEP KULLANIMINDA ISIL VE EM GÜVENLİK</text>
+<text class="lbls" x="60" y="888">gözlük vizör modu: donanım NTC + grafen kalkan ile göz yüzeyi &lt;=36.2 °C</text>
+<text class="lbls" x="60" y="906">çift-telli (bifilar) folyo + Mu-metal kalkan: ELF manyetik alan &lt;0.08 µT</text>
+<text class="lbls" x="60" y="924">90° B çubuğunda uzak anten: Baş/Göz SAR = 0.054 W/kg (sınırın 37x altı)</text>
+<text class="lbls" x="60" y="942">15-25 W Qi2.2 kablosuz ve 40 W B-Type-C şarjda &lt;4.2 K sıcaklık artışı</text>
+<rect class="glass" x="760" y="836" width="600" height="140" rx="6"/>
+<text class="t h2" x="780" y="864">F · KAPILAR MEC-33 … MEC-38 VE F-01 … F-10 (REV L.5.0)</text>
+<text class="lbls" x="780" y="884">F-01..03: 4x (40x80x2.00 mm) çiziksiz (+) ekran-batarya (n=1.585 dudak)</text>
+<text class="lbls" x="780" y="899">F-04..06: 12 Wh yanmaz LLZO katı-hal pil, &lt;=36.2 C, SAR 0.054, ISO 10993</text>
+<text class="lbls" x="780" y="914">F-07..10: Portsuz gövdede Qi2.2 şarj, AB 2023/1542 &lt;3 sn aletsiz değişim</text>
+<text class="lbls" x="780" y="929">MON-1..20: 90° bükümlü B çubuğu (TEK Type-C + anten), halka ekran üstünde</text>
+<text class="lbls" x="780" y="944">MEC-33: 68.0 g 4-karo gövde + 20.0 g 90° B modülü = 88.0 g (84 iç parça)</text>
+<text class="lbls" x="780" y="959">MEC-35..38: ±90° menteşe 50 000 çevrim, 1.5 m düşme ve IP68 sızdırmazlık</text>
+</svg>

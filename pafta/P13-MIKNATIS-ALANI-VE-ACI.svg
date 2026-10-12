@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="Ortadan + bolunmus 4 ekran-batarya karosunun ciziksiz kenetlenmesi ve 90 derece bukumlu B modulunun 4 yone ve one/arkaya takilmasi">
+  <title>BUDLUM LEAF · (+) DÖRT PARÇA KENETLENME VE 90° BÜKÜMLÜ B ÖNE/ARKAYA TAKILMA</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">(+) 4-KARO ÇİZİKSİZ KENETLENME · 90° BÜKÜMLÜ B ÖNE/ARKAYA VE 4 YÖNE TAKIM</text>
+<text class="s" x="40" y="78">Gövde ortadan artı (+) şeklinde 4 eşit polikarbonat ekran-batarya karosunun çiziksiz kenetlenmesiyle oluşur. B modülünün ise sadece anten+Type-C</text>
+<text class="s" x="40" y="97">çubuğu 90° dik açıyla bükülür; yuvarlak halka ekran üstüne oturur ve 4 yöne + öne/arkaya takılır.</text>
+<line class="rule" x1="40" y1="116" x2="1360" y2="116"/>
+<rect class="glass" x="40" y="132" width="700" height="404" rx="6"/>
+<text class="t h2" x="60" y="160">A · (+) 4-KARO EKRAN-BATARYA VE ÜSTTE 90° BÜKÜMLÜ B MODÜLÜ</text>
+<rect x="115.0" y="212.0" width="124.0" height="248.0" rx="5.0" fill="#dcecff" stroke="#18507e" stroke-width="1.8"/>
+<line x1="177.0" y1="212.0" x2="177.0" y2="460.0" stroke="#1b8a6b" stroke-width="1.5" stroke-dasharray="4 2"/>
+<line x1="115.0" y1="336.0" x2="239.0" y2="336.0" stroke="#1b8a6b" stroke-width="1.5" stroke-dasharray="4 2"/>
+<circle cx="177.0" cy="336.0" r="37.2" fill="none" stroke="#d89818" stroke-width="1.8" stroke-dasharray="6 3"/>
+<rect x="119.7" y="198.1" width="9.9" height="63.6" rx="3" fill="#7f927a" stroke="#5c6b58" stroke-width="1.4"/>
+<circle cx="156.8" cy="236.8" r="24.8" fill="#93a68c" stroke="#5c6b58" stroke-width="1.5"/>
+<circle cx="156.8" cy="236.8" r="18.6" fill="#46505a"/>
+<circle cx="156.8" cy="236.8" r="12.4" fill="#183452"/>
+<text class="lblb" x="265" y="206">Sadece Anten Çubuğu Yukarıda · Yuvarlak Halka Ekran Üstünde</text>
+<text class="lbls" x="265" y="230">• B&#39;nin sadece çubuk (anten + tek Type-C) kısmı 90° dik bükülür</text>
+<text class="lbls" x="265" y="250">• Yuvarlak halka (50MP kamera + arka AMOLED) ekran üstüne oturur</text>
+<text class="lbls" x="265" y="270">• ±90° menteşe ile ekranın ÖN veya ARKA yüzüne takılabilir</text>
+<text class="lbls" x="265" y="290">• Üst, alt, sol ve sağ 4 kenara da L-klips gibi kenetlenir</text>
+<text class="lbls" x="265" y="310">• Gövdede Type-C veya alt batarya çıkıntısı kesinlikle yoktur</text>
+<text class="s" x="265" y="350">Ortadan artı (+) bölünen 4 polikarbonat ekran-</text>
+<text class="s" x="265" y="369">batarya karosu n=1.585 optik dudak ile sıfır çizikle</text>
+<text class="s" x="265" y="388">birleşir ve her Qi/Qi2 pedde kablosuz şarj olur.</text>
+<rect class="glass" x="760" y="132" width="600" height="404" rx="6"/>
+<text class="t h2" x="780" y="160">B · (+) ARTl MERKEZ GÖBEK, 24 N52H VE 64 ALTIN YAPRAK</text>
+<rect class="steel" x="800" y="210" width="520" height="36" rx="8"/>
+<rect class="mag" x="818" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="880" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="942" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="1004" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="1066" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="1128" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="1190" y="218" width="36" height="20" rx="3"/>
+<rect class="mag" x="1252" y="218" width="36" height="20" rx="3"/>
+<rect class="gd" x="960" y="252" width="200" height="12" rx="3"/>
+<text class="lbls" x="800" y="200">Merkez (0,0) Grade-5 Titanyum Artı (+) Göbek + 12 µm n=1.585 optik dudak</text>
+<text class="lbls" x="800" y="286">24 adet N52H çift-kutuplu mıknatıs + 64 altın mikro-yaprak kontak (IP68)</text>
+<text class="s" x="780" y="320">8 adet konik Titanyum mikro-kırlangıç pim 4 çeyrek karoyu &lt;2.5 µm</text>
+<text class="s" x="780" y="339">yüzey eşdüzlemliliği ile kilitler. 3 ms kriptografik Dead-Pad el</text>
+<text class="s" x="780" y="358">sıkışması tamamlanmadan iç + barasına akım verilmez.</text>
+<text class="lbls" x="780" y="396">• Sıfır Çizik: n=1.585 optik elastomer ile Fresnel yansıması &lt;%0.0001</text>
+<text class="lbls" x="780" y="418">• AB 2023/1542 Md. 11: Aletsiz, ısısız &lt;3 saniyede tak-çıkar batarya karoları</text>
+<text class="lbls" x="780" y="440">• Evrensel Qi2.2: 4 çeyrek sektör birleşince Ø54 mm 15-25 W MPP bobini olur</text>
+<text class="lbls" x="780" y="462">• Tekil Şarj: Sökülmüş tek bir karo da kendi Ø22 mm bobiniyle Qi şarj alır</text>
+<rect class="glass" x="40" y="556" width="700" height="396" rx="6"/>
+<text class="t h2" x="60" y="586">C · ESNEK KATI-HAL PİLLİ GÖVDE VE GÖZLÜK VİZÖR KAVİSİ</text>
+<path d="M 110 850 C 160 690 360 690 410 850" fill="none" stroke="#18507e" stroke-width="10" stroke-linecap="round"/>
+<text class="lbls" x="110" y="882">2.00 mm polikarbonat + silikon OCA + esnek LLZO/PEO katı-hal pil</text>
+<text class="lbls" x="110" y="902">R 25.5 mm bükülmede %0.38 gerinim · gözlük vizörü olarak yüze uyum sağlar</text>
+<text class="s" x="60" y="926">Polikarbonat karoların içindeki LLZO/PEO-Seramik katı-hal pil ve 32 oluklu esnek</text>
+<text class="s" x="60" y="945">omurga R 25.5 mm yarıçapa kadar kırılmadan esner; elde, cepte ve gözlük olarak</text>
+<text class="s" x="60" y="964">yüzde güvenle kullanılır.</text>
+<rect class="glass" x="760" y="556" width="600" height="396" rx="6"/>
+<text class="t h2" x="780" y="586">D · 90° B MODÜLÜNÜN 4 YÖNE VE ÖNE/ARKAYA TAKILMASI</text>
+<path d="M 800 800 L 900 800 L 900 770 Z" fill="#f7dcae" stroke="#8a5a12" stroke-width="2"/>
+<rect class="mod" x="808" y="742" width="84" height="24" rx="5"/>
+<text class="lbls" x="800" y="824">Üst/Alt Öne</text>
+<path d="M 985 800 L 1085 800 L 1085 740 Z" fill="#f7dcae" stroke="#8a5a12" stroke-width="2"/>
+<rect class="mod" x="993" y="712" width="84" height="24" rx="5"/>
+<text class="lbls" x="985" y="824">Üst/Alt Arkaya</text>
+<path d="M 1170 800 L 1270 800 L 1270 680 Z" fill="#f7dcae" stroke="#8a5a12" stroke-width="2"/>
+<rect class="mod" x="1178" y="652" width="84" height="24" rx="5"/>
+<text class="lbls" x="1170" y="824">Sol/Sağ Yana</text>
+<text class="s" x="780" y="856">Sadece çubuk kısmı 90° dik açıyla büküldüğü için B modülü ekranın</text>
+<text class="s" x="780" y="875">üst, alt, sol veya sağ kenarına ve ekranın ÖN veya ARKA yüzüne</text>
+<text class="s" x="780" y="894">takılabilir; yuvarlak kamera/AMOLED halka daima ekran üstüne</text>
+<text class="s" x="780" y="913">oturur.</text>
+</svg>

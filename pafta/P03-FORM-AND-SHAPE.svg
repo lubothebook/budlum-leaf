@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P03 form family and shape freedom">
+  <title>BUDLUM LEAF · P03 FORM FAMILY AND SHAPE FREEDOM</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P03 · FORM FAMILY AND SHAPE FREEDOM</text>
+  <text class="t lbl" x="40" y="74">One system, five forms, any outline. The shape is a parameter of the product, not a product line.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · FORMS ===== -->
+  <rect class="panel" x="40" y="100" width="740" height="330" rx="4"/>
+  <text class="t h2" x="58" y="124">A · THE FORM FAMILY · what changes, and what never changes</text>
+
+  <rect x="70" y="146" width="110" height="160" rx="12" fill="#eef5fd" stroke="#18507e" stroke-width="1.3"/>
+  <text class="t lbls" x="86" y="326">PHONE</text>
+  <text class="t lbls" x="72" y="342">one face live</text>
+
+  <rect x="204" y="146" width="180" height="160" rx="6" fill="#eef5fd" stroke="#18507e" stroke-width="1.3"/>
+  <line x1="204" y1="226" x2="384" y2="226" stroke="#8a2b1f" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text class="t lbls" x="252" y="326">TABLET</text>
+  <text class="t lbls" x="216" y="342">both faces, one surface</text>
+
+  <rect x="408" y="146" width="150" height="160" rx="6" fill="#eef5fd" stroke="#18507e" stroke-width="1.3"/>
+  <rect x="452" y="306" width="62" height="18" fill="#ddded9" stroke="#181816" stroke-width="1"/>
+  <text class="t lbls" x="440" y="342">DESK · stand, second screen, keyboard accessory</text>
+
+  <circle cx="620" cy="206" r="52" fill="#eef5fd" stroke="#18507e" stroke-width="1.3"/>
+  <circle cx="594" cy="206" r="18" fill="none" stroke="#18507e" stroke-width="1"/>
+  <circle cx="646" cy="206" r="18" fill="none" stroke="#18507e" stroke-width="1"/>
+  <text class="t lbls" x="560" y="286">GLASSES</text>
+  <text class="t lbls" x="430" y="312">glasses · polycarbonate lens, waveguide, micro display</text>
+  <text class="t lbls" x="430" y="328">prescription range · eye glow measured · AR and dimmed mode</text>
+
+  <line class="rule" x1="58" y1="362" x2="762" y2="362"/>
+  <text class="t h3" x="58" y="384">THE RULE OF THE FORM CHANGE</text>
+  <text class="t lbls" x="58" y="398">A change of form must not change the identity, the protocol, the security model,</text>
+  <text class="t lbls" x="58" y="412">the permission set or the data location. that is what makes Budlum Leaf one</text>
+  <text class="t lbls" x="58" y="426">product family, not five products. the wallet authority moves the session.</text>
+
+  <!-- ===== B · SHAPES ===== -->
+  <rect class="panel" x="800" y="100" width="760" height="330" rx="4"/>
+  <text class="t h2" x="818" y="124">B · THE SOFTENED PRISM FAMILY · Leaf 80, Leaf 160, Leaf 480</text>
+
+  <rect x="830" y="176" width="60" height="110" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="832" y="304">Leaf 80 (40x80)</text>
+  <text class="t lbls" x="832" y="318">R 2.69 · r 0.70</text>
+
+  <rect x="920" y="146" width="86" height="140" rx="5" fill="#eef5fd" stroke="#18507e" stroke-width="1.4"/>
+  <line x1="920" y1="216" x2="1006" y2="216" stroke="#8a2b1f" stroke-width="1.3" stroke-dasharray="5 3"/>
+  <text class="t lbls" x="920" y="304">Leaf 160 (80x160)</text>
+  <text class="t lbls" x="920" y="318">R 3.20 · r 0.80</text>
+
+  <rect x="1036" y="146" width="126" height="140" rx="6" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="1036" y="304">Leaf 480 (320x480)</text>
+  <text class="t lbls" x="1036" y="318">R 4.53 · r 0.80</text>
+
+  <path d="M 1190.0 262.0 L 1190.0 192.0 A 5.0 5.0 0 0 1 1200.0 192.0 L 1200.0 227.0 A 30.0 30.0 0 0 0 1222.5 256.0 A 40.0 40.0 0 1 1 1250.0 267.0 L 1195.0 267.0 A 5.0 5.0 0 0 1 1190.0 262.0 Z" fill="#93a68c" stroke="#181816" stroke-width="1.2"/>
+  <circle cx="1250" cy="227" r="30" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="1194" y="304">Upright B (40x32)</text>
+  <text class="t lbls" x="1194" y="318">r 0.55 mm edges</text>
+
+  <rect x="1352" y="146" width="60" height="140" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <rect x="1420" y="146" width="110" height="140" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="1352" y="304">Paired surfaces</text>
+  <text class="t lbls" x="1352" y="318">magnetic edge couple</text>
+
+  <line class="rule" x1="818" y1="336" x2="1542" y2="336"/>
+  <g class="t lbls">
+    <text x="818" y="356">1 · every body is a rectangular prism with small corner radius R = 3.20 mm (Leaf 160) so the screen stays a clean rectangle.</text>
+    <text x="818" y="372">2 · all 12 prism edges are softened with r = 0.80 mm so no 90-degree sharp corner ever touches the hand (HARDWARE/06).</text>
+    <text x="818" y="388">3 · the active screen area is 76.4 x 156.4 mm = 11 947 mm² per face (1.80 mm perimeter bezel), 100% open with zero cutouts.</text>
+    <text x="818" y="404">4 · the bottom 15.0 mm transition zone houses 18 Ti/CFRP comb ribs and 3x 2.2 F thin-film 15 s supercapacitors.</text>
+    <text x="818" y="420">5 · the upright B module (40 x 32 x 4.00 mm) seats on the top edge (y = +80 mm) and softens all its 90° edges at r = 0.55 mm.</text>
+  </g>
+
+  <!-- ===== C · TWO FACES ===== -->
+  <rect class="panel" x="40" y="450" width="740" height="330" rx="4"/>
+  <text class="t h2" x="58" y="474">C · TWO FACES AS ONE SURFACE · and the interaction model that needs no keyboard</text>
+
+  <rect x="70" y="496" width="180" height="130" rx="8" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="80" y="512">face A</text>
+  <rect x="270" y="496" width="180" height="130" rx="8" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lbls" x="280" y="512">face B</text>
+  <rect x="252" y="496" width="16" height="130" fill="#f7dcae" stroke="#8a5a12" stroke-width="1"/>
+  <text class="t lbls" x="238" y="644">the seam</text>
+  <text class="t lbls" x="70" y="666">a virtual bezel of a stated width, or a continuous canvas with a</text>
+  <text class="t lbls" x="70" y="682">dead band of the panel pitch. state the value, measure the</text>
+  <text class="t lbls" x="70" y="698">misalignment after 10 000 bend cycles.</text>
+
+  <line class="rule" x1="480" y1="490" x2="480" y2="770"/>
+  <text class="t h3" x="504" y="496">THE INPUT SET · one model, every form</text>
+      <text class="t lbls" x="504" y="516">touch on both faces, across the seam</text>
+      <text class="t lbls" x="504" y="534">proximity and hover: reacts before the touch</text>
+      <text class="t lbls" x="504" y="552">gesture: tap, pinch, swipe, grab, push, hold</text>
+      <text class="t lbls" x="504" y="570">gaze: a coarse pointer, never a payment approval</text>
+      <text class="t lbls" x="504" y="588">voice: the microphone array with a wake word</text>
+      <text class="t lbls" x="504" y="606">pen: passive on the touch layer, no digitizer</text>
+      <text class="t lbls" x="504" y="624">haptics: actuator in the rim or the module</text>
+    <text class="t lbls" x="504" y="648">recognition and false rates measured in three</text>
+    <text class="t lbls" x="504" y="662">light conditions · gate G-H10</text>
+    <text class="t lbls" x="504" y="680">the camera module is the input sensor of the</text>
+    <text class="t lbls" x="504" y="694">interaction layer, so the model needs no keyboard</text>
+    <text class="t lbls" x="504" y="714">steam-free rule: gesture and gaze frames run on</text>
+    <text class="t lbls" x="504" y="728">the validator only inside a signed session, and the</text>
+    <text class="t lbls" x="504" y="742">system stores the derived event, not the frame</text>
+    <text class="t lbls" x="504" y="758">local layer under 1 ms: echo, cursor, haptics</text>
+    <text class="t lbls" x="504" y="772">near layer 10 to 20 ms: gesture, gaze, dictation</text>
+
+  <!-- ===== D · AR AND VR ===== -->
+  <rect class="panel" x="800" y="450" width="760" height="330" rx="4"/>
+  <text class="t h2" x="818" y="474">D · AR AND VR · three modes on one system, and the claim rules</text>
+
+  <rect x="830" y="496" width="220" height="120" rx="6" fill="#efe9f8" stroke="#5c3f8a" stroke-width="1.2"/>
+  <rect x="846" y="512" width="88" height="88" rx="8" fill="#eef5fd" stroke="#18507e" stroke-width="1"/>
+  <rect x="946" y="512" width="88" height="88" rx="8" fill="#eef5fd" stroke="#18507e" stroke-width="1"/>
+  <circle cx="890" cy="556" r="20" fill="none" stroke="#5c3f8a" stroke-width="1"/>
+  <circle cx="990" cy="556" r="20" fill="none" stroke="#5c3f8a" stroke-width="1"/>
+  <text class="t lbls" x="830" y="634">FIELD MODE · two faces, B module, spacer</text>
+  <text class="t lbls" x="830" y="650">the inter-pupillary distance is set by the spacer,</text>
+  <text class="t lbls" x="830" y="664">not by the device. this is the cheapest stereo path</text>
+  <text class="t lbls" x="830" y="678">the architecture offers.</text>
+
+  <line class="rule" x1="1080" y1="490" x2="1080" y2="770"/>
+  <text class="t h3" x="1104" y="496">GLASSES MODE</text>
+  <g class="t lbls">
+    <text x="1104" y="516">a polycarbonate lens with a waveguide and a micro display</text>
+    <text x="1104" y="532">in the frame. the lens stays clear, the wearer sees the image,</text>
+    <text x="1104" y="548">and the forward light ratio is measured, never claimed.</text>
+    <text x="1104" y="570">the prescription range, the drop and scratch behaviour and</text>
+    <text x="1104" y="586">the service route for a new lens are measured in O1 to O3.</text>
+  </g>
+  <text class="t h3" x="1104" y="614">HAND-HELD MODE</text>
+  <g class="t lbls">
+    <text x="1104" y="634">the leaf as a window into an augmented scene with the camera</text>
+    <text x="1104" y="650">module as the tracker. the camera is the sensor, the validator</text>
+    <text x="1104" y="666">is the renderer, the panel is the window.</text>
+  </g>
+  <text class="t h3" x="1104" y="694">CLAIM RULES</text>
+  <g class="t lbls">
+    <text x="1104" y="712">no "VR ready". report the measured field of view, the latency,</text>
+    <text x="1104" y="728">the comfort and the power for each mode.</text>
+    <text x="1104" y="746">reference, not target: one Android XR waveguide statement is 70</text>
+    <text x="1104" y="760">degrees of field of view, and a closed headset uses micro OLED.</text>
+  </g>
+  <text class="t lbls" x="1104" y="776">a two-face system is a natural stereo system · work order HO-8</text>
+
+  <!-- ===== E · SESSION ===== -->
+  <rect class="panel" x="40" y="800" width="1520" height="200" rx="4"/>
+  <text class="t h2" x="58" y="824">E · SESSION CONTINUITY · the state lives in B.U.D., therefore the form and the provider can change</text>
+
+  <rect x="70" y="846" width="240" height="70" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.2"/>
+  <text class="t lblb" x="82" y="868">FORM STATE</text>
+  <text class="t lbls" x="82" y="886">session id, form, face set, input set,</text>
+  <text class="t lbls" x="82" y="902">energy state, counter</text>
+
+  <path d="M 322 881 L 372 881" stroke="#8a2b1f" stroke-width="2"/><path d="M 364 875 L 376 881 L 364 887 Z" fill="#8a2b1f"/>
+
+  <rect x="386" y="846" width="240" height="70" rx="4" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+  <text class="t lblb" x="398" y="868">HANDOFF</text>
+  <text class="t lbls" x="398" y="886">target validator, resume token,</text>
+  <text class="t lbls" x="398" y="902">signature, single use</text>
+
+  <path d="M 638 881 L 688 881" stroke="#8a2b1f" stroke-width="2"/><path d="M 680 875 L 692 881 L 680 887 Z" fill="#8a2b1f"/>
+
+  <rect x="702" y="846" width="240" height="70" rx="4" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+  <text class="t lblb" x="714" y="868">STATE HASH IN B.U.D.</text>
+  <text class="t lbls" x="714" y="886">the session survives a provider change,</text>
+  <text class="t lbls" x="714" y="902">a module hot swap and a form change</text>
+
+  <line class="rule" x1="972" y1="840" x2="972" y2="986"/>
+  <g class="t lbls">
+    <text x="996" y="856" class="lblb">THE FOUR THINGS THE SESSION MUST SURVIVE</text>
+    <text x="996" y="876">1 · a validator change during a live session</text>
+    <text x="996" y="894">2 · a module hot swap: the camera module leaves and returns</text>
+    <text x="996" y="912">3 · a link cut: the safe screen takes over, then the session resumes</text>
+    <text x="996" y="930">4 · a form change: phone to tablet to desk to glasses to the field</text>
+    <text x="996" y="954">gate G-H19 measures the grace period and the recovery. gate G-H20 measures the form change.</text>
+    <text x="996" y="972">a stuck state after any of the four is a failure, not a degraded success.</text>
+  </g>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P03</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P03 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">FORM AND SHAPE</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

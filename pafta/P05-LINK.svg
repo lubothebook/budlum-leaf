@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P05 link multipath and fail-safe">
+  <title>BUDLUM LEAF · P05 LINK, MULTIPATH AND FAIL-SAFE</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P05 · LINK, MULTIPATH AND FAIL-SAFE</text>
+  <text class="t lbl" x="40" y="74">The compute is not in the device. Therefore the link is not a feature of Budlum Leaf: the link is the product. A bad link is a screen and a battery that do not work.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ===== A · THE BUDGET ===== -->
+  <rect class="panel" x="40" y="100" width="740" height="310" rx="4"/>
+  <text class="t h2" x="58" y="124">A · WHAT THE LINK MUST CARRY, AND THE PHYSICS THAT SETS IT</text>
+  <text class="t lblb" x="58" y="148">USE CLASS</text><text class="t lblb" x="290" y="148">DOWNLINK</text><text class="t lblb" x="410" y="148">UPLINK</text><text class="t lblb" x="510" y="148">ROUND TRIP</text><text class="t lblb" x="640" y="148">NOTE</text>
+  <line class="rule" x1="58" y1="156" x2="782" y2="156"/>
+  <g class="t lbls">
+    <text x="58" y="174">input echo, cursor</text><text x="290" y="174">0</text><text x="410" y="174">0</text><text x="510" y="174">under 1 ms</text><text x="640" y="174">local layer</text>
+    <text x="58" y="192">delta interface, text</text><text x="290" y="192">10 kbit/s to 2 Mbit/s</text><text x="410" y="192">under 100 kbit/s</text><text x="510" y="192">20 to 60 ms is good</text><text x="640" y="192">the everyday mode</text>
+    <text x="58" y="210">video, 1080p at 60</text><text x="290" y="210">10 to 30 Mbit/s</text><text x="410" y="210">100 kbit/s</text><text x="510" y="210">under 40 ms</text><text x="640" y="210">with a codec</text>
+    <text x="58" y="228">video, 4K at 60</text><text x="290" y="228">30 to 80 Mbit/s</text><text x="410" y="228">100 kbit/s</text><text x="510" y="228">under 40 ms</text><text x="640" y="228">a research gate</text>
+    <text x="58" y="246">camera and gesture up</text><text x="290" y="246">5 to 20 Mbit/s</text><text x="410" y="246">1 to 5 Mbit/s</text><text x="510" y="246">under 40 ms</text><text x="640" y="246">the input sensor</text>
+    <text x="58" y="264">AI query</text><text x="290" y="264">burst</text><text x="410" y="264">burst</text><text x="510" y="264">seconds are fine</text><text x="640" y="264">far layer</text>
+  </g>
+  <line class="rule" x1="58" y1="278" x2="782" y2="278"/>
+  <text class="t h3" x="58" y="298">THE PHYSICS CANNOT BE NEGOTIATED</text>
+  <g class="t lbls">
+    <text x="58" y="318">light in fibre travels about 200 km per millisecond. a round trip of 1 000 km costs about 10 ms before any routing delay.</text>
+    <text x="58" y="336">the validator must stand close to the user. that is a siting requirement, not a software trick.</text>
+    <text x="58" y="354">a data centre within 200 km is required for a round trip under 10 ms. an edge node 10 to 15 km away is measured at 1 to 5 ms.</text>
+    <text x="58" y="372">9 000 km across a continent is 100 to 200 ms. the product states the class it is in, and never a promise.</text>
+    <text x="58" y="394" class="lblb">report the class per market. "always connected" is a forbidden phrase.</text>
+  </g>
+
+  <!-- ===== B · RADIO SET ===== -->
+  <rect class="panel" x="820" y="100" width="740" height="310" rx="4"/>
+  <text class="t h2" x="838" y="124">B · THE RADIO SET · and the five ways this architecture fights it</text>
+  <g class="t lbls">
+    <text x="838" y="146">Wi-Fi 7 tri-band, multi-link operation, 320 MHz channels, two streams minimum and four preferred</text>
+    <text x="838" y="164">5G standalone, sub-6 GHz, 4x4 MIMO, carrier aggregation</text>
+    <text x="838" y="182">mmWave antenna in package, a standard 4x4 dual-polarised block, about 15 by 15 mm for one band</text>
+    <text x="838" y="200">satellite non-terrestrial through the same cellular radio: no extra antenna</text>
+    <text x="838" y="218">GNSS · Bluetooth for the wallet authenticator · NFC for the tap · ultra-wideband as a candidate</text>
+    <text x="838" y="236">the antennas are printed along the leaf edges, dual-polarised, with windows through the core</text>
+    <text x="838" y="254">THE MODULE IS A SECOND ANTENNA SITE. a module on the far edge is a diversity path, and a detached module is a relay on the body.</text>
+  </g>
+  <line class="rule" x1="838" y1="268" x2="1542" y2="268"/>
+  <text class="t h3" x="838" y="288">THE FIVE CONFLICTS THAT MUST BE MEASURED, NOT ASSUMED</text>
+  <g class="t lbls">
+    <text x="838" y="308">1 · the core sits between the antennas, so the antenna windows are holes in the core and in the anchor layer</text>
+    <text x="838" y="326">2 · the metal anchor layer is close to the antennas: it is patterned for exactly this reason</text>
+    <text x="838" y="344">3 · upright B stem antenna stands clear of the body: measure MIMO isolation and hand phantom effects</text>
+    <text x="838" y="362">4 · the bend changes the geometry, so the antenna match is measured flat and at the qualification radius</text>
+    <text x="838" y="380">5 · the module magnet may sit over an antenna: measure the gain loss, then set the keep-out</text>
+    <text x="838" y="400" class="lblb">an attach that costs 3 dB is worse than a mechanical clip. G-H10 decides.</text>
+  </g>
+
+  <!-- ===== C · MEASURED STATE ===== -->
+  <rect class="panel" x="40" y="430" width="740" height="290" rx="4"/>
+  <text class="t h2" x="58" y="454">C · THE MEASURED STATE OF THE TECHNOLOGIES, 2026</text>
+  <text class="t lblb" x="58" y="478">TECHNOLOGY</text><text class="t lblb" x="290" y="478">VALUE</text><text class="t lblb" x="600" y="478">TAG</text>
+  <line class="rule" x1="58" y1="486" x2="782" y2="486"/>
+  <g class="t lbls">
+    <text x="58" y="504">Wi-Fi 7 multi-link, latency</text><text x="290" y="504">99th percentile 45 ms to 12 ms</text><text x="600" y="504">announced and measured</text>
+    <text x="58" y="522">Wi-Fi 7 jitter by density</text><text x="290" y="522">2.5 ms to 7.1 ms, below 10 ms at all densities</text><text x="600" y="522">publication</text>
+    <text x="58" y="540">5G air interface</text><text x="290" y="540">8 to 12 ms in the field, 30 ms in early builds</text><text x="600" y="540">measured</text>
+    <text x="58" y="558">edge server near a base station</text><text x="290" y="558">about 14 ms total, 1.8 ms of jitter</text><text x="600" y="558">company data</text>
+    <text x="58" y="576">edge compute 10 to 15 km away</text><text x="290" y="576">1 to 5 ms near, 50 to 100 ms at a central cloud</text><text x="600" y="576">publication</text>
+    <text x="58" y="594">satellite direct to cell</text><text x="290" y="594">about 650 satellites, 20 to 40 ms, 4 Mbit/s per user</text><text x="600" y="594">company data</text>
+    <text x="58" y="612">satellite, announced target</text><text x="290" y="612">150 Mbit/s peak per user, 120 Mbit/s per satellite</text><text x="600" y="612">announced, not measured</text>
+    <text x="58" y="630">continental distance, 9 000 km</text><text x="290" y="630">100 to 200 ms</text><text x="600" y="630">general</text>
+  </g>
+  <line class="rule" x1="58" y1="644" x2="782" y2="644"/>
+  <text class="t lbls" x="58" y="664">THE HONEST CONCLUSION. In a city with an edge node this is a real-time device. In a rural area with one path it is a delta-mode device.</text>
+  <text class="t lbls" x="58" y="682">In a dead zone with only a satellite it is a message device. The product states the class. It does not promise the city everywhere.</text>
+  <text class="t lbls" x="58" y="704">the measurement set is never a mean alone: throughput, round trip, jitter, loss, and the 99th percentile, per path and per class.</text>
+
+  <!-- ===== D · MULTIPATH ===== -->
+  <rect class="panel" x="820" y="430" width="740" height="290" rx="4"/>
+  <text class="t h2" x="838" y="454">D · MANY PATHS AT ONCE · and the choice of the validator</text>
+  <g class="t lbls">
+    <text x="838" y="478">EVERY PATH AT THE SAME TIME · Wi-Fi, cellular, the satellite path through the cellular radio, and the Budlum network.</text>
+    <text x="838" y="498">USE THE STANDARD MECHANISMS, DO NOT INVENT A TRANSPORT: multipath TCP and multipath QUIC above the IP layer,</text>
+    <text x="838" y="514">with the steering, switching and splitting policy that the carrier core also understands. The 3GPP Release 16</text>
+    <text x="838" y="530">architecture and its QUIC extension are the reference.</text>
+    <text x="838" y="552">DUPLICATE THE CRITICAL PATH. The input uplink and the wallet messages are small, so they go twice over two paths</text>
+    <text x="838" y="568">when the link is unstable. The cost is small and the gain is a removed stall.</text>
+    <text x="838" y="590">THE VALIDATOR IS CHOSEN, NOT OWNED. Trust is the first filter, then latency, bandwidth, cost and energy.</text>
+    <text x="838" y="606">It is a server choice, like a content delivery network, and it is reversible.</text>
+  </g>
+  <line class="rule" x1="838" y1="622" x2="1542" y2="622"/>
+  <text class="t h3" x="838" y="642">WHAT A VALIDATOR AT ANY DISTANCE NEEDS · already resident in the Budlum tree</text>
+  <g class="t lbls">
+    <text x="838" y="662">a persistent identity: the peer-to-peer layer and the DHT</text>
+    <text x="838" y="680">network traversal: relay and STUN, exactly what the Mobile Self profile of a mobile node uses</text>
+    <text x="838" y="698">encryption end to end, and a relayer that carries a signed transaction without holding a key</text>
+    <text x="838" y="716">bandwidth: a home line is often asymmetric, an edge node or a data centre is not</text>
+  </g>
+
+  <!-- ===== E · FAIL-SAFE LADDER ===== -->
+  <rect class="panel" x="40" y="740" width="1520" height="240" rx="4"/>
+  <text class="t h2" x="58" y="764">E · THE FAIL-SAFE LADDER · the device is never a brick</text>
+
+  <g>
+    <rect x="58" y="782" width="180" height="46" rx="3" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+    <text class="t lblb" x="70" y="802">FULL LINK</text><text class="t lbls" x="70" y="818">video, live render, all input</text>
+
+    <rect x="248" y="782" width="180" height="46" rx="3" fill="#eaf4ee" stroke="#1f6b4a" stroke-width="1.2"/>
+    <text class="t lblb" x="260" y="802">REDUCED LINK</text><text class="t lbls" x="260" y="818">delta mode, video on request</text>
+
+    <rect x="438" y="782" width="180" height="46" rx="3" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+    <text class="t lblb" x="450" y="802">CELLULAR ONLY</text><text class="t lbls" x="450" y="818">delta, text, wallet, calls</text>
+
+    <rect x="628" y="782" width="180" height="46" rx="3" fill="#f3e9d2" stroke="#8a5a12" stroke-width="1.2"/>
+    <text class="t lblb" x="640" y="802">SATELLITE ONLY</text><text class="t lbls" x="640" y="818">messages, wallet, static screen</text>
+
+    <rect x="818" y="782" width="180" height="46" rx="3" fill="#f7dcae" stroke="#8a5a12" stroke-width="1.2"/>
+    <text class="t lblb" x="830" y="802">NO LINK</text><text class="t lbls" x="830" y="818">safe screen, wallet, echo</text>
+  </g>
+
+  <line class="rule" x1="1020" y1="775" x2="1020" y2="962"/>
+  <text class="t h3" x="1044" y="790">THE LOCAL FLOOR · hardware, not software</text>
+  <g class="t lbls">
+    <text class="t lbls" x="1044" y="810">the safe screen, the wallet approval, the input echo and</text>
+    <text class="t lbls" x="1044" y="824">the battery state are local functions in the keep-out</text>
+    <text class="t lbls" x="1044" y="838">band, with no second path. this is rule H11.</text>
+    <text class="t lbls" x="1044" y="858">THE OPTICAL PATH · the tree already carries it: B.U.D. has a</text>
+    <text class="t lbls" x="1044" y="872">QR and receipt line, and the note-packing crate defines one</text>
+    <text class="t lbls" x="1044" y="886">packing for the privacy note, with compressed and encrypted</text>
+    <text class="t lbls" x="1044" y="900">payloads and deterministic QR frames. so the no-link state</text>
+    <text class="t lbls" x="1044" y="914">has a physical transfer channel: show a signed receipt or a</text>
+    <text class="t lbls" x="1044" y="928">small payload as optical frames and let the other device</text>
+    <text class="t lbls" x="1044" y="942">read it. no radio at all. this is work order RG-12.</text>
+    <text class="t lbls" x="1044" y="962">the ladder is measured: a session never enters a stuck state (G-L4, G-H19).</text>
+  </g>
+
+  <g class="t lbls">
+    <text x="58" y="856" class="lblb">THE LINK GATES</text>
+    <text x="58" y="874">G-H10 the radio set, the antennas and the input: efficiency and pattern in a free hold and a hand hold, the desense between</text>
+    <text x="58" y="888">the radios, the module magnet effect, the anchor layer effect, the match flat and bent, the gesture and gaze rates.</text>
+    <text x="58" y="910">G-L1 Wi-Fi 7 and the fallback · G-L4 the link cut · G-L7 multi-path switching · G-H23 the module as a radio path.</text>
+    <text x="58" y="932">REPORT BL14 · the link report: the classes, the multi-path result, the fail-safe ladder and the latency per distance.</text>
+    <text x="58" y="954">REPORT BL6 · the radio and interaction report, including the module as a carrier of a second antenna site.</text>
+  </g>
+
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P05</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P05 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">LINK AND FAIL-SAFE</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

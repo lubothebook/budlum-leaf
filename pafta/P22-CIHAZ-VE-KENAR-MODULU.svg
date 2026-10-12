@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-label="Ekranın %100 tamamı esneyebilen polikarbonat yapıdadır (PC-PDMS + çoklu nötr düzlem, R=25.5 mm, sıfır rijit bölge) + 12 Wh katı-hal pil + Qi2 + 1 mm B çubuğu">
+  <title>BUDLUM LEAF · TAMAMI ESNEYEBİLEN 2.00 MM (R=6.35 MM) (+) YAPBOZ POLİKARBONAT EKRAN VE 90° B MODÜLÜ</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="1000"/>
+<text class="t h1" x="40" y="52">CİHAZ · TAMAMI ESNEYEBİLEN 2.00 MM (R=6.35 MM) (+) YAPBOZ POLİKARBONAT EKRAN VE 90° B</text>
+<text class="s" x="40" y="78">80.0 x 160.0 x 2.00 mm (2 milim, 68 g, R = 6.35 mm, IoU = 0.999987) ekranın %100 tamamı esneyebilen polikarbonat (PC-PDMS + G = 0.035 MPa silikon OCA</text>
+<text class="s" x="40" y="97">çoklu nötr düzlem, %0.35 gerinim, 1.4 N kuvvet) yapıdadır; ekranda hiçbir rijit bölge yoktur. İç çekirdekte iki taraftan takılan esnek PC-PDMS/NiTi</text>
+<text class="s" x="40" y="116">yapboz kilit dişleri (24 çift, 10 N/mm), çift eksenli esnek LLZO/PEO katı-hal pil (12 Wh) ve esnek nanokristalin Qi2.2 bobinler yer alır; ekran R =</text>
+<text class="s" x="40" y="135">25.5 mm kesintisiz esner ve ayrılmaz.</text>
+<line class="rule" x1="40" y1="142" x2="1360" y2="142"/>
+<rect class="glass" x="40" y="154" width="650" height="426" rx="6"/>
+<text class="t h2" x="60" y="180">A · 2.00 MM (+) YAPBOZ GÖVDE (R=6.35 MM), Qİ2 VE YATAY ÇUBUKLU B</text>
+<rect x="98.0" y="232.0" width="144.0" height="288.0" rx="11.4" fill="#dcecff" stroke="#18507e" stroke-width="1.8"/>
+<rect x="103.4" y="237.4" width="61.2" height="133.2" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.0"/>
+<rect x="175.4" y="237.4" width="61.2" height="133.2" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.0"/>
+<rect x="103.4" y="381.4" width="61.2" height="133.2" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.0"/>
+<rect x="175.4" y="381.4" width="61.2" height="133.2" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.0"/>
+<line x1="170.0" y1="232.0" x2="170.0" y2="520.0" stroke="#1b8a6b" stroke-width="2.0" stroke-dasharray="5,3"/>
+<line x1="98.0" y1="376.0" x2="242.0" y2="376.0" stroke="#1b8a6b" stroke-width="2.0" stroke-dasharray="5,3"/>
+<circle cx="170.0" cy="376.0" r="5.8" fill="#d0dae4" stroke="#18507e" stroke-width="1.2"/>
+<circle cx="170.0" cy="376.0" r="43.2" fill="none" stroke="#d89818" stroke-width="3.2" stroke-dasharray="18,4"/>
+<circle cx="134.0" cy="304.0" r="17.1" fill="none" stroke="#d89818" stroke-width="1.6"/>
+<circle cx="206.0" cy="304.0" r="17.1" fill="none" stroke="#d89818" stroke-width="1.6"/>
+<circle cx="134.0" cy="448.0" r="17.1" fill="none" stroke="#d89818" stroke-width="1.6"/>
+<circle cx="206.0" cy="448.0" r="17.1" fill="none" stroke="#d89818" stroke-width="1.6"/>
+<path d="M 98.0 269.2 L 98.1 270.5 L 98.2 271.7 L 98.4 272.9 L 98.7 274.2 L 99.0 275.4 L 99.3 276.6 L 99.7 277.7 L 100.1 278.9 L 100.6 280.0 L 101.2 281.2 L 101.8 282.3 L 102.4 283.3 L 103.1 284.4 L 103.8 285.4 L 104.6 286.3 L 105.4 287.3 L 106.3 288.2 L 107.2 289.1 L 108.1 289.9 L 109.0 290.7 L 110.0 291.4 L 111.1 292.1 L 112.1 292.8 L 113.2 293.4 L 114.3 294.0 L 115.4 294.5 L 116.6 294.9 L 117.8 295.3 L 119.0 295.7 L 120.2 296.0 L 121.4 296.3 L 122.6 296.5 L 123.8 296.6 L 125.1 296.7 L 126.3 296.8 L 127.6 296.8 L 128.8 296.7 L 130.0 296.6 L 131.3 296.5 L 132.5 296.2 L 133.7 296.0 L 134.9 295.6 L 136.1 295.3 L 137.3 294.8 L 138.4 294.4 L 139.5 293.8 L 140.6 293.3 L 141.7 292.6 L 142.8 292.0 L 143.8 291.3 L 144.8 290.5 L 145.7 289.7 L 146.6 288.9 L 147.5 288.0 L 148.4 287.1 L 149.2 286.1 L 149.9 285.2 L 150.7 284.1 L 151.3 283.1 L 152.0 282.0 L 152.5 280.9 L 153.1 279.8 L 153.6 278.7 L 154.0 277.5 L 154.4 276.3 L 154.7 275.1 L 155.0 273.9 L 155.2 272.7 L 155.4 271.4 L 155.5 270.2 L 155.6 269.0 L 155.6 267.7 L 155.6 266.5 L 155.5 265.2 L 155.3 264.0 L 155.1 262.8 L 154.9 261.6 L 154.6 260.4 L 154.2 259.2 L 153.8 258.0 L 153.3 256.8 L 152.8 255.7 L 152.3 254.6 L 151.7 253.5 L 151.0 252.4 L 150.3 251.4 L 149.6 250.4 L 148.8 249.4 L 148.0 248.5 L 147.1 247.6 L 146.2 246.8 L 145.3 245.9 L 144.3 245.2 L 143.3 244.4 L 142.3 243.7 L 141.2 243.1 L 140.2 242.5 L 139.0 241.9 L 137.9 241.4 L 136.7 241.0 L 135.6 240.6 L 134.4 240.2 L 133.2 239.9 L 132.0 239.7 L 130.7 239.5 L 129.5 239.3 L 128.3 239.2 L 127.0 239.2 L 125.8 239.2 L 124.5 239.3 L 123.3 239.4 L 122.1 239.6 L 120.8 239.8 L 119.6 240.1 L 118.4 240.4 L 117.3 240.8 L 116.1 241.3 L 114.9 241.8 L 113.8 242.3 L 112.7 242.9 L 111.7 243.5 L 110.6 244.2 L 109.6 244.9 L 108.6 245.7 L 107.7 246.5 L 106.8 247.3 L 105.9 248.2 L 105.3 251.5 L 105.2 254.8 L 105.7 258.2 L 106.6 261.4 L 108.1 264.4 L 110.0 267.2 L 112.3 269.6 L 114.9 271.6 L 117.9 273.3 L 121.0 274.4 L 124.3 275.1 L 127.6 275.2 L 131.0 274.8 L 134.2 273.9 L 137.2 272.5 L 140.0 270.7 L 142.5 268.4 L 144.6 265.8 L 146.3 262.9 L 147.5 259.8 L 148.2 256.5 L 148.4 253.2 L 148.1 249.9 L 147.2 246.6 L 145.9 243.5 L 144.1 240.7 L 141.9 238.2 L 139.4 236.0 L 136.5 234.3 L 133.4 233.0 L 130.1 232.3 L 126.8 232.0 L 128.4 232.0 L 129.9 232.0 L 131.5 232.0 L 133.1 232.0 L 134.7 232.0 L 136.2 232.0 L 137.8 232.0 L 139.4 232.0 L 141.0 232.0 L 142.6 232.0 L 144.1 232.0 L 145.7 232.0 L 147.3 232.0 L 148.8 232.0 L 150.4 232.0 L 152.0 232.0 L 152.4 232.0 L 152.7 232.0 L 153.0 232.0 L 153.4 231.9 L 153.7 231.9 L 154.0 231.8 L 154.3 231.8 L 154.5 231.7 L 154.8 231.7 L 155.0 231.6 L 155.2 231.5 L 155.3 231.4 L 155.4 231.4 L 155.5 231.3 L 155.6 231.2 L 155.6 231.1 L 155.6 231.0 L 155.5 230.9 L 155.4 230.8 L 155.3 230.8 L 155.2 230.7 L 155.0 230.6 L 154.8 230.5 L 154.5 230.5 L 154.3 230.4 L 154.0 230.4 L 153.7 230.3 L 153.4 230.3 L 153.0 230.2 L 152.7 230.2 L 152.4 230.2 L 152.0 230.2 L 150.2 230.2 L 148.4 230.2 L 146.6 230.2 L 144.8 230.2 L 143.0 230.2 L 141.2 230.2 L 139.4 230.2 L 137.6 230.2 L 135.8 230.2 L 134.0 230.2 L 132.2 230.2 L 130.4 230.2 L 128.6 230.2 L 126.8 230.2 L 125.0 230.2 L 123.2 230.2 L 121.4 230.2 L 119.6 230.2 L 117.8 230.2 L 116.0 230.2 L 114.2 230.2 L 112.4 230.2 L 110.6 230.2 L 108.8 230.2 L 107.0 230.2 L 105.2 230.2 L 103.4 230.2 L 101.6 230.2 L 101.2 230.2 L 100.9 230.2 L 100.6 230.2 L 100.2 230.3 L 99.9 230.3 L 99.6 230.4 L 99.3 230.4 L 99.1 230.5 L 98.8 230.5 L 98.6 230.6 L 98.4 230.7 L 98.3 230.8 L 98.2 230.8 L 98.1 230.9 L 98.0 231.0 L 98.0 231.1 L 98.0 231.5 L 98.0 231.9 L 98.0 233.3 L 98.0 235.0 L 98.0 236.7 L 98.0 238.3 L 98.0 239.9 L 98.0 241.6 L 98.0 243.2 L 98.0 244.9 L 98.0 246.6 L 98.0 248.2 L 98.0 249.8 L 98.0 251.5 L 98.0 253.2 L 98.0 254.8 L 98.0 256.4 L 98.0 258.1 L 98.0 259.8 L 98.0 261.4 L 98.0 263.1 L 98.0 264.7 L 98.0 266.4 L 98.0 268.0 Z M 148.4 269.1 L 148.3 270.1 L 148.2 271.2 L 148.0 272.2 L 147.8 273.2 L 147.5 274.3 L 147.1 275.3 L 146.8 276.3 L 146.3 277.2 L 145.8 278.2 L 145.3 279.1 L 144.8 280.0 L 144.1 280.9 L 143.5 281.7 L 142.8 282.5 L 142.1 283.3 L 141.3 284.0 L 140.5 284.7 L 139.7 285.3 L 138.8 286.0 L 137.9 286.5 L 137.0 287.0 L 136.0 287.5 L 135.1 288.0 L 134.1 288.3 L 133.1 288.7 L 132.0 289.0 L 131.0 289.2 L 130.0 289.4 L 128.9 289.5 L 127.9 289.6 L 126.8 289.6 L 125.7 289.6 L 124.7 289.5 L 123.6 289.4 L 122.6 289.2 L 121.6 289.0 L 120.5 288.7 L 119.5 288.3 L 118.5 288.0 L 117.6 287.5 L 116.6 287.0 L 115.7 286.5 L 114.8 286.0 L 113.9 285.3 L 113.1 284.7 L 112.3 284.0 L 111.5 283.3 L 110.8 282.5 L 110.1 281.7 L 109.5 280.9 L 108.8 280.0 L 108.3 279.1 L 107.8 278.2 L 107.3 277.2 L 106.8 276.3 L 106.5 275.3 L 106.1 274.3 L 105.8 273.2 L 105.6 272.2 L 105.4 271.2 L 105.3 270.1 L 105.2 269.1 L 105.2 268.0 L 105.2 266.9 L 105.3 265.9 L 105.4 264.8 L 105.6 263.8 L 105.8 262.8 L 106.1 261.7 L 106.5 260.7 L 106.8 259.7 L 107.3 258.8 L 107.8 257.8 L 108.3 256.9 L 108.8 256.0 L 109.5 255.1 L 110.1 254.3 L 110.8 253.5 L 111.5 252.7 L 112.3 252.0 L 113.1 251.3 L 113.9 250.7 L 114.8 250.0 L 115.7 249.5 L 116.6 249.0 L 117.6 248.5 L 118.5 248.0 L 119.5 247.7 L 120.5 247.3 L 121.6 247.0 L 122.6 246.8 L 123.6 246.6 L 124.7 246.5 L 125.7 246.4 L 126.8 246.4 L 127.9 246.4 L 128.9 246.5 L 130.0 246.6 L 131.0 246.8 L 132.0 247.0 L 133.1 247.3 L 134.1 247.7 L 135.1 248.0 L 136.0 248.5 L 137.0 249.0 L 137.9 249.5 L 138.8 250.0 L 139.7 250.7 L 140.5 251.3 L 141.3 252.0 L 142.1 252.7 L 142.8 253.5 L 143.5 254.3 L 144.1 255.1 L 144.8 256.0 L 145.3 256.9 L 145.8 257.8 L 146.3 258.8 L 146.8 259.7 L 147.1 260.7 L 147.5 261.7 L 147.8 262.8 L 148.0 263.8 L 148.2 264.8 L 148.3 265.9 L 148.4 266.9 L 148.4 268.0 Z" fill="#8fa882" fill-opacity="0.95" stroke="#5c6b58" stroke-width="1.4" fill-rule="evenodd"/>
+<circle cx="126.8" cy="268.0" r="21.6" fill="#46505a" stroke="#5c6b58" stroke-width="1.0"/>
+<circle cx="126.8" cy="268.0" r="13.7" fill="#1b3b5c" stroke="#8ab4d4" stroke-width="0.9"/>
+<text class="lblb" x="262" y="210">1 · 2.00 mm (R=6.35 mm) + Yapboz Kilitli 4 Karo (Q1-Q4)</text>
+<text class="lbls" x="262" y="230">• 4 x (40 x 80 x 2.00 mm, 17 g) = 80 x 160 x 2.00 mm (68 g)</text>
+<text class="lbls" x="262" y="248">• İç çekirdekte iki taraftan takılan girdili-çıktılı yapboz kilit</text>
+<text class="lbls" x="262" y="266">• R=25.5 mm esnemede ayrılmaz (10 N/mm) · &lt;15 µm n=1.585 dudak</text>
+<text class="lblb" x="262" y="302">2 · Gözlük, El ve Cep İçin Biyouyumlu Katı-Hal Pil (12 Wh)</text>
+<text class="lbls" x="262" y="322">• Polikarbonat içinde yanmaz LLZO/PEO-LiBOB katı-hal pil</text>
+<text class="lbls" x="262" y="340">• Sıfır sıvı, sıfır HF gazı (0.0 ppm), delinse bile alev almaz</text>
+<text class="lbls" x="262" y="358">• Gözlük modu: &lt;=36.2 C sıcaklık, ELF &lt;0.08 µT, SAR 0.054 W/kg</text>
+<text class="lbls" x="262" y="376">• ISO 10993 biyouyumlu BPA-free PC + DC-dimming mavi ışık filtre</text>
+<text class="lblb" x="262" y="412">3 · Portsuz Qi2 Gövde + Boşluktan 90° Bükülen B Modülü</text>
+<text class="lbls" x="262" y="432">• Gövdede Type-C veya buton YOKTUR; her Qi/Qi2 pedde şarj olur</text>
+<text class="lbls" x="262" y="450">• Merkez Ø54 mm birleşik Qi2.2 bobin + 4 adet Ø22 mm çeyrek bobin</text>
+<text class="lbls" x="262" y="468">• B&#39;nin 1.00 mm çubuğu yukarıda yatay olarak ekran üstüne oturur</text>
+<text class="lbls" x="262" y="486">• Çubuk hariç kalan yuvarlak kısım boşluktan bükülüp bize bakar</text>
+<text class="lbls" x="60" y="564">4-Parçalı (+) Yapboz Gövde: 80 x 160 x 2.00 mm (68 g, R=6.35 mm, 12 Wh Pil, Qi2) · 90° B Modülü (20 g, 1 mm Çubuk)</text>
+<rect class="glass" x="710" y="154" width="650" height="426" rx="6"/>
+<text class="t h2" x="730" y="180">B · (+) GİRDİLİ-ÇIKTILI YAPBOZ KİLİT VE 2.00 MM PİL KESİTİ</text>
+<rect x="748" y="222" width="276" height="112" rx="14" fill="#dcecff" stroke="#18507e" stroke-width="1.6"/>
+<rect x="1032" y="222" width="276" height="112" rx="14" fill="#dcecff" stroke="#18507e" stroke-width="1.6"/>
+<rect x="1024" y="222" width="8" height="112" rx="2" fill="#48d8b8" stroke="#1b8a6b" stroke-width="1.2"/>
+<rect x="762" y="236" width="248" height="18" rx="3" fill="#eef6ff" stroke="#18507e" stroke-width="1.0"/>
+<rect x="762" y="258" width="248" height="38" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.2"/>
+<rect x="762" y="300" width="248" height="18" rx="3" fill="#eef6ff" stroke="#18507e" stroke-width="1.0"/>
+<rect x="1046" y="236" width="248" height="18" rx="3" fill="#eef6ff" stroke="#18507e" stroke-width="1.0"/>
+<rect x="1046" y="258" width="248" height="38" rx="4" fill="#b8ebd8" stroke="#267862" stroke-width="1.2"/>
+<rect x="1046" y="300" width="248" height="18" rx="3" fill="#eef6ff" stroke="#18507e" stroke-width="1.0"/>
+<text class="lbls" x="748" y="212">2.00 mm (2 Milim) Biyouyumlu PC + OCA + T-OLED + Yapboz Kilitli Katı-Hal Pil Kesiti</text>
+<text class="lbls" x="772" y="250">Sol Karo (Q1): Ön PC + OCA + T-OLED</text>
+<text class="lbls" x="772" y="282">3.0 Wh Katı-Hal Pil + Çıktılı Yapboz Dil</text>
+<text class="lbls" x="772" y="314">Göz Kalkanı (Mu-Metal) + Arka T-OLED</text>
+<text class="lbls" x="1056" y="250">Sağ Karo (Q2): 0.00 mm Sıfır Çerçeve</text>
+<text class="lbls" x="1056" y="282">3.0 Wh Katı-Hal Pil + Girdili Yapboz Yuva</text>
+<text class="lbls" x="1056" y="314">Orta: Yapboz Kilit + 12 µm n=1.585 Dudak</text>
+<text class="lblb" x="730" y="362">Neden %100 Tamamı Esneyebilen Polikarbonat Yapı ve 90° B Nihai Tasarımdır?</text>
+<text class="lbls" x="730" y="384">• %100 Tam Alan Esnek Polikarbonat (PC-PDMS): Çoklu nötr düzlemli silikon OCA (G=0.035 MPa) ile</text>
+<text class="lbls" x="730" y="402">  polikarbonat kabuk gerinimi %0.35 düzeyine düşer; tüm ekran 1.4 N kuvvetle R=25.5 mm esner.</text>
+<text class="lbls" x="730" y="422">• Sıfır Rijit Bölge: Esnek PC-PDMS/NiTi yapboz kilit (24 çift, 10 N/mm) + esnek (0,0) göbek.</text>
+<text class="lbls" x="730" y="440">• Çift Eksenli Esnek Katı-Hal Pil (1680 mikro-hücre, 12 Wh, 0 HF, &lt;=36.2 C) + esnek Qi2.2.</text>
+<text class="lbls" x="730" y="460">• AB 2023/1542 Tak-Çıkar Yasası: Her çeyrek ekran-batarya parçası aletsiz 3 sn içinde değişir.</text>
+<text class="lbls" x="730" y="480">• Portsuz Gövde ve Qi2 Şarj: Gövdede Type-C yoktur; herhangi bir kablosuz şarjda şarj olur.</text>
+<text class="lbls" x="730" y="500">• Doğal Boşluktan 90° Bükülen B: 1.00 mm çubuk yukarıda yatay olarak ekran üstüne tam oturur;</text>
+<text class="lbls" x="730" y="518">  çubuk hariç kalan yuvarlak kısım boşluktan bükülerek ekran önünde bize doğru bakar.</text>
+<rect class="glass" x="40" y="596" width="650" height="158" rx="6"/>
+<text class="t h2" x="60" y="622">C · GÖZLÜK / EL SAĞLIĞI VE AB 2023/1542 TAK-ÇIKAR YASASI</text>
+<text class="lbls" x="60" y="646">1. Yanmaz Katı-Hal Pil: 4 x 3.0 Wh = 12.0 Wh LLZO/PEO-LiBOB; delinse bile alev ve HF gazı yok.</text>
+<text class="lbls" x="60" y="666">2. Göz Önü Termal Kilit: Çift NTC ve grafen/Mu-metal kalkan ile sıcaklık &lt;=36.2 C sınırındadır.</text>
+<text class="lbls" x="60" y="686">3. Düşük EM ve SAR: Bifilar kulaklar ile ELF &lt;0.08 µT; baş/göz SAR değeri 0.054 W/kg (37x güvenli).</text>
+<text class="lbls" x="60" y="706">4. Biyouyumlu Yüzey: ISO 10993-5/-10/-23 tıbbi BPA-free PC ve titreşimsiz DC-dimming T-OLED.</text>
+<text class="lbls" x="60" y="726">5. Aletsiz Tak-Çıkar: 4 yapboz karo da AB 2023/1542 Md. 11 gereği 3 saniyede tek tek değişir.</text>
+<rect class="glass" x="710" y="596" width="650" height="158" rx="6"/>
+<text class="t h2" x="730" y="622">D · PORTSUZ KABLOSUZ GÖVDE VE 1 MM YATAY ÇUBUKLU B</text>
+<text class="lbls" x="730" y="646">1. Gövdede Type-C Yok: Alt kısımda veya kenarlarda hiçbir port/buton yoktur (tam sızdırmaz IP68).</text>
+<text class="lbls" x="730" y="666">2. Evrensel Kablosuz Şarj: Merkez Ø54 mm Qi2.2 + 4x Ø22 mm bobin ile her Qi pedde şarj olur.</text>
+<text class="lbls" x="730" y="686">3. Tek Type-C B Modülünde: Kablolu 40W PD 3.1 şarj ve veri B&#39;nin 1.00 mm yatay üst çubuğundadır.</text>
+<text class="lbls" x="730" y="706">4. Zorunlu Beyin: 4-Karo Ana TCON, Sıfır-CPU UWB/mmWave, kamera ve ses için B modülü şarttır.</text>
+<text class="lbls" x="730" y="726">5. Ek Parçasız 90° Büküm: 1 mm çubuk üstte yatay durur, yuvarlak kısım önde bize doğru bakar.</text>
+<rect class="glass" x="40" y="770" width="1320" height="106" rx="6"/>
+<text class="t h2" x="60" y="798">E · KAPILAR F-01 … F-10 VE MON-1 … MON-20 (REVİZYON L.5.0)</text>
+<text class="lbls" x="60" y="822">F-01 4-parçalı (+) 2.00 mm (68 g, R=6.35 mm) yapboz gövde · F-02 24 çift girdili-çıktılı yapboz kilit + n=1.585 dudak · F-03 12 Wh LLZO pil</text>
+<text class="lbls" x="60" y="840">F-04 &lt;=36.2 C göz güvenliği · F-05 ISO 10993 + SAR 0.054 W/kg · F-06 AB 2023/1542 tak-çıkar · F-07..10 portsuz Qi2 şarj + R=25.5 mm esneme</text>
+<text class="lbls" x="60" y="858">MON-1 … MON-20: Orijinal b.png ters çevrilip doğal boşluğundan ek parçasız 90° bükülen, 1.00 mm yatay üst çubuklu (tek Type-C) B modülü</text>
+</svg>

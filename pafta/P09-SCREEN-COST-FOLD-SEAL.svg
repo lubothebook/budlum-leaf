@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131" role="img" aria-label="Budlum Leaf plate P09 screen cost whole-area bend and seal">
+  <title>BUDLUM LEAF · P09 · THE SCREEN COST, THE WHOLE-AREA BEND AND THE SEAL</title>
+  <style>
+    .bg{fill:#fbfaf7}.t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:21px;font-weight:700;letter-spacing:.4px}.h2{font-size:13.5px;font-weight:700;letter-spacing:.3px}
+    .h3{font-size:11.5px;font-weight:700}
+    .lbl{font-size:11px}.lblb{font-size:11px;font-weight:700}.lbls{font-size:10px}
+    .dim{stroke:#8a2b1f;stroke-width:1}.dimt{font-family:Helvetica,Arial,sans-serif;fill:#8a2b1f;font-size:10px}
+    .note{font-family:Helvetica,Arial,sans-serif;fill:#4b4b47;font-size:10px}
+    .rule{stroke:#d5d5cf;stroke-width:1}.panel{fill:#ffffff;stroke:#d5d5cf;stroke-width:1}
+    .mono{font-family:ui-monospace,Menlo,monospace;font-size:10px;fill:#2a2a28}
+    .tb{fill:#ffffff;stroke:#181816;stroke-width:1.2}
+    .bar{fill:#cfe3f7;stroke:#18507e;stroke-width:1}
+    .barw{fill:#f7dcae;stroke:#8a5a12;stroke-width:1}
+    .barg{fill:#eef7ee;stroke:#3f6b3f;stroke-width:1}
+    .barr{fill:#f2c9c4;stroke:#8a2b1f;stroke-width:1}
+  </style>
+  <rect class="bg" x="0" y="0" width="1600" height="1131"/>
+
+  <!-- TITLE BAND -->
+  <text class="t h1" x="40" y="52">BUDLUM LEAF · P09 · THE SCREEN COST, THE WHOLE-AREA BEND AND THE SEAL</text>
+  <text class="t lbl" x="40" y="74">The network reduces screen power from 2.02 W to 0.98 W. The 80 x 160 x 4.00 mm prism bends smoothly over its whole area to R 25.5 mm (no hinge, no crease), with a dual-lip IP68 seal.</text>
+  <line class="dim" x1="40" y1="86" x2="1560" y2="86"/>
+
+  <!-- ================= A · WHO PAYS FOR THE SCREEN ================= -->
+  <rect class="panel" x="40" y="100" width="900" height="340" rx="4"/>
+  <text class="t h2" x="58" y="124">A · WHO PAYS FOR THE SCREEN · five terms, and the network's share</text>
+  <g class="t lblb">
+    <text x="58" y="152">THE TERM</text><text x="300" y="152">DELTA</text><text x="380" y="152">WHO REDUCES IT</text>
+    <text x="560" y="152">THE MECHANISM</text><text x="812" y="152">FLOOR</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="176">1 · the photons · the light the eye needs</text><text x="300" y="176">0.60 W</text>
+    <text x="380" y="176">the device alone</text><text x="560" y="176">luminance, a dark interface, the picture level</text><text x="812" y="176">0.31 W</text>
+    <text x="58" y="196">2 · the hub · decoder, renderer, reprojection</text><text x="300" y="196">0.70 W</text>
+    <text x="380" y="196">the network in part</text><text x="560" y="196">a pre-composited, pre-scaled frame</text><text x="812" y="196">0.55 W</text>
+    <text x="58" y="216">3 · the radio · the class of the session</text><text x="300" y="216">0.40 W</text>
+    <text x="380" y="216">the network in full</text><text x="560" y="216">C0b display lists, the cache, the delta</text><text x="812" y="216">0.10 W</text>
+    <text x="58" y="236">4 · the addressing · the refresh</text><text x="300" y="236">0.20 W</text>
+    <text x="380" y="236">the network in part</text><text x="560" y="236">1 Hz on a static page, 144 Hz on motion</text><text x="812" y="236">0.02 W</text>
+    <text x="58" y="256">5 · the authority · the wallet</text><text x="300" y="256">0.12 W</text>
+    <text x="380" y="256">nobody</text><text x="560" y="256">it must answer with no network</text><text x="812" y="256">0.12 W</text>
+  </g>
+  <g class="t lblb">
+    <text x="58" y="284">the sum</text><text x="300" y="284">2.02 W</text><text x="560" y="284">terms 2, 3, 4 are the network's</text>
+    <text x="812" y="284">0.98 W</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="312">the network can reach about 0.98 W of 2.02 W: it covers about half of the cost of the surface working,</text>
+    <text x="58" y="328">not by paying joules but by shaping what the screen has to do.</text>
+    <text x="58" y="348">the photons can never come from the network: a lumen is a photon at a retina, and the panel is the transducer.</text>
+    <text x="58" y="364">the energy that the eye receives must be emitted inside the eye's field, by the surface that the eye is looking at.</text>
+    <text x="58" y="384">two currencies: joules are spent in the hand, and meters are spent on the network. the wallet pays meters only.</text>
+    <text x="58" y="404">the photon-honest interface: every interface declares an energy budget per screen minute, and the surface shows the meter.</text>
+    <text x="58" y="424">the lights stay honest under the claim rule: a runtime claim names the luminance, the picture level and the session class.</text>
+  </g>
+
+  <!-- ================= B · THE WHOLE-AREA BEND ================= -->
+  <rect class="panel" x="960" y="100" width="600" height="340" rx="4"/>
+  <text class="t h2" x="978" y="124">B · THE WHOLE-AREA BEND · R 25.5 mm (no hinge, no crease)</text>
+  <rect x="978" y="140" width="270" height="60" rx="4" fill="#eef5fd" stroke="#18507e" stroke-width="1.4"/>
+  <text class="t lbls" x="1038" y="176">flat 80 x 160 x 4.00 mm</text>
+  <path d="M 998 272 A 64 64 0 0 1 1218 272" fill="none" stroke="#18507e" stroke-width="12" stroke-linecap="round"/>
+  <text class="t lbls" x="1038" y="256">R_n = 25.5 mm arc</text>
+  <g class="t lbls">
+    <text x="978" y="300">no book fold, no hinge, and no localized R 2.0 mm crease line</text>
+    <text x="978" y="318">the 160 mm span wraps smoothly over an 80 mm arc at R_n = 25.5 mm</text>
+    <text x="978" y="336">each 0.43 mm polycarbonate + AMOLED face bends around its own axis</text>
+    <text x="978" y="354">cover strain d / R_n = 0.160 / 25.5 = 0.63% (below 0.80% limit)</text>
+    <text x="978" y="372">4 polymer-gel battery layers (0.45 mm) slide on 3 silicone layers</text>
+    <text x="978" y="390">battery collector foil strain = 0.38% (below 0.90% Al yield limit)</text>
+    <text x="978" y="408">3.50 mm shear slip per side is absorbed in the 4.20 mm end pockets</text>
+    <text x="978" y="426">5 000 wraps at R 25.5 mm + 50 000 bends at R 70 mm (gates B-1..10)</text>
+  </g>
+
+  <!-- ================= C · THE UNIFORM SYMMETRIC STACK ================= -->
+  <rect class="panel" x="40" y="460" width="900" height="360" rx="4"/>
+  <text class="t h2" x="58" y="484">C · THE UNIFORM SYMMETRIC STACK · every layer bends around its own neutral plane</text>
+  <g class="t lblb">
+    <text x="58" y="512">THE LAYER</text><text x="360" y="512">THICKNESS AND MATERIAL</text>
+    <text x="700" y="512">STRAIN AT R 25.5 mm</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="536">hard coat</text><text x="360" y="536">10 µm elastic urethane-acrylate</text>
+    <text x="700" y="536">0.63% (limit 0.80%)</text>
+    <text x="58" y="556">cover window</text><text x="360" y="556">150 µm optical polycarbonate (uniform)</text>
+    <text x="700" y="556">0.59% (yield ~2.5%)</text>
+    <text x="58" y="576">OCA + touch mesh</text><text x="360" y="576">35 µm silicone OCA + 35 µm Ag-Cu mesh</text>
+    <text x="700" y="576">0.08% (ductile metal mesh)</text>
+    <text x="58" y="596">AMOLED + TFE + PI</text><text x="360" y="596">110 µm LTPO backplane and emissive stack</text>
+    <text x="700" y="596">0.04% ( sits on screen neutral axis)</text>
+    <text x="58" y="616">backing + liner</text><text x="360" y="616">90 µm PC backing + 470 µm spreader/PTFE</text>
+    <text x="700" y="516"></text><text x="700" y="616">0.35% (low-friction PTFE slip)</text>
+    <text x="58" y="636">energy sheet</text><text x="360" y="636">4 x 0.45 mm polymer-gel + 3 x 0.05 mm silicone</text>
+    <text x="700" y="636">0.38% per layer (split neutral plane)</text>
+    <text x="58" y="656">prism frame</text><text x="360" y="656">80 x 160 x 4.00 mm (R 3.20 corner, r 0.80 edges)</text>
+    <text x="700" y="656">flexes over whole 80 mm bend zone</text>
+    <text x="58" y="676">bottom seal</text><text x="360" y="676">dual-lip FKM elastomer collar on battery cap</text>
+    <text x="700" y="676">outside bend zone (IP68 1.5 m / 30 min)</text>
+  </g>
+  <g class="t lbls">
+    <text x="58" y="710">because there is no R 2.0 mm book fold, the cover stays a uniform 150 µm polycarbonate across the whole face</text>
+    <text x="58" y="730">the qualification test: 5 000 wraps at R 25.5 mm and 50 000 gentle bends at R 70 mm (-20 °C to +60 °C)</text>
+    <text x="58" y="750">the pass: zero dead pixels, residual bow under 0.15 mm, and >99% capacity after 1 000 wraps (>85% after 5 000)</text>
+    <text x="58" y="770">optical profilometry across the 76.4 x 156.4 mm face must show surface waviness below 15 µm (gate B-4)</text>
+    <text x="58" y="790">the upright B module (40 x 32 x 4.00 mm) sits on the top edge outside the central bend zone (gate B-10)</text>
+    <text x="58" y="810">the bend is a whole-body elasticity law (HARDWARE/12), never a mechanical hinge</text>
+  </g>
+
+  <!-- ================= D · THE SEAL AND THE DECISIONS ================= -->
+  <rect class="panel" x="960" y="460" width="600" height="360" rx="4"/>
+  <text class="t h2" x="978" y="484">D · THE (&lt;15 µm, n=1.585) (+) OPTICAL SEAM AND REV L.5.0</text>
+  <g class="t lblb">
+    <text x="978" y="512">4-QUADRANT (+) ZERO-SCRATCH OPTICAL &amp; MAGNETIC LATCH</text>
+  </g>
+  <g class="t lbls">
+    <text x="978" y="536">the 80.0 x 160.0 x 2.20 mm body splits in (+) cross into 4 tiles (40 x 80 mm)</text>
+    <text x="978" y="554">12 um n=1.585 phenyl-fluorosilicone lip matches polycarbonate (R &lt; 0.0001%)</text>
+    <text x="978" y="572">any quadrant detaches by hand in under 3 s (EU 2023/1542 Article 11)</text>
+    <text x="978" y="590">central Titanium Cruciform (+) Hub + 8 micro-dovetail pins (&lt;2.5 um Z-step)</text>
+    <text x="978" y="608">24 bipolar N52H magnets + 64 gold micro-leaf contacts + IP68 seal</text>
+    <text x="978" y="626">portless body charges on any Qi / Qi2.2 wireless pad (15-25 W)</text>
+    <text x="978" y="644">the ONLY USB Type-C port lives inside the 90°-bent stem of the B module</text>
+  </g>
+  <g class="t lblb">
+    <text x="978" y="676">THE SIX DECISIONS (REV L.5.0)</text>
+  </g>
+  <g class="t lbls">
+    <text x="978" y="700">Q43 the (+) seam: 12 um n=1.585 optical lip + Ti hub (zero scratch/line)</text>
+    <text x="978" y="718">Q44 the tiles: 4 x (40 x 80 x 2.20 mm) ISO 10993 PC + T-OLED + PDLC</text>
+    <text x="978" y="736">Q45 the screen cost: 0.85 W Zero-CPU total draw (&gt;14.1 h on 12.0 Wh)</text>
+    <text x="978" y="754">Q46 the bend law: whole-area wrap to R 25.5 mm (0.38% strain, B-1..10)</text>
+    <text x="978" y="772">Q47 the battery: 4 x 3.0 Wh = 12.0 Wh LLZO solid-state (&lt;=36.2 C, 0 HF)</text>
+    <text x="978" y="790">Q48 the module: 90°-Bent-Stem B (stem above edge, ring ON screen, 4 edges)</text>
+    <text x="978" y="812">the gates: MEC-19..22, B-1..10, ENR-11..21, and MON-1..20</text>
+  </g>
+
+  <!-- ================= E · THE DELIVERABLES ================= -->
+  <rect class="panel" x="40" y="848" width="1520" height="150" rx="4"/>
+  <text class="t h2" x="58" y="872">E · THE COMPLETED CAD, RENDER, AND PAFTA DELIVERABLES (REVISION L.5.0)</text>
+  <g class="t lbls">
+    <text x="58" y="898">1 · 3D STL models in cad/models/ · leaf80/160/480-body.stl, leaf160-frame.stl, leaf160-screen.stl, leaf160-battery.stl, leaf160-battery-bent.stl,</text>
+    <text x="58" y="914">      monogram-module.stl, monogram-ring.stl, monogram-letter.stl, rail-receiver.stl, rail-module.stl, and leaf160-device.stl</text>
+    <text x="58" y="936">2 · 3D perspective renders in teslim/ · render-whole.png, render-module.png, render-module-back.png, render-face.png, render-back.png, render-battery.png, render-apart.png</text>
+    <text x="58" y="958">3 · 6-panel presentation board · teslim/heypcb-post.png and teslim/heypcb-post.txt</text>
+    <text x="58" y="980">4 · 25 engineering pafta sheets · E01..E03 and P01..P22 passing check_sheets.py (OVER=0 COVERED=0 COLLIDE=0) and check_widths.py (0 over limit)</text>
+  </g>
+
+  <!-- FOOTER -->
+  <rect class="tb" x="1170" y="1024" width="390" height="86"/>
+  <line class="rule" x1="1170" y1="1052" x2="1560" y2="1052"/>
+  <line class="rule" x1="1360" y1="1024" x2="1360" y2="1110"/>
+  <text class="t lblb" x="1180" y="1042">BUDLUM LEAF</text>
+  <text class="t lbls" x="1180" y="1068">DRAWING BL-P09</text>
+  <text class="t lbls" x="1180" y="1084">SHEET P09 OF 25</text>
+  <text class="t lbls" x="1180" y="1100">REV L.5.0 · 2026-10-12</text>
+  <text class="t lbls" x="1370" y="1068">COST · BEND · SEAL</text>
+  <text class="t lbls" x="1370" y="1084">SCALE: NTS · SCHEMATIC</text>
+  <text class="t lbls" x="1370" y="1100">SOURCE: LEAF REV L.5.0</text>
+</svg>

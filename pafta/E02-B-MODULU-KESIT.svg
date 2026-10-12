@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="Sadece cubuk kismi 90 derece dik bukulen, yuvarlak kismi ekran ustune oturan B modulu kesiti">
+  <title>BUDLUM LEAF · 90° DİK BÜKÜMLÜ B MODÜLÜ · L-KESİT, TEK TYPE-C, KAMERA VE PANEL</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">B MODÜLÜ (REV L.5.0) · 90° DİK L-ÇUBUK, TEK TYPE-C VE KAMERA KESİTİ</text>
+<text class="s" x="40" y="78">Kesit B modülünün 90° dik açıyla bükülmüş çubuk omurgasından ve ekran üstüne oturan yuvarlak halkasından geçer. Sadece anten + Type-C çubuğu</text>
+<text class="s" x="40" y="97">yukarıda/kenarda dik kalır; yuvarlak kısım ekranın üzerine yerleşir ve ±90° menteşeyle öne/arkaya takılır.</text>
+<line class="rule" x1="40" y1="120" x2="1360" y2="120"/>
+<rect class="glass" x="40" y="134" width="820" height="556" rx="6"/>
+<text class="t h2" x="60" y="162">A · 90° DİK AÇILI L-KESİT · ÇUBUK DİK, YUVARLAK HALKA EKRAN ÜSTÜNDE</text>
+<rect x="191.2" y="410.0" width="520.8" height="34.1" rx="3" fill="#dcecff" stroke="#18507e" stroke-width="1.4"/>
+<rect x="92.0" y="348.0" width="99.2" height="102.3" rx="8.5" fill="#7f927a" stroke="#5c6b58" stroke-width="1.5"/>
+<circle cx="203.6" cy="379.0" r="14.7" fill="#d8dbe0" stroke="#18507e" stroke-width="1.2"/>
+<rect x="216.0" y="348.0" width="62.0" height="62.0" rx="8.5" fill="#93a68c" stroke="#5c6b58" stroke-width="1.5"/>
+<rect x="650.0" y="348.0" width="62.0" height="62.0" rx="8.5" fill="#93a68c" stroke="#5c6b58" stroke-width="1.5"/>
+<rect x="278.0" y="348.6" width="372.0" height="44.9" rx="4" fill="#687482" stroke="#48525c" stroke-width="1.3"/>
+<rect x="336.9" y="348.3" width="254.2" height="7.8" rx="3" fill="#24588a"/>
+<rect x="278.0" y="394.5" width="372.0" height="14.9" rx="3" fill="#203040" stroke="#48525c" stroke-width="1.3"/>
+<text class="lbls" x="60" y="206">90° DİK BÜKÜMLÜ ÇUBUK: 32.0 x 4.0 x 1.00 mm · sadece anten çubuğu yukarıda/kenarda dik kalır</text>
+<text class="lbls" x="60" y="228">±90° TERSİNİR TİTANYUM MENTEŞE: çubuk ile yuvarlak halka arasında çift-yönlü L-boyun</text>
+<text class="lbls" x="60" y="250">CİHAZDAKİ TEK USB TYPE-C: 40 W PD 3.1 + DP 2.1 su geçirmez IP68 priz 90° çubuk içindedir</text>
+<text class="lbls" x="60" y="272">YUVARLAK HALKA (EKRAN ÜSTÜNDE): 32 x 32 x 4.00 mm halka doğrudan ekranın üzerine oturur</text>
+<text class="lbls" x="60" y="310">ÖN YÜZ (z = 1.05..4.00 mm): Ø24.0 mm açıklıkta 50 MP OIS kamera + mikrofon + hoparlör + flaş</text>
+<text class="lbls" x="60" y="480">ORTA VE ARKA YÜZ (z = 0.00..1.04 mm): 0.15 mm Cu-Grafit kalkan + Ø22.4 mm Yuvarlak AMOLED</text>
+<text class="lbls" x="60" y="504">4 YÖNE VE ÖNE/ARKAYA TAKILMA: üst, alt, sol, sağ kenarlara ve ekranın önüne/arkasına takılır</text>
+<text class="lbls" x="60" y="528">SIFIR-CPU SİSTEM BEYNİ: 4-Karo Ana TCON + UWB/60GHz mmWave SiP + Ses DSP halka PCB'dedir</text>
+<text class="lbls" x="60" y="552">GÖZLÜK GÜVENLİĞİ: anten çubuğu gözden uzakta durarak SAR değerini 0.054 W/kg altına indirir</text>
+<rect class="glass" x="880" y="134" width="480" height="270" rx="6"/>
+<text class="t h2" x="900" y="164">B · 90° ÇUBUK VE ARKA AMOLED SAYILARI</text>
+<text class="lblb" x="900" y="194">90° dik çubuk</text>
+<text class="s" x="1040" y="194">32x4x1 mm · ekran üst kenarında</text>
+<text class="lblb" x="900" y="218">tek USB Type-C</text>
+<text class="s" x="1040" y="218">40 W PD 3.1 + DP 2.1 · IP68 contalı</text>
+<text class="lblb" x="900" y="242">çubuk anteni</text>
+<text class="s" x="1040" y="242">Wi-Fi 7, BT 5.4, UWB + 60 GHz dizi</text>
+<text class="lblb" x="900" y="266">tersinir menteşe</text>
+<text class="s" x="1040" y="266">±90° Grade-5 Ti · öne/arkaya takım</text>
+<text class="lblb" x="900" y="290">arka AMOLED</text>
+<text class="s" x="1040" y="290">Ø22.4 mm · 220x220 px · 120 Hz</text>
+<text class="lblb" x="900" y="314">ekran yerleşimi</text>
+<text class="s" x="1040" y="314">yuvarlak halka ekran üstüne oturur</text>
+<text class="lblb" x="900" y="338">4 yöne takım</text>
+<text class="s" x="1040" y="338">üst, alt, sol ve sağ kenarlara uyumlu</text>
+<text class="lblb" x="900" y="362">SAR (baş/göz)</text>
+<text class="s" x="1040" y="362">0.054 W/kg (ICNIRP sınırının 37x altı)</text>
+<rect class="glass" x="880" y="420" width="480" height="270" rx="6"/>
+<text class="t h2" x="900" y="450">C · KAMERA VE SIFIR-CPU BEYİN SAYILARI</text>
+<text class="lblb" x="900" y="480">algılayıcı</text>
+<text class="s" x="1040" y="480">1 inç sınıfı · 50 MP · 12.8 x 9.6 mm</text>
+<text class="lblb" x="900" y="504">optik yol</text>
+<text class="s" x="1040" y="504">katlanmış prizma + 5P asferik lens</text>
+<text class="lblb" x="900" y="528">dengeleme</text>
+<text class="s" x="1040" y="528">4-eksen OIS bakır ses-bobini × 4</text>
+<text class="lblb" x="900" y="552">ana TCON</text>
+<text class="s" x="1040" y="552">4-karo çiziksiz T-OLED + PDLC sürücü</text>
+<text class="lblb" x="900" y="576">kablosuz SiP</text>
+<text class="s" x="1040" y="576">UWB + 60 GHz mmWave 0-gecikme</text>
+<text class="lblb" x="900" y="600">mikrofon/ses</text>
+<text class="s" x="1040" y="600">2x MEMS + 9.0x3.2 mm hoparlör</text>
+<text class="lblb" x="900" y="624">EM/ısı kalkanı</text>
+<text class="s" x="1040" y="624">0.15 mm Cu-Grafit (%0 Z-çakışması)</text>
+<text class="lblb" x="900" y="648">toplam kütle</text>
+<text class="s" x="1040" y="648">20.0 g · r 0.55 mm yumuşak kenar</text>
+<rect class="glass" x="40" y="710" width="1320" height="248" rx="6"/>
+<text class="t h2" x="60" y="742">D · 90° BÜKÜMLÜ B MODÜLÜ İŞ AKIŞI VE DOĞRULAMA KAPILARI</text>
+<rect class="live" x="60" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="72" y="780">1 · 90° ÇUBUK</text>
+<text class="lbls" x="72" y="802">anten yukarıda dik</text>
+<text class="lbls" x="72" y="822">tek Type-C 40W</text>
+<rect class="live" x="276" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="288" y="780">2 · YUVARLAK B</text>
+<text class="lbls" x="288" y="802">ekran üstüne oturur</text>
+<text class="lbls" x="288" y="822">simetrik N52H</text>
+<rect class="live" x="492" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="504" y="780">3 · ÖN/ARKA</text>
+<text class="lbls" x="504" y="802">±90° Ti menteşe</text>
+<text class="lbls" x="504" y="822">4 yöne takılır</text>
+<rect class="live" x="708" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="720" y="780">4 · 4-KARO TCON</text>
+<text class="lbls" x="720" y="802">+ derzi sıfırlar</text>
+<text class="lbls" x="720" y="822">120 Hz T-OLED</text>
+<rect class="live" x="924" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="936" y="780">5 · UWB/mmWAVE</text>
+<text class="lbls" x="936" y="802">sıfır-CPU akış</text>
+<text class="lbls" x="936" y="822">4.98 Gbit/s</text>
+<rect class="live" x="1140" y="756" width="196" height="78" rx="6"/>
+<text class="lbls" x="1152" y="780">6 · KAMERA/SES</text>
+<text class="lbls" x="1152" y="802">50MP OIS + 5P</text>
+<text class="lbls" x="1152" y="822">Ø22.4 AMOLED</text>
+<text class="s" x="60" y="856">Sadece çubuk kısmı 90° dik açıyla büküldüğü için çubuk ekran kenarını L-klips gibi kavrar, yuvarlak kamera ve arka AMOLED ise ekranın üzerine oturur.</text>
+<text class="s" x="60" y="875">Böylece modül ekranın 4 yönüne ve önüne/arkasına saniyeler içinde takılıp çıkarılabilir.</text>
+<text class="s" x="60" y="900">Kapılar: MON-1 90° dik bükümlü çubuk · MON-2 yuvarlak kısım ekran üstünde · MON-3 ±90° öne/arkaya takım · MON-4 4 yöne uyum · MON-5 tek</text>
+<text class="s" x="60" y="919">USB-C çubukta · MON-6..20 TCON, UWB ve IP68.</text>
+</svg>

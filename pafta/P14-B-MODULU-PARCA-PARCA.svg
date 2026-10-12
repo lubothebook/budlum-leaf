@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" role="img" aria-label="Sadece çubuğu 90° dik bükülen, yuvarlağı ekran üstüne oturan, tek Type-C portlu B modülünün tüm iç parçaları">
+  <title>BUDLUM LEAF · 90° BÜKÜMLÜ B MODÜLÜ PARÇA PARÇA (31 GRUP, 22.0 G)</title>
+  <style>
+    .bg{fill:#fbfaf7}
+    .t{font-family:Helvetica,Arial,sans-serif;fill:#181816}
+    .h1{font-size:24px;font-weight:700}
+    .h2{font-size:15px;font-weight:700}
+    .h3{font-size:12.5px;font-weight:700}
+    .lbl{font-size:13px}
+    .lblb{font-size:13px;font-weight:700}
+    .lbls{font-size:10.5px}
+    .s{font-size:11.5px;fill:#4b4b47;font-family:Helvetica,Arial,sans-serif}
+    .body{font-size:14px;fill:#181816;font-family:Helvetica,Arial,sans-serif}
+    .glass{fill:#ffffff;stroke:#181816;stroke-width:2.4}
+    .live{fill:#dcecff;stroke:#18507e;stroke-width:1.6}
+    .dead{fill:#8f948f;stroke:#111;stroke-width:1.4}
+    .steel{fill:#d8dbe0;stroke:#5b6169;stroke-width:1.6}
+    .mod{fill:#f7dcae;stroke:#8a5a12;stroke-width:2}
+    .gd{fill:#ffe9a8;stroke:#8a6a12;stroke-width:1.4}
+    .mag{fill:#c9ccd1;stroke:#3b3f45;stroke-width:1.2}
+    .gsk{fill:#e6d6f2;stroke:#5a3b7a;stroke-width:1.4}
+    .body4{fill:#f2f1ec;stroke:#5b6169;stroke-width:1.6}
+    .rule{stroke:#d5d5cf;stroke-width:1.2}
+    .dim{stroke:#8a5a12;stroke-width:1.1}
+    .lt{font-size:13px;font-weight:700;fill:#f6f6f4;font-family:Helvetica,Arial,sans-serif}
+    .ls{font-size:11px;fill:#dcdcd8;font-family:Helvetica,Arial,sans-serif}
+  </style>
+  <rect class="bg" x="0" y="0" width="1400" height="980"/>
+<text class="t h1" x="40" y="52">B MODÜLÜ (REV L.5.0) · 90° BÜKÜMLÜ ÇUBUK, TEK TYPE-C VE KAMERA PARÇALARI</text>
+<text class="s" x="40" y="78">Revizyon L.5.0 B modülünde sadece soldaki çubuk (anten) kısmı ±90° tersinir titanyum menteşe ile 90° dik açıyla bükülür ve ekran kenarında/yukarısında dik</text>
+<text class="s" x="40" y="97">kalır; kalan yuvarlak halka (32 x 32 x 4.00 mm) doğrudan ekranın üzerine oturur. Cihazdaki TEK USB Type-C portu 90° çubuk içindedir; modül ekranın</text>
+<text class="s" x="40" y="116">önüne/arkasına ve 4 yönüne takılır.</text>
+<line class="rule" x1="40" y1="136" x2="1360" y2="136"/>
+<rect class="glass" x="40" y="152" width="640" height="676" rx="6"/>
+<text class="t h2" x="60" y="180">A · SIRALI PATLATMA · ÖN KAMERADAN 90° ÇUBUĞA VE ARKA PANELE</text>
+<rect class="body4" x="169.0" y="201.0" width="52" height="9" rx="2"/>
+<text class="lbls" x="64" y="208.0">31</text>
+<text class="lbls" x="242" y="208.0">ön safir mercek penceresi · Ø24.0 x 0.35 mm</text>
+<rect class="body4" x="161.0" y="220.0" width="68" height="9" rx="2"/>
+<text class="lbls" x="64" y="227.0">30</text>
+<text class="lbls" x="242" y="227.0">ön kamera çerçevesi (mikrofon + hoparlör + flaş yuvalı)</text>
+<rect class="gd" x="178.0" y="239.0" width="34" height="9" rx="2"/>
+<text class="lbls" x="64" y="246.0">29</text>
+<text class="lbls" x="242" y="246.0">çift-CCT LED flaş · halka içinde düz</text>
+<rect class="body4" x="167.0" y="258.0" width="56" height="9" rx="2"/>
+<text class="lbls" x="64" y="265.0">28</text>
+<text class="lbls" x="242" y="265.0">mikro hoparlör · 9.0 x 3.2 x 2.2 mm (halka içinde)</text>
+<rect class="body4" x="171.0" y="277.0" width="48" height="9" rx="2"/>
+<text class="lbls" x="64" y="284.0">27</text>
+<text class="lbls" x="242" y="284.0">çift altın MEMS mikrofon + akustik membran × 2</text>
+<rect class="body4" x="168.0" y="296.0" width="54" height="9" rx="2"/>
+<text class="lbls" x="64" y="303.0">26</text>
+<text class="lbls" x="242" y="303.0">5P asferik lens dizisi (5 ayrı optik mercek)</text>
+<rect class="body4" x="167.0" y="315.0" width="56" height="9" rx="2"/>
+<text class="lbls" x="64" y="322.0">25</text>
+<text class="lbls" x="242" y="322.0">katlanmış optik prizma · 7.6 x 7.6 mm</text>
+<rect class="body4" x="166.0" y="334.0" width="58" height="9" rx="2"/>
+<text class="lbls" x="64" y="341.0">24</text>
+<text class="lbls" x="242" y="341.0">4-eksen OIS bakır ses-bobini aktüatörleri × 4</text>
+<rect class="body4" x="164.0" y="353.0" width="62" height="9" rx="2"/>
+<text class="lbls" x="64" y="360.0">23</text>
+<text class="lbls" x="242" y="360.0">50 MP CMOS görüntü sensörü · 12.8 x 9.6 x 0.65 mm</text>
+<rect class="mod" x="162.0" y="372.0" width="66" height="9" rx="2"/>
+<text class="lbls" x="64" y="379.0">22</text>
+<text class="lbls" x="242" y="379.0">6-katmanlı Halka Sıfır-CPU Anakart (Ø30.2 / Ø24.4 mm)</text>
+<rect class="mod" x="165.0" y="391.0" width="60" height="9" rx="2"/>
+<text class="lbls" x="64" y="398.0">21</text>
+<text class="lbls" x="242" y="398.0">U1 4-Karo Ana TCON + U2 UWB/60GHz mmWave SiP</text>
+<rect class="body4" x="167.0" y="410.0" width="56" height="9" rx="2"/>
+<text class="lbls" x="64" y="417.0">20</text>
+<text class="lbls" x="242" y="417.0">U3 Ses DSP &amp; Codec + U4 3 ms Kriptografik Dead-Pad IC</text>
+<rect class="body4" x="166.0" y="429.0" width="58" height="9" rx="2"/>
+<text class="lbls" x="64" y="436.0">19</text>
+<text class="lbls" x="242" y="436.0">orta 0.15 mm Bakır-Grafit EM ve termal kalkan (%0 çakışma)</text>
+<rect class="steel" x="159.0" y="448.0" width="72" height="9" rx="2"/>
+<text class="lbls" x="64" y="455.0">18</text>
+<text class="lbls" x="242" y="455.0">yuvarlak halka gövde · 32.0 x 32.0 x 4.00 mm (ekran üstünde)</text>
+<rect class="steel" x="163.0" y="467.0" width="64" height="9" rx="2"/>
+<text class="lbls" x="64" y="474.0">17</text>
+<text class="lbls" x="242" y="474.0">±90° tersinir Grade-5 Titanyum boyun menteşesi (öne/arkaya)</text>
+<rect class="steel" x="160.0" y="486.0" width="70" height="9" rx="2"/>
+<text class="lbls" x="64" y="493.0">16</text>
+<text class="lbls" x="242" y="493.0">90° dik açıyla bükülmüş çubuk gövde · 32.0 x 4.0 x 1.00 mm (r 0.55)</text>
+<rect class="gd" x="166.0" y="505.0" width="58" height="9" rx="2"/>
+<text class="lbls" x="64" y="512.0">15</text>
+<text class="lbls" x="242" y="512.0">90° çubuk içi 3-bant LCP anten (Wi-Fi 7, BT 5.4, UWB)</text>
+<rect class="gd" x="168.0" y="524.0" width="54" height="9" rx="2"/>
+<text class="lbls" x="64" y="531.0">14</text>
+<text class="lbls" x="242" y="531.0">90° çubuk üstü 1x4 60 GHz mmWave faz-dizili yama antenler</text>
+<rect class="body4" x="171.0" y="543.0" width="48" height="9" rx="2"/>
+<text class="lbls" x="64" y="550.0">13</text>
+<text class="lbls" x="242" y="550.0">90° çubuk içi RF eşleme ağı ve esnek LCP koaksiyel köprü</text>
+<rect class="steel" x="163.0" y="562.0" width="64" height="9" rx="2"/>
+<text class="lbls" x="64" y="569.0">12</text>
+<text class="lbls" x="242" y="569.0">90° çubuk içi TEK USB Type-C (40W PD 3.1 + DP 2.1) priz</text>
+<rect class="body4" x="169.0" y="581.0" width="52" height="9" rx="2"/>
+<text class="lbls" x="64" y="588.0">11</text>
+<text class="lbls" x="242" y="588.0">Type-C kırmızı silikon IP68 sızdırmazlık O-ring contası</text>
+<rect class="body4" x="168.0" y="600.0" width="54" height="9" rx="2"/>
+<text class="lbls" x="64" y="607.0">10</text>
+<text class="lbls" x="242" y="607.0">U_PD USB-PD 3.1 EPR şarj denetleyici + 2.2 µH indüktör</text>
+<rect class="steel" x="164.0" y="619.0" width="62" height="9" rx="2"/>
+<text class="lbls" x="64" y="626.0">9</text>
+<text class="lbls" x="242" y="626.0">ekran yüzeyine kenetlenen simetrik N52H mıknatıs halkası × 8</text>
+<rect class="gd" x="166.0" y="638.0" width="58" height="9" rx="2"/>
+<text class="lbls" x="64" y="645.0">8</text>
+<text class="lbls" x="242" y="645.0">ekran yüzeyine kenetlenen 12 altın pogo/optik yüksek hızlı ped</text>
+<rect class="body4" x="165.0" y="657.0" width="60" height="9" rx="2"/>
+<text class="lbls" x="64" y="664.0">7</text>
+<text class="lbls" x="242" y="664.0">su geçirmez FKM elastomer sızdırmazlık contası · IP68</text>
+<rect class="body4" x="168.0" y="676.0" width="54" height="9" rx="2"/>
+<text class="lbls" x="64" y="683.0">6</text>
+<text class="lbls" x="242" y="683.0">arka panel ara yalıtım ve EMI kalkanı</text>
+<rect class="mod" x="165.0" y="695.0" width="60" height="9" rx="2"/>
+<text class="lbls" x="64" y="702.0">5</text>
+<text class="lbls" x="242" y="702.0">arka yuvarlak AMOLED sürücü ve dokunma katmanı</text>
+<rect class="mod" x="163.0" y="714.0" width="64" height="9" rx="2"/>
+<text class="lbls" x="64" y="721.0">4</text>
+<text class="lbls" x="242" y="721.0">arka yuvarlak LTPO AMOLED panel · Ø22.4 mm aktif (1-120 Hz)</text>
+<rect class="body4" x="169.0" y="733.0" width="52" height="9" rx="2"/>
+<text class="lbls" x="64" y="740.0">3</text>
+<text class="lbls" x="242" y="740.0">arka optik yapıştırıcı (OCA) · 25 µm</text>
+<rect class="body4" x="164.0" y="752.0" width="62" height="9" rx="2"/>
+<text class="lbls" x="64" y="759.0">2</text>
+<text class="lbls" x="242" y="759.0">arka safir/polikarbonat koruyucu kapak · Ø24.0 x 0.35 mm</text>
+<rect class="body4" x="162.0" y="771.0" width="66" height="9" rx="2"/>
+<text class="lbls" x="64" y="778.0">1</text>
+<text class="lbls" x="242" y="778.0">arka tersinir kenetlenme sızdırmazlık halkası · Ø24.0 mm (IP68)</text>
+<line x1="60" y1="801" x2="660" y2="801" stroke="#d5d5cf" stroke-width="1.2"/>
+<text class="lbls" x="60" y="815">Yuvarlak halka ekran üstünde (4.00 mm) · Sadece 90° anten+Type-C çubuğu yukarıda dik</text>
+<rect class="glass" x="700" y="152" width="660" height="330" rx="6"/>
+<text class="t h2" x="720" y="180">B · 90° BÜKÜMLÜ ÇUBUK, TEK TYPE-C VE SIFIR-CPU HALKA · 15.6 g</text>
+<text class="lbls" x="720" y="206">18</text>
+<text class="lbls" x="752" y="206">yuvarlak halka çerçeve</text>
+<text class="lbls" x="960" y="206">Ø32/Ø24 x 4.0</text>
+<text class="lbls" x="1140" y="206">4.6 g</text>
+<text class="lbls" x="1230" y="206">±0.03 mm</text>
+<text class="lbls" x="720" y="236">16</text>
+<text class="lbls" x="752" y="236">90° dik bükümlü çubuk</text>
+<text class="lbls" x="960" y="236">6.4 x 44.0 x 4.5</text>
+<text class="lbls" x="1140" y="236">2.6 g</text>
+<text class="lbls" x="1230" y="236">±0.03 mm</text>
+<text class="lbls" x="720" y="266">17</text>
+<text class="lbls" x="752" y="266">±90° titanyum menteşe</text>
+<text class="lbls" x="960" y="266">1.5 x 22.0 x 4.0</text>
+<text class="lbls" x="1140" y="266">1.2 g</text>
+<text class="lbls" x="1230" y="266">±0.02 mm</text>
+<text class="lbls" x="720" y="296">12</text>
+<text class="lbls" x="752" y="296">TEK USB-C 40W + IP68</text>
+<text class="lbls" x="960" y="296">4.8 x 8.8 x 3.2</text>
+<text class="lbls" x="1140" y="296">1.4 g</text>
+<text class="lbls" x="1230" y="296">±0.02 mm</text>
+<text class="lbls" x="720" y="326">15</text>
+<text class="lbls" x="752" y="326">LCP anten + 60GHz dizi</text>
+<text class="lbls" x="960" y="326">31.0 x 3.2 x 0.6</text>
+<text class="lbls" x="1140" y="326">0.7 g</text>
+<text class="lbls" x="1230" y="326">±0.02 mm</text>
+<text class="lbls" x="720" y="356">22</text>
+<text class="lbls" x="752" y="356">6L Sıfır-CPU halka PCB</text>
+<text class="lbls" x="960" y="356">Ø30.2/Ø24.4 x 0.6</text>
+<text class="lbls" x="1140" y="356">1.8 g</text>
+<text class="lbls" x="1230" y="356">±0.03 mm</text>
+<text class="lbls" x="720" y="386">9</text>
+<text class="lbls" x="752" y="386">simetrik N52H + 12 pin</text>
+<text class="lbls" x="960" y="386">Ø27.2 halka dizi</text>
+<text class="lbls" x="1140" y="386">2.4 g</text>
+<text class="lbls" x="1230" y="386">±0.02 mm</text>
+<text class="lbls" x="720" y="416">28</text>
+<text class="lbls" x="752" y="416">mikrofon × 2 + hoparlör</text>
+<text class="lbls" x="960" y="416">9.0 x 3.2 x 2.2</text>
+<text class="lbls" x="1140" y="416">0.9 g</text>
+<text class="lbls" x="1230" y="416">±0.03 mm</text>
+<text class="lbls" x="720" y="466">±90° tersinir titanyum menteşe ile B modülü ekranın önüne/arkasına ve 4 yönüne takılır.</text>
+<rect class="glass" x="700" y="498" width="660" height="330" rx="6"/>
+<text class="t h2" x="720" y="526">C · ÖN 50MP OIS KAMERA, KALKAN VE ARKA AMOLED · 6.4 g</text>
+<text class="lbls" x="720" y="552">30</text>
+<text class="lbls" x="752" y="552">ön kamera çerçevesi</text>
+<text class="lbls" x="960" y="552">Ø24.0 x 2.90</text>
+<text class="lbls" x="1140" y="552">1.4 g</text>
+<text class="lbls" x="1230" y="552">±0.02 mm</text>
+<text class="lbls" x="720" y="580">31</text>
+<text class="lbls" x="752" y="580">ön safir pencere</text>
+<text class="lbls" x="960" y="580">Ø24.0 x 0.35</text>
+<text class="lbls" x="1140" y="580">0.5 g</text>
+<text class="lbls" x="1230" y="580">±0.02 mm</text>
+<text class="lbls" x="720" y="608">25</text>
+<text class="lbls" x="752" y="608">katlanmış optik prizma</text>
+<text class="lbls" x="960" y="608">7.6 x 7.6 x 0.8</text>
+<text class="lbls" x="1140" y="608">0.6 g</text>
+<text class="lbls" x="1230" y="608">±5 ark sn</text>
+<text class="lbls" x="720" y="636">26</text>
+<text class="lbls" x="752" y="636">5P asferik lens dizisi</text>
+<text class="lbls" x="960" y="636">Ø12.0 x 2.0 mm</text>
+<text class="lbls" x="1140" y="636">1.3 g</text>
+<text class="lbls" x="1230" y="636">±2 µm</text>
+<text class="lbls" x="720" y="664">23</text>
+<text class="lbls" x="752" y="664">50 MP CMOS sensör</text>
+<text class="lbls" x="960" y="664">12.8 x 9.6 x 0.65</text>
+<text class="lbls" x="1140" y="664">0.9 g</text>
+<text class="lbls" x="1230" y="664">±0.02 mm</text>
+<text class="lbls" x="720" y="692">24</text>
+<text class="lbls" x="752" y="692">4-eksen OIS bobinleri</text>
+<text class="lbls" x="960" y="692">4 x (2.2 x 1.8)</text>
+<text class="lbls" x="1140" y="692">0.7 g</text>
+<text class="lbls" x="1230" y="692">±0.02 mm</text>
+<text class="lbls" x="720" y="720">4</text>
+<text class="lbls" x="752" y="720">arka yuvarlak AMOLED</text>
+<text class="lbls" x="960" y="720">Ø22.4 aktif (250 ppi)</text>
+<text class="lbls" x="1140" y="720">0.6 g</text>
+<text class="lbls" x="1230" y="720">±0.03 mm</text>
+<text class="lbls" x="720" y="748">19</text>
+<text class="lbls" x="752" y="748">0.15 mm Cu-Grafit kalkan</text>
+<text class="lbls" x="960" y="748">Ø23.2 x 0.15</text>
+<text class="lbls" x="1140" y="748">0.3 g</text>
+<text class="lbls" x="1230" y="748">±0.01 mm</text>
+<text class="lbls" x="720" y="776">1</text>
+<text class="lbls" x="752" y="776">arka safir + IP68 conta</text>
+<text class="lbls" x="960" y="776">Ø24.0 IP68 takım</text>
+<text class="lbls" x="1140" y="776">0.3 g</text>
+<text class="lbls" x="1230" y="776">±0.02 mm</text>
+<line x1="720" y1="802" x2="1340" y2="802" stroke="#d5d5cf" stroke-width="1.2"/>
+<text class="lbls" x="720" y="820">Toplam kütle: 15.6 g + 6.4 g = 20.0 g · Cihazdaki tek Type-C ve tüm aktif beyin buradadır.</text>
+<rect class="glass" x="40" y="844" width="1320" height="112" rx="6"/>
+<text class="t h2" x="60" y="872">D · MONTAJ SIRASI · 12 ADIM VE DOĞRULAMA</text>
+<text class="lbls" x="60" y="896">1 90° L-çubuk + halka gövde</text>
+<text class="lbls" x="278" y="896">2 ±90° titanyum menteşe</text>
+<text class="lbls" x="496" y="896">3 çubuk içi TEK USB-C priz</text>
+<text class="lbls" x="714" y="896">4 3-bant LCP + 60GHz anten</text>
+<text class="lbls" x="932" y="896">5 6L Sıfır-CPU halka PCB</text>
+<text class="lbls" x="1150" y="896">6 4-Karo TCON + UWB SiP</text>
+<text class="lbls" x="60" y="920">7 50MP sensör + 4 OIS bobin</text>
+<text class="lbls" x="278" y="920">8 katlanmış prizma + 5P lens</text>
+<text class="lbls" x="496" y="920">9 0.15 mm Cu-Grafit kalkan</text>
+<text class="lbls" x="714" y="920">10 Ø22.4 arka LTPO AMOLED</text>
+<text class="lbls" x="932" y="920">11 simetrik N52H + 12 pin</text>
+<text class="lbls" x="1150" y="920">12 öne/arkaya takılma testi</text>
+<text class="lbls" x="60" y="946">Kritik muayene: 90° L-çubuk menteşe kilidi, tek USB-C IP68 sızdırmazlığı ve %0 Z-çakışması.</text>
+</svg>
