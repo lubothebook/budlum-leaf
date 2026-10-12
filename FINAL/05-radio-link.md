@@ -1,5 +1,7 @@
 # BUDLUM LEAF · THE DIRECTIVE · PART 5 · THE RADIO AND THE LINK
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. The antenna set, the radios and the latency settings of Part 21, Section 21.4 replace the B bar rules of Section 5.2. The B module seats on any edge and either face, and a 5G RedCap modem is in the module.
+
 ---
 
 ## 5.1 The radio set

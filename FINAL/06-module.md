@@ -1,5 +1,7 @@
 # BUDLUM LEAF · THE DIRECTIVE · PART 6 · THE 90°-BENT-STEM B MODULE, THE SOLE USB-C PORT, THE PEN AND THE SOUND
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ. Part 21 and `HARDWARE/05` define the B module. It has a `1.00 mm` LCP stem, no hinge, USB-C in the ring rim and a `13 MP` camera.
+
 **The standing of this part at Revision L.5.0, of 2026-10-12**. Modeled 1:1 from `uploads/b.png` (`20.0 g`), **only the stem (`çubuk`, `8 x 32 x 4.5 mm`) bends at a `90°` right angle (`dik açıyla`)**. Its **circular ring (`yuvarlak`, `32 x 32 x 4.0 mm`) lies flat on top of the screen**. Moving the `90°`-bent stem around the 4 edges docks the B module to the **Front (`+Z`) or Back (`-Z`)** of the screen.
 
 | The item | The state at Revision L.5.0 |

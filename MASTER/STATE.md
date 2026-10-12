@@ -1,6 +1,6 @@
 # BUDLUM LEAF · PROGRAM STATE
 
-**Revision:** L.5.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
+**Revision:** L.6.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
 **Owner:** the Leaf Program Lead. It is rewritten in every working block (Volume XII, Section 7).
 
 ---
@@ -23,6 +23,18 @@
 | `LEAF/pafta/P01` to `P22`, and `E01` to `E03` | **all 25 SVG sheets pass `OVER 0, COVERED 0, COLLIDE 0`**: `E01..E03` engineering sections, `P01..P13` core sheets, and `P14..P22` part-by-part sheets |
 
 ---
+
+## 2a · The closed decisions of Revision L.6.0 (2026-10-12 · stretch, `1.00 mm` stem, projection)
+
+Part 21 (`FINAL/21-stretch-stem-and-projection.md`) holds the numbers. It wins over the L.5.0 list below where they differ.
+
+- **The body stretches**. PC-siloxane islands on elastomer bridges give about `8 %` stretch. The energy is `9.4 Wh` at the default option.
+- **The B stem is `8.0 x 32.0 x 1.00 mm` LCP-GF40**. No hinge, no titanium, no aluminium. It holds the antennas and the dock contacts only.
+- **USB-C moves to the ring rim**. The camera becomes a `13 MP` module that fits the `4.00 mm` ring.
+- **"Zero CPU" means no general-purpose processor and no operating system**. Fixed-function chips and a `16 MB` frame store are allowed.
+- **Projection means the network computes and the Leaf shows**. A bonded render operator streams off-chain. The chain leases, settles and judges (research order RG-18).
+- **The radio set is `U2A` Wi-Fi 7, `U2B` `60 GHz` and UWB, and `U5` 5G RedCap**. The Leaf Dock is the access point and the render node in the room.
+- **Not yet redrawn**: the 25 sheets, the STL models and the renders still show L.5.0.
 
 ## 2 · The closed decisions of Revision L.5.0 (2026-10-12 · 4-Quadrant `+` Puzzle-Interlocking Body & `90°` Natural-Gap Bent B Module)
 

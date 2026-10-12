@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 19 · THE RADIO, ANTENNAS AND ZERO-CPU UWB / MMWAVE TRANSCEIVER
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the stem is `1.00 mm` LCP with no metal shell. A1 is a `2.4 GHz` inverted-F, A3 moves to the ring rim as the second Wi-Fi antenna. One `U2` splits into `U2A`, `U2B` and the 5G modem `U5`.
+
 **Revision L.5.0 · 2026-10-12**.
 In Revision L.5.0, the Budlum Leaf operates on a **Zero-CPU (`Sıfır CPU`) and Zero-RAM** thin-client architecture. This heavy compute runs on network validators or hubs. Aside from `Qi2.2` wireless charging on the screen body, all active RF and compute-link functions live inside the **`90°`-bent-stem B module (`20.0 g`)**. Assisted by transparent `AgNW/ITO` diversity apertures in the 4-quadrant screen perimeter (`pafta/P05`, `pafta/P20`).
 

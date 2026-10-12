@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 01 · THE SYSTEM, END TO END
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the body now stretches through PC islands and elastomer bridges (about `8 %`, `9.4 Wh`). The B module is `12.0 g` with a `1.00 mm` LCP stem, USB-C in the ring rim, and silicon `U1` to `U8`. The device is about `80 g`.
+
 **Revision L.5.0 · 2026-10-12**.
 This file specifies the end-to-end Budlum Leaf Revision L.5.0 architecture (`pafta/E01-SISTEM-KAMERA-VE-PORT.svg` and `pafta/P22-CIHAZ-VE-KENAR-MODULU.svg`). It covers the `80.0 x 160.0 x 2.00 mm` (`68.0 g`) 4-Quadrant (`+`) screen-battery body and the `90°`-bent-stem B module (`20.0 g`. Total `88.0 g`).
 

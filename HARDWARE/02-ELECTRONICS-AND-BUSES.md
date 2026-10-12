@@ -1,5 +1,7 @@
 # BUDLUM LEAF · HARDWARE · 02 · THE ELECTRONICS AND THE BUSES
 
+> **Revision L.6.0 note (2026-10-12)**. `FINAL/21-stretch-stem-and-projection.md` supersedes this file where they differ: the conductors are AgNW only, because ITO cracks under stretch. "Zero CPU" means no general-purpose processor, and a `16 MB` frame store is allowed. The MB block gains `U2A`, `U2B`, `U5` to `U8`. The ST block holds antennas and contacts only.
+
 **Revision L.5.0 · 2026-10-12**.
 This file specifies every circuit block, invisible `AgNW/ITO` bus, `64`-contact `+` seam bus, and wireless power rail in the Budlum Leaf (`pafta/E01-SISTEM-KAMERA-VE-PORT.svg`). The device uses a **Zero-CPU (`Sıfır CPU`) and Zero-RAM** thin-client architecture where heavy compute runs on network validators or hubs. The `90°`-bent-stem B module holds the **`U1` Quad-Tile Master TCON**, **`U2` `UWB / mmWave` SiP**, and **sole `USB Type-C` port**,. While the portless 4-quadrant screen body holds the `12.0 Wh` solid-state battery and `Qi2.2` wireless charging receivers.
 
