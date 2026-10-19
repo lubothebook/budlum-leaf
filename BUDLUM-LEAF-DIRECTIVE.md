@@ -1,6 +1,6 @@
-# BUDLUM LEAF · THE DIRECTIVE · FINAL EDITION v5.0 · REVISION L.6.0 · 2026-10-12 · the assembled single source of truth
+# BUDLUM LEAF · THE DIRECTIVE · FINAL EDITION v5.0 · REVISION L.7 candidate · 2026-10-19 · the assembled single source of truth
 
-*This file is the concatenation of the twenty-two parts of `LEAF/FINAL/`, built by `LEAF/tools/assemble.py`. Edit the parts, never this file. The counts of the gates and of the gaps live in `LEAF/tools/canon.json` and are checked by gate PRG-15.*
+*This file is the concatenation of the twenty-four parts of `LEAF/FINAL/`, built by `LEAF/tools/assemble.py`. Edit the parts, never this file. The counts of the gates and of the gaps live in `LEAF/tools/canon.json` and are checked by gate PRG-15.*
 
 ---
 
@@ -116,6 +116,8 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 19 | **The second face, the custom shape, the patent screen and the ledger**: the Duo rule, the SZ rule and the freedom to operate | DUO-1 to DUO-6, SZ-1 to SZ-5, PRG-12, PRG-14 to PRG-16 |
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
 | 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-21 to MON-23, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
+| 22 | **Host power and the living Leaf**: the Host Life Law, the tiers, the power path, the heat, the power door and the claim | HST-1 to HST-29, RG-19 |
+| 23 | **The Core, the Skin and the Heartbeat**: the Rule of Necessity, the distance classes, the Split and the search for unlimited energy | CSK-1 to CSK-29, RG-20 |
 
 ### 0.7 What is fixed and what is open
 
@@ -130,7 +132,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 |---|---|---|
 | "176 ppd at the eye" for the Frame came from the flat screen formula and is wrong | the near eye rule: **pixels across divided by the field across**. The Frame uses a 4K class microdisplay at about 2 400 ppi. The Field mode is about 20 to 25 ppd | Part 15, H-1 |
 | two thickness values for one face (0.46 and 0.59) | the ledger is single: 0.46 + 2.88 + 0.46 + 0.06 + 0.04 = **3.90 mm nominal, 4.00 mm maximum** | Part 15, H-2 |
-| the gate count said 90 in one part and 89 in another | **276 gates: 242 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
+| the gate count said 90 in one part and 89 in another | **336 gates: 300 device and network, 16 program and 20 research** at the L.7 candidate, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
 
 **The rule introduced by the pass**. An audit of the numbers and of the physics runs at every revision. Its findings are published in this part, and not quietly fixed. `[DECISION]`
 
@@ -147,7 +149,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | `tools/check_crossrefs.py` with `tools/canon.json` | **PRG-15** | one number per count, held in one file, measured against every claim |
 | `pafta/check_sheets.py` | the drawing line | the overflow, the collision and the covered text of every sheet |
 
-**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 276 gates of 242 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 22 major and 7 minor. `[DECISION]`
+**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 336 gates of 300 device and network, 16 program and 20 research. 54 gap items of 17 blockers, 30 major and 7 minor. `[DECISION]`
 
 ### 0.77 The block of 2026-10-12: 4-Quadrant (`+`) 2.00 mm (`68 g`) solid-state body, universal `Qi2.2`, and `90°`-bent-stem B module (`20 g`)
 
@@ -192,6 +194,33 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | **twenty-four new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
 
 **The rule of the block**. Part 21 wins over every older part it names, until that part is rewritten. The sheets and the STL models still show L.5.0 and are listed for redraw. `[DECISION]`
+
+**The order of Ayaz that opened Revision L.6.1, 2026-10-19**. *The main energy lives in the hardware, and the Leaf works while the hardware works.* Ayaz gave the program to the Program Lead.
+
+| The change | Where |
+|---|---|
+| **the Host Life Law**: on a paired host with a heat path, a Leaf lives as long as the host feeds it | Part 22, Section 22.2 |
+| **the Buffer tier is the first host-power tier**, and the Bare tier stays a study | Part 22, Section 22.3 |
+| **the host feeds the load and the cell floats**: `7.2` times the cell life in the model | Part 22, Section 22.4 |
+| **always-on needs a host that pulls heat**: the dock plate passes every case, free air passes none | Part 22, Section 22.5 |
+| **the word "first" is held** until a prior art search and a patent opinion | Part 22, Section 22.11 |
+| **twenty-nine new gates**, research order RG-19 and five new gap items | Part 22, Sections 22.14 to 22.16; Part 16 |
+
+**The rule of the block**. Part 22 adds to Part 21 and changes no L.6.0 number. Its findings against earlier text are in Part 22, Section 22.16. `[DECISION]`
+
+**The orders of Ayaz that opened the L.7 candidate, 2026-10-19**. *Keep all the components of the screen in a separate hardware. The hardware can be kilometres away. Whatever is needed stays in the camera part. The battery in the Leaf is very small, and the energy is unlimited.*
+
+| The change | Where |
+|---|---|
+| **the Rule of Necessity**: the camera part keeps what physics forces, the Core holds all else | Part 23, Section 23.3 |
+| **the Split lives as a wired Skin at C0 and C1**, and at C2 nothing leaves the Leaf | Part 23, Sections 23.2 and 23.6 |
+| **the screen is lighter and the unit is `15 %` cheaper**, because the micro-LED tile stays at `76 %` | Part 23, Sections 23.1 and 23.9 |
+| **the lying Skin**: a tap never confirms a key operation | Part 23, Section 23.7 |
+| **the Heartbeat Law**: alive at microwatts, visible at millijoules, bright only where a host stands | Part 23, Section 23.10 |
+| **the Paper layer** in the cell layer that the Skin frees | Part 23, Section 23.11 |
+| **twenty-nine new gates**, research order RG-20 and six new gap items | Part 23, Sections 23.15 to 23.17; Part 16 |
+
+**The rule of the block**. Part 23 adds to Parts 21 and 22 and changes no L.6.0 number. Its findings against earlier text are in Part 23, Section 23.14. `[DECISION]`
 
 ### 0.8 The standing of the drawing set and the earlier volumes
 
@@ -2610,8 +2639,19 @@ PageManifest { page_class: C0b|C1|C2|C3, sensors: [SensorId], labels: bool,
 | G-41 | the rotating-square tile: the CAD, the coupon, the edge-on hinge and the micro cell of Part 21 | **B** | the stretch claim and the energy figure | the drawing line and the energy line | a `4 x 4` tile coupon, gates MEC-39, MEC-42 and ENR-22 |
 | G-42 | the validator Leaf duty in the Budlum tree: session state, deterministic render, frame receipts, re-execution | **B** | every session that the Leaf shows | the network line | research order RG-18 |
 | G-43 | the floating back skin and the lattice-continuous seam: the seal, the kerf and the swap repeatability | **M** | the stretch and scratch claims | the partner line | skin and seam coupons, gates MEC-40 and MEC-41 |
+| G-44 | the secure element for a host: NVM counters, the HostRecord program and the anchor age rule in `fw/u7` | **B** | every host power claim | the firmware line | Part 22, Section 22.8, gates HST-15 to HST-19 |
+| G-45 | the Bare store that fits the margin, and one name per power state | **M** | the Bare tier and the state vocabulary | the energy line and the firmware line | Part 22, Sections 22.3 and 22.9, gates HST-1 and HST-20 |
+| G-46 | the heat of the body in free air, and the dew point of the dock plate | **M** | the always-on claim | the heat line | Part 22, Section 22.5, gates HST-9, HST-10 and HST-13 |
+| G-47 | the host power claim: the prior art search, the patent opinion and the legal questions | **M** | the word "first" and the Article 11 reading | the program line | Part 22, Section 22.11, gates HST-25 to HST-27 |
+| G-48 | the host authority: who enrols a host, and the chain revocation of a host key | **M** | the trust of every paired host | the network line and the program line | Part 22, Section 22.8, gate HST-15 |
+| G-49 | the tile hub load and the Skin power budget: the hub domain on the tiles, and full motion at `240 Hz` | **M** | the Skin heat claim | the energy line and the heat line | Part 23, Section 23.4, gates CSK-4 and CSK-5 |
+| G-50 | what you see is what you sign: the press that does not cross the Skin, and a confirmation device at C1 | **B** | every signature on a Skin | the firmware line and the surface line | Part 23, Section 23.7, gates CSK-12 to CSK-15 |
+| G-51 | the `10 Gbit/s` spring leaf eye and visually lossless compression at `508 ppi` | **M** | the wired Skin link | the partner line and the display line | Part 23, Section 23.4, gate CSK-3 |
+| G-52 | the Leaf radio: A1 efficiency against `-2.5 dB`, the 5G antennas A5 and A6, and the SAR reference power | **B** | every far link claim | the radio line | Part 23, Section 23.6, gates CSK-20 to CSK-22 |
+| G-53 | the Core as a product: the box heat, the cell and the legal class under 2023/1670 | **M** | the Split product line | the program line and the energy line | Part 23, Section 23.5, gates CSK-2, CSK-9 and CSK-11 |
+| G-54 | the pairing registry on chain, the per key caps and the TakeOver conflict | **M** | Skin roaming | the network line | research order RG-20, gates CSK-16 and CSK-19 |
 
-**The count**. **43 items: 14 blockers, 22 major and 7 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
+**The count**. **54 items: 17 blockers, 30 major and 7 minor**. The 17 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41, G-42, G-44, G-50 and G-52. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
 
 ---
 
@@ -2624,7 +2664,7 @@ PageManifest { page_class: C0b|C1|C2|C3, sensors: [SensorId], labels: bool,
 | the link, the classes, the fail-safe ladder and the distance doctrine | written, with numbers and gates |
 | the firmware interfaces and the refusal set | written, at implementable depth |
 | the Budlum integration boundary and the orders RG-1 to RG-17 | written, with acceptance tests |
-| the verification plan and the claim policy | written, with 276 gates and one record format |
+| the verification plan and the claim policy | written, with 336 gates and one record format |
 | the drawing form and the check discipline | proven: the nine sheets P01 to P09 pass the strict check at zero collisions, zero overflows and zero missing labels |
 
 ---
@@ -3532,7 +3572,7 @@ The closing rule of the audit is: **a finding is closed by an edited file and a 
 | F-03 the slip of two free faces | S1 | the layers decouple, every interface shears, and the slip is **0.35 to 0.6 mm at R 25.5 mm** at 0.4 to 0.8 MPa | **B-5**, **B-6** | Part 18 Section 18.7.2 and `HARDWARE/12` Section 3. **Closed, and the 9 mm channel of the book model is withdrawn** |
 | F-04 polycarbonate under strain | S1 | the worst cover strain is **0.10 percent**, which is twelve times below the 1.21 percent crazing point, so polycarbonate is banned nowhere | **B-7**, **MEC-20** | Part 18, Sections 18.7.2 and 18.7.6. **Closed, and the crease insert is withdrawn** |
 | F-05 the runtime at a low cell density | S1 | the range column of the fill table, and the hours table of Section 17.13 rewritten on the base case | **ENR-7** | Part 17, Sections 17.3 and 17.13. **Closed** |
-| F-06 the gap count | S2 | the count is **43 items: 14 blockers, 22 major, 7 minor** at L.6.0, from the table itself | **PRG-15**, the count check | Part 16, Section 16.1. **Closed** |
+| F-06 the gap count | S2 | the count is **54 items: 17 blockers, 30 major, 7 minor** at L.7 candidate, from the table itself | **PRG-15**, the count check | Part 16, Section 16.1. **Closed** |
 | F-07 two gate counts | S2 | one count, held in `tools/canon.json` and checked by a tool, so that a second count cannot survive | **PRG-15** | Part 12, Section 12.4, and Part 15, H-3. **Closed** |
 | F-08 two water classes | S2 | **one claim: IP67, with IP68 as the target**, measured with a module fitted and with none. The plain slip lip variant stays IP54 and is not sold as water resistant | **MEC-19** | Parts 1, 3, 15 and 17. **Closed** |
 | F-09 "160 by 80 by 4.00" as a target | S2 | **4.00 mm is the maximum envelope**. The order states the thickness, and the claim states the density it was computed at | **MEC-15** | Part 0.5, `MASTER/STATE.md`, Part 17 Section 17.5. **Closed** |
@@ -4289,3 +4329,949 @@ The part list with masses lives in `HARDWARE/13-B-MODULE-PART-BY-PART.md`.
 | **SW-24** | the nearest validator: UWB distance proof, probes and the coverage map | the Leaf serves from the lowest round trip, and a relayed validator fails the distance proof |
 | **DST-11** | input to photon, four paths including 5G outdoors | Wi-Fi and 5G cell-site paths under `30 ms` at the 99th percentile |
 | **DST-12** | the validator handover while the user moves | the switch loses no frame and causes no reload |
+
+---
+
+# BUDLUM LEAF · THE DIRECTIVE · PART 22 · HOST POWER AND THE LIVING LEAF
+
+**Revision L.6.1 (proposed) · 2026-10-19 · the standing of this part**. This part adds to Part 21 and changes no L.6.0 number. Where it finds a fault in an earlier part, Section 22.16 names it. Tags follow Part 20: `[DECISION]`, `[HYPOTHESIS]`, `[PUBLICATION]`, `[GENERAL]` and `[TREE]`.
+
+**The order that created this part**. Ayaz, 2026-10-19: *"Donanım çalıştığı sürece çalışabilecek bir cihaz aslında bir ilktir. Asıl pil donanımda olsa ve sürekli Badlam Leaf çalışsa ne olacak? Bataryanın kapasitesi önemli olmuyor."* Ayaz also handed the whole management of the program to the Program Lead. The Lead ran five study seats, and their work is in `hw/hostpower/`. `[DECISION]`
+
+**The standing**. The thesis is a recommendation with measured limits, in the manner of Part 17. Every number is `[HYPOTHESIS]` until its gate runs. The five studies found that the thesis holds in a narrower form than the order states. This part writes the narrower form, and it writes what the narrower form still wins.
+
+---
+
+## 22.1 The question and the honest answer
+
+**The question**. What happens if the main energy lives in the hardware, and the Leaf keeps only a screen and a small cell? The Leaf then works as long as the hardware works. `[DECISION]`
+
+| The part of the idea | The result of the studies | The tag |
+|---|---|---|
+| the cell is not the source of life | true on a paired host. The cell becomes the bridge between hosts | `[HYPOTHESIS]` |
+| capacity does not matter | false as stated. Capacity moves into the place. The Leaf stops paying for it in grams, millimetres and heat | `[DECISION]` |
+| the cell lasts longer | true and large: `13.4` years against `1.8` years in the model, `7.2` times | `[HYPOTHESIS]` |
+| the heat falls | false. The heat comes from the session, and the battery path adds only `0.04 W` | `[HYPOTHESIS]` |
+| the heat is solved by a host | only by a host that pulls heat: the dock plate holds all `72` cases | `[HYPOTHESIS]` |
+| a host gives no risk | false until the power door of Section 22.8 exists | `[HYPOTHESIS]` |
+| a session survives a power gap | true for finalized chain state and keys. Section 22.9 lists the losses | `[HYPOTHESIS]` |
+| this is a world first | false as stated. Section 22.11 gives the claim that survives | `[PUBLICATION]` |
+
+**The one-line answer**. The Leaf lives as long as its host feeds it, if the host is a paired host with a heat path. The cell stops being the fuel and becomes the bridge. `[DECISION]`
+
+---
+
+## 22.2 The Host Life Law
+
+**The law**. On a paired host with a heat path, a Leaf lives as long as the host supplies power. Between two hosts, a bridge store keeps the session. `[DECISION]`
+
+The first brief of the program stated four conditions. The studies corrected two of them.
+
+| No. | The condition, as corrected | What changed |
+|---|---|---|
+| 1 | **Power**. `P_host >= P_load + P_topup`, with the `8.7 W` peak and the path loss included | a host under `9 W` on the VHV rail fails the peak |
+| 2 | **Heat**. The hottest face point stays at or under `36.2 °C`, in the ambient of the host | in free air no interface passes. The dock plate passes |
+| 3 | **Trust**. The host never touches the wallet, the signing core, the firmware slots or the data lanes | the old text said "before its handshake". A host that powers the handshake touches the bridge rail first |
+| 4 | **Continuity**. A power gap never loses finalized chain state or keys, and `E_buffer >= P_peak x t_handover` for the live frame | chain state holds. The open second of input and the live frame can be lost |
+
+**The scope rule**. The law holds for a paired host or a host that a paired party vouches for. An unknown host gives `0.5 W` and the safe screen. `[DECISION]` Trust studies, `hw/hostpower/trust/`.
+
+---
+
+## 22.3 The three energy tiers, as the studies left them
+
+| Tier | The store | What it does | The finding |
+|---|---|---|---|
+| **Bare** | a capacitor store of about `5 J` | lights the face for `2.2 s` at `2.24 W` and `0.57 s` at `8.7 W`, then ends the session | it does not fit the margin. It is an accessory, not a product |
+| **Buffer** | `15` to `20` micro cells of the `128` | carries the delta class for `5 min` between hosts | power limited: `20` cells carry `3.1 W` at `3 C` |
+| **Full** | all `128` cells, `5.9` to `7.4 Wh` | runs `2.6` to `3.6 h` of a delta session with no host | unchanged from L.6.0 |
+
+`[HYPOTHESIS]` `hw/hostpower/powerpath/`, `tiers.py`.
+
+### 22.3.1 What decides each tier
+
+1. **Bare does not fit.** The thinnest published double layer capacitor is `0.9 mm`. A `3 s` safe screen takes `3` tiles of cell layer. `[PUBLICATION]` source in the study.
+2. **Bare ends in a cold restart.** The B cell then holds the radios, face dark, for `16.2 min`. Then the Leaf restarts from chain state.
+3. **Buffer is limited by power, not energy.** The `8.7 W` peak needs `53` cells at `3 C`, about `3.1 Wh`. `[HYPOTHESIS]`
+4. **A `30 min` delta bridge needs `2.4 Wh`.** That is `58 %` over the first brief.
+5. **Buffer cells sit in all four quadrants.** One quadrant holding all blacks the body `3 s` on a swap.
+6. **Buffer keeps Article 11.** The cells sit in the four removable quadrants, as the L.6.0 cells do. `[DECISION]`
+
+**The ruling**. Buffer is the first host-power product tier. Full stays as the freedom tier. Bare stays a study until a store fits the margin. `[DECISION]`
+
+### 22.3.2 The saving of the Buffer tier
+
+| The saving, per Leaf | The value | The tag |
+|---|---|---|
+| mass of cells | `12 g` | `[HYPOTHESIS]` |
+| lithium | `0.64 g` | `[HYPOTHESIS]` |
+| cobalt | `5.3 g` | `[HYPOTHESIS]` |
+| thickness | `0.9 mm`, only if the cells leave the body | `[HYPOTHESIS]` |
+
+The saving is small per Leaf. At one million Leafs it is `635 kg` of lithium and `5.3 t` of cobalt. `[GENERAL]`
+
+---
+
+## 22.4 The power path: the host feeds the load and the cell floats
+
+**The rule**. The host carries the load. The cell floats near `50 %` and never takes a charge above `0.2 C` during a session. `[DECISION]`
+
+| The rail mode | The meaning | The cell current |
+|---|---|---|
+| `HOST_FEED` | the host carries the whole load and the cells float | `0` |
+| `HOST_TOPUP` | the host carries the load and fills the cells up to the float | up to `0.5 C` in |
+| `BRIDGE` | no host, and the cells carry the load by a shed ladder | out |
+| rail island | body dark, ring on the B cell, then `U7` and U4 ROM only | `0` |
+
+The thresholds are `HOST_FEED` at `55 %` pack charge and `HOST_TOPUP` below `45 %`. The shed ladder is the cell limit above `30 %`, the delta class to `18 %`, and the safe screen to `12 %`. `[DECISION]` proposed in `hw/hostpower/powerpath/powerpath.py`.
+
+### 22.4.1 Why the float matters
+
+| The case | Years to `80 %` capacity | The tag |
+|---|---|---|
+| Full cell, cycled daily from `100` to `20 %` | `1.8` | `[HYPOTHESIS]` |
+| Full cell, host fed, floating at `50 %` | `13.4` | `[HYPOTHESIS]` |
+| Buffer of `20` cells, doing all the bridging | `7.7` | `[HYPOTHESIS]` |
+
+The model is Schmalstieg 2014 with the constants of Lee et al. 2023. It was fitted to a `4.2 V` NMC cell and not to the LiCoO2 micro cell. `[PUBLICATION]` The uncertainty is wide, and gate HST-4 measures it.
+
+**What it buys**. The claim "the battery does not matter" becomes "the battery does not wear out first". That claim helps the repair story and the EU lifetime rules. `[DECISION]`
+
+### 22.4.2 The choice of the interface
+
+| The interface | The heat in the Leaf at `8.7 W` | The use |
+|---|---|---|
+| the `12` bar pads or the dock pads (contact) | `0.28 W` | the always-on path |
+| the port part on a seat | `0.28 W` | desks, vehicles, industry |
+| Qi2 `15 W` and Qi2.2 `25 W` pad, feeding the load | `0.76 W` | allowed in float mode |
+| Qi `5 W` pad | `0.76 W` and `4 W` short of the peak | wake and safe screen only |
+| Qi2.2 charging the cell at `25 W` | `9.19 W` in the delta case | at rest, screen off |
+
+**The ruling**. Contact is the always-on interface. Qi is a convenience. A Qi pad feeds the load and never charges the cell during a session. `[DECISION]`
+
+---
+
+## 22.5 The heat: always-on needs a host that pulls heat
+
+The thermal seat ran the L.6.0 model with each host interface. `[TREE]` `hw/hostpower/thermal/`.
+
+| The case, delta session, `25 °C` | The hottest face point | The limit `36.2 °C` |
+|---|---|---|
+| battery only, free air, still | `41.3 °C` | fails by `5.1 K` |
+| contact feed, free air | `42.1` to `44.6 °C` | fails |
+| Qi float feed, free air | `42.0` to `42.2 °C` | fails |
+| any interface on the dock plate at `22 °C` | margin `+3.1` to `+9.4 K` | passes in `72` of `72` cases |
+
+**What the table says**. A delta session of `2.5 W` is too hot for a still `2.00 mm` body in free air, with a battery or a host. Host power does not change that. The dock plate does. `[HYPOTHESIS]`
+
+1. **The host feeds the load.** Feeding saves `0.15 W` against a `0.2 C` top-up, and `1.0 W` against `1 C`.
+2. **A `25 W` charge adds `6.4 W`.** It reaches `37.3 °C` even on the dock, `1.1 K` over the limit.
+3. **The sustained delta load in free air is `1.73 W`.** Light wind lifts it to `2.37 W`.
+4. **At `30 °C` in free air a Leaf holds `30` to `35 %` of delta power.** Video falls lower.
+5. **The Frame** holds `1.05 W` at `25 °C` and `0.20 W` at `35 °C`. A `0.8 W` Frame holds to `24 °C`.
+
+**The dock is a heat sink first.** The dock plate admits `5.7` to `7.2 W`, and the Qi basic profile caps at `4.67 W`. The plate at `22 °C` sits under the dew point at `35 °C` and `60 %` humidity, so the set-point needs a rule. `[HYPOTHESIS]` Gate HST-10.
+
+**The hard consequence**. A claim of always-on in the hand, in free air, is false for the L.6.0 body. The claim holds on a dock, and in a vehicle or machine cradle with a heat path. `[DECISION]` Gap G-46.
+
+---
+
+## 22.6 The host classes
+
+The offered power is on the VHV rail. The `8.7 W` peak is `9.0 W` on VHV. `[TREE]` `hw/hostpower/powerpath/hosts.py`.
+
+| Host | Offered | Carries `8.7 W` | Carries the `25 W` port case | The note |
+|---|---|---|---|---|
+| H0 wall dock | `25 W` | yes | yes | contact. The pilot host |
+| H1 dock pack `20 Wh` | `25 W` | yes | yes | `7.0 h` of delta, `3.0 h` with the dock radios on |
+| H2 desk USB-C PD | `7.5` to `100 W` | yes | yes at `15 V` | port part on a seat |
+| H3 vehicle `12 V` and `24 V` | `30` to `100 W` | yes | yes | a load dump rated adapter is outside the Leaf |
+| H4 industrial `24 V` | `25 W` | yes | yes | clamp in the cradle |
+| H4 PoE type 2 | `22.9 W` | yes | no, `2.1 W` short | type 3 needed |
+| H5 worn bank or belt | `18 W` | yes | no, `7 W` short | a face worn case |
+| H6 Qi pad `5 W` | `5 W` | no, `4 W` short | no | wake only |
+| H6 Qi2 `15 W` and Qi2.2 `25 W` | `15` and `25 W` | yes | `25 W` pad only | float mode only |
+
+1. **The clamp lives outside the Leaf.** The adapter or the cradle owns the vehicle and industrial clamps.
+2. **The Leaf sees `20 V` at most.** A load dump of `79` to `202 V` stops at the cradle. `[PUBLICATION]` ISO 16750-2, secondary summary.
+3. **A `5 V` host has no `3:1` ratio.** The U_Q stage needs a bypass mode at `0.79` efficiency. `[HYPOTHESIS]`
+
+**Where the capacity went**. A `20 Wh` dock pack runs a delta session `7.0 h`, which is `2.2` times the Leaf Full cell of `3.2 h`. An `18.5 Wh` worn bank runs it `6.6 h`. With the dock radios on, the pack runs `3.0 h`, the same as the Leaf alone. The capacity moved and it grew, and the radios took part of it back. `[HYPOTHESIS]`
+
+---
+
+## 22.7 The pilot
+
+The study ranked the places where host life matters. `[HYPOTHESIS]` `hw/hostpower/study/USE-CASES.md`.
+
+| The rank | The place | The host | The reason |
+|---|---|---|---|
+| 1 | counters and kiosks with a Budlum dock | H0 | margin `+27.3 W`, a heat path, a Budlum owned host |
+| 2 | vehicles | H3 | a load dump rated cradle, long dwell time |
+| 3 | industrial panels | H4 | steady power, `24 V` clamp |
+
+**The pilot ruling**. One Turkish city, `100` units on Budlum docks, `60` days. Gate HST-28. `[DECISION]`
+
+---
+
+## 22.8 The power door: a host never gains authority
+
+The trust seat found that power is a door, and a host that powers the handshake already stands inside it. `[TREE]` `hw/hostpower/trust/`, `60` tests pass.
+
+| The rule | The meaning |
+|---|---|
+| the island rail | `U7` and U4 ROM sit on a regulated bridge rail with brownout detect, never on the host rail |
+| the dead pad, widened | the host pads stay at `0 V`, or at a power-only low class, until the handshake passes. At a Qi coil: no rail connected |
+| the HostRecord | class, maximum power, voltage window, host key id, optional validator role, expiry and counter, checked by `U7` |
+| the policy | an unknown host gets `0.5 W` and the safe screen. A paired host gets its class. A role claim never moves the class |
+| the one frame | `U7` hears the host only through one fixed `169` byte frame |
+| the atomic commit | no signature and no update straddles a power loss |
+| the anchor age | the Leaf refuses the stream when the anchor is older than `6 h` |
+
+**The findings that change the design**.
+
+1. **A RAM replay counter is void.** The host controls every power cycle. A test accepts a replay with RAM counters and refuses it with NVM counters.
+2. **`fw/u7` has no NVM and no HostRecord program.** Gap G-44.
+3. **Fault injection and power analysis enter the scope.** The signing store needs `0.13` to `2.6 mF`. The unpadded recharge leaks `3.18` bits per signature.
+4. **A double glitch can skip the self check and release a bad signature.** The risk is open. Gate HST-16 measures it.
+5. **ENR-19 assumes a powered `U7`.** On the sideband alone one handshake takes about `111 ms`.
+6. **A host that is the only network path can starve a rotation.** The anchor age rule closes it.
+7. **Nobody enrols a host yet.** The authority and the chain revocation of a host key are open. Gap G-48.
+
+`[HYPOTHESIS]` Every island rail number. The ed25519 code is the RFC 8032 reference and stands in for the ML-DSA-87 wallet.
+
+---
+
+## 22.9 The continuity: a power gap is not a loss
+
+The continuity seat added the session states beside the dead-pad machine of `fw/boot`. `[TREE]` `hw/hostpower/continuity/`, `119` tests pass and an `80 000` step fuzz found `0` law violations.
+
+| The session state | The meaning |
+|---|---|
+| `HOST_AUTH` | a host is at the contact and the pads stay at `0 V` |
+| `HOST` | the host passed the `U7` handshake and carries the load |
+| `BRIDGE` | the host left and the store holds the floor |
+| `ISLAND` | Full tier, no host, past the bridge horizon of `600 s` |
+| `PAUSING`, `SUSPENDED` | the pause is committed on chain and `U4` ROM and `U7` stay alive on the B cell |
+| `RESUMING`, `RESUME_STATED` | a host passed the handshake on a paused Leaf, or the resume was refused with a stated reason |
+
+**The naming fault.** The power path seat uses `ISLAND` for a rail mode, and this seat uses it for a session state. The directive keeps both and writes the rail one as "rail island". Gap G-45.
+
+### 22.9.1 What the numbers say
+
+| The result | The value |
+|---|---|
+| cold restart, safe screen after the host pass | `23 ms` |
+| live frame after a cold restart | `0.29 s` Wi-Fi, `0.48 s` warm 5G, `2.4 s` cold 5G |
+| Buffer and Full on a `75 s` walk | no break. `0` frames lost in `95 %` of draws, `3` at p99 |
+| RG-19 chain state added | `249 B`, and a SessionPause of `2 764 B` |
+| `120` random pauses, `2` frames to `10^8` frames | the same state root as a run with no pause, every time |
+
+### 22.9.2 What a power gap can still lose
+
+1. **Up to `7 s` of input.** An offline dock with no other radio path cannot flush.
+2. **The open second of input, about `5` events.** A host loss without a flush drops it.
+3. **The live frame.** The frame store is volatile, so zero-frame handover covers only the live case.
+4. **A long gap.** A gap past the grant term or the anchor window needs a wallet action or a re-anchor.
+
+**The ruling**. The session is chain state, and a power gap loses no finalized state or key. The Leaf states each of the four losses to the user. `[DECISION]`
+
+---
+
+## 22.10 The dock: the partner of the living Leaf
+
+The dock gives energy, pulls heat and can serve a room session. `[TREE]` `hw/dock/`.
+
+| The job | The finding |
+|---|---|
+| energy | the `20 Wh` pack refills the `600 Wh/L` body `2.84` times through the pads |
+| heat | the plate and the thermoelectric stage hold every case. The TEC needs `3.8 W` at `35 °C` for delta |
+| compute | the optional dock validator serves the room session at `30 ms` |
+| failure | a dock pair makes the joint loss of power and primary validator about `60` times more frequent (assumed rates) |
+
+**The ruling**. The Host Life Law never depends on a dock validator. No dock module serves two sessions, and a sudden box death costs `4` to `5` frames that `U1` covers. The Leaf fails over to the nearest other validator while power holds. `[DECISION]`
+
+---
+
+## 22.11 The claim
+
+The study listed `21` products and papers, each with a URL, and some pages did not load. The Ledger Nano S is a wallet with a screen and no cell. The Galaxy Tab Active runs with the cell removed on a PD supply. The XREAL Air 2 is a display with no cell. Dash cams and laptops use bridge cells and capacitors. `[PUBLICATION]` `hw/hostpower/study/PRIOR-ART.md`.
+
+| The sentence | The verdict |
+|---|---|
+| the strong one: *the first wallet surface that lives as long as its host* | do not use. "First" fails today |
+| the defensible one | use at the Designed tier, as written below |
+| the safe one | use in public text until a prototype passes |
+
+> On a host, a Budlum Leaf 160 by 80 mm runs for as long as the host supplies power. A small bridge store keeps the wallet session when the power changes hands.
+
+**The rule for the word "first"**. The word stays out of every text until gates HST-25 and HST-26 pass. The open combination is a chain session, a bridge between hosts and a power door that gives the host no authority. The survey is a web search and not a patent search. `[DECISION]`
+
+---
+
+## 22.12 The law and the standards
+
+| The question | The reading | The tag |
+|---|---|---|
+| is a capacitor a battery under 2023/1542 Article 3(1) | no. A lithium-ion capacitor or a clock cell removes that gain | `[PUBLICATION]` and `[HYPOTHESIS]` |
+| does the Buffer tier keep Article 11 | yes, if the cells sit in the removable quadrants | `[HYPOTHESIS]` |
+| does Article 11(3) save a fixed Buffer | not safely. The main function is a surface and a wallet | `[HYPOTHESIS]` |
+| Qi above `5 W` | needs certificate authentication | `[PUBLICATION]` |
+| a vehicle supply | needs ISO 16750-2 test A, load dump rated: `101 V` on `12 V`, `202 V` on `24 V` systems | `[PUBLICATION]` secondary |
+| a host fed body worn device | IEC 62368-1 class ES1 and a stated power source class on every host input | `[HYPOTHESIS]` |
+
+**The honest limits**. Several pages did not load, among them EUR-Lex and the Commission notice. The PS limits, the PoE ranges and the ISO 7637-2 pulses are recalled and carry `[HYPOTHESIS]`. This is a risk review and it is not legal advice. Nine questions go to a lawyer and six to a laboratory. Gates HST-26 and HST-27.
+
+---
+
+## 22.13 The recommended configuration, in one table
+
+| The decision | The ruling | The reason |
+|---|---|---|
+| D-9 the first host-power tier | Buffer, `15` to `20` cells over four quadrants | Bare does not fit. Full is the freedom tier |
+| D-10 the always-on interface | contact, on the dock and the port part | Qi loses `0.76 W` against `0.28 W`, and Qi `5 W` fails the peak |
+| D-11 the cell policy on a host | float near `50 %`, top-up at `0.2 C` or less | `7.2` times the cell life and `1.0 W` less heat than `1 C` |
+| D-12 the dock | a heat sink and a power host first, a validator second | the plate passes `72` of `72` cases |
+| D-13 the trust base | `U7` with NVM counters and a HostRecord | a RAM counter is void on a host |
+| D-14 the claim | the defensible sentence, with no "first" | a web survey of `21` rows found no join. It is not a patent search |
+| D-15 the pilot | counters and kiosks on Budlum docks, one Turkish city | `+27.3 W` margin and a heat path |
+
+`[DECISION]` of the Program Lead, under the order of 2026-10-19. Ayaz can reverse any row.
+
+---
+
+## 22.14 The research order for the Budlum tree
+
+| Order | The work | The acceptance test |
+|---|---|---|
+| **RG-19** | session pause and resume: SessionPause, SessionResume, a grant term, an anchor window, and a resume rule that checks the state root | `120` random pauses keep the no-pause state root. A second validator matches a sample bit for bit. A late pause is refused with a stated reason |
+
+The reference model is `sessionchain.py`, and the proto draft is `proto/session_continuity.proto` in `hw/hostpower/continuity/`. It adds `6` messages and `10` error codes at wire `1.1`. `buf lint` has not run. `[TREE]`
+
+---
+
+## 22.15 The new gates
+
+The five study seats proposed `52` gates under four prefixes. The Lead merged them into one series. The right column names the source gates.
+
+| Gate | The test | The pass condition |
+|---|---|---|
+| **HST-1** | a Bare store: `3 s` of the safe screen | the store takes at most `3` tiles of cell volume, and VBUS holds `3.40 V`. Source: power path 1 |
+| **HST-2** | Buffer group power: `15` cells at `2.24 W` for `5 min`, and the pulse rate at `3`, `5` and `10 C` | VBUS holds `3.40 V`, no cell over `45 °C`. Source: power path 2 and 3 |
+| **HST-3** | the U_Q host window at `5`, `9`, `12` and `15 V` | VBUS `3.40` to `4.48 V` at `0.93` efficiency, and a `5 V` host stays under `1.0 W` of body heat |
+| **HST-4** | cell cycles and storage: `800` cycles, `1 000 h` at `3.86 V`, and the `30` day float policy | `800` cycles met, alpha within `2` times of the model, pack charge `45` to `55 %` |
+| **HST-5** | the island rail: `1 000` host drops and `100` quadrant swaps | `1V8_AON` stays over `1.75 V`, and the B cell alone runs `2.5 h`. Source: power path 7 and trust 3 |
+| **HST-6** | hand-over on a bench, `100` runs, with Buffer cells spread | VBUS holds `3.40 V` for the whole `3 s`, with at most `3` mode changes per event |
+| **HST-7** | host classes H0 to H6 each carry `8.7 W` for `10 min` | the table of Section 22.6 within `10 %`, and no host reaches VBUS before the proof |
+| **HST-8** | vehicle cradle: cranking and load dump A and B | VHV never over `20 V`, the session holds through the dropout, and ISO 16750-2 passes |
+| **HST-9** | the free air delta session at `25 °C`, still, `60 min` | the gate records the result against `36.2 °C`. The model expects a failure of `5.1` to `8.4 K` |
+| **HST-10** | the dock plate session at `20`, `25`, `30` and `35 °C`, with the dew point set-point | at or under `36.2 °C` for `60 min`, and no condensation. The model predicts `28` to `31 °C` |
+| **HST-11** | the feed the load rule: Qi float with cell current under `20 mA`, and a charge during a session | float within `0.3 W` of the battery run, and the cell charges only below `34.2 °C` at `0.2 C` or less |
+| **HST-12** | the interface loss of the `12` pads, new and worn, at `1.9` and `3.3 W` | at or under `0.10 W`. A value over `0.34 W` is a stop |
+| **HST-13** | the throttle test at `30 °C` in free air | the delta session holds at least `30 %` of its power at or under `36.2 °C` |
+| **HST-14** | the Frame on a head form, `0.8 W` plus a `0.34 W` connector loss, at `25 °C` | both surfaces at or under `36.2 °C` for `60 min` |
+| **HST-15** | counterfeit adapters, a `0` to `36 V` sweep, bad frames and data-only pairing | pads and island at `0 V`, zero grants above the unknown class, zero keys added |
+| **HST-16** | `10^6` glitches during signing, and a Welch test of the line current over `10^6` signatures | zero faulty signatures, and the t value under `4.5` |
+| **HST-17** | `10 000` power cuts at random instants, including a U7 journal write | the old or the new record, no reused counter, an action sent once or never |
+| **HST-18** | a rogue Qi transmitter and the cable breakaway | no face point over `36.2 °C`, draw under the unknown class, the cable parts at `6.5 N` or less |
+| **HST-19** | the anchor age rule: a host as the only path for `6 h` | the stream is refused |
+| **HST-20** | `10 000` random plug and unplug sequences on a fake host | no pad current before the pass, every state shows a surface, no host holds a key |
+| **HST-21** | a host cut at `8.7 W` and at `2.24 W` on each tier | lit time at least `0.95` of the table, and the pause finishes with `10` times its energy |
+| **HST-22** | RG-19 on `validator/leaf-duty` | the same state root and frame hash chain as a run with no pause |
+| **HST-23** | the dock cut and a dock box kill, with and without a second radio path | at most `9` frames covered, no reload, and the lost input at most one gossip delay |
+| **HST-24** | a resume after `2` days and after `30` days, and the cold against the attached modem | a stated refusal and never a silent resume, and the live frame in `600 ms` at p99 with the modem attached |
+| **HST-25** | a professional prior art search of patents and products | a dated report that finds no product that joins a chain session, a host bridge and a power door |
+| **HST-26** | a patent attorney opinion on "first", and a legal opinion on nine questions | each sentence and each question answered in writing |
+| **HST-27** | an accredited lab report under IEC 62368-1, and a Qi receiver test | ES1 and a stated power class on every host input, and the receiver refuses an uncertified pad above `5 W` |
+| **HST-28** | a pilot of `100` units on Budlum docks for `60` days | every record kept, no chain state lost, hottest face point at or under `36.2 °C` |
+| **HST-29** | the claim check against PRG-6 | each public sentence maps to a gate record or to a study |
+
+The names of the source gates stay in the team files, so each raw plan keeps its own trace. `[TREE]`
+
+---
+
+## 22.16 What this part found wrong, and the new gaps
+
+**The faults found in earlier text**.
+
+| Where | The fault | The fix |
+|---|---|---|
+| `FINAL/21` Sections 21.2.6 and 21.2.7 | the routing margin reads `0.24 mm` in the stack table and `0.04 mm` after the coil | the next revision of Part 21 picks one number |
+| `hw/energy` and `sim/thermal` | the `5G` outdoor load reads `4.18 W` in one and `6.66 W` in the other | one load map for both |
+| `FINAL/12` and the L.6.0 body | a free air delta session fails the `36.2 °C` limit | gap G-46 and a derate rule |
+| `fw/boot` and `hw/hostpower` | two meanings of `ISLAND` | Section 22.9 keeps both with distinct names |
+
+**The new gaps**. The gap register of Part 16 carries them as G-44 to G-48.
+
+1. **G-44** the secure element: NVM counters, the HostRecord program and the anchor age rule in `fw/u7`.
+2. **G-45** the Bare store and the vocabulary: a store that fits, and one name per state.
+3. **G-46** the heat of the body in free air, and the dock plate dew point.
+4. **G-47** the claim: the prior art search, the patent opinion and the legal questions.
+5. **G-48** the host authority: who enrols a host, and the chain revocation of a host key.
+
+---
+
+## 22.17 Where the work lives
+
+| The seat | The directory | The tests |
+|---|---|---|
+| power path | `hw/hostpower/powerpath/` | simulator and `11` plots, `thesis_check.py` |
+| thermal | `hw/hostpower/thermal/` | `run_all.py` reproduces the L.6.0 model at `41.3 °C` |
+| trust | `hw/hostpower/trust/` | `60` tests |
+| continuity | `hw/hostpower/continuity/` | `119` tests |
+| study | `hw/hostpower/study/` | `21` listed rows, each with a URL |
+
+The brief of the program is `hw/hostpower/BRIEF.md`. The ledger of the agents is `program/AGENT-ROSTER.md`. `[TREE]`
+
+**The next three moves**.
+
+1. Close G-44: give `fw/u7` NVM counters and the HostRecord program.
+2. Build the Buffer tier on a bench with `20` cells over four quadrants, and run HST-2, HST-6 and HST-11.
+3. Order the prior art search and the legal opinion, so the claim can move from Designed to Proven.
+
+---
+
+# BUDLUM LEAF · THE DIRECTIVE · PART 23 · THE CORE, THE SKIN AND THE HEARTBEAT
+
+**Revision L.7 candidate · 2026-10-19 · the standing of this part**. This part adds to Parts 21 and 22 and changes no L.6.0 number. Part 23 is a candidate for Ayaz, and each ruling in it is a candidate until Ayaz signs. Where it finds a fault in an earlier part, Section 23.14 names it. Tags follow Part 20: `[DECISION]`, `[HYPOTHESIS]`, `[PUBLICATION]`, `[GENERAL]` and `[TREE]`.
+
+**The three orders that created this part**. All were given by Ayaz on 2026-10-19.
+
+1. *Keep all the components of the screen in a separate hardware. The screen then costs less. One hardware serves many screens.*
+2. *The hardware and the device can be kilometres apart. The antenna of the hardware can be large. The Leaf keeps its antennas where the designs show them.*
+3. *Whatever is needed stays in the part that holds the camera hardware. Everything else lives in the hardware. The battery can sit in the Leaf, but very small. The energy is then unlimited. This must be an invention.*
+
+Ayaz also set the method for the third order: try wild directions, fail, and go on. Section 23.10 is that search. `[DECISION]`
+
+**The standing**. Nine study seats and the Lead ran the work. The files are in `hw/core/`. Every number is `[HYPOTHESIS]` until its gate runs. The studies narrowed the idea. This part writes the narrow form and what it still wins.
+
+---
+
+## 23.1 The verdict in one table
+
+| The aim of Ayaz | The result | The tag |
+|---|---|---|
+| the screen costs less | **fails in part**. A Skin costs `15 %` less. The micro-LED tiles are `76 %` of the unit and never move | `[HYPOTHESIS]` |
+| the screen is lighter | **holds**. A Skin weighs `17` to `40 g` against a `47 g` body, and `0.90` to `1.00 mm` against `2.00 mm` | `[HYPOTHESIS]` |
+| one hardware serves many screens | **holds**. The break-even is `2` Skins on one Core | `[HYPOTHESIS]` |
+| parts change in the hardware | **holds**, at C0 and C1 | `[HYPOTHESIS]` |
+| nothing but the camera stays in the screen part | **fails**. The radio, the decoder and a ROM must stay for physics | `[HYPOTHESIS]` |
+| the hardware is kilometres away | **holds, with no change to the Leaf**. At C2 the Leaf is the L.6.0 Leaf | `[HYPOTHESIS]` |
+| the energy is unlimited | **holds where a host stands**. It does not hold in a held hand in the open air | `[HYPOTHESIS]` |
+| a stolen screen is worth glass | **partly**. It is true for the money, and false for an unhardened chip | `[HYPOTHESIS]` |
+| it is a world first | **not as stated**. Section 23.12 gives the claim that survives | `[PUBLICATION]` |
+
+**The one-line answer**. The Split works as a wired Skin on a Core that sits within about `30 m`. At a greater distance the Leaf keeps its silicon, and the energy question is answered by a law of three zones: the Heartbeat. `[DECISION]`
+
+---
+
+## 23.2 The two names and the three distance classes
+
+| The part | The name | What it holds |
+|---|---|---|
+| the surface, with the camera part | **the Skin** | the emitters, the tile drivers, the link, a decoder, an identity and the camera part |
+| the hardware | **the Core** | the silicon, the radios, the wallet, the session, the image processing and the energy |
+
+The names are working names of this study. The naming law holds: a claim says "Budlum Leaf" and the size. `[DECISION]`
+
+| Class | The reach | The link | What the Skin keeps |
+|---|---|---|---|
+| **C0** | contact or a tether, up to `2 m` | the `12` gold leaves and a `0.3 m` flex clip | emitters, tile drivers, link PHY, decoder, identity, ROM |
+| **C1** | a room, up to about `30 m` | a fibre clip, or `60 GHz` in line of sight to `52 m` | the same, and a cell for a cordless Skin |
+| **C2** | kilometres | the Leaf radios and a validator at the radio end | everything of the L.6.0 Leaf |
+
+---
+
+## 23.3 The Rule of Necessity
+
+**The ruling of Ayaz**. Whatever is needed stays in the part that holds the camera hardware. Everything else lives in the Core. `[DECISION]`
+
+**The reading of the Lead**. A part stays in the B module only if physics forces it at the distance class. `[DECISION]`
+
+| The part | At C0 | At C1 | At C2 | The physics that forces it |
+|---|---|---|---|---|
+| lens, sensor, flash | stays | stays | stays | the optics sit where the light is |
+| microphones, speaker, jack | stays | stays | stays | a transducer sits where the air is |
+| antennas as designed | stays | stays | stays | the Leaf keeps its antennas by the order |
+| radio front end and baseband | on the line | stays | stays | the radio SiPs hold both in one die |
+| slice decoder and frame store | stays | stays | stays | no radio carries the raw stream |
+| local compositor | on the line | stays | stays | the `30 ms` budget at distance |
+| hardened identity element | stays | stays | stays | a Skin must prove who it is |
+| safe screen ROM | stays | stays | stays | `U1` holds it, so a ROM die stays |
+| wallet signer and session | Core | Core | Leaf | at C2 the wallet stays in the Leaf |
+| camera encoder | stays | stays | stays | a raw camera stream dies on the uplink past `0.3 km` |
+| image processing after the encoder, AI | Core | Core | Core | no physics forces it |
+| validator role | Core | Core | Core | by Part 21 Section 21.5 |
+| cells, `128` of them | Core | stay | Leaf or host | the energy host and the compute host differ |
+
+### 23.3.1 What actually leaves the Leaf
+
+| The result | The value |
+|---|---|
+| mass that leaves at C0 | `20.85 g`, which is `40.5 %` of `51.5 g` |
+| of that, the cells | `19.57 g` |
+| of that, silicon, cans and the oscillator | `1.28 g` |
+| mass that leaves at C1 and C2 | `0 g` |
+| cost that leaves at C0, at one million units a year | about `158 USD`, which is `10 %`, with a range of `111` to `231` |
+| ring volume freed at C0 | `377 mm³`, which is `24 %` of the electronics layer |
+| ring board area needed today | `114 %` of the free area. At C0 it needs `35 %` |
+
+`[HYPOTHESIS]` `hw/core/parts/`.
+
+**What the table says**. "Move the components out" means, in mass, "move the cell out". The silicon is `1.28 g`. The unit cost is the micro-LED tile, and it stays. `[HYPOTHESIS]`
+
+**The stale numbers**. The `68 g` body and the `88 g` complete figures are L.5.0 numbers. They count the withdrawn LLZO cells and a `20 g` module. The L.6.0 Leaf weighs `51.5 g` bottom up, with a body of about `41` to `47 g`. The figure of `68 g` stays in older parts as history. `[HYPOTHESIS]`
+
+---
+
+## 23.4 The wired Skin
+
+The link seat found that the Split lives as a wired Skin, and dies as a cordless Skin. `[TREE]` `hw/core/link/`.
+
+| The result | The value |
+|---|---|
+| the pixel stream, `1600 x 3200`, `240 Hz`, `10 bit` | `36.9 Gbit/s` raw |
+| display stream compression at `10 bpp` | `13.1 Gbit/s` on the leaf lanes, and `19.4 Gbit/s` for the pair |
+| the best published ratio | `5:1`, which is `7.4 Gbit/s`. The `6:1` of the first brief is outside the range |
+| the Skin, the body without cells, coil and ring | `17 g` and `1.00 mm`, `64 %` under the `47 g` body |
+| the Skin load | `0.95 W` delta, `1.57 W` video, `1.97 W` full motion |
+| a wired tether | adds `0.094 ms` |
+| the input to photon `p99` | `18.9 ms` on the Wi-Fi room path and `24.3 ms` on the 5G path |
+| the compression the mesh needs with a hinge broken | at least `2.08:1`, so the decoder stays on the Skin |
+
+**Three seats weigh three Skins.** The link seat weighs the body alone at `17 g`. The study seat gets about `40 g`. The power seat includes the ring and gets `46` to `53 g`, against `78.8 g` for the old device. All three are lighter than the L.6.0 Leaf, and the figures differ by definition. `[HYPOTHESIS]`
+
+**The pick for the first Skin**. The `12` gold leaves with a `0.3 m` flex clip. Every tether is a clip on one seat. `[DECISION]`
+
+**The stretch goal**. A hybrid fibre clip for C1 reach, with the Skin unchanged. `[DECISION]`
+
+**The cordless Skin**. It needs its own cell of `4.8` to `5.7 Wh` and weighs `48` to `52 g`, so it is the L.6.0 body again. A `60 GHz` cordless Skin draws about `3.35 W` against the `1.73 W` limit. The cordless Skin is refused. `[DECISION]`
+
+**The hub caveat**. The surface loads of `0.80` and `1.35 W` leave out the tile hubs. Full motion at `240 Hz` is `1.97 W` and fails the `1.73 W` limit. If the hub domain sits on the tiles, video is `2.59 W` and fails both limits. Gap G-49. `[HYPOTHESIS]`
+
+### 23.4.1 The heat of the Skin
+
+| The case, `25 °C`, still air | The hottest face point |
+|---|---|
+| the L.6.0 body, delta | `41.3 °C` |
+| the Skin alone, delta `0.80 W` | `28.7 °C` |
+| the Skin alone, video `1.35 W` | `30.6 °C` |
+
+`[HYPOTHESIS]` `hw/core/heat/`. The sustained display and address power of a Skin is `2.93 W`, against `1.73 W` for the L.6.0 body.
+
+| The finding | The value |
+|---|---|
+| the old hot spot under the ring | gone. The face is flat to `0.2 K` |
+| a `0.25 W` link PHY on the seat tile | adds `4.0 K` |
+| a `0.34 W` seat loss | adds `5.9 K`, and delta then fails at `37.7 °C` |
+| gap G-46 closes at C0 | to `30 °C` ambient |
+| gap G-46 closes at C1 | to `25 °C` ambient, with a `0.9 W` PHY |
+| gap G-46 at `35 °C` | does not close. Delta reaches `38.6 °C` |
+| gap G-46 at C2 | does not close. Delta reaches `39.5` to `51.2 °C` |
+| the Frame limit | moves from `1.05 W` to at most `1.24 W` at `25 °C` |
+
+**The new hot spot is a source on one tile.** One watt on the seat tile costs `2.95 W` of display power. Spread, it costs `0.99 W`. `[HYPOTHESIS]`
+
+---
+
+## 23.5 The Core
+
+| The result | The value |
+|---|---|
+| one Skin and its Core | `2.53 W` at delta, against `2.24 W` for the L.6.0 Leaf, so `13 %` more |
+| one Skin on a room Core of C1 | `149 %` more, because of the Core radio array |
+| `8` mixed Skins | `19.5 W` at delta and `29.4 W` at video |
+| the host class that carries `4` Skins | H0 at most |
+| the host classes that carry `8` | USB-C PD, vehicle and PoE type 3 |
+| the Core heat, `1` to `8` Skins | `1.7` to `35 W`, and a validator adds `20 W` |
+| a passive box of `140 x 90 x 30 mm`, `43 °C` peak | `4` delta Skins or `2` video Skins at `25 °C`, and `1` at `35 °C` |
+| a box with a fan and fins | `28` Skins |
+| the Core cell for `8` Skins at `3 C` | `11.2 Wh`, which the micro cells cannot deliver |
+| a Core Buffer of `5 min` | ages out in `2.7` years |
+
+`[HYPOTHESIS]` `hw/core/power/`, `hw/core/heat/`.
+
+**The Core is a heat product.** Above `4` Skins it needs a fan. The tether heats both ends, and a fixed contact loss is a large share of the small Skin heat. `[HYPOTHESIS]`
+
+**The energy bill**. The Split costs energy at every distance. At C2 the Skin is the L.6.0 Leaf, so the Split buys nothing on energy there. `[HYPOTHESIS]`
+
+---
+
+## 23.6 The far Core, kilometres away
+
+The far-link seat built a link budget from `100 m` to `10 km`. `[TREE]` `hw/core/far/`.
+
+| The result | The value |
+|---|---|
+| the best Leaf radio, `802.11ay` on one stream | `13.6 Gbit/s`, so the raw stream of `36.9` fits no radio at any distance |
+| a compressed pixel stream with a `25 dBi` Core array | `29 m` at `3:1`, and at most `52 m`, in `60 GHz` line of sight only |
+| the slice stream of `150 Mbit/s`, urban shadow | `570 m` |
+| the slice stream of `150 Mbit/s`, line of sight | `4.4 km` |
+| the slice stream of `150 Mbit/s`, rural line of sight | `7.3 km` |
+| the slice stream of `25 Mbit/s` in the same three cases | `1.6`, `5.9` and `11.7 km` |
+| the input to photon `p99`, Core at the radio | `21.5 ms` at every distance where the link exists |
+| the backhaul the Core can sit behind | `7.6 ms` round trip, about `490 km` of fibre |
+
+**The distance law**. Up to about `30 m` a wired or `60 GHz` Skin can show a pixel stream, and the decoder stays. Beyond about `50 m`, or with a wall or a hand in the path, the Leaf needs `U6` and `U1`. At C2 the slice stream crosses kilometres, and the Leaf keeps its silicon. `[HYPOTHESIS]`
+
+| What the large Core antenna does not buy | The reason |
+|---|---|
+| more Wi-Fi downlink | BTK and ETSI cap the Core EIRP, so a bigger antenna adds no power |
+| a better Leaf uplink | the Leaf uplink under SAR limits the link before the downlink does |
+| a long link through a wall or a hand | the Leaf antenna efficiency drops near a body |
+
+**So C2 means 5G on licensed spectrum.** That is an operator site and not a box that a user owns. `[HYPOTHESIS]`
+
+**The faults the far link found in the Leaf**. `hw/rf` gives the A1 efficiency as `-9.7 dB` by moments and `-15.3 dB` by the line model. The gate says `-2.5 dB`. The bandwidth is `5 MHz`. That cuts the 5G uplink range by `33 %`. The 5G antennas A5 and A6 are not in L.6.0 and set every 5G range. A signed input batch of `3.4 kB` breaks the `30 ms` gate at the cell edge: `72 ms` at `1 km` on `700 MHz`. Gaps G-52 and G-53. `[HYPOTHESIS]`
+
+### 23.6.1 The two hosts law
+
+**The law**. Power does not travel kilometres. At C2 the energy host is local, and the compute host is remote. The Host Life Law of Part 22 governs the energy host only. `[DECISION]`
+
+| The class | The energy host | The compute host |
+|---|---|---|
+| C0 | the Core, through the tether | the same Core |
+| C1 | the Core by cable, or a cell in a cordless Skin | the room Core |
+| C2 | the Leaf cell, or a near host of Part 22 | the validator at the radio |
+
+
+
+### 23.6.2 The fleet: how many Leafs one Core serves
+
+The fleet seat built a capacity model, a two hosts model, an economics model and a roaming simulation. `[TREE]` `hw/core/fleet/`.
+
+| The result | The value |
+|---|---|
+| a C2 sector at `1 km` | `249` delta sessions, `44` video sessions, or `1 074` registered Leafs. The radio binds |
+| a C2 sector at `2 km` | `76` delta sessions, `5` video sessions and `133` registered Leafs |
+| a site of `3` sectors | `3 222` registered Leafs |
+| a C1 room | `28` registered Leafs and `5` delta sessions. The encoder binds |
+| a C0 dock | `1` Leaf, the pad |
+| the reach of a delta session under SAR | `2.0 km` under the ruling and `1.2 km` with the wallet in the Leaf |
+| the reach of video, and of a live camera stream | `1.3 km` and `0.3 km` |
+| the cost at scale | about `58 USD` per registered Leaf and year, from a `187 k USD` site |
+| below about `490 000` Leafs in a `400 km²` metro | coverage sets the cost |
+
+| The roaming day | The value |
+|---|---|
+| time on C0, C1 and C2 | `7.2 h`, `8.8 h` and `8.0 h` |
+| C2 hand-overs and class changes per Leaf and day | `17.6` and `7.8` |
+| hand-overs of a vehicle | `25` an hour |
+| Leaf draw at C2 on delta, `1 km` | `2.43 W`, against `2.19 W` on Wi-Fi |
+| a Leaf with the full cell at C2 | `3.0 h` |
+| a Leaf with the Buffer cell at C2 | `31 min` |
+| far-field power at `0.5 m` | `254` times short of the need |
+
+`[HYPOTHESIS]` The fleet seat used its own link budget. The far seat's budget is the one to use.
+
+**What the fleet says against the Split**. The kilometre Core exists only as a slice stream, so at C2 no Skin exists and no Leaf silicon is saved. Pixel Skins reach `2` per dock and `1.4` to `2.8` per room. Moving image processing to the Core puts the camera stream on the uplink, and the camera encoder must stay. The Core moves the watts and does not remove them: a site draws `6.3 W` per live delta session, and the Leaf draws `2.2 W`. One site is one event. It holds `3 222` wallet signers and is dark `168 min` a year. `[HYPOTHESIS]`
+
+**The unique join, tested**. The fleet model supports the many-Leafs-per-Core idea at C2 with numbers. It weakens the many-Skins-per-Core idea at C0 and C1, because the pad, the encoder and the room radio limit it. `[HYPOTHESIS]`
+
+---
+
+## 23.7 The trust of the Split
+
+The trust seat built a model of pairing, link keys, revocation and the signing rule. `[TREE]` `hw/core/trust/`, `81` tests pass.
+
+**The worst hole: the lying Skin.** It paints a false summary and forges a tap on "sign". No cryptography can tell a forged tap from a real one. The model closes it by taking authority away from the Skin. `[HYPOTHESIS]`
+
+| The rule | The meaning |
+|---|---|
+| a tap never confirms a key operation | a key operation needs a press that does not cross the Skin |
+| a tap confirms a value only up to a blind budget per day | `100` forged taps against a budget of `100` sign exactly `10` |
+| the press that does not cross the Skin | at C0 the Core button and display, at C1 a confirmation device, at C2 the Leaf local floor |
+| a hardened identity element on every Skin | an unhardened chip leaks its identity key and gives a clone |
+| a Core wallet, one account, capped device keys | a mixed fleet needs one account with caps |
+
+| The finding | The value |
+|---|---|
+| link cost at `12.3 Gbit/s` | `31.3 KiB` buffer, `20.8 µs`, `12.3 mW` at `1 pJ/bit` and `61.5 mW` at `5 pJ/bit` |
+| the same link at C2 | `0.15 mW` |
+| the SW-24 distance margin | hides `100 km` of fibre one way |
+| room class UWB | open to a published distance reduction attack |
+
+`[HYPOTHESIS]` The pJ per bit figures are a sweep and not a measurement.
+
+**Is a stolen Skin worth a piece of glass?** For the money, yes: the Skin holds no wallet key and no session key at rest. It is false in three cases: an unhardened identity chip, resale of a Skin that stays paired, and a Skin that is modified. A stolen Core loses everything, and a stolen Leaf at C2 is not glass. `[HYPOTHESIS]`
+
+**What narrows the Split here**. The big surface leaves the signing path. C1 needs a confirmation device that no file specifies. A paired hostile Skin reads every private pixel it is given. The key concentrates in one Core. A validator Core clashes with the Zero-CPU definition. Gaps G-50 and G-54. `[HYPOTHESIS]`
+
+---
+
+## 23.8 The session of the Split
+
+The session seat extended the model to many Skins on one Core. `[TREE]` `hw/core/session/`, `133` tests pass.
+
+| The result | The value |
+|---|---|
+| a Skin roams to a standby vehicle Core | first pixel `156 ms`, live frame `0.30 s` on a cable and `0.41 s` over `60 GHz` |
+| the same with a cold modem | `2.14 s` |
+| a TakeOver cuts a roam where Core A has died | from `1.12 s` to `0.30 s` |
+| a Skin on a link loss | a ROM screen at `15 ms`, and back `105` to `156 ms` after the link returns |
+| a Leaf from C0 to C2, asleep | `509` frames lost |
+| a Leaf from C0 to C2, awake | `21` frames lost, and `0` seen with a hot shadow |
+| a Leaf back to a Core | `203 ms` on a cable |
+
+| The finding | The value |
+|---|---|
+| `3` Skins on one Core, the chance that no screen works | `50` times that of `3` Leafs |
+| dark screen minutes a year | equal at `45`, and `920` on `60 GHz` |
+| a `60 GHz` Skin with `72 J` | cannot attach after an hour of carry |
+| the blast radius at C2 | about `100` users per Core |
+
+`[HYPOTHESIS]` The failure rates and the users per Core are guesses.
+
+**What narrows the Split here**. A Skin cannot carry a lit session, so the zero-frame handover is lost for a roaming Skin. The Core is a single point at C0 and C1. At C2 the single point moves to the replica count. A TakeOver lets a stolen Core with a live grant take a session, and the trust seat marks it as a conflict. The pairing record puts a pseudonymous Skin id on chain. Gaps G-54. `[HYPOTHESIS]`
+
+---
+
+## 23.9 The cost
+
+| The result | The value |
+|---|---|
+| a Skin | `1 331 USD` against `1 575 USD` for the all-in-one Leaf, so `15 %` less |
+| a wired Core for `1`, `4` and `8` Skins | `154`, `195` and `250 USD` |
+| the system saving at `4` Skins | `559 USD`, which is `8.9 %` |
+| the system saving at `8` Skins | `1 264 USD`, which is `10 %` |
+| the break-even | `2` Skins on one Core |
+| a wired Skin | about even at one Skin, `+30 USD` at the base case |
+| the micro-LED tile share of the unit | `76 %`, with `P10` at `67 %` and `P90` at `83 %` |
+| the BOM that leaves the Leaf | `12.1 %` at C0, `9.5 %` at `60 GHz`, `9.0 %` at C1, `0 %` at C2 |
+
+`[HYPOTHESIS]` `hw/core/study/`. The Core cell, the link chips, the radio power and the `25` to `70 M USD` of extra NRE are ranges and not quotes. The royalty base moves the `4` Skin saving by about `210 USD`.
+
+**What it means for the aim**. The tile cost has no effect on the saving, and the tile is the cost. The cost aim is met only in part, at C0 and C1. The weight aim and the many-screens aim are met. `[HYPOTHESIS]`
+
+---
+
+## 23.10 The search for an unlimited battery
+
+Ayaz asked for an invention: the battery can sit in the Leaf if it is very small, and the whole event lives in the hardware. The Lead tested each door that physics offers. The notebook is `hw/core/invent/LAB-NOTEBOOK.md`, and `explore.py` holds the probes. `[TREE]`
+
+### 23.10.1 The failures
+
+| The direction | The result | The verdict |
+|---|---|---|
+| far-field radio power | `26` to `64 mW` at the public cap of `10 W/m²`, against `0.95 W` | fails by `15` to `40` times |
+| radio from a legal Wi-Fi source | `1.2 mW` at `1 m`, `0.14 mW` at `3 m` | fails |
+| magnetic power across a room | a `150 mm` pad gives `49 %` at `1 cm`, `7 %` at `10 cm`, `0.04 %` at `30 cm` | fails beyond about `10 cm` |
+| current through the body | `24` to `96 mW` at SELV and touch limits | fails |
+| energy from the stretch | `0.09` to `0.53 Wh` over the whole hinge life | fails: the cycle life is the limit |
+| one beam for power and pixels | the best converter carries `3.8 Gbit/s` against `13.1` | fails for the pixels |
+| the passive Sheet lit by the Core | `12.6 lm` suffices, but a diffuse sheet gets `127` to `25 465` nits of ambient and a laser scan needs `81` to `325 kHz` | fails for a handheld Leaf |
+
+### 23.10.2 What survived
+
+| The direction | The result | The verdict |
+|---|---|---|
+| light on a back panel | `0.8`, `2.4` and `8.1 mW` at `100`, `300` and `1000 lux` | survives for the heartbeat if the back faces the light |
+| the face as a photodiode | `18` to `182 µW` at an unmeasured `1 %` | open |
+| heat of the pocket | `1.3 mW` from a recalled `20 µW/cm²` | survives for the heartbeat |
+| the near-field tap | `15` to `40 mJ`, enough for one signature or a badge | survives |
+| the infrared beam for power | passes at a converter of `35` to `62 %`, record `68.9 %` | survives, but the geometry blocks it |
+| the Paper layer | a partial update every `11` to `53 s` on `8 mW` of light | survives |
+| the heartbeat floor | `9.6` to `42 µW` against `61 mW` today | survives |
+
+### 23.10.3 The three laws that come out of it
+
+**The geometry law**. Energy comes from below and information goes up. The Leaf rests on its back, and its face looks at the user. A lamp or a beam sees the face. A micro-LED face is a poor solar panel. `[HYPOTHESIS]`
+
+**The tiny cell law**. A tiny cell covers everything except the bright active hour. `[HYPOTHESIS]`
+
+| The day away from any host | The B cell of `0.144 Wh` lasts |
+|---|---|
+| heartbeat and `100` partial Paper updates | `40` to `53` days |
+| heartbeat and `300` updates of a third of a face | `3.6` days |
+| `100` updates and `5` min of delta session | `1.6` days |
+| `100` updates and `15` min of delta session | `0.5` day |
+
+**The Heartbeat Law**. The Leaf is alive at microwatts, visible at millijoules and bright only where a host stands. `[DECISION]`
+
+| The zone | The energy | The Leaf shows |
+|---|---|---|
+| **Heartbeat** | microwatts, always | nothing, but it listens and it signs on a tap |
+| **Paper** | millijoules per update | a held image, text, a map, a balance |
+| **Light** | watts, from a host | the full micro-LED surface |
+
+### 23.10.4 Where the host stands
+
+| The place | The host |
+|---|---|
+| a desk, a table, a car console, a stand | the surface under the Leaf |
+| a hand, a street, a train | a worn Core with a thin breakaway cable |
+| a pocket, a bag | the heartbeat and the tap |
+| a room with a lamp | light on the face, for the heartbeat only |
+
+**The honest answer to "unlimited"**. The battery is unlimited in the places where a host stands. It is not unlimited in a held hand in the open air. No tested physics carries watts to a held Leaf without a wire. The wire is the answer for that zone, and tethered glasses already use it. `[DECISION]`
+
+---
+
+## 23.11 The Paper layer and the freed cell layer
+
+When the cells leave the Skin, each tile frees a layer of `0.90 mm`. The Lead proposes to put a bistable reflective layer there. `[DECISION]` as a candidate for Ayaz.
+
+| The property | The value |
+|---|---|
+| the energy of a full update at `128 cm²` | `0.25` to `1.26 J`, from a `7.6 cm²` panel at `15` to `75 mJ` |
+| a partial update | a third of that |
+| the hold | `0 W` |
+| a tap of `15` to `40 mJ` | a badge, `1` to `16 %` of a face |
+| outdoors | the layer gains contrast with the sun, where the emissive layer needs `4.24 W` for `800 nits` |
+
+**The sun and host law**. The two layers follow opposite light. Hosts stand indoors and in vehicles, where the emissive layer runs. The sun stands outdoors, where the reflective layer reads at no energy. `[HYPOTHESIS]`
+
+**What it costs**. The stack changes. The sparse micro-LED must sit over a reflective layer. A reflective layer has less colour and less density than `508 ppi`. Prior art exists for two screens in one phone and for transflective layers. Gate CSK-7. `[HYPOTHESIS]`
+
+---
+
+## 23.12 The prior art and the claims
+
+The study seat listed `25` rows, each with a URL. Several pages did not load. `[PUBLICATION]` `hw/core/study/PRIOR-ART.md`.
+
+| The row | What exists |
+|---|---|
+| compute packs and pucks | Magic Leap, Meta Orion, XREAL Beam, Apple Vision Pro battery |
+| wireless pixel links | Vive, LG M3, AR2 |
+| one-box panels | LG M3, Samsung One Connect |
+| a large far antenna for a small device | Starlink Direct to Cell |
+| radio, light and coil power | Wi-Charge, power beacons, Qi furniture |
+| near-field powered e-paper | small tags and badges |
+| head-mounted projection on a retroreflective sheet | studied for years, and castAR did not ship |
+
+**The verdict**. The Split is not new. The Heartbeat Law is not searched yet. The open join has five parts. They are a wallet Core, many zero-key Skins and a Skin that roams with its session. The other two are a Paper layer in the freed cell layer and a host-only bright mode. `[HYPOTHESIS]`
+
+| The sentence | The verdict |
+|---|---|
+| the strong one: *the first screen with unlimited battery* | do not use. "First" fails, and "unlimited" is false in a held hand |
+| the defensible one | use at the Designed tier |
+| the safe one | use in public text until a prototype passes |
+
+> On a host, a Budlum Leaf lives as long as the host feeds it. Away from a host, it stays alive for months on a very small cell, and it shows a held image at no energy.
+
+**The rule for the word "first"**. The word stays out until gates CSK-1 and CSK-29 pass. `[DECISION]`
+
+---
+
+## 23.13 The recommended configuration
+
+| The decision | The ruling | The reason |
+|---|---|---|
+| D-16 the Rule of Necessity | the camera part keeps what physics forces. The Core holds all else | the order of Ayaz, and `1.28 g` of silicon is all that physics lets leave at C0 |
+| D-17 the first Skin | wired, with the `12` leaves and a `0.3 m` flex clip, at C0 and C1 | the cordless Skin returns the cell and fails the heat |
+| D-18 the cordless Skin | refused | `3.35 W` at `60 GHz` against `1.73 W` |
+| D-19 the Leaf at C2 | unchanged | nothing leaves the Leaf at C2 |
+| D-20 the cell | the `0.144 Wh` B cell is the tiny cell, and the `128` body cells leave at C0 | the Heartbeat Law and the tiny cell law |
+| D-21 the Paper layer | a candidate in the freed `0.90 mm` | the layer is free and the heartbeat needs a face |
+| D-22 the signing rule | a tap never confirms a key operation | no cryptography tells a forged tap |
+| D-23 the Skin identity | a hardened element on every Skin | an unhardened chip clones |
+| D-24 the claim | the defensible sentence, with no "first" | Section 23.12 |
+| D-25 the product line | the L.6.0 Leaf stays the product, and the Split is a second line for desks, rooms and vehicles | C2 gives the Split nothing |
+
+`[DECISION]` of the Program Lead, as candidates under the orders of 2026-10-19. Ayaz can reverse any row.
+
+---
+
+## 23.14 What this part found wrong in earlier text
+
+| Where | The fault | The fix |
+|---|---|---|
+| the first brief of `hw/core` | the `6:1` compression is outside the published range | `5:1` at most, and `7.4 Gbit/s` |
+| the first brief of `hw/core` | the surface loads of `0.80` and `1.35 W` leave out the tile hubs | gap G-49 |
+| `HARDWARE/03`, `HARDWARE/17` and Part 22 | the `68 g` and `88 g` figures are L.5.0 numbers | the L.6.0 Leaf is `51.5 g` bottom up |
+| `FINAL/21` Section 21.2.7 | a `0.24 mm` margin and a `0.04 mm` margin in one part | the Bare store needs the cell layer number, not either margin |
+| Part 21, the link claim | the `6:1` figure and two coverage figures of `61` and `47.5 %` have no owner | an owner in the next revision |
+| `hw/rf` and the L.6.0 radio | A1 efficiency of `-9.7` to `-15.3 dB` against the `-2.5 dB` gate | gap G-52 |
+| `hw/rf` and the L.6.0 radio | A5 and A6, the 5G antennas, are not in L.6.0 | gap G-52 |
+| `0.054 W/kg` SAR | no reference power in any file | gap G-52 |
+| `hw/energy` and `sim/thermal` | the 5G outdoor load reads `6.66 W` in one and `4.18 W` in the other | one load map for both |
+| the ring stack | `3.90 + 0.30 mm` against `4.00 mm` does not close from the files | a CAD check |
+
+---
+
+## 23.15 The research order for the Budlum tree
+
+| Order | The work | The acceptance test |
+|---|---|---|
+| **RG-20** | Skin pairing, TakeOver and roaming: rules R12 to R17, a Skin id, a pairing record and a view id on chain | a Skin pairs, roams to a second Core and keeps the state root. A cloned or revoked Skin is refused. A forged tap never signs a key |
+
+The draft is `hw/core/session/RG-19A-skins.md`, with `proto/skin_chain.proto` at wire `1.2` and `proto/skin_link.proto`. The seat ran `133` tests. `buf lint` has not run. `[TREE]`
+
+---
+
+## 23.16 The new gates
+
+The seats proposed many gates under nine prefixes. The Lead merged them into one series. The source gates stay in the seat files.
+
+| Gate | The test | The pass condition |
+|---|---|---|
+| **CSK-1** | a professional prior art search and a patent opinion for the Split and the Heartbeat Law | a dated report and a signed opinion on the exact sentence |
+| **CSK-2** | a legal opinion on the class of a Skin and a Core under 2023/1670, Article 11 and the royalty base | each question answered in writing |
+| **CSK-3** | the wired Skin link: a `10 Gbit/s` eye on the spring leaf, and visually lossless compression at `508 ppi` | the eye opens at the leaf, and a panel of viewers sees no loss at `5:1` |
+| **CSK-4** | the Skin load with the tile hubs, delta, video and full motion | the load at or under the `2.93 W` heat limit, and the number recorded per domain |
+| **CSK-5** | the Skin heat at `25`, `30` and `35 °C`, with the PHY spread across the tiles | the hottest face point at or under `36.2 °C` to `30 °C` at C0 and `25 °C` at C1 |
+| **CSK-6** | the idle floor of the secure element, the wake-up path and the power chip, measured | the sum at or under `50 µW` |
+| **CSK-7** | a Paper layer in the cell layer of one tile, with its update energy at `128 cm²` | the update energy recorded, and an update fed by `8 mW` of light |
+| **CSK-8** | the back panel on a desk, in a hand and on a stand, and the micro-LED as a photodiode | the harvested power recorded per pose, and the geometry law confirmed or voided |
+| **CSK-9** | the Core box heat at `25` and `35 °C`, passive and with a fan | the surface temperature under the touch limit for the stated Skin count |
+| **CSK-10** | the Core energy and the host class for `1`, `4` and `8` Skins | each host class carries its Skins at the peak, and the table is within `10 %` |
+| **CSK-11** | the Core cell at the peak of `8` Skins | the cell holds `3.4 V` at the peak, or the Core states a limit |
+| **CSK-12** | the hardened identity element of a Skin | the chip resists key extraction in a lab test |
+| **CSK-13** | pairing, link keying and revocation | a cloned, replayed or revoked Skin is refused |
+| **CSK-14** | the signing rule: `100` forged taps against a blind budget of `100` | exactly `10` sign, and no key operation signs |
+| **CSK-15** | pixel confidentiality: a paired hostile Skin and an end-to-end cipher at C2 | the private pixel is not readable outside the trust boundary |
+| **CSK-16** | a mixed fleet with one account and capped device keys, and a stolen Core with a live grant | no session is taken after a revoke, and the cap holds |
+| **CSK-17** | a Skin roams between two Cores, cable and `60 GHz` | the first pixel under `200 ms`, and the live frame under `0.5 s` |
+| **CSK-18** | a Skin link loss | a ROM screen within `20 ms`, and a return within `200 ms` after the link |
+| **CSK-19** | a Core failure, with replicas, for `1` to `8` Skins | the joint dark time is stated, and a second Core takes over |
+| **CSK-20** | the far link: the slice stream at `500 m`, `1`, `3` and `5 km`, and the A1 efficiency | the rate holds at the stated distance, and A1 meets `-2.5 dB` or the range is restated |
+| **CSK-21** | the `30 ms` budget at the cell edge with a signed `3.4 kB` batch | `p99` under `30 ms`, or the batch is compressed |
+| **CSK-22** | the Core EIRP under BTK and ETSI, and a 5G licence at C2 | the Core class is stated for each band |
+| **CSK-23** | the ring packing at C0 | all parts placed and the packer result reproducible |
+| **CSK-24** | quotations for the Core cell, the link chips and the radio | each cost range replaced by a quote |
+| **CSK-25** | the fleet capacity of one Core at C0, C1 and C2 | the Leafs per Core measured against the model |
+| **CSK-26** | the two hosts test: a Leaf at C2 with a near host and with only its cell | the energy per hour is within `10 %` of the table |
+| **CSK-27** | the near-field tap: one signature and one badge | both complete within one tap on a dead Leaf |
+| **CSK-28** | the day away from a host with the B cell | the days match the table within `20 %` |
+| **CSK-29** | the claim check against PRG-6 | each public sentence maps to a gate record or to a study |
+
+---
+
+## 23.17 What this part leaves open, and the new gaps
+
+**The new gaps**. The gap register of Part 16 carries them as G-49 to G-54.
+
+| The gap | The item |
+|---|---|
+| **G-49** | the tile hub load and the Skin power budget |
+| **G-50** | what you see is what you sign: the confirmation device at C1 and the trusted amount on a Skin |
+| **G-51** | the `10 Gbit/s` spring leaf eye and visually lossless compression at `508 ppi` |
+| **G-52** | the Leaf radio: A1 efficiency, the 5G antennas A5 and A6, and the SAR reference power |
+| **G-53** | the Core as a product: the box heat, the cell and the legal class |
+| **G-54** | the pairing registry on chain, the per key caps and the TakeOver conflict |
+
+---
+
+## 23.18 Where the work lives, and the next moves
+
+| The seat | The directory | The tests |
+|---|---|---|
+| link | `hw/core/link/` | `linkmodel.py`, `15` of `19` model checks pass, and the failures are the damage |
+| power | `hw/core/power/` | `run_all.py` |
+| heat | `hw/core/heat/` | `run_all.py` reproduces `41.3 °C` |
+| trust | `hw/core/trust/` | `81` tests |
+| session | `hw/core/session/` | `133` tests |
+| study | `hw/core/study/` | `cost.py` and `25` listed rows |
+| far | `hw/core/far/` | `farlink.py` |
+| parts | `hw/core/parts/` | `parts.py`, `84` cited rows |
+| fleet | `hw/core/fleet/` | `fleet.py` |
+| the Lead | `hw/core/invent/` | `explore.py` |
+
+**The next moves**.
+
+1. Measure the idle floor and the tap path of the `U7`. This decides the Heartbeat Law.
+2. Build one tile with a Paper layer in the cell layer.
+3. Build the wired Skin on the `12` leaves with a `0.3 m` flex clip, and run CSK-3 and CSK-5.
+4. Fix the A1 antenna and add A5 and A6, because the far Core depends on them.
+5. Close G-50: design the press that does not cross the Skin.
+6. Order the prior art search for the Split and the Heartbeat Law.

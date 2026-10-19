@@ -1,0 +1,548 @@
+{
+ "100000": {
+  "low": {
+   "total_budget": 2163.9269999999997,
+   "classes": {
+    "C0": {
+     "leaves_budget": 205.53101604278075,
+     "leaves_missing": 1.3333333333333333,
+     "added": 4.5,
+     "royalty_follows_modem": 63.02699999999999,
+     "share_leaving": 0.09498056821823508,
+     "net_skin_change": -202.3643493761141
+    },
+    "C0R": {
+     "leaves_budget": 143.53101604278075,
+     "leaves_missing": 0.5714285714285714,
+     "added": 4.5,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.06632895473959186,
+     "net_skin_change": -139.60244461420933
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 1695.9999999999998,
+    "cells": 90.4,
+    "tilemech": 40,
+    "tcm": 13,
+    "qi": 6,
+    "touch": 8,
+    "u1u6": 30,
+    "u5": 48,
+    "u2": 14,
+    "misc_si": 9,
+    "cam": 22,
+    "bmech": 22,
+    "rear": 6,
+    "pcba": 10,
+    "bcell": 1.5,
+    "hub": 7.0,
+    "skinmisc": 5.0,
+    "ringsmall": 5.0,
+    "splitadd": 4.5,
+    "portpart": 9.0,
+    "none": 0
+   }
+  },
+  "base": {
+   "total_budget": 3948.5531428571426,
+   "classes": {
+    "C0": {
+     "leaves_budget": 295.81711229946524,
+     "leaves_missing": 2.4,
+     "added": 8.0,
+     "royalty_follows_modem": 151.86742857142858,
+     "share_leaving": 0.07491785005720203,
+     "net_skin_change": -290.2171122994652
+    },
+    "C0R": {
+     "leaves_budget": 217.81711229946524,
+     "leaves_missing": 1.0285714285714285,
+     "added": 8.0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.05516377883719059,
+     "net_skin_change": -210.84568372803668
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 3218.285714285714,
+    "cells": 139.2,
+    "tilemech": 60,
+    "tcm": 19,
+    "qi": 9,
+    "touch": 12,
+    "u1u6": 45,
+    "u5": 60,
+    "u2": 18,
+    "misc_si": 12,
+    "cam": 30,
+    "bmech": 30,
+    "rear": 8,
+    "pcba": 14,
+    "bcell": 2.2,
+    "hub": 14.0,
+    "skinmisc": 10.0,
+    "ringsmall": 9.0,
+    "splitadd": 8.0,
+    "portpart": 15.0,
+    "none": 0
+   }
+  },
+  "high": {
+   "total_budget": 7769.904545454545,
+   "classes": {
+    "C0": {
+     "leaves_budget": 431.46524064171126,
+     "leaves_missing": 4.0,
+     "added": 14.000000000000002,
+     "royalty_follows_modem": 369.99545454545455,
+     "share_leaving": 0.055530314190812266,
+     "net_skin_change": -421.46524064171126
+    },
+    "C0R": {
+     "leaves_budget": 327.46524064171126,
+     "leaves_missing": 1.7142857142857142,
+     "added": 14.000000000000002,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.04214533637138194,
+     "net_skin_change": -315.179526355997
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 6562.90909090909,
+    "cells": 216.0,
+    "tilemech": 90,
+    "tcm": 26,
+    "qi": 13,
+    "touch": 18,
+    "u1u6": 65,
+    "u5": 80,
+    "u2": 24,
+    "misc_si": 16,
+    "cam": 42,
+    "bmech": 42,
+    "rear": 12,
+    "pcba": 20,
+    "bcell": 3,
+    "hub": 26.0,
+    "skinmisc": 20.0,
+    "ringsmall": 15.0,
+    "splitadd": 14.0,
+    "portpart": 25.0,
+    "none": 0
+   }
+  }
+ },
+ "1000000": {
+  "low": {
+   "total_budget": 883.122,
+   "classes": {
+    "C0": {
+     "leaves_budget": 111.02299465240642,
+     "leaves_missing": 0.7999999999999999,
+     "added": 3.3000000000000003,
+     "royalty_follows_modem": 25.721999999999998,
+     "share_leaving": 0.12571648611676126,
+     "net_skin_change": -108.52299465240642
+    },
+    "C0R": {
+     "leaves_budget": 68.02299465240642,
+     "leaves_missing": 0.3428571428571428,
+     "added": 3.3000000000000003,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.07702559176694322,
+     "net_skin_change": -65.06585179526357
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 640.0,
+    "cells": 41.6,
+    "tilemech": 22,
+    "tcm": 6.4,
+    "qi": 3.5,
+    "touch": 4,
+    "u1u6": 14,
+    "u5": 34,
+    "u2": 9,
+    "misc_si": 5.5,
+    "cam": 13,
+    "bmech": 12,
+    "rear": 3.5,
+    "pcba": 6,
+    "bcell": 0.9,
+    "hub": 5.0,
+    "skinmisc": 3.0,
+    "ringsmall": 3.0,
+    "splitadd": 3.3,
+    "portpart": 6.0,
+    "none": 0
+   }
+  },
+  "base": {
+   "total_budget": 1575.190117647059,
+   "classes": {
+    "C0": {
+     "leaves_budget": 158.09251336898396,
+     "leaves_missing": 1.5999999999999999,
+     "added": 5.35,
+     "royalty_follows_modem": 60.584235294117654,
+     "share_leaving": 0.10036408405426941,
+     "net_skin_change": -154.34251336898396
+    },
+    "C0R": {
+     "leaves_budget": 104.09251336898396,
+     "leaves_missing": 0.6857142857142856,
+     "added": 5.35,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.06608250788449092,
+     "net_skin_change": -99.42822765469825
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 1204.7058823529412,
+    "cells": 66.0,
+    "tilemech": 32,
+    "tcm": 9.6,
+    "qi": 5,
+    "touch": 6,
+    "u1u6": 20,
+    "u5": 42,
+    "u2": 12,
+    "misc_si": 7.5,
+    "cam": 18,
+    "bmech": 17,
+    "rear": 5,
+    "pcba": 8.5,
+    "bcell": 1.3,
+    "hub": 10.0,
+    "skinmisc": 6.0,
+    "ringsmall": 6.0,
+    "splitadd": 5.35,
+    "portpart": 10.0,
+    "none": 0
+   }
+  },
+  "high": {
+   "total_budget": 2855.1249999999995,
+   "classes": {
+    "C0": {
+     "leaves_budget": 231.1475935828877,
+     "leaves_missing": 2.6666666666666665,
+     "added": 8.5,
+     "royalty_follows_modem": 135.95833333333334,
+     "share_leaving": 0.08095883493118086,
+     "net_skin_change": -225.31426024955437
+    },
+    "C0R": {
+     "leaves_budget": 160.1475935828877,
+     "leaves_missing": 1.1428571428571428,
+     "added": 8.5,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.05609127221501256,
+     "net_skin_change": -152.79045072574485
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 2269.8666666666663,
+    "cells": 104.0,
+    "tilemech": 48,
+    "tcm": 14,
+    "qi": 7.5,
+    "touch": 9,
+    "u1u6": 30,
+    "u5": 55,
+    "u2": 16,
+    "misc_si": 10,
+    "cam": 25,
+    "bmech": 24,
+    "rear": 7,
+    "pcba": 12,
+    "bcell": 1.8,
+    "hub": 19.0,
+    "skinmisc": 12.0,
+    "ringsmall": 10.0,
+    "splitadd": 8.5,
+    "portpart": 16.0,
+    "none": 0
+   }
+  }
+ },
+ "5000000": {
+  "low": {
+   "total_budget": 464.09848421052635,
+   "classes": {
+    "C0": {
+     "leaves_budget": 78.91508021390375,
+     "leaves_missing": 0.5866666666666667,
+     "added": 2.6,
+     "royalty_follows_modem": 13.517431578947368,
+     "share_leaving": 0.1700395129455022,
+     "net_skin_change": -76.90174688057043
+    },
+    "C0R": {
+     "leaves_budget": 44.91508021390374,
+     "leaves_missing": 0.25142857142857145,
+     "added": 2.6,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.09677920041111182,
+     "net_skin_change": -42.56650878533231
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 296.42105263157896,
+    "cells": 26.96,
+    "tilemech": 15,
+    "tcm": 4.5,
+    "qi": 2.5,
+    "touch": 3,
+    "u1u6": 9,
+    "u5": 27,
+    "u2": 7,
+    "misc_si": 4.2,
+    "cam": 10,
+    "bmech": 9,
+    "rear": 2.8,
+    "pcba": 4.5,
+    "bcell": 0.7,
+    "hub": 3.5,
+    "skinmisc": 2.0,
+    "ringsmall": 2.2,
+    "splitadd": 2.6,
+    "portpart": 4.5,
+    "none": 0
+   }
+  },
+  "base": {
+   "total_budget": 803.440695652174,
+   "classes": {
+    "C0": {
+     "leaves_budget": 110.7288770053476,
+     "leaves_missing": 1.2,
+     "added": 4.3,
+     "royalty_follows_modem": 30.901565217391305,
+     "share_leaving": 0.13781835747748133,
+     "net_skin_change": -107.6288770053476
+    },
+    "C0R": {
+     "leaves_budget": 67.2288770053476,
+     "leaves_missing": 0.5142857142857142,
+     "added": 4.3,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.08367621576695981,
+     "net_skin_change": -63.44316271963332
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 553.7391304347826,
+    "cells": 41.6,
+    "tilemech": 22,
+    "tcm": 6.4,
+    "qi": 3.5,
+    "touch": 4.5,
+    "u1u6": 13,
+    "u5": 34,
+    "u2": 9.5,
+    "misc_si": 5.8,
+    "cam": 14,
+    "bmech": 13,
+    "rear": 4,
+    "pcba": 6.5,
+    "bcell": 1.0,
+    "hub": 7.0,
+    "skinmisc": 4.0,
+    "ringsmall": 4.5,
+    "splitadd": 4.3,
+    "portpart": 7.5,
+    "none": 0
+   }
+  },
+  "high": {
+   "total_budget": 1414.6625294117646,
+   "classes": {
+    "C0": {
+     "leaves_budget": 162.64898395721926,
+     "leaves_missing": 2.0,
+     "added": 6.800000000000001,
+     "royalty_follows_modem": 67.36488235294118,
+     "share_leaving": 0.11497369908062162,
+     "net_skin_change": -157.84898395721925
+    },
+    "C0R": {
+     "leaves_budget": 105.64898395721926,
+     "leaves_missing": 0.8571428571428571,
+     "added": 6.800000000000001,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0746814040527033,
+     "net_skin_change": -99.70612681436212
+    },
+    "C1": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    },
+    "C2": {
+     "leaves_budget": 0.0,
+     "leaves_missing": 0.0,
+     "added": 0,
+     "royalty_follows_modem": 0.0,
+     "share_leaving": 0.0,
+     "net_skin_change": 0.0
+    }
+   },
+   "group_cost": {
+    "display": 1028.5176470588235,
+    "cells": 67.28,
+    "tilemech": 34,
+    "tcm": 9.6,
+    "qi": 5,
+    "touch": 7,
+    "u1u6": 20,
+    "u5": 44,
+    "u2": 13,
+    "misc_si": 8,
+    "cam": 19,
+    "bmech": 18,
+    "rear": 5.5,
+    "pcba": 9,
+    "bcell": 1.4,
+    "hub": 13.0,
+    "skinmisc": 8.0,
+    "ringsmall": 7.5,
+    "splitadd": 6.8,
+    "portpart": 12.0,
+    "none": 0
+   }
+  }
+ }
+}

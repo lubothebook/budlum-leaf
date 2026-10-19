@@ -1,0 +1,92 @@
+// The Skin to Core link, a DRAFT of the session seat of hw/core. Package budlum.skin.v1.
+//
+// It is a separate package because a Skin never speaks to a validator and never signs.
+// Every message is tagged with a short KMAC under the link key. The key comes from the
+// pairing and the Core U7. The link seat owns the physical layer and the pixel stream.
+// This file holds only what the session needs: attach, bind, unbind and the raw events.
+//
+// Ids are short. A Skin id is 16 bytes, the truncated hash of its ROM identity.
+
+syntax = "proto3";
+
+package budlum.skin.v1;
+
+enum EventKind {
+  EVENT_KIND_UNSPECIFIED = 0;
+  EVENT_KIND_TOUCH = 1;
+  EVENT_KIND_PEN = 2;
+  EVENT_KIND_KEY = 3;
+  EVENT_KIND_SHUTTER = 4;
+  EVENT_KIND_IMU = 5;
+  EVENT_KIND_CAMERA = 6;
+}
+
+enum UnbindReason {
+  UNBIND_REASON_UNSPECIFIED = 0;
+  UNBIND_REASON_HANDOFF = 1;
+  UNBIND_REASON_SESSION_MOVED = 2;
+  UNBIND_REASON_PAIRING_ENDED = 3;
+  UNBIND_REASON_CORE_SHUTDOWN = 4;
+}
+
+enum AttachCode {
+  ATTACH_CODE_UNSPECIFIED = 0;
+  ATTACH_CODE_OK = 1;
+  ATTACH_CODE_NOT_PAIRED = 2;
+  ATTACH_CODE_OTHER_CORE = 3;
+  ATTACH_CODE_REVOKED = 4;
+}
+
+// Skin to Core, first message after the tether is up.
+message SkinAttach {
+  bytes skin_id = 1;
+  uint32 pairing_epoch = 2;
+  bytes nonce = 3;
+  // Energy in the Skin store in millijoules. Zero for a Skin with no store.
+  uint32 store_mj = 4;
+  bool powered_by_link = 5;
+  bytes tag = 15;
+}
+
+message ViewSpec {
+  uint32 view_id = 1;
+  uint32 bind_epoch = 2;
+  uint32 x = 3;
+  uint32 y = 4;
+  uint32 w = 5;
+  uint32 h = 6;
+}
+
+message SkinAttachAck {
+  AttachCode code = 1;
+  uint32 link_key_epoch = 2;
+  repeated ViewSpec views = 3;
+  uint64 from_frame = 4;
+  bytes tag = 15;
+}
+
+// Core to Skin: this tile rectangle shows this view from this frame.
+message ViewBind {
+  ViewSpec view = 1;
+  uint64 from_frame = 2;
+  bytes tag = 15;
+}
+
+// Core to Skin: the view ends. The Skin draws its ROM screen with the reason.
+message ViewUnbind {
+  uint32 view_id = 1;
+  uint32 bind_epoch = 2;
+  UnbindReason reason = 3;
+  bytes tag = 15;
+}
+
+// Skin to Core. The Skin never stamps a tick and never signs.
+message SkinEvent {
+  uint32 seq = 1;
+  EventKind kind = 2;
+  sint32 x = 3;
+  sint32 y = 4;
+  bytes payload = 5;
+  uint32 pairing_epoch = 6;
+  bytes tag = 15;
+}

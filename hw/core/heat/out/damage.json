@@ -1,0 +1,103 @@
+{
+ "plate|25C|delta_energy": {
+  "plate_max": 36.31,
+  "dew60": 16.69,
+  "dew80": 21.31,
+  "margin60": 19.61,
+  "margin80": 15.0
+ },
+ "plate|25C|video": {
+  "plate_max": 36.19,
+  "dew60": 16.69,
+  "dew80": 21.31,
+  "margin60": 19.5,
+  "margin80": 14.88
+ },
+ "plate|25C|5g_like": {
+  "plate_max": 36.03,
+  "dew60": 16.69,
+  "dew80": 21.31,
+  "margin60": 19.34,
+  "margin80": 14.72
+ },
+ "plate|30C|delta_energy": {
+  "plate_max": 36.16,
+  "dew60": 21.39,
+  "dew80": 26.17,
+  "margin60": 14.78,
+  "margin80": 9.99
+ },
+ "plate|30C|video": {
+  "plate_max": 36.01,
+  "dew60": 21.39,
+  "dew80": 26.17,
+  "margin60": 14.62,
+  "margin80": 9.84
+ },
+ "plate|30C|5g_like": {
+  "plate_max": 35.69,
+  "dew60": 21.39,
+  "dew80": 26.17,
+  "margin60": 14.3,
+  "margin80": 9.52
+ },
+ "plate|35C|delta_energy": {
+  "plate_max": 35.85,
+  "dew60": 26.07,
+  "dew80": 31.03,
+  "margin60": 9.78,
+  "margin80": 4.82
+ },
+ "plate|35C|video": {
+  "plate_max": 35.61,
+  "dew60": 26.07,
+  "dew80": 31.03,
+  "margin60": 9.54,
+  "margin80": 4.58
+ },
+ "plate|35C|5g_like": {
+  "plate_max": 35.28,
+  "dew60": 26.07,
+  "dew80": 31.03,
+  "margin60": 9.2,
+  "margin80": 4.25
+ },
+ "plate_L60|25C": 31.92,
+ "plate_L60|35C": 30.87,
+ "tec|25C|L.6.0 delta, battery": {
+  "q_need": 2.66,
+  "P_tec": 0.38
+ },
+ "tec|25C|Skin video 1.35 W + PHY": {
+  "q_need": 1.85,
+  "P_tec": 0.28
+ },
+ "tec|25C|Skin delta 0.80 W + PHY": {
+  "q_need": 1.37,
+  "P_tec": 0.21
+ },
+ "tec|35C|L.6.0 delta, battery": {
+  "q_need": 4.16,
+  "P_tec": 3.75
+ },
+ "tec|35C|Skin video 1.35 W + PHY": {
+  "q_need": 3.35,
+  "P_tec": 3.25
+ },
+ "tec|35C|Skin delta 0.80 W + PHY": {
+  "q_need": 2.87,
+  "P_tec": 3.01
+ },
+ "tec_setpoint|22": 3.25,
+ "tec_setpoint|26": 1.58,
+ "tec_setpoint|28": 1.02,
+ "tec_setpoint|30": 0.58,
+ "throttle|30C|still|delta_thermal": 0.851,
+ "throttle|30C|still|video": 0.808,
+ "throttle|30C|still|5g_like": 0.588,
+ "throttle|30C|still|outdoor_800nit": 0.33,
+ "throttle|30C|wind|delta_thermal": 1.0,
+ "throttle|30C|wind|video": 1.0,
+ "throttle|30C|wind|5g_like": 0.855,
+ "throttle|30C|wind|outdoor_800nit": 0.506
+}

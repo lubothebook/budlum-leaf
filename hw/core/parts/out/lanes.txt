@@ -1,0 +1,33 @@
+THE LEAVES AT C0: what the twelve gold leaves must carry once the ring chips are in the Core
+sources: hw/display/out/interface.txt section B (pairs, back channel), F21 21.3.5 and 21.5.5, M09 section 3
+
+capacity: back channel 0.400 Gbit/s, one display pair 9.70 Gbit/s payload, two pairs 19.39
+display need (DSC 10 bpp, 240 Hz): 13.85 Gbit/s, margin of two pairs 40 %
+
+stream                                                             Gbit/s  on the BC    on a pair   
+rear panel 480 x 480, 24 bit, 120 Hz, raw                          0.6636  NO           fits        
+rear panel 480 x 480, 24 bit, 120 Hz, DSC 3:1                      0.2212  tight        fits        
+rear panel clock at 10 Hz, raw                                     0.0553  fits         fits        
+audio: 2 mics and stereo out, 48 kHz, 24 bit                       0.0046  fits         fits        
+IMU, 6 axes, 16 bit, 1 kHz                                         0.0001  fits         fits        
+camera still 50 MP, 12 bit, per frame (Gbit, not Gbit/s)           0.6000  1.5 s        0.06 s      
+camera 12.5 MP binned, 10 bit, 30 fps                              3.7500  NO           fits        
+camera 12.5 MP binned, 10 bit, 60 fps                              7.5000  NO           fits        
+camera 4K, 10 bit, 120 fps raw                                     9.9533  NO           NO          
+(fits on the BC means at most half of it, because touch at 480 Hz, hinge angles and telemetry share it)
+
+calibration of a swapped quadrant: 32 tiles x 4.8 KB [HYPOTHESIS, range 1 to 8 KB] = 154 KB = 1.26 Mbit
+  over the back channel : 3.15 ms against the 3 ms window of F21 21.2.4
+  over one display pair : 0.13 ms
+  at 1 KB per tile      : 0.66 ms on the BC, 0.03 ms on a pair
+  at 8 KB per tile      : 5.24 ms on the BC, 0.22 ms on a pair
+
+THE PIXEL STREAM AT C1 AND C2 against the radios the Leaf keeps
+Wi-Fi 7 (802.11be) 2 x 2, 320 MHz, 4096-QAM 5/6, 0.8 us GI [GENERAL]: 5.76 Gbit/s PHY, about 3.5 Gbit/s real at 60 %
+  raw 10 bit, 240 Hz                             36.90 Gbit/s  -> does not fit PHY
+  DSC 3:1                                        12.30 Gbit/s  -> does not fit PHY
+  4:1                                             9.20 Gbit/s  -> does not fit PHY
+  6:1                                             6.10 Gbit/s  -> does not fit PHY
+  DSC 10 bpp as designed, wire                   13.43 Gbit/s  -> does not fit PHY
+  compressed slices of Part 21, upper end         0.15 Gbit/s  -> fits real
+A 60 GHz link of 13.43 Gbit/s at 30 m is the question of the link seat (hw/core/link). Gate HC-A9.

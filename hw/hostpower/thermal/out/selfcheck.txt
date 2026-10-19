@@ -1,0 +1,9 @@
+SELF CHECK against sim/thermal/README.md (L.6.0), fixed body, 25 C
+
+delta battery 25C hottest                model   41.280  reference   41.300  tol 0.100  ok
+battery heat vs session_q, W             model    2.535  reference    2.535  tol 0.000  ok
+delta battery sustained, W               model    1.726  reference    1.730  tol 0.030  ok
+5G battery 25C hottest                   model   44.864  reference   44.900  tol 0.100  ok
+Qi 25 W device heat total, W             model    6.926  reference    6.930  tol 0.020  ok
+
+all checks pass: True

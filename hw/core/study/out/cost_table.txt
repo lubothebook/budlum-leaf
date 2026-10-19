@@ -1,0 +1,247 @@
+COST OF THE SPLIT, base draw. BOM USD per unit, no margin. All [HYPOTHESIS].
+L.6.0 numbers come from program/budget.py, read only.
+
+== volume 100,000 per year
+all-in-one Leaf 160, L.6.0: 3949 USD (budget.py base: 3949)
+   micro-LED tiles 3218 USD = 82 % of the unit; cells 139 USD = 4 %
+ -- link wired
+   Skin Leaf 160 with camera: 3456 USD sub-total; without camera: 3411 USD
+   micro-LED tiles                                                    3218.29
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     60.00
+   touch grid, AgNW, on the caps                                        12.00
+   decoder and TCON, Skin share                                         27.00
+   identity chip                                                         1.50
+   IMU and Skin misc                                                     3.60
+   50 MP camera column with sapphire L1                                 30.00
+   B stub mechanics                                                     15.00
+   tether cable                                                          9.00
+   link chip, Skin end                                                   7.50
+   assembly and pack                                                    72.00
+   N=1 Core 255 USD (11.0 Wh) | split 3860 vs all-in-one 3949 | saving 89 USD (2.3 %) | royalty on Core only: saving 227 USD
+   N=2 Core 280 USD (16.3 Wh) | split 7479 vs all-in-one 7897 | saving 418 USD (5.3 %) | royalty on Core only: saving 695 USD
+   N=4 Core 328 USD (26.8 Wh) | split 14718 vs all-in-one 15794 | saving 1076 USD (6.8 %) | royalty on Core only: saving 1629 USD
+   N=8 Core 425 USD (47.8 Wh) | split 29195 vs all-in-one 31588 | saving 2393 USD (7.6 %) | royalty on Core only: saving 3499 USD
+   break-even Skins per Core: royalty on system 1, on Core only 1
+ -- link wireless
+   Skin Leaf 160 with camera: 3531 USD sub-total; without camera: 3486 USD
+   micro-LED tiles                                                    3218.29
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     60.00
+   touch grid, AgNW, on the caps                                        12.00
+   decoder and TCON, Skin share                                         27.00
+   identity chip                                                         1.50
+   IMU and Skin misc                                                     3.60
+   50 MP camera column with sapphire L1                                 30.00
+   B stub mechanics                                                     15.00
+   60 GHz radio, Skin end                                               27.00
+   Skin cells                                                           48.94
+   Skin TCM                                                              6.68
+   Skin Qi coil                                                          9.00
+   assembly and pack                                                    72.00
+   N=1 Core 271 USD (7.0 Wh) | split 3954 vs all-in-one 3949 | saving -5 USD (-0.1 %) | royalty on Core only: saving 136 USD
+   N=2 Core 310 USD (8.2 Wh) | split 7667 vs all-in-one 7897 | saving 230 USD (2.9 %) | royalty on Core only: saving 513 USD
+   N=4 Core 389 USD (10.6 Wh) | split 15094 vs all-in-one 15794 | saving 701 USD (4.4 %) | royalty on Core only: saving 1265 USD
+   N=8 Core 547 USD (15.4 Wh) | split 29947 vs all-in-one 31588 | saving 1641 USD (5.2 %) | royalty on Core only: saving 2771 USD
+   break-even Skins per Core: royalty on system 2, on Core only 1
+
+== volume 1,000,000 per year
+all-in-one Leaf 160, L.6.0: 1575 USD (budget.py base: 1575)
+   micro-LED tiles 1205 USD = 76 % of the unit; cells 66 USD = 4 %
+ -- link wired
+   Skin Leaf 160 with camera: 1331 USD sub-total; without camera: 1305 USD
+   micro-LED tiles                                                    1204.71
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     32.00
+   touch grid, AgNW, on the caps                                         6.00
+   decoder and TCON, Skin share                                         12.00
+   identity chip                                                         1.00
+   IMU and Skin misc                                                     2.25
+   50 MP camera column with sapphire L1                                 18.00
+   B stub mechanics                                                      8.50
+   tether cable                                                          6.00
+   link chip, Skin end                                                   5.00
+   assembly and pack                                                    36.00
+   N=1 Core 154 USD (11.0 Wh) | split 1545 vs all-in-one 1575 | saving 30 USD (1.9 %) | royalty on Core only: saving 84 USD
+   N=2 Core 168 USD (16.3 Wh) | split 2944 vs all-in-one 3150 | saving 207 USD (6.6 %) | royalty on Core only: saving 313 USD
+   N=4 Core 195 USD (26.8 Wh) | split 5742 vs all-in-one 6301 | saving 559 USD (8.9 %) | royalty on Core only: saving 772 USD
+   N=8 Core 250 USD (47.8 Wh) | split 11337 vs all-in-one 12602 | saving 1264 USD (10.0 %) | royalty on Core only: saving 1690 USD
+   break-even Skins per Core: royalty on system 1, on Core only 1
+ -- link wireless
+   Skin Leaf 160 with camera: 1370 USD sub-total; without camera: 1344 USD
+   micro-LED tiles                                                    1204.71
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     32.00
+   touch grid, AgNW, on the caps                                         6.00
+   decoder and TCON, Skin share                                         12.00
+   identity chip                                                         1.00
+   IMU and Skin misc                                                     2.25
+   50 MP camera column with sapphire L1                                 18.00
+   B stub mechanics                                                      8.50
+   60 GHz radio, Skin end                                               18.00
+   Skin cells                                                           23.20
+   Skin TCM                                                              3.38
+   Skin Qi coil                                                          5.00
+   assembly and pack                                                    36.00
+   N=1 Core 164 USD (7.0 Wh) | split 1596 vs all-in-one 1575 | saving -20 USD (-1.3 %) | royalty on Core only: saving 34 USD
+   N=2 Core 188 USD (8.2 Wh) | split 3045 vs all-in-one 3150 | saving 105 USD (3.3 %) | royalty on Core only: saving 215 USD
+   N=4 Core 236 USD (10.6 Wh) | split 5945 vs all-in-one 6301 | saving 356 USD (5.7 %) | royalty on Core only: saving 575 USD
+   N=8 Core 331 USD (15.4 Wh) | split 11743 vs all-in-one 12602 | saving 858 USD (6.8 %) | royalty on Core only: saving 1297 USD
+   break-even Skins per Core: royalty on system 2, on Core only 1
+
+== volume 5,000,000 per year
+all-in-one Leaf 160, L.6.0: 803 USD (budget.py base: 803)
+   micro-LED tiles 554 USD = 69 % of the unit; cells 42 USD = 5 %
+ -- link wired
+   Skin Leaf 160 with camera: 644 USD sub-total; without camera: 623 USD
+   micro-LED tiles                                                     553.74
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     22.00
+   touch grid, AgNW, on the caps                                         4.50
+   decoder and TCON, Skin share                                          7.80
+   identity chip                                                         0.80
+   IMU and Skin misc                                                     1.74
+   50 MP camera column with sapphire L1                                 14.00
+   B stub mechanics                                                      6.50
+   tether cable                                                          4.80
+   link chip, Skin end                                                   4.00
+   assembly and pack                                                    24.00
+   N=1 Core 117 USD (11.0 Wh) | split 791 vs all-in-one 803 | saving 12 USD (1.5 %) | royalty on Core only: saving 38 USD
+   N=2 Core 127 USD (16.3 Wh) | split 1471 vs all-in-one 1607 | saving 135 USD (8.4 %) | royalty on Core only: saving 187 USD
+   N=4 Core 147 USD (26.8 Wh) | split 2832 vs all-in-one 3214 | saving 382 USD (11.9 %) | royalty on Core only: saving 485 USD
+   N=8 Core 188 USD (47.8 Wh) | split 5553 vs all-in-one 6428 | saving 875 USD (13.6 %) | royalty on Core only: saving 1081 USD
+   break-even Skins per Core: royalty on system 1, on Core only 1
+ -- link wireless
+   Skin Leaf 160 with camera: 670 USD sub-total; without camera: 649 USD
+   micro-LED tiles                                                     553.74
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles     22.00
+   touch grid, AgNW, on the caps                                         4.50
+   decoder and TCON, Skin share                                          7.80
+   identity chip                                                         0.80
+   IMU and Skin misc                                                     1.74
+   50 MP camera column with sapphire L1                                 14.00
+   B stub mechanics                                                      6.50
+   60 GHz radio, Skin end                                               14.40
+   Skin cells                                                           14.62
+   Skin TCM                                                              2.25
+   Skin Qi coil                                                          3.50
+   assembly and pack                                                    24.00
+   N=1 Core 125 USD (7.0 Wh) | split 827 vs all-in-one 803 | saving -23 USD (-2.9 %) | royalty on Core only: saving 4 USD
+   N=2 Core 143 USD (8.2 Wh) | split 1542 vs all-in-one 1607 | saving 64 USD (4.0 %) | royalty on Core only: saving 118 USD
+   N=4 Core 180 USD (10.6 Wh) | split 2974 vs all-in-one 3214 | saving 240 USD (7.5 %) | royalty on Core only: saving 347 USD
+   N=8 Core 253 USD (15.4 Wh) | split 5837 vs all-in-one 6428 | saving 591 USD (9.2 %) | royalty on Core only: saving 805 USD
+   break-even Skins per Core: royalty on system 2, on Core only 1
+
+== Core lines, N=4, wired, 1 M per year
+   decoder and compositor, Core share                                    8.00
+   extra Skin lanes                                                     15.00
+   5G modem SiP                                                         42.00
+   Wi-Fi 7, BT, UWB                                                     12.00
+   secure element and misc, Core share                                   5.25
+   Core board                                                           13.60
+   Core enclosure                                                       12.00
+   rear status display                                                   5.00
+   Qi2.2 coil for the Core                                               5.00
+   link chip, Core end                                                  20.00
+   Core energy                                                          21.23
+   assembly and pack                                                    36.00
+
+== mixed sizes, 1 M per year, base draw
+   1 x Leaf 160                                   wired    split    1545  all-in-one    1575  saving     30 (  1.9 %)  Core   154
+   1 x Leaf 160                                   wireless split    1596  all-in-one    1575  saving    -20 ( -1.3 %)  Core   164
+   2 x Leaf 80 + 1 x Leaf 160                     wired    split    3050  all-in-one    3355  saving    304 (  9.1 %)  Core   181
+   2 x Leaf 80 + 1 x Leaf 160                     wireless split    3202  all-in-one    3355  saving    152 (  4.5 %)  Core   212
+   Leaf 80 + Leaf 160 + Leaf 160x2                wired    split    4989  all-in-one    5411  saving    422 (  7.8 %)  Core   181
+   Leaf 80 + Leaf 160 + Leaf 160x2                wireless split    5141  all-in-one    5411  saving    270 (  5.0 %)  Core   212
+   Leaf 80 + Leaf 160 + Leaf 160x2 + Leaf 480     wired    split    6133  all-in-one    6727  saving    594 (  8.8 %)  Core   195
+   Leaf 80 + Leaf 160 + Leaf 160x2 + Leaf 480     wireless split    6335  all-in-one    6727  saving    391 (  5.8 %)  Core   236
+   2 x Leaf 160 + 1 x Leaf 480                    wired    split    4087  all-in-one    4466  saving    378 (  8.5 %)  Core   181
+   2 x Leaf 160 + 1 x Leaf 480                    wireless split    4240  all-in-one    4466  saving    226 (  5.1 %)  Core   212
+   4 x Leaf 160                                   wired    split    5742  all-in-one    6301  saving    559 (  8.9 %)  Core   195
+   4 x Leaf 160                                   wireless split    5945  all-in-one    6301  saving    356 (  5.7 %)  Core   236
+   8 x Leaf 80                                    wired    split    6168  all-in-one    7117  saving    950 ( 13.3 %)  Core   250
+   8 x Leaf 80                                    wireless split    6573  all-in-one    7117  saving    544 (  7.6 %)  Core   331
+
+== Skin cost by size, 1 M per year, wired, with camera
+   Leaf 80      Skin     710  all-in-one     890  Skin share  79.8 %  tiles in Skin  84.8 %
+   Leaf 160     Skin    1331  all-in-one    1575  Skin share  84.5 %  tiles in Skin  90.5 %
+   Leaf 160x2   Skin    2574  all-in-one    2946  Skin share  87.4 %  tiles in Skin  93.6 %
+   Leaf 480     Skin    1086  all-in-one    1315  Skin share  82.6 %  tiles in Skin  89.9 %
+
+== mass and thickness of the Skin (L.6.0 body 68.0 g, 2.00 mm)
+   cells 24.6 g, Qi layer 3 g, Skin about 40.4 g (41 % lighter), stack 0.90 mm
+   Core N=1: 11.0 Wh, about 114 g
+   Core N=2: 16.3 Wh, about 135 g
+   Core N=4: 26.8 Wh, about 177 g
+   Core N=8: 47.8 Wh, about 261 g
+
+== the distance classes: what BOM leaves the Leaf (Leaf 160, 1 M per year, base draw)
+   C0 tether to 2 m, C0r 60 GHz to about 10 m with a clear path, C1 room to about 30 m, C2 far to km
+   class  link       Skin USD   aio USD  leaves %  Core N=1  Core N=4  Core N=8
+   C0     wired          1331      1515     12.1%       154       195       250
+   C0r    wireless       1370      1515      9.5%       164       236       331
+   C1     wifi           1378      1515      9.0%       144       162       192
+   C2     5G             1515      1515      0.0%       n/a       n/a       n/a
+   C2 note: the Skin keeps the modem, decoder, store, radio, camera and cells, so it is the L.6.0 Leaf.
+   The far Core is a validator and a network service. It is no BOM of the Leaf and no saving.
+
+   saving of the Split against all-in-one, USD per system (percent), royalty on the system
+   class  link                     N=1                N=2                N=4                N=8  break-even
+   C0     wired            30 (  1.9%)       207 (  6.6%)       559 (  8.9%)      1264 ( 10.0%)  1
+   C0r    wireless        -20 ( -1.3%)       105 (  3.3%)       356 (  5.7%)       858 (  6.8%)  2
+   C1     wifi             -8 ( -0.5%)       128 (  4.1%)       401 (  6.4%)       938 (  7.4%)  2
+   C2     5G                      0 (  0.0%)         0 (  0.0%)         0 (  0.0%)         0 (  0.0%)  not applicable
+
+== what leaves the all-in-one Leaf 160, 1 M per year, base draw (USD per unit)
+   line                                                           all-in-one     Skin
+   micro-LED tiles                                                  1204.7   1204.7
+   micro cells                                                        66.0      0.0
+   tile mechanics: PC caps, hinges, skin, seats, magnets, 128 til     32.0     32.0
+   TCM protection IC x 128                                             9.6      0.0
+   touch grid, AgNW, on the caps                                       6.0      6.0
+   Qi2.2 sector coils, shield, rectifier                               5.0      0.0
+   U1 and U6 ASICs with 16 MB store                                   20.0      0.0
+   U5 5G modem SiP with RF front end and eSIM                         42.0      0.0
+   U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB                         12.0      0.0
+   U7 secure element, U8 IMU, U3 audio, U4 power, NOR                  7.5      0.0
+   50 MP camera column with sapphire L1                               18.0     18.0
+   B module mechanics: LCP shells, LDS, windows, jack, speaker, m     17.0      0.0
+   rear round AMOLED                                                   5.0      0.0
+   ring PCBA, 8-layer HDI, assembly                                    8.5      0.0
+   B cell 0.14 Wh                                                      1.3      0.0
+   final assembly, calibration, test, provisioning                    40.0      0.0
+   packaging, logistics, warranty reserve 3 %                         20.0      0.0
+   royalties                                                          60.6      0.0
+   decoder and TCON, Skin share                                                12.0   (new Skin line)
+   identity chip                                                                1.0   (new Skin line)
+   IMU and Skin misc                                                            2.3   (new Skin line)
+   B stub mechanics                                                             8.5   (new Skin line)
+   tether cable                                                                 6.0   (new Skin line)
+   link chip, Skin end                                                          5.0   (new Skin line)
+   assembly and pack                                                           36.0   (new Skin line)
+   Core, N=4, per Skin: 48.8 USD
+
+== the Skin load against the free-air limit, W (heat note, [HYPOTHESIS] for the link terms)
+   free-air sustained limit of the L.6.0 body: 1.73 W still, 2.37 W light wind [TREE]
+   delta session  wired C0         1.00 / 1.20 / 1.60 W  base is inside
+   delta session  60 GHz C0r       1.80 / 2.80 / 4.30 W  base is over
+   delta session  Wi-Fi 7 C1       1.40 / 1.80 / 2.40 W  base is inside with wind
+   video session  wired C0         1.55 / 1.75 / 2.15 W  base is inside with wind
+   video session  60 GHz C0r       2.35 / 3.35 / 4.85 W  base is over
+   video session  Wi-Fi 7 C1       1.95 / 2.35 / 2.95 W  base is inside with wind
+   C2: the Skin is the L.6.0 Leaf, so the load is the L.6.0 load [TREE] and no heat moves out
+
+== what if the micro-LED tile gets cheaper (tile_x multiplier), N=4 wired, royalty on system
+   tile_x     all-in-one       Skin     Skin/aio       saving %
+   1.00             1575       1331          85 %           8.9 %
+   0.50              949        729          77 %          14.7 %
+   0.25              636        428          67 %          22.0 %
+   0.10              448        247          55 %          31.2 %
+   0.05              385        187          49 %          36.3 %
+   a Skin of 500 USD needs the tile cost of the 128 tiles at 373 USD (now 1205 USD): a factor 0.31
+
+== break-even by Skin size, base draw, 1 M per year, wired, royalty on system
+   Leaf 80      N=1     -9 (-1.0 %) | N=2    128 ( 7.2 %) | N=3    265 ( 9.9 %) | N=4    402 (11.3 %)  break-even 2
+   Leaf 160     N=1     30 ( 1.9 %) | N=2    207 ( 6.6 %) | N=3    383 ( 8.1 %) | N=4    559 ( 8.9 %)  break-even 1
+   Leaf 160x2   N=1    109 ( 3.7 %) | N=2    364 ( 6.2 %) | N=3    619 ( 7.0 %) | N=4    874 ( 7.4 %)  break-even 1
+   Leaf 480     N=1     26 ( 2.0 %) | N=2    198 ( 7.5 %) | N=3    370 ( 9.4 %) | N=4    542 (10.3 %)  break-even 1
+
+== the extra NRE of the Split, base 40 M USD
+   N=2: saving 207 USD per system, extra NRE repaid after 193695 systems
+   N=4: saving 559 USD per system, extra NRE repaid after 71554 systems
+   N=8: saving 1264 USD per system, extra NRE repaid after 31645 systems

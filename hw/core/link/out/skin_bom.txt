@@ -1,0 +1,84 @@
+C. THE SMALLEST SKIN
+====================================================================================================
+C1. the face mass, from the Part 21 tile stack (Section 21.2.7), rest state 80 x 160 mm. Densities are [GENERAL].
+  PC cap with AgNW touch grid                           0.25 mm   3.84 g
+  optical adhesive                                      0.05 mm   0.64 g
+  glass, micro-LED layer and glass                      0.25 mm   7.68 g
+  slip OCA                                              0.03 mm   0.38 g
+  hub and spreader layer (replaces the 0.20 Qi layer)   0.10 mm   2.05 g
+  floating back skin (TPU)                              0.08 mm   1.18 g
+  hinges, 232 ribbons and pins  0.91 g; 128 hub dies  0.06 g; seat parts  0.30 g
+  SKIN MASS (no cells, no Qi coil, no module):  17.0 g, thickness 1.00 mm (hinge and tolerance 0.24 mm kept)
+  the L.6.0 body for comparison: cells 22.9 g (9.56 cm3 at 2.4 g/cm3), cans 6.4 g, Qi coil and shield 3.0 g
+  L.6.0 BODY MASS (no module): about   47 g. The Skin is 64 % lighter. [HYPOTHESIS]
+
+C2. the silicon that cannot leave the Skin, per hub (hw/display SPEC 1.6 and 3.6). Hub die 1.6 x 1.6 mm = 2.56 mm2.
+  DSC slice decoder, 1 px/clk, 28 nm (60 kgate + 3 kB line and rate buffer)    0.025 mm2  9.6 Mpx/s needs 10 to 20 MHz
+  4 mesh ports, 3.2 Gb/s retimed, 3 lanes + back channel                       0.150 mm2  the main load, see C4
+  100 row-bus drivers                                                          0.100 mm2  
+  1 Mb eMRAM, per-pixel calibration and tile ID                                0.200 mm2  
+  AgNW touch AFE and 12 bit ADC, 480 Hz                                        0.200 mm2  analog, cannot move
+  hinge-angle and seam sense front end                                         0.050 mm2  analog, cannot move
+  thermistor ADC and trip comparator                                           0.010 mm2  
+  route table, address, sync latch, safe-screen pattern ROM 2 kB               0.020 mm2  
+  sum  0.76 mm2 of 2.56 mm2 -> 29 % used with routing at 2x; the decoder is 3 % of the logic
+  The decoder is small. The mesh ports, the analog fronts and the memory set the hub size. [HYPOTHESIS]
+
+C3. the Skin common parts, whatever the link (link-as-clip: every tether is a clip on the 12-leaf seat)
+part                                                                                                                   n  mm2 each  mg each
+tile hub die (C2)                                                                                                    128    2.5600    0.500
+micro-IC, 28 nm HV, 20 x 85 um (10 000 per tile)                                                                 1280000    0.0017    0.000
+seat controller: 2 x 10 Gb/s RX and TX, lane crossbar, dead-pad switch, route-table loader, ROM 16 kB safe screen, trip         4    9.0000   40.000
+identity: part record and link-auth key, no wallet key (secure ID class)                                               1    6.0000   60.000
+accelerometer, 3 axis (orientation of the Skin)                                                                        1    4.0000   30.000
+thermistor, one per tile                                                                                             128    0.5000    0.500
+bridge cell (one tile cell, 46 mWh) with its fuse                                                                      1   85.0000 1200.000
+12 gold leaves on the seat tile                                                                                        4    0.0000    2.000
+  silicon and parts area on the Skin: 27 cm2 of die area: micro-ICs 21.8 cm2 in the pixel streets, hubs 3.3 cm2, under the 128 cm2 face
+  the bridge cell is one of the 128 existing tile cells. It holds the safe screen (0.12 W) for 23 min or a swap.
+  seat controllers: one per edge, four seats (hw/energy 03). The identity chip holds a link key. A Skin that signs a spend does not exist.
+  Parts that LEAVE the Skin and sit in the Core: U1 TCON and compositor, U6 decoder and 16 MB store, U2A, U2B, U5, U7,
+  U8, U3, U4, the camera path, the audio path, the 128 cells, the 4 U_Q chargers and the Qi coils.
+
+C4. the Skin load, W. Display and address are the body column of hw/energy 04. The hub electronics are added bottom-up.
+    The body column of the Lead (0.80 and 1.35 W) holds no tile hub. See the damage report. Reading R2 below.
+case                       body col hub static  decode   mesh  row bus  seat PHY  SKIN W |  R2: full Hub domain
+safe screen, no link          0.120      0.019   0.000  0.000    0.000     0.010   0.149 |                0.130
+static page 10 Hz             0.170      0.077   0.000  0.000    0.000     0.021   0.268 |                0.196
+delta session, 250 nits       0.800      0.077   0.008  0.036    0.004     0.030   0.954 |                1.530
+video Wi-Fi                   1.350      0.077   0.017  0.076    0.008     0.039   1.567 |                2.589
+full motion 240 Hz, 250 nits    1.350      0.077   0.076  0.343    0.034     0.085   1.965 |                2.635
+video outdoors, 800 nits      4.240      0.077   0.017  0.076    0.008     0.039   4.457 |                5.479
+    mean hops 8.50, retime 3 pJ/b/hop, decode 60 pJ/px.
+    The mesh retime is the largest hub load. Heavier compression cuts it in step: VDC-M 6 bpp cuts mesh power by 40 % against DSC 10 bpp.
+
+C5. the heat check. The thermal seat limit is for the whole L.6.0 body with the ring (1.73 W still, 2.37 W light wind, 25 C).
+    A ringless face has no hot spot. A plate bound with both faces at 11 W/m2K and dT 11.2 K is a second reference.
+    plate bound: 3.15 W (uniform heat, still air, 25 C). [HYPOTHESIS] The heat seat of hw/core/heat decides.
+  safe screen, no link       Skin  0.15 W  vs 1.73 still: pass; vs 2.37 wind: pass; vs plate 3.15: pass
+  static page 10 Hz          Skin  0.27 W  vs 1.73 still: pass; vs 2.37 wind: pass; vs plate 3.15: pass
+  delta session, 250 nits    Skin  0.95 W  vs 1.73 still: pass; vs 2.37 wind: pass; vs plate 3.15: pass
+  video Wi-Fi                Skin  1.57 W  vs 1.73 still: pass; vs 2.37 wind: pass; vs plate 3.15: pass
+  full motion 240 Hz, 250 nits Skin  1.97 W  vs 1.73 still: FAIL; vs 2.37 wind: pass; vs plate 3.15: pass
+  video outdoors, 800 nits   Skin  4.46 W  vs 1.73 still: FAIL; vs 2.37 wind: FAIL; vs plate 3.15: FAIL
+  A video session at 4.24 W (800 nits outdoors) passes nowhere. That is the display, not the link.
+
+C6. the Skin for each link end (what the Skin and its clip carry on top of the common Skin). Power in W at the video case.
+option link silicon on the Skin or clip                                        link W  cell Wh  mass g    clip or Skin mass
+a    the seat PHY only; no clip silicon; pads on the seat                      0.09     0.00     0.0      Skin+17 g total
+b    flex pigtail, clip with a magnetic leaf block; no clip silicon            0.09     0.00     2.5      Skin+20 g total
+c    clip with VCSEL driver, TIA, 2 lenses, hybrid pigtail; Skin sees leaves    0.09     0.00     4.0      Skin+21 g total
+d    60 GHz RFIC and baseband, 1 x 4 array (A4), the cell, a buck              0.60     4.82    31.3      Skin+48 g total
+e    3 coupler pairs and pulse transceiver; power by leaves or a coil          0.04     0.00     3.0      Skin+20 g total
+f1   Wi-Fi 7 combo module, 2 antennas, the cell, a buck                        1.00     5.70    34.8      Skin+52 g total
+f2   UWB transceiver and antenna (control and ranging only)                    0.20     0.00     1.0      Skin+18 g total
+  A radio end needs a cell on the Skin or the clip: 2 h of video at the Skin load is the 'cell Wh' column, at 250 Wh/kg.
+  The cell is the mass the Split was meant to remove. Radio ends give back most of the lightness they were chosen for.
+
+C7. is everything off the screen possible? No. A floor remains.
+  The floor: the emitters, 1.28 M micro-ICs, 128 hubs with a DSC decoder, touch and angle analog fronts, row drivers,
+  the mesh ports, a seat PHY with a controller, a safe-screen ROM, a thermal trip, a part identity, a bridge cell.
+  Reasons: a pixel needs its own driver (line count). A touch grid is analog. A hinge angle is a local analog value.
+  The mesh copper limit forces a decoder (A5). A link loss needs a screen that says so, and a thermal limit needs a
+  trip that does not wait for the Core.
+  Floor silicon: hubs 3.3 cm2, seat controllers 0.4 cm2, identity 0.06 cm2. Floor mass 17 g, thickness 1.00 mm.

@@ -1,0 +1,35 @@
+TORNADO: N=4, wired, 1 M per year. Saving of the Split in USD per system.
+base saving 559 USD. Each row moves one term from low to high.
+
+   budget group: cell         low      456  high      719  swing     263
+   budget group: sil          low      518  high      622  swing     105
+   budget group: mech         low      520  high      615  swing      95
+   asm_x                      low      590  high      497  swing      94
+   phy_usd                    low      576  high      526  swing      50
+   budget group: asm          low      540  high      586  swing      46
+   cable_usd                  low      571  high      534  swing      37
+   bmech_skin                 low      573  high      538  swing      35
+   f_dec_skin                 low      571  high      543  swing      28
+   core_cell_wh               low      569  high      542  swing      26
+   lane_extra                 low      568  high      547  swing      22
+   core_encl                  low      565  high      549  swing      17
+   core_pcb_x                 low      563  high      551  swing      11
+   budget group: roy          low      554  high      564  swing      11
+   core_hours                 low      562  high      553  swing      10
+   misc_core                  low      557  high      563  swing       6
+   ident_usd                  low      561  high      555  swing       6
+   core_w_skin                low      561  high      556  swing       5
+   core_bms                   low      560  high      557  swing       3
+   wifi_skin                  low      559  high      559  swing       0
+   skin_wh_c1                 low      559  high      559  swing       0
+   skin_wh                    low      559  high      559  swing       0
+   radio_usd                  low      559  high      559  swing       0
+   radio_gbps                 low      559  high      559  swing       0
+   pixel_gbps                 low      559  high      559  swing       0
+   nre_extra                  low      559  high      559  swing       0
+   enc_base                   low      559  high      559  swing       0
+   cell_wh_kg                 low      559  high      559  swing       0
+   c1_gbps                    low      559  high      559  swing       0
+   budget group: disp         low      559  high      559  swing       0
+   budget group: cam          low      559  high      559  swing       0
+   ap_gbps                    low      559  high      559  swing       0

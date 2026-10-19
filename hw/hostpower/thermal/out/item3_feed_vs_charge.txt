@@ -1,0 +1,195 @@
+ITEM 3 - FEED-THE-LOAD RULE: the host feeds the load and the cell floats,
+against the host that also charges the cell during the session.
+Q_leaf is the heat inside the Leaf. saved = Q_leaf(charge) - Q_leaf(float). wall = DC draw of the host side.
+modes: float, +0.2 C (1.14 W), 1 C (5.7 W), cap (host input at the class cap, the cell takes the rest).
+
+--- ambient 25 C, Qi puck / free air ---
+interface                  session          mode     Q_leaf   saved  T_skin      dT  wall W  cellW
+contact, 0.10 W loss       delta 2.5 W      float      2.62    0.00    42.1    +0.0    2.73   0.00
+contact, 0.10 W loss       delta 2.5 W      +0.2 C     2.83    0.22    44.1    +2.0    4.15   1.14
+contact, 0.10 W loss       delta 2.5 W      1 C        3.31    0.70    47.8    +5.7    9.36   5.70
+contact, 0.10 W loss       delta 2.5 W      cap        6.25    3.63    67.0   +24.9   26.15  19.37
+
+contact, 0.10 W loss       video Wi-Fi 3.3 W float      3.40    0.00    48.9    +0.0    3.55   0.00
+contact, 0.10 W loss       video Wi-Fi 3.3 W +0.2 C     3.66    0.26    51.4    +2.4    5.01   1.14
+contact, 0.10 W loss       video Wi-Fi 3.3 W 1 C        4.17    0.77    55.2    +6.3   10.25   5.70
+contact, 0.10 W loss       video Wi-Fi 3.3 W cap        6.95    3.55    73.6   +24.6   26.15  18.60
+
+contact, 0.10 W loss       5G outdoor 4.2 W float      4.33    0.00    45.4    +0.0    4.52   0.00
+contact, 0.10 W loss       5G outdoor 4.2 W +0.2 C     4.65    0.32    47.6    +2.2    6.05   1.14
+contact, 0.10 W loss       5G outdoor 4.2 W 1 C        5.18    0.85    50.6    +5.2   11.32   5.70
+contact, 0.10 W loss       5G outdoor 4.2 W cap        7.78    3.46    62.9   +17.5   26.15  17.69
+
+Qi BPP 5 W                 delta 2.5 W      float      2.90    0.00    42.2    +0.0    3.24  -0.00
+Qi BPP 5 W                 delta 2.5 W      +0.2 C     3.21    0.32    43.6    +1.4    4.86   1.14
+Qi BPP 5 W                 delta 2.5 W      1 C        3.58    0.68    45.0    +2.8    6.42   2.17
+Qi BPP 5 W                 delta 2.5 W      cap        3.58    0.68    45.0    +2.8    6.42   2.17
+
+Qi BPP 5 W                 video Wi-Fi 3.3 W float      3.87    0.00    49.6    +0.0    4.33  -0.00
+Qi BPP 5 W                 video Wi-Fi 3.3 W +0.2 C     4.24    0.37    51.1    +1.5    6.02   1.14
+Qi BPP 5 W                 video Wi-Fi 3.3 W 1 C        4.34    0.47    51.4    +1.9    6.42   1.40
+Qi BPP 5 W                 video Wi-Fi 3.3 W cap        4.34    0.47    51.4    +1.9    6.42   1.40
+
+Qi BPP 5 W                 5G outdoor 4.2 W float      5.07    0.00    49.4    +0.0    5.67   0.00
+Qi BPP 5 W                 5G outdoor 4.2 W +0.2 C     5.25    0.18    50.0    +0.6    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W 1 C        5.25    0.18    50.0    +0.6    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W cap        5.25    0.18    50.0    +0.6    6.42   0.49
+
+Qi EPP 15 W                delta 2.5 W      float      2.76    0.00    42.0    +0.0    3.08   0.00
+Qi EPP 15 W                delta 2.5 W      +0.2 C     2.91    0.16    43.1    +1.1    4.53   1.14
+Qi EPP 15 W                delta 2.5 W      1 C        3.86    1.11    48.8    +6.8   10.61   5.70
+Qi EPP 15 W                delta 2.5 W      cap        5.67    2.92    58.1   +16.1   18.42  11.07
+
+Qi EPP 15 W                video Wi-Fi 3.3 W float      3.63    0.00    49.1    +0.0    4.06   0.00
+Qi EPP 15 W                video Wi-Fi 3.3 W +0.2 C     3.80    0.17    50.3    +1.1    5.53   1.14
+Qi EPP 15 W                video Wi-Fi 3.3 W 1 C        4.82    1.19    56.4    +7.2   11.69   5.70
+Qi EPP 15 W                video Wi-Fi 3.3 W cap        6.40    2.78    64.4   +15.3   18.42  10.30
+
+Qi EPP 15 W                5G outdoor 4.2 W float      4.67    0.00    48.8    +0.0    5.23   0.00
+Qi EPP 15 W                5G outdoor 4.2 W +0.2 C     4.87    0.20    49.9    +1.1    6.72   1.14
+Qi EPP 15 W                5G outdoor 4.2 W 1 C        5.97    1.30    55.3    +6.4   12.98   5.70
+Qi EPP 15 W                5G outdoor 4.2 W cap        7.27    2.60    60.8   +11.9   18.42   9.39
+
+Qi2.2 MPP 25 W             delta 2.5 W      float      2.75    0.00    42.0    +0.0    3.07   0.00
+Qi2.2 MPP 25 W             delta 2.5 W      +0.2 C     2.89    0.15    43.0    +1.1    4.51   1.14
+Qi2.2 MPP 25 W             delta 2.5 W      1 C        3.74    1.00    48.6    +6.6   10.48   5.70
+Qi2.2 MPP 25 W             delta 2.5 W      cap        9.19    6.45    77.0   +35.1   30.99  19.37
+
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W float      3.61    0.00    49.1    +0.0    4.04   0.00
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W +0.2 C     3.77    0.16    50.2    +1.1    5.49   1.14
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W 1 C        4.68    1.07    56.1    +7.0   11.53   5.70
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W cap        9.89    6.29    82.8   +33.7   30.99  18.60
+
+Qi2.2 MPP 25 W             5G outdoor 4.2 W float      4.64    0.00    48.8    +0.0    5.19  -0.00
+Qi2.2 MPP 25 W             5G outdoor 4.2 W +0.2 C     4.82    0.18    49.8    +1.0    6.66   1.14
+Qi2.2 MPP 25 W             5G outdoor 4.2 W 1 C        5.80    1.16    55.0    +6.2   12.78   5.70
+Qi2.2 MPP 25 W             5G outdoor 4.2 W cap       10.73    6.09    76.0   +27.2   30.99  17.69
+
+--- ambient 25 C, dock cold plate ---
+interface                  session          mode     Q_leaf   saved  T_skin      dT  wall W  cellW
+contact, 0.10 W loss       delta 2.5 W      float      2.62    0.00    27.4    +0.0    2.73   0.00
+contact, 0.10 W loss       delta 2.5 W      +0.2 C     2.83    0.22    28.1    +0.7    4.15   1.14
+contact, 0.10 W loss       delta 2.5 W      1 C        3.31    0.70    29.2    +1.8    9.36   5.70
+contact, 0.10 W loss       delta 2.5 W      cap        6.25    3.63    33.9    +6.5   26.15  19.37
+
+contact, 0.10 W loss       video Wi-Fi 3.3 W float      3.40    0.00    29.9    +0.0    3.55   0.00
+contact, 0.10 W loss       video Wi-Fi 3.3 W +0.2 C     3.66    0.26    30.7    +0.9    5.01   1.14
+contact, 0.10 W loss       video Wi-Fi 3.3 W 1 C        4.17    0.77    31.8    +2.0   10.25   5.70
+contact, 0.10 W loss       video Wi-Fi 3.3 W cap        6.95    3.55    36.3    +6.5   26.15  18.60
+
+contact, 0.10 W loss       5G outdoor 4.2 W float      4.33    0.00    30.5    +0.0    4.52   0.00
+contact, 0.10 W loss       5G outdoor 4.2 W +0.2 C     4.65    0.32    31.5    +1.0    6.05   1.14
+contact, 0.10 W loss       5G outdoor 4.2 W 1 C        5.18    0.85    32.7    +2.1   11.32   5.70
+contact, 0.10 W loss       5G outdoor 4.2 W cap        7.78    3.46    36.7    +6.2   26.15  17.69
+
+Qi BPP 5 W                 delta 2.5 W      float      2.90    0.00    28.0    +0.0    3.24  -0.00
+Qi BPP 5 W                 delta 2.5 W      +0.2 C     3.21    0.32    28.4    +0.4    4.86   1.14
+Qi BPP 5 W                 delta 2.5 W      1 C        3.58    0.68    28.8    +0.8    6.42   2.17
+Qi BPP 5 W                 delta 2.5 W      cap        3.58    0.68    28.8    +0.8    6.42   2.17
+
+Qi BPP 5 W                 video Wi-Fi 3.3 W float      3.87    0.00    30.7    +0.0    4.33  -0.00
+Qi BPP 5 W                 video Wi-Fi 3.3 W +0.2 C     4.24    0.37    31.1    +0.5    6.02   1.14
+Qi BPP 5 W                 video Wi-Fi 3.3 W 1 C        4.34    0.47    31.2    +0.6    6.42   1.40
+Qi BPP 5 W                 video Wi-Fi 3.3 W cap        4.34    0.47    31.2    +0.6    6.42   1.40
+
+Qi BPP 5 W                 5G outdoor 4.2 W float      5.07    0.00    31.6    +0.0    5.67   0.00
+Qi BPP 5 W                 5G outdoor 4.2 W +0.2 C     5.25    0.18    31.8    +0.2    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W 1 C        5.25    0.18    31.8    +0.2    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W cap        5.25    0.18    31.8    +0.2    6.42   0.49
+
+Qi EPP 15 W                delta 2.5 W      float      2.76    0.00    27.9    +0.0    3.08   0.00
+Qi EPP 15 W                delta 2.5 W      +0.2 C     2.91    0.16    28.3    +0.4    4.53   1.14
+Qi EPP 15 W                delta 2.5 W      1 C        3.86    1.11    30.0    +2.1   10.61   5.70
+Qi EPP 15 W                delta 2.5 W      cap        5.67    2.92    32.6    +4.6   18.42  11.07
+
+Qi EPP 15 W                video Wi-Fi 3.3 W float      3.63    0.00    30.6    +0.0    4.06   0.00
+Qi EPP 15 W                video Wi-Fi 3.3 W +0.2 C     3.80    0.17    31.0    +0.4    5.53   1.14
+Qi EPP 15 W                video Wi-Fi 3.3 W 1 C        4.82    1.19    32.8    +2.2   11.69   5.70
+Qi EPP 15 W                video Wi-Fi 3.3 W cap        6.40    2.78    35.0    +4.4   18.42  10.30
+
+Qi EPP 15 W                5G outdoor 4.2 W float      4.67    0.00    31.5    +0.0    5.23   0.00
+Qi EPP 15 W                5G outdoor 4.2 W +0.2 C     4.87    0.20    31.9    +0.4    6.72   1.14
+Qi EPP 15 W                5G outdoor 4.2 W 1 C        5.97    1.30    33.7    +2.2   12.98   5.70
+Qi EPP 15 W                5G outdoor 4.2 W cap        7.27    2.60    35.4    +3.9   18.42   9.39
+
+Qi2.2 MPP 25 W             delta 2.5 W      float      2.75    0.00    27.9    +0.0    3.07   0.00
+Qi2.2 MPP 25 W             delta 2.5 W      +0.2 C     2.89    0.15    28.3    +0.4    4.51   1.14
+Qi2.2 MPP 25 W             delta 2.5 W      1 C        3.74    1.00    30.0    +2.1   10.48   5.70
+Qi2.2 MPP 25 W             delta 2.5 W      cap        9.19    6.45    37.3    +9.4   30.99  19.37
+
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W float      3.61    0.00    30.6    +0.0    4.04   0.00
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W +0.2 C     3.77    0.16    31.0    +0.4    5.49   1.14
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W 1 C        4.68    1.07    32.7    +2.1   11.53   5.70
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W cap        9.89    6.29    39.7    +9.1   30.99  18.60
+
+Qi2.2 MPP 25 W             5G outdoor 4.2 W float      4.64    0.00    31.5    +0.0    5.19  -0.00
+Qi2.2 MPP 25 W             5G outdoor 4.2 W +0.2 C     4.82    0.18    31.9    +0.4    6.66   1.14
+Qi2.2 MPP 25 W             5G outdoor 4.2 W 1 C        5.80    1.16    33.6    +2.1   12.78   5.70
+Qi2.2 MPP 25 W             5G outdoor 4.2 W cap       10.73    6.09    39.9    +8.4   30.99  17.69
+
+--- ambient 30 C, Qi puck / free air ---
+interface                  session          mode     Q_leaf   saved  T_skin      dT  wall W  cellW
+contact, 0.10 W loss       delta 2.5 W      float      2.62    0.00    46.9    +0.0    2.73   0.00
+contact, 0.10 W loss       delta 2.5 W      +0.2 C     2.83    0.22    48.9    +2.0    4.15   1.14
+contact, 0.10 W loss       delta 2.5 W      1 C        3.31    0.70    52.6    +5.7    9.36   5.70
+contact, 0.10 W loss       delta 2.5 W      cap        6.25    3.63    71.6   +24.7   26.15  19.37
+
+contact, 0.10 W loss       video Wi-Fi 3.3 W float      3.40    0.00    53.7    +0.0    3.55   0.00
+contact, 0.10 W loss       video Wi-Fi 3.3 W +0.2 C     3.66    0.26    56.2    +2.4    5.01   1.14
+contact, 0.10 W loss       video Wi-Fi 3.3 W 1 C        4.17    0.77    60.0    +6.2   10.25   5.70
+contact, 0.10 W loss       video Wi-Fi 3.3 W cap        6.95    3.55    78.2   +24.4   26.15  18.60
+
+contact, 0.10 W loss       5G outdoor 4.2 W float      4.33    0.00    50.3    +0.0    4.52   0.00
+contact, 0.10 W loss       5G outdoor 4.2 W +0.2 C     4.65    0.32    52.5    +2.2    6.05   1.14
+contact, 0.10 W loss       5G outdoor 4.2 W 1 C        5.18    0.85    55.4    +5.2   11.32   5.70
+contact, 0.10 W loss       5G outdoor 4.2 W cap        7.78    3.46    67.7   +17.4   26.15  17.69
+
+Qi BPP 5 W                 delta 2.5 W      float      2.90    0.00    47.1    +0.0    3.24  -0.00
+Qi BPP 5 W                 delta 2.5 W      +0.2 C     3.21    0.32    48.5    +1.4    4.86   1.14
+Qi BPP 5 W                 delta 2.5 W      1 C        3.58    0.68    49.9    +2.8    6.42   2.17
+Qi BPP 5 W                 delta 2.5 W      cap        3.58    0.68    49.9    +2.8    6.42   2.17
+
+Qi BPP 5 W                 video Wi-Fi 3.3 W float      3.87    0.00    54.4    +0.0    4.33  -0.00
+Qi BPP 5 W                 video Wi-Fi 3.3 W +0.2 C     4.24    0.37    55.9    +1.5    6.02   1.14
+Qi BPP 5 W                 video Wi-Fi 3.3 W 1 C        4.34    0.47    56.3    +1.9    6.42   1.40
+Qi BPP 5 W                 video Wi-Fi 3.3 W cap        4.34    0.47    56.3    +1.9    6.42   1.40
+
+Qi BPP 5 W                 5G outdoor 4.2 W float      5.07    0.00    54.3    +0.0    5.67   0.00
+Qi BPP 5 W                 5G outdoor 4.2 W +0.2 C     5.25    0.18    54.9    +0.6    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W 1 C        5.25    0.18    54.9    +0.6    6.42   0.49
+Qi BPP 5 W                 5G outdoor 4.2 W cap        5.25    0.18    54.9    +0.6    6.42   0.49
+
+Qi EPP 15 W                delta 2.5 W      float      2.76    0.00    46.9    +0.0    3.08   0.00
+Qi EPP 15 W                delta 2.5 W      +0.2 C     2.91    0.16    48.0    +1.1    4.53   1.14
+Qi EPP 15 W                delta 2.5 W      1 C        3.86    1.11    53.7    +6.8   10.61   5.70
+Qi EPP 15 W                delta 2.5 W      cap        5.67    2.92    62.9   +16.0   18.42  11.07
+
+Qi EPP 15 W                video Wi-Fi 3.3 W float      3.63    0.00    54.0    +0.0    4.06   0.00
+Qi EPP 15 W                video Wi-Fi 3.3 W +0.2 C     3.80    0.17    55.1    +1.1    5.53   1.14
+Qi EPP 15 W                video Wi-Fi 3.3 W 1 C        4.82    1.19    61.2    +7.2   11.69   5.70
+Qi EPP 15 W                video Wi-Fi 3.3 W cap        6.40    2.78    69.2   +15.2   18.42  10.30
+
+Qi EPP 15 W                5G outdoor 4.2 W float      4.67    0.00    53.7    +0.0    5.23   0.00
+Qi EPP 15 W                5G outdoor 4.2 W +0.2 C     4.87    0.20    54.8    +1.1    6.72   1.14
+Qi EPP 15 W                5G outdoor 4.2 W 1 C        5.97    1.30    60.1    +6.4   12.98   5.70
+Qi EPP 15 W                5G outdoor 4.2 W cap        7.27    2.60    65.6   +11.9   18.42   9.39
+
+Qi2.2 MPP 25 W             delta 2.5 W      float      2.75    0.00    46.9    +0.0    3.07   0.00
+Qi2.2 MPP 25 W             delta 2.5 W      +0.2 C     2.89    0.15    47.9    +1.1    4.51   1.14
+Qi2.2 MPP 25 W             delta 2.5 W      1 C        3.74    1.00    53.5    +6.6   10.48   5.70
+Qi2.2 MPP 25 W             delta 2.5 W      cap        9.19    6.45    81.7   +34.9   30.99  19.37
+
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W float      3.61    0.00    54.0    +0.0    4.04   0.00
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W +0.2 C     3.77    0.16    55.1    +1.1    5.49   1.14
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W 1 C        4.68    1.07    60.9    +7.0   11.53   5.70
+Qi2.2 MPP 25 W             video Wi-Fi 3.3 W cap        9.89    6.29    87.5   +33.5   30.99  18.60
+
+Qi2.2 MPP 25 W             5G outdoor 4.2 W float      4.64    0.00    53.7    +0.0    5.19  -0.00
+Qi2.2 MPP 25 W             5G outdoor 4.2 W +0.2 C     4.82    0.18    54.7    +1.0    6.66   1.14
+Qi2.2 MPP 25 W             5G outdoor 4.2 W 1 C        5.80    1.16    59.9    +6.2   12.78   5.70
+Qi2.2 MPP 25 W             5G outdoor 4.2 W cap       10.73    6.09    80.8   +27.1   30.99  17.69
+
+--- sustained delta-shape load, Qi puck, 25 C still air (W at the loads) ---
+Qi BPP 5 W         float 1.62 W, +0.2 C 1.44 W, 1 C 0.97 W, cap 0.97 W
+Qi EPP 15 W        float 1.64 W, +0.2 C 1.48 W, 1 C 0.74 W, cap 0.00 W
+Qi2.2 MPP 25 W     float 1.64 W, +0.2 C 1.49 W, 1 C 0.76 W, cap 0.00 W

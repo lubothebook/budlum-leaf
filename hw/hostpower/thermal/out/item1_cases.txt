@@ -1,0 +1,163 @@
+ITEM 1 - CASES: steady hottest point of the fixed body for session x interface
+T_skin = hottest touchable surface (front cap, ring shell, bar, back skin). T_cap = hottest front cap tile.
+margin = 36.2 C minus T_skin. A negative margin fails condition 2 of BRIEF Section 5.
+Free-air rows: battery and contact hang in still air (5G: light wind). Qi rows lie on a passive puck.
+Dock rows: the Leaf lies on the 22 C regulated cold plate of hw/dock.
+Cell float: zero cell current. topup: the cell gains 0.2 C (1.14 W) in addition.
+
+--- ambient 25 C, no cold plate ---
+case                               session            T_skin   T_cap  margin hottest         Q_leaf    P_rx   host
+battery only                       delta 2.5 W          41.3    41.1    -5.1 ring shell        2.54    0.00     ok
+battery, on a table                delta 2.5 W          40.1    39.9    -3.9 ring shell        2.54    0.00     ok
+contact, 0.10 W loss               delta 2.5 W          42.1    41.9    -5.9 ring shell        2.62    2.50     ok
+contact, 0.34 W loss               delta 2.5 W          44.6    44.1    -8.4 back skin         2.86    2.50     ok
+contact, I2R of a worn pad         delta 2.5 W          41.5    41.4    -5.3 ring shell        2.56    2.50     ok
+Qi BPP 5 W                         delta 2.5 W          42.2    42.0    -6.0 ring shell        2.90    2.65     ok
+Qi BPP 5 W, cell +0.2 C            delta 2.5 W          43.6    43.4    -7.4 ring shell        3.21    3.88     ok
+Qi EPP 15 W                        delta 2.5 W          42.0    41.8    -5.8 ring shell        2.76    2.65     ok
+Qi EPP 15 W, cell +0.2 C           delta 2.5 W          43.1    42.8    -6.9 ring shell        2.91    3.88     ok
+Qi2.2 MPP 25 W                     delta 2.5 W          42.0    41.7    -5.8 ring shell        2.75    2.65     ok
+Qi2.2 MPP 25 W, cell +0.2 C        delta 2.5 W          43.0    42.8    -6.8 ring shell        2.89    3.88     ok
+
+battery only                       video Wi-Fi 3.3 W    48.2    47.9   -12.0 ring shell        3.33    0.00     ok
+battery, on a table                video Wi-Fi 3.3 W    46.7    46.4   -10.5 ring shell        3.33    0.00     ok
+contact, 0.10 W loss               video Wi-Fi 3.3 W    48.9    48.7   -12.7 ring shell        3.40    3.27     ok
+contact, 0.34 W loss               video Wi-Fi 3.3 W    51.0    50.9   -14.8 ring shell        3.64    3.27     ok
+contact, I2R of a worn pad         video Wi-Fi 3.3 W    48.7    48.4   -12.5 ring shell        3.37    3.27     ok
+Qi BPP 5 W                         video Wi-Fi 3.3 W    49.6    49.2   -13.4 ring shell        3.87    3.48     ok
+Qi BPP 5 W, cell +0.2 C            video Wi-Fi 3.3 W    51.1    50.7   -14.9 ring shell        4.24    4.71     ok
+Qi EPP 15 W                        video Wi-Fi 3.3 W    49.1    48.8   -12.9 ring shell        3.63    3.48     ok
+Qi EPP 15 W, cell +0.2 C           video Wi-Fi 3.3 W    50.3    49.9   -14.1 ring shell        3.80    4.71     ok
+Qi2.2 MPP 25 W                     video Wi-Fi 3.3 W    49.1    48.8   -12.9 ring shell        3.61    3.48     ok
+Qi2.2 MPP 25 W, cell +0.2 C        video Wi-Fi 3.3 W    50.2    49.9   -14.0 ring shell        3.77    4.71     ok
+
+battery only                       5G outdoor 4.2 W     44.9    44.6    -8.7 ring shell        4.28    0.00     ok
+battery, on a table                5G outdoor 4.2 W     46.1    45.8    -9.9 ring shell        4.28    0.00     ok
+contact, 0.10 W loss               5G outdoor 4.2 W     45.4    45.1    -9.2 ring shell        4.33    4.18     ok
+contact, 0.34 W loss               5G outdoor 4.2 W     46.9    46.7   -10.7 ring shell        4.57    4.18     ok
+contact, I2R of a worn pad         5G outdoor 4.2 W     45.4    45.1    -9.2 ring shell        4.34    4.18     ok
+Qi BPP 5 W                         5G outdoor 4.2 W     49.4    49.1   -13.2 ring shell        5.07    4.46     ok
+Qi BPP 5 W, cell +0.2 C            5G outdoor 4.2 W     50.0    49.7   -13.8 ring shell        5.25    5.00     ok
+Qi EPP 15 W                        5G outdoor 4.2 W     48.8    48.5   -12.6 ring shell        4.67    4.46     ok
+Qi EPP 15 W, cell +0.2 C           5G outdoor 4.2 W     49.9    49.6   -13.7 ring shell        4.87    5.70     ok
+Qi2.2 MPP 25 W                     5G outdoor 4.2 W     48.8    48.5   -12.6 ring shell        4.64    4.46     ok
+Qi2.2 MPP 25 W, cell +0.2 C        5G outdoor 4.2 W     49.8    49.5   -13.6 ring shell        4.82    5.70     ok
+
+--- ambient 25 C, dock cold plate ---
+case                               session            T_skin   T_cap  margin hottest         Q_leaf    P_rx   host
+battery only                       delta 2.5 W          27.2    26.9    +9.0 ring shell        2.54    0.00     ok
+battery, on a table                delta 2.5 W          27.2    26.9    +9.0 ring shell        2.54    0.00     ok
+contact, 0.10 W loss               delta 2.5 W          27.4    27.1    +8.8 ring shell        2.62    2.50     ok
+contact, 0.34 W loss               delta 2.5 W          27.9    27.8    +8.3 ring shell        2.86    2.50     ok
+contact, I2R of a worn pad         delta 2.5 W          27.3    27.0    +8.9 ring shell        2.56    2.50     ok
+Qi BPP 5 W                         delta 2.5 W          28.0    27.6    +8.2 ring shell        2.90    2.65     ok
+Qi BPP 5 W, cell +0.2 C            delta 2.5 W          28.4    28.1    +7.8 ring shell        3.21    3.88     ok
+Qi EPP 15 W                        delta 2.5 W          27.9    27.6    +8.3 ring shell        2.76    2.65     ok
+Qi EPP 15 W, cell +0.2 C           delta 2.5 W          28.3    28.0    +7.9 ring shell        2.91    3.88     ok
+Qi2.2 MPP 25 W                     delta 2.5 W          27.9    27.6    +8.3 ring shell        2.75    2.65     ok
+Qi2.2 MPP 25 W, cell +0.2 C        delta 2.5 W          28.3    28.0    +7.9 ring shell        2.89    3.88     ok
+
+battery only                       video Wi-Fi 3.3 W    29.7    29.2    +6.5 ring shell        3.33    0.00     ok
+battery, on a table                video Wi-Fi 3.3 W    29.7    29.2    +6.5 ring shell        3.33    0.00     ok
+contact, 0.10 W loss               video Wi-Fi 3.3 W    29.9    29.4    +6.3 ring shell        3.40    3.27     ok
+contact, 0.34 W loss               video Wi-Fi 3.3 W    30.4    30.0    +5.8 ring shell        3.64    3.27     ok
+contact, I2R of a worn pad         video Wi-Fi 3.3 W    29.8    29.3    +6.4 ring shell        3.37    3.27     ok
+Qi BPP 5 W                         video Wi-Fi 3.3 W    30.7    30.2    +5.5 ring shell        3.87    3.48     ok
+Qi BPP 5 W, cell +0.2 C            video Wi-Fi 3.3 W    31.1    30.6    +5.1 ring shell        4.24    4.71     ok
+Qi EPP 15 W                        video Wi-Fi 3.3 W    30.6    30.1    +5.6 ring shell        3.63    3.48     ok
+Qi EPP 15 W, cell +0.2 C           video Wi-Fi 3.3 W    31.0    30.5    +5.2 ring shell        3.80    4.71     ok
+Qi2.2 MPP 25 W                     video Wi-Fi 3.3 W    30.6    30.1    +5.6 ring shell        3.61    3.48     ok
+Qi2.2 MPP 25 W, cell +0.2 C        video Wi-Fi 3.3 W    31.0    30.5    +5.2 ring shell        3.77    4.71     ok
+
+battery only                       5G outdoor 4.2 W     30.4    29.9    +5.8 ring shell        4.28    0.00     ok
+battery, on a table                5G outdoor 4.2 W     30.4    29.9    +5.8 ring shell        4.28    0.00     ok
+contact, 0.10 W loss               5G outdoor 4.2 W     30.5    30.1    +5.7 ring shell        4.33    4.18     ok
+contact, 0.34 W loss               5G outdoor 4.2 W     31.0    30.6    +5.2 ring shell        4.57    4.18     ok
+contact, I2R of a worn pad         5G outdoor 4.2 W     30.5    30.1    +5.7 ring shell        4.34    4.18     ok
+Qi BPP 5 W                         5G outdoor 4.2 W     31.6    31.1    +4.6 ring shell        5.07    4.46     ok
+Qi BPP 5 W, cell +0.2 C            5G outdoor 4.2 W     31.8    31.3    +4.4 ring shell        5.25    5.00     ok
+Qi EPP 15 W                        5G outdoor 4.2 W     31.5    31.0    +4.7 ring shell        4.67    4.46     ok
+Qi EPP 15 W, cell +0.2 C           5G outdoor 4.2 W     31.9    31.4    +4.3 ring shell        4.87    5.70     ok
+Qi2.2 MPP 25 W                     5G outdoor 4.2 W     31.5    31.0    +4.7 ring shell        4.64    4.46     ok
+Qi2.2 MPP 25 W, cell +0.2 C        5G outdoor 4.2 W     31.9    31.3    +4.3 ring shell        4.82    5.70     ok
+
+--- ambient 30 C, no cold plate ---
+case                               session            T_skin   T_cap  margin hottest         Q_leaf    P_rx   host
+battery only                       delta 2.5 W          46.1    45.9    -9.9 ring shell        2.54    0.00     ok
+battery, on a table                delta 2.5 W          45.0    44.8    -8.8 ring shell        2.54    0.00     ok
+contact, 0.10 W loss               delta 2.5 W          46.9    46.7   -10.7 ring shell        2.62    2.50     ok
+contact, 0.34 W loss               delta 2.5 W          49.4    49.0   -13.2 back skin         2.86    2.50     ok
+contact, I2R of a worn pad         delta 2.5 W          46.4    46.2   -10.2 ring shell        2.56    2.50     ok
+Qi BPP 5 W                         delta 2.5 W          47.1    46.9   -10.9 ring shell        2.90    2.65     ok
+Qi BPP 5 W, cell +0.2 C            delta 2.5 W          48.5    48.3   -12.3 ring shell        3.21    3.88     ok
+Qi EPP 15 W                        delta 2.5 W          46.9    46.7   -10.7 ring shell        2.76    2.65     ok
+Qi EPP 15 W, cell +0.2 C           delta 2.5 W          48.0    47.7   -11.8 ring shell        2.91    3.88     ok
+Qi2.2 MPP 25 W                     delta 2.5 W          46.9    46.7   -10.7 ring shell        2.75    2.65     ok
+Qi2.2 MPP 25 W, cell +0.2 C        delta 2.5 W          47.9    47.7   -11.7 ring shell        2.89    3.88     ok
+
+battery only                       video Wi-Fi 3.3 W    53.0    52.7   -16.8 ring shell        3.33    0.00     ok
+battery, on a table                video Wi-Fi 3.3 W    51.5    51.3   -15.3 ring shell        3.33    0.00     ok
+contact, 0.10 W loss               video Wi-Fi 3.3 W    53.7    53.4   -17.5 ring shell        3.40    3.27     ok
+contact, 0.34 W loss               video Wi-Fi 3.3 W    55.8    55.6   -19.6 ring shell        3.64    3.27     ok
+contact, I2R of a worn pad         video Wi-Fi 3.3 W    53.5    53.2   -17.3 ring shell        3.37    3.27     ok
+Qi BPP 5 W                         video Wi-Fi 3.3 W    54.4    54.1   -18.2 ring shell        3.87    3.48     ok
+Qi BPP 5 W, cell +0.2 C            video Wi-Fi 3.3 W    55.9    55.6   -19.7 ring shell        4.24    4.71     ok
+Qi EPP 15 W                        video Wi-Fi 3.3 W    54.0    53.7   -17.8 ring shell        3.63    3.48     ok
+Qi EPP 15 W, cell +0.2 C           video Wi-Fi 3.3 W    55.1    54.8   -18.9 ring shell        3.80    4.71     ok
+Qi2.2 MPP 25 W                     video Wi-Fi 3.3 W    54.0    53.6   -17.8 ring shell        3.61    3.48     ok
+Qi2.2 MPP 25 W, cell +0.2 C        video Wi-Fi 3.3 W    55.1    54.7   -18.9 ring shell        3.77    4.71     ok
+
+battery only                       5G outdoor 4.2 W     49.8    49.5   -13.6 ring shell        4.28    0.00     ok
+battery, on a table                5G outdoor 4.2 W     51.0    50.7   -14.8 ring shell        4.28    0.00     ok
+contact, 0.10 W loss               5G outdoor 4.2 W     50.3    50.0   -14.1 ring shell        4.33    4.18     ok
+contact, 0.34 W loss               5G outdoor 4.2 W     51.8    51.6   -15.6 ring shell        4.57    4.18     ok
+contact, I2R of a worn pad         5G outdoor 4.2 W     50.3    50.0   -14.1 ring shell        4.34    4.18     ok
+Qi BPP 5 W                         5G outdoor 4.2 W     54.3    54.0   -18.1 ring shell        5.07    4.46     ok
+Qi BPP 5 W, cell +0.2 C            5G outdoor 4.2 W     54.9    54.6   -18.7 ring shell        5.25    5.00     ok
+Qi EPP 15 W                        5G outdoor 4.2 W     53.7    53.4   -17.5 ring shell        4.67    4.46     ok
+Qi EPP 15 W, cell +0.2 C           5G outdoor 4.2 W     54.8    54.5   -18.6 ring shell        4.87    5.70     ok
+Qi2.2 MPP 25 W                     5G outdoor 4.2 W     53.7    53.4   -17.5 ring shell        4.64    4.46     ok
+Qi2.2 MPP 25 W, cell +0.2 C        5G outdoor 4.2 W     54.7    54.4   -18.5 ring shell        4.82    5.70     ok
+
+--- ambient 30 C, dock cold plate ---
+case                               session            T_skin   T_cap  margin hottest         Q_leaf    P_rx   host
+battery only                       delta 2.5 W          27.7    27.4    +8.5 ring shell        2.54    0.00     ok
+battery, on a table                delta 2.5 W          27.7    27.4    +8.5 ring shell        2.54    0.00     ok
+contact, 0.10 W loss               delta 2.5 W          27.9    27.6    +8.3 ring shell        2.62    2.50     ok
+contact, 0.34 W loss               delta 2.5 W          28.4    28.2    +7.8 ring shell        2.86    2.50     ok
+contact, I2R of a worn pad         delta 2.5 W          27.8    27.5    +8.4 ring shell        2.56    2.50     ok
+Qi BPP 5 W                         delta 2.5 W          28.5    28.1    +7.7 ring shell        2.90    2.65     ok
+Qi BPP 5 W, cell +0.2 C            delta 2.5 W          28.9    28.5    +7.3 ring shell        3.21    3.88     ok
+Qi EPP 15 W                        delta 2.5 W          28.4    28.1    +7.8 ring shell        2.76    2.65     ok
+Qi EPP 15 W, cell +0.2 C           delta 2.5 W          28.8    28.4    +7.4 ring shell        2.91    3.88     ok
+Qi2.2 MPP 25 W                     delta 2.5 W          28.4    28.1    +7.8 ring shell        2.75    2.65     ok
+Qi2.2 MPP 25 W, cell +0.2 C        delta 2.5 W          28.8    28.4    +7.4 ring shell        2.89    3.88     ok
+
+battery only                       video Wi-Fi 3.3 W    30.1    29.7    +6.1 ring shell        3.33    0.00     ok
+battery, on a table                video Wi-Fi 3.3 W    30.1    29.7    +6.1 ring shell        3.33    0.00     ok
+contact, 0.10 W loss               video Wi-Fi 3.3 W    30.3    29.9    +5.9 ring shell        3.40    3.27     ok
+contact, 0.34 W loss               video Wi-Fi 3.3 W    30.9    30.5    +5.3 ring shell        3.64    3.27     ok
+contact, I2R of a worn pad         video Wi-Fi 3.3 W    30.3    29.8    +5.9 ring shell        3.37    3.27     ok
+Qi BPP 5 W                         video Wi-Fi 3.3 W    31.2    30.6    +5.0 ring shell        3.87    3.48     ok
+Qi BPP 5 W, cell +0.2 C            video Wi-Fi 3.3 W    31.6    31.1    +4.6 ring shell        4.24    4.71     ok
+Qi EPP 15 W                        video Wi-Fi 3.3 W    31.1    30.6    +5.1 ring shell        3.63    3.48     ok
+Qi EPP 15 W, cell +0.2 C           video Wi-Fi 3.3 W    31.5    30.9    +4.7 ring shell        3.80    4.71     ok
+Qi2.2 MPP 25 W                     video Wi-Fi 3.3 W    31.1    30.6    +5.1 ring shell        3.61    3.48     ok
+Qi2.2 MPP 25 W, cell +0.2 C        video Wi-Fi 3.3 W    31.5    30.9    +4.7 ring shell        3.77    4.71     ok
+
+battery only                       5G outdoor 4.2 W     31.1    30.6    +5.1 ring shell        4.28    0.00     ok
+battery, on a table                5G outdoor 4.2 W     31.1    30.6    +5.1 ring shell        4.28    0.00     ok
+contact, 0.10 W loss               5G outdoor 4.2 W     31.2    30.7    +5.0 ring shell        4.33    4.18     ok
+contact, 0.34 W loss               5G outdoor 4.2 W     31.7    31.3    +4.5 ring shell        4.57    4.18     ok
+contact, I2R of a worn pad         5G outdoor 4.2 W     31.3    30.8    +4.9 ring shell        4.34    4.18     ok
+Qi BPP 5 W                         5G outdoor 4.2 W     32.4    31.8    +3.8 ring shell        5.07    4.46     ok
+Qi BPP 5 W, cell +0.2 C            5G outdoor 4.2 W     32.6    32.0    +3.6 ring shell        5.25    5.00     ok
+Qi EPP 15 W                        5G outdoor 4.2 W     32.2    31.7    +4.0 ring shell        4.67    4.46     ok
+Qi EPP 15 W, cell +0.2 C           5G outdoor 4.2 W     32.6    32.0    +3.6 ring shell        4.87    5.70     ok
+Qi2.2 MPP 25 W                     5G outdoor 4.2 W     32.2    31.7    +4.0 ring shell        4.64    4.46     ok
+Qi2.2 MPP 25 W, cell +0.2 C        5G outdoor 4.2 W     32.6    32.0    +3.6 ring shell        4.82    5.70     ok
+
+--- reference: the unfixed L.6.0 baseline body, battery only, 25 C free air ---
+delta 2.5 W          T_skin 61.3 C (ring shell)
+video Wi-Fi 3.3 W    T_skin 79.1 C (ring shell)
+5G outdoor 4.2 W     T_skin 66.0 C (ring shell)

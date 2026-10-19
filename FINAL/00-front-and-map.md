@@ -110,6 +110,8 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 19 | **The second face, the custom shape, the patent screen and the ledger**: the Duo rule, the SZ rule and the freedom to operate | DUO-1 to DUO-6, SZ-1 to SZ-5, PRG-12, PRG-14 to PRG-16 |
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
 | 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-21 to MON-23, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
+| 22 | **Host power and the living Leaf**: the Host Life Law, the tiers, the power path, the heat, the power door and the claim | HST-1 to HST-29, RG-19 |
+| 23 | **The Core, the Skin and the Heartbeat**: the Rule of Necessity, the distance classes, the Split and the search for unlimited energy | CSK-1 to CSK-29, RG-20 |
 
 ### 0.7 What is fixed and what is open
 
@@ -124,7 +126,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 |---|---|---|
 | "176 ppd at the eye" for the Frame came from the flat screen formula and is wrong | the near eye rule: **pixels across divided by the field across**. The Frame uses a 4K class microdisplay at about 2 400 ppi. The Field mode is about 20 to 25 ppd | Part 15, H-1 |
 | two thickness values for one face (0.46 and 0.59) | the ledger is single: 0.46 + 2.88 + 0.46 + 0.06 + 0.04 = **3.90 mm nominal, 4.00 mm maximum** | Part 15, H-2 |
-| the gate count said 90 in one part and 89 in another | **276 gates: 242 device and network, 16 program and 18 research** at L.6.0, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
+| the gate count said 90 in one part and 89 in another | **336 gates: 300 device and network, 16 program and 20 research** at the L.7 candidate, and the count comes from `tools/canon.json` by gate PRG-15 | Part 15, H-3 and H-16 |
 
 **The rule introduced by the pass**. An audit of the numbers and of the physics runs at every revision. Its findings are published in this part, and not quietly fixed. `[DECISION]`
 
@@ -141,7 +143,7 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | `tools/check_crossrefs.py` with `tools/canon.json` | **PRG-15** | one number per count, held in one file, measured against every claim |
 | `pafta/check_sheets.py` | the drawing line | the overflow, the collision and the covered text of every sheet |
 
-**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 276 gates of 242 device and network, 16 program and 18 research. 43 gap items of 14 blockers, 22 major and 7 minor. `[DECISION]`
+**The measurement of Revision L.6.0**. `FINAL/`, `HARDWARE/` and `MASTER/` pass at `0` em dashes, `0` long sentences, `0` long cells and `0` warning words. The three `AUDIT/` arena reports and `NEREDE-NE-VAR.md` still carry findings from before L.6.0. Those findings are recorded, and they are not hidden. 336 gates of 300 device and network, 16 program and 20 research. 54 gap items of 17 blockers, 30 major and 7 minor. `[DECISION]`
 
 ### 0.77 The block of 2026-10-12: 4-Quadrant (`+`) 2.00 mm (`68 g`) solid-state body, universal `Qi2.2`, and `90°`-bent-stem B module (`20 g`)
 
@@ -186,6 +188,33 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | **twenty-four new gates** and four new gap items | Part 21, Section 21.8; Part 16 |
 
 **The rule of the block**. Part 21 wins over every older part it names, until that part is rewritten. The sheets and the STL models still show L.5.0 and are listed for redraw. `[DECISION]`
+
+**The order of Ayaz that opened Revision L.6.1, 2026-10-19**. *The main energy lives in the hardware, and the Leaf works while the hardware works.* Ayaz gave the program to the Program Lead.
+
+| The change | Where |
+|---|---|
+| **the Host Life Law**: on a paired host with a heat path, a Leaf lives as long as the host feeds it | Part 22, Section 22.2 |
+| **the Buffer tier is the first host-power tier**, and the Bare tier stays a study | Part 22, Section 22.3 |
+| **the host feeds the load and the cell floats**: `7.2` times the cell life in the model | Part 22, Section 22.4 |
+| **always-on needs a host that pulls heat**: the dock plate passes every case, free air passes none | Part 22, Section 22.5 |
+| **the word "first" is held** until a prior art search and a patent opinion | Part 22, Section 22.11 |
+| **twenty-nine new gates**, research order RG-19 and five new gap items | Part 22, Sections 22.14 to 22.16; Part 16 |
+
+**The rule of the block**. Part 22 adds to Part 21 and changes no L.6.0 number. Its findings against earlier text are in Part 22, Section 22.16. `[DECISION]`
+
+**The orders of Ayaz that opened the L.7 candidate, 2026-10-19**. *Keep all the components of the screen in a separate hardware. The hardware can be kilometres away. Whatever is needed stays in the camera part. The battery in the Leaf is very small, and the energy is unlimited.*
+
+| The change | Where |
+|---|---|
+| **the Rule of Necessity**: the camera part keeps what physics forces, the Core holds all else | Part 23, Section 23.3 |
+| **the Split lives as a wired Skin at C0 and C1**, and at C2 nothing leaves the Leaf | Part 23, Sections 23.2 and 23.6 |
+| **the screen is lighter and the unit is `15 %` cheaper**, because the micro-LED tile stays at `76 %` | Part 23, Sections 23.1 and 23.9 |
+| **the lying Skin**: a tap never confirms a key operation | Part 23, Section 23.7 |
+| **the Heartbeat Law**: alive at microwatts, visible at millijoules, bright only where a host stands | Part 23, Section 23.10 |
+| **the Paper layer** in the cell layer that the Skin frees | Part 23, Section 23.11 |
+| **twenty-nine new gates**, research order RG-20 and six new gap items | Part 23, Sections 23.15 to 23.17; Part 16 |
+
+**The rule of the block**. Part 23 adds to Parts 21 and 22 and changes no L.6.0 number. Its findings against earlier text are in Part 23, Section 23.14. `[DECISION]`
 
 ### 0.8 The standing of the drawing set and the earlier volumes
 

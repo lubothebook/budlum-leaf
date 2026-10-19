@@ -1,0 +1,31 @@
+DOCK TEC CHECK: the 22 C cold plate of hw/dock holds the set-point for every case of Item 2?
+q_need = 0.87 x Leaf heat + Tx coil loss (Qi) + 0.15 W/K x (T_amb - 22). Solved with hw/dock/budget.py solve_tec.
+
+T_amb    session           case                            q_need   P_tec   Q_hot   T_hot    COP
+25 C     delta 2.5 W       battery only                      2.66    0.38    3.09    25.9   6.94
+25 C     delta 2.5 W       contact, 0.34 W loss              2.94    0.44    3.52    26.1   6.68
+25 C     delta 2.5 W       Qi2.2 MPP 25 W                    2.98    0.44    3.51    26.1   6.78
+25 C     delta 2.5 W       Qi2.2 MPP 25 W, cell charges a    9.90    2.47   12.42    28.7   4.00
+25 C     video Wi-Fi 3.3 W battery only                      3.35    0.50    3.93    26.2   6.69
+25 C     video Wi-Fi 3.3 W contact, 0.34 W loss              3.62    0.57    4.35    26.3   6.40
+25 C     video Wi-Fi 3.3 W Qi2.2 MPP 25 W                    3.78    0.60    4.57    26.4   6.31
+25 C     video Wi-Fi 3.3 W Qi2.2 MPP 25 W, cell charges a   10.52    2.76   13.33    29.0   3.81
+25 C     5G outdoor 4.2 W  battery only                      4.17    0.67    4.98    26.5   6.23
+25 C     5G outdoor 4.2 W  contact, 0.34 W loss              4.43    0.71    5.18    26.6   6.26
+25 C     5G outdoor 4.2 W  Qi2.2 MPP 25 W                    4.73    0.78    5.61    26.7   6.04
+25 C     5G outdoor 4.2 W  Qi2.2 MPP 25 W, cell charges a   11.24    3.14   14.49    29.3   3.58
+35 C     delta 2.5 W       battery only                      4.16    3.75    8.05    37.4   1.11
+35 C     delta 2.5 W       contact, 0.34 W loss              4.44    3.93    8.53    37.6   1.13
+35 C     delta 2.5 W       Qi2.2 MPP 25 W                    4.48    3.93    8.52    37.6   1.14
+35 C     delta 2.5 W       Qi2.2 MPP 25 W, cell charges a   11.40    9.61   21.07    41.3   1.19
+35 C     video Wi-Fi 3.3 W battery only                      4.85    4.11    8.99    37.7   1.18
+35 C     video Wi-Fi 3.3 W contact, 0.34 W loss              5.12    4.29    9.48    37.8   1.19
+35 C     video Wi-Fi 3.3 W Qi2.2 MPP 25 W                    5.28    4.38    9.72    37.9   1.21
+35 C     video Wi-Fi 3.3 W Qi2.2 MPP 25 W, cell charges a   12.02   10.31   22.40    41.7   1.17
+35 C     5G outdoor 4.2 W  battery only                      5.67    4.67   10.45    38.1   1.22
+35 C     5G outdoor 4.2 W  contact, 0.34 W loss              5.93    4.86   10.94    38.3   1.22
+35 C     5G outdoor 4.2 W  Qi2.2 MPP 25 W                    6.23    5.06   11.43    38.4   1.23
+35 C     5G outdoor 4.2 W  Qi2.2 MPP 25 W, cell charges a   12.74   11.19   24.00    42.2   1.14
+
+the TEC pumps at least 27 W at the set-point from 20 to 35 C (check cap 32 W). Item 2 needs at most 12 W.
+dew point: at 35 C and 60 percent relative humidity it is about 26 C, above the 22 C plate. Open issue.

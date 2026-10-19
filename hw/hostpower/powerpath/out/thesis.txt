@@ -1,0 +1,55 @@
+POWER-PATH · question 5 · the thesis check, BRIEF Section 5
+
+P_host >= P_load + P_topup, peak 8.7 W, path loss included. Top-up at 0.5 C: Buffer 20 cells 0.58 W, Full 3.70 W
+1 power     H0 wall dock, peak plus top-up (Buffer 20)                     PASS  need 9.6 W, offer 25.0 W, margin +15.4 W
+1 power     H0 wall dock, peak plus top-up (Full 128)                      PASS  need 12.8 W, offer 25.0 W, margin +12.2 W
+1 power     H1 dock pack, 20 Wh, peak plus top-up (Buffer 20)              PASS  need 9.6 W, offer 25.0 W, margin +15.4 W
+1 power     H1 dock pack, 20 Wh, peak plus top-up (Full 128)               PASS  need 12.8 W, offer 25.0 W, margin +12.2 W
+1 power     H2 desk USB-C PD, peak plus top-up (Buffer 20)                 PASS  need 9.6 W, offer 45.0 W, margin +35.4 W
+1 power     H2 desk USB-C PD, peak plus top-up (Full 128)                  PASS  need 12.8 W, offer 45.0 W, margin +32.2 W
+1 power     H3a vehicle 12 V, peak plus top-up (Buffer 20)                 PASS  need 9.6 W, offer 45.0 W, margin +35.4 W
+1 power     H3a vehicle 12 V, peak plus top-up (Full 128)                  PASS  need 12.8 W, offer 45.0 W, margin +32.2 W
+1 power     H3b vehicle 24 V, peak plus top-up (Buffer 20)                 PASS  need 9.6 W, offer 45.0 W, margin +35.4 W
+1 power     H3b vehicle 24 V, peak plus top-up (Full 128)                  PASS  need 12.8 W, offer 45.0 W, margin +32.2 W
+1 power     H4a industrial 24 V, peak plus top-up (Buffer 20)              PASS  need 9.6 W, offer 25.0 W, margin +15.4 W
+1 power     H4a industrial 24 V, peak plus top-up (Full 128)               PASS  need 12.8 W, offer 25.0 W, margin +12.2 W
+1 power     H4b PoE type 2 (802.3at), peak plus top-up (Buffer 20)         PASS  need 9.6 W, offer 22.9 W, margin +13.4 W
+1 power     H4b PoE type 2 (802.3at), peak plus top-up (Full 128)          PASS  need 12.8 W, offer 22.9 W, margin +10.1 W
+1 power     H4c PoE type 3 (802.3bt), peak plus top-up (Buffer 20)         PASS  need 9.6 W, offer 45.9 W, margin +36.3 W
+1 power     H4c PoE type 3 (802.3bt), peak plus top-up (Full 128)          PASS  need 12.8 W, offer 45.9 W, margin +33.1 W
+1 power     H5 worn power bank or belt pack, peak plus top-up (Buffer 20)  PASS  need 9.6 W, offer 18.0 W, margin +8.4 W
+1 power     H5 worn power bank or belt pack, peak plus top-up (Full 128)   PASS  need 12.8 W, offer 18.0 W, margin +5.2 W
+1 power     H6a low-power Qi pad, 5 W, peak plus top-up (Buffer 20)        FAIL  need 11.8 W, offer 5.0 W, margin -6.8 W
+1 power     H6a low-power Qi pad, 5 W, peak plus top-up (Full 128)         FAIL  need 15.7 W, offer 5.0 W, margin -10.7 W
+1 power     H6b Qi2 pad, 15 W, peak plus top-up (Buffer 20)                PASS  need 9.6 W, offer 15.0 W, margin +5.4 W
+1 power     H6b Qi2 pad, 15 W, peak plus top-up (Full 128)                 PASS  need 12.8 W, offer 15.0 W, margin +2.2 W
+1 power     H6c Qi2.2 pad, 25 W, peak plus top-up (Buffer 20)              PASS  need 9.6 W, offer 25.0 W, margin +15.4 W
+1 power     H6c Qi2.2 pad, 25 W, peak plus top-up (Full 128)               PASS  need 12.8 W, offer 25.0 W, margin +12.2 W
+
+1 power     weak host H6a 5 W, outdoor 7.5 W 15 min, Buffer 20 cells S, float 60 % FAIL  pack assist; bus under the 3.40 V seat floor 12 s; final pack SOC 0.18
+1 power     weak host H6a 5 W, outdoor 7.5 W 15 min, Full 128 cells S      PASS  pack assist; bus under the 3.40 V seat floor 0 s; final pack SOC 0.46
+
+E_buffer >= P_peak x t_handover, and a power gap never loses chain state
+4 continuity energy form, 3 s at 8.7 W, Buffer 20 cells floated             PASS  usable 0.559 Wh against 0.0072 Wh, a factor of 77
+4 continuity power form, 8.7 W for 3 s, Buffer 20 cells at 3 C              FAIL  20 cells carry 3.1 W at 3 C, short by 5.6 W; the peak needs 53 cells at 3 C (33 at 5 C)
+4 continuity walk of 5 min at the delta session 2.24 W, Buffer floated at 60 % PASS  15 cells (0.86 Wh nominal), inside the 0.3 to 1.5 Wh of the BRIEF
+4 continuity 30 min at the delta session, Buffer floated at 60 %            FAIL  41 cells, 2.36 Wh nominal, against the 1.5 Wh top of the BRIEF, over by 58 %
+4 continuity 30 min at the delta session, Buffer topped to 100 % before the gap PASS  23 cells, 1.33 Wh nominal, but the seat floor of 3.40 V limits it (v)
+4 continuity Bare capacitor store, 3 s at 8.7 W, in the 0.24 mm margin      FAIL  best EDLC needs 2.32 cm3 against 1.54 cm3 of margin, and no published part is under 0.9 mm thick
+4 continuity Bare capacitor store, 3 s at the safe screen 0.219 W, to close a session PASS (in cell volume) 0.06 to 0.23 cm3 of EDLC (1 to 3 tiles of cell volume), 0.9 mm thick: it needs cell layer room, not the margin
+4 continuity Bare thin solid-state store in the margin, standby 0.061 W for 5 min PASS  fits at 0.24 mm; it cannot carry a screen, because of its 100 ohm resistance (10 mA pulse)
+4 continuity island rail (U7 and U4 ROM) over all 13 simulated runs         PASS  1V8_AON never dropped in brownout, host loss, vanish, hot swap and 5 W host runs
+4 continuity quadrant swap with no host, Buffer cells spread over four quadrants PASS  bus min 3.72 V, no mode change
+4 continuity quadrant swap with no host, all Buffer cells in the removed quadrant FAIL  body bus lost for 3.0 s (ISLAND 3.0 s). Place Buffer cells in all four quadrants
+    island-only run time of the B cell from 60 %: 2.5 h at 0.031 W from the cell
+    island-only run time of the B cell from 100 %: 4.4 h at 0.031 W from the cell
+
+2 heat      interface heat in the Leaf at 8.7 W, contact (H0 to H5)        INFO  0.28 W, set by U_Q loss
+2 heat      interface heat in the Leaf at 8.7 W, Qi pad (H6)               INFO  0.76 W, 2.7 times the contact value
+3 trust     host input enters at VHV behind the OR diode; VBUS and U7 are never connected to a host before the proof BY DESIGN simulator: host qualified only after 3 ms challenge, the contract and 20 ms; before that VHV leaves stay at 0 V
+
+THESIS READING
+  The Host Life Law holds for power on the hosts H0 to H4 and H6c. It fails for a 5 W host and for the 25 W case on PoE type 2, a belt pack and low-power pads.
+  The cell as the bridge holds for gaps up to 3 s at the delta class and for a walk of 5 min. It does not hold at the 8.7 W peak with the 0.3 to 1.5 Wh Buffer.
+  Bare holds as 'a surface' only with at least 3 tiles of cell volume given to an EDLC. It does not hold inside the 0.24 mm margin.
+  Cell life: host-fed Full lives 7.2 times as long as the cell cycled daily (13.4 against 1.8 years at 25 C). A Buffer of 20 cells lives 4.2 times as long, because it does all the bridging work.

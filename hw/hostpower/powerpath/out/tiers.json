@@ -1,0 +1,2458 @@
+{
+ "assumptions": {
+  "CMAX": 3.0,
+  "V_FLOOR": 3.4,
+  "SOC_FLOOR": 0.1,
+  "SOC_FLOAT": 0.6,
+  "ETA_CONV": 0.9,
+  "note": "loads are W at the cells (VBUS)"
+ },
+ "buffer": {
+  "cell_G": {
+   "E_Wh": 0.04612955999999999,
+   "swing_float": 0.4851014625529495,
+   "swing_topped": 0.9112510939611543
+  },
+  "cell_S": {
+   "E_Wh": 0.05766194999999999,
+   "swing_float": 0.4851014625529495,
+   "swing_topped": 0.9112510939611543
+  },
+  "tables": {
+   "S floated at 60 %": {
+    "standby": {
+     "0.1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-06,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-05,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "3 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 5.0936702033674176e-05,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "30 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.0005093670203367418,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "5 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.005093670203367418,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "30 min": {
+      "n": 2,
+      "limit": "energy",
+      "E_need_Wh": 0.030562021220204506,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.09695090810457e-06,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.0969509081045696e-05,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "3 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.0001829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "30 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.001829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "5 min": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.01829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "30 min": {
+      "n": 5,
+      "limit": "energy",
+      "E_need_Wh": 0.10974511634588226,
+      "E_cells_nominal_Wh": 0.2883097499999999,
+      "mass_g": 0.5700000000000001
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "n": 14,
+      "limit": "current",
+      "E_need_Wh": 6.228513020172099e-05,
+      "E_cells_nominal_Wh": 0.8072672999999999,
+      "mass_g": 1.596
+     },
+     "1 s": {
+      "n": 14,
+      "limit": "current",
+      "E_need_Wh": 0.0006228513020172099,
+      "E_cells_nominal_Wh": 0.8072672999999999,
+      "mass_g": 1.596
+     },
+     "3 s": {
+      "n": 14,
+      "limit": "current",
+      "E_need_Wh": 0.0018685539060516296,
+      "E_cells_nominal_Wh": 0.8072672999999999,
+      "mass_g": 1.596
+     },
+     "30 s": {
+      "n": 14,
+      "limit": "current",
+      "E_need_Wh": 0.018685539060516294,
+      "E_cells_nominal_Wh": 0.8072672999999999,
+      "mass_g": 1.596
+     },
+     "5 min": {
+      "n": 15,
+      "limit": "current",
+      "E_need_Wh": 0.18685539060516296,
+      "E_cells_nominal_Wh": 0.8649292499999999,
+      "mass_g": 1.71
+     },
+     "30 min": {
+      "n": 41,
+      "limit": "energy",
+      "E_need_Wh": 1.1211323436309777,
+      "E_cells_nominal_Wh": 2.3641399499999998,
+      "mass_g": 4.674
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "n": 22,
+      "limit": "current",
+      "E_need_Wh": 0.00010126716809775344,
+      "E_cells_nominal_Wh": 1.2685628999999998,
+      "mass_g": 2.508
+     },
+     "1 s": {
+      "n": 22,
+      "limit": "current",
+      "E_need_Wh": 0.0010126716809775345,
+      "E_cells_nominal_Wh": 1.2685628999999998,
+      "mass_g": 2.508
+     },
+     "3 s": {
+      "n": 22,
+      "limit": "current",
+      "E_need_Wh": 0.003038015042932603,
+      "E_cells_nominal_Wh": 1.2685628999999998,
+      "mass_g": 2.508
+     },
+     "30 s": {
+      "n": 23,
+      "limit": "current",
+      "E_need_Wh": 0.030380150429326035,
+      "E_cells_nominal_Wh": 1.3262248499999998,
+      "mass_g": 2.622
+     },
+     "5 min": {
+      "n": 24,
+      "limit": "current",
+      "E_need_Wh": 0.30380150429326036,
+      "E_cells_nominal_Wh": 1.3838867999999998,
+      "mass_g": 2.736
+     },
+     "30 min": {
+      "n": 67,
+      "limit": "energy",
+      "E_need_Wh": 1.822809025759562,
+      "E_cells_nominal_Wh": 3.863350649999999,
+      "mass_g": 7.638
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "n": 46,
+      "limit": "current",
+      "E_need_Wh": 0.00020783290585496463,
+      "E_cells_nominal_Wh": 2.6524496999999996,
+      "mass_g": 5.244
+     },
+     "1 s": {
+      "n": 46,
+      "limit": "current",
+      "E_need_Wh": 0.0020783290585496463,
+      "E_cells_nominal_Wh": 2.6524496999999996,
+      "mass_g": 5.244
+     },
+     "3 s": {
+      "n": 46,
+      "limit": "current",
+      "E_need_Wh": 0.006234987175648939,
+      "E_cells_nominal_Wh": 2.6524496999999996,
+      "mass_g": 5.244
+     },
+     "30 s": {
+      "n": 46,
+      "limit": "current",
+      "E_need_Wh": 0.062349871756489386,
+      "E_cells_nominal_Wh": 2.6524496999999996,
+      "mass_g": 5.244
+     },
+     "5 min": {
+      "n": 48,
+      "limit": "current",
+      "E_need_Wh": 0.6234987175648938,
+      "E_cells_nominal_Wh": 2.7677735999999995,
+      "mass_g": 5.472
+     },
+     "30 min": {
+      "n": null,
+      "limit": "more than 128",
+      "E_need_Wh": 3.740992305389363,
+      "E_cells_nominal_Wh": null,
+      "mass_g": null
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "n": 53,
+      "limit": "current",
+      "E_need_Wh": 0.00024166666666666667,
+      "E_cells_nominal_Wh": 3.0560833499999993,
+      "mass_g": 6.042
+     },
+     "1 s": {
+      "n": 53,
+      "limit": "current",
+      "E_need_Wh": 0.0024166666666666664,
+      "E_cells_nominal_Wh": 3.0560833499999993,
+      "mass_g": 6.042
+     },
+     "3 s": {
+      "n": 53,
+      "limit": "current",
+      "E_need_Wh": 0.0072499999999999995,
+      "E_cells_nominal_Wh": 3.0560833499999993,
+      "mass_g": 6.042
+     },
+     "30 s": {
+      "n": 53,
+      "limit": "current",
+      "E_need_Wh": 0.0725,
+      "E_cells_nominal_Wh": 3.0560833499999993,
+      "mass_g": 6.042
+     },
+     "5 min": {
+      "n": 56,
+      "limit": "current",
+      "E_need_Wh": 0.725,
+      "E_cells_nominal_Wh": 3.2290691999999996,
+      "mass_g": 6.384
+     },
+     "30 min": {
+      "n": null,
+      "limit": "more than 128",
+      "E_need_Wh": 4.35,
+      "E_cells_nominal_Wh": null,
+      "mass_g": null
+     }
+    }
+   },
+   "G floated at 60 %": {
+    "standby": {
+     "0.1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-06,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-05,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "3 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 5.0936702033674176e-05,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "30 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.0005093670203367418,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "5 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.005093670203367418,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "30 min": {
+      "n": 2,
+      "limit": "energy",
+      "E_need_Wh": 0.030562021220204506,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.09695090810457e-06,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.0969509081045696e-05,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "3 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.0001829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "30 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.001829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "5 min": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.01829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "30 min": {
+      "n": 6,
+      "limit": "energy",
+      "E_need_Wh": 0.10974511634588226,
+      "E_cells_nominal_Wh": 0.27677736,
+      "mass_g": 0.6900000000000001
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "n": 17,
+      "limit": "current",
+      "E_need_Wh": 6.228513020172099e-05,
+      "E_cells_nominal_Wh": 0.7842025199999999,
+      "mass_g": 1.955
+     },
+     "1 s": {
+      "n": 17,
+      "limit": "current",
+      "E_need_Wh": 0.0006228513020172099,
+      "E_cells_nominal_Wh": 0.7842025199999999,
+      "mass_g": 1.955
+     },
+     "3 s": {
+      "n": 17,
+      "limit": "current",
+      "E_need_Wh": 0.0018685539060516296,
+      "E_cells_nominal_Wh": 0.7842025199999999,
+      "mass_g": 1.955
+     },
+     "30 s": {
+      "n": 17,
+      "limit": "current",
+      "E_need_Wh": 0.018685539060516294,
+      "E_cells_nominal_Wh": 0.7842025199999999,
+      "mass_g": 1.955
+     },
+     "5 min": {
+      "n": 18,
+      "limit": "current",
+      "E_need_Wh": 0.18685539060516296,
+      "E_cells_nominal_Wh": 0.8303320799999999,
+      "mass_g": 2.0700000000000003
+     },
+     "30 min": {
+      "n": 52,
+      "limit": "energy",
+      "E_need_Wh": 1.1211323436309777,
+      "E_cells_nominal_Wh": 2.39873712,
+      "mass_g": 5.98
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "n": 28,
+      "limit": "current",
+      "E_need_Wh": 0.00010126716809775344,
+      "E_cells_nominal_Wh": 1.2916276799999997,
+      "mass_g": 3.22
+     },
+     "1 s": {
+      "n": 28,
+      "limit": "current",
+      "E_need_Wh": 0.0010126716809775345,
+      "E_cells_nominal_Wh": 1.2916276799999997,
+      "mass_g": 3.22
+     },
+     "3 s": {
+      "n": 28,
+      "limit": "current",
+      "E_need_Wh": 0.003038015042932603,
+      "E_cells_nominal_Wh": 1.2916276799999997,
+      "mass_g": 3.22
+     },
+     "30 s": {
+      "n": 28,
+      "limit": "current",
+      "E_need_Wh": 0.030380150429326035,
+      "E_cells_nominal_Wh": 1.2916276799999997,
+      "mass_g": 3.22
+     },
+     "5 min": {
+      "n": 29,
+      "limit": "current",
+      "E_need_Wh": 0.30380150429326036,
+      "E_cells_nominal_Wh": 1.3377572399999997,
+      "mass_g": 3.335
+     },
+     "30 min": {
+      "n": 84,
+      "limit": "energy",
+      "E_need_Wh": 1.822809025759562,
+      "E_cells_nominal_Wh": 3.8748830399999994,
+      "mass_g": 9.66
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "n": 57,
+      "limit": "current",
+      "E_need_Wh": 0.00020783290585496463,
+      "E_cells_nominal_Wh": 2.6293849199999997,
+      "mass_g": 6.555000000000001
+     },
+     "1 s": {
+      "n": 57,
+      "limit": "current",
+      "E_need_Wh": 0.0020783290585496463,
+      "E_cells_nominal_Wh": 2.6293849199999997,
+      "mass_g": 6.555000000000001
+     },
+     "3 s": {
+      "n": 57,
+      "limit": "current",
+      "E_need_Wh": 0.006234987175648939,
+      "E_cells_nominal_Wh": 2.6293849199999997,
+      "mass_g": 6.555000000000001
+     },
+     "30 s": {
+      "n": 57,
+      "limit": "current",
+      "E_need_Wh": 0.062349871756489386,
+      "E_cells_nominal_Wh": 2.6293849199999997,
+      "mass_g": 6.555000000000001
+     },
+     "5 min": {
+      "n": 59,
+      "limit": "current",
+      "E_need_Wh": 0.6234987175648938,
+      "E_cells_nominal_Wh": 2.7216440399999997,
+      "mass_g": 6.785
+     },
+     "30 min": {
+      "n": null,
+      "limit": "more than 128",
+      "E_need_Wh": 3.740992305389363,
+      "E_cells_nominal_Wh": null,
+      "mass_g": null
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "n": 66,
+      "limit": "current",
+      "E_need_Wh": 0.00024166666666666667,
+      "E_cells_nominal_Wh": 3.0445509599999996,
+      "mass_g": 7.590000000000001
+     },
+     "1 s": {
+      "n": 66,
+      "limit": "current",
+      "E_need_Wh": 0.0024166666666666664,
+      "E_cells_nominal_Wh": 3.0445509599999996,
+      "mass_g": 7.590000000000001
+     },
+     "3 s": {
+      "n": 66,
+      "limit": "current",
+      "E_need_Wh": 0.0072499999999999995,
+      "E_cells_nominal_Wh": 3.0445509599999996,
+      "mass_g": 7.590000000000001
+     },
+     "30 s": {
+      "n": 66,
+      "limit": "current",
+      "E_need_Wh": 0.0725,
+      "E_cells_nominal_Wh": 3.0445509599999996,
+      "mass_g": 7.590000000000001
+     },
+     "5 min": {
+      "n": 69,
+      "limit": "current",
+      "E_need_Wh": 0.725,
+      "E_cells_nominal_Wh": 3.1829396399999994,
+      "mass_g": 7.9350000000000005
+     },
+     "30 min": {
+      "n": null,
+      "limit": "more than 128",
+      "E_need_Wh": 4.35,
+      "E_cells_nominal_Wh": null,
+      "mass_g": null
+     }
+    }
+   },
+   "S topped to 100 %": {
+    "standby": {
+     "0.1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-06,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-05,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "3 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 5.0936702033674176e-05,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "30 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.0005093670203367418,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "5 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.005093670203367418,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     },
+     "30 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.030562021220204506,
+      "E_cells_nominal_Wh": 0.05766194999999999,
+      "mass_g": 0.114
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.09695090810457e-06,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.0969509081045696e-05,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "3 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.0001829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "30 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.001829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "5 min": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.01829085272431371,
+      "E_cells_nominal_Wh": 0.11532389999999998,
+      "mass_g": 0.228
+     },
+     "30 min": {
+      "n": 3,
+      "limit": "voltage",
+      "E_need_Wh": 0.10974511634588226,
+      "E_cells_nominal_Wh": 0.17298584999999997,
+      "mass_g": 0.342
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "n": 12,
+      "limit": "current",
+      "E_need_Wh": 6.228513020172099e-05,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.368
+     },
+     "1 s": {
+      "n": 12,
+      "limit": "current",
+      "E_need_Wh": 0.0006228513020172099,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.368
+     },
+     "3 s": {
+      "n": 12,
+      "limit": "current",
+      "E_need_Wh": 0.0018685539060516296,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.368
+     },
+     "30 s": {
+      "n": 12,
+      "limit": "current",
+      "E_need_Wh": 0.018685539060516294,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.368
+     },
+     "5 min": {
+      "n": 13,
+      "limit": "current",
+      "E_need_Wh": 0.18685539060516296,
+      "E_cells_nominal_Wh": 0.7496053499999998,
+      "mass_g": 1.482
+     },
+     "30 min": {
+      "n": 23,
+      "limit": "voltage",
+      "E_need_Wh": 1.1211323436309777,
+      "E_cells_nominal_Wh": 1.3262248499999998,
+      "mass_g": 2.622
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "n": 20,
+      "limit": "current",
+      "E_need_Wh": 0.00010126716809775344,
+      "E_cells_nominal_Wh": 1.1532389999999997,
+      "mass_g": 2.2800000000000002
+     },
+     "1 s": {
+      "n": 20,
+      "limit": "current",
+      "E_need_Wh": 0.0010126716809775345,
+      "E_cells_nominal_Wh": 1.1532389999999997,
+      "mass_g": 2.2800000000000002
+     },
+     "3 s": {
+      "n": 20,
+      "limit": "current",
+      "E_need_Wh": 0.003038015042932603,
+      "E_cells_nominal_Wh": 1.1532389999999997,
+      "mass_g": 2.2800000000000002
+     },
+     "30 s": {
+      "n": 20,
+      "limit": "current",
+      "E_need_Wh": 0.030380150429326035,
+      "E_cells_nominal_Wh": 1.1532389999999997,
+      "mass_g": 2.2800000000000002
+     },
+     "5 min": {
+      "n": 22,
+      "limit": "current",
+      "E_need_Wh": 0.30380150429326036,
+      "E_cells_nominal_Wh": 1.2685628999999998,
+      "mass_g": 2.508
+     },
+     "30 min": {
+      "n": 37,
+      "limit": "voltage",
+      "E_need_Wh": 1.822809025759562,
+      "E_cells_nominal_Wh": 2.1334921499999995,
+      "mass_g": 4.218
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "n": 40,
+      "limit": "current",
+      "E_need_Wh": 0.00020783290585496463,
+      "E_cells_nominal_Wh": 2.3064779999999994,
+      "mass_g": 4.5600000000000005
+     },
+     "1 s": {
+      "n": 40,
+      "limit": "current",
+      "E_need_Wh": 0.0020783290585496463,
+      "E_cells_nominal_Wh": 2.3064779999999994,
+      "mass_g": 4.5600000000000005
+     },
+     "3 s": {
+      "n": 40,
+      "limit": "current",
+      "E_need_Wh": 0.006234987175648939,
+      "E_cells_nominal_Wh": 2.3064779999999994,
+      "mass_g": 4.5600000000000005
+     },
+     "30 s": {
+      "n": 41,
+      "limit": "current",
+      "E_need_Wh": 0.062349871756489386,
+      "E_cells_nominal_Wh": 2.3641399499999998,
+      "mass_g": 4.674
+     },
+     "5 min": {
+      "n": 44,
+      "limit": "current",
+      "E_need_Wh": 0.6234987175648938,
+      "E_cells_nominal_Wh": 2.5371257999999997,
+      "mass_g": 5.016
+     },
+     "30 min": {
+      "n": 76,
+      "limit": "voltage",
+      "E_need_Wh": 3.740992305389363,
+      "E_cells_nominal_Wh": 4.382308199999999,
+      "mass_g": 8.664
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "n": 47,
+      "limit": "current",
+      "E_need_Wh": 0.00024166666666666667,
+      "E_cells_nominal_Wh": 2.7101116499999995,
+      "mass_g": 5.3580000000000005
+     },
+     "1 s": {
+      "n": 47,
+      "limit": "current",
+      "E_need_Wh": 0.0024166666666666664,
+      "E_cells_nominal_Wh": 2.7101116499999995,
+      "mass_g": 5.3580000000000005
+     },
+     "3 s": {
+      "n": 47,
+      "limit": "current",
+      "E_need_Wh": 0.0072499999999999995,
+      "E_cells_nominal_Wh": 2.7101116499999995,
+      "mass_g": 5.3580000000000005
+     },
+     "30 s": {
+      "n": 47,
+      "limit": "current",
+      "E_need_Wh": 0.0725,
+      "E_cells_nominal_Wh": 2.7101116499999995,
+      "mass_g": 5.3580000000000005
+     },
+     "5 min": {
+      "n": 51,
+      "limit": "current",
+      "E_need_Wh": 0.725,
+      "E_cells_nominal_Wh": 2.9407594499999994,
+      "mass_g": 5.814
+     },
+     "30 min": {
+      "n": 89,
+      "limit": "voltage",
+      "E_need_Wh": 4.35,
+      "E_cells_nominal_Wh": 5.131913549999999,
+      "mass_g": 10.146
+     }
+    }
+   },
+   "G topped to 100 %": {
+    "standby": {
+     "0.1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-06,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "1 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 1.6978900677891392e-05,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "3 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 5.0936702033674176e-05,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "30 s": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.0005093670203367418,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "5 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.005093670203367418,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     },
+     "30 min": {
+      "n": 1,
+      "limit": "none",
+      "E_need_Wh": 0.030562021220204506,
+      "E_cells_nominal_Wh": 0.04612955999999999,
+      "mass_g": 0.115
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.09695090810457e-06,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "1 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 6.0969509081045696e-05,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "3 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.0001829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "30 s": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.001829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "5 min": {
+      "n": 2,
+      "limit": "current",
+      "E_need_Wh": 0.01829085272431371,
+      "E_cells_nominal_Wh": 0.09225911999999999,
+      "mass_g": 0.23
+     },
+     "30 min": {
+      "n": 3,
+      "limit": "voltage",
+      "E_need_Wh": 0.10974511634588226,
+      "E_cells_nominal_Wh": 0.13838868,
+      "mass_g": 0.34500000000000003
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "n": 15,
+      "limit": "current",
+      "E_need_Wh": 6.228513020172099e-05,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.725
+     },
+     "1 s": {
+      "n": 15,
+      "limit": "current",
+      "E_need_Wh": 0.0006228513020172099,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.725
+     },
+     "3 s": {
+      "n": 15,
+      "limit": "current",
+      "E_need_Wh": 0.0018685539060516296,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.725
+     },
+     "30 s": {
+      "n": 15,
+      "limit": "current",
+      "E_need_Wh": 0.018685539060516294,
+      "E_cells_nominal_Wh": 0.6919433999999999,
+      "mass_g": 1.725
+     },
+     "5 min": {
+      "n": 17,
+      "limit": "current",
+      "E_need_Wh": 0.18685539060516296,
+      "E_cells_nominal_Wh": 0.7842025199999999,
+      "mass_g": 1.955
+     },
+     "30 min": {
+      "n": 28,
+      "limit": "voltage",
+      "E_need_Wh": 1.1211323436309777,
+      "E_cells_nominal_Wh": 1.2916276799999997,
+      "mass_g": 3.22
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "n": 24,
+      "limit": "current",
+      "E_need_Wh": 0.00010126716809775344,
+      "E_cells_nominal_Wh": 1.10710944,
+      "mass_g": 2.7600000000000002
+     },
+     "1 s": {
+      "n": 24,
+      "limit": "current",
+      "E_need_Wh": 0.0010126716809775345,
+      "E_cells_nominal_Wh": 1.10710944,
+      "mass_g": 2.7600000000000002
+     },
+     "3 s": {
+      "n": 24,
+      "limit": "current",
+      "E_need_Wh": 0.003038015042932603,
+      "E_cells_nominal_Wh": 1.10710944,
+      "mass_g": 2.7600000000000002
+     },
+     "30 s": {
+      "n": 25,
+      "limit": "current",
+      "E_need_Wh": 0.030380150429326035,
+      "E_cells_nominal_Wh": 1.153239,
+      "mass_g": 2.875
+     },
+     "5 min": {
+      "n": 27,
+      "limit": "current",
+      "E_need_Wh": 0.30380150429326036,
+      "E_cells_nominal_Wh": 1.2454981199999997,
+      "mass_g": 3.105
+     },
+     "30 min": {
+      "n": 46,
+      "limit": "voltage",
+      "E_need_Wh": 1.822809025759562,
+      "E_cells_nominal_Wh": 2.1219597599999998,
+      "mass_g": 5.29
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "n": 50,
+      "limit": "current",
+      "E_need_Wh": 0.00020783290585496463,
+      "E_cells_nominal_Wh": 2.306478,
+      "mass_g": 5.75
+     },
+     "1 s": {
+      "n": 50,
+      "limit": "current",
+      "E_need_Wh": 0.0020783290585496463,
+      "E_cells_nominal_Wh": 2.306478,
+      "mass_g": 5.75
+     },
+     "3 s": {
+      "n": 50,
+      "limit": "current",
+      "E_need_Wh": 0.006234987175648939,
+      "E_cells_nominal_Wh": 2.306478,
+      "mass_g": 5.75
+     },
+     "30 s": {
+      "n": 50,
+      "limit": "current",
+      "E_need_Wh": 0.062349871756489386,
+      "E_cells_nominal_Wh": 2.306478,
+      "mass_g": 5.75
+     },
+     "5 min": {
+      "n": 54,
+      "limit": "current",
+      "E_need_Wh": 0.6234987175648938,
+      "E_cells_nominal_Wh": 2.4909962399999994,
+      "mass_g": 6.21
+     },
+     "30 min": {
+      "n": 93,
+      "limit": "voltage",
+      "E_need_Wh": 3.740992305389363,
+      "E_cells_nominal_Wh": 4.290049079999999,
+      "mass_g": 10.695
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "n": 58,
+      "limit": "current",
+      "E_need_Wh": 0.00024166666666666667,
+      "E_cells_nominal_Wh": 2.6755144799999995,
+      "mass_g": 6.67
+     },
+     "1 s": {
+      "n": 58,
+      "limit": "current",
+      "E_need_Wh": 0.0024166666666666664,
+      "E_cells_nominal_Wh": 2.6755144799999995,
+      "mass_g": 6.67
+     },
+     "3 s": {
+      "n": 58,
+      "limit": "current",
+      "E_need_Wh": 0.0072499999999999995,
+      "E_cells_nominal_Wh": 2.6755144799999995,
+      "mass_g": 6.67
+     },
+     "30 s": {
+      "n": 58,
+      "limit": "current",
+      "E_need_Wh": 0.0725,
+      "E_cells_nominal_Wh": 2.6755144799999995,
+      "mass_g": 6.67
+     },
+     "5 min": {
+      "n": 63,
+      "limit": "current",
+      "E_need_Wh": 0.725,
+      "E_cells_nominal_Wh": 2.9061622799999998,
+      "mass_g": 7.245
+     },
+     "30 min": {
+      "n": 108,
+      "limit": "voltage",
+      "E_need_Wh": 4.35,
+      "E_cells_nominal_Wh": 4.981992479999999,
+      "mass_g": 12.42
+     }
+    }
+   }
+  },
+  "swap_3s": {
+   "standby": {
+    "n_three_quadrants": 1,
+    "n_total": 4
+   },
+   "safe screen": {
+    "n_three_quadrants": 2,
+    "n_total": 4
+   },
+   "delta session": {
+    "n_three_quadrants": 14,
+    "n_total": 20
+   },
+   "video": {
+    "n_three_quadrants": 22,
+    "n_total": 32
+   },
+   "outdoor": {
+    "n_three_quadrants": 46,
+    "n_total": 64
+   },
+   "peak": {
+    "n_three_quadrants": 53,
+    "n_total": 72
+   }
+  },
+  "brief_range": {
+   "0.3 Wh G": {
+    "n": 7,
+    "mass_g": 0.805
+   },
+   "0.3 Wh S": {
+    "n": 6,
+    "mass_g": 0.684
+   },
+   "1.5 Wh G": {
+    "n": 33,
+    "mass_g": 3.7950000000000004
+   },
+   "1.5 Wh S": {
+    "n": 27,
+    "mass_g": 3.0780000000000003
+   }
+  },
+  "cmax_sensitivity_3s": {
+   "2 C": {
+    "safe screen": 2,
+    "delta session": 20,
+    "video": 33,
+    "peak": 78
+   },
+   "3 C": {
+    "safe screen": 2,
+    "delta session": 14,
+    "video": 22,
+    "peak": 53
+   },
+   "5 C": {
+    "safe screen": 1,
+    "delta session": 9,
+    "video": 14,
+    "peak": 33
+   },
+   "10 C": {
+    "safe screen": 1,
+    "delta session": 6,
+    "video": 9,
+    "peak": 22
+   }
+  }
+ },
+ "bare": {
+  "min_volume": {
+   "EDLC, large cell (Maxwell BCAP3000)": {
+    "standby": {
+     "0.1 s": {
+      "vol_cm3": 0.004571718955984674,
+      "E_stored_full_Wh": 2.9173521699166906e-05,
+      "mass_g": 0.004571718955984674
+     },
+     "1 s": {
+      "vol_cm3": 0.00834092680546331,
+      "E_stored_full_Wh": 5.322597725124958e-05,
+      "mass_g": 0.00834092680546331
+     },
+     "3 s": {
+      "vol_cm3": 0.016328923493002755,
+      "E_stored_full_Wh": 0.00010419980065125182,
+      "mass_g": 0.016328923493002755
+     },
+     "30 s": {
+      "vol_cm3": 0.12274108418765149,
+      "E_stored_full_Wh": 0.0007832479899579651,
+      "mass_g": 0.12274108418765149
+     },
+     "5 min": {
+      "vol_cm3": 1.1864641251029655,
+      "E_stored_full_Wh": 0.0075711865126055836,
+      "mass_g": 1.1864641251029655
+     },
+     "30 min": {
+      "vol_cm3": 7.099426924596143,
+      "E_stored_full_Wh": 0.0453035909316403,
+      "mass_g": 7.099426924596143
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "vol_cm3": 0.016416578769781254,
+      "E_stored_full_Wh": 0.00010475915548993815,
+      "mass_g": 0.016416578769781254
+     },
+     "1 s": {
+      "vol_cm3": 0.02995142160600639,
+      "E_stored_full_Wh": 0.00019112908220219414,
+      "mass_g": 0.02995142160600639
+     },
+     "3 s": {
+      "vol_cm3": 0.05863550697876934,
+      "E_stored_full_Wh": 0.0003741709085042266,
+      "mass_g": 0.05863550697876934
+     },
+     "30 s": {
+      "vol_cm3": 0.4407507758579914,
+      "E_stored_full_Wh": 0.00281256403711901,
+      "mass_g": 0.4407507758579914
+     },
+     "5 min": {
+      "vol_cm3": 4.260472254484256,
+      "E_stored_full_Wh": 0.027187362338226738,
+      "mass_g": 4.260472254484256
+     },
+     "30 min": {
+      "vol_cm3": 25.493321538362732,
+      "E_stored_full_Wh": 0.16268059700163193,
+      "mass_g": 25.493321538362732
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "vol_cm3": 0.16770821375376846,
+      "E_stored_full_Wh": 0.001070196847220739,
+      "mass_g": 0.16770821375376846
+     },
+     "1 s": {
+      "vol_cm3": 0.3059772372411484,
+      "E_stored_full_Wh": 0.0019525333153781266,
+      "mass_g": 0.3059772372411484
+     },
+     "3 s": {
+      "vol_cm3": 0.5990076419611429,
+      "E_stored_full_Wh": 0.00382244897574994,
+      "mass_g": 0.5990076419611429
+     },
+     "30 s": {
+      "vol_cm3": 4.50261448297588,
+      "E_stored_full_Wh": 0.028732545151342933,
+      "mass_g": 4.50261448297588
+     },
+     "5 min": {
+      "vol_cm3": 43.524061959990455,
+      "E_stored_full_Wh": 0.27774020630981305,
+      "mass_g": 43.524061959990455
+     },
+     "30 min": {
+      "vol_cm3": 260.43425233758717,
+      "E_stored_full_Wh": 1.6619097509987837,
+      "mass_g": 260.43425233758717
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "vol_cm3": 0.2726707934714661,
+      "E_stored_full_Wh": 0.0017399948217848285,
+      "mass_g": 0.2726707934714661
+     },
+     "1 s": {
+      "vol_cm3": 0.4974774591854255,
+      "E_stored_full_Wh": 0.0031745541644448106,
+      "mass_g": 0.4974774591854255
+     },
+     "3 s": {
+      "vol_cm3": 0.9739051258921814,
+      "E_stored_full_Wh": 0.0062147832350787835,
+      "mass_g": 0.9739051258921814
+     },
+     "30 s": {
+      "vol_cm3": 7.320640034791143,
+      "E_stored_full_Wh": 0.04671521870940777,
+      "mass_g": 7.320640034791143
+     },
+     "5 min": {
+      "vol_cm3": 70.76421747092544,
+      "E_stored_full_Wh": 0.4515678793444034,
+      "mass_g": 70.76421747092544
+     },
+     "30 min": {
+      "vol_cm3": 423.4307470253061,
+      "E_stored_full_Wh": 2.7020396934650575,
+      "mass_g": 423.4307470253061
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "vol_cm3": 0.5596084536920205,
+      "E_stored_full_Wh": 0.003571030836322505,
+      "mass_g": 0.5596084536920205
+     },
+     "1 s": {
+      "vol_cm3": 1.0209842724153875,
+      "E_stored_full_Wh": 0.006515209511474242,
+      "mass_g": 1.0209842724153875
+     },
+     "3 s": {
+      "vol_cm3": 1.998767578311568,
+      "E_stored_full_Wh": 0.01275474058638947,
+      "mass_g": 1.998767578311568
+     },
+     "30 s": {
+      "vol_cm3": 15.024315577583367,
+      "E_stored_full_Wh": 0.09587470287165857,
+      "mass_g": 15.024315577583367
+     },
+     "5 min": {
+      "vol_cm3": 145.23100846799662,
+      "E_stored_full_Wh": 0.9267630004654196,
+      "mass_g": 145.23100846799662
+     },
+     "30 min": {
+      "vol_cm3": 869.0165256488465,
+      "E_stored_full_Wh": 5.545457345920948,
+      "mass_g": 869.0165256488465
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "vol_cm3": 0.650708842692187,
+      "E_stored_full_Wh": 0.004152369978314113,
+      "mass_g": 0.650708842692187
+     },
+     "1 s": {
+      "vol_cm3": 1.187193456294662,
+      "E_stored_full_Wh": 0.007575840595577806,
+      "mass_g": 1.187193456294662
+     },
+     "3 s": {
+      "vol_cm3": 2.324153127267762,
+      "E_stored_full_Wh": 0.014831124210243334,
+      "mass_g": 2.324153127267762
+     },
+     "30 s": {
+      "vol_cm3": 17.470170325754093,
+      "E_stored_full_Wh": 0.1114824419421808,
+      "mass_g": 17.470170325754093
+     },
+     "5 min": {
+      "vol_cm3": 168.87361300521135,
+      "E_stored_full_Wh": 1.0776336124019525,
+      "mass_g": 168.87361300521135
+     },
+     "30 min": {
+      "vol_cm3": 1010.4864105511372,
+      "E_stored_full_Wh": 6.448219479094704,
+      "mass_g": 1010.4864105511372
+     }
+    }
+   },
+   "EDLC, thin chip (Seiko CPH3225A)": {
+    "standby": {
+     "0.1 s": {
+      "vol_cm3": 0.030083900390552202,
+      "E_stored_full_Wh": 6.951679065941835e-05,
+      "mass_g": 0.03610068046866264
+     },
+     "1 s": {
+      "vol_cm3": 0.04116689168847775,
+      "E_stored_full_Wh": 9.51269667315345e-05,
+      "mass_g": 0.0494002700261733
+     },
+     "3 s": {
+      "vol_cm3": 0.06380794341797444,
+      "E_stored_full_Wh": 0.00014744509147452076,
+      "mass_g": 0.07656953210156932
+     },
+     "30 s": {
+      "vol_cm3": 0.3584019427391781,
+      "E_stored_full_Wh": 0.0008281822669893159,
+      "mass_g": 0.4300823312870137
+     },
+     "5 min": {
+      "vol_cm3": 3.2954380150605265,
+      "E_stored_full_Wh": 0.007614979163273541,
+      "mass_g": 3.9545256180726316
+     },
+     "30 min": {
+      "vol_cm3": 19.622652281177423,
+      "E_stored_full_Wh": 0.04534331629556796,
+      "mass_g": 23.547182737412907
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "vol_cm3": 0.10802823297290388,
+      "E_stored_full_Wh": 0.0002496277397342622,
+      "mass_g": 0.12963387956748465
+     },
+     "1 s": {
+      "vol_cm3": 0.14782612986877877,
+      "E_stored_full_Wh": 0.0003415912827349731,
+      "mass_g": 0.17739135584253451
+     },
+     "3 s": {
+      "vol_cm3": 0.22912784870287511,
+      "E_stored_full_Wh": 0.0005294603587214005,
+      "mass_g": 0.2749534184434501
+     },
+     "30 s": {
+      "vol_cm3": 1.2869850007989143,
+      "E_stored_full_Wh": 0.002973918465387768,
+      "mass_g": 1.544382000958697
+     },
+     "5 min": {
+      "vol_cm3": 11.833583445533717,
+      "E_stored_full_Wh": 0.027344617302092665,
+      "mass_g": 14.200300134640461
+     },
+     "30 min": {
+      "vol_cm3": 70.46295276403151,
+      "E_stored_full_Wh": 0.1628232467516075,
+      "mass_g": 84.55554331683781
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "vol_cm3": 1.103593034878306,
+      "E_stored_full_Wh": 0.002550142933026085,
+      "mass_g": 1.3243116418539673
+     },
+     "1 s": {
+      "vol_cm3": 1.5101597314576058,
+      "E_stored_full_Wh": 0.003489622573906377,
+      "mass_g": 1.812191677749127
+     },
+     "3 s": {
+      "vol_cm3": 2.340720485436134,
+      "E_stored_full_Wh": 0.0054088523717282875,
+      "mass_g": 2.808864582523361
+     },
+     "30 s": {
+      "vol_cm3": 13.147560075621906,
+      "E_stored_full_Wh": 0.030380907049744364,
+      "mass_g": 15.777072090746286
+     },
+     "5 min": {
+      "vol_cm3": 120.88932595442773,
+      "E_stored_full_Wh": 0.27934668896760984,
+      "mass_g": 145.06719114531327
+     },
+     "30 min": {
+      "vol_cm3": 719.834266907318,
+      "E_stored_full_Wh": 1.6633670299542362,
+      "mass_g": 863.8011202887816
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "vol_cm3": 1.7942924902394015,
+      "E_stored_full_Wh": 0.004146186292549728,
+      "mass_g": 2.153150988287282
+     },
+     "1 s": {
+      "vol_cm3": 2.45531475786736,
+      "E_stored_full_Wh": 0.00567365267833586,
+      "mass_g": 2.946377709440832
+     },
+     "3 s": {
+      "vol_cm3": 3.8056938164988607,
+      "E_stored_full_Wh": 0.008794059843333302,
+      "mass_g": 4.566832579798633
+     },
+     "30 s": {
+      "vol_cm3": 21.376148238613258,
+      "E_stored_full_Wh": 0.04939523143332333,
+      "mass_g": 25.651377886335908
+     },
+     "5 min": {
+      "vol_cm3": 196.5496363739302,
+      "E_stored_full_Wh": 0.4541798021071199,
+      "mass_g": 235.85956364871623
+     },
+     "30 min": {
+      "vol_cm3": 1170.3528189367619,
+      "E_stored_full_Wh": 2.704409031258385,
+      "mass_g": 1404.4233827241142
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "vol_cm3": 3.682467172778266,
+      "E_stored_full_Wh": 0.008509312164874777,
+      "mass_g": 4.4189606073339185
+     },
+     "1 s": {
+      "vol_cm3": 5.039098164802663,
+      "E_stored_full_Wh": 0.011644166071792262,
+      "mass_g": 6.046917797763196
+     },
+     "3 s": {
+      "vol_cm3": 7.810511733810156,
+      "E_stored_full_Wh": 0.01804824846823145,
+      "mass_g": 9.372614080572186
+     },
+     "30 s": {
+      "vol_cm3": 43.87075384717937,
+      "E_stored_full_Wh": 0.10137495376839536,
+      "mass_g": 52.64490461661524
+     },
+     "5 min": {
+      "vol_cm3": 403.3832765314263,
+      "E_stored_full_Wh": 0.9321235087905005,
+      "mass_g": 484.05993183771153
+     },
+     "30 min": {
+      "vol_cm3": 2401.941634236063,
+      "E_stored_full_Wh": 5.550319991611456,
+      "mass_g": 2882.329961083275
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "vol_cm3": 4.28194738024681,
+      "E_stored_full_Wh": 0.009894569380396706,
+      "mass_g": 5.1383368562961715
+     },
+     "1 s": {
+      "vol_cm3": 5.859428522564187,
+      "E_stored_full_Wh": 0.013539755839466894,
+      "mass_g": 7.031314227077024
+     },
+     "3 s": {
+      "vol_cm3": 9.082009068323377,
+      "E_stored_full_Wh": 0.020986378593643076,
+      "mass_g": 10.89841088198805
+     },
+     "30 s": {
+      "vol_cm3": 51.01260939786077,
+      "E_stored_full_Wh": 0.11787809567457061,
+      "mass_g": 61.215131277432924
+     },
+     "5 min": {
+      "vol_cm3": 469.05128630813186,
+      "E_stored_full_Wh": 1.0838667744377142,
+      "mass_g": 562.8615435697582
+     },
+     "30 min": {
+      "vol_cm3": 2792.9611333000494,
+      "E_stored_full_Wh": 6.453873729899939,
+      "mass_g": 3351.553359960059
+     }
+    }
+   },
+   "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+    "standby": {
+     "0.1 s": {
+      "vol_cm3": 0.1818436010307762,
+      "E_stored_full_Wh": 0.0030956480528882787,
+      "mass_g": 0.29094976164924197
+     },
+     "1 s": {
+      "vol_cm3": 0.18405772671002468,
+      "E_stored_full_Wh": 0.003133340629415376,
+      "mass_g": 0.2944923627360395
+     },
+     "3 s": {
+      "vol_cm3": 0.1877050443845212,
+      "E_stored_full_Wh": 0.0031954314139869444,
+      "mass_g": 0.30032807101523395
+     },
+     "30 s": {
+      "vol_cm3": 0.23988874544765082,
+      "E_stored_full_Wh": 0.004083790265620337,
+      "mass_g": 0.38382199271624134
+     },
+     "5 min": {
+      "vol_cm3": 0.701029576995225,
+      "E_stored_full_Wh": 0.011934106192029684,
+      "mass_g": 1.12164732319236
+     },
+     "30 min": {
+      "vol_cm3": 3.2014968365538095,
+      "E_stored_full_Wh": 0.05450127137951059,
+      "mass_g": 5.122394938486096
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "vol_cm3": 0.6529819153022365,
+      "E_stored_full_Wh": 0.011116157968816917,
+      "mass_g": 1.0447710644835784
+     },
+     "1 s": {
+      "vol_cm3": 0.6609326158963741,
+      "E_stored_full_Wh": 0.011251508185562649,
+      "mass_g": 1.0574921854341985
+     },
+     "3 s": {
+      "vol_cm3": 0.6740297634853364,
+      "E_stored_full_Wh": 0.011474469891129071,
+      "mass_g": 1.0784476215765382
+     },
+     "30 s": {
+      "vol_cm3": 0.8614161376805696,
+      "E_stored_full_Wh": 0.014664476364423073,
+      "mass_g": 1.3782658202889113
+     },
+     "5 min": {
+      "vol_cm3": 2.517326060829519,
+      "E_stored_full_Wh": 0.042854164097712366,
+      "mass_g": 4.02772169732723
+     },
+     "30 min": {
+      "vol_cm3": 11.49625020796384,
+      "E_stored_full_Wh": 0.19570853398232343,
+      "mass_g": 18.394000332742145
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "vol_cm3": 6.6707218455549,
+      "E_stored_full_Wh": 0.1135602626405115,
+      "mass_g": 10.673154952887842
+     },
+     "1 s": {
+      "vol_cm3": 6.751944481125492,
+      "E_stored_full_Wh": 0.11494297114512367,
+      "mass_g": 10.803111169800788
+     },
+     "3 s": {
+      "vol_cm3": 6.885742104748359,
+      "E_stored_full_Wh": 0.1172206996475366,
+      "mass_g": 11.017187367597375
+     },
+     "30 s": {
+      "vol_cm3": 8.800040725598977,
+      "E_stored_full_Wh": 0.14980911499287497,
+      "mass_g": 14.080065160958364
+     },
+     "5 min": {
+      "vol_cm3": 25.716457918421344,
+      "E_stored_full_Wh": 0.437788860488255,
+      "mass_g": 41.146332669474155
+     },
+     "30 min": {
+      "vol_cm3": 117.44320264786187,
+      "E_stored_full_Wh": 1.9993160030981005,
+      "mass_g": 187.909124236579
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "vol_cm3": 10.845688341332213,
+      "E_stored_full_Wh": 0.18463357415802523,
+      "mass_g": 17.35310134613154
+     },
+     "1 s": {
+      "vol_cm3": 10.977745322878707,
+      "E_stored_full_Wh": 0.18688167051927976,
+      "mass_g": 17.56439251660593
+     },
+     "3 s": {
+      "vol_cm3": 11.19528209929091,
+      "E_stored_full_Wh": 0.19058494792093028,
+      "mass_g": 17.912451358865457
+     },
+     "30 s": {
+      "vol_cm3": 14.307671839813938,
+      "E_stored_full_Wh": 0.24356928823021018,
+      "mass_g": 22.892274943702304
+     },
+     "5 min": {
+      "vol_cm3": 41.81147022522593,
+      "E_stored_full_Wh": 0.7117852685352994,
+      "mass_g": 66.8983523603615
+     },
+     "30 min": {
+      "vol_cm3": 190.94670760037877,
+      "E_stored_full_Wh": 3.2506164651265257,
+      "mass_g": 305.51473216060606
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "vol_cm3": 22.25885216618782,
+      "E_stored_full_Wh": 0.3789276717860719,
+      "mass_g": 35.61416346590051
+     },
+     "1 s": {
+      "vol_cm3": 22.52987570450529,
+      "E_stored_full_Wh": 0.3835414909357343,
+      "mass_g": 36.047801127208466
+     },
+     "3 s": {
+      "vol_cm3": 22.976331364531525,
+      "E_stored_full_Wh": 0.3911418111385181,
+      "mass_g": 36.76213018325044
+     },
+     "30 s": {
+      "vol_cm3": 29.363959418884413,
+      "E_stored_full_Wh": 0.499882774455041,
+      "mass_g": 46.982335070215065
+     },
+     "5 min": {
+      "vol_cm3": 85.81062863917307,
+      "E_stored_full_Wh": 1.4608130501057168,
+      "mass_g": 137.29700582267694
+     },
+     "30 min": {
+      "vol_cm3": 391.8842587334617,
+      "E_stored_full_Wh": 6.671313896277765,
+      "mass_g": 627.0148139735388
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "vol_cm3": 25.882439475597725,
+      "E_stored_full_Wh": 0.440614478114478,
+      "mass_g": 41.41190316095636
+     },
+     "1 s": {
+      "vol_cm3": 26.197583773003142,
+      "E_stored_full_Wh": 0.4459793951371937,
+      "mass_g": 41.91613403680503
+     },
+     "3 s": {
+      "vol_cm3": 26.716719329180663,
+      "E_stored_full_Wh": 0.4548169949458008,
+      "mass_g": 42.74675092668906
+     },
+     "30 s": {
+      "vol_cm3": 34.144209088089184,
+      "E_stored_full_Wh": 0.5812602356189843,
+      "mass_g": 54.6307345409427
+     },
+     "5 min": {
+      "vol_cm3": 99.78000597399046,
+      "E_stored_full_Wh": 1.6986233194880866,
+      "mass_g": 159.64800955838473
+     },
+     "30 min": {
+      "vol_cm3": 455.6803078784027,
+      "E_stored_full_Wh": 7.757357695443826,
+      "mass_g": 729.0884926054443
+     }
+    }
+   },
+   "thin solid-state cell (ST EFL700A39)": {
+    "standby": {
+     "0.1 s": {
+      "vol_cm3": 0.48684922494881816,
+      "E_stored_full_Wh": 0.038825086216778305,
+      "mass_g": 0.9736984498976363
+     },
+     "1 s": {
+      "vol_cm3": 0.48684922494881816,
+      "E_stored_full_Wh": 0.038825086216778305,
+      "mass_g": 0.9736984498976363
+     },
+     "3 s": {
+      "vol_cm3": 0.48877964293669274,
+      "E_stored_full_Wh": 0.03897903253315896,
+      "mass_g": 0.9775592858733855
+     },
+     "30 s": {
+      "vol_cm3": 0.5137472776049358,
+      "E_stored_full_Wh": 0.04097014296108553,
+      "mass_g": 1.0274945552098715
+     },
+     "5 min": {
+      "vol_cm3": 0.7652517739801262,
+      "E_stored_full_Wh": 0.0610270378995559,
+      "mass_g": 1.5305035479602525
+     },
+     "30 min": {
+      "vol_cm3": 2.115257336893884,
+      "E_stored_full_Wh": 0.16868682184758868,
+      "mass_g": 4.230514673787768
+     }
+    },
+    "safe screen": {
+     "0.1 s": {
+      "vol_cm3": 1.7482261546101083,
+      "E_stored_full_Wh": 0.1394169440986578,
+      "mass_g": 3.4964523092202167
+     },
+     "1 s": {
+      "vol_cm3": 1.7482261546101083,
+      "E_stored_full_Wh": 0.1394169440986578,
+      "mass_g": 3.4964523092202167
+     },
+     "3 s": {
+      "vol_cm3": 1.755158089679096,
+      "E_stored_full_Wh": 0.13996974969618306,
+      "mass_g": 3.510316179358192
+     },
+     "30 s": {
+      "vol_cm3": 1.8448143317124714,
+      "E_stored_full_Wh": 0.14711962515749058,
+      "mass_g": 3.689628663424943
+     },
+     "5 min": {
+      "vol_cm3": 2.747941452047057,
+      "E_stored_full_Wh": 0.2191418992309211,
+      "mass_g": 5.495882904094114
+     },
+     "30 min": {
+      "vol_cm3": 7.595674411266802,
+      "E_stored_full_Wh": 0.6057372565870123,
+      "mass_g": 15.191348822533604
+     }
+    },
+    "delta session": {
+     "0.1 s": {
+      "vol_cm3": 17.859499822641027,
+      "E_stored_full_Wh": 1.4242533106126862,
+      "mass_g": 35.718999645282054
+     },
+     "1 s": {
+      "vol_cm3": 17.859499822641027,
+      "E_stored_full_Wh": 1.4242533106126862,
+      "mass_g": 35.718999645282054
+     },
+     "3 s": {
+      "vol_cm3": 17.930314970217143,
+      "E_stored_full_Wh": 1.429900652888697,
+      "mass_g": 35.860629940434286
+     },
+     "30 s": {
+      "vol_cm3": 18.84622372405388,
+      "E_stored_full_Wh": 1.5029422323184507,
+      "mass_g": 37.69244744810776
+     },
+     "5 min": {
+      "vol_cm3": 28.072374816064645,
+      "E_stored_full_Wh": 2.2387061880564905,
+      "mass_g": 56.14474963212929
+     },
+     "30 min": {
+      "vol_cm3": 77.59576496618217,
+      "E_stored_full_Wh": 6.188080642801896,
+      "mass_g": 155.19152993236435
+     }
+    },
+    "video": {
+     "0.1 s": {
+      "vol_cm3": 29.037122742198495,
+      "E_stored_full_Wh": 2.315642577168628,
+      "mass_g": 58.07424548439699
+     },
+     "1 s": {
+      "vol_cm3": 29.037122742198495,
+      "E_stored_full_Wh": 2.315642577168628,
+      "mass_g": 58.07424548439699
+     },
+     "3 s": {
+      "vol_cm3": 29.15225856081575,
+      "E_stored_full_Wh": 2.3248243892274316,
+      "mass_g": 58.3045171216315
+     },
+     "30 s": {
+      "vol_cm3": 30.641401883412932,
+      "E_stored_full_Wh": 2.44358008385764,
+      "mass_g": 61.282803766825864
+     },
+     "5 min": {
+      "vol_cm3": 45.64187134545012,
+      "E_stored_full_Wh": 3.6398324147861123,
+      "mass_g": 91.28374269090024
+     },
+     "30 min": {
+      "vol_cm3": 126.16018219846343,
+      "E_stored_full_Wh": 10.060979251830464,
+      "mass_g": 252.32036439692686
+     }
+    },
+    "outdoor": {
+     "0.1 s": {
+      "vol_cm3": 59.59354557395064,
+      "E_stored_full_Wh": 4.752445780550189,
+      "mass_g": 119.18709114790128
+     },
+     "1 s": {
+      "vol_cm3": 59.59354557395064,
+      "E_stored_full_Wh": 4.752445780550189,
+      "mass_g": 119.18709114790128
+     },
+     "3 s": {
+      "vol_cm3": 59.8298414258117,
+      "E_stored_full_Wh": 4.771289821684561,
+      "mass_g": 119.6596828516234
+     },
+     "30 s": {
+      "vol_cm3": 62.886044040968606,
+      "E_stored_full_Wh": 5.015014827186797,
+      "mass_g": 125.77208808193721
+     },
+     "5 min": {
+      "vol_cm3": 93.67184773278736,
+      "E_stored_full_Wh": 7.4701106172916925,
+      "mass_g": 187.3436954655747
+     },
+     "30 min": {
+      "vol_cm3": 258.92140327443514,
+      "E_stored_full_Wh": 20.64837590437982,
+      "mass_g": 517.8428065488703
+     }
+    },
+    "peak": {
+     "0.1 s": {
+      "vol_cm3": 69.29496296296296,
+      "E_stored_full_Wh": 5.52611111111111,
+      "mass_g": 138.5899259259259
+     },
+     "1 s": {
+      "vol_cm3": 69.29496296296296,
+      "E_stored_full_Wh": 5.52611111111111,
+      "mass_g": 138.5899259259259
+     },
+     "3 s": {
+      "vol_cm3": 69.56972614654791,
+      "E_stored_full_Wh": 5.548022831917492,
+      "mass_g": 139.13945229309581
+     },
+     "30 s": {
+      "vol_cm3": 73.12345742709083,
+      "E_stored_full_Wh": 5.831424584016092,
+      "mass_g": 146.24691485418165
+     },
+     "5 min": {
+      "vol_cm3": 108.92097720987299,
+      "E_stored_full_Wh": 8.686193002430349,
+      "mass_g": 217.84195441974597
+     },
+     "30 min": {
+      "vol_cm3": 301.07201841105274,
+      "E_stored_full_Wh": 24.009788807813038,
+      "mass_g": 602.1440368221055
+     }
+    }
+   }
+  },
+  "reach": {
+   "0.24 mm, all of the margin": {
+    "EDLC, large cell (Maxwell BCAP3000)": {
+     "vol_cm3": 1.536,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 388.60799999998477,
+      "safe screen": 107.40049567470643,
+      "delta session": 9.468628268032985,
+      "video": 5.383511116875078,
+      "outdoor": 2.049614586323604,
+      "peak": 1.609872373670686
+     }
+    },
+    "EDLC, thin chip (Seiko CPH3225A)": {
+     "vol_cm3": 1.536,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 138.22952995359398,
+      "safe screen": 36.35428273848931,
+      "delta session": 1.0598462027554196,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+     "vol_cm3": 1.536,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 800.0477537181882,
+      "safe screen": 137.86848945285453,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "thin solid-state cell (ST EFL700A39)": {
+     "vol_cm3": 1.536,
+     "thick_ok": true,
+     "seconds": {
+      "standby": 1152.0,
+      "safe screen": 0.0,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    }
+   },
+   "0.12 mm, half": {
+    "EDLC, large cell (Maxwell BCAP3000)": {
+     "vol_cm3": 0.768,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 193.80445562171653,
+      "safe screen": 53.13223686580082,
+      "delta session": 4.164190108994023,
+      "video": 2.133064861090512,
+      "outdoor": 0.49411738810199507,
+      "peak": 0.2876570862970353
+     }
+    },
+    "EDLC, thin chip (Seiko CPH3225A)": {
+     "vol_cm3": 0.768,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 67.66209735008403,
+      "safe screen": 16.716584496538967,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+     "vol_cm3": 0.768,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 339.8157564823114,
+      "safe screen": 15.958036360453828,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "thin solid-state cell (ST EFL700A39)": {
+     "vol_cm3": 0.768,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 302.0,
+      "safe screen": 0.0,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    }
+   },
+   "0.04 mm, after the 0.20 mm coil (FINAL/21 21.2.6 item 4)": {
+    "EDLC, large cell (Maxwell BCAP3000)": {
+     "vol_cm3": 0.256,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 63.84513948623277,
+      "safe screen": 16.943945299154795,
+      "delta session": 0.6636261999397706,
+      "video": 0.042542206712954354,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "EDLC, thin chip (Seiko CPH3225A)": {
+     "vol_cm3": 0.256,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 20.594263591658898,
+      "safe screen": 3.6740284384092248,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+     "vol_cm3": 0.256,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 38.8035489622913,
+      "safe screen": 0.0,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    },
+    "thin solid-state cell (ST EFL700A39)": {
+     "vol_cm3": 0.256,
+     "thick_ok": false,
+     "seconds": {
+      "standby": 0.0,
+      "safe screen": 0.0,
+      "delta session": 0.0,
+      "video": 0.0,
+      "outdoor": 0.0,
+      "peak": 0.0
+     }
+    }
+   }
+  },
+  "fit_0p24_mm": {
+   "EDLC, large cell (Maxwell BCAP3000)": {
+    "standby": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "safe screen": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "delta session": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "peak": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    }
+   },
+   "EDLC, thin chip (Seiko CPH3225A)": {
+    "standby": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "safe screen": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "delta session": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "peak": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    }
+   },
+   "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+    "standby": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "safe screen": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "delta session": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "peak": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    }
+   },
+   "thin solid-state cell (ST EFL700A39)": {
+    "standby": {
+     "0.1 s": true,
+     "1 s": true,
+     "3 s": true,
+     "30 s": true,
+     "5 min": true,
+     "30 min": false
+    },
+    "safe screen": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "delta session": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    },
+    "peak": {
+     "0.1 s": false,
+     "1 s": false,
+     "3 s": false,
+     "30 s": false,
+     "5 min": false,
+     "30 min": false
+    }
+   }
+  },
+  "tiles_of_cell_volume": {
+   "EDLC, large cell (Maxwell BCAP3000)": {
+    "safe screen": {
+     "0.1 s": 1,
+     "1 s": 1,
+     "3 s": 1,
+     "30 s": 6
+    },
+    "delta session": {
+     "0.1 s": 3,
+     "1 s": 4,
+     "3 s": 8,
+     "30 s": 59
+    },
+    "peak": {
+     "0.1 s": 9,
+     "1 s": 16,
+     "3 s": 31,
+     "30 s": 228
+    }
+   },
+   "EDLC, thin chip (Seiko CPH3225A)": {
+    "safe screen": {
+     "0.1 s": 2,
+     "1 s": 2,
+     "3 s": 3,
+     "30 s": 17
+    },
+    "delta session": {
+     "0.1 s": 15,
+     "1 s": 20,
+     "3 s": 31,
+     "30 s": 172
+    },
+    "peak": {
+     "0.1 s": 56,
+     "1 s": 77,
+     "3 s": 119,
+     "30 s": 664
+    }
+   },
+   "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+    "safe screen": {
+     "0.1 s": 9,
+     "1 s": 9,
+     "3 s": 9,
+     "30 s": 12
+    },
+    "delta session": {
+     "0.1 s": 87,
+     "1 s": 88,
+     "3 s": 90,
+     "30 s": 115
+    },
+    "peak": {
+     "0.1 s": 337,
+     "1 s": 341,
+     "3 s": 348,
+     "30 s": 445
+    }
+   },
+   "thin solid-state cell (ST EFL700A39)": {
+    "safe screen": {
+     "0.1 s": 23,
+     "1 s": 23,
+     "3 s": 23,
+     "30 s": 24
+    },
+    "delta session": {
+     "0.1 s": 233,
+     "1 s": 233,
+     "3 s": 234,
+     "30 s": 246
+    },
+    "peak": {
+     "0.1 s": 902,
+     "1 s": 902,
+     "3 s": 905,
+     "30 s": 952
+    }
+   }
+  },
+  "ceramic": {
+   "0.1 s": {
+    "F": 0.2044557247602932,
+    "parts": 4089.1144952058635,
+    "cm3": 12.778482797518324
+   },
+   "1 s": {
+    "F": 2.0445572476029317,
+    "parts": 40891.14495205863,
+    "cm3": 127.78482797518323
+   }
+  }
+ },
+ "full": {
+  "standby": {
+   "G_100": 40.0,
+   "G_60": 40.0,
+   "S_100": 40.0,
+   "S_60": 40.0
+  },
+  "safe screen": {
+   "G_100": 24.49861111111111,
+   "G_60": 13.04,
+   "S_100": 30.625,
+   "S_60": 16.301388888888887
+  },
+  "delta session": {
+   "G_100": 2.3841666666666668,
+   "G_60": 1.2675,
+   "S_100": 2.982222222222222,
+   "S_60": 1.5855555555555556
+  },
+  "video": {
+   "G_100": 1.4602777777777778,
+   "G_60": 0.7758333333333334,
+   "S_100": 1.8275,
+   "S_60": 0.9708333333333333
+  },
+  "outdoor": {
+   "G_100": 0.7033333333333334,
+   "G_60": 0.37277777777777776,
+   "S_100": 0.8813888888888889,
+   "S_60": 0.4672222222222222
+  },
+  "peak": {
+   "G_100": 0.6027777777777777,
+   "G_60": 0.31916666666666665,
+   "S_100": 0.7552777777777778,
+   "S_60": 0.4002777777777778
+  }
+ },
+ "tech": {
+  "EDLC, large cell (Maxwell BCAP3000)": {
+   "C_cm3": 6.302521008403361,
+   "vmax": 2.7,
+   "vmin": 1.35,
+   "k": 0.10948000000000001,
+   "rho": 1.0,
+   "t_min_mm": 60.4,
+   "tag": "[PUBLICATION] Maxwell BCAP3000 P270 datasheet 3003279-EN.3: 3000 F min, 2.7 V, 0.23 mOhm max, 475 g, diameter 60.4 mm by about 166 mm, volume 0.476 L from the product matrix. Vmin 1.35 V is the converter cut [HYPOTHESIS]",
+   "wh_l_usable": 4.785976890756304,
+   "wh_l_full": 6.381302521008403
+  },
+  "EDLC, thin chip (Seiko CPH3225A)": {
+   "C_cm3": 1.5277777777777777,
+   "vmax": 3.3,
+   "vmin": 1.65,
+   "k": 1.152,
+   "rho": 1.2,
+   "t_min_mm": 0.9,
+   "tag": "[PUBLICATION] Seiko CPH3225A: 11 mF, 3.3 V, 3.2 x 2.5 x 0.9 mm. The 160 ohm ESR comes from a distributor listing and is unconfirmed [HYPOTHESIS]",
+   "wh_l_usable": 1.733072916666666,
+   "wh_l_full": 2.3107638888888884
+  },
+  "lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)": {
+   "C_cm3": 8.48826363156775,
+   "vmax": 3.8,
+   "vmin": 2.2,
+   "k": 9.42477796076938,
+   "rho": 1.6,
+   "t_min_mm": 10.0,
+   "tag": "[PUBLICATION] Taiyo Yuden LIC1030RS3R8206: 20 F, 3.8 V upper limit, 2.2 V lower limit, 10 mm diameter by 30 mm, internal resistance 4000 mOhm max (device sheet, non-preferred status)",
+   "wh_l_usable": 11.317684842090332,
+   "wh_l_full": 17.023684283310878
+  },
+  "thin solid-state cell (ST EFL700A39)": {
+   "C_cm3": 32.55006510013019,
+   "vmax": 4.2,
+   "vmin": 3.6,
+   "k": 15.48384,
+   "rho": 2.0,
+   "t_min_mm": 0.2,
+   "tag": "[PUBLICATION] ST EnFilm EFL700A39 (DocID 17370): 0.7 mAh, 3.9 V nominal, 3.6 to 4.2 V, 25.4 x 25.4 x 0.2 mm, Rint 100 to 120 ohm, 10 mA pulse (100 ms on, 900 ms off), 5 mA continuous. The cell is treated as a linear capacitor over 3.6 to 4.2 V [HYPOTHESIS]",
+   "wh_l_usable": 21.157542315084623,
+   "wh_l_full": 79.74765949531897
+  }
+ },
+ "saving": {
+  "Bare": {
+   "n": 0,
+   "cell_mass_g": 0.0,
+   "saved_g": 14.592,
+   "saved_pct": 100.0,
+   "thickness_empty_tile_mm": 1.1,
+   "thickness_flat_body_mm": 1.1,
+   "thickness_saved_flat_mm": 0.8999999999999999,
+   "E_Wh": 0.0
+  },
+  "Buffer 14 cells": {
+   "n": 14,
+   "cell_mass_g": 1.596,
+   "saved_g": 12.996,
+   "saved_pct": 89.0625,
+   "thickness_empty_tile_mm": 1.1,
+   "thickness_flat_body_mm": 2.0,
+   "thickness_saved_flat_mm": 0.0,
+   "E_Wh": 0.8072672999999999
+  },
+  "Buffer 23 cells": {
+   "n": 23,
+   "cell_mass_g": 2.622,
+   "saved_g": 11.97,
+   "saved_pct": 82.03125,
+   "thickness_empty_tile_mm": 1.1,
+   "thickness_flat_body_mm": 2.0,
+   "thickness_saved_flat_mm": 0.0,
+   "E_Wh": 1.3262248499999998
+  },
+  "Buffer 52 cells": {
+   "n": 52,
+   "cell_mass_g": 5.928,
+   "saved_g": 8.664000000000001,
+   "saved_pct": 59.37500000000001,
+   "thickness_empty_tile_mm": 1.1,
+   "thickness_flat_body_mm": 2.0,
+   "thickness_saved_flat_mm": 0.0,
+   "E_Wh": 2.9984213999999993
+  },
+  "Full": {
+   "n": 128,
+   "cell_mass_g": 14.592,
+   "saved_g": 0.0,
+   "saved_pct": 0.0,
+   "thickness_empty_tile_mm": 1.1,
+   "thickness_flat_body_mm": 2.0,
+   "thickness_saved_flat_mm": 0.0,
+   "E_Wh": 7.380729599999999
+  }
+ }
+}

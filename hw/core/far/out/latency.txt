@@ -1,0 +1,92 @@
+FAR LINK LATENCY · input to photon p99 (ms), gate 30 ms · sim/latency/model.py + the far link terms
+link from farlink.py, 90 % shadow margin, BTK rules, Leaf as designed. N = 200000 actions per cell.
+'--' = the link does not carry 25 Mbit/s down and 0.41 Mbit/s up at that distance (no stream).
+
+input packet: input 200 B (the sim packet)
+  radio                                    Core position                 100 m    300 m     1 km     3 km     5 km    10 km
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      Core at the radio              21.5     21.5       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      metro, 20 km of fibre          21.8     21.8       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      regional, 100 km               22.8     22.8       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      national, 500 km               30.1     30.1       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      far validator 80 ms           106.7    106.7       --       --       --       --
+
+  5G 3.5 GHz, LOS, Core 25 dBi             Core at the radio              21.5     21.5     21.5     21.5     21.5       --
+  5G 3.5 GHz, LOS, Core 25 dBi             metro, 20 km of fibre          21.8     21.8     21.8     21.8     21.8       --
+  5G 3.5 GHz, LOS, Core 25 dBi             regional, 100 km               22.8     22.8     22.8     22.8     22.8       --
+  5G 3.5 GHz, LOS, Core 25 dBi             national, 500 km               30.1     30.1     30.1     30.1     30.1       --
+  5G 3.5 GHz, LOS, Core 25 dBi             far validator 80 ms           106.7    106.7    106.7    106.7    106.7       --
+
+  5G 700 MHz, urban NLOS, Core 18 dBi      Core at the radio              21.5     21.5     25.0       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      metro, 20 km of fibre          21.8     21.8     25.3       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      regional, 100 km               22.8     22.8     26.3       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      national, 500 km               30.1     30.1     33.6       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      far validator 80 ms           106.7    106.7    110.2       --       --       --
+
+  5G 700 MHz, LOS, Core 25 dBi             Core at the radio              21.5     21.5     21.5     22.0     22.5       --
+  5G 700 MHz, LOS, Core 25 dBi             metro, 20 km of fibre          21.8     21.8     21.8     22.3     22.8       --
+  5G 700 MHz, LOS, Core 25 dBi             regional, 100 km               22.8     22.8     22.8     23.3     23.8       --
+  5G 700 MHz, LOS, Core 25 dBi             national, 500 km               30.1     30.1     30.1     30.6     31.1       --
+  5G 700 MHz, LOS, Core 25 dBi             far validator 80 ms           106.7    106.7    106.7    107.2    107.7       --
+
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            Core at the radio              16.1     16.2       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            metro, 20 km of fibre          16.6     16.8       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            regional, 100 km               17.9     18.0       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            national, 500 km               25.8     25.9       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            far validator 80 ms           103.0    103.2       --       --       --       --
+
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          Core at the radio              18.8     19.1       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          metro, 20 km of fibre          19.3     19.6       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          regional, 100 km               20.6     20.8       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          national, 500 km               27.6     27.9       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          far validator 80 ms           104.3    104.5       --       --       --       --
+
+
+input packet: input 3.4 kB (touch batch with an ML-DSA-65 signature)
+  radio                                    Core position                 100 m    300 m     1 km     3 km     5 km    10 km
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      Core at the radio              21.5     26.5       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      metro, 20 km of fibre          21.8     26.8       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      regional, 100 km               22.8     27.8       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      national, 500 km               30.1     35.1       --       --       --       --
+  5G 3.5 GHz, urban NLOS, Core 18 dBi      far validator 80 ms           106.7    111.7       --       --       --       --
+
+  5G 3.5 GHz, LOS, Core 25 dBi             Core at the radio              21.5     21.5     21.5     24.0     46.5       --
+  5G 3.5 GHz, LOS, Core 25 dBi             metro, 20 km of fibre          21.8     21.8     21.8     24.3     46.8       --
+  5G 3.5 GHz, LOS, Core 25 dBi             regional, 100 km               22.8     22.8     22.8     25.3     47.8       --
+  5G 3.5 GHz, LOS, Core 25 dBi             national, 500 km               30.1     30.1     30.1     32.6     55.1       --
+  5G 3.5 GHz, LOS, Core 25 dBi             far validator 80 ms           106.7    106.7    106.7    109.2    131.7       --
+
+  5G 700 MHz, urban NLOS, Core 18 dBi      Core at the radio              24.0     24.0     72.5       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      metro, 20 km of fibre          24.3     24.3     72.8       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      regional, 100 km               25.3     25.3     73.8       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      national, 500 km               32.6     32.6     81.1       --       --       --
+  5G 700 MHz, urban NLOS, Core 18 dBi      far validator 80 ms           109.2    109.2    157.7       --       --       --
+
+  5G 700 MHz, LOS, Core 25 dBi             Core at the radio              24.0     24.0     24.0     29.5     57.5       --
+  5G 700 MHz, LOS, Core 25 dBi             metro, 20 km of fibre          24.3     24.3     24.3     29.8     57.8       --
+  5G 700 MHz, LOS, Core 25 dBi             regional, 100 km               25.3     25.3     25.3     30.8     58.8       --
+  5G 700 MHz, LOS, Core 25 dBi             national, 500 km               32.6     32.6     32.6     38.1     66.1       --
+  5G 700 MHz, LOS, Core 25 dBi             far validator 80 ms           109.2    109.2    109.2    114.7    142.7       --
+
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            Core at the radio              16.1     16.3       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            metro, 20 km of fibre          16.6     16.8       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            regional, 100 km               17.9     18.1       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            national, 500 km               25.8     26.0       --       --       --       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi            far validator 80 ms           103.0    103.2       --       --       --       --
+
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          Core at the radio              18.9     19.2       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          metro, 20 km of fibre          19.4     19.7       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          regional, 100 km               20.6     20.9       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          national, 500 km               27.7     28.0       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi          far validator 80 ms           104.3    104.6       --       --       --       --
+
+
+the backhaul round trip the 30 ms p99 leaves (ms, between the radio and the Core), input 200 B
+  radio                                       100 m    300 m     1 km     3 km     5 km    10 km
+  5G 3.5 GHz, urban NLOS, Core 18 dBi           7.6      7.6       --       --       --       --
+  5G 3.5 GHz, LOS, Core 25 dBi                  7.6      7.6      7.6      7.6      7.6       --
+  5G 700 MHz, urban NLOS, Core 18 dBi           7.6      7.6      4.8       --       --       --
+  5G 700 MHz, LOS, Core 25 dBi                  7.6      7.6      7.6      7.2      6.9       --
+  Wi-Fi 5 GHz, LOS, Core 25 dBi                10.5     10.5       --       --       --       --
+  Wi-Fi 2.4 GHz, LOS, Core 25 dBi               9.4      9.1       --       --       --       --
+  fibre RTT: 20 km at route 1.5 = 0.29 ms, 100 km = 1.47 ms, 500 km = 7.35 ms (plus 0.3 ms of equipment)
+  propagation in air, whole path: 3.34 us per km each way, 6.7 us per km on the round trip

@@ -1,0 +1,56 @@
+THE MASS AND VOLUME SUMMARY OF THE SPLIT (parts.py, all [HYPOTHESIS])
+rows: 84, module stated sum 10.80 g (HARDWARE/13 states 10.80 g), validation passed
+
+THE LEAF TODAY
+  body, derived L.6.0 sum         40.60 g  (range 35.9 to 45.9)
+  module, HARDWARE/13 stated      10.80 g
+  module plus placement-only      10.88 g
+  Leaf, derived                   51.48 g  (range 46.8 to 56.8)
+  Leaf, stated 68.0 body plus H13 module   78.80 g ; the stated total is 88.0 g (it counts a withdrawn 20 g module)
+  the stated 68 g body counts 34.4 g of withdrawn LLZO cells; the L.6.0 cells weigh 14.72 g (128 x 0.115 g, cell_spec.txt)
+
+THE MASS THAT LEAVES THE LEAF, by class (derived basis, then the stated 68 g basis)
+  class  leaves g    share   added g    Skin g range lo-hi |  A leaves   A share
+  C0        20.85    40.5%      0.06     30.69  30.2-31.9  |     36.31     46.1%
+  C0R       19.84    38.5%      0.06     31.70  31.2-32.9  |     35.30     44.8%
+  C1         0.00     0.0%      0.00     51.48  51.5-51.5  |      0.00      0.0%
+  C2         0.00     0.0%      0.00     51.48  51.5-51.5  |      0.00      0.0%
+  module alone: mass today 10.88 g; after the Split:C0 9.03 g (leaves 1.91), C0R 10.04 g (leaves 0.90), C1 10.88 g (leaves 0.00), C2 10.88 g (leaves 0.00)
+
+MASS BY CODE (counted rows: body, module, placement-only; derived basis; M counts the moving fraction)
+  class      P g      S g      M g  M stays | row counts
+  C0       25.54     5.08    20.85     0.00 | rows P  36 S  10 M  15
+  C0R      25.54     6.09    19.84     0.00 | rows P  36 S  15 M  10
+  C1       26.94    24.53     0.00     0.00 | rows P  41 S  20 M   0
+  C2       26.94    24.53     0.00     0.00 | rows P  41 S  20 M   0
+
+VERDICT BY CLASS under the rule of necessity (counted rows, derived basis, grams and rows; a star row is on the line)
+  class    Body g  Module g    Core g  Skin add | row counts
+  C0        21.66      8.97     20.85      0.06 | rows Body  18 Module  28 Core  15, on the line  32
+  C0R       21.66      9.97     19.84      0.06 | rows Body  18 Module  33 Core  10, on the line  32
+  C1        40.60     10.87      0.00      0.00 | rows Body  23 Module  38 Core   0, on the line  32
+  C2        40.60     10.87      0.00      0.00 | rows Body  23 Module  38 Core   0, on the line  32
+
+THE ENERGY THAT LEAVES (C0: all 128 cells move, because the rule keeps no energy part at C0)
+  body energy G target 5.90 Wh, S target 7.38 Wh, so 5.90 to 7.38 Wh leave the Leaf
+  LINE ITEM L2, the Buffer of Part 22: if 20 cells stay on the Skin, 2.38 g stay (cells, TCMs and the mux),
+  the Skin keeps 0.92 to 1.15 Wh, and the cost that leaves falls by 24.7 / 11.8 / 7.5 USD at 100 k, 1 M and 5 M (base)
+  C0 with the Buffer: leaves 18.47 g, Skin 33.07 g
+
+THE VOLUME OF THE B RING THAT BECOMES FREE
+  ring envelope 3217 mm3 (pi x 16^2 x 4.00); electronics layer above the board 1572 mm3 (r 14.75 x 2.30)
+  B cell 240 mm3, bar 128 mm3, one body cell 77.0 mm3, all 128 body cells 9857 mm3
+  C0   ring volume freed   377.3 mm3 = 24.0 % of the layer = 1.6 B cells ; body cell volume freed    9857 mm3 (128 cells)
+        parts: M16 12.2, M17 15.0, M18 13.5, M19 64.0, M20 25.2, M21 1.6, M27 3.6, M29 240.0, X03 2.2
+  C0R  ring volume freed   282.6 mm3 = 18.0 % of the layer = 1.2 B cells ; body cell volume freed    9857 mm3 (128 cells)
+        parts: M16 12.2, M20 25.2, M21 1.6, M27 3.6, M29 240.0
+  C1   ring volume freed     0.0 mm3 =  0.0 % of the layer = 0.0 B cells ; body cell volume freed       0 mm3 (0 cells)
+        parts: 
+  C2   ring volume freed     0.0 mm3 =  0.0 % of the layer = 0.0 B cells ; body cell volume freed       0 mm3 (0 cells)
+        parts: 
+
+WHAT IT DOES TO THE 4.00 MM, THE 1.00 MM AND THE 0.14 WH
+  4.00 mm module : the camera column stands 3.90 mm (F21 21.3.5). No class thins the module. The freed volume is room.
+  1.00 mm bar    : the bar holds A1, A2, A4 and the 12 leaves. All are P. No class changes the bar.
+  0.14 Wh B cell : C0 and C0R move it with U7. C1 and C2 keep it (island rail of the wallet).
+  body 2.00 mm   : the cell layer is 0.90 mm of 2.00 mm (45 %). At C0 all 128 tiles lose their cell: 1.10 mm (candidate K-6)

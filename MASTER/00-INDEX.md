@@ -31,6 +31,8 @@
 | XV | `MASTER/15-REVISION-E.md` | the log of revision E: the module at 4 mm, the latency and the heat doctrine, the corner |
 | XVI | `MASTER/16-REVISION-F.md` | the log of revision F: the sound and the jack in the module, the optional board, the service kit, Turkey first, the drawing order |
 | XVII | `MASTER/17-REVISION-G-TO-L.md` | the logs of revision G to revision L, the four tools, and the count of the register at revision L |
+| XVIII | `FINAL/22-host-power-and-the-living-leaf.md` and `hw/hostpower/` | the host power block of revision L.6.1: the Host Life Law, the tiers, the power door and the claim |
+| XIX | `FINAL/23-core-skin-and-the-heartbeat.md` and `hw/core/` | the L.7 candidate: the Core and the Skin, the distance classes and the Heartbeat Law |
 | n.a. | `MASTER/STATE.md` | the living picture: the blocks, the questions, the gate board |
 
 ## 2 · The three laws of the program

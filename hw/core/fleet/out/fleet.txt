@@ -1,0 +1,180 @@
+FLEET seat, block HP-3 · Leafs per Core · the capacity model
+Inputs read only: hw/dock/out/validator_sizing.json, hw/dock/validator_sizing.py constants, validator/leaf-duty, net/discovery.
+Every result is a [HYPOTHESIS]. The base case is one set of numbers. The Monte Carlo draws all ranges.
+
+0 · what one session costs, per activity (Leaf 160, 1600 x 3200, 240 Hz scan-out)
+  activity   DL Mbit  UL kbit     fps  dirty renders hashGBs   Gpx/s encMpix  mem MB
+  idle         0.003      2.5     0.2   0.06    1.00   0.000   0.000     0.0       5
+  delta        2.001     52.2    30.0   0.35    3.16   0.680   0.383   161.3     108
+  video       30.344    471.1    60.0   1.00    1.16   1.428   0.322   307.2     128
+  video80     80.344   1221.1    60.0   1.00    1.16   1.428   0.322   307.2     128
+  video150   150.344   2271.1    60.0   1.00    1.16   1.428   0.322   307.2     128
+  camera       2.686  37558.6    30.0   0.50    1.16   0.357   0.121    76.8     105
+  THE RULING (Ayaz, 2026-10-19): the B module keeps the camera, the transducers, the antennas and the radio front end, and at C1 and C2
+  the link PHY, slice decoder, frame store, compositor and a hardened identity element. The wallet signer, the session, the AI, the image
+  processing, the validator role and the energy host sit in the Core. So the Core signs each input batch and each receipt.
+  The uplink of the ruled split is a pairing MAC per batch and one attestation per second by the identity element (ML-DSA-44, 2420 B).
+  The delta uplink: ruled 52 kbit/s; wallet in the Leaf (L.6.0): 681 with the key inline, 453 by reference, 71 with a MAC per batch.
+  Under the ruling the camera stream goes up, because the image processing is in the Core: 37.5 Mbit/s of 12.5 MP binned frames.
+
+1 · LEAFS PER CORE, base case. Minimum over radio, compute and memory+network.
+  C0 dock Core: Orin NX + KU15P frame engine, Wi-Fi 7 at 1.5 m, one contact pad. C1 room Core: AGX Orin + KU15P,
+  Wi-Fi 7, room radius 15 m. C2 site Core: one sector of 256 elements, 100 W, 3.5 GHz, 100 MHz TDD, Leafs in a
+  disc of 2 km, 8 dB of wall or vehicle loss, 192 cores, 4 frame engines, 4 MA35D encoders.
+  cls activity     Leafs  binds        radio   compute   mem+net covered  sub-limit
+  C0  idle          1.00  radio         1.00      2400       960    100%  radio.ports
+  C0  delta         1.00  radio         1.00      2.48      44.6    100%  radio.ports
+  C0  video         1.00  radio         1.00      1.30      28.5    100%  radio.ports
+  C0  camera        1.00  radio         1.00      5.21      18.6    100%  radio.ports
+  C0  peak mix      1.00  radio         1.00      14.0       228          radio.ports
+  C1  idle           256  radio          256      4000      3520    100%  radio.conn
+  C1  delta         4.96  compute       66.0      4.96       163    100%  compute.enc
+  C1  video         2.60  compute       13.0      2.60      28.5    100%  compute.enc
+  C1  camera        10.4  compute       11.4      10.4      18.6    100%  compute.enc
+  C1  peak mix      28.0  compute        238      28.0       820          compute.enc
+  C2  idle          8000  radio         8000     16000    162240     98%  radio.conn
+  C2  delta         76.4  radio         76.4      79.0      7530     98%  radio.dl
+  C2  video         5.04  radio         5.04      41.5      1277     41%  radio.dl
+  C2  camera        9.48  radio         9.48       166      1735      4%  radio.ul
+  C2  peak mix       133  radio          133       446     35783          radio.dl
+  peak mix: {'idle': 0.85, 'delta': 0.12, 'video': 0.03} of the registered Leafs, so one number is the registered Leafs one Core carries.
+  covered: the share of the 2 km disc that has a link. Leafs counted are those in the covered part.
+  C0 counts the Wi-Fi 7 AP of the dock. The contact pads of a dock carry one Leaf each (radio.ports = 1).
+
+2 · every sub-limit, C2 base case (Leafs, one Core)
+  limit                  idle      delta      video     camera
+  radio.dl              54461       76.4       5.04       56.9
+  radio.ul              57829       2102        248       9.48
+  radio.ctrl             9180        249       84.2        167
+  radio.conn             8000       1000       1000       1000
+  compute.cpu          562216       3378       2944       4544
+  compute.engine       749902        282        197        682
+  compute.dram         179025      12007      11236      32532
+  compute.sign          16000        267       1067       1067
+  compute.isp             inf        inf        inf       3556
+  compute.enc             inf       79.0       41.5        166
+  compute.dec             inf        inf       51.0        inf
+  memnet.ram           162240       7530       6327       7743
+  memnet.nic         11049375      27413       1277       1735
+  memnet.wan          1307727     116250       2855       1856
+  idle: DL layers K=6, UL layers 8, DL outage 2.5 %, UL outage 0.0 %
+  delta: DL layers K=6, UL layers 8, DL outage 2.5 %, UL outage 0.0 %
+  video: DL layers K=6, UL layers 8, DL outage 2.5 %, UL outage 59.3 %
+  camera: DL layers K=6, UL layers 8, DL outage 2.5 %, UL outage 96.0 %
+
+3 · the REACH of a Leaf from the Core, km, with 10 % outage allowed (the sector empty). Downlink and uplink apart.
+  case                                  DL km    UL km    reach    model
+  (the camera row needs 37.5 Mbit/s up: a stream beyond what a SAR-limited Leaf sends; see the photograph table of twohosts.py)
+  delta, RULED split                     2.70     2.02     2.02 UMa env8
+  delta, L.6.0 key inline                2.70     1.16     1.16 UMa env8
+  delta, L.6.0 MAC + 1 sig/s             2.70     1.91     1.91 UMa env8
+  video, RULED split                     2.70     1.27     1.27 UMa env8
+  video, L.6.0 key inline                2.70     1.22     1.22 UMa env8
+  video, L.6.0 MAC + 1 sig/s             2.70     1.26     1.26 UMa env8
+  delta, ruled, env 0 dB                 4.32     3.24     3.24 UMa env0
+  delta, ruled, env 8 dB                 2.70     2.02     2.02 UMa env8
+  delta, ruled, env 15 dB                1.79     1.34     1.34 UMa env15
+  delta, ruled, env 0 dB                 8.60     6.42     6.42 RMa env0
+  delta, ruled, env 8 dB                 5.34     3.99     3.99 RMa env8
+  delta, ruled, env 15 dB                3.52     2.63     2.63 RMa env15
+  delta, ruled, P_ue 17 dBm              2.51     1.70     1.70 UMa env8
+  delta, ruled, P_ue 23 dBm              2.88     2.41     2.41 UMa env8
+  video, ruled, ACK 0.3 %                2.70     1.75     1.75 UMa env8
+  camera, ruled, camera upload           2.70     0.31     0.31 UMa env8
+  base: 256 elements, 100 W, 3.5 GHz, 100 MHz, 3 dB hand, Leaf at 20 dBm. The far seat owns the link budget proper.
+
+4 · C2 sweeps, Leafs per Core. Radio limit, then the minimum over all three. Covered is the share of the disc with a link.
+  The compute box of the base case holds 79 delta or 41 video sessions, so the minimum stops there. The README, Section 5, right-sizes the compute.
+  4a · the radius of the Leaf disc, km. UMa is the city, RMa is open country.
+  radius | urban: radio delta, radio video, covered     | rural: radio delta, radio video, covered    
+     0.3 |       249 radio.ctrl      84.2 radio.ctrl  100%  100% |       249 radio.ctrl      84.2 radio.ctrl  100%  100%
+     0.5 |       249 radio.ctrl      84.2 radio.ctrl  100%  100% |       249 radio.ctrl      84.2 radio.ctrl  100%  100%
+     1.0 |       249 radio.ctrl      44.1 radio.dl   100%  100% |       249 radio.ctrl      84.2 radio.ctrl  100%  100%
+     2.0 |      76.4 radio.dl       5.04 radio.dl    98%   41% |       249 radio.ctrl      47.4 radio.dl   100%  100%
+     3.0 |      14.5 radio.dl       0.96 radio.dl    45%   18% |       244 radio.dl       16.1 radio.dl   100%   72%
+     5.0 |      13.3 radio.dl       0.88 radio.dl    18%    8% |      27.7 radio.dl       1.83 radio.dl    63%   27%
+     8.0 |      11.7 radio.dl       0.77 radio.dl     8%    3% |      13.7 radio.dl       0.91 radio.dl    25%   11%
+    10.0 |      14.1 radio.dl       0.93 radio.dl     5%    3% |      15.3 radio.dl       1.01 radio.dl    15%    6%
+  The sweeps 4b to 4d use a disc of 1 km, where the base case covers the whole disc.
+  4b · the array size, elements (100 W total power held), radio side
+  elements  delta radio  video radio   covered delta / video
+        16         53.2         3.51   radio.dl / radio.dl   90% / 41%
+        64          245         16.1   radio.dl / radio.dl   100% / 80%
+       128          249         29.2   radio.ctrl / radio.dl   100% / 100%
+       256          249         44.1   radio.ctrl / radio.dl   100% / 100%
+       512          249         59.5   radio.ctrl / radio.dl   100% / 100%
+      1024          249         74.5   radio.ctrl / radio.dl   100% / 100%
+  4c · the Leaf uplink power under SAR, dBm (class 3 is 23)
+      P_ue  delta radio  video radio   covered delta / video
+        14          249         42.6   radio.ctrl / radio.dl   100% / 80%
+        17          249         43.6   radio.ctrl / radio.dl   100% / 100%
+        20          249         44.1   radio.ctrl / radio.dl   100% / 100%
+        23          249         44.3   radio.ctrl / radio.dl   100% / 100%
+  4d · the wall or vehicle loss between the Core and the Leaf, dB
+       env  delta radio  video radio   covered delta / video
+         0          249         82.7   radio.ctrl / radio.dl   100% / 100%
+         8          249         44.1   radio.ctrl / radio.dl   100% / 100%
+        15          239         15.8   radio.dl / radio.dl   100% / 71%
+        25         14.5         0.96   radio.dl / radio.dl   56% / 24%
+  4e · the sectors of one mast (radio times the sectors, compute pooled in one box)
+  sectors 1: delta 76.4 (radio.dl), video 5.04 (radio.dl)
+  sectors 3: delta 79.0 (compute.enc), video 15.1 (radio.dl)
+  4f · the stream rate: video at 30, 80 and 150 Mbit/s
+  video     DL   30.3 Mbit/s: radio 5.04, compute 41.5, mem+net 1277, binds radio.dl
+  video80   DL   80.3 Mbit/s: radio 1.90, compute 41.5, mem+net 481, binds radio.dl
+  video150  DL  150.3 Mbit/s: radio 1.02, compute 41.5, mem+net 257, binds radio.dl
+  4g · the uplink design: the ruled split, then the wallet in the Leaf: key inline (validator/leaf-duty), key by reference, MAC + 1 signature per second
+  RULED split    delta UL   52 kbit/s -> 76.4 Leafs (radio.dl, covered 98%); video UL  471 kbit/s -> 5.04 (radio.dl, covered 41%)
+  key inline     delta UL  681 kbit/s -> 31.8 Leafs (radio.ul, covered 36%); video UL  570 kbit/s -> 5.04 (radio.dl, covered 38%)
+  key by ref     delta UL  453 kbit/s -> 76.4 Leafs (radio.dl, covered 41%); video UL  529 kbit/s -> 5.04 (radio.dl, covered 38%)
+  MAC + 1 sig/s  delta UL   71 kbit/s -> 76.4 Leafs (radio.dl, covered 90%); video UL  490 kbit/s -> 5.04 (radio.dl, covered 41%)
+
+5 · the compute tier of the box (the radio held at its base case): where does the compute wall stand?
+  cls tier                              idle     delta     video       mix   full240   wall: delta, video, full240
+  C2  CPU only, MA35D encoders          3550      79.0      41.5       446      3.46   compute.enc, compute.enc, compute.enc
+  C2  4 FPGA frame engines             16000      79.0      41.5       446      3.46   compute.enc, compute.enc, compute.enc
+  C2  4 ASIC frame engines             16000      79.0      41.5       446      3.46   compute.enc, compute.enc, compute.enc
+  C1  AGX Orin + KU15P (base)           4000      4.96      2.60      28.0      0.22   compute.enc, compute.enc, compute.enc
+  C1  base + 1 MA35D                    4000      24.7      13.0       139      1.08   compute.enc, compute.enc, compute.enc
+  C0  Orin NX + KU15P (base)            2400      2.48      1.30      14.0      0.11   compute.enc, compute.enc, compute.enc
+  C0  base + 1 MA35D                    2400      22.2      11.7       125      0.97   compute.enc, compute.enc, compute.enc
+  the render side alone (CPU, frame engine, DRAM, signer; the encoder left out), sessions per box:
+  cls tier                             delta     video   full240   wall
+  C2  CPU only, MA35D encoders          93.6      87.7      4.20   compute.dram, compute.dram, compute.dram
+  C2  4 FPGA frame engines               267       197      12.4   compute.sign, compute.engine, compute.engine
+  C2  4 ASIC frame engines               267      1067       267   compute.sign, compute.sign, compute.sign
+  C1  AGX Orin + KU15P (base)           66.7      49.2      3.09   compute.sign, compute.engine, compute.engine
+  C1  base + 1 MA35D                    66.7      49.2      3.09   compute.sign, compute.engine, compute.engine
+  C0  Orin NX + KU15P (base)            40.0      49.2      3.09   compute.sign, compute.engine, compute.engine
+  C0  base + 1 MA35D                    40.0      49.2      3.09   compute.sign, compute.engine, compute.engine
+  full240 is the worst case of hw/dock/validator_sizing.py: every pixel at 240 Hz with 2 speculative frames. It is not a session class.
+  (compute limit only, one box. A site buys devices to match the radio: econ.py right-sizes them.)
+
+6 · one Core for the whole family: the pixel count scales the compute and the video rate
+  Leaf 80   pixels x0.50  delta 76.4 (radio.dl, compute 158)  video 9.96 (radio.dl, compute 82.9)
+  Leaf 160  pixels x1.00  delta 76.4 (radio.dl, compute 79.0)  video 5.04 (radio.dl, compute 41.5)
+  Leaf 480  pixels x0.81  delta 76.4 (radio.dl, compute 97.5)  video 6.20 (radio.dl, compute 51.2)
+
+7 · the Skin, a pixel link (BRIEF Section 3), for the contrast only. The ruling keeps the slice decoder in the B module at C1 and C2.
+  one Skin needs: hash 4.9 GB/s, 2.77 Gpx/s touched, 38 k LUT, 1229 Mpix/s of link coding
+  C0: compute 9.8 Skins per KU15P, link 2 (tether ports of the dock, 2 per dock [HYPOTHESIS], one Skin per tether)
+  C1: compute 9.8 Skins per KU15P, link {'3:1': 1.4, '4:1': 1.8, '6:1': 2.8} (60 GHz room link, 16.8 Gbit/s aggregate per Core [HYPOTHESIS])
+  C2: 0 (6 Gbit/s does not cross a kilometre to a Leaf antenna: BRIEF Section 8.2)
+
+8 · the Monte Carlo of 400 draws over every range (design held: array, boxes). Leafs per Core, p10 / p50 / p90.
+  case                  p10          p50          p90   binding share
+  C0/idle              1.00         1.00         1.00   radio.ports 100%
+  C0/delta             0.93         1.00         1.00   radio.ports 88%, compute.enc 12%
+  C0/video             0.97         1.00         1.00   radio.ports 88%, compute.dec 6%, compute.enc 5%
+  C0/camera            1.00         1.00         1.00   radio.ports 100%
+  C1/idle               256          256          256   radio.conn 100%
+  C1/delta             1.87         4.25         12.3   compute.enc 100%, compute.sign 0%
+  C1/video             1.93         3.16         4.36   compute.dec 64%, compute.enc 36%
+  C1/camera            6.06         8.39         11.6   radio.dl 60%, compute.enc 40%
+  C2/idle              4067         7092        11370   radio.conn 59%, radio.ctrl 32%, radio.dl 8%
+  C2/delta             11.3         33.6          111   radio.dl 52%, compute.enc 43%, compute.sign 4%
+  C2/video             0.77         4.71         23.4   radio.dl 98%, compute.dec 1%, compute.enc 0%
+  C2/camera            3.80         7.87         9.78   radio.ul 94%, radio.dl 6%
+  C0/mix               1.00         1.00         1.00   radio.ports 100%
+  C1/mix               13.4         27.1         56.0   compute.enc 100%
+  C2/mix               20.2          123          437   radio.dl 77%, compute.enc 23%

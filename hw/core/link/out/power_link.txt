@@ -1,0 +1,40 @@
+E. POWER IN THE LINK: can the tether carry the Skin power with the data?
+====================================================================================================
+  Skin loads at the connector, W: delta 0.95, video 1.57, peak (full white, 1000 nits, QD) 3.75
+  The sinks need 3.40 V (green) at the tile node, so the Skin end must stay above 3.60 V under the peak. [DECISION] hw/energy 03.
+
+E1. copper per metre
+  24 AWG: 0.084 ohm/m
+  28 AWG: 0.213 ohm/m
+  30 AWG: 0.337 ohm/m
+  34 AWG: 0.855 ohm/m
+  LCP flex strip 0.5 mm x 35 um: 0.98 ohm/m
+
+E2. designs. VBUS from the Core at v0; the Skin takes constant power. Parallel conductors: n on VBUS, n on GND.
+design                                          v0  R loop | I delta   loss | I video   loss | I peak V at Skin   loss | verdict
+12 leaves only (dock pads), 18 mohm, 2+2 leaves   4.2   0.018 |   0.227  0.001 |   0.374  0.003 |  0.896      4.18  0.014 | pass (C0)
+flex 0.3 m, 2 x 0.5 mm strips per side + leaves   5.0   0.312 |   0.193  0.012 |   0.320  0.032 |  0.789      4.75  0.194 | pass (C0)
+flex 0.5 m, 3 strips per side + leaves         5.0   0.345 |   0.193  0.013 |   0.320  0.035 |  0.793      4.73  0.217 | pass (C0)
+round 28 AWG, 2 m, 2+2 wires, at 5 V           5.0   0.443 |   0.194  0.017 |   0.323  0.046 |  0.808      4.64  0.289 | pass (C0 edge)
+round 28 AWG, 2 m, 2+2 wires, 12 V, clip buck 93 %  12.0   0.443 |   0.086  0.003 |   0.141  0.009 |  0.340     11.85  0.051 | pass (C0)
+hybrid fibre, 28 AWG, 10 m, 20 V, clip buck 93 %  20.0   4.251 |   0.052  0.011 |   0.086  0.031 |  0.211     19.10  0.189 | pass (C1)
+hybrid fibre, 24 AWG, 30 m, 20 V, clip buck 93 %  20.0   5.032 |   0.052  0.014 |   0.086  0.037 |  0.213     18.93  0.228 | pass (C1)
+  Losses are heat in the cable, not on the Skin. The buck sits in the clip, so its 7 % loss (0.13 W at video) is clip heat.
+
+E3. the leaves as a power path (hw/energy 03 Section 2.1: 18 mohm, 1.5 A per leaf, continuous)
+  delta   0.95 W at 4.2 V:  0.23 A over 2 VBUS leaves = 0.11 A each (  8 % of rating), leaf loss    0.9 mW
+  video   1.57 W at 4.2 V:  0.37 A over 2 VBUS leaves = 0.19 A each ( 12 % of rating), leaf loss    2.5 mW
+  peak    3.75 W at 4.2 V:  0.89 A over 2 VBUS leaves = 0.45 A each ( 30 % of rating), leaf loss   14.3 mW
+  the leaves carry the Skin power with margin. The pins that matter are the data lanes.
+
+E4. the conductor count of the tether that carries both
+  data: 2 lanes x 2 wires (D0, D1) + BC pair + 1 sideband + guard grounds = 8 lines of 100 ohm class
+  power: 2 VBUS + 2 GND (flex or round) at 5 V up to 0.5 m; 2 VHV + 2 GND at 12 to 20 V beyond 1 m with a clip buck
+  flex 0.3 m with 12 conductors: mass 1.3 g, 6 mm wide at 0.5 mm pitch; round 28 AWG micro bundle, 2 m: 8 g
+
+E5. radios and the cell. No power rides on a radio. The Skin then holds a cell.
+  video at 1.57 W plus a 60 GHz end (0.6 W) for 2 h: 4.8 Wh = 19 g of cell at 250 Wh/kg
+  video at 1.57 W plus a Wi-Fi 7 end (1.0 W) for 2 h: 5.7 Wh = 23 g
+  that is 81 to 97 % of the 5.9 Wh L.6.0 body battery. A radio end gives the Split no mass gain.
+
+E6. a Skin with no cell and a hot-unplug: the safe screen needs 0.12 W for 60 s = 7.2 J = 2 mWh. One tile cell holds 46 mWh.

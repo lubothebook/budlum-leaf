@@ -1,0 +1,77 @@
+B. THE LINK OPTIONS
+====================================================================================================
+B0. the need, Gb/s on the link (the tether adds its own coding where it has one)
+  full motion 240 Hz DSC 10 bpp             13.103
+  full motion 240 Hz VDC-M 6 bpp             7.791
+  full motion 120 Hz DSC 8 bpp               5.124
+  scroll or video 60 Hz DSC 8 bpp            2.562
+  video 30 fps 16:9, DSC 8 bpp               0.397
+  static page and UI delta, DSC 10           0.762
+
+B1. the 60 GHz budget, Core to Skin, QPSK and 16QAM, 1 or 2 bonded channels of 1.76 GHz (client chip class; 64QAM and 4 channels are lab results)
+    Pt 8 dBm, Skin antenna 8.8 dBi (A4, HARDWARE/19), NF 7 dB, implementation loss 8 dB (phase noise, EVM). [HYPOTHESIS]
+    required SNR for rate 3/4: QPSK 7 dB, 16QAM 14 dB, 64QAM 21 dB [GENERAL]. Hand or body block: 20 dB.
+ d (m)   FSPL |          LOS, Core 8.8 dBi |           LOS, Core 20 dBi |   blocked 20 dB, Core 20 dBi
+   0.1   48.1 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4
+   0.3   57.6 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4
+   1.0   68.1 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4 |   4.62 Gb/s  1ch 16QAM 3/4
+   2.0   74.1 |   9.24 Gb/s  2ch 16QAM 3/4 |   9.24 Gb/s  2ch 16QAM 3/4 |   2.31 Gb/s   1ch QPSK 3/4
+   5.0   82.1 |   4.62 Gb/s   2ch QPSK 3/4 |   9.24 Gb/s  2ch 16QAM 3/4 |   0.00 Gb/s           none
+  10.0   88.1 |   0.00 Gb/s           none |   4.62 Gb/s  1ch 16QAM 3/4 |   0.00 Gb/s           none
+  30.0   97.6 |   0.00 Gb/s           none |   0.00 Gb/s           none |   0.00 Gb/s           none
+    802.11ad: the 4.62 Gb/s PHY rate is one channel, 16QAM 3/4, with the 448/512 guard share (matches the model).
+    Net payload is the PHY rate times about 0.8 for MAC and framing. The best 802.11ad client MAC measured 1.8 Gb/s at 40 cm.
+    range that carries VDC-M 6 bpp 240 Hz   ( 7.79 Gb/s), LOS     , Core 20 dBi:  0.00 m
+    range that carries VDC-M 6 bpp 240 Hz   ( 7.79 Gb/s), blocked , Core 20 dBi:  0.00 m
+    range that carries DSC 8 bpp 120 Hz     ( 5.12 Gb/s), LOS     , Core 20 dBi:  8.15 m
+    range that carries DSC 8 bpp 120 Hz     ( 5.12 Gb/s), blocked , Core 20 dBi:  0.80 m
+    range that carries DSC 8 bpp 60 Hz      ( 2.56 Gb/s), LOS     , Core 20 dBi: 18.30 m
+    range that carries DSC 8 bpp 60 Hz      ( 2.56 Gb/s), blocked , Core 20 dBi:  1.80 m
+    The 60 GHz radio is a C0 to C1 pixel option with line of sight. It does not carry the 13.4 Gb/s design case.
+
+B2. copper flex and twinax loss at 5 GHz (the Nyquist of a 10 Gb/s lane). Budget for tether and connectors: 12 dB [HYPOTHESIS]
+    USB 3.2 Gen 2 allows about 23 dB host to device at 5 GHz in total [PUBLICATION] USB-IF; 12 dB is left for the cable.
+  LCP flex trace, w 100 um, tan d 0.004:  49.4 dB/m at 5 GHz -> 12 dB reach  0.24 m
+  LCP flex trace, w 200 um, tan d 0.004:  26.3 dB/m at 5 GHz -> 12 dB reach  0.46 m
+  LCP flex trace, w 400 um, tan d 0.004:  14.7 dB/m at 5 GHz -> 12 dB reach  0.82 m
+  twinax 30 AWG, shielded, proximity x2:   5.3 dB/m at 5 GHz -> 12 dB reach  2.26 m
+  twinax 34 AWG, shielded, proximity x2:   7.7 dB/m at 5 GHz -> 12 dB reach  1.56 m
+  twinax 40 AWG, shielded, proximity x2:  14.1 dB/m at 5 GHz -> 12 dB reach  0.85 m
+  verdict: thin flex carries 10 Gb/s over 0.25 to 0.8 m, round twinax over 1 to 3 m. That is C0. At 5 to 30 m only fibre or an active cable works.
+
+B3. inductive power through a contactless seat: eta = k2 Q1 Q2 / (1 + sqrt(1 + k2 Q1 Q2))^2
+    Skin share of the loss: half of the coil loss plus the rectifier and regulator at 5 % of the output.
+    k    Q    eta |  loss at 1.8 W out  Skin heat |  loss at 3.6 W out  Skin heat
+ 0.40   30   0.85 |            0.33 W     0.25 W |            0.65 W     0.51 W
+ 0.20   30   0.72 |            0.71 W     0.44 W |            1.42 W     0.89 W
+ 0.20   15   0.52 |            1.66 W     0.92 W |            3.33 W     1.84 W
+ 0.10   15   0.29 |            4.48 W     2.33 W |            8.97 W     4.66 W
+    A coil pair at k 0.2 and Q 30 wastes 0.7 W for 1.8 W. The Skin keeps 0.4 W of heat. Power rides on contact leaves.
+
+B4. near-field couplers: 6 Gb/s and 6 pJ/b per coupler pair, 6 mm2, at 5 mm (ISSCC 2015)
+  couplers for the design case: 3 pairs x 6 mm2 = 18 mm2 on the Skin edge; Skin share of the energy 50 %: 39 mW
+  Gap 1 to 5 mm. A kinematic seat of the Part 21 quadrant locator repeats to under 1 um [GENERAL], so alignment is not the limit.
+  Magnets sit near the couplers. A transmission-line coupler has no ferrite, so it does not saturate. A magnetic (inductive) coupler would.
+
+B5. the table. Net payload and range are the realistic values. Latency is the fixed link part (ms). Power is the Skin end
+    when the link ends on the Skin, at the 13.4 Gb/s design case (radio and optical ends also carry a battery or a clip).
+opt  link                                                        net Gb/s (low/typ/high)  lat ms  Skin mW    range      class         cost  USD
+a    contact leaves on a seat or dock (12 gold leaves)              9.7 /   19.4 /   19.4   0.002       85       0m         C0          low    3
+b    thin flex or ribbon with a connector                           9.7 /   19.4 /   38.8   0.002       85     0.5m         C0   low to mid    8
+c    optical fibre tether (hybrid with two copper power wires)     19.4 /   48.5 /     97   0.003       90     100m  C0 and C1  mid to high   25
+d    60 GHz close-range radio (802.11ad or ay class)                1.8 /    3.7 /    7.4   0.500      600      10m  C0 and C1         high   30
+e    near-field coupler in-plane (transmission-line or capacitive)     5.4 /     18 /     18   0.001       45   0.005m    C0 (mm)          mid   10
+f1   Wi-Fi 7 (2 x 2, 320 MHz)                                         1 /    2.5 /    3.5   1.000     1000      30m  C0 and C1          mid    6
+f2   UWB (IEEE 802.15.4z HRP)                                    0.0068 /  0.027 /  0.027   0.500      200      30m  C0 and C1          low    4
+
+B6. which option carries which stream (net payload after coding; LOW for a wired link means one lane pair lost)
+opt  full motion 240 Hz DSC full motion 240 Hz VDC full motion 120 Hz DSC scroll or video 60 Hz  video 30 fps 16:9, DSC static page and UI del
+a                   typical                    yes                    yes                    yes                    yes                    yes
+b                   typical                    yes                    yes                    yes                    yes                    yes
+c                       yes                    yes                    yes                    yes                    yes                    yes
+d                        no                     no                     no                typical                    yes                    yes
+e                   typical                typical                    yes                    yes                    yes                    yes
+f1                       no                     no                     no                     no                    yes                    yes
+f2                       no                     no                     no                     no                     no                     no
+  'yes' = carried at the low rate; 'typical' = carried only at the typical rate; 'no' = not carried.
+  The 60 GHz rate against distance is in B1. A client chip at 16QAM and 2 channels tops out at 7.4 Gb/s net.

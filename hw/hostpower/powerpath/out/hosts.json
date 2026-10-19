@@ -1,0 +1,468 @@
+{
+ "hosts": {
+  "H0": {
+   "name": "wall dock",
+   "interface": "the 12 bar pads: leaves 5 and 8 VHV at 12 V, 1.04 A each at 25 W; or Qi2.2 25 W in the same dock",
+   "clamp": "the adapter and the dock take the mains and the clamp. The Leaf sees 12 V only, after the dead-pad proof",
+   "offered_vhv_W": 25.0,
+   "offered_note": "25 W at the VHV leaves [D] FINAL/20, hw/dock",
+   "eta_host": 0.8928,
+   "chain": [
+    [
+     "wall adapter, USB-C PD EPR 28 V",
+     0.93
+    ],
+    [
+     "dock 12 V buck-boost (hw/dock/params.py)",
+     0.96
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.97912769688596,
+   "carries_peak": true,
+   "margin_peak_W": 16.02087230311404,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.300581287069584,
+    "delta session": 2.8199205018259996,
+    "video": 4.441620511410929,
+    "peak": 10.287266685580153
+   },
+   "overhead_w": 0.23,
+   "bus_window": null,
+   "leaf_heat_at_peak_W": 0.2791502567230769
+  },
+  "H1": {
+   "name": "dock pack, 20 Wh",
+   "interface": "the 12 bar pads from the dock slot, as H0",
+   "clamp": "the pack is a floating cell: no transient. Pack under-voltage cut at 3.0 V per cell",
+   "offered_vhv_W": 25.0,
+   "offered_note": "25 W for the Leaf is 1.35 C of the 20 Wh pack [T] hw/energy/05",
+   "eta_host": 0.88464,
+   "chain": [
+    [
+     "pack usable 3.0 to 4.2 V window",
+     0.95
+    ],
+    [
+     "pack protector and cell DCIR",
+     0.97
+    ],
+    [
+     "dock 12 V buck-boost",
+     0.96
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.97912769688596,
+   "carries_peak": true,
+   "margin_peak_W": 16.02087230311404,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.3012323352954022,
+    "delta session": 2.843810164620922,
+    "video": 4.480468882921502,
+    "peak": 10.380035830265374
+   },
+   "overhead_w": 0.23,
+   "bus_window": null,
+   "pack_hours": {
+    "standby": 60.38189725621962,
+    "delta session": 6.959419447639105,
+    "video": 4.434135917630463,
+    "peak": 1.921224309440596
+   },
+   "pack_Wh_at_vhv": 17.6928,
+   "pack_hours_ap_on_delta": 2.9525985061528845,
+   "leaf_heat_at_peak_W": 0.2791502567230769
+  },
+  "H2": {
+   "name": "desk USB-C PD",
+   "interface": "the port part on a seat: VHV leaves 5 and 8 at 9 V (27 W, 1.50 A per leaf, no margin) or 15 V (0.90 A per leaf)",
+   "clamp": "the port part holds a 20 V rated input, an OVP switch and a back-flow block. VBUS of a bad cable is cut at 22 V [H]",
+   "offered_vhv_W": 45.0,
+   "offered_note": "7.5 W (5 V 1.5 A) to 100 W; 15 V 3 A is 45 W [PUBLICATION] USB PD 3.0 fixed PDOs 5, 9, 15, 20 V",
+   "eta_host": 0.882,
+   "chain": [
+    [
+     "wall adapter or hub PD source",
+     0.9
+    ],
+    [
+     "port part PD sink and its switch",
+     0.98
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.975507705388457,
+   "carries_peak": true,
+   "margin_peak_W": 36.02449229461154,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07144534513450343,
+    "delta session": 2.6213611837345825,
+    "video": 4.262470694281173,
+    "peak": 10.176312591143375
+   },
+   "overhead_w": 0.0,
+   "bus_window": null,
+   "leaf_heat_at_peak_W": 0.2755169440340129
+  },
+  "H3a": {
+   "name": "vehicle 12 V",
+   "interface": "a PD car adapter into the port part, or a cradle with the 12 pads and its own 12 V stage",
+   "clamp": "adapter side: OVP switch for the load dump, TVS, cranking hold. The Leaf sees the PD output only",
+   "offered_vhv_W": 45.0,
+   "offered_note": "a PD car adapter of 30 to 100 W; 15 V 3 A is 45 W [GENERAL]",
+   "eta_host": 0.882,
+   "chain": [
+    [
+     "vehicle adapter, wide-input buck",
+     0.9
+    ],
+    [
+     "port part PD sink and its switch",
+     0.98
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.975507705388457,
+   "carries_peak": true,
+   "margin_peak_W": 36.02449229461154,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07144534513450343,
+    "delta session": 2.6213611837345825,
+    "video": 4.262470694281173,
+    "peak": 10.176312591143375
+   },
+   "overhead_w": 0.0,
+   "bus_window": "9 to 16 V run; 6 to 10.5 V cranking minimum by severity code A to D; 35 V suppressed load dump; 79 to 101 V unsuppressed",
+   "leaf_heat_at_peak_W": 0.2755169440340129
+  },
+  "H3b": {
+   "name": "vehicle 24 V",
+   "interface": "as H3a, with an 80 V class input stage",
+   "clamp": "adapter side: OVP switch for 58 V suppressed and 151 to 202 V unsuppressed load dump",
+   "offered_vhv_W": 45.0,
+   "offered_note": "a PD adapter for 24 V systems of 30 to 100 W [GENERAL]",
+   "eta_host": 0.8722,
+   "chain": [
+    [
+     "vehicle adapter, wide-input buck",
+     0.89
+    ],
+    [
+     "port part PD sink and its switch",
+     0.98
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.975507705388457,
+   "carries_peak": true,
+   "margin_peak_W": 36.02449229461154,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07224810182140796,
+    "delta session": 2.6508146801810386,
+    "video": 4.3103636234304,
+    "peak": 10.290653182055099
+   },
+   "overhead_w": 0.0,
+   "bus_window": "16 to 32 V run; 10 to 22 V cranking minimum by severity code E to H; 58 V typical suppressed clamp; 151 to 202 V unsuppressed",
+   "leaf_heat_at_peak_W": 0.2755169440340129
+  },
+  "H4a": {
+   "name": "industrial 24 V",
+   "interface": "a cradle with the 12 pads, or an isolated DC-DC into a USB-C port part",
+   "clamp": "DC-DC input: reverse and surge clamp to the plant rule. Isolation 1.5 kV [H]",
+   "offered_vhv_W": 25.0,
+   "offered_note": "24 V rail (IEC 61131-2 class 19.2 to 28.8 V) through a 25 to 60 W isolated DC-DC [GENERAL]",
+   "eta_host": 0.92,
+   "chain": [
+    [
+     "isolated 24 V to 12 V DC-DC",
+     0.92
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.97912769688596,
+   "carries_peak": true,
+   "margin_peak_W": 16.02087230311404,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.06849453597361368,
+    "delta session": 2.513348939163318,
+    "video": 4.087103035421388,
+    "peak": 9.759921409658652
+   },
+   "overhead_w": 0.0,
+   "bus_window": "19.2 to 28.8 V run (24 V -20 % / +25 %)",
+   "leaf_heat_at_peak_W": 0.2791502567230769
+  },
+  "H4b": {
+   "name": "PoE type 2 (802.3at)",
+   "interface": "a PoE splitter into the port part (USB-C PD 9 V or 12 V), isolation 1.5 kVrms of the standard",
+   "clamp": "the PD controller of the splitter holds 37 to 57 V and the isolation",
+   "offered_vhv_W": 22.95,
+   "offered_note": "PD input 25.5 W [PUBLICATION] IEEE 802.3at Type 2, then 0.90 for the splitter [H]",
+   "eta_host": 0.873,
+   "chain": [
+    [
+     "PoE splitter and its DC-DC",
+     0.9
+    ],
+    [
+     "cable and PSE share",
+     0.97
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.97912769688596,
+   "carries_peak": true,
+   "margin_peak_W": 13.970872303114039,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": false,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07218209976600756,
+    "delta session": 2.648660966815868,
+    "video": 4.307141801360455,
+    "peak": 10.28536964133558
+   },
+   "overhead_w": 0.0,
+   "bus_window": "PD input 37 to 57 V",
+   "leaf_heat_at_peak_W": 0.2791502567230769
+  },
+  "H4c": {
+   "name": "PoE type 3 (802.3bt)",
+   "interface": "as H4b",
+   "clamp": "as H4b",
+   "offered_vhv_W": 45.9,
+   "offered_note": "PD input 51 W [PUBLICATION] IEEE 802.3bt Type 3, then 0.90 [H]",
+   "eta_host": 0.873,
+   "chain": [
+    [
+     "PoE splitter and its DC-DC",
+     0.9
+    ],
+    [
+     "cable and PSE share",
+     0.97
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.975507705388457,
+   "carries_peak": true,
+   "margin_peak_W": 36.92449229461154,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07218189508434368,
+    "delta session": 2.6483855258349394,
+    "video": 4.306413691129433,
+    "peak": 10.281223030227329
+   },
+   "overhead_w": 0.0,
+   "bus_window": "PD input 42.5 to 57 V",
+   "leaf_heat_at_peak_W": 0.2755169440340129
+  },
+  "H5": {
+   "name": "worn power bank or belt pack",
+   "interface": "the port part on a seat, by a short USB-C lead; or pads on a belt dock",
+   "clamp": "a floating cell: no transient. Auto shut-off below 50 to 100 mA is common [H]",
+   "offered_vhv_W": 18.0,
+   "offered_note": "5000 mAh bank, 9 V 2 A is 18 W [GENERAL]; 5 V 3 A is 15 W",
+   "eta_host": 0.8623999999999999,
+   "chain": [
+    [
+     "bank cell, boost, protection",
+     0.88
+    ],
+    [
+     "port part PD sink and its switch",
+     0.98
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.986948666170688,
+   "carries_peak": true,
+   "margin_peak_W": 9.013051333829312,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": false,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07306975782477397,
+    "delta session": 2.681818803716184,
+    "video": 4.361674500677787,
+    "peak": 10.420858842962302
+   },
+   "overhead_w": 0.0,
+   "bus_window": null,
+   "pack_hours": {
+    "standby": 240.52358353432615,
+    "delta session": 6.55338831081593,
+    "video": 4.029415766185422,
+    "peak": 1.6865212613324314
+   },
+   "pack_Wh_at_vhv": 15.156680000000001,
+   "leaf_heat_at_peak_W": 0.28701999746587326
+  },
+  "H6a": {
+   "name": "low-power Qi pad, 5 W",
+   "interface": "Qi coil: four sector coils in series and the Q1 rectifier",
+   "clamp": "the rectifier clamp. Foreign object detection of the pad",
+   "offered_vhv_W": 5.0,
+   "offered_note": "Qi BPP 5 W at the rectifier [GENERAL]",
+   "eta_host": 0.801,
+   "chain": [
+    [
+     "pad supply, inverter and coil",
+     0.89
+    ],
+    [
+     "coupling, shield and rectifier",
+     0.9
+    ]
+   ],
+   "need_at_vhv_peak_W": 9.026992028908492,
+   "carries_peak": false,
+   "margin_peak_W": -4.0269920289084915,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": false,
+   "five_volt_class": true,
+   "bypass_eta": 0.7877551020408162,
+   "host_Wh_per_h": {
+    "standby": 0.09686978322369194,
+    "delta session": 3.5535557779406513,
+    "video": 5.7775993908015595,
+    "peak": 13.787817042168792
+   },
+   "overhead_w": 0.0,
+   "bus_window": null,
+   "leaf_heat_at_peak_W": 0.7644408630035082
+  },
+  "H6b": {
+   "name": "Qi2 pad, 15 W",
+   "interface": "as H6a",
+   "clamp": "as H6a",
+   "offered_vhv_W": 15.0,
+   "offered_note": "Qi EPP and Qi2 15 W at the rectifier [GENERAL]",
+   "eta_host": 0.801,
+   "chain": [
+    [
+     "pad supply, inverter and coil",
+     0.89
+    ],
+    [
+     "coupling, shield and rectifier",
+     0.9
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.986948666170688,
+   "carries_peak": true,
+   "margin_peak_W": 6.013051333829312,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": false,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07867086035965676,
+    "delta session": 2.88739143111715,
+    "video": 4.696015092864573,
+    "peak": 11.219661256143182
+   },
+   "overhead_w": 0.0,
+   "bus_window": null,
+   "leaf_heat_at_peak_W": 0.7644408630035082
+  },
+  "H6c": {
+   "name": "Qi2.2 pad, 25 W",
+   "interface": "as H6a",
+   "clamp": "as H6a",
+   "offered_vhv_W": 25.0,
+   "offered_note": "Qi2.2 25 W at the rectifier [D] FINAL/21 21.2.6",
+   "eta_host": 0.801,
+   "chain": [
+    [
+     "pad supply, inverter and coil",
+     0.89
+    ],
+    [
+     "coupling, shield and rectifier",
+     0.9
+    ]
+   ],
+   "need_at_vhv_peak_W": 8.97912769688596,
+   "carries_peak": true,
+   "margin_peak_W": 16.02087230311404,
+   "need_at_vhv_25W_case_W": 25.0,
+   "carries_25W_case": true,
+   "five_volt_class": false,
+   "host_Wh_per_h": {
+    "standby": 0.07867037839665991,
+    "delta session": 2.8867428514734734,
+    "video": 4.694300614965889,
+    "peak": 11.209897249545518
+   },
+   "overhead_w": 0.0,
+   "bus_window": null,
+   "leaf_heat_at_peak_W": 0.7644408630035082
+  }
+ },
+ "load_dump_J": {
+  "12 V test A unsuppressed, 101 V, 4 ohm, 400 ms, clamp 36 V": 144.70871772827633,
+  "12 V test A, 79 V, 0.5 ohm, 40 ms, clamp 36 V": 61.10519481586941,
+  "24 V test A unsuppressed, 202 V, 8 ohm, 350 ms, clamp 70 V": 255.44544338193566,
+  "24 V test A, 151 V, 1 ohm, 100 ms, clamp 70 V": 274.53846171462277
+ },
+ "capacity_chain": {
+  "H1": [
+   [
+    "nominal",
+    20.0
+   ],
+   [
+    "usable window",
+    19.0
+   ],
+   [
+    "pack out",
+    18.43
+   ],
+   [
+    "dock 12 V stage",
+    17.6928
+   ],
+   [
+    "leaves and U_Q",
+    17.144853983999997
+   ]
+  ],
+  "H5": [
+   [
+    "nominal 3.7 V",
+    18.5
+   ],
+   [
+    "boost, protection",
+    16.28
+   ],
+   [
+    "port part",
+    15.954400000000001
+   ],
+   [
+    "end margin",
+    15.156680000000001
+   ],
+   [
+    "leaves and U_Q",
+    14.687277620400002
+   ]
+  ]
+ }
+}

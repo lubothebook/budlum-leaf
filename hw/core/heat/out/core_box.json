@@ -1,0 +1,1646 @@
+{
+ "heat_W": {
+  "delta, shared": [
+   1.6725768321513006,
+   2.767375886524823,
+   4.956973995271867,
+   9.336170212765957
+  ],
+  "delta, shared, validator typ": [
+   22.0225768321513,
+   23.117375886524826,
+   25.306973995271868,
+   29.68617021276596
+  ],
+  "delta, shared, 5G": [
+   2.8725768321513003,
+   3.967375886524823,
+   6.156973995271867,
+   10.536170212765956
+  ],
+  "delta, shared, 5G, validator typ": [
+   23.2225768321513,
+   24.317375886524825,
+   26.50697399527187,
+   30.886170212765958
+  ],
+  "delta, unshared": [
+   1.6725768321513006,
+   3.345153664302601,
+   6.690307328605202,
+   13.380614657210405
+  ],
+  "delta, unshared, validator typ": [
+   22.0225768321513,
+   23.6951536643026,
+   27.040307328605202,
+   33.73061465721041
+  ],
+  "delta, unshared, 5G": [
+   2.8725768321513003,
+   4.545153664302601,
+   7.890307328605203,
+   14.580614657210404
+  ],
+  "delta, unshared, 5G, validator typ": [
+   23.2225768321513,
+   24.895153664302605,
+   28.240307328605205,
+   34.930614657210405
+  ],
+  "video, shared": [
+   2.4854609929078015,
+   4.170921985815603,
+   7.541843971631205,
+   14.283687943262409
+  ],
+  "video, shared, validator typ": [
+   22.8354609929078,
+   24.520921985815605,
+   27.891843971631207,
+   34.63368794326241
+  ],
+  "video, shared, 5G": [
+   3.6854609929078013,
+   5.370921985815603,
+   8.741843971631205,
+   15.483687943262408
+  ],
+  "video, shared, 5G, validator typ": [
+   24.0354609929078,
+   25.720921985815604,
+   29.091843971631207,
+   35.83368794326241
+  ],
+  "video, unshared": [
+   2.4854609929078015,
+   4.970921985815603,
+   9.941843971631206,
+   19.883687943262412
+  ],
+  "video, unshared, validator typ": [
+   22.8354609929078,
+   25.320921985815605,
+   30.29184397163121,
+   40.23368794326241
+  ],
+  "video, unshared, 5G": [
+   3.6854609929078013,
+   6.170921985815603,
+   11.141843971631205,
+   21.08368794326241
+  ],
+  "video, unshared, 5G, validator typ": [
+   24.0354609929078,
+   26.520921985815605,
+   31.491843971631205,
+   41.43368794326241
+  ]
+ },
+ "surface": {
+  "delta shared|S 90x60x18|N1|free": {
+   "Q": 1.67,
+   "T_mean": 36.07,
+   "T_peak": 38.84
+  },
+  "delta shared|S 90x60x18|N1|fan": {
+   "Q": 1.67,
+   "T_mean": 30.47,
+   "T_peak": 31.84
+  },
+  "delta shared|S 90x60x18|N1|fan_fins": {
+   "Q": 1.67,
+   "T_mean": 26.83,
+   "T_peak": 27.29
+  },
+  "delta shared|S 90x60x18|N1|plate": {
+   "Q": 1.67,
+   "T_mean": 22.88,
+   "T_peak": 23.1
+  },
+  "delta shared|S 90x60x18|N2|free": {
+   "Q": 2.77,
+   "T_mean": 42.03,
+   "T_peak": 46.29
+  },
+  "delta shared|S 90x60x18|N2|fan": {
+   "Q": 2.77,
+   "T_mean": 34.01,
+   "T_peak": 36.26
+  },
+  "delta shared|S 90x60x18|N2|fan_fins": {
+   "Q": 2.77,
+   "T_mean": 28.03,
+   "T_peak": 28.79
+  },
+  "delta shared|S 90x60x18|N2|plate": {
+   "Q": 2.77,
+   "T_mean": 23.36,
+   "T_peak": 23.7
+  },
+  "delta shared|S 90x60x18|N4|free": {
+   "Q": 4.96,
+   "T_mean": 52.81,
+   "T_peak": 59.76
+  },
+  "delta shared|S 90x60x18|N4|fan": {
+   "Q": 4.96,
+   "T_mean": 40.97,
+   "T_peak": 44.96
+  },
+  "delta shared|S 90x60x18|N4|fan_fins": {
+   "Q": 4.96,
+   "T_mean": 30.41,
+   "T_peak": 31.76
+  },
+  "delta shared|S 90x60x18|N4|plate": {
+   "Q": 4.96,
+   "T_mean": 24.32,
+   "T_peak": 24.91
+  },
+  "delta shared|S 90x60x18|N8|free": {
+   "Q": 9.34,
+   "T_mean": 71.72,
+   "T_peak": 83.4
+  },
+  "delta shared|S 90x60x18|N8|fan": {
+   "Q": 9.34,
+   "T_mean": 54.45,
+   "T_peak": 61.82
+  },
+  "delta shared|S 90x60x18|N8|fan_fins": {
+   "Q": 9.34,
+   "T_mean": 35.11,
+   "T_peak": 37.64
+  },
+  "delta shared|S 90x60x18|N8|plate": {
+   "Q": 9.34,
+   "T_mean": 26.26,
+   "T_peak": 27.33
+  },
+  "delta shared|M 140x90x30|N1|free": {
+   "Q": 1.67,
+   "T_mean": 30.36,
+   "T_peak": 31.7
+  },
+  "delta shared|M 140x90x30|N1|fan": {
+   "Q": 1.67,
+   "T_mean": 27.28,
+   "T_peak": 27.86
+  },
+  "delta shared|M 140x90x30|N1|fan_fins": {
+   "Q": 1.67,
+   "T_mean": 25.76,
+   "T_peak": 25.95
+  },
+  "delta shared|M 140x90x30|N1|plate": {
+   "Q": 1.67,
+   "T_mean": 22.46,
+   "T_peak": 22.57
+  },
+  "delta shared|M 140x90x30|N2|free": {
+   "Q": 2.77,
+   "T_mean": 33.34,
+   "T_peak": 35.43
+  },
+  "delta shared|M 140x90x30|N2|fan": {
+   "Q": 2.77,
+   "T_mean": 28.77,
+   "T_peak": 29.71
+  },
+  "delta shared|M 140x90x30|N2|fan_fins": {
+   "Q": 2.77,
+   "T_mean": 26.26,
+   "T_peak": 26.58
+  },
+  "delta shared|M 140x90x30|N2|plate": {
+   "Q": 2.77,
+   "T_mean": 22.66,
+   "T_peak": 22.83
+  },
+  "delta shared|M 140x90x30|N4|free": {
+   "Q": 4.96,
+   "T_mean": 38.82,
+   "T_peak": 42.28
+  },
+  "delta shared|M 140x90x30|N4|fan": {
+   "Q": 4.96,
+   "T_mean": 31.73,
+   "T_peak": 33.41
+  },
+  "delta shared|M 140x90x30|N4|fan_fins": {
+   "Q": 4.96,
+   "T_mean": 27.26,
+   "T_peak": 27.82
+  },
+  "delta shared|M 140x90x30|N4|plate": {
+   "Q": 4.96,
+   "T_mean": 23.08,
+   "T_peak": 23.35
+  },
+  "delta shared|M 140x90x30|N8|free": {
+   "Q": 9.34,
+   "T_mean": 48.69,
+   "T_peak": 54.61
+  },
+  "delta shared|M 140x90x30|N8|fan": {
+   "Q": 9.34,
+   "T_mean": 37.56,
+   "T_peak": 40.7
+  },
+  "delta shared|M 140x90x30|N8|fan_fins": {
+   "Q": 9.34,
+   "T_mean": 29.24,
+   "T_peak": 30.3
+  },
+  "delta shared|M 140x90x30|N8|plate": {
+   "Q": 9.34,
+   "T_mean": 23.9,
+   "T_peak": 24.38
+  },
+  "delta shared|L 200x130x45|N1|free": {
+   "Q": 1.67,
+   "T_mean": 27.87,
+   "T_peak": 28.58
+  },
+  "delta shared|L 200x130x45|N1|fan": {
+   "Q": 1.67,
+   "T_mean": 26.09,
+   "T_peak": 26.37
+  },
+  "delta shared|L 200x130x45|N1|fan_fins": {
+   "Q": 1.67,
+   "T_mean": 25.36,
+   "T_peak": 25.46
+  },
+  "delta shared|L 200x130x45|N1|plate": {
+   "Q": 1.67,
+   "T_mean": 22.29,
+   "T_peak": 22.37
+  },
+  "delta shared|L 200x130x45|N2|free": {
+   "Q": 2.77,
+   "T_mean": 29.5,
+   "T_peak": 30.63
+  },
+  "delta shared|L 200x130x45|N2|fan": {
+   "Q": 2.77,
+   "T_mean": 26.81,
+   "T_peak": 27.26
+  },
+  "delta shared|L 200x130x45|N2|fan_fins": {
+   "Q": 2.77,
+   "T_mean": 25.6,
+   "T_peak": 25.75
+  },
+  "delta shared|L 200x130x45|N2|plate": {
+   "Q": 2.77,
+   "T_mean": 22.39,
+   "T_peak": 22.49
+  },
+  "delta shared|L 200x130x45|N4|free": {
+   "Q": 4.96,
+   "T_mean": 32.54,
+   "T_peak": 34.43
+  },
+  "delta shared|L 200x130x45|N4|fan": {
+   "Q": 4.96,
+   "T_mean": 28.23,
+   "T_peak": 29.03
+  },
+  "delta shared|L 200x130x45|N4|fan_fins": {
+   "Q": 4.96,
+   "T_mean": 26.08,
+   "T_peak": 26.35
+  },
+  "delta shared|L 200x130x45|N4|plate": {
+   "Q": 4.96,
+   "T_mean": 22.59,
+   "T_peak": 22.74
+  },
+  "delta shared|L 200x130x45|N8|free": {
+   "Q": 9.34,
+   "T_mean": 38.1,
+   "T_peak": 41.37
+  },
+  "delta shared|L 200x130x45|N8|fan": {
+   "Q": 9.34,
+   "T_mean": 31.05,
+   "T_peak": 32.57
+  },
+  "delta shared|L 200x130x45|N8|fan_fins": {
+   "Q": 9.34,
+   "T_mean": 27.03,
+   "T_peak": 27.54
+  },
+  "delta shared|L 200x130x45|N8|plate": {
+   "Q": 9.34,
+   "T_mean": 22.99,
+   "T_peak": 23.24
+  },
+  "delta shared|XL 300x200x70|N1|free": {
+   "Q": 1.67,
+   "T_mean": 26.38,
+   "T_peak": 26.73
+  },
+  "delta shared|XL 300x200x70|N1|fan": {
+   "Q": 1.67,
+   "T_mean": 25.47,
+   "T_peak": 25.59
+  },
+  "delta shared|XL 300x200x70|N1|fan_fins": {
+   "Q": 1.67,
+   "T_mean": 25.16,
+   "T_peak": 25.2
+  },
+  "delta shared|XL 300x200x70|N1|plate": {
+   "Q": 1.67,
+   "T_mean": 22.2,
+   "T_peak": 22.25
+  },
+  "delta shared|XL 300x200x70|N2|free": {
+   "Q": 2.77,
+   "T_mean": 27.19,
+   "T_peak": 27.73
+  },
+  "delta shared|XL 300x200x70|N2|fan": {
+   "Q": 2.77,
+   "T_mean": 25.78,
+   "T_peak": 25.97
+  },
+  "delta shared|XL 300x200x70|N2|fan_fins": {
+   "Q": 2.77,
+   "T_mean": 25.26,
+   "T_peak": 25.32
+  },
+  "delta shared|XL 300x200x70|N2|plate": {
+   "Q": 2.77,
+   "T_mean": 22.25,
+   "T_peak": 22.31
+  },
+  "delta shared|XL 300x200x70|N4|free": {
+   "Q": 4.96,
+   "T_mean": 28.7,
+   "T_peak": 29.63
+  },
+  "delta shared|XL 300x200x70|N4|fan": {
+   "Q": 4.96,
+   "T_mean": 26.39,
+   "T_peak": 26.74
+  },
+  "delta shared|XL 300x200x70|N4|fan_fins": {
+   "Q": 4.96,
+   "T_mean": 25.46,
+   "T_peak": 25.58
+  },
+  "delta shared|XL 300x200x70|N4|plate": {
+   "Q": 4.96,
+   "T_mean": 22.33,
+   "T_peak": 22.42
+  },
+  "delta shared|XL 300x200x70|N8|free": {
+   "Q": 9.34,
+   "T_mean": 31.52,
+   "T_peak": 33.15
+  },
+  "delta shared|XL 300x200x70|N8|fan": {
+   "Q": 9.34,
+   "T_mean": 27.62,
+   "T_peak": 28.27
+  },
+  "delta shared|XL 300x200x70|N8|fan_fins": {
+   "Q": 9.34,
+   "T_mean": 25.87,
+   "T_peak": 26.09
+  },
+  "delta shared|XL 300x200x70|N8|plate": {
+   "Q": 9.34,
+   "T_mean": 22.51,
+   "T_peak": 22.63
+  },
+  "video shared|S 90x60x18|N1|free": {
+   "Q": 2.49,
+   "T_mean": 40.54,
+   "T_peak": 44.43
+  },
+  "video shared|S 90x60x18|N1|fan": {
+   "Q": 2.49,
+   "T_mean": 33.1,
+   "T_peak": 35.13
+  },
+  "video shared|S 90x60x18|N1|fan_fins": {
+   "Q": 2.49,
+   "T_mean": 27.72,
+   "T_peak": 28.4
+  },
+  "video shared|S 90x60x18|N1|plate": {
+   "Q": 2.49,
+   "T_mean": 23.24,
+   "T_peak": 23.54
+  },
+  "video shared|S 90x60x18|N2|free": {
+   "Q": 4.17,
+   "T_mean": 49.08,
+   "T_peak": 55.09
+  },
+  "video shared|S 90x60x18|N2|fan": {
+   "Q": 4.17,
+   "T_mean": 38.49,
+   "T_peak": 41.86
+  },
+  "video shared|S 90x60x18|N2|fan_fins": {
+   "Q": 4.17,
+   "T_mean": 29.56,
+   "T_peak": 30.7
+  },
+  "video shared|S 90x60x18|N2|plate": {
+   "Q": 4.17,
+   "T_mean": 23.98,
+   "T_peak": 24.47
+  },
+  "video shared|S 90x60x18|N4|free": {
+   "Q": 7.54,
+   "T_mean": 64.29,
+   "T_peak": 74.12
+  },
+  "video shared|S 90x60x18|N4|fan": {
+   "Q": 7.54,
+   "T_mean": 49.0,
+   "T_peak": 55.0
+  },
+  "video shared|S 90x60x18|N4|fan_fins": {
+   "Q": 7.54,
+   "T_mean": 33.19,
+   "T_peak": 35.24
+  },
+  "video shared|S 90x60x18|N4|plate": {
+   "Q": 7.54,
+   "T_mean": 25.47,
+   "T_peak": 26.34
+  },
+  "video shared|S 90x60x18|N8|free": {
+   "Q": 14.28,
+   "T_mean": 90.51,
+   "T_peak": 106.89
+  },
+  "video shared|S 90x60x18|N8|fan": {
+   "Q": 14.28,
+   "T_mean": 69.02,
+   "T_peak": 80.02
+  },
+  "video shared|S 90x60x18|N8|fan_fins": {
+   "Q": 14.28,
+   "T_mean": 40.35,
+   "T_peak": 44.19
+  },
+  "video shared|S 90x60x18|N8|plate": {
+   "Q": 14.28,
+   "T_mean": 28.43,
+   "T_peak": 30.04
+  },
+  "video shared|M 140x90x30|N1|free": {
+   "Q": 2.49,
+   "T_mean": 32.59,
+   "T_peak": 34.49
+  },
+  "video shared|M 140x90x30|N1|fan": {
+   "Q": 2.49,
+   "T_mean": 28.39,
+   "T_peak": 29.24
+  },
+  "video shared|M 140x90x30|N1|fan_fins": {
+   "Q": 2.49,
+   "T_mean": 26.13,
+   "T_peak": 26.42
+  },
+  "video shared|M 140x90x30|N1|plate": {
+   "Q": 2.49,
+   "T_mean": 22.61,
+   "T_peak": 22.76
+  },
+  "video shared|M 140x90x30|N2|free": {
+   "Q": 4.17,
+   "T_mean": 36.91,
+   "T_peak": 39.89
+  },
+  "video shared|M 140x90x30|N2|fan": {
+   "Q": 4.17,
+   "T_mean": 30.67,
+   "T_peak": 32.09
+  },
+  "video shared|M 140x90x30|N2|fan_fins": {
+   "Q": 4.17,
+   "T_mean": 26.9,
+   "T_peak": 27.38
+  },
+  "video shared|M 140x90x30|N2|plate": {
+   "Q": 4.17,
+   "T_mean": 22.93,
+   "T_peak": 23.16
+  },
+  "video shared|M 140x90x30|N4|free": {
+   "Q": 7.54,
+   "T_mean": 44.78,
+   "T_peak": 49.73
+  },
+  "video shared|M 140x90x30|N4|fan": {
+   "Q": 7.54,
+   "T_mean": 35.18,
+   "T_peak": 37.73
+  },
+  "video shared|M 140x90x30|N4|fan_fins": {
+   "Q": 7.54,
+   "T_mean": 28.43,
+   "T_peak": 29.28
+  },
+  "video shared|M 140x90x30|N4|plate": {
+   "Q": 7.54,
+   "T_mean": 23.56,
+   "T_peak": 23.96
+  },
+  "video shared|M 140x90x30|N8|free": {
+   "Q": 14.28,
+   "T_mean": 58.75,
+   "T_peak": 67.19
+  },
+  "video shared|M 140x90x30|N8|fan": {
+   "Q": 14.28,
+   "T_mean": 44.03,
+   "T_peak": 48.78
+  },
+  "video shared|M 140x90x30|N8|fan_fins": {
+   "Q": 14.28,
+   "T_mean": 31.46,
+   "T_peak": 33.08
+  },
+  "video shared|M 140x90x30|N8|plate": {
+   "Q": 14.28,
+   "T_mean": 24.84,
+   "T_peak": 25.55
+  },
+  "video shared|L 200x130x45|N1|free": {
+   "Q": 2.49,
+   "T_mean": 29.09,
+   "T_peak": 30.11
+  },
+  "video shared|L 200x130x45|N1|fan": {
+   "Q": 2.49,
+   "T_mean": 26.62,
+   "T_peak": 27.03
+  },
+  "video shared|L 200x130x45|N1|fan_fins": {
+   "Q": 2.49,
+   "T_mean": 25.54,
+   "T_peak": 25.68
+  },
+  "video shared|L 200x130x45|N1|plate": {
+   "Q": 2.49,
+   "T_mean": 22.37,
+   "T_peak": 22.46
+  },
+  "video shared|L 200x130x45|N2|free": {
+   "Q": 4.17,
+   "T_mean": 31.48,
+   "T_peak": 33.09
+  },
+  "video shared|L 200x130x45|N2|fan": {
+   "Q": 4.17,
+   "T_mean": 27.72,
+   "T_peak": 28.4
+  },
+  "video shared|L 200x130x45|N2|fan_fins": {
+   "Q": 4.17,
+   "T_mean": 25.91,
+   "T_peak": 26.14
+  },
+  "video shared|L 200x130x45|N2|plate": {
+   "Q": 4.17,
+   "T_mean": 22.52,
+   "T_peak": 22.65
+  },
+  "video shared|L 200x130x45|N4|free": {
+   "Q": 7.54,
+   "T_mean": 35.88,
+   "T_peak": 38.61
+  },
+  "video shared|L 200x130x45|N4|fan": {
+   "Q": 7.54,
+   "T_mean": 29.9,
+   "T_peak": 31.12
+  },
+  "video shared|L 200x130x45|N4|fan_fins": {
+   "Q": 7.54,
+   "T_mean": 26.64,
+   "T_peak": 27.05
+  },
+  "video shared|L 200x130x45|N4|plate": {
+   "Q": 7.54,
+   "T_mean": 22.83,
+   "T_peak": 23.04
+  },
+  "video shared|L 200x130x45|N8|free": {
+   "Q": 14.28,
+   "T_mean": 43.87,
+   "T_peak": 48.58
+  },
+  "video shared|L 200x130x45|N8|fan": {
+   "Q": 14.28,
+   "T_mean": 34.22,
+   "T_peak": 36.52
+  },
+  "video shared|L 200x130x45|N8|fan_fins": {
+   "Q": 14.28,
+   "T_mean": 28.1,
+   "T_peak": 28.88
+  },
+  "video shared|L 200x130x45|N8|plate": {
+   "Q": 14.28,
+   "T_mean": 23.45,
+   "T_peak": 23.81
+  },
+  "video shared|XL 300x200x70|N1|free": {
+   "Q": 2.49,
+   "T_mean": 26.98,
+   "T_peak": 27.48
+  },
+  "video shared|XL 300x200x70|N1|fan": {
+   "Q": 2.49,
+   "T_mean": 25.7,
+   "T_peak": 25.87
+  },
+  "video shared|XL 300x200x70|N1|fan_fins": {
+   "Q": 2.49,
+   "T_mean": 25.23,
+   "T_peak": 25.29
+  },
+  "video shared|XL 300x200x70|N1|plate": {
+   "Q": 2.49,
+   "T_mean": 22.24,
+   "T_peak": 22.29
+  },
+  "video shared|XL 300x200x70|N2|free": {
+   "Q": 4.17,
+   "T_mean": 28.17,
+   "T_peak": 28.96
+  },
+  "video shared|XL 300x200x70|N2|fan": {
+   "Q": 4.17,
+   "T_mean": 26.17,
+   "T_peak": 26.46
+  },
+  "video shared|XL 300x200x70|N2|fan_fins": {
+   "Q": 4.17,
+   "T_mean": 25.39,
+   "T_peak": 25.49
+  },
+  "video shared|XL 300x200x70|N2|plate": {
+   "Q": 4.17,
+   "T_mean": 22.3,
+   "T_peak": 22.38
+  },
+  "video shared|XL 300x200x70|N4|free": {
+   "Q": 7.54,
+   "T_mean": 30.39,
+   "T_peak": 31.74
+  },
+  "video shared|XL 300x200x70|N4|fan": {
+   "Q": 7.54,
+   "T_mean": 27.11,
+   "T_peak": 27.64
+  },
+  "video shared|XL 300x200x70|N4|fan_fins": {
+   "Q": 7.54,
+   "T_mean": 25.71,
+   "T_peak": 25.88
+  },
+  "video shared|XL 300x200x70|N4|plate": {
+   "Q": 7.54,
+   "T_mean": 22.44,
+   "T_peak": 22.55
+  },
+  "video shared|XL 300x200x70|N8|free": {
+   "Q": 14.28,
+   "T_mean": 34.49,
+   "T_peak": 36.86
+  },
+  "video shared|XL 300x200x70|N8|fan": {
+   "Q": 14.28,
+   "T_mean": 28.99,
+   "T_peak": 29.99
+  },
+  "video shared|XL 300x200x70|N8|fan_fins": {
+   "Q": 14.28,
+   "T_mean": 26.34,
+   "T_peak": 26.67
+  },
+  "video shared|XL 300x200x70|N8|plate": {
+   "Q": 14.28,
+   "T_mean": 22.7,
+   "T_peak": 22.88
+  },
+  "video shared + 5G|S 90x60x18|N1|free": {
+   "Q": 3.69,
+   "T_mean": 46.7,
+   "T_peak": 52.12
+  },
+  "video shared + 5G|S 90x60x18|N1|fan": {
+   "Q": 3.69,
+   "T_mean": 36.95,
+   "T_peak": 39.93
+  },
+  "video shared + 5G|S 90x60x18|N1|fan_fins": {
+   "Q": 3.69,
+   "T_mean": 29.03,
+   "T_peak": 30.04
+  },
+  "video shared + 5G|S 90x60x18|N1|plate": {
+   "Q": 3.69,
+   "T_mean": 23.76,
+   "T_peak": 24.2
+  },
+  "video shared + 5G|S 90x60x18|N2|free": {
+   "Q": 5.37,
+   "T_mean": 54.72,
+   "T_peak": 62.15
+  },
+  "video shared + 5G|S 90x60x18|N2|fan": {
+   "Q": 5.37,
+   "T_mean": 42.27,
+   "T_peak": 46.59
+  },
+  "video shared + 5G|S 90x60x18|N2|fan_fins": {
+   "Q": 5.37,
+   "T_mean": 30.86,
+   "T_peak": 32.32
+  },
+  "video shared + 5G|S 90x60x18|N2|plate": {
+   "Q": 5.37,
+   "T_mean": 24.51,
+   "T_peak": 25.13
+  },
+  "video shared + 5G|S 90x60x18|N4|free": {
+   "Q": 8.74,
+   "T_mean": 69.3,
+   "T_peak": 80.38
+  },
+  "video shared + 5G|S 90x60x18|N4|fan": {
+   "Q": 8.74,
+   "T_mean": 52.66,
+   "T_peak": 59.57
+  },
+  "video shared + 5G|S 90x60x18|N4|fan_fins": {
+   "Q": 8.74,
+   "T_mean": 34.48,
+   "T_peak": 36.85
+  },
+  "video shared + 5G|S 90x60x18|N4|plate": {
+   "Q": 8.74,
+   "T_mean": 26.0,
+   "T_peak": 27.0
+  },
+  "video shared + 5G|S 90x60x18|N8|free": {
+   "Q": 15.48,
+   "T_mean": 94.77,
+   "T_peak": 112.21
+  },
+  "video shared + 5G|S 90x60x18|N8|fan": {
+   "Q": 15.48,
+   "T_mean": 72.45,
+   "T_peak": 84.31
+  },
+  "video shared + 5G|S 90x60x18|N8|fan_fins": {
+   "Q": 15.48,
+   "T_mean": 41.61,
+   "T_peak": 45.76
+  },
+  "video shared + 5G|S 90x60x18|N8|plate": {
+   "Q": 15.48,
+   "T_mean": 28.95,
+   "T_peak": 30.69
+  },
+  "video shared + 5G|M 140x90x30|N1|free": {
+   "Q": 3.69,
+   "T_mean": 35.7,
+   "T_peak": 38.38
+  },
+  "video shared + 5G|M 140x90x30|N1|fan": {
+   "Q": 3.69,
+   "T_mean": 30.01,
+   "T_peak": 31.27
+  },
+  "video shared + 5G|M 140x90x30|N1|fan_fins": {
+   "Q": 3.69,
+   "T_mean": 26.68,
+   "T_peak": 27.1
+  },
+  "video shared + 5G|M 140x90x30|N1|plate": {
+   "Q": 3.69,
+   "T_mean": 22.84,
+   "T_peak": 23.05
+  },
+  "video shared + 5G|M 140x90x30|N2|free": {
+   "Q": 5.37,
+   "T_mean": 39.81,
+   "T_peak": 43.51
+  },
+  "video shared + 5G|M 140x90x30|N2|fan": {
+   "Q": 5.37,
+   "T_mean": 32.28,
+   "T_peak": 34.1
+  },
+  "video shared + 5G|M 140x90x30|N2|fan_fins": {
+   "Q": 5.37,
+   "T_mean": 27.44,
+   "T_peak": 28.06
+  },
+  "video shared + 5G|M 140x90x30|N2|plate": {
+   "Q": 5.37,
+   "T_mean": 23.15,
+   "T_peak": 23.44
+  },
+  "video shared + 5G|M 140x90x30|N4|free": {
+   "Q": 8.74,
+   "T_mean": 47.41,
+   "T_peak": 53.01
+  },
+  "video shared + 5G|M 140x90x30|N4|fan": {
+   "Q": 8.74,
+   "T_mean": 36.77,
+   "T_peak": 39.72
+  },
+  "video shared + 5G|M 140x90x30|N4|fan_fins": {
+   "Q": 8.74,
+   "T_mean": 28.97,
+   "T_peak": 29.96
+  },
+  "video shared + 5G|M 140x90x30|N4|plate": {
+   "Q": 8.74,
+   "T_mean": 23.79,
+   "T_peak": 24.24
+  },
+  "video shared + 5G|M 140x90x30|N8|free": {
+   "Q": 15.48,
+   "T_mean": 61.07,
+   "T_peak": 70.09
+  },
+  "video shared + 5G|M 140x90x30|N8|fan": {
+   "Q": 15.48,
+   "T_mean": 45.57,
+   "T_peak": 50.72
+  },
+  "video shared + 5G|M 140x90x30|N8|fan_fins": {
+   "Q": 15.48,
+   "T_mean": 32.0,
+   "T_peak": 33.75
+  },
+  "video shared + 5G|M 140x90x30|N8|plate": {
+   "Q": 15.48,
+   "T_mean": 25.07,
+   "T_peak": 25.84
+  },
+  "video shared + 5G|L 200x130x45|N1|free": {
+   "Q": 3.69,
+   "T_mean": 30.8,
+   "T_peak": 32.26
+  },
+  "video shared + 5G|L 200x130x45|N1|fan": {
+   "Q": 3.69,
+   "T_mean": 27.4,
+   "T_peak": 28.0
+  },
+  "video shared + 5G|L 200x130x45|N1|fan_fins": {
+   "Q": 3.69,
+   "T_mean": 25.8,
+   "T_peak": 26.0
+  },
+  "video shared + 5G|L 200x130x45|N1|plate": {
+   "Q": 3.69,
+   "T_mean": 22.48,
+   "T_peak": 22.6
+  },
+  "video shared + 5G|L 200x130x45|N2|free": {
+   "Q": 5.37,
+   "T_mean": 33.09,
+   "T_peak": 35.11
+  },
+  "video shared + 5G|L 200x130x45|N2|fan": {
+   "Q": 5.37,
+   "T_mean": 28.5,
+   "T_peak": 29.37
+  },
+  "video shared + 5G|L 200x130x45|N2|fan_fins": {
+   "Q": 5.37,
+   "T_mean": 26.17,
+   "T_peak": 26.46
+  },
+  "video shared + 5G|L 200x130x45|N2|plate": {
+   "Q": 5.37,
+   "T_mean": 22.63,
+   "T_peak": 22.79
+  },
+  "video shared + 5G|L 200x130x45|N4|free": {
+   "Q": 8.74,
+   "T_mean": 37.37,
+   "T_peak": 40.47
+  },
+  "video shared + 5G|L 200x130x45|N4|fan": {
+   "Q": 8.74,
+   "T_mean": 30.67,
+   "T_peak": 32.09
+  },
+  "video shared + 5G|L 200x130x45|N4|fan_fins": {
+   "Q": 8.74,
+   "T_mean": 26.9,
+   "T_peak": 27.38
+  },
+  "video shared + 5G|L 200x130x45|N4|plate": {
+   "Q": 8.74,
+   "T_mean": 22.94,
+   "T_peak": 23.17
+  },
+  "video shared + 5G|L 200x130x45|N8|free": {
+   "Q": 15.48,
+   "T_mean": 45.21,
+   "T_peak": 50.26
+  },
+  "video shared + 5G|L 200x130x45|N8|fan": {
+   "Q": 15.48,
+   "T_mean": 34.98,
+   "T_peak": 37.48
+  },
+  "video shared + 5G|L 200x130x45|N8|fan_fins": {
+   "Q": 15.48,
+   "T_mean": 28.36,
+   "T_peak": 29.2
+  },
+  "video shared + 5G|L 200x130x45|N8|plate": {
+   "Q": 15.48,
+   "T_mean": 23.56,
+   "T_peak": 23.95
+  },
+  "video shared + 5G|XL 300x200x70|N1|free": {
+   "Q": 3.69,
+   "T_mean": 27.83,
+   "T_peak": 28.54
+  },
+  "video shared + 5G|XL 300x200x70|N1|fan": {
+   "Q": 3.69,
+   "T_mean": 26.04,
+   "T_peak": 26.29
+  },
+  "video shared + 5G|XL 300x200x70|N1|fan_fins": {
+   "Q": 3.69,
+   "T_mean": 25.35,
+   "T_peak": 25.43
+  },
+  "video shared + 5G|XL 300x200x70|N1|plate": {
+   "Q": 3.69,
+   "T_mean": 22.28,
+   "T_peak": 22.35
+  },
+  "video shared + 5G|XL 300x200x70|N2|free": {
+   "Q": 5.37,
+   "T_mean": 28.98,
+   "T_peak": 29.97
+  },
+  "video shared + 5G|XL 300x200x70|N2|fan": {
+   "Q": 5.37,
+   "T_mean": 26.51,
+   "T_peak": 26.88
+  },
+  "video shared + 5G|XL 300x200x70|N2|fan_fins": {
+   "Q": 5.37,
+   "T_mean": 25.5,
+   "T_peak": 25.63
+  },
+  "video shared + 5G|XL 300x200x70|N2|plate": {
+   "Q": 5.37,
+   "T_mean": 22.35,
+   "T_peak": 22.44
+  },
+  "video shared + 5G|XL 300x200x70|N4|free": {
+   "Q": 8.74,
+   "T_mean": 31.15,
+   "T_peak": 32.69
+  },
+  "video shared + 5G|XL 300x200x70|N4|fan": {
+   "Q": 8.74,
+   "T_mean": 27.45,
+   "T_peak": 28.06
+  },
+  "video shared + 5G|XL 300x200x70|N4|fan_fins": {
+   "Q": 8.74,
+   "T_mean": 25.82,
+   "T_peak": 26.02
+  },
+  "video shared + 5G|XL 300x200x70|N4|plate": {
+   "Q": 8.74,
+   "T_mean": 22.48,
+   "T_peak": 22.6
+  },
+  "video shared + 5G|XL 300x200x70|N8|free": {
+   "Q": 15.48,
+   "T_mean": 35.18,
+   "T_peak": 37.73
+  },
+  "video shared + 5G|XL 300x200x70|N8|fan": {
+   "Q": 15.48,
+   "T_mean": 29.33,
+   "T_peak": 30.41
+  },
+  "video shared + 5G|XL 300x200x70|N8|fan_fins": {
+   "Q": 15.48,
+   "T_mean": 26.45,
+   "T_peak": 26.81
+  },
+  "video shared + 5G|XL 300x200x70|N8|plate": {
+   "Q": 15.48,
+   "T_mean": 22.75,
+   "T_peak": 22.94
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N1|free": {
+   "Q": 24.04,
+   "T_mean": 122.6,
+   "T_peak": 147.0
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N1|fan": {
+   "Q": 24.04,
+   "T_mean": 95.79,
+   "T_peak": 113.48
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N1|fan_fins": {
+   "Q": 24.04,
+   "T_mean": 50.44,
+   "T_peak": 56.8
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N1|plate": {
+   "Q": 24.04,
+   "T_mean": 32.67,
+   "T_peak": 35.34
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N2|free": {
+   "Q": 25.72,
+   "T_mean": 127.65,
+   "T_peak": 153.31
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N2|fan": {
+   "Q": 25.72,
+   "T_mean": 100.17,
+   "T_peak": 118.96
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N2|fan_fins": {
+   "Q": 25.72,
+   "T_mean": 52.15,
+   "T_peak": 58.93
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N2|plate": {
+   "Q": 25.72,
+   "T_mean": 33.4,
+   "T_peak": 36.25
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N4|free": {
+   "Q": 29.09,
+   "T_mean": 137.4,
+   "T_peak": 165.5
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N4|fan": {
+   "Q": 29.09,
+   "T_mean": 108.73,
+   "T_peak": 129.67
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N4|fan_fins": {
+   "Q": 29.09,
+   "T_mean": 55.54,
+   "T_peak": 63.18
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N4|plate": {
+   "Q": 29.09,
+   "T_mean": 34.86,
+   "T_peak": 38.08
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N8|free": {
+   "Q": 35.83,
+   "T_mean": 155.67,
+   "T_peak": 188.33
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N8|fan": {
+   "Q": 35.83,
+   "T_mean": 125.11,
+   "T_peak": 150.13
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N8|fan_fins": {
+   "Q": 35.83,
+   "T_mean": 62.22,
+   "T_peak": 71.52
+  },
+  "video shared + 5G + validator typ|S 90x60x18|N8|plate": {
+   "Q": 35.83,
+   "T_mean": 37.77,
+   "T_peak": 41.71
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N1|free": {
+   "Q": 24.04,
+   "T_mean": 76.53,
+   "T_peak": 89.41
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N1|fan": {
+   "Q": 24.04,
+   "T_mean": 56.4,
+   "T_peak": 64.25
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N1|fan_fins": {
+   "Q": 24.04,
+   "T_mean": 35.81,
+   "T_peak": 38.51
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N1|plate": {
+   "Q": 24.04,
+   "T_mean": 26.69,
+   "T_peak": 27.86
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N2|free": {
+   "Q": 25.72,
+   "T_mean": 79.39,
+   "T_peak": 92.99
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N2|fan": {
+   "Q": 25.72,
+   "T_mean": 58.49,
+   "T_peak": 66.86
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N2|fan_fins": {
+   "Q": 25.72,
+   "T_mean": 36.55,
+   "T_peak": 39.44
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N2|plate": {
+   "Q": 25.72,
+   "T_mean": 27.0,
+   "T_peak": 28.26
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N4|free": {
+   "Q": 29.09,
+   "T_mean": 84.97,
+   "T_peak": 99.96
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N4|fan": {
+   "Q": 29.09,
+   "T_mean": 62.63,
+   "T_peak": 72.04
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N4|fan_fins": {
+   "Q": 29.09,
+   "T_mean": 38.03,
+   "T_peak": 41.29
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N4|plate": {
+   "Q": 29.09,
+   "T_mean": 27.64,
+   "T_peak": 29.05
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N8|free": {
+   "Q": 35.83,
+   "T_mean": 95.59,
+   "T_peak": 113.24
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N8|fan": {
+   "Q": 35.83,
+   "T_mean": 70.74,
+   "T_peak": 82.18
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N8|fan_fins": {
+   "Q": 35.83,
+   "T_mean": 40.98,
+   "T_peak": 44.98
+  },
+  "video shared + 5G + validator typ|M 140x90x30|N8|plate": {
+   "Q": 35.83,
+   "T_mean": 28.9,
+   "T_peak": 30.63
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N1|free": {
+   "Q": 24.04,
+   "T_mean": 54.26,
+   "T_peak": 61.57
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N1|fan": {
+   "Q": 24.04,
+   "T_mean": 40.37,
+   "T_peak": 44.21
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N1|fan_fins": {
+   "Q": 24.04,
+   "T_mean": 30.2,
+   "T_peak": 31.5
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N1|plate": {
+   "Q": 24.04,
+   "T_mean": 24.34,
+   "T_peak": 24.92
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N2|free": {
+   "Q": 25.72,
+   "T_mean": 55.95,
+   "T_peak": 63.69
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N2|fan": {
+   "Q": 25.72,
+   "T_mean": 41.42,
+   "T_peak": 45.52
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N2|fan_fins": {
+   "Q": 25.72,
+   "T_mean": 30.56,
+   "T_peak": 31.95
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N2|plate": {
+   "Q": 25.72,
+   "T_mean": 24.49,
+   "T_peak": 25.12
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N4|free": {
+   "Q": 29.09,
+   "T_mean": 59.28,
+   "T_peak": 67.85
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N4|fan": {
+   "Q": 29.09,
+   "T_mean": 43.51,
+   "T_peak": 48.14
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N4|fan_fins": {
+   "Q": 29.09,
+   "T_mean": 31.29,
+   "T_peak": 32.86
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N4|plate": {
+   "Q": 29.09,
+   "T_mean": 24.81,
+   "T_peak": 25.51
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N8|free": {
+   "Q": 35.83,
+   "T_mean": 65.67,
+   "T_peak": 75.84
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N8|fan": {
+   "Q": 35.83,
+   "T_mean": 47.66,
+   "T_peak": 53.32
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N8|fan_fins": {
+   "Q": 35.83,
+   "T_mean": 32.73,
+   "T_peak": 34.66
+  },
+  "video shared + 5G + validator typ|L 200x130x45|N8|plate": {
+   "Q": 35.83,
+   "T_mean": 25.43,
+   "T_peak": 26.28
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N1|free": {
+   "Q": 24.04,
+   "T_mean": 39.93,
+   "T_peak": 43.66
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N1|fan": {
+   "Q": 24.04,
+   "T_mean": 31.69,
+   "T_peak": 33.37
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N1|fan_fins": {
+   "Q": 24.04,
+   "T_mean": 27.25,
+   "T_peak": 27.81
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N1|plate": {
+   "Q": 24.04,
+   "T_mean": 23.09,
+   "T_peak": 23.36
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N2|free": {
+   "Q": 25.72,
+   "T_mean": 40.83,
+   "T_peak": 44.78
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N2|fan": {
+   "Q": 25.72,
+   "T_mean": 32.16,
+   "T_peak": 33.95
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N2|fan_fins": {
+   "Q": 25.72,
+   "T_mean": 27.4,
+   "T_peak": 28.0
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N2|plate": {
+   "Q": 25.72,
+   "T_mean": 23.16,
+   "T_peak": 23.45
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N4|free": {
+   "Q": 29.09,
+   "T_mean": 42.59,
+   "T_peak": 46.99
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N4|fan": {
+   "Q": 29.09,
+   "T_mean": 33.09,
+   "T_peak": 35.11
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N4|fan_fins": {
+   "Q": 29.09,
+   "T_mean": 27.72,
+   "T_peak": 28.4
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N4|plate": {
+   "Q": 29.09,
+   "T_mean": 23.29,
+   "T_peak": 23.61
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N8|free": {
+   "Q": 35.83,
+   "T_mean": 46.02,
+   "T_peak": 51.28
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N8|fan": {
+   "Q": 35.83,
+   "T_mean": 34.93,
+   "T_peak": 37.42
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N8|fan_fins": {
+   "Q": 35.83,
+   "T_mean": 28.34,
+   "T_peak": 29.18
+  },
+  "video shared + 5G + validator typ|XL 300x200x70|N8|plate": {
+   "Q": 35.83,
+   "T_mean": 23.56,
+   "T_peak": 23.95
+  }
+ },
+ "N_max": {
+  "S 90x60x18|41|free|20C|delta": 1,
+  "S 90x60x18|41|free|25C|delta": 1,
+  "S 90x60x18|41|free|30C|delta": 0,
+  "S 90x60x18|41|free|35C|delta": 0,
+  "S 90x60x18|41|fan|20C|delta": 4,
+  "S 90x60x18|41|fan|25C|delta": 3,
+  "S 90x60x18|41|fan|30C|delta": 1,
+  "S 90x60x18|41|fan|35C|delta": 0,
+  "S 90x60x18|41|fan+fins|20C|delta": 13,
+  "S 90x60x18|41|fan+fins|25C|delta": 10,
+  "S 90x60x18|41|fan+fins|30C|delta": 6,
+  "S 90x60x18|41|fan+fins|35C|delta": 3,
+  "S 90x60x18|41|plate|20C|delta": 28,
+  "S 90x60x18|41|plate|25C|delta": 28,
+  "S 90x60x18|41|plate|30C|delta": 26,
+  "S 90x60x18|41|plate|35C|delta": 22,
+  "S 90x60x18|43|free|20C|delta": 2,
+  "S 90x60x18|43|free|25C|delta": 1,
+  "S 90x60x18|43|free|30C|delta": 0,
+  "S 90x60x18|43|free|35C|delta": 0,
+  "S 90x60x18|43|fan|20C|delta": 4,
+  "S 90x60x18|43|fan|25C|delta": 3,
+  "S 90x60x18|43|fan|30C|delta": 2,
+  "S 90x60x18|43|fan|35C|delta": 1,
+  "S 90x60x18|43|fan+fins|20C|delta": 14,
+  "S 90x60x18|43|fan+fins|25C|delta": 11,
+  "S 90x60x18|43|fan+fins|30C|delta": 8,
+  "S 90x60x18|43|fan+fins|35C|delta": 5,
+  "S 90x60x18|43|plate|20C|delta": 28,
+  "S 90x60x18|43|plate|25C|delta": 28,
+  "S 90x60x18|43|plate|30C|delta": 26,
+  "S 90x60x18|43|plate|35C|delta": 22,
+  "S 90x60x18|48|free|20C|delta": 2,
+  "S 90x60x18|48|free|25C|delta": 2,
+  "S 90x60x18|48|free|30C|delta": 1,
+  "S 90x60x18|48|free|35C|delta": 0,
+  "S 90x60x18|48|fan|20C|delta": 5,
+  "S 90x60x18|48|fan|25C|delta": 4,
+  "S 90x60x18|48|fan|30C|delta": 3,
+  "S 90x60x18|48|fan|35C|delta": 2,
+  "S 90x60x18|48|fan+fins|20C|delta": 18,
+  "S 90x60x18|48|fan+fins|25C|delta": 15,
+  "S 90x60x18|48|fan+fins|30C|delta": 11,
+  "S 90x60x18|48|fan+fins|35C|delta": 8,
+  "S 90x60x18|48|plate|20C|delta": 28,
+  "S 90x60x18|48|plate|25C|delta": 28,
+  "S 90x60x18|48|plate|30C|delta": 26,
+  "S 90x60x18|48|plate|35C|delta": 22,
+  "M 140x90x30|41|free|20C|delta": 5,
+  "M 140x90x30|41|free|25C|delta": 3,
+  "M 140x90x30|41|free|30C|delta": 2,
+  "M 140x90x30|41|free|35C|delta": 0,
+  "M 140x90x30|41|fan|20C|delta": 10,
+  "M 140x90x30|41|fan|25C|delta": 8,
+  "M 140x90x30|41|fan|30C|delta": 5,
+  "M 140x90x30|41|fan|35C|delta": 2,
+  "M 140x90x30|41|fan+fins|20C|delta": 33,
+  "M 140x90x30|41|fan+fins|25C|delta": 25,
+  "M 140x90x30|41|fan+fins|30C|delta": 17,
+  "M 140x90x30|41|fan+fins|35C|delta": 9,
+  "M 140x90x30|41|plate|20C|delta": 28,
+  "M 140x90x30|41|plate|25C|delta": 28,
+  "M 140x90x30|41|plate|30C|delta": 26,
+  "M 140x90x30|41|plate|35C|delta": 22,
+  "M 140x90x30|43|free|20C|delta": 5,
+  "M 140x90x30|43|free|25C|delta": 4,
+  "M 140x90x30|43|free|30C|delta": 2,
+  "M 140x90x30|43|free|35C|delta": 1,
+  "M 140x90x30|43|fan|20C|delta": 11,
+  "M 140x90x30|43|fan|25C|delta": 9,
+  "M 140x90x30|43|fan|30C|delta": 6,
+  "M 140x90x30|43|fan|35C|delta": 3,
+  "M 140x90x30|43|fan+fins|20C|delta": 36,
+  "M 140x90x30|43|fan+fins|25C|delta": 28,
+  "M 140x90x30|43|fan+fins|30C|delta": 20,
+  "M 140x90x30|43|fan+fins|35C|delta": 12,
+  "M 140x90x30|43|plate|20C|delta": 28,
+  "M 140x90x30|43|plate|25C|delta": 28,
+  "M 140x90x30|43|plate|30C|delta": 26,
+  "M 140x90x30|43|plate|35C|delta": 22,
+  "M 140x90x30|48|free|20C|delta": 7,
+  "M 140x90x30|48|free|25C|delta": 5,
+  "M 140x90x30|48|free|30C|delta": 4,
+  "M 140x90x30|48|free|35C|delta": 2,
+  "M 140x90x30|48|fan|20C|delta": 14,
+  "M 140x90x30|48|fan|25C|delta": 12,
+  "M 140x90x30|48|fan|30C|delta": 9,
+  "M 140x90x30|48|fan|35C|delta": 6,
+  "M 140x90x30|48|fan+fins|20C|delta": 45,
+  "M 140x90x30|48|fan+fins|25C|delta": 37,
+  "M 140x90x30|48|fan+fins|30C|delta": 29,
+  "M 140x90x30|48|fan+fins|35C|delta": 21,
+  "M 140x90x30|48|plate|20C|delta": 28,
+  "M 140x90x30|48|plate|25C|delta": 28,
+  "M 140x90x30|48|plate|30C|delta": 26,
+  "M 140x90x30|48|plate|35C|delta": 22,
+  "L 200x130x45|41|free|20C|delta": 10,
+  "L 200x130x45|41|free|25C|delta": 7,
+  "L 200x130x45|41|free|30C|delta": 5,
+  "L 200x130x45|41|free|35C|delta": 2,
+  "L 200x130x45|41|fan|20C|delta": 23,
+  "L 200x130x45|41|fan|25C|delta": 17,
+  "L 200x130x45|41|fan|30C|delta": 12,
+  "L 200x130x45|41|fan|35C|delta": 6,
+  "L 200x130x45|41|fan+fins|20C|delta": 64,
+  "L 200x130x45|41|fan+fins|25C|delta": 54,
+  "L 200x130x45|41|fan+fins|30C|delta": 37,
+  "L 200x130x45|41|fan+fins|35C|delta": 20,
+  "L 200x130x45|41|plate|20C|delta": 28,
+  "L 200x130x45|41|plate|25C|delta": 28,
+  "L 200x130x45|41|plate|30C|delta": 26,
+  "L 200x130x45|41|plate|35C|delta": 22,
+  "L 200x130x45|43|free|20C|delta": 11,
+  "L 200x130x45|43|free|25C|delta": 8,
+  "L 200x130x45|43|free|30C|delta": 6,
+  "L 200x130x45|43|free|35C|delta": 3,
+  "L 200x130x45|43|fan|20C|delta": 25,
+  "L 200x130x45|43|fan|25C|delta": 20,
+  "L 200x130x45|43|fan|30C|delta": 14,
+  "L 200x130x45|43|fan|35C|delta": 8,
+  "L 200x130x45|43|fan+fins|20C|delta": 64,
+  "L 200x130x45|43|fan+fins|25C|delta": 61,
+  "L 200x130x45|43|fan+fins|30C|delta": 44,
+  "L 200x130x45|43|fan+fins|35C|delta": 27,
+  "L 200x130x45|43|plate|20C|delta": 28,
+  "L 200x130x45|43|plate|25C|delta": 28,
+  "L 200x130x45|43|plate|30C|delta": 26,
+  "L 200x130x45|43|plate|35C|delta": 22,
+  "L 200x130x45|48|free|20C|delta": 15,
+  "L 200x130x45|48|free|25C|delta": 12,
+  "L 200x130x45|48|free|30C|delta": 9,
+  "L 200x130x45|48|free|35C|delta": 6,
+  "L 200x130x45|48|fan|20C|delta": 31,
+  "L 200x130x45|48|fan|25C|delta": 25,
+  "L 200x130x45|48|fan|30C|delta": 20,
+  "L 200x130x45|48|fan|35C|delta": 14,
+  "L 200x130x45|48|fan+fins|20C|delta": 64,
+  "L 200x130x45|48|fan+fins|25C|delta": 64,
+  "L 200x130x45|48|fan+fins|30C|delta": 62,
+  "L 200x130x45|48|fan+fins|35C|delta": 45,
+  "L 200x130x45|48|plate|20C|delta": 28,
+  "L 200x130x45|48|plate|25C|delta": 28,
+  "L 200x130x45|48|plate|30C|delta": 26,
+  "L 200x130x45|48|plate|35C|delta": 22,
+  "XL 300x200x70|41|free|20C|delta": 24,
+  "XL 300x200x70|41|free|25C|delta": 17,
+  "XL 300x200x70|41|free|30C|delta": 11,
+  "XL 300x200x70|41|free|35C|delta": 5,
+  "XL 300x200x70|41|fan|20C|delta": 54,
+  "XL 300x200x70|41|fan|25C|delta": 41,
+  "XL 300x200x70|41|fan|30C|delta": 28,
+  "XL 300x200x70|41|fan|35C|delta": 15,
+  "XL 300x200x70|41|fan+fins|20C|delta": 64,
+  "XL 300x200x70|41|fan+fins|25C|delta": 64,
+  "XL 300x200x70|41|fan+fins|30C|delta": 64,
+  "XL 300x200x70|41|fan+fins|35C|delta": 47,
+  "XL 300x200x70|41|plate|20C|delta": 28,
+  "XL 300x200x70|41|plate|25C|delta": 28,
+  "XL 300x200x70|41|plate|30C|delta": 26,
+  "XL 300x200x70|41|plate|35C|delta": 22,
+  "XL 300x200x70|43|free|20C|delta": 26,
+  "XL 300x200x70|43|free|25C|delta": 20,
+  "XL 300x200x70|43|free|30C|delta": 14,
+  "XL 300x200x70|43|free|35C|delta": 8,
+  "XL 300x200x70|43|fan|20C|delta": 59,
+  "XL 300x200x70|43|fan|25C|delta": 47,
+  "XL 300x200x70|43|fan|30C|delta": 34,
+  "XL 300x200x70|43|fan|35C|delta": 21,
+  "XL 300x200x70|43|fan+fins|20C|delta": 64,
+  "XL 300x200x70|43|fan+fins|25C|delta": 64,
+  "XL 300x200x70|43|fan+fins|30C|delta": 64,
+  "XL 300x200x70|43|fan+fins|35C|delta": 64,
+  "XL 300x200x70|43|plate|20C|delta": 28,
+  "XL 300x200x70|43|plate|25C|delta": 28,
+  "XL 300x200x70|43|plate|30C|delta": 26,
+  "XL 300x200x70|43|plate|35C|delta": 22,
+  "XL 300x200x70|48|free|20C|delta": 33,
+  "XL 300x200x70|48|free|25C|delta": 27,
+  "XL 300x200x70|48|free|30C|delta": 21,
+  "XL 300x200x70|48|free|35C|delta": 14,
+  "XL 300x200x70|48|fan|20C|delta": 64,
+  "XL 300x200x70|48|fan|25C|delta": 60,
+  "XL 300x200x70|48|fan|30C|delta": 47,
+  "XL 300x200x70|48|fan|35C|delta": 34,
+  "XL 300x200x70|48|fan+fins|20C|delta": 64,
+  "XL 300x200x70|48|fan+fins|25C|delta": 64,
+  "XL 300x200x70|48|fan+fins|30C|delta": 64,
+  "XL 300x200x70|48|fan+fins|35C|delta": 64,
+  "XL 300x200x70|48|plate|20C|delta": 28,
+  "XL 300x200x70|48|plate|25C|delta": 28,
+  "XL 300x200x70|48|plate|30C|delta": 26,
+  "XL 300x200x70|48|plate|35C|delta": 22,
+  "S 90x60x18|43|free|video|20|25|30|35": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "S 90x60x18|43|fan|video|20|25|30|35": [
+   9,
+   7,
+   5,
+   3
+  ],
+  "M 140x90x30|43|free|video|20|25|30|35": [
+   3,
+   2,
+   1,
+   0
+  ],
+  "M 140x90x30|43|fan|video|20|25|30|35": [
+   23,
+   18,
+   13,
+   8
+  ],
+  "L 200x130x45|43|free|video|20|25|30|35": [
+   7,
+   5,
+   3,
+   2
+  ],
+  "L 200x130x45|43|fan|video|20|25|30|35": [
+   50,
+   39,
+   28,
+   17
+  ],
+  "XL 300x200x70|43|free|video|20|25|30|35": [
+   17,
+   13,
+   9,
+   5
+  ],
+  "XL 300x200x70|43|fan|video|20|25|30|35": [
+   64,
+   64,
+   64,
+   41
+  ]
+ },
+ "Q_limit_43C_25C": {
+  "S 90x60x18": {
+   "free": 2.2725179367788093,
+   "fan_fins": 13.377438383305428,
+   "plate": 32.0
+  },
+  "M 140x90x30": {
+   "free": 5.198320654410551,
+   "fan_fins": 32.20494425610566,
+   "plate": 32.0
+  },
+  "L 200x130x45": {
+   "free": 10.420844414855646,
+   "fan_fins": 67.46522937753417,
+   "plate": 32.0
+  },
+  "XL 300x200x70": {
+   "free": 23.0546385741455,
+   "fan_fins": 156.89588227333527,
+   "plate": 32.0
+  }
+ }
+}

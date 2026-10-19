@@ -1,0 +1,4638 @@
+{
+ "open|still|20C|delta|battery|float": {
+  "P_adm_W": 2.466,
+  "P_thermal_W": 2.466,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|battery_table|float": {
+  "P_adm_W": 2.672,
+  "P_thermal_W": 2.672,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|still|20C|delta|contact_lo|float": {
+  "P_adm_W": 2.344,
+  "P_thermal_W": 2.344,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|contact_hi|float": {
+  "P_adm_W": 1.908,
+  "P_thermal_W": 1.908,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_bpp|float": {
+  "P_adm_W": 2.338,
+  "P_thermal_W": 2.338,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_epp|float": {
+  "P_adm_W": 2.371,
+  "P_thermal_W": 2.371,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_mpp|float": {
+  "P_adm_W": 2.374,
+  "P_thermal_W": 2.374,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_bpp|topup": {
+  "P_adm_W": 2.148,
+  "P_thermal_W": 2.148,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_epp|topup": {
+  "P_adm_W": 2.212,
+  "P_thermal_W": 2.212,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_mpp|topup": {
+  "P_adm_W": 2.218,
+  "P_thermal_W": 2.218,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_bpp|charge": {
+  "P_adm_W": 1.822,
+  "P_thermal_W": 1.822,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|battery|float": {
+  "P_adm_W": 1.726,
+  "P_thermal_W": 1.726,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|battery_table|float": {
+  "P_adm_W": 1.842,
+  "P_thermal_W": 1.842,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|contact_lo|float": {
+  "P_adm_W": 1.598,
+  "P_thermal_W": 1.598,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|contact_hi|float": {
+  "P_adm_W": 1.09,
+  "P_thermal_W": 1.09,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_bpp|float": {
+  "P_adm_W": 1.619,
+  "P_thermal_W": 1.619,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_epp|float": {
+  "P_adm_W": 1.635,
+  "P_thermal_W": 1.635,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_mpp|float": {
+  "P_adm_W": 1.636,
+  "P_thermal_W": 1.636,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_bpp|topup": {
+  "P_adm_W": 1.443,
+  "P_thermal_W": 1.443,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_epp|topup": {
+  "P_adm_W": 1.483,
+  "P_thermal_W": 1.483,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_mpp|topup": {
+  "P_adm_W": 1.486,
+  "P_thermal_W": 1.486,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_bpp|charge": {
+  "P_adm_W": 0.97,
+  "P_thermal_W": 0.97,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|battery|float": {
+  "P_adm_W": 0.968,
+  "P_thermal_W": 0.968,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|battery_table|float": {
+  "P_adm_W": 0.997,
+  "P_thermal_W": 0.997,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|contact_lo|float": {
+  "P_adm_W": 0.823,
+  "P_thermal_W": 0.823,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|contact_hi|float": {
+  "P_adm_W": 0.251,
+  "P_thermal_W": 0.251,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_bpp|float": {
+  "P_adm_W": 0.88,
+  "P_thermal_W": 0.88,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_epp|float": {
+  "P_adm_W": 0.884,
+  "P_thermal_W": 0.884,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_mpp|float": {
+  "P_adm_W": 0.885,
+  "P_thermal_W": 0.885,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_bpp|topup": {
+  "P_adm_W": 0.72,
+  "P_thermal_W": 0.72,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_epp|topup": {
+  "P_adm_W": 0.741,
+  "P_thermal_W": 0.741,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_mpp|topup": {
+  "P_adm_W": 0.742,
+  "P_thermal_W": 0.742,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_bpp|charge": {
+  "P_adm_W": 0.108,
+  "P_thermal_W": 0.108,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|battery|float": {
+  "P_adm_W": 0.19,
+  "P_thermal_W": 0.19,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|battery_table|float": {
+  "P_adm_W": 0.136,
+  "P_thermal_W": 0.136,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|contact_lo|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_bpp|float": {
+  "P_adm_W": 0.12,
+  "P_thermal_W": 0.12,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_epp|float": {
+  "P_adm_W": 0.12,
+  "P_thermal_W": 0.12,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_mpp|float": {
+  "P_adm_W": 0.12,
+  "P_thermal_W": 0.12,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_bpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_epp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_mpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|battery|float": {
+  "P_adm_W": 2.273,
+  "P_thermal_W": 2.273,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|battery_table|float": {
+  "P_adm_W": 2.425,
+  "P_thermal_W": 2.425,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|contact_lo|float": {
+  "P_adm_W": 2.159,
+  "P_thermal_W": 2.159,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|contact_hi|float": {
+  "P_adm_W": 1.769,
+  "P_thermal_W": 1.769,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 2.149,
+  "P_thermal_W": 2.149,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_epp|float": {
+  "P_adm_W": 2.175,
+  "P_thermal_W": 2.175,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 2.177,
+  "P_thermal_W": 2.177,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 1.978,
+  "P_thermal_W": 1.978,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 2.031,
+  "P_thermal_W": 2.031,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 2.035,
+  "P_thermal_W": 2.035,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 1.65,
+  "P_thermal_W": 1.65,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|battery|float": {
+  "P_adm_W": 1.59,
+  "P_thermal_W": 1.59,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|battery_table|float": {
+  "P_adm_W": 1.671,
+  "P_thermal_W": 1.671,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|contact_lo|float": {
+  "P_adm_W": 1.471,
+  "P_thermal_W": 1.471,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|contact_hi|float": {
+  "P_adm_W": 1.01,
+  "P_thermal_W": 1.01,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 1.486,
+  "P_thermal_W": 1.486,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_epp|float": {
+  "P_adm_W": 1.498,
+  "P_thermal_W": 1.498,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 1.499,
+  "P_thermal_W": 1.499,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 1.327,
+  "P_thermal_W": 1.327,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 1.361,
+  "P_thermal_W": 1.361,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 1.363,
+  "P_thermal_W": 1.363,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 0.878,
+  "P_thermal_W": 0.878,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|battery|float": {
+  "P_adm_W": 0.89,
+  "P_thermal_W": 0.89,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|battery_table|float": {
+  "P_adm_W": 0.903,
+  "P_thermal_W": 0.903,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|contact_lo|float": {
+  "P_adm_W": 0.762,
+  "P_thermal_W": 0.762,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|contact_hi|float": {
+  "P_adm_W": 0.232,
+  "P_thermal_W": 0.232,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 0.807,
+  "P_thermal_W": 0.807,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_epp|float": {
+  "P_adm_W": 0.81,
+  "P_thermal_W": 0.81,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 0.81,
+  "P_thermal_W": 0.81,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 0.661,
+  "P_thermal_W": 0.661,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 0.679,
+  "P_thermal_W": 0.679,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 0.68,
+  "P_thermal_W": 0.68,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 0.097,
+  "P_thermal_W": 0.097,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|battery|float": {
+  "P_adm_W": 0.174,
+  "P_thermal_W": 0.174,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|battery_table|float": {
+  "P_adm_W": 0.123,
+  "P_thermal_W": 0.123,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|contact_lo|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 0.11,
+  "P_thermal_W": 0.11,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_epp|float": {
+  "P_adm_W": 0.11,
+  "P_thermal_W": 0.11,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 0.11,
+  "P_thermal_W": 0.11,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|battery|float": {
+  "P_adm_W": 2.472,
+  "P_thermal_W": 2.472,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 2.679,
+  "P_thermal_W": 2.679,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 2.35,
+  "P_thermal_W": 2.35,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 1.913,
+  "P_thermal_W": 1.913,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 2.344,
+  "P_thermal_W": 2.344,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 2.377,
+  "P_thermal_W": 2.377,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 2.38,
+  "P_thermal_W": 2.38,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 2.153,
+  "P_thermal_W": 2.153,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 2.218,
+  "P_thermal_W": 2.218,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 2.223,
+  "P_thermal_W": 2.223,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 1.828,
+  "P_thermal_W": 1.828,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|20C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|battery|float": {
+  "P_adm_W": 1.73,
+  "P_thermal_W": 1.73,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 1.847,
+  "P_thermal_W": 1.847,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 1.601,
+  "P_thermal_W": 1.601,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 1.093,
+  "P_thermal_W": 1.093,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 1.623,
+  "P_thermal_W": 1.623,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 1.639,
+  "P_thermal_W": 1.639,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 1.64,
+  "P_thermal_W": 1.64,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 1.447,
+  "P_thermal_W": 1.447,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 1.487,
+  "P_thermal_W": 1.487,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 1.49,
+  "P_thermal_W": 1.49,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 0.973,
+  "P_thermal_W": 0.973,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|25C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|battery|float": {
+  "P_adm_W": 0.97,
+  "P_thermal_W": 0.97,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 1.0,
+  "P_thermal_W": 1.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 0.825,
+  "P_thermal_W": 0.825,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 0.251,
+  "P_thermal_W": 0.251,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 0.882,
+  "P_thermal_W": 0.882,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 0.887,
+  "P_thermal_W": 0.887,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 0.887,
+  "P_thermal_W": 0.887,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 0.722,
+  "P_thermal_W": 0.722,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 0.743,
+  "P_thermal_W": 0.743,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 0.744,
+  "P_thermal_W": 0.744,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 0.108,
+  "P_thermal_W": 0.108,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|30C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|battery|float": {
+  "P_adm_W": 0.19,
+  "P_thermal_W": 0.19,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 0.136,
+  "P_thermal_W": 0.136,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 0.121,
+  "P_thermal_W": 0.121,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 0.121,
+  "P_thermal_W": 0.121,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 0.121,
+  "P_thermal_W": 0.121,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|still|35C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|delta|battery|float": {
+  "P_adm_W": 3.393,
+  "P_thermal_W": 3.393,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|battery_table|float": {
+  "P_adm_W": 3.185,
+  "P_thermal_W": 3.185,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|contact_lo|float": {
+  "P_adm_W": 3.278,
+  "P_thermal_W": 3.278,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|contact_hi|float": {
+  "P_adm_W": 2.936,
+  "P_thermal_W": 2.936,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_bpp|float": {
+  "P_adm_W": 2.779,
+  "P_thermal_W": 2.779,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_epp|float": {
+  "P_adm_W": 2.823,
+  "P_thermal_W": 2.823,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_mpp|float": {
+  "P_adm_W": 2.827,
+  "P_thermal_W": 2.827,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_bpp|topup": {
+  "P_adm_W": 2.58,
+  "P_thermal_W": 2.58,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_epp|topup": {
+  "P_adm_W": 2.66,
+  "P_thermal_W": 2.66,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_mpp|topup": {
+  "P_adm_W": 2.666,
+  "P_thermal_W": 2.666,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "open|wind|20C|delta|qi_bpp|charge": {
+  "P_adm_W": 2.352,
+  "P_thermal_W": 2.352,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|delta|qi_epp|charge": {
+  "P_adm_W": 0.043,
+  "P_thermal_W": 0.043,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|battery|float": {
+  "P_adm_W": 2.369,
+  "P_thermal_W": 2.369,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|battery_table|float": {
+  "P_adm_W": 2.201,
+  "P_thermal_W": 2.201,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|contact_lo|float": {
+  "P_adm_W": 2.244,
+  "P_thermal_W": 2.244,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|contact_hi|float": {
+  "P_adm_W": 1.761,
+  "P_thermal_W": 1.761,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_bpp|float": {
+  "P_adm_W": 1.929,
+  "P_thermal_W": 1.929,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_epp|float": {
+  "P_adm_W": 1.951,
+  "P_thermal_W": 1.951,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_mpp|float": {
+  "P_adm_W": 1.952,
+  "P_thermal_W": 1.952,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_bpp|topup": {
+  "P_adm_W": 1.748,
+  "P_thermal_W": 1.748,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_epp|topup": {
+  "P_adm_W": 1.796,
+  "P_thermal_W": 1.796,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_mpp|topup": {
+  "P_adm_W": 1.799,
+  "P_thermal_W": 1.799,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_bpp|charge": {
+  "P_adm_W": 1.339,
+  "P_thermal_W": 1.339,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|battery|float": {
+  "P_adm_W": 1.325,
+  "P_thermal_W": 1.325,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|battery_table|float": {
+  "P_adm_W": 1.2,
+  "P_thermal_W": 1.2,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|contact_lo|float": {
+  "P_adm_W": 1.192,
+  "P_thermal_W": 1.192,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|contact_hi|float": {
+  "P_adm_W": 0.56,
+  "P_thermal_W": 0.56,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_bpp|float": {
+  "P_adm_W": 1.057,
+  "P_thermal_W": 1.057,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_epp|float": {
+  "P_adm_W": 1.063,
+  "P_thermal_W": 1.063,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_mpp|float": {
+  "P_adm_W": 1.063,
+  "P_thermal_W": 1.063,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_bpp|topup": {
+  "P_adm_W": 0.893,
+  "P_thermal_W": 0.893,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_epp|topup": {
+  "P_adm_W": 0.917,
+  "P_thermal_W": 0.917,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_mpp|topup": {
+  "P_adm_W": 0.918,
+  "P_thermal_W": 0.918,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_bpp|charge": {
+  "P_adm_W": 0.316,
+  "P_thermal_W": 0.316,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|battery|float": {
+  "P_adm_W": 0.259,
+  "P_thermal_W": 0.259,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|battery_table|float": {
+  "P_adm_W": 0.18,
+  "P_thermal_W": 0.18,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|contact_lo|float": {
+  "P_adm_W": 0.013,
+  "P_thermal_W": 0.013,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_bpp|float": {
+  "P_adm_W": 0.159,
+  "P_thermal_W": 0.159,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_epp|float": {
+  "P_adm_W": 0.159,
+  "P_thermal_W": 0.159,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_mpp|float": {
+  "P_adm_W": 0.159,
+  "P_thermal_W": 0.159,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_bpp|topup": {
+  "P_adm_W": 0.014,
+  "P_thermal_W": 0.014,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_epp|topup": {
+  "P_adm_W": 0.022,
+  "P_thermal_W": 0.022,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_mpp|topup": {
+  "P_adm_W": 0.023,
+  "P_thermal_W": 0.023,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|delta|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|battery|float": {
+  "P_adm_W": 3.095,
+  "P_thermal_W": 3.095,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|battery_table|float": {
+  "P_adm_W": 2.885,
+  "P_thermal_W": 2.885,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|contact_lo|float": {
+  "P_adm_W": 2.987,
+  "P_thermal_W": 2.987,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|contact_hi|float": {
+  "P_adm_W": 2.692,
+  "P_thermal_W": 2.692,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 2.55,
+  "P_thermal_W": 2.55,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_epp|float": {
+  "P_adm_W": 2.584,
+  "P_thermal_W": 2.584,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 2.587,
+  "P_thermal_W": 2.587,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 2.372,
+  "P_thermal_W": 2.372,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 2.437,
+  "P_thermal_W": 2.437,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 2.442,
+  "P_thermal_W": 2.442,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 2.124,
+  "P_thermal_W": 2.124,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.039,
+  "P_thermal_W": 0.039,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|battery|float": {
+  "P_adm_W": 2.159,
+  "P_thermal_W": 2.159,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|battery_table|float": {
+  "P_adm_W": 1.992,
+  "P_thermal_W": 1.992,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|contact_lo|float": {
+  "P_adm_W": 2.043,
+  "P_thermal_W": 2.043,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|contact_hi|float": {
+  "P_adm_W": 1.615,
+  "P_thermal_W": 1.615,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 1.768,
+  "P_thermal_W": 1.768,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_epp|float": {
+  "P_adm_W": 1.784,
+  "P_thermal_W": 1.784,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 1.786,
+  "P_thermal_W": 1.786,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 1.604,
+  "P_thermal_W": 1.604,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 1.644,
+  "P_thermal_W": 1.644,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 1.647,
+  "P_thermal_W": 1.647,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 1.209,
+  "P_thermal_W": 1.209,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|battery|float": {
+  "P_adm_W": 1.206,
+  "P_thermal_W": 1.206,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|battery_table|float": {
+  "P_adm_W": 1.084,
+  "P_thermal_W": 1.084,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|contact_lo|float": {
+  "P_adm_W": 1.085,
+  "P_thermal_W": 1.085,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|contact_hi|float": {
+  "P_adm_W": 0.513,
+  "P_thermal_W": 0.513,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 0.967,
+  "P_thermal_W": 0.967,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_epp|float": {
+  "P_adm_W": 0.972,
+  "P_thermal_W": 0.972,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 0.972,
+  "P_thermal_W": 0.972,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 0.818,
+  "P_thermal_W": 0.818,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 0.838,
+  "P_thermal_W": 0.838,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 0.84,
+  "P_thermal_W": 0.84,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 0.285,
+  "P_thermal_W": 0.285,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|battery|float": {
+  "P_adm_W": 0.236,
+  "P_thermal_W": 0.236,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|battery_table|float": {
+  "P_adm_W": 0.163,
+  "P_thermal_W": 0.163,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|contact_lo|float": {
+  "P_adm_W": 0.012,
+  "P_thermal_W": 0.012,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 0.146,
+  "P_thermal_W": 0.146,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_epp|float": {
+  "P_adm_W": 0.146,
+  "P_thermal_W": 0.146,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 0.146,
+  "P_thermal_W": 0.146,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 0.013,
+  "P_thermal_W": 0.013,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 0.02,
+  "P_thermal_W": 0.02,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 0.021,
+  "P_thermal_W": 0.021,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|battery|float": {
+  "P_adm_W": 3.402,
+  "P_thermal_W": 3.402,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 3.194,
+  "P_thermal_W": 3.194,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 3.287,
+  "P_thermal_W": 3.287,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 2.943,
+  "P_thermal_W": 2.943,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 2.786,
+  "P_thermal_W": 2.786,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 2.83,
+  "P_thermal_W": 2.83,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 2.834,
+  "P_thermal_W": 2.834,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 2.586,
+  "P_thermal_W": 2.586,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 2.666,
+  "P_thermal_W": 2.666,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 2.673,
+  "P_thermal_W": 2.673,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 2.359,
+  "P_thermal_W": 2.359,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.043,
+  "P_thermal_W": 0.043,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|20C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|battery|float": {
+  "P_adm_W": 2.376,
+  "P_thermal_W": 2.376,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 2.207,
+  "P_thermal_W": 2.207,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 2.25,
+  "P_thermal_W": 2.25,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 1.765,
+  "P_thermal_W": 1.765,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 1.934,
+  "P_thermal_W": 1.934,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 1.956,
+  "P_thermal_W": 1.956,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 1.957,
+  "P_thermal_W": 1.957,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 1.752,
+  "P_thermal_W": 1.752,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 1.8,
+  "P_thermal_W": 1.8,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 1.804,
+  "P_thermal_W": 1.804,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 1.343,
+  "P_thermal_W": 1.343,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|25C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|battery|float": {
+  "P_adm_W": 1.329,
+  "P_thermal_W": 1.329,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 1.203,
+  "P_thermal_W": 1.203,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 1.195,
+  "P_thermal_W": 1.195,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 0.561,
+  "P_thermal_W": 0.561,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 1.059,
+  "P_thermal_W": 1.059,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 1.066,
+  "P_thermal_W": 1.066,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 1.066,
+  "P_thermal_W": 1.066,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 0.895,
+  "P_thermal_W": 0.895,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 0.919,
+  "P_thermal_W": 0.919,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 0.921,
+  "P_thermal_W": 0.921,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 0.317,
+  "P_thermal_W": 0.317,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|30C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|battery|float": {
+  "P_adm_W": 0.26,
+  "P_thermal_W": 0.26,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 0.181,
+  "P_thermal_W": 0.181,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 0.013,
+  "P_thermal_W": 0.013,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 0.16,
+  "P_thermal_W": 0.16,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 0.16,
+  "P_thermal_W": 0.16,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 0.16,
+  "P_thermal_W": 0.16,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 0.014,
+  "P_thermal_W": 0.014,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 0.022,
+  "P_thermal_W": 0.022,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 0.023,
+  "P_thermal_W": 0.023,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 4.675,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "open|wind|35C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 0.0,
+  "P_thermal_W": 0.0,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|20C|delta|battery|float": {
+  "P_adm_W": 7.189,
+  "P_thermal_W": 7.189,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|battery_table|float": {
+  "P_adm_W": 7.189,
+  "P_thermal_W": 7.189,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|contact_lo|float": {
+  "P_adm_W": 7.131,
+  "P_thermal_W": 7.131,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|contact_hi|float": {
+  "P_adm_W": 6.872,
+  "P_thermal_W": 6.872,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.494,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_epp|float": {
+  "P_adm_W": 6.277,
+  "P_thermal_W": 6.277,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_mpp|float": {
+  "P_adm_W": 6.287,
+  "P_thermal_W": 6.287,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.494,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_epp|topup": {
+  "P_adm_W": 6.09,
+  "P_thermal_W": 6.09,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_mpp|topup": {
+  "P_adm_W": 6.102,
+  "P_thermal_W": 6.102,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.494,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_epp|charge": {
+  "P_adm_W": 4.611,
+  "P_thermal_W": 4.611,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|delta|qi_mpp|charge": {
+  "P_adm_W": 2.148,
+  "P_thermal_W": 2.148,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|25C|delta|battery|float": {
+  "P_adm_W": 6.963,
+  "P_thermal_W": 6.963,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|battery_table|float": {
+  "P_adm_W": 6.963,
+  "P_thermal_W": 6.963,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|contact_lo|float": {
+  "P_adm_W": 6.902,
+  "P_thermal_W": 6.902,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|contact_hi|float": {
+  "P_adm_W": 6.643,
+  "P_thermal_W": 6.643,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.259,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_epp|float": {
+  "P_adm_W": 6.08,
+  "P_thermal_W": 6.08,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_mpp|float": {
+  "P_adm_W": 6.089,
+  "P_thermal_W": 6.089,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.259,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_epp|topup": {
+  "P_adm_W": 5.894,
+  "P_thermal_W": 5.894,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_mpp|topup": {
+  "P_adm_W": 5.906,
+  "P_thermal_W": 5.906,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.259,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_epp|charge": {
+  "P_adm_W": 4.374,
+  "P_thermal_W": 4.374,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|delta|qi_mpp|charge": {
+  "P_adm_W": 1.91,
+  "P_thermal_W": 1.91,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|30C|delta|battery|float": {
+  "P_adm_W": 6.731,
+  "P_thermal_W": 6.731,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|battery_table|float": {
+  "P_adm_W": 6.731,
+  "P_thermal_W": 6.731,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|contact_lo|float": {
+  "P_adm_W": 6.667,
+  "P_thermal_W": 6.667,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|contact_hi|float": {
+  "P_adm_W": 6.407,
+  "P_thermal_W": 6.407,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.018,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_epp|float": {
+  "P_adm_W": 5.878,
+  "P_thermal_W": 5.878,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_mpp|float": {
+  "P_adm_W": 5.886,
+  "P_thermal_W": 5.886,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.018,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_epp|topup": {
+  "P_adm_W": 5.693,
+  "P_thermal_W": 5.693,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_mpp|topup": {
+  "P_adm_W": 5.704,
+  "P_thermal_W": 5.704,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.018,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_epp|charge": {
+  "P_adm_W": 4.131,
+  "P_thermal_W": 4.131,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|delta|qi_mpp|charge": {
+  "P_adm_W": 1.665,
+  "P_thermal_W": 1.665,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|35C|delta|battery|float": {
+  "P_adm_W": 6.492,
+  "P_thermal_W": 6.492,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|battery_table|float": {
+  "P_adm_W": 6.492,
+  "P_thermal_W": 6.492,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|contact_lo|float": {
+  "P_adm_W": 6.425,
+  "P_thermal_W": 6.425,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|contact_hi|float": {
+  "P_adm_W": 6.166,
+  "P_thermal_W": 6.166,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.772,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_epp|float": {
+  "P_adm_W": 5.67,
+  "P_thermal_W": 5.67,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_mpp|float": {
+  "P_adm_W": 5.677,
+  "P_thermal_W": 5.677,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.772,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_epp|topup": {
+  "P_adm_W": 5.486,
+  "P_thermal_W": 5.486,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_mpp|topup": {
+  "P_adm_W": 5.497,
+  "P_thermal_W": 5.497,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.772,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_epp|charge": {
+  "P_adm_W": 3.883,
+  "P_thermal_W": 3.883,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|delta|qi_mpp|charge": {
+  "P_adm_W": 1.415,
+  "P_thermal_W": 1.415,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|20C|video_wifi|battery|float": {
+  "P_adm_W": 6.329,
+  "P_thermal_W": 6.329,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|battery_table|float": {
+  "P_adm_W": 6.329,
+  "P_thermal_W": 6.329,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|contact_lo|float": {
+  "P_adm_W": 6.269,
+  "P_thermal_W": 6.269,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|contact_hi|float": {
+  "P_adm_W": 6.04,
+  "P_thermal_W": 6.04,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.693,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.613,
+  "P_thermal_W": 5.613,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.62,
+  "P_thermal_W": 5.62,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.693,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.449,
+  "P_thermal_W": 5.449,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.458,
+  "P_thermal_W": 5.458,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.693,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 4.038,
+  "P_thermal_W": 4.038,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.879,
+  "P_thermal_W": 1.879,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|25C|video_wifi|battery|float": {
+  "P_adm_W": 6.129,
+  "P_thermal_W": 6.129,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|battery_table|float": {
+  "P_adm_W": 6.129,
+  "P_thermal_W": 6.129,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|contact_lo|float": {
+  "P_adm_W": 6.066,
+  "P_thermal_W": 6.066,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|contact_hi|float": {
+  "P_adm_W": 5.838,
+  "P_thermal_W": 5.838,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.487,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.436,
+  "P_thermal_W": 5.436,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.442,
+  "P_thermal_W": 5.442,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.487,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.273,
+  "P_thermal_W": 5.273,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.281,
+  "P_thermal_W": 5.281,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.487,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 3.831,
+  "P_thermal_W": 3.831,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.671,
+  "P_thermal_W": 1.671,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|30C|video_wifi|battery|float": {
+  "P_adm_W": 5.924,
+  "P_thermal_W": 5.924,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|battery_table|float": {
+  "P_adm_W": 5.924,
+  "P_thermal_W": 5.924,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|contact_lo|float": {
+  "P_adm_W": 5.859,
+  "P_thermal_W": 5.859,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|contact_hi|float": {
+  "P_adm_W": 5.63,
+  "P_thermal_W": 5.63,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.275,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.254,
+  "P_thermal_W": 5.254,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.26,
+  "P_thermal_W": 5.26,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.275,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.092,
+  "P_thermal_W": 5.092,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.1,
+  "P_thermal_W": 5.1,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.275,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 3.618,
+  "P_thermal_W": 3.618,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.457,
+  "P_thermal_W": 1.457,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|35C|video_wifi|battery|float": {
+  "P_adm_W": 5.713,
+  "P_thermal_W": 5.713,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|battery_table|float": {
+  "P_adm_W": 5.713,
+  "P_thermal_W": 5.713,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|contact_lo|float": {
+  "P_adm_W": 5.646,
+  "P_thermal_W": 5.646,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|contact_hi|float": {
+  "P_adm_W": 5.418,
+  "P_thermal_W": 5.418,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.059,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.067,
+  "P_thermal_W": 5.067,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.073,
+  "P_thermal_W": 5.073,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.059,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 4.907,
+  "P_thermal_W": 4.907,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 4.914,
+  "P_thermal_W": 4.914,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.059,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 3.4,
+  "P_thermal_W": 3.4,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.238,
+  "P_thermal_W": 1.238,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|20C|5g_outdoor|battery|float": {
+  "P_adm_W": 7.216,
+  "P_thermal_W": 7.216,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 7.216,
+  "P_thermal_W": 7.216,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 7.158,
+  "P_thermal_W": 7.158,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.898,
+  "P_thermal_W": 6.898,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.519,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 6.298,
+  "P_thermal_W": 6.298,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 6.307,
+  "P_thermal_W": 6.307,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.519,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 6.109,
+  "P_thermal_W": 6.109,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 6.122,
+  "P_thermal_W": 6.122,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.519,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.629,
+  "P_thermal_W": 4.629,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|20C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 2.156,
+  "P_thermal_W": 2.156,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|25C|5g_outdoor|battery|float": {
+  "P_adm_W": 6.989,
+  "P_thermal_W": 6.989,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 6.989,
+  "P_thermal_W": 6.989,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 6.928,
+  "P_thermal_W": 6.928,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.668,
+  "P_thermal_W": 6.668,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.283,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 6.1,
+  "P_thermal_W": 6.1,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 6.109,
+  "P_thermal_W": 6.109,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.283,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 5.913,
+  "P_thermal_W": 5.913,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 5.925,
+  "P_thermal_W": 5.925,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.283,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.391,
+  "P_thermal_W": 4.391,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|25C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 1.917,
+  "P_thermal_W": 1.917,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|30C|5g_outdoor|battery|float": {
+  "P_adm_W": 6.756,
+  "P_thermal_W": 6.756,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 6.756,
+  "P_thermal_W": 6.756,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 6.692,
+  "P_thermal_W": 6.692,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.432,
+  "P_thermal_W": 6.432,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.042,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 5.897,
+  "P_thermal_W": 5.897,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 5.905,
+  "P_thermal_W": 5.905,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.042,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 5.711,
+  "P_thermal_W": 5.711,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 5.722,
+  "P_thermal_W": 5.722,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.042,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|30C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.148,
+  "P_thermal_W": 4.148,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|30C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 1.672,
+  "P_thermal_W": 1.672,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|35C|5g_outdoor|battery|float": {
+  "P_adm_W": 6.517,
+  "P_thermal_W": 6.517,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 6.517,
+  "P_thermal_W": 6.517,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 6.449,
+  "P_thermal_W": 6.449,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.189,
+  "P_thermal_W": 6.189,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.794,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 5.688,
+  "P_thermal_W": 5.688,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 5.696,
+  "P_thermal_W": 5.696,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.794,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 5.504,
+  "P_thermal_W": 5.504,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 5.514,
+  "P_thermal_W": 5.514,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.794,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|still|35C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 3.898,
+  "P_thermal_W": 3.898,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|still|35C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 1.42,
+  "P_thermal_W": 1.42,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|20C|delta|battery|float": {
+  "P_adm_W": 7.538,
+  "P_thermal_W": 7.538,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|battery_table|float": {
+  "P_adm_W": 7.538,
+  "P_thermal_W": 7.538,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|contact_lo|float": {
+  "P_adm_W": 7.485,
+  "P_thermal_W": 7.485,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|contact_hi|float": {
+  "P_adm_W": 7.228,
+  "P_thermal_W": 7.228,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.855,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_epp|float": {
+  "P_adm_W": 6.58,
+  "P_thermal_W": 6.58,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_mpp|float": {
+  "P_adm_W": 6.59,
+  "P_thermal_W": 6.59,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.855,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_epp|topup": {
+  "P_adm_W": 6.39,
+  "P_thermal_W": 6.39,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_mpp|topup": {
+  "P_adm_W": 6.404,
+  "P_thermal_W": 6.404,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.855,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_epp|charge": {
+  "P_adm_W": 4.977,
+  "P_thermal_W": 4.977,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|delta|qi_mpp|charge": {
+  "P_adm_W": 2.524,
+  "P_thermal_W": 2.524,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|battery|float": {
+  "P_adm_W": 7.179,
+  "P_thermal_W": 7.179,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|battery_table|float": {
+  "P_adm_W": 7.179,
+  "P_thermal_W": 7.179,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|contact_lo|float": {
+  "P_adm_W": 7.121,
+  "P_thermal_W": 7.121,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|contact_hi|float": {
+  "P_adm_W": 6.863,
+  "P_thermal_W": 6.863,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.482,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_epp|float": {
+  "P_adm_W": 6.267,
+  "P_thermal_W": 6.267,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_mpp|float": {
+  "P_adm_W": 6.276,
+  "P_thermal_W": 6.276,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.482,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_epp|topup": {
+  "P_adm_W": 6.08,
+  "P_thermal_W": 6.08,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_mpp|topup": {
+  "P_adm_W": 6.092,
+  "P_thermal_W": 6.092,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.482,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_epp|charge": {
+  "P_adm_W": 4.601,
+  "P_thermal_W": 4.601,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|delta|qi_mpp|charge": {
+  "P_adm_W": 2.146,
+  "P_thermal_W": 2.146,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|30C|delta|battery|float": {
+  "P_adm_W": 6.813,
+  "P_thermal_W": 6.813,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|battery_table|float": {
+  "P_adm_W": 6.813,
+  "P_thermal_W": 6.813,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|contact_lo|float": {
+  "P_adm_W": 6.75,
+  "P_thermal_W": 6.75,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|contact_hi|float": {
+  "P_adm_W": 6.493,
+  "P_thermal_W": 6.493,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.104,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_epp|float": {
+  "P_adm_W": 5.949,
+  "P_thermal_W": 5.949,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_mpp|float": {
+  "P_adm_W": 5.957,
+  "P_thermal_W": 5.957,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.104,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_epp|topup": {
+  "P_adm_W": 5.763,
+  "P_thermal_W": 5.763,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_mpp|topup": {
+  "P_adm_W": 5.774,
+  "P_thermal_W": 5.774,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.104,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_epp|charge": {
+  "P_adm_W": 4.22,
+  "P_thermal_W": 4.22,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|delta|qi_mpp|charge": {
+  "P_adm_W": 1.762,
+  "P_thermal_W": 1.762,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|35C|delta|battery|float": {
+  "P_adm_W": 6.442,
+  "P_thermal_W": 6.442,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|battery_table|float": {
+  "P_adm_W": 6.442,
+  "P_thermal_W": 6.442,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|contact_lo|float": {
+  "P_adm_W": 6.374,
+  "P_thermal_W": 6.374,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|contact_hi|float": {
+  "P_adm_W": 6.116,
+  "P_thermal_W": 6.116,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.719,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_epp|float": {
+  "P_adm_W": 5.625,
+  "P_thermal_W": 5.625,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_mpp|float": {
+  "P_adm_W": 5.632,
+  "P_thermal_W": 5.632,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.719,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_epp|topup": {
+  "P_adm_W": 5.441,
+  "P_thermal_W": 5.441,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_mpp|topup": {
+  "P_adm_W": 5.451,
+  "P_thermal_W": 5.451,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.719,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_epp|charge": {
+  "P_adm_W": 3.832,
+  "P_thermal_W": 3.832,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|delta|qi_mpp|charge": {
+  "P_adm_W": 1.371,
+  "P_thermal_W": 1.371,
+  "P_cap_W": 10.0,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|20C|video_wifi|battery|float": {
+  "P_adm_W": 6.635,
+  "P_thermal_W": 6.635,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|battery_table|float": {
+  "P_adm_W": 6.635,
+  "P_thermal_W": 6.635,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|contact_lo|float": {
+  "P_adm_W": 6.578,
+  "P_thermal_W": 6.578,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|contact_hi|float": {
+  "P_adm_W": 6.351,
+  "P_thermal_W": 6.351,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.007,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.883,
+  "P_thermal_W": 5.883,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.89,
+  "P_thermal_W": 5.89,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.007,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.717,
+  "P_thermal_W": 5.717,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.727,
+  "P_thermal_W": 5.727,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.007,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 4.357,
+  "P_thermal_W": 4.357,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 2.208,
+  "P_thermal_W": 2.208,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|25C|video_wifi|battery|float": {
+  "P_adm_W": 6.317,
+  "P_thermal_W": 6.317,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|battery_table|float": {
+  "P_adm_W": 6.317,
+  "P_thermal_W": 6.317,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|contact_lo|float": {
+  "P_adm_W": 6.257,
+  "P_thermal_W": 6.257,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|contact_hi|float": {
+  "P_adm_W": 6.03,
+  "P_thermal_W": 6.03,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.68,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.602,
+  "P_thermal_W": 5.602,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.608,
+  "P_thermal_W": 5.608,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.68,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.438,
+  "P_thermal_W": 5.438,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.447,
+  "P_thermal_W": 5.447,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.68,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 4.028,
+  "P_thermal_W": 4.028,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.877,
+  "P_thermal_W": 1.877,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|30C|video_wifi|battery|float": {
+  "P_adm_W": 5.994,
+  "P_thermal_W": 5.994,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|battery_table|float": {
+  "P_adm_W": 5.994,
+  "P_thermal_W": 5.994,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|contact_lo|float": {
+  "P_adm_W": 5.931,
+  "P_thermal_W": 5.931,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|contact_hi|float": {
+  "P_adm_W": 5.704,
+  "P_thermal_W": 5.704,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.348,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.316,
+  "P_thermal_W": 5.316,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.322,
+  "P_thermal_W": 5.322,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.348,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 5.154,
+  "P_thermal_W": 5.154,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 5.162,
+  "P_thermal_W": 5.162,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.348,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 3.694,
+  "P_thermal_W": 3.694,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.541,
+  "P_thermal_W": 1.541,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|35C|video_wifi|battery|float": {
+  "P_adm_W": 5.666,
+  "P_thermal_W": 5.666,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|battery_table|float": {
+  "P_adm_W": 5.666,
+  "P_thermal_W": 5.666,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|contact_lo|float": {
+  "P_adm_W": 5.599,
+  "P_thermal_W": 5.599,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|contact_hi|float": {
+  "P_adm_W": 5.372,
+  "P_thermal_W": 5.372,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.011,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_epp|float": {
+  "P_adm_W": 5.025,
+  "P_thermal_W": 5.025,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_mpp|float": {
+  "P_adm_W": 5.03,
+  "P_thermal_W": 5.03,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.011,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_epp|topup": {
+  "P_adm_W": 4.865,
+  "P_thermal_W": 4.865,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_mpp|topup": {
+  "P_adm_W": 4.872,
+  "P_thermal_W": 4.872,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.011,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_epp|charge": {
+  "P_adm_W": 3.354,
+  "P_thermal_W": 3.354,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|video_wifi|qi_mpp|charge": {
+  "P_adm_W": 1.199,
+  "P_thermal_W": 1.199,
+  "P_cap_W": 13.08,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|20C|5g_outdoor|battery|float": {
+  "P_adm_W": 7.566,
+  "P_thermal_W": 7.566,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 7.566,
+  "P_thermal_W": 7.566,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 7.513,
+  "P_thermal_W": 7.513,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 7.255,
+  "P_thermal_W": 7.255,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.882,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 6.601,
+  "P_thermal_W": 6.601,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 6.612,
+  "P_thermal_W": 6.612,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.882,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 6.411,
+  "P_thermal_W": 6.411,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 6.425,
+  "P_thermal_W": 6.425,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.882,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.997,
+  "P_thermal_W": 4.997,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|20C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 2.534,
+  "P_thermal_W": 2.534,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|25C|5g_outdoor|battery|float": {
+  "P_adm_W": 7.206,
+  "P_thermal_W": 7.206,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 7.206,
+  "P_thermal_W": 7.206,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 7.148,
+  "P_thermal_W": 7.148,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.89,
+  "P_thermal_W": 6.89,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.508,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 6.288,
+  "P_thermal_W": 6.288,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 6.297,
+  "P_thermal_W": 6.297,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.508,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 6.099,
+  "P_thermal_W": 6.099,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 6.112,
+  "P_thermal_W": 6.112,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.508,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.619,
+  "P_thermal_W": 4.619,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|25C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 2.155,
+  "P_thermal_W": 2.155,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|30C|5g_outdoor|battery|float": {
+  "P_adm_W": 6.839,
+  "P_thermal_W": 6.839,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 6.839,
+  "P_thermal_W": 6.839,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 6.776,
+  "P_thermal_W": 6.776,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.518,
+  "P_thermal_W": 6.518,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.127,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 5.968,
+  "P_thermal_W": 5.968,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 5.977,
+  "P_thermal_W": 5.977,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.127,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 5.782,
+  "P_thermal_W": 5.782,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 5.793,
+  "P_thermal_W": 5.793,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 6.127,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 4.236,
+  "P_thermal_W": 4.236,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|30C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 1.769,
+  "P_thermal_W": 1.769,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|35C|5g_outdoor|battery|float": {
+  "P_adm_W": 6.466,
+  "P_thermal_W": 6.466,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|battery_table|float": {
+  "P_adm_W": 6.466,
+  "P_thermal_W": 6.466,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|contact_lo|float": {
+  "P_adm_W": 6.398,
+  "P_thermal_W": 6.398,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|contact_hi|float": {
+  "P_adm_W": 6.14,
+  "P_thermal_W": 6.14,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_bpp|float": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.741,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_epp|float": {
+  "P_adm_W": 5.643,
+  "P_thermal_W": 5.643,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_mpp|float": {
+  "P_adm_W": 5.65,
+  "P_thermal_W": 5.65,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_bpp|topup": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.741,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_epp|topup": {
+  "P_adm_W": 5.459,
+  "P_thermal_W": 5.459,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_mpp|topup": {
+  "P_adm_W": 5.469,
+  "P_thermal_W": 5.469,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_bpp|charge": {
+  "P_adm_W": 4.675,
+  "P_thermal_W": 5.741,
+  "P_cap_W": 4.675,
+  "limit": "host cap",
+  "always_on": true
+ },
+ "dock|wind|35C|5g_outdoor|qi_epp|charge": {
+  "P_adm_W": 3.847,
+  "P_thermal_W": 3.847,
+  "P_cap_W": 13.572,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "dock|wind|35C|5g_outdoor|qi_mpp|charge": {
+  "P_adm_W": 1.376,
+  "P_thermal_W": 1.376,
+  "P_cap_W": 16.72,
+  "limit": "thermal",
+  "always_on": false
+ },
+ "always_on_qi_classes": {
+  "open|still|20C|delta|A": [],
+  "open|still|20C|video_wifi|A": [],
+  "open|still|20C|5g_outdoor|A": [],
+  "open|still|20C|delta|B": [],
+  "open|still|20C|video_wifi|B": [],
+  "open|still|20C|5g_outdoor|B": [],
+  "open|still|25C|delta|A": [],
+  "open|still|25C|video_wifi|A": [],
+  "open|still|25C|5g_outdoor|A": [],
+  "open|still|25C|delta|B": [],
+  "open|still|25C|video_wifi|B": [],
+  "open|still|25C|5g_outdoor|B": [],
+  "open|still|30C|delta|A": [],
+  "open|still|30C|video_wifi|A": [],
+  "open|still|30C|5g_outdoor|A": [],
+  "open|still|30C|delta|B": [],
+  "open|still|30C|video_wifi|B": [],
+  "open|still|30C|5g_outdoor|B": [],
+  "open|still|35C|delta|A": [],
+  "open|still|35C|video_wifi|A": [],
+  "open|still|35C|5g_outdoor|A": [],
+  "open|still|35C|delta|B": [],
+  "open|still|35C|video_wifi|B": [],
+  "open|still|35C|5g_outdoor|B": [],
+  "open|wind|20C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "open|wind|20C|video_wifi|A": [],
+  "open|wind|20C|5g_outdoor|A": [],
+  "open|wind|20C|delta|B": [],
+  "open|wind|20C|video_wifi|B": [],
+  "open|wind|20C|5g_outdoor|B": [],
+  "open|wind|25C|delta|A": [],
+  "open|wind|25C|video_wifi|A": [],
+  "open|wind|25C|5g_outdoor|A": [],
+  "open|wind|25C|delta|B": [],
+  "open|wind|25C|video_wifi|B": [],
+  "open|wind|25C|5g_outdoor|B": [],
+  "open|wind|30C|delta|A": [],
+  "open|wind|30C|video_wifi|A": [],
+  "open|wind|30C|5g_outdoor|A": [],
+  "open|wind|30C|delta|B": [],
+  "open|wind|30C|video_wifi|B": [],
+  "open|wind|30C|5g_outdoor|B": [],
+  "open|wind|35C|delta|A": [],
+  "open|wind|35C|video_wifi|A": [],
+  "open|wind|35C|5g_outdoor|A": [],
+  "open|wind|35C|delta|B": [],
+  "open|wind|35C|video_wifi|B": [],
+  "open|wind|35C|5g_outdoor|B": [],
+  "dock|still|20C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|20C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|20C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|20C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|20C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|20C|5g_outdoor|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|25C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|25C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|25C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|25C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|25C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|25C|5g_outdoor|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|30C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|30C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|30C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|30C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|30C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|30C|5g_outdoor|B": [
+   "qi_bpp"
+  ],
+  "dock|still|35C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|35C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|35C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|still|35C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|35C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|still|35C|5g_outdoor|B": [
+   "qi_bpp"
+  ],
+  "dock|wind|20C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|20C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|20C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|20C|delta|B": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|20C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|20C|5g_outdoor|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|25C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|25C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|25C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|25C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|25C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|25C|5g_outdoor|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|30C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|30C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|30C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|30C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|30C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|30C|5g_outdoor|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|35C|delta|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|35C|video_wifi|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|35C|5g_outdoor|A": [
+   "qi_bpp",
+   "qi_epp",
+   "qi_mpp"
+  ],
+  "dock|wind|35C|delta|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|35C|video_wifi|B": [
+   "qi_bpp",
+   "qi_epp"
+  ],
+  "dock|wind|35C|5g_outdoor|B": [
+   "qi_bpp"
+  ]
+ }
+}

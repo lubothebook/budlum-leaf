@@ -1,0 +1,58 @@
+POWER seat · the distance column: C0 contact or tether (2 m), C1 room (30 m), C2 far (kilometres)
+
+THE SKIN LOAD at VBUS, Leaf 160, nominal, W and the margin to the free-air ceilings (1.73 still, 2.37 wind) [H]
+  class                                 delta    video | reading
+  C0 minimal Skin                        1.03     1.65 | +0.70 / +0.08 W margin to 1.73 W still; +1.34 / +0.72 to 2.37 W wind
+  C1a radio client + stream decoder      1.70     2.76 | +0.03 / -1.03 W margin to 1.73 W still; +0.67 / -0.39 to 2.37 W wind
+  C1b slice stream, L.6.0 Leaf           2.24     3.65 | -0.51 / -1.92 W margin to 1.73 W still; +0.13 / -1.28 to 2.37 W wind
+  C2 L.6.0 Leaf, at the cells            2.24     3.65 | -0.51 / -1.92 W margin to 1.73 W still; +0.13 / -1.28 to 2.37 W wind
+  C2 and C1b are the battery power of hw/energy/04: delta 2.24 W, video 3.65 W. They hold radio, decoder, frame store, compositor and authority.
+  The Split buys nothing on energy there: the Skin is the L.6.0 Leaf, and the remote Core adds its own load on top.
+
+THE SKIN POWER TREE PER CLASS
+  C0   the tree of skin_tree.py: pads or tether into VBUS, no cell, no ring. Energy comes with the pixels from the Core.
+  C1a  the C0 tree plus a radio client and a stream decoder on the Skin. Power cannot cross a room: the VBUS grid is fed by a near energy host (a Part 22 host H0 to H6) or by a cell.
+  C1b  the L.6.0 tree of hw/energy/03 in full: body, ring, U4, B cell, U7. The near host or the Leaf cells feed it.
+  C2   the L.6.0 tree of hw/energy/03 in full. The energy host is local to the Leaf. The compute host is the remote Core. Two hosts, two laws.
+
+THE TIER ANSWER FOR THE SKIN PER CLASS
+  C1a delta  1.70 W: Buffer 3 s 11 cells (current), 5 min 11 cells (current), 30 min 32 cells (energy) | Bare EDLC 0.23 cm3 for 1 s, 0.46 cm3 for 3 s
+  C1a video  2.76 W: Buffer 3 s 17 cells (current), 5 min 18 cells (current), 30 min 51 cells (energy) | Bare EDLC 0.38 cm3 for 1 s, 0.74 cm3 for 3 s
+  C0:  no cell is the default. Bare 1 s in the cell layer (2 to 3 tiles). Buffer only as the safe-screen option, 5 cells. (skin_tree.py)
+  C1a: the Skin has no tether, so it needs an energy host nearby or a cell. With a Part 22 host on contact, the C0 answer holds. A free-roaming Skin is Full.
+  C1b and C2: the Part 22 answer holds unchanged. Buffer 14 cells at 3 s for the delta class, 53 for the peak. Bare does not fit the margin. Full for roaming.
+
+THE CORE SIZING PER CLASS: host input in W for 1, 2, 4 and 8 Skins, delta class and heavy class
+  N   | C0 wired Core            | C1a radio Core (no Skin power) | C2: N full Leaves, each on its own host; Core = validator
+  1   |  2.66 /  4.21 W        |  3.88 /  4.47 W Core,  1.70 /  2.76 W Skins | 1 x 2.24 W Leaves + 18 W validator = 20.2 W, 18.0 W of Core per Leaf
+  2   |  3.51 /  5.46 W        |  4.35 /  4.94 W Core,  2.85 /  4.58 W Skins | 2 x 2.24 W Leaves + 18 W validator = 22.5 W, 9.0 W of Core per Leaf
+  4   |  7.00 / 10.26 W        |  6.04 /  6.63 W Core,  6.82 / 11.00 W Skins | 4 x 2.24 W Leaves + 18 W validator = 27.0 W, 4.5 W of Core per Leaf
+  8   | 19.46 / 29.38 W        |  8.75 /  9.33 W Core, 19.54 / 31.59 W Skins | 8 x 2.24 W Leaves + 18 W validator = 35.9 W, 2.2 W of Core per Leaf
+
+  The C0 column carries the Skin supply, so it holds the whole system. The C1a column is the Core alone, the Skins sit on their own hosts.
+  Total energy of the system at N = 1, delta class:
+    C0  2.53 W  (+13 % against the 2.24 W Leaf)
+    C1a 5.59 W  (+149 %): Core with its radio array 3.88 W plus the Skin 1.70 W
+    C2  2.24 W at the Leaf, plus a validator share. With 1 Leaf per 18 W validator the system takes 20.2 W
+        The Core share per Leaf falls as 18 W / N: 18.0, 9.0, 4.5, 2.25 W for N = 1, 2, 4, 8. The Leaf keeps its 2.24 W in every case.
+
+WHICH PART 22 HOST CLASSES CARRY WHAT, per distance class (offered power on VHV; heavy class; 8.7 W peak for C2)
+  H0    wall dock                  C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H1    dock pack, 20 Wh           C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H2    desk USB-C PD              C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H3a   vehicle 12 V               C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H3b   vehicle 24 V               C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H4a   industrial 24 V            C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H4b   PoE type 2 (802.3at)       C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H4c   PoE type 3 (802.3bt)       C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H5    worn power bank or belt pack C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H6a   low-power Qi pad, 5 W      C0 Core+Skin NO  | C1a Skin yes, C1a Core NO  | C2 Leaf peak NO 
+  H6b   Qi2 pad, 15 W              C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+  H6c   Qi2.2 pad, 25 W            C0 Core+Skin yes | C1a Skin yes, C1a Core yes | C2 Leaf peak yes
+
+WHICH RESULTS HOLD AT C0, C1 AND C2
+  Skin power tree and no cell:       C0 yes. C1a only on a near host. C1b and C2 no, the Skin is the L.6.0 Leaf.
+  Bare store in the cell layer:      C0 yes. C1 and C2 as Part 22: no fit in the margin, 3 tiles of cell layer for a safe screen.
+  Buffer power limit:                the 3 C rule holds at every class. C0 needs 5 to 10 cells, C1b and C2 need 14 to 53.
+  Core energy and the host classes:  C0 and C1a. At C2 the Core is on mains and the Part 22 host classes govern the Leaf alone.
+  Energy price of the Split:         C0 +10 to +13 %. C1a more. C2: no gain, plus the validator share.

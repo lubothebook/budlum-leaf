@@ -1,0 +1,8 @@
+{
+ "selfcheck_pass": true,
+ "skin_pass_count": {
+  "runs": 360,
+  "pass_": 124
+ },
+ "runtime_s": 6.9
+}

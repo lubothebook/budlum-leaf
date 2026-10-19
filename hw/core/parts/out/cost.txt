@@ -1,0 +1,97 @@
+THE COST SHARE OF EACH GROUP AND WHAT LEAVES (parts.py, program/budget.py read only, USD per Leaf, no margin)
+All inputs are [HYPOTHESIS] of the Program Office. Groups marked MISSING are not in budget.py and carry a range of this seat.
+
+== volume 100,000 per year
+unit cost today (budget.py): low 2164, base 3949, high 7770 USD
+  group        source     base USD   share   leaves base USD at C0 / C0R / C1 / C2
+  display      budget.py   3218.29   81.5%   0.00 / 0.00 / 0.00 / 0.00
+  cells        budget.py    139.20    3.5%   139.20 / 139.20 / 0.00 / 0.00
+  tilemech     budget.py     60.00    1.5%   0.00 / 0.00 / 0.00 / 0.00
+  tcm          budget.py     19.00    0.5%   19.00 / 19.00 / 0.00 / 0.00
+  qi           budget.py      9.00    0.2%   8.18 / 8.18 / 0.00 / 0.00
+  touch        budget.py     12.00    0.3%   0.00 / 0.00 / 0.00 / 0.00
+  u1u6         budget.py     45.00    1.1%   45.00 / 45.00 / 0.00 / 0.00
+  u5           budget.py     60.00    1.5%   60.00 / 0.00 / 0.00 / 0.00
+  u2           budget.py     18.00    0.5%   18.00 / 0.00 / 0.00 / 0.00
+  misc_si      budget.py     12.00    0.3%   4.24 / 4.24 / 0.00 / 0.00
+  cam          budget.py     30.00    0.8%   0.00 / 0.00 / 0.00 / 0.00
+  bmech        budget.py     30.00    0.8%   0.00 / 0.00 / 0.00 / 0.00
+  rear         budget.py      8.00    0.2%   0.00 / 0.00 / 0.00 / 0.00
+  pcba         budget.py     14.00    0.4%   0.00 / 0.00 / 0.00 / 0.00
+  bcell        budget.py      2.20    0.1%   2.20 / 2.20 / 0.00 / 0.00
+  hub          MISSING       14.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  skinmisc     MISSING       10.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  ringsmall    MISSING        9.00    n/a    2.40 / 1.03 / 0.00 / 0.00
+  royalty      budget.py    151.87   3.8%   follows the modem: 151.87 / 0.00 / 0.00 / 0.00
+  other budget lines (assembly, packaging) stay: not allocated to a part, counted as staying
+
+  LEAVING THE LEAF, budget lines only (USD, low / base / high) and share of the unit cost (base)
+  C0   leaves   205.5 /   295.8 /   431.5  =  7.5% ; plus MISSING-group parts  1.33 /  2.40 /  4.00 ; royalty if it follows the modem  151.9 ; added to the Skin  4.50 /  8.00 / 14.00
+  C0R  leaves   143.5 /   217.8 /   327.5  =  5.5% ; plus MISSING-group parts  0.57 /  1.03 /  1.71 ; royalty if it follows the modem    0.0 ; added to the Skin  4.50 /  8.00 / 14.00
+  C1   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+  C2   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+
+== volume 1,000,000 per year
+unit cost today (budget.py): low 883, base 1575, high 2855 USD
+  group        source     base USD   share   leaves base USD at C0 / C0R / C1 / C2
+  display      budget.py   1204.71   76.5%   0.00 / 0.00 / 0.00 / 0.00
+  cells        budget.py     66.00    4.2%   66.00 / 66.00 / 0.00 / 0.00
+  tilemech     budget.py     32.00    2.0%   0.00 / 0.00 / 0.00 / 0.00
+  tcm          budget.py      9.60    0.6%   9.60 / 9.60 / 0.00 / 0.00
+  qi           budget.py      5.00    0.3%   4.55 / 4.55 / 0.00 / 0.00
+  touch        budget.py      6.00    0.4%   0.00 / 0.00 / 0.00 / 0.00
+  u1u6         budget.py     20.00    1.3%   20.00 / 20.00 / 0.00 / 0.00
+  u5           budget.py     42.00    2.7%   42.00 / 0.00 / 0.00 / 0.00
+  u2           budget.py     12.00    0.8%   12.00 / 0.00 / 0.00 / 0.00
+  misc_si      budget.py      7.50    0.5%   2.65 / 2.65 / 0.00 / 0.00
+  cam          budget.py     18.00    1.1%   0.00 / 0.00 / 0.00 / 0.00
+  bmech        budget.py     17.00    1.1%   0.00 / 0.00 / 0.00 / 0.00
+  rear         budget.py      5.00    0.3%   0.00 / 0.00 / 0.00 / 0.00
+  pcba         budget.py      8.50    0.5%   0.00 / 0.00 / 0.00 / 0.00
+  bcell        budget.py      1.30    0.1%   1.30 / 1.30 / 0.00 / 0.00
+  hub          MISSING       10.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  skinmisc     MISSING        6.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  ringsmall    MISSING        6.00    n/a    1.60 / 0.69 / 0.00 / 0.00
+  royalty      budget.py     60.58   3.8%   follows the modem: 60.58 / 0.00 / 0.00 / 0.00
+  other budget lines (assembly, packaging) stay: not allocated to a part, counted as staying
+
+  LEAVING THE LEAF, budget lines only (USD, low / base / high) and share of the unit cost (base)
+  C0   leaves   111.0 /   158.1 /   231.1  = 10.0% ; plus MISSING-group parts  0.80 /  1.60 /  2.67 ; royalty if it follows the modem   60.6 ; added to the Skin  3.30 /  5.35 /  8.50
+  C0R  leaves    68.0 /   104.1 /   160.1  =  6.6% ; plus MISSING-group parts  0.34 /  0.69 /  1.14 ; royalty if it follows the modem    0.0 ; added to the Skin  3.30 /  5.35 /  8.50
+  C1   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+  C2   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+
+== volume 5,000,000 per year
+unit cost today (budget.py): low 464, base 803, high 1415 USD
+  group        source     base USD   share   leaves base USD at C0 / C0R / C1 / C2
+  display      budget.py    553.74   68.9%   0.00 / 0.00 / 0.00 / 0.00
+  cells        budget.py     41.60    5.2%   41.60 / 41.60 / 0.00 / 0.00
+  tilemech     budget.py     22.00    2.7%   0.00 / 0.00 / 0.00 / 0.00
+  tcm          budget.py      6.40    0.8%   6.40 / 6.40 / 0.00 / 0.00
+  qi           budget.py      3.50    0.4%   3.18 / 3.18 / 0.00 / 0.00
+  touch        budget.py      4.50    0.6%   0.00 / 0.00 / 0.00 / 0.00
+  u1u6         budget.py     13.00    1.6%   13.00 / 13.00 / 0.00 / 0.00
+  u5           budget.py     34.00    4.2%   34.00 / 0.00 / 0.00 / 0.00
+  u2           budget.py      9.50    1.2%   9.50 / 0.00 / 0.00 / 0.00
+  misc_si      budget.py      5.80    0.7%   2.05 / 2.05 / 0.00 / 0.00
+  cam          budget.py     14.00    1.7%   0.00 / 0.00 / 0.00 / 0.00
+  bmech        budget.py     13.00    1.6%   0.00 / 0.00 / 0.00 / 0.00
+  rear         budget.py      4.00    0.5%   0.00 / 0.00 / 0.00 / 0.00
+  pcba         budget.py      6.50    0.8%   0.00 / 0.00 / 0.00 / 0.00
+  bcell        budget.py      1.00    0.1%   1.00 / 1.00 / 0.00 / 0.00
+  hub          MISSING        7.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  skinmisc     MISSING        4.00    n/a    0.00 / 0.00 / 0.00 / 0.00
+  ringsmall    MISSING        4.50    n/a    1.20 / 0.51 / 0.00 / 0.00
+  royalty      budget.py     30.90   3.8%   follows the modem: 30.90 / 0.00 / 0.00 / 0.00
+  other budget lines (assembly, packaging) stay: not allocated to a part, counted as staying
+
+  LEAVING THE LEAF, budget lines only (USD, low / base / high) and share of the unit cost (base)
+  C0   leaves    78.9 /   110.7 /   162.6  = 13.8% ; plus MISSING-group parts  0.59 /  1.20 /  2.00 ; royalty if it follows the modem   30.9 ; added to the Skin  2.60 /  4.30 /  6.80
+  C0R  leaves    44.9 /    67.2 /   105.6  =  8.4% ; plus MISSING-group parts  0.25 /  0.51 /  0.86 ; royalty if it follows the modem    0.0 ; added to the Skin  2.60 /  4.30 /  6.80
+  C1   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+  C2   leaves     0.0 /     0.0 /     0.0  =  0.0% ; plus MISSING-group parts  0.00 /  0.00 /  0.00 ; royalty if it follows the modem    0.0 ; added to the Skin  0.00 /  0.00 /  0.00
+
+THE CEILING: the display (micro-LED tiles x 128) is a share of the unit cost that no class moves.
+  100,000 per year: display 3218 USD = 81.5 %; so at most 18.5 % of the unit cost is movable, before assembly and packaging
+  1,000,000 per year: display 1205 USD = 76.5 %; so at most 23.5 % of the unit cost is movable, before assembly and packaging
+  5,000,000 per year: display 554 USD = 68.9 %; so at most 31.1 % of the unit cost is movable, before assembly and packaging

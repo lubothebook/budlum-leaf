@@ -1,0 +1,212 @@
+POWER-PATH · question 2 · power path simulator
+thresholds: V_HOST_OK_RISE=9.0, V_HOST_OK_FALL=8.0, T_HOST_QUAL=0.02, T_MATE=0.003, T_UNMATE=0.0008, SOC_TOP_LO=0.45, SOC_TOP_HI=0.55, SOC_CLASS_DELTA=0.3, SOC_CLASS_SAFE=0.18, SOC_CLOSE=0.12, SOC_FLOOR=0.1, B_SOC_TARGET=0.6, B_SOC_RING_MIN=0.15, C_TOPUP=0.5, CMAX=3.0, V_SEAT_FLOOR=3.4, ETA_UQ=0.97, ETA_U4=0.95, ETA_AON=0.8, P_UQ_EACH=6.25, I_JOIN=0.38, V_AON_MIN=2.3
+
+====================================================================================================
+S1  desk dock, 60 s, walk 4 min with a delta session, vehicle with a cranking dropout of 0.9 s and a 0.35 s PD re-contract
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.350, host ok)
+  t=  60.000 s  host lost, VHV 0.0 V
+  t=  60.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.358, host no)
+  t= 300.373 s  host qualified at 12.0 V after 20 ms
+  t= 300.373 s  mode BRIDGE -> HOST_TOPUP (SOC 0.215, host ok)
+  t= 360.000 s  host lost, VHV 0.0 V
+  t= 360.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.223, host no)
+  t= 361.270 s  host qualified at 12.0 V after 20 ms
+  t= 361.270 s  mode BRIDGE -> HOST_TOPUP (SOC 0.223, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.481..3.816 V | VSYS_B min 3.909 V | V_BCELL min 3.909 V | 1V8_AON min 1.80 V
+  pack SOC 0.350 -> 0.239 (min 0.215) | B cell SOC 0.600 -> 0.600 (min 0.592) | peak cell C-rate 2.27 C
+  mode seconds: BRIDGE 241.7, HOST_TOPUP 238.3
+  energy: from host 0.195 Wh, net from pack 0.114 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Full 128 cells S
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.350, host ok)
+  t=  60.000 s  host lost, VHV 0.0 V
+  t=  60.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.358, host no)
+  t= 300.373 s  host qualified at 12.0 V after 20 ms
+  t= 300.373 s  mode BRIDGE -> HOST_TOPUP (SOC 0.337, host ok)
+  t= 360.000 s  host lost, VHV 0.0 V
+  t= 360.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.345, host no)
+  t= 361.270 s  host qualified at 12.0 V after 20 ms
+  t= 361.270 s  mode BRIDGE -> HOST_TOPUP (SOC 0.345, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.742..3.817 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 0.350 -> 0.362 (min 0.337) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 0.50 C
+  mode seconds: BRIDGE 241.7, HOST_TOPUP 238.3
+  energy: from host 0.402 Wh, net from pack -0.087 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Bare, 0.23 cm3 EDLC, close in 3 s
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)
+  t=  60.000 s  host lost, VHV 0.0 V
+  t=  60.000 s  mode HOST_FEED -> BRIDGE (SOC 0.998, host no)
+  t=  63.047 s  Bare tier: session closed and the state saved, body dark
+  t=  63.199 s  mode BRIDGE -> ISLAND (SOC 0.774, host no)
+  t= 300.373 s  host qualified at 12.0 V after 20 ms
+  t= 300.373 s  mode ISLAND -> HOST_TOPUP (SOC 0.774, host ok)
+  t= 300.692 s  mode HOST_TOPUP -> HOST_FEED (SOC 0.981, host ok)
+  t= 360.000 s  host lost, VHV 0.0 V
+  t= 360.000 s  mode HOST_FEED -> BRIDGE (SOC 0.981, host no)
+  t= 361.270 s  host qualified at 12.0 V after 20 ms
+  t= 361.270 s  mode BRIDGE -> HOST_TOPUP (SOC 0.845, host ok)
+  t= 361.479 s  mode HOST_TOPUP -> HOST_FEED (SOC 0.983, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.800..3.800 V | VSYS_B min 3.905 V | V_BCELL min 3.905 V | 1V8_AON min 1.80 V
+  pack SOC 1.000 -> 0.983 (min 0.774) | B cell SOC 0.600 -> 0.600 (min 0.586) | peak cell C-rate 0.00 C
+  mode seconds: BRIDGE 4.5, HOST_FEED 237.8, ISLAND 237.2, HOST_TOPUP 0.5
+  energy: from host 0.158 Wh, net from pack 0.000 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S2  host brownout: 150 ms to 6 V at 20 s, 2 s to 0 V at 40 s, delta session
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.500, host ok)
+  t=  20.000 s  host lost, VHV 6.0 V
+  t=  20.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.503, host no)
+  t=  20.170 s  host qualified at 12.0 V after 20 ms
+  t=  20.170 s  mode BRIDGE -> HOST_TOPUP (SOC 0.503, host ok)
+  t=  40.000 s  host lost, VHV 0.0 V
+  t=  40.000 s  mode HOST_TOPUP -> BRIDGE (SOC 0.505, host no)
+  t=  42.020 s  host qualified at 12.0 V after 20 ms
+  t=  42.020 s  mode BRIDGE -> HOST_TOPUP (SOC 0.504, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.723..3.897 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 0.500 -> 0.507 (min 0.500) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 2.17 C
+  mode seconds: BRIDGE 2.2, HOST_TOPUP 57.8
+  energy: from host 0.047 Wh, net from pack -0.008 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Bare, 0.23 cm3 EDLC, close in 3 s
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)
+  t=  20.000 s  host lost, VHV 6.0 V
+  t=  20.000 s  mode HOST_FEED -> BRIDGE (SOC 0.998, host no)
+  t=  20.170 s  host qualified at 12.0 V after 20 ms
+  t=  20.170 s  mode BRIDGE -> HOST_FEED (SOC 0.986, host ok)
+  t=  40.000 s  host lost, VHV 0.0 V
+  t=  40.000 s  mode HOST_FEED -> BRIDGE (SOC 0.986, host no)
+  t=  42.020 s  host qualified at 12.0 V after 20 ms
+  t=  42.020 s  mode BRIDGE -> HOST_TOPUP (SOC 0.840, host ok)
+  t=  42.241 s  mode HOST_TOPUP -> HOST_FEED (SOC 0.986, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.800..3.800 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 1.000 -> 0.986 (min 0.840) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 0.00 C
+  mode seconds: BRIDGE 2.2, HOST_FEED 57.6, HOST_TOPUP 0.2
+  energy: from host 0.038 Wh, net from pack 0.000 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S3  host vanishes at 30 s in a video session, no new host: graceful close and the island
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> video
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)
+  t=   0.158 s  mode HOST_TOPUP -> HOST_FEED (SOC 0.550, host ok)
+  t=  30.000 s  host lost, VHV 0.0 V
+  t=  30.000 s  mode HOST_FEED -> BRIDGE (SOC 0.550, host no)
+  t=1600.817 s  pack at 0.12: session closed, state saved, body goes dark at the floor
+  t=1601.317 s  mode BRIDGE -> ISLAND (SOC 0.120, host no)
+  rails: VHV 0.0..12.0 V | VBUS 3.439..3.927 V | VSYS_B min 3.553 V | V_BCELL min 3.553 V | 1V8_AON min 1.80 V
+  pack SOC 0.550 -> 0.120 (min 0.120) | B cell SOC 0.600 -> 0.079 (min 0.079) | peak cell C-rate 3.05 C
+  mode seconds: BRIDGE 1571.3, HOST_TOPUP 0.1, HOST_FEED 29.8, ISLAND 7398.7
+  energy: from host 0.032 Wh, net from pack 0.457 Wh (negative = charged), net from B cell 0.0752 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Full 128 cells S
+  t=   0.000 s  session class -> video
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)
+  t=   0.047 s  mode HOST_TOPUP -> HOST_FEED (SOC 0.550, host ok)
+  t=  30.000 s  host lost, VHV 0.0 V
+  t=  30.000 s  mode HOST_FEED -> BRIDGE (SOC 0.550, host no)
+  rails: VHV 0.0..12.0 V | VBUS 3.639..3.927 V | VSYS_B min 3.657 V | V_BCELL min 3.657 V | 1V8_AON min 1.80 V
+  pack SOC 0.550 -> 0.128 (min 0.128) | B cell SOC 0.600 -> 0.166 (min 0.166) | peak cell C-rate 0.54 C
+  mode seconds: BRIDGE 8970.0, HOST_TOPUP 0.0, HOST_FEED 30.0
+  energy: from host 0.032 Wh, net from pack 2.990 Wh (negative = charged), net from B cell 0.0626 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Bare, 0.23 cm3 EDLC, close in 3 s
+  t=   0.000 s  session class -> video
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)
+  t=  30.000 s  host lost, VHV 0.0 V
+  t=  30.000 s  mode HOST_FEED -> BRIDGE (SOC 0.998, host no)
+  t=  33.047 s  Bare tier: session closed and the state saved, body dark
+  t=  33.199 s  mode BRIDGE -> ISLAND (SOC 0.774, host no)
+  rails: VHV 0.0..12.0 V | VBUS 3.800..3.800 V | VSYS_B min 3.509 V | V_BCELL min 3.509 V | 1V8_AON min 1.80 V
+  pack SOC 1.000 -> 0.774 (min 0.774) | B cell SOC 0.600 -> 0.060 (min 0.060) | peak cell C-rate 0.00 C
+  mode seconds: BRIDGE 3.2, HOST_FEED 30.0, ISLAND 8966.8
+  energy: from host 0.032 Wh, net from pack 0.000 Wh (negative = charged), net from B cell 0.0778 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S4  hot swap of Q3 at 20 s, B module on the Q3 seat, host on Q1, 3 s swap
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> delta session
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.500, host ok)
+  t=  20.000 s  quadrant Q3 removed, U_Q opens, its cells leave the bus
+  t=  20.000 s  B module unseated: S_SEAT opens, VSYS_B on the B cell
+  t=  23.000 s  quadrant Q3 joins in current limit 0.38 A, 5 cells at SOC 0.30
+  t=  23.000 s  B module seated: S_SEAT closes after the 3 ms challenge
+  rails: VHV 0.0..12.0 V | VBUS 3.729..3.895 V | VSYS_B min 3.709 V | V_BCELL min 3.709 V | 1V8_AON min 1.80 V
+  pack SOC 0.500 -> 0.458 (min 0.452) | B cell SOC 0.600 -> 0.600 (min 0.597) | peak cell C-rate 2.17 C
+  mode seconds: BRIDGE 0.0, HOST_TOPUP 60.0
+  energy: from host 0.048 Wh, net from pack -0.009 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S5a  no host, quadrant swap, Buffer cells spread evenly (5 per quadrant)
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> delta session
+  t=  20.000 s  quadrant Q3 removed, U_Q opens, its cells leave the bus
+  t=  23.000 s  quadrant Q3 joins in current limit 0.38 A, 5 cells at SOC 0.30
+  rails: VHV 0.0..0.0 V | VBUS 3.721..3.801 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 0.600 -> 0.494 (min 0.494) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 2.89 C
+  mode seconds: BRIDGE 60.0
+  energy: from host 0.000 Wh, net from pack 0.038 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S5b  no host, quadrant swap, all 20 Buffer cells in the removed quadrant
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> delta session
+  t=  20.000 s  quadrant Q3 removed, U_Q opens, its cells leave the bus
+  t=  20.000 s  mode BRIDGE -> ISLAND (SOC 0.000, host no)
+  t=  23.000 s  quadrant Q3 joins in current limit 0.38 A, 20 cells at SOC 0.30
+  t=  23.000 s  mode ISLAND -> BRIDGE (SOC 0.300, host no)
+  rails: VHV 0.0..0.0 V | VBUS 3.545..3.801 V | VSYS_B min 3.913 V | V_BCELL min 3.913 V | 1V8_AON min 1.80 V
+  pack SOC 0.600 -> 0.278 (min 0.000) | B cell SOC 0.600 -> 0.598 (min 0.598) | peak cell C-rate 2.14 C
+  mode seconds: BRIDGE 57.0, ISLAND 3.0
+  energy: from host 0.000 Wh, net from pack 0.036 Wh (negative = charged), net from B cell 0.0003 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+====================================================================================================
+S6  weak host: 5 W pad at the rectifier, outdoor video 7.5 W for 15 min, pack assists
+----------------------------------------------------------------------------------------------------
+Buffer 20 cells S, float 60 %
+  t=   0.000 s  session class -> outdoor
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.372..3.740 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 0.550 -> 0.177 (min 0.177) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 2.98 C
+  mode seconds: BRIDGE 0.0, HOST_TOPUP 900.0
+  energy: from host 1.250 Wh, net from pack 0.397 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 12.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+----------------------------------------------------------------------------------------------------
+Full 128 cells S
+  t=   0.000 s  session class -> outdoor
+  t=   0.023 s  host qualified at 12.0 V after 20 ms
+  t=   0.023 s  mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)
+  rails: VHV 0.0..12.0 V | VBUS 3.810..3.872 V | VSYS_B min 3.915 V | V_BCELL min 3.915 V | 1V8_AON min 1.80 V
+  pack SOC 0.550 -> 0.459 (min 0.459) | B cell SOC 0.600 -> 0.600 (min 0.600) | peak cell C-rate 1.05 C
+  mode seconds: BRIDGE 0.0, HOST_TOPUP 900.0
+  energy: from host 1.250 Wh, net from pack 0.666 Wh (negative = charged), net from B cell -0.0000 Wh | bus below the 3.40 V seat floor 0.000 s, bus collapse 0.000 s
+  ISLAND RAIL (secure element and U4 ROM): never dropped, minimum 1.80 V
+
+ISLAND RAIL OVER ALL 13 RUNS: never dropped

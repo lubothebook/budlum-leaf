@@ -1,0 +1,46 @@
+POWER-PATH · question 3 · cell life, Schmalstieg 2014 model with the constants of Lee et al. 2023
+alpha(3.7 V, 25 C) = 2.868e-04 per day^0.75 ; 365 d of storage at 3.7 V and 25 C loses 2.39 %
+model OCV at SOC 0, 0.5, 1: 3.33, 3.71, 4.16 V (a 4.2 V cell)
+
+case                                                                                    Vmean   Vrms  EFC/d   dDoD
+A  cycled daily 100 to 20 %, 6 h at 100 % overnight                                     3.903  3.909  0.800   0.80
+A2 cycled daily 100 to 20 %, no dwell at 100 %                                          3.832  3.837  0.800   0.80
+B1 host-fed Full 128 cells, 6 hand-overs a day of 4 min at 2.24 W                       3.709  3.709  0.122   0.02
+B2 host-fed Buffer 20 cells, 6 hand-overs a day of 4 min at 2.24 W                      3.709  3.709  0.778   0.13
+B3 host-fed Buffer 20 cells, 2 hand-overs a day of 2 min at 2.24 W                      3.709  3.709  0.130   0.06
+B4 host-fed Buffer 40 cells, 6 hand-overs a day of 4 min at 2.24 W                      3.709  3.709  0.389   0.06
+B1z40 host-fed Full, float at 40 %                                                      3.663  3.663  0.122   0.02
+B1z60 host-fed Full, float at 60 %                                                      3.775  3.775  0.122   0.02
+C  host-fed Full but charger holds 100 % (no float policy)                              4.159  4.159  0.122   0.02
+
+YEARS to 80 % capacity, base values and a Monte Carlo of 4000 draws (P10 / P50 / P90)
+case                                                                                         25 C       33 C |     25 C P10 / P50 / P90
+A  cycled daily 100 to 20 %, 6 h at 100 % overnight                                         1.8 y      1.3 y |    0.3    0.8    2.4
+A2 cycled daily 100 to 20 %, no dwell at 100 %                                              2.1 y      1.5 y |    0.7    1.9    4.7
+B1 host-fed Full 128 cells, 6 hand-overs a day of 4 min at 2.24 W                          13.4 y      6.3 y |    5.6   13.0   29.5
+B2 host-fed Buffer 20 cells, 6 hand-overs a day of 4 min at 2.24 W                          7.7 y      4.3 y |    3.2    6.9   15.6
+B3 host-fed Buffer 20 cells, 2 hand-overs a day of 2 min at 2.24 W                         12.7 y      6.1 y |    5.4   12.2   27.4
+B4 host-fed Buffer 40 cells, 6 hand-overs a day of 4 min at 2.24 W                         10.5 y      5.4 y |    4.5    9.8   21.7
+B1z40 host-fed Full, float at 40 %                                                         14.8 y      7.1 y |    6.2   14.4   32.5
+B1z60 host-fed Full, float at 60 %                                                         11.5 y      5.5 y |    4.8   11.2   25.4
+C  host-fed Full but charger holds 100 % (no float policy)                                  4.9 y      2.5 y |    1.1    2.5    6.3
+  The high-voltage factor (1 to 2 times) applies to the cases A and C only. The 4000 draws use a fixed seed.
+
+RATIO at 25 C: host-fed Full lives 7.2 times as long as the cycled cell (13.4 against 1.8 years); host-fed Buffer 20 cells 4.2 times (7.7 years)
+
+CYCLES to 80 percent at depth 1.0 (the unit of Regulation (EU) 2023/1670: 800 cycles and 80 percent), model value, 25 C
+   2.0 cycles a day:   633 full cycles to 80 % (0.9 years); against the 800 cycles of 2023/1670: misses
+   6.0 cycles a day:   723 full cycles to 80 % (0.3 years); against the 800 cycles of 2023/1670: misses
+  The model is fitted to a 2013 NMC cell. A micro cell result of 800 cycles needs its own test, gate HST-5.
+  The Leaf is not named a phone or a tablet. Whether 2023/1670 applies is a legal reading of hw/energy/06. [HYPOTHESIS]
+
+LITHIUM AND COBALT in the cells, by stoichiometry [GENERAL]: Faraday's law, 66 % of the LiCoO2 lithium cycles at 4.45 V
+  cell G: 11.8 mAh -> 4.72 mg Li (25 mg Li2CO3 equivalent) and 39 mg Co in the cathode
+  cell S: 14.8 mAh -> 5.88 mg Li (31 mg Li2CO3 equivalent) and 49 mg Co in the cathode
+  Full 128   Li 0.753 g, Li2CO3 equivalent 4.01 g, Co 6.32 g | saved against Full: Li 0.000 g, Li2CO3 0.00 g, Co 0.00 g
+  Buffer 20  Li 0.118 g, Li2CO3 equivalent 0.63 g, Co 0.99 g | saved against Full: Li 0.635 g, Li2CO3 3.38 g, Co 5.33 g
+  Buffer 40  Li 0.235 g, Li2CO3 equivalent 1.25 g, Co 1.97 g | saved against Full: Li 0.518 g, Li2CO3 2.75 g, Co 4.34 g
+  Buffer 52  Li 0.306 g, Li2CO3 equivalent 1.63 g, Co 2.57 g | saved against Full: Li 0.447 g, Li2CO3 2.38 g, Co 3.75 g
+  Bare 0     Li 0.000 g, Li2CO3 equivalent 0.00 g, Co 0.00 g | saved against Full: Li 0.753 g, Li2CO3 4.01 g, Co 6.32 g
+  per million units, Buffer 20 saves 635 kg of Li (3.4 t of Li2CO3) and 5.3 t of cobalt
+

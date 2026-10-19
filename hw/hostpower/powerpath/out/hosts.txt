@@ -1,0 +1,115 @@
+POWER-PATH · question 4 · host classes
+loads at VBUS: standby 0.061 W, delta session 2.242 W, video 3.646 W, peak 8.700 W
+the Leaf side: leaves 2 x 9 mOhm each way, U_Q 3:1 at 0.97, four U_Q give 25.0 W at most
+
+id    host                        offer W     eta |  8.7 W   25 W |    stby   delta   video    peak | heat at 8.7 W
+H0    wall dock                      25.0   0.893 |    yes    yes |    0.30    2.82    4.44   10.29 | 0.28 W
+H1    dock pack, 20 Wh               25.0   0.885 |    yes    yes |    0.30    2.84    4.48   10.38 | 0.28 W
+H2    desk USB-C PD                  45.0   0.882 |    yes    yes |    0.07    2.62    4.26   10.18 | 0.28 W
+H3a   vehicle 12 V                   45.0   0.882 |    yes    yes |    0.07    2.62    4.26   10.18 | 0.28 W
+H3b   vehicle 24 V                   45.0   0.872 |    yes    yes |    0.07    2.65    4.31   10.29 | 0.28 W
+H4a   industrial 24 V                25.0   0.920 |    yes    yes |    0.07    2.51    4.09    9.76 | 0.28 W
+H4b   PoE type 2 (802.3at)           22.9   0.873 |    yes     NO |    0.07    2.65    4.31   10.29 | 0.28 W
+H4c   PoE type 3 (802.3bt)           45.9   0.873 |    yes    yes |    0.07    2.65    4.31   10.28 | 0.28 W
+H5    worn power bank or belt pack     18.0   0.862 |    yes     NO |    0.07    2.68    4.36   10.42 | 0.29 W
+H6a   low-power Qi pad, 5 W           5.0   0.801 |     NO     NO |    0.10    3.55    5.78   13.79 | 0.76 W  [5 V class, bypass loss]
+H6b   Qi2 pad, 15 W                  15.0   0.801 |    yes     NO |    0.08    2.89    4.70   11.22 | 0.76 W
+H6c   Qi2.2 pad, 25 W                25.0   0.801 |    yes    yes |    0.08    2.89    4.69   11.21 | 0.76 W
+  columns: offered power on VHV, host-side chain efficiency, carries the 8.7 W peak, carries the 25 W port part case,
+  host energy in Wh per hour of Leaf at each load (the standby of H0 and H1 includes the dock overhead), Leaf heat from the interface at the peak
+
+H0 wall dock
+    offered: 25 W at the VHV leaves [D] FINAL/20, hw/dock
+    interface: the 12 bar pads: leaves 5 and 8 VHV at 12 V, 1.04 A each at 25 W; or Qi2.2 25 W in the same dock
+    chain: wall adapter, USB-C PD EPR 28 V 0.93, dock 12 V buck-boost (hw/dock/params.py) 0.96
+    clamp: the adapter and the dock take the mains and the clamp. The Leaf sees 12 V only, after the dead-pad proof
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 16.0 W
+H1 dock pack, 20 Wh
+    offered: 25 W for the Leaf is 1.35 C of the 20 Wh pack [T] hw/energy/05
+    interface: the 12 bar pads from the dock slot, as H0
+    chain: pack usable 3.0 to 4.2 V window 0.95, pack protector and cell DCIR 0.97, dock 12 V buck-boost 0.96
+    clamp: the pack is a floating cell: no transient. Pack under-voltage cut at 3.0 V per cell
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 16.0 W
+    the host battery delivers 17.7 Wh to the VHV leaves; hours on the Leaf: standby 60.4 h, delta session 7.0 h, video 4.4 h, peak 1.9 h
+    with the dock Wi-Fi AP and 60 GHz radio on, the delta session runs 3.0 h
+H2 desk USB-C PD
+    offered: 7.5 W (5 V 1.5 A) to 100 W; 15 V 3 A is 45 W [PUBLICATION] USB PD 3.0 fixed PDOs 5, 9, 15, 20 V
+    interface: the port part on a seat: VHV leaves 5 and 8 at 9 V (27 W, 1.50 A per leaf, no margin) or 15 V (0.90 A per leaf)
+    chain: wall adapter or hub PD source 0.90, port part PD sink and its switch 0.98
+    clamp: the port part holds a 20 V rated input, an OVP switch and a back-flow block. VBUS of a bad cable is cut at 22 V [H]
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 36.0 W
+H3a vehicle 12 V
+    offered: a PD car adapter of 30 to 100 W; 15 V 3 A is 45 W [GENERAL]
+    interface: a PD car adapter into the port part, or a cradle with the 12 pads and its own 12 V stage
+    chain: vehicle adapter, wide-input buck 0.90, port part PD sink and its switch 0.98
+    clamp: adapter side: OVP switch for the load dump, TVS, cranking hold. The Leaf sees the PD output only
+    input window: 9 to 16 V run; 6 to 10.5 V cranking minimum by severity code A to D; 35 V suppressed load dump; 79 to 101 V unsuppressed
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 36.0 W
+H3b vehicle 24 V
+    offered: a PD adapter for 24 V systems of 30 to 100 W [GENERAL]
+    interface: as H3a, with an 80 V class input stage
+    chain: vehicle adapter, wide-input buck 0.89, port part PD sink and its switch 0.98
+    clamp: adapter side: OVP switch for 58 V suppressed and 151 to 202 V unsuppressed load dump
+    input window: 16 to 32 V run; 10 to 22 V cranking minimum by severity code E to H; 58 V typical suppressed clamp; 151 to 202 V unsuppressed
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 36.0 W
+H4a industrial 24 V
+    offered: 24 V rail (IEC 61131-2 class 19.2 to 28.8 V) through a 25 to 60 W isolated DC-DC [GENERAL]
+    interface: a cradle with the 12 pads, or an isolated DC-DC into a USB-C port part
+    chain: isolated 24 V to 12 V DC-DC 0.92
+    clamp: DC-DC input: reverse and surge clamp to the plant rule. Isolation 1.5 kV [H]
+    input window: 19.2 to 28.8 V run (24 V -20 % / +25 %)
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 16.0 W
+H4b PoE type 2 (802.3at)
+    offered: PD input 25.5 W [PUBLICATION] IEEE 802.3at Type 2, then 0.90 for the splitter [H]
+    interface: a PoE splitter into the port part (USB-C PD 9 V or 12 V), isolation 1.5 kVrms of the standard
+    chain: PoE splitter and its DC-DC 0.90, cable and PSE share 0.97
+    clamp: the PD controller of the splitter holds 37 to 57 V and the isolation
+    input window: PD input 37 to 57 V
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 14.0 W
+H4c PoE type 3 (802.3bt)
+    offered: PD input 51 W [PUBLICATION] IEEE 802.3bt Type 3, then 0.90 [H]
+    interface: as H4b
+    chain: PoE splitter and its DC-DC 0.90, cable and PSE share 0.97
+    clamp: as H4b
+    input window: PD input 42.5 to 57 V
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 36.9 W
+H5 worn power bank or belt pack
+    offered: 5000 mAh bank, 9 V 2 A is 18 W [GENERAL]; 5 V 3 A is 15 W
+    interface: the port part on a seat, by a short USB-C lead; or pads on a belt dock
+    chain: bank cell, boost, protection 0.88, port part PD sink and its switch 0.98
+    clamp: a floating cell: no transient. Auto shut-off below 50 to 100 mA is common [H]
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 9.0 W
+    the host battery delivers 15.2 Wh to the VHV leaves; hours on the Leaf: standby 240.5 h, delta session 6.6 h, video 4.0 h, peak 1.7 h
+H6a low-power Qi pad, 5 W
+    offered: Qi BPP 5 W at the rectifier [GENERAL]
+    interface: Qi coil: four sector coils in series and the Q1 rectifier
+    chain: pad supply, inverter and coil 0.89, coupling, shield and rectifier 0.90
+    clamp: the rectifier clamp. Foreign object detection of the pad
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak -4.0 W
+H6b Qi2 pad, 15 W
+    offered: Qi EPP and Qi2 15 W at the rectifier [GENERAL]
+    interface: as H6a
+    chain: pad supply, inverter and coil 0.89, coupling, shield and rectifier 0.90
+    clamp: as H6a
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 6.0 W
+H6c Qi2.2 pad, 25 W
+    offered: Qi2.2 25 W at the rectifier [D] FINAL/21 21.2.6
+    interface: as H6a
+    chain: pad supply, inverter and coil 0.89, coupling, shield and rectifier 0.90
+    clamp: as H6a
+    need on VHV: peak 9.0 W, 25 W case 25.0 W; margin at the peak 16.0 W
+
+VEHICLE INPUT WINDOW, load dump energy into a clamp [GENERAL] by the ISO 16750-2 pulse (exponential, half time td)
+  12 V test A unsuppressed, 101 V, 4 ohm, 400 ms, clamp 36 V       144.7 J  (a 600 W, 1 ms TVS takes about 0.6 J, so a series OVP switch must take it)
+  12 V test A, 79 V, 0.5 ohm, 40 ms, clamp 36 V                     61.1 J  (a 600 W, 1 ms TVS takes about 0.6 J, so a series OVP switch must take it)
+  24 V test A unsuppressed, 202 V, 8 ohm, 350 ms, clamp 70 V       255.4 J  (a 600 W, 1 ms TVS takes about 0.6 J, so a series OVP switch must take it)
+  24 V test A, 151 V, 1 ohm, 100 ms, clamp 70 V                    274.5 J  (a 600 W, 1 ms TVS takes about 0.6 J, so a series OVP switch must take it)
+  The Leaf has no part in this. The PD adapter or the cradle stage owns the clamp. The Leaf sees a PD output that can drop out for 0.1 to 1 s.
+  A cranking dropout becomes a hand-over gap of 0.1 to 3 s. The cell bridges it: see powerpath.py S1.
+
+WHERE THE CAPACITY GOES: nominal host energy, step by step, to the Leaf bus
+  H1: nominal 20.0 Wh -> usable window 19.0 Wh -> pack out 18.4 Wh -> dock 12 V stage 17.7 Wh -> leaves and U_Q 17.1 Wh
+     delta session: 7.0 h on the host battery against 3.2 h on the Leaf Full cell (7.38 Wh at 750 Wh/L)
+  H5: nominal 3.7 V 18.5 Wh -> boost, protection 16.3 Wh -> port part 16.0 Wh -> end margin 15.2 Wh -> leaves and U_Q 14.7 Wh
+     delta session: 6.6 h on the host battery against 3.2 h on the Leaf Full cell (7.38 Wh at 750 Wh/L)
+

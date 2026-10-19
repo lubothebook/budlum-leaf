@@ -1,0 +1,591 @@
+{
+ "raw_240_10bit_gbps": 36.864,
+ "vdcm6_240_gbps_payload": 7.3728,
+ "dsc10_240_wire_gbps": 12.705792,
+ "dsc10_240_line_gbps": 13.102848,
+ "use_cases": {
+  "static page, cursor and clock": {
+   "fps": 10,
+   "tile_dsc10_mbps": 10.58816,
+   "strip_dsc10_mbps": 2.164736,
+   "tile_vdcm6_mbps": 6.49216
+  },
+  "UI, typing, small animation": {
+   "fps": 60,
+   "tile_dsc10_mbps": 762.34752,
+   "strip_dsc10_mbps": 278.32319999999993,
+   "tile_vdcm6_mbps": 467.43552
+  },
+  "mixed delta session": {
+   "fps": 60,
+   "tile_dsc10_mbps": 1323.5200000000002,
+   "strip_dsc10_mbps": 901.9733333333334,
+   "tile_vdcm6_mbps": 811.5199999999999
+  },
+  "scroll at 60 Hz, 85 % view": {
+   "fps": 60,
+   "tile_dsc10_mbps": 2699.9808,
+   "strip_dsc10_mbps": 2760.0384,
+   "tile_vdcm6_mbps": 1655.5008
+  },
+  "scroll at 120 Hz, 85 % view": {
+   "fps": 120,
+   "tile_dsc10_mbps": 5399.9616,
+   "strip_dsc10_mbps": 5520.0768,
+   "tile_vdcm6_mbps": 3311.0016
+  },
+  "video 16:9 in portrait, 30 fps": {
+   "fps": 30,
+   "tile_dsc10_mbps": 495.87882666666667,
+   "strip_dsc10_mbps": 456.2181120000001,
+   "tile_vdcm6_mbps": 304.0494933333333
+  },
+  "video vertical, 60 fps": {
+   "fps": 60,
+   "tile_dsc10_mbps": 2827.03872,
+   "strip_dsc10_mbps": 2889.92256,
+   "tile_vdcm6_mbps": 1733.40672
+  },
+  "full motion, 120 Hz": {
+   "fps": 120,
+   "tile_dsc10_mbps": 6352.896,
+   "strip_dsc10_mbps": 6494.208,
+   "tile_vdcm6_mbps": 3895.296
+  },
+  "full motion, 240 Hz": {
+   "fps": 240,
+   "tile_dsc10_mbps": 12705.792,
+   "strip_dsc10_mbps": 12988.416,
+   "tile_vdcm6_mbps": 7790.592
+  }
+ },
+ "warp_in_skin_multiplier": {
+  "0.0": 1.0,
+  "17.5": 1.5750249999999997,
+  "45.0": 2.002225
+ },
+ "min_ratio_mesh": [
+  1.3882687499999995,
+  2.0824031249999995
+ ],
+ "mean_hops": {
+  "top (3,0)": 9.5,
+  "bottom (4,15)": 9.5,
+  "left (0,7)": 7.5,
+  "right (7,8)": 7.5
+ },
+ "need_gbps": {
+  "full motion 240 Hz DSC 10 bpp": 13.102848,
+  "full motion 240 Hz VDC-M 6 bpp": 7.790592,
+  "full motion 120 Hz DSC 8 bpp": 5.124096,
+  "scroll or video 60 Hz DSC 8 bpp": 2.562048,
+  "video 30 fps 16:9, DSC 8 bpp": 0.39670306133333333,
+  "static page and UI delta, DSC 10": 0.7623475200000001
+ },
+ "r60": {
+  "0.1": [
+   9.24,
+   9.24,
+   9.24
+  ],
+  "0.3": [
+   9.24,
+   9.24,
+   9.24
+  ],
+  "1": [
+   9.24,
+   9.24,
+   4.62
+  ],
+  "2": [
+   9.24,
+   9.24,
+   2.31
+  ],
+  "5": [
+   4.62,
+   9.24,
+   0.0
+  ],
+  "10": [
+   0.0,
+   4.62,
+   0.0
+  ],
+  "30": [
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "r60_ranges": {
+  "VDC-M 6 bpp 240 Hz|LOS": 0.0,
+  "VDC-M 6 bpp 240 Hz|blocked": 0.0,
+  "DSC 8 bpp 120 Hz|LOS": 8.15,
+  "DSC 8 bpp 120 Hz|blocked": 0.8,
+  "DSC 8 bpp 60 Hz|LOS": 18.3,
+  "DSC 8 bpp 60 Hz|blocked": 1.8
+ },
+ "flex_reach_m": {
+  "100": 0.24297951546994123,
+  "200": 0.4568138507263813,
+  "400": 0.8157760752340851
+ },
+ "twinax_reach_m": {
+  "30": 2.258274053871042,
+  "34": 1.5612360539146866,
+  "40": 0.8538308702236181
+ },
+ "inductive": {
+  "0.4|30": 0.846644519738996,
+  "0.2|30": 0.7176243038723212,
+  "0.2|15": 0.5194938532959157,
+  "0.1|15": 0.2864216553493381
+ },
+ "couplers": 3,
+ "carry": {
+  "a": {
+   "full motion 240 Hz DSC 10 bpp": "typical",
+   "full motion 240 Hz VDC-M 6 bpp": "yes",
+   "full motion 120 Hz DSC 8 bpp": "yes",
+   "scroll or video 60 Hz DSC 8 bpp": "yes",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "b": {
+   "full motion 240 Hz DSC 10 bpp": "typical",
+   "full motion 240 Hz VDC-M 6 bpp": "yes",
+   "full motion 120 Hz DSC 8 bpp": "yes",
+   "scroll or video 60 Hz DSC 8 bpp": "yes",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "c": {
+   "full motion 240 Hz DSC 10 bpp": "yes",
+   "full motion 240 Hz VDC-M 6 bpp": "yes",
+   "full motion 120 Hz DSC 8 bpp": "yes",
+   "scroll or video 60 Hz DSC 8 bpp": "yes",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "d": {
+   "full motion 240 Hz DSC 10 bpp": "no",
+   "full motion 240 Hz VDC-M 6 bpp": "no",
+   "full motion 120 Hz DSC 8 bpp": "no",
+   "scroll or video 60 Hz DSC 8 bpp": "typical",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "e": {
+   "full motion 240 Hz DSC 10 bpp": "typical",
+   "full motion 240 Hz VDC-M 6 bpp": "typical",
+   "full motion 120 Hz DSC 8 bpp": "yes",
+   "scroll or video 60 Hz DSC 8 bpp": "yes",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "f1": {
+   "full motion 240 Hz DSC 10 bpp": "no",
+   "full motion 240 Hz VDC-M 6 bpp": "no",
+   "full motion 120 Hz DSC 8 bpp": "no",
+   "scroll or video 60 Hz DSC 8 bpp": "no",
+   "video 30 fps 16:9, DSC 8 bpp": "yes",
+   "static page and UI delta, DSC 10": "yes"
+  },
+  "f2": {
+   "full motion 240 Hz DSC 10 bpp": "no",
+   "full motion 240 Hz VDC-M 6 bpp": "no",
+   "full motion 120 Hz DSC 8 bpp": "no",
+   "scroll or video 60 Hz DSC 8 bpp": "no",
+   "video 30 fps 16:9, DSC 8 bpp": "no",
+   "static page and UI delta, DSC 10": "no"
+  }
+ },
+ "skin_mass_g": 17.044,
+ "body_mass_g": 47.34383999999999,
+ "skin_thickness_mm": 1.0,
+ "hub_area_used_mm2": 0.7550000000000001,
+ "skin_load_w": {
+  "safe screen, no link": 0.1492,
+  "static page 10 Hz": 0.2684952100034866,
+  "delta session, 250 nits": 0.953701250435821,
+  "video Wi-Fi": 1.5669210709309136,
+  "full motion 240 Hz, 250 nits": 1.9654555623928358,
+  "video outdoors, 800 nits": 4.456921070930914
+ },
+ "skin_load_r2_w": {
+  "safe screen, no link": 0.13,
+  "static page 10 Hz": 0.19631716370149255,
+  "delta session, 250 nits": 1.5296454626865672,
+  "video Wi-Fi": 2.5891827082985075,
+  "full motion 240 Hz, 250 nits": 2.635,
+  "video outdoors, 800 nits": 5.479182708298508
+ },
+ "plate_bound_w": 3.1539200000000003,
+ "clip": {
+  "a": {
+   "link_w": 0.085,
+   "wh": 0.0,
+   "mass": 0.0
+  },
+  "b": {
+   "link_w": 0.085,
+   "wh": 0.0,
+   "mass": 2.5
+  },
+  "c": {
+   "link_w": 0.09,
+   "wh": 0.0,
+   "mass": 4.0
+  },
+  "d": {
+   "link_w": 0.6,
+   "wh": 4.815380157624252,
+   "mass": 31.261520630497007
+  },
+  "e": {
+   "link_w": 0.045,
+   "wh": 0.0,
+   "mass": 3.0
+  },
+  "f1": {
+   "link_w": 1.0,
+   "wh": 5.704269046513141,
+   "mass": 34.81707618605256
+  },
+  "f2": {
+   "link_w": 0.2,
+   "wh": 0.0,
+   "mass": 1.0
+  }
+ },
+ "latency_res": {
+  "a": {
+   "p99": {
+    "wifi_room|4": 16.210618364790154,
+    "nr_cell|4": 21.60921506843242,
+    "wifi_room|32": 16.82622145757366,
+    "nr_cell|32": 22.224818161215925,
+    "wifi_room|128": 18.93686063283139,
+    "nr_cell|128": 24.335457336473656
+   },
+   "p999": 17.30350812561284,
+   "verdict": "holds for all K"
+  },
+  "b": {
+   "p99": {
+    "wifi_room|4": 16.210618364790154,
+    "nr_cell|4": 21.60921506843242,
+    "wifi_room|32": 16.82622145757366,
+    "nr_cell|32": 22.224818161215925,
+    "wifi_room|128": 18.93686063283139,
+    "nr_cell|128": 24.335457336473656
+   },
+   "p999": 17.30350812561284,
+   "verdict": "holds for all K"
+  },
+  "c": {
+   "p99": {
+    "wifi_room|4": 16.218618364790153,
+    "nr_cell|4": 21.61721506843242,
+    "wifi_room|32": 16.83422145757366,
+    "nr_cell|32": 22.232818161215924,
+    "wifi_room|128": 18.94486063283139,
+    "nr_cell|128": 24.343457336473655
+   },
+   "p999": 17.31150812561284,
+   "verdict": "holds for all K"
+  },
+  "d": {
+   "p99": {
+    "wifi_room|4": 18.810779116574572,
+    "nr_cell|4": 24.488284295579458,
+    "wifi_room|32": 21.539559629028243,
+    "nr_cell|32": 27.364440826102125,
+    "wifi_room|128": 32.34327812873404,
+    "nr_cell|128": 38.1659708504253
+   },
+   "p999": 41.24522338720506,
+   "verdict": "holds for K=4, fails a full-face change"
+  },
+  "e": {
+   "p99": {
+    "wifi_room|4": 16.218458399154414,
+    "nr_cell|4": 21.61705510279668,
+    "wifi_room|32": 16.881941732487746,
+    "nr_cell|32": 22.280538436130012,
+    "wifi_room|128": 19.156741732487745,
+    "nr_cell|128": 24.55533843613001
+   },
+   "p999": 17.3113481599771,
+   "verdict": "holds for all K"
+  },
+  "f1": {
+   "p99": {
+    "wifi_room|4": 18.375969950560126,
+    "nr_cell|4": 23.692550629858903,
+    "wifi_room|32": 23.01641600372312,
+    "nr_cell|32": 28.315362887161445,
+    "wifi_room|128": 38.89897461410577,
+    "nr_cell|128": 44.2087842645922
+   },
+   "p999": 19.679070244399163,
+   "verdict": "holds for K=4, fails a full-face change"
+  },
+  "f2": {
+   "p99": {
+    "wifi_room|4": 79.13559411022788,
+    "nr_cell|4": 84.47246729164166,
+    "wifi_room|32": 508.056693740547,
+    "nr_cell|32": 513.3746255361186,
+    "wifi_room|128": 1978.6389298230756,
+    "nr_cell|128": 1983.9628822234538
+   },
+   "p999": 80.25976187523216,
+   "verdict": "fails"
+  }
+ },
+ "baseline_p99": {
+  "wifi_room": 16.11667506582108,
+  "wifi_city": 17.330483023462993,
+  "nr_cell": 21.515271769463347
+ },
+ "tether_add": {
+  "a": {
+   "mean": 0.09394329896907216,
+   "p99": 0.09394329896907218
+  },
+  "b": {
+   "mean": 0.09394329896907216,
+   "p99": 0.09394329896907218
+  },
+  "c": {
+   "mean": 0.10194329896907217,
+   "p99": 0.10194329896907217
+  },
+  "d": {
+   "mean": 1.0665576492485969,
+   "p99": 6.314074418344279
+  },
+  "e": {
+   "mean": 0.10178333333333334,
+   "p99": 0.10178333333333334
+  },
+  "f1": {
+   "mean": 2.0874412194956724,
+   "p99": 3.5586266047044326
+  },
+  "f2": {
+   "mean": 62.874225588322645,
+   "p99": 63.731762860885965
+  }
+ },
+ "warp_age": {
+  "a": {
+   "mean": 1.5487412914081524,
+   "rms": 1.6630730378404683,
+   "sd": 0.6059804794540276,
+   "e35": 0.0582075563244164,
+   "e100": 0.16630730378404684,
+   "e300": 0.49892191135214053,
+   "p100": 0.06059804794540275,
+   "p300": 0.18179414383620826
+  },
+  "b": {
+   "mean": 1.5484354922810566,
+   "rms": 1.6627276942910691,
+   "sd": 0.6058142550376442,
+   "e35": 0.058195469300187416,
+   "e100": 0.1662727694291069,
+   "e300": 0.49881830828732077,
+   "p100": 0.06058142550376442,
+   "p300": 0.18174427651129327
+  },
+  "c": {
+   "mean": 1.5590928264701225,
+   "rms": 1.6726256852741574,
+   "sd": 0.6057278609146602,
+   "e35": 0.05854189898459551,
+   "e100": 0.16726256852741575,
+   "e300": 0.5017877055822472,
+   "p100": 0.06057278609146602,
+   "p300": 0.18171835827439808
+  },
+  "d": {
+   "mean": 2.2483816388958453,
+   "rms": 3.0042709062287876,
+   "sd": 1.9925922021047795,
+   "e35": 0.10514948171800756,
+   "e100": 0.30042709062287876,
+   "e300": 0.9012812718686363,
+   "p100": 0.19925922021047796,
+   "p300": 0.5977776606314338
+  },
+  "e": {
+   "mean": 1.554245567988765,
+   "rms": 1.6681992148828475,
+   "sd": 0.6059779987120242,
+   "e35": 0.05838697252089966,
+   "e100": 0.16681992148828476,
+   "e300": 0.5004597644648542,
+   "p100": 0.06059779987120242,
+   "p300": 0.18179339961360724
+  },
+  "f1": {
+   "mean": 3.1148820453340025,
+   "rms": 3.1938363988353413,
+   "sd": 0.7057625565169647,
+   "e35": 0.11178427395923694,
+   "e100": 0.31938363988353413,
+   "e300": 0.9581509196506024,
+   "p100": 0.07057625565169647,
+   "p300": 0.2117287669550894
+  }
+ },
+ "bc_mbps": 5.59104,
+ "power_designs": {
+  "12 leaves only (dock pads), 18 mohm, 2+2 leaves": {
+   "v0": 4.2,
+   "r": 0.018,
+   "i_peak": 0.8963000879183004,
+   "v_peak": 4.18386659841747,
+   "loss_video": 0.002513392382280755,
+   "loss_peak": 0.014460369256842354,
+   "verdict": "pass"
+  },
+  "flex 0.3 m, 2 x 0.5 mm strips per side + leaves": {
+   "v0": 5.0,
+   "r": 0.312,
+   "i_peak": 0.7888284169329205,
+   "v_peak": 4.753885533916929,
+   "loss_video": 0.031901807776529914,
+   "loss_peak": 0.1941420846646,
+   "verdict": "pass"
+  },
+  "flex 0.5 m, 3 strips per side + leaves": {
+   "v0": 5.0,
+   "r": 0.3446666666666667,
+   "i_peak": 0.793391466669541,
+   "v_peak": 4.7265444078212315,
+   "loss_video": 0.03539617124102095,
+   "loss_peak": 0.21695733334770098,
+   "verdict": "pass"
+  },
+  "round 28 AWG, 2 m, 2+2 wires, at 5 V": {
+   "v0": 5.0,
+   "r": 0.4430680829853126,
+   "i_peak": 0.8078280145601773,
+   "v_peak": 4.642077190206991,
+   "loss_video": 0.0461123425114388,
+   "loss_peak": 0.2891400728008864,
+   "verdict": "pass"
+  },
+  "round 28 AWG, 2 m, 2+2 wires, 12 V, clip buck 93 %": {
+   "v0": 12.0,
+   "r": 0.4430680829853126,
+   "i_peak": 0.3402971928479223,
+   "v_peak": 11.849225175119589,
+   "loss_video": 0.008826216605469436,
+   "loss_peak": 0.05130824965894133,
+   "verdict": "pass"
+  },
+  "hybrid fibre, 28 AWG, 10 m, 20 V, clip buck 93 %": {
+   "v0": 20.0,
+   "r": 4.250680829853126,
+   "i_peak": 0.21108253527098486,
+   "v_peak": 19.102755513806827,
+   "loss_video": 0.03129778674977114,
+   "loss_peak": 0.18939264090356686,
+   "verdict": "pass"
+  },
+  "hybrid fibre, 24 AWG, 30 m, 20 V, clip buck 93 %": {
+   "v0": 20.0,
+   "r": 5.0320855471857415,
+   "i_peak": 0.21303129190516853,
+   "v_peak": 18.928008314905696,
+   "loss_video": 0.037311392269489756,
+   "loss_peak": 0.2283677735872385,
+   "verdict": "pass"
+  }
+ },
+ "life_years": {
+  "FPC ZIF or board-to-board": [
+   0.0821917808219178,
+   0.02054794520547945,
+   0.00410958904109589
+  ],
+  "USB-C receptacle, rated [PUBLICATION] USB-IF": [
+   27.397260273972602,
+   6.8493150684931505,
+   1.36986301369863
+  ],
+  "pogo or gold leaf, consumer wearable class": [
+   82.1917808219178,
+   20.54794520547945,
+   4.109589041095891
+  ],
+  "expanded-beam optical, dust tolerant": [
+   13.698630136986301,
+   3.4246575342465753,
+   0.684931506849315
+  ],
+  "near-field coupler on a kinematic seat": [
+   273.972602739726,
+   68.4931506849315,
+   13.698630136986301
+  ],
+  "flex, RA copper, r = 5 mm, bends": [
+   547.945205479452,
+   136.986301369863,
+   27.397260273972602
+  ]
+ },
+ "c2_mbps": {
+  "static page, cursor and clock": [
+   0.08192,
+   0.32768
+  ],
+  "UI, typing, small animation": [
+   9.216,
+   36.864
+  ],
+  "scroll at 60 Hz": [
+   31.3344,
+   125.3376
+  ],
+  "video 16:9, 30 fps": [
+   3.8707200000000004,
+   15.482880000000002
+  ],
+  "video vertical, 60 fps": [
+   10.93632,
+   43.74528
+  ],
+  "full motion, 240 Hz game": [
+   30.72,
+   122.88
+  ]
+ },
+ "gates": {
+  "HC-L1": true,
+  "HC-L1b": true,
+  "HC-L2": true,
+  "HC-L3a": true,
+  "HC-L3b": true,
+  "HC-L3c": true,
+  "HC-L3d": false,
+  "HC-L3e": false,
+  "HC-L4": true,
+  "HC-L5a": true,
+  "HC-L5b": true,
+  "HC-L5c": false,
+  "HC-L5d": false,
+  "HC-L6": true,
+  "HC-L6b": true,
+  "HC-L8": true,
+  "HC-L7": true,
+  "HC-L10": true,
+  "HC-L11": true
+ }
+}

@@ -1,0 +1,68 @@
+A. THE PIXEL BUDGET   (Skin to Core, warp in the Core, stream = warped 200 x 200 tile images)
+====================================================================================================
+face 1600 x 3200 = 5.12 Mpx, 128 tiles of 200 x 200 px, 40000 px each
+
+A1. full face, every pixel, payload only (no packet, no coding)   Gb/s
+ refresh     raw 8    raw 10  DSC 10bpp  DSC 8bpp   VDC-M 6
+    60 Hz      7.37      9.22       3.07      2.46      1.84
+   120 Hz     14.75     18.43       6.14      4.92      3.69
+   240 Hz     29.49     36.86      12.29      9.83      7.37
+check against the Lead: 240 Hz raw 10 bit = 36.86 Gb/s; at 3:1, 4:1, 6:1 = 12.29, 9.22, 6.14 Gb/s
+  honest ratios of 10 bit input: DSC 10 bpp = 3.00:1 (12.29), DSC 8 bpp = 3.75:1 (9.83), VDC-M 6 bpp = 5.00:1 (7.37).
+  4:1 of 10 bit is 7.5 bpp. It sits under the 8 bpp at which DSC is rated. 6:1 is 5 bpp. It sits under
+  the 6 bpp at which VDC-M is rated. [PUBLICATION] VESA DSC 1.2b (3:1, 8 bpp), VDC-M 1.2 (5:1, 6 bpp from 30 b).
+  So the Lead's 4:1 is at the edge and 6:1 is outside the published visually lossless range.
+
+A2. the wire rate of the design cases, with the packet share and the first line of each slice
+case                                          payload     wire  +128b/132b
+raw 10 bit 240 Hz                               36.86    36.86       38.02
+raw 8 bit 240 Hz                                29.49    29.49       30.41
+DSC 10 bpp (3:1 of 10 bit) 240 Hz               12.29    12.71       13.10
+DSC 8 bpp (3.75:1 of 10 bit, 3:1 of 8 bit) 240 Hz     9.83    10.25       10.57
+VDC-M 6 bpp (5:1 of 10 bit, 4:1 of 8 bit) 240 Hz     7.37     7.79        8.03
+the display team's design case (DSC 10 bpp, 240 Hz): 13.10 Gb/s on the leaf lanes (display team 13.43 with a 1.06 share). Two pairs carry 20.0 raw, 19.39 payload.
+
+A3. use cases and partial updates. The panel scans at 240 Hz from the uIC buffers. The link carries only the
+    frames that change. Delta = tile skip (a static tile gets no packet) or strip skip (line packets).
+    Dirty fractions are [HYPOTHESIS]. 'fill' is the share of a sent slice that changed.
+    The Skin has no frame store. It cannot scroll or compose, so a scroll is a full update of the view.
+
+use case                            fps |  10 bit DSC10  10 bit DSC8  10 bit VDC6 |  8 bit DSC8  8 bit VDC6 |  raw 10b   Mb/s, tile mode / strip mode
+    (Mb/s before the 128b/132b line coding of the tether)
+static page, cursor and clock        10 |      11/2            9/2            6/1      |       9/2            6/1      |       31
+UI, typing, small animation          60 |     762/278        615/226        467/173    |     615/226        467/173    |     2235
+mixed delta session                  60 |    1324/902       1068/731        812/561    |    1068/731        812/561    |     3881
+scroll at 60 Hz, 85 % view           60 |    2700/2760      2178/2238      1656/1716   |    2178/2238      1656/1716   |     7917
+scroll at 120 Hz, 85 % view         120 |    5400/5520      4355/4476      3311/3431   |    4355/4476      3311/3431   |    15834
+video 16:9 in portrait, 30 fps       30 |     496/456        400/370        304/284    |     400/370        304/284    |     1454
+video vertical, 60 fps               60 |    2827/2890      2280/2343      1733/1796   |    2280/2343      1733/1796   |     8290
+full motion, 120 Hz                 120 |    6353/6494      5124/5265      3895/4037   |    5124/5265      3895/4037   |    18629
+full motion, 240 Hz                 240 |   12706/12988    10248/10531     7791/8073   |   10248/10531     7791/8073   |    37257
+
+  The page turn is a burst, not a rate. A full face of DSC 10 bpp is 52.9 Mbit. Time to draw it at a link rate R is in Section D.
+
+A4. the stretched geometry and where the warp lives (hw/display SPEC 4)
+ stretch  theta  source window   px x  pixel coverage  stream if the warp is in the Core / in the Skin (DSC 10 bpp, 240 Hz)
+    0.0%   0.0    200 x 200     1.00          100.0%   13.10 /  13.10 Gb/s
+   25.4%  17.5    251 x 251     1.58           63.5%   13.10 /  20.64 Gb/s
+   41.4%  45.0    283 x 283     2.00           50.0%   13.10 /  26.23 Gb/s
+  Warp in the Core: the stream is 5.12 Mpx at every stretch. The Core sends warped tile images and needs
+  the tile angles back at 480 Hz (about 1 Mb/s, Section D4). Warp in the Skin: 1.58 x and 2.00 x pixels,
+  a 251 x 251 or 283 x 283 source window per hub, a 4-tap engine and about 0.5 to 1 Mb of line buffer per hub.
+  [DECISION] of this study: the warp stays in the Core. The cost is the age of the angles (Section D4).
+  The more-room canvas (2007 x 4014 at 25 %, 2263 x 4525 at 41 %, up to 30.7 MB raw) lives in the Core store,
+  not on the link.
+
+A5. the hinge mesh forces a decoder on the Skin, whatever the tether carries
+  one hinge: 3 lanes x 3.2 Gb/s = 9.31 Gb/s payload. The root of a degree-3 seat
+  carries (127/128)/3 of the stream; with one root hinge broken (degree 2) it carries (127/128)/2.
+  raw 10 bit   240 Hz: stream  39.08 Gb/s, root hinge 12.92 (3 hinges) / 19.39 (2 hinges) vs 9.31  -> FAILS
+  DSC 10 bpp   240 Hz: stream  13.03 Gb/s, root hinge  4.31 (3 hinges) /  6.46 (2 hinges) vs 9.31  -> fits
+  DSC 8 bpp    240 Hz: stream  10.42 Gb/s, root hinge  3.45 (3 hinges) /  5.17 (2 hinges) vs 9.31  -> fits
+  VDC-M 6 bpp  240 Hz: stream   7.82 Gb/s, root hinge  2.58 (3 hinges) /  3.88 (2 hinges) vs 9.31  -> fits
+  minimum compression ratio of 10 bit, 240 Hz: 1.39:1 with all root hinges, 2.08:1 with one broken.
+  So a Skin with no decoder is not possible at 240 Hz through this mesh. The decoder floor is set by the hinge
+  copper, not by the tether. [HYPOTHESIS]
+
+A6. the Skin cost of the mesh: every hub retimes the traffic of its subtree. Mean Manhattan hops from the seat:
+  top (3,0) 9.50, bottom (4,15) 9.50, left (0,7) 7.50, right (7,8) 7.50

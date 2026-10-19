@@ -1,0 +1,50 @@
+SUSTAINED DISPLAY AND ADDRESS POWER of the Skin that holds 36.2 C (W)
+The tiles carry the display and address load uniformly, so the sustained power does not depend on the session shape.
+Value = PHY 0.25 W spread over the tiles. Range = PHY 0.15 to 0.35 W, spread or on the seat tile, worst and best.
+P_display is the display part of the sustained power in the delta shape (0.60 of 0.80 W).
+nits35 = luminance at a 35 % picture level; white = luminance of a full white field (100 % picture level).
+FINAL/17 Section 17.13: P_display = 0.60 W x (nits / 250) x (APL / 35 %).
+
+=== own cells, no host, still air ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      4.26 (2.62 to 4.36)      3.20      1332      466       58          d0.8/d1.25/video/5G/out800
+25 C      2.93 (1.22 to 3.03)      2.20      915       320       40          d0.8/d1.25/video/5G
+30 C      1.54 (0.00 to 1.64)      1.16      482       169       21          d0.8/d1.25/video
+35 C      0.10 (0.00 to 0.20)      0.08      32        11        1           none
+
+=== own cells, no host, light wind ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      6.80 (4.56 to 6.90)      5.10      2123      743       93          d0.8/d1.25/video/5G/out800
+25 C      4.71 (2.38 to 4.81)      3.53      1471      515       64          d0.8/d1.25/video/5G/out800
+30 C      2.54 (0.07 to 2.64)      1.91      795       278       35          d0.8/d1.25/video/5G
+35 C      0.30 (0.00 to 0.40)      0.22      94        33        4           none
+
+=== contact feed, 0.10 W loss, still air ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      3.96 (2.22 to 4.06)      2.97      1239      434       54          d0.8/d1.25/video/5G
+25 C      2.57 (0.79 to 2.67)      1.93      802       281       35          d0.8/d1.25/video/5G
+30 C      1.10 (0.00 to 1.20)      0.83      345       121       15          d0.8
+35 C      0.00 (0.00 to 0.00)      0.00      0         0         0           none
+
+=== contact feed, 0.10 W loss, light wind ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      6.51 (4.08 to 6.61)      4.88      2035      712       89          d0.8/d1.25/video/5G/out800
+25 C      4.34 (1.85 to 4.44)      3.26      1356      475       59          d0.8/d1.25/video/5G/out800
+30 C      2.04 (0.00 to 2.14)      1.53      637       223       28          d0.8/d1.25/video
+35 C      0.00 (0.00 to 0.00)      0.00      0         0         0           none
+
+=== contact feed, 0.34 W loss, still air ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      2.72 (1.20 to 2.82)      2.04      850       297       37          d0.8/d1.25/video/5G
+25 C      1.29 (0.00 to 1.39)      0.96      402       141       18          d0.8/d1.25
+30 C      0.00 (0.00 to 0.00)      0.00      0         0         0           none
+35 C      0.00 (0.00 to 0.00)      0.00      0         0         0           none
+
+=== contact feed, 0.34 W loss, light wind ===
+ambient   sustained W (range)      P_disp W  nits35    white     APL@800     holds      
+20 C      4.91 (2.82 to 5.01)      3.69      1536      538       67          d0.8/d1.25/video/5G/out800
+25 C      2.66 (0.54 to 2.76)      2.00      832       291       36          d0.8/d1.25/video/5G
+30 C      0.28 (0.00 to 0.38)      0.21      88        31        4           none
+35 C      0.00 (0.00 to 0.00)      0.00      0         0         0           none
+
+holds = the sessions of the table of Item 1 whose display and address load stays under the sustained power, nominal PHY.

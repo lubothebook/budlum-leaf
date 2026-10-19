@@ -45,11 +45,13 @@ ORDER = [
     "19-duo-shape-ip-and-ledger.md",
     "20-charge-path-and-both-face-module.md",
     "21-stretch-stem-and-projection.md",
+    "22-host-power-and-the-living-leaf.md",
+    "23-core-skin-and-the-heartbeat.md",
 ]
 
 HEAD = ("# BUDLUM LEAF · THE DIRECTIVE · FINAL EDITION v5.0 · "
-        "REVISION L.6.0 · 2026-10-12 · the assembled single source of truth\n\n"
-        "*This file is the concatenation of the twenty-two parts of `LEAF/FINAL/`, "
+        "REVISION L.7 candidate · 2026-10-19 · the assembled single source of truth\n\n"
+        "*This file is the concatenation of the twenty-four parts of `LEAF/FINAL/`, "
         "built by `LEAF/tools/assemble.py`. Edit the parts, never this file. "
         "The counts of the gates and of the gaps live in "
         "`LEAF/tools/canon.json` and are checked by gate PRG-15.*\n\n"

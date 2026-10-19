@@ -1,0 +1,24 @@
+RING FIT AFTER THE SPLIT (ringfit.py, gate HC-A2). Area in mm2, skirt, courtyard and can included.
+free board area from placement_results.txt: S2 top 582.7, S4 top 582.7 plus bottom rim 169.5
+the packer of placement.py fails 3 parts in every baseline scenario S0 to S5 (placement_results.txt)
+
+class scenario    demand     free     fill  parts  parts removed or added
+BASE  S2           663.9    582.7     114%     32  baseline, the parts of placement.py
+C0    S2           204.1    582.7      35%     25  removed 10, added 3
+C0R   S2           412.4    582.7      71%     29  removed 6, added 3
+C1    S2           663.9    582.7     114%     32  removed 0, added 0
+C2    S2           663.9    582.7     114%     32  removed 0, added 0
+BASE  S3           492.9    582.7      85%     32  baseline, the parts of placement.py
+C0    S3           204.1    582.7      35%     25  removed 10, added 3
+C0R   S3           412.4    582.7      71%     29  removed 6, added 3
+C1    S3           492.9    582.7      85%     32  removed 0, added 0
+C2    S3           492.9    582.7      85%     32  removed 0, added 0
+BASE  S4           492.9    752.2      66%     32  baseline, the parts of placement.py
+C0    S4           204.1    752.2      27%     25  removed 10, added 3
+C0R   S4           412.4    752.2      55%     29  removed 6, added 3
+C1    S4           492.9    752.2      66%     32  removed 0, added 0
+C2    S4           492.9    752.2      66%     32  removed 0, added 0
+
+reading: fill above 100 percent cannot be packed. The baseline S2 demand exceeds the board. The Split at C0 leaves a board far under full.
+gate HC-A2 area test at C0 (fill 60 percent or less in S2 and S3): PASS
+C0R: S2 71 %, S3 71 %; C1 and C2 equal the baseline.

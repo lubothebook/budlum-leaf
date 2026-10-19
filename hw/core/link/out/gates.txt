@@ -1,0 +1,24 @@
+H. THE PROPOSED GATES HC-L1 TO HC-L11, evaluated by the model. A PASS here is a model result, not a measurement.
+====================================================================================================
+  HC-L1  PASS  design case DSC 10 bpp 240 Hz fits the wired tether with 25 % margin (need x 1.25 <= 19.4 Gb/s)   [16.38 vs 19.39]
+  HC-L1b PASS  same case on one lane pair with VDC-M 6 bpp (the one-pair fallback)   [8.03 vs 9.70]
+  HC-L2  PASS  compression within the published visually lossless range (ratio <= 3.75:1 DSC, 5:1 VDC-M, from 10 bit)   [design 3:1; the Lead's 6:1 is outside and is withdrawn]
+  HC-L3a PASS  Skin load, delta session, under 1.73 W still-air limit   [0.95 W]
+  HC-L3b PASS  Skin load, video, under 2.37 W light-wind limit   [1.57 W]
+  HC-L3c PASS  Skin load, video, under 1.73 W still-air limit   [1.57 W]
+  HC-L3d FAIL  Skin load, full motion 240 Hz, under 1.73 W still-air limit   [1.97 W]
+  HC-L3e FAIL  reading R2 (the whole Hub domain sits on the Skin): video under 2.37 W light-wind limit   [2.59 W]
+  HC-L4  PASS  tether power from 5.0 V: peak 3.75 W, Skin end at or above 3.60 V, loop at or under 0.35 ohm, cable loss under 0.25 W   [4.75 V, 0.312 ohm, 0.19 W]
+  HC-L5a PASS  wired tether (a): p99 at or under 30 ms on Wi-Fi room and 5G cell paths, K = 128   [18.9 ms]
+  HC-L5b PASS  tether adds under 0.1 ms mean and 0.5 ms p99 at K = 4 (wired)   [0.094 ms]
+  HC-L5c FAIL  Wi-Fi 7 tether (f): p99 at or under 30 ms for a full-face change   [38.9 ms]
+  HC-L5d FAIL  60 GHz tether (d): p99.9 at or under 30 ms (blockage)   [41.2 ms]
+  HC-L6  PASS  angle age: rms error at 100 deg/s at or under 1.0 deg without a predictor (wired)   [0.17 deg]
+  HC-L6b PASS  angle age: rms error at 100 deg/s at or under 1.0 deg without a predictor (Wi-Fi 7)   [0.32 deg]
+  HC-L8  PASS  Skin mass without cells at or under 20 g and thickness under 1.2 mm   [17.0 g, 1.00 mm]
+  HC-L7  PASS  seat life at 4 mates a day at or above 7 years (needs 10 400 cycles)   [20.5 years at 30 000 cycles]
+  HC-L10 PASS  the mesh forces the decoder: the stream needs at least 2.08:1 with one root hinge broken (DSC 10 bpp gives 3:1)   [2.08:1 needed]
+  HC-L11 PASS  C2 slice stream at or under 150 Mb/s for every use case (high estimate)   [125 Mb/s]
+  HC-L9  TEST  safe screen within 100 ms of heartbeat loss, thermal trip independent of the Core, no key on the Skin that signs a spend (bench test, no model)
+
+  15 of 19 model checks pass. The FAIL lines are the damage to the Split on the link alone.

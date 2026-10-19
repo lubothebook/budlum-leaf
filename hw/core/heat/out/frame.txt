@@ -1,0 +1,39 @@
+ITEM 5 - THE FRAME: the face-worn Skin
+Model: the two-node face model of hw/hostpower/thermal/eyewear.py (skin 34 C, 100 cm2 exposed, 8 cm2 contact).
+The Split moves the silicon and the radio to a Core. The Frame keeps the microdisplay, the link PHY, the decoder and the connector.
+P_display spreads over the lens and the rim. P_temple (PHY, decoder, connector) sits in the temple behind 3 K/W.
+Before the Split the whole load sat in the Frame with 60 % in a temple hot spot (eyewear.py): 1.05 W at 25 C still air.
+
+--- the heat limit in W of display power for a given temple load (PHY + decoder + connector) ---
+temple load                    wind         20 C     25 C     30 C     35 C
+0.25 W                         still        1.53     0.99     0.44     0.00
+0.25 W                         wind         2.53     1.67     0.80     0.00
+0.45 W                         still        1.23     0.69     0.14     0.00
+0.45 W                         wind         2.19     1.33     0.46     0.00
+0.59 W                         still        1.02     0.48     0.00     0.00
+0.59 W                         wind         1.96     1.10     0.22     0.00
+0.69 W                         still        0.87     0.33     0.00     0.00
+0.69 W                         wind         1.79     0.93     0.05     0.00
+   0.25 W = PHY and decoder 0.15 + connector 0.10. 0.45 = 0.25 + 0.20. 0.59 = 0.25 + 0.34. 0.69 = 0.35 + 0.34.
+
+--- total heat limit in the Frame, W (display + temple), against the 1.05 W of the unsplit Frame ---
+temple 0.25 W: 1.78  1.24  0.69  0.00   (20, 25, 30, 35 C)
+temple 0.59 W: 1.61  1.07  0.00  0.00   (20, 25, 30, 35 C)
+temple 0.69 W: 1.56  1.02  0.00  0.00   (20, 25, 30, 35 C)
+0.00 means the temple load alone is over the limit with the display off.
+unsplit (eyewear.py): 1.47  1.05  0.63  0.20
+
+--- Split Frame verdict at 25 C, still air: display power D, temple load T ---
+D 0.20 W, temple 0.25 W: peak 32.3 C, margin +3.9 K
+D 0.20 W, temple 0.59 W: peak 34.5 C, margin +1.7 K
+D 0.20 W, temple 0.69 W: peak 35.4 C, margin +0.8 K
+D 0.35 W, temple 0.25 W: peak 32.9 C, margin +3.3 K
+D 0.35 W, temple 0.59 W: peak 35.4 C, margin +0.8 K
+D 0.35 W, temple 0.69 W: peak 36.3 C, margin -0.1 K
+D 0.50 W, temple 0.25 W: peak 33.5 C, margin +2.7 K
+D 0.50 W, temple 0.59 W: peak 36.3 C, margin -0.1 K
+D 0.50 W, temple 0.69 W: peak 37.2 C, margin -1.0 K
+
+Ambient up to which the Frame holds 36.2 C in still air: unsplit 0.8 W + 0.34 W loss: 24.0 C;
+Split, display 0.35 W, temple 0.59 W: 26.2 C; Split, display 0.35 W, temple 0.25 W: 30.8 C.
+A C1 Frame with a 0.90 W PHY and decoder and a 0.10 W connector, display 0.35 W, 25 C: peak 39.1 C (margin -2.9 K).

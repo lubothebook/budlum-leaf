@@ -1,6 +1,6 @@
 # BUDLUM LEAF · PROGRAM STATE
 
-**Revision:** L.6.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
+**Revision:** L.7 candidate · 2026-10-19 · the living picture. The first file a new collaborator reads.
 **Owner:** the Leaf Program Lead. It is rewritten in every working block (Volume XII, Section 7).
 
 ---
@@ -21,6 +21,36 @@
 | `LEAF/tools/check_crossrefs.py` + `canon.json` | **the count check**, gate PRG-15: one number per count, held in one file |
 | `LEAF/tools/multi_agent_optimize.py` | **multi-agent Arena API self-optimization runner**: coordinates CAD, Pafta, Hardware, and QA agents using `ARENA_API_KEY` from the environment |
 | `LEAF/pafta/P01` to `P22`, and `E01` to `E03` | **all 25 SVG sheets pass `OVER 0, COVERED 0, COLLIDE 0`**: `E01..E03` engineering sections, `P01..P13` core sheets, and `P14..P22` part-by-part sheets |
+
+---
+
+## 2c · The block of the L.7 candidate (2026-10-19 · the Core, the Skin and the Heartbeat)
+
+Part 23 (`FINAL/23-core-skin-and-the-heartbeat.md`) holds the numbers. It adds to Parts 21 and 22 and changes no L.6.0 number. The work lives in `hw/core/`. Each ruling is a candidate until Ayaz signs.
+
+- **The orders**. Ayaz asked for a separate hardware that holds the components of the screen. Kilometres can lie between them. The camera part keeps only what is needed. The Leaf cell is very small.
+- **The Rule of Necessity**. The camera part keeps what physics forces. The Core holds all else. At C0 only `1.28 g` of silicon can leave, and the `19.57 g` of cells leave with it.
+- **The Split lives as a wired Skin** at C0 and C1. A cordless Skin returns its cell and fails the heat. At C2 nothing leaves the Leaf.
+- **The screen is lighter and the unit `15 %` cheaper**. The micro-LED tile is `76 %` of the unit and stays.
+- **The lying Skin** is the worst hole. A tap never confirms a key operation.
+- **The Heartbeat Law**. The Leaf is alive at microwatts, visible at millijoules and bright only where a host stands. Six directions failed. Radio, coil, body and stretch carry no watts to a held Leaf.
+- **Not yet done**: the idle floor is unmeasured (CSK-6). The Paper layer is unbuilt (CSK-7). The prior art search has not run (CSK-1).
+- **The count**. `29` new gates `CSK-1` to `CSK-29`, research order RG-20, and gaps G-49 to G-54.
+
+---
+
+## 2b · The block of Revision L.6.1 (2026-10-19 · host power and the living Leaf)
+
+Part 22 (`FINAL/22-host-power-and-the-living-leaf.md`) holds the numbers. It adds to Part 21 and changes no L.6.0 number. The work lives in `hw/hostpower/`.
+
+- **The order**. Ayaz asked for a Leaf that lives as long as its host, with the main energy in the hardware. Ayaz gave the management of the program to the Program Lead.
+- **The Host Life Law**. On a paired host with a heat path, a Leaf lives as long as the host feeds it. Between hosts, a bridge store keeps the session.
+- **The first host-power tier is Buffer**: `15` to `20` micro cells over four quadrants. Bare does not fit the margin. Full stays.
+- **The host feeds the load and the cell floats near `50 %`**. The model gives `13.4` years of cell life against `1.8` years cycled daily.
+- **Always-on needs a host that pulls heat**. The dock plate passes `72` of `72` cases. Free air passes none, with a battery or with a host.
+- **The word "first" is held**. A wallet with a screen, a tablet with the cell removed and a display with no cell all exist.
+- **Not yet done**: the secure element has no NVM counters (G-44). The prior art search and the legal opinion are not ordered (G-47).
+- **The count**. `29` new gates `HST-1` to `HST-29`, research order RG-19, and gaps G-44 to G-48.
 
 ---
 

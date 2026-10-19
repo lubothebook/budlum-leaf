@@ -1,0 +1,10 @@
+SELF CHECK of the Skin build against the L.6.0 numbers
+
+L.6.0 delta 2.5 W, 25 C, free air, battery: 41.28 C (reference 41.3)  ok
+heat in the ring nodes of the Skin build: 0.000 W  ok
+ring cover on the face tiles, largest fraction: 0.000  ok
+heat balance residual: -2.14e-13 W  ok
+map (a) tiles 1.25 W, ring 1.25 W, total 2.50 W
+box M, 5 W, 25 C, still air, mean surface 38.9 C (a plausible 35 to 45 C)
+
+all checks pass: True

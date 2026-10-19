@@ -1,0 +1,186 @@
+ITEM 3 - THE CORE ALONE: a sealed box with the silicon and the radio
+Assumptions [HYPOTHESIS]: aluminium case, matte, emissivity 0.90, the heat spreads to a mean case rise;
+the peak case rise is 1.25 times the mean rise. Natural convection and radiation from textbook simple forms [GENERAL].
+free = still air on a desk (bottom half blocked). fan = 2 m/s over a plain case. fan+fins = the same with 3x area.
+plate = the footprint on a 22 C plate (h = 400 W/m2K), the rest in still air.
+Core heat = rails / 0.90 + Skin supply loss (6 %) + 0.25 W of link PHY per Skin. Radio and authority run once (shared).
+'unshared' puts the whole ring load of the Leaf (1.22 / 1.92 W) on every Skin.
+5G modem = 1.20 W (U5 of map c). Validator option = hw/dock/params.py: idle 5.4, typical 20.4, peak 29.6 W.
+
+--- Core heat in W ---
+case                                  N=1    N=2    N=4    N=8
+delta, shared                         1.7    2.8    5.0    9.3
+delta, shared, validator typ         22.0   23.1   25.3   29.7
+delta, shared, 5G                     2.9    4.0    6.2   10.5
+delta, shared, 5G, validator typ     23.2   24.3   26.5   30.9
+delta, unshared                       1.7    3.3    6.7   13.4
+delta, unshared, validator typ       22.0   23.7   27.0   33.7
+delta, unshared, 5G                   2.9    4.5    7.9   14.6
+delta, unshared, 5G, validator typ   23.2   24.9   28.2   34.9
+video, shared                         2.5    4.2    7.5   14.3
+video, shared, validator typ         22.8   24.5   27.9   34.6
+video, shared, 5G                     3.7    5.4    8.7   15.5
+video, shared, 5G, validator typ     24.0   25.7   29.1   35.8
+video, unshared                       2.5    5.0    9.9   19.9
+video, unshared, validator typ       22.8   25.3   30.3   40.2
+video, unshared, 5G                   3.7    6.2   11.1   21.1
+video, unshared, 5G, validator typ   24.0   26.5   31.5   41.4
+
+--- mean case temperature, C, at 25 C ambient (peak in brackets) ---
+[delta shared]
+box              N   Q W     free           fan            fan+fins       plate 22 C    
+S 90x60x18       1   1.7     36.1 (38.8)   30.5 (31.8)   26.8 (27.3)   22.9 (23.1)   
+S 90x60x18       2   2.8     42.0 (46.3)   34.0 (36.3)   28.0 (28.8)   23.4 (23.7)   
+S 90x60x18       4   5.0     52.8 (59.8)   41.0 (45.0)   30.4 (31.8)   24.3 (24.9)   
+S 90x60x18       8   9.3     71.7 (83.4)   54.5 (61.8)   35.1 (37.6)   26.3 (27.3)   
+M 140x90x30      1   1.7     30.4 (31.7)   27.3 (27.9)   25.8 (26.0)   22.5 (22.6)   
+M 140x90x30      2   2.8     33.3 (35.4)   28.8 (29.7)   26.3 (26.6)   22.7 (22.8)   
+M 140x90x30      4   5.0     38.8 (42.3)   31.7 (33.4)   27.3 (27.8)   23.1 (23.3)   
+M 140x90x30      8   9.3     48.7 (54.6)   37.6 (40.7)   29.2 (30.3)   23.9 (24.4)   
+L 200x130x45     1   1.7     27.9 (28.6)   26.1 (26.4)   25.4 (25.5)   22.3 (22.4)   
+L 200x130x45     2   2.8     29.5 (30.6)   26.8 (27.3)   25.6 (25.8)   22.4 (22.5)   
+L 200x130x45     4   5.0     32.5 (34.4)   28.2 (29.0)   26.1 (26.3)   22.6 (22.7)   
+L 200x130x45     8   9.3     38.1 (41.4)   31.1 (32.6)   27.0 (27.5)   23.0 (23.2)   
+XL 300x200x70    1   1.7     26.4 (26.7)   25.5 (25.6)   25.2 (25.2)   22.2 (22.3)   
+XL 300x200x70    2   2.8     27.2 (27.7)   25.8 (26.0)   25.3 (25.3)   22.2 (22.3)   
+XL 300x200x70    4   5.0     28.7 (29.6)   26.4 (26.7)   25.5 (25.6)   22.3 (22.4)   
+XL 300x200x70    8   9.3     31.5 (33.1)   27.6 (28.3)   25.9 (26.1)   22.5 (22.6)   
+
+[video shared]
+box              N   Q W     free           fan            fan+fins       plate 22 C    
+S 90x60x18       1   2.5     40.5 (44.4)   33.1 (35.1)   27.7 (28.4)   23.2 (23.5)   
+S 90x60x18       2   4.2     49.1 (55.1)   38.5 (41.9)   29.6 (30.7)   24.0 (24.5)   
+S 90x60x18       4   7.5     64.3 (74.1)   49.0 (55.0)   33.2 (35.2)   25.5 (26.3)   
+S 90x60x18       8   14.3    90.5 (106.9)  69.0 (80.0)   40.4 (44.2)   28.4 (30.0)   
+M 140x90x30      1   2.5     32.6 (34.5)   28.4 (29.2)   26.1 (26.4)   22.6 (22.8)   
+M 140x90x30      2   4.2     36.9 (39.9)   30.7 (32.1)   26.9 (27.4)   22.9 (23.2)   
+M 140x90x30      4   7.5     44.8 (49.7)   35.2 (37.7)   28.4 (29.3)   23.6 (24.0)   
+M 140x90x30      8   14.3    58.8 (67.2)   44.0 (48.8)   31.5 (33.1)   24.8 (25.6)   
+L 200x130x45     1   2.5     29.1 (30.1)   26.6 (27.0)   25.5 (25.7)   22.4 (22.5)   
+L 200x130x45     2   4.2     31.5 (33.1)   27.7 (28.4)   25.9 (26.1)   22.5 (22.7)   
+L 200x130x45     4   7.5     35.9 (38.6)   29.9 (31.1)   26.6 (27.1)   22.8 (23.0)   
+L 200x130x45     8   14.3    43.9 (48.6)   34.2 (36.5)   28.1 (28.9)   23.4 (23.8)   
+XL 300x200x70    1   2.5     27.0 (27.5)   25.7 (25.9)   25.2 (25.3)   22.2 (22.3)   
+XL 300x200x70    2   4.2     28.2 (29.0)   26.2 (26.5)   25.4 (25.5)   22.3 (22.4)   
+XL 300x200x70    4   7.5     30.4 (31.7)   27.1 (27.6)   25.7 (25.9)   22.4 (22.5)   
+XL 300x200x70    8   14.3    34.5 (36.9)   29.0 (30.0)   26.3 (26.7)   22.7 (22.9)   
+
+[video shared + 5G]
+box              N   Q W     free           fan            fan+fins       plate 22 C    
+S 90x60x18       1   3.7     46.7 (52.1)   36.9 (39.9)   29.0 (30.0)   23.8 (24.2)   
+S 90x60x18       2   5.4     54.7 (62.2)   42.3 (46.6)   30.9 (32.3)   24.5 (25.1)   
+S 90x60x18       4   8.7     69.3 (80.4)   52.7 (59.6)   34.5 (36.9)   26.0 (27.0)   
+S 90x60x18       8   15.5    94.8 (112.2)  72.4 (84.3)   41.6 (45.8)   29.0 (30.7)   
+M 140x90x30      1   3.7     35.7 (38.4)   30.0 (31.3)   26.7 (27.1)   22.8 (23.0)   
+M 140x90x30      2   5.4     39.8 (43.5)   32.3 (34.1)   27.4 (28.1)   23.2 (23.4)   
+M 140x90x30      4   8.7     47.4 (53.0)   36.8 (39.7)   29.0 (30.0)   23.8 (24.2)   
+M 140x90x30      8   15.5    61.1 (70.1)   45.6 (50.7)   32.0 (33.8)   25.1 (25.8)   
+L 200x130x45     1   3.7     30.8 (32.3)   27.4 (28.0)   25.8 (26.0)   22.5 (22.6)   
+L 200x130x45     2   5.4     33.1 (35.1)   28.5 (29.4)   26.2 (26.5)   22.6 (22.8)   
+L 200x130x45     4   8.7     37.4 (40.5)   30.7 (32.1)   26.9 (27.4)   22.9 (23.2)   
+L 200x130x45     8   15.5    45.2 (50.3)   35.0 (37.5)   28.4 (29.2)   23.6 (23.9)   
+XL 300x200x70    1   3.7     27.8 (28.5)   26.0 (26.3)   25.3 (25.4)   22.3 (22.4)   
+XL 300x200x70    2   5.4     29.0 (30.0)   26.5 (26.9)   25.5 (25.6)   22.4 (22.4)   
+XL 300x200x70    4   8.7     31.1 (32.7)   27.5 (28.1)   25.8 (26.0)   22.5 (22.6)   
+XL 300x200x70    8   15.5    35.2 (37.7)   29.3 (30.4)   26.4 (26.8)   22.8 (22.9)   
+
+[video shared + 5G + validator typ]
+box              N   Q W     free           fan            fan+fins       plate 22 C    
+S 90x60x18       1   24.0    122.6 (147.0) 95.8 (113.5)  50.4 (56.8)   32.7 (35.3)   
+S 90x60x18       2   25.7    127.7 (153.3) 100.2 (119.0) 52.1 (58.9)   33.4 (36.3)   
+S 90x60x18       4   29.1    137.4 (165.5) 108.7 (129.7) 55.5 (63.2)   34.9 (38.1)   
+S 90x60x18       8   35.8    155.7 (188.3) 125.1 (150.1) 62.2 (71.5)   37.8 (41.7)   
+M 140x90x30      1   24.0    76.5 (89.4)   56.4 (64.3)   35.8 (38.5)   26.7 (27.9)   
+M 140x90x30      2   25.7    79.4 (93.0)   58.5 (66.9)   36.6 (39.4)   27.0 (28.3)   
+M 140x90x30      4   29.1    85.0 (100.0)  62.6 (72.0)   38.0 (41.3)   27.6 (29.0)   
+M 140x90x30      8   35.8    95.6 (113.2)  70.7 (82.2)   41.0 (45.0)   28.9 (30.6)   
+L 200x130x45     1   24.0    54.3 (61.6)   40.4 (44.2)   30.2 (31.5)   24.3 (24.9)   
+L 200x130x45     2   25.7    56.0 (63.7)   41.4 (45.5)   30.6 (32.0)   24.5 (25.1)   
+L 200x130x45     4   29.1    59.3 (67.8)   43.5 (48.1)   31.3 (32.9)   24.8 (25.5)   
+L 200x130x45     8   35.8    65.7 (75.8)   47.7 (53.3)   32.7 (34.7)   25.4 (26.3)   
+XL 300x200x70    1   24.0    39.9 (43.7)   31.7 (33.4)   27.2 (27.8)   23.1 (23.4)   
+XL 300x200x70    2   25.7    40.8 (44.8)   32.2 (33.9)   27.4 (28.0)   23.2 (23.4)   
+XL 300x200x70    4   29.1    42.6 (47.0)   33.1 (35.1)   27.7 (28.4)   23.3 (23.6)   
+XL 300x200x70    8   35.8    46.0 (51.3)   34.9 (37.4)   28.3 (29.2)   23.6 (23.9)   
+
+--- the largest number of Skins a Core holds, peak case temperature at or under the touch limit ---
+Touch limits [HYPOTHESIS, recalled, not read from the standard]: 41 C a worn or pocket Core;
+43 C a Core that is held or rests on skin; 48 C IEC 62368-1 TS1 style limit for a part touched or held for over a minute.
+The limits are absolute, as at 25 C ambient. Radio and authority run once. 'cap' means 64 Skins reached.
+The plate rows stop where the dock TEC reaches its pumping limit (hw/dock; the search stops at 32 W, the TEC limit is 27 W at 35 C).
+[box S 90x60x18]
+limit        mode                       20 C    25 C    30 C    35 C
+41 C         delta, free                   1       1       0       0
+41 C         delta, fan                    4       3       1       0
+41 C         delta, fan+fins              13      10       6       3
+41 C         delta, plate                 28      28      26      22
+43 C         delta, free                   2       1       0       0
+43 C         delta, fan                    4       3       2       1
+43 C         delta, fan+fins              14      11       8       5
+43 C         delta, plate                 28      28      26      22
+48 C         delta, free                   2       2       1       0
+48 C         delta, fan                    5       4       3       2
+48 C         delta, fan+fins              18      15      11       8
+48 C         delta, plate                 28      28      26      22
+
+[box M 140x90x30]
+limit        mode                       20 C    25 C    30 C    35 C
+41 C         delta, free                   5       3       2       0
+41 C         delta, fan                   10       8       5       2
+41 C         delta, fan+fins              33      25      17       9
+41 C         delta, plate                 28      28      26      22
+43 C         delta, free                   5       4       2       1
+43 C         delta, fan                   11       9       6       3
+43 C         delta, fan+fins              36      28      20      12
+43 C         delta, plate                 28      28      26      22
+48 C         delta, free                   7       5       4       2
+48 C         delta, fan                   14      12       9       6
+48 C         delta, fan+fins              45      37      29      21
+48 C         delta, plate                 28      28      26      22
+
+[box L 200x130x45]
+limit        mode                       20 C    25 C    30 C    35 C
+41 C         delta, free                  10       7       5       2
+41 C         delta, fan                   23      17      12       6
+41 C         delta, fan+fins             cap      54      37      20
+41 C         delta, plate                 28      28      26      22
+43 C         delta, free                  11       8       6       3
+43 C         delta, fan                   25      20      14       8
+43 C         delta, fan+fins             cap      61      44      27
+43 C         delta, plate                 28      28      26      22
+48 C         delta, free                  15      12       9       6
+48 C         delta, fan                   31      25      20      14
+48 C         delta, fan+fins             cap     cap      62      45
+48 C         delta, plate                 28      28      26      22
+
+[box XL 300x200x70]
+limit        mode                       20 C    25 C    30 C    35 C
+41 C         delta, free                  24      17      11       5
+41 C         delta, fan                   54      41      28      15
+41 C         delta, fan+fins             cap     cap     cap      47
+41 C         delta, plate                 28      28      26      22
+43 C         delta, free                  26      20      14       8
+43 C         delta, fan                   59      47      34      21
+43 C         delta, fan+fins             cap     cap     cap     cap
+43 C         delta, plate                 28      28      26      22
+48 C         delta, free                  33      27      21      14
+48 C         delta, fan                  cap      60      47      34
+48 C         delta, fan+fins             cap     cap     cap     cap
+48 C         delta, plate                 28      28      26      22
+
+--- video, 43 C, free air and fan+fins ---
+S 90x60x18       free           1       0       0       0
+S 90x60x18       fan            9       7       5       3
+M 140x90x30      free           3       2       1       0
+M 140x90x30      fan           23      18      13       8
+L 200x130x45     free           7       5       3       2
+L 200x130x45     fan           50      39      28      17
+XL 300x200x70    free          17      13       9       5
+XL 300x200x70    fan           64      64      64      41
+
+--- the heat each box holds at 43 C peak, 25 C ambient ---
+S 90x60x18       passive 2.3 W, fan+fins 13.4 W, plate 32.0 W (the TEC limit binds; peak at 43 C, 25 C ambient)
+M 140x90x30      passive 5.2 W, fan+fins 32.2 W, plate 32.0 W (the TEC limit binds; peak at 43 C, 25 C ambient)
+L 200x130x45     passive 10.4 W, fan+fins 67.5 W, plate 32.0 W (the TEC limit binds; peak at 43 C, 25 C ambient)
+XL 300x200x70    passive 23.1 W, fan+fins 156.9 W, plate 32.0 W (the TEC limit binds; peak at 43 C, 25 C ambient)
+Validator typical 20.4 W, idle 5.4 W, peak 29.6 W. The dock plate TEC pumps 27 W at least (hw/dock).
