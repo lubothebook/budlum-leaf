@@ -1,0 +1,256 @@
+{
+ "rows": [
+  {
+   "condition": "1 power",
+   "test": "H0 wall dock, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 25.0 W, margin +15.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H0 wall dock, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 25.0 W, margin +12.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H1 dock pack, 20 Wh, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 25.0 W, margin +15.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H1 dock pack, 20 Wh, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 25.0 W, margin +12.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H2 desk USB-C PD, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 45.0 W, margin +35.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H2 desk USB-C PD, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 45.0 W, margin +32.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H3a vehicle 12 V, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 45.0 W, margin +35.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H3a vehicle 12 V, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 45.0 W, margin +32.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H3b vehicle 24 V, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 45.0 W, margin +35.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H3b vehicle 24 V, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 45.0 W, margin +32.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4a industrial 24 V, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 25.0 W, margin +15.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4a industrial 24 V, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 25.0 W, margin +12.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4b PoE type 2 (802.3at), peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 22.9 W, margin +13.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4b PoE type 2 (802.3at), peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 22.9 W, margin +10.1 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4c PoE type 3 (802.3bt), peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 45.9 W, margin +36.3 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H4c PoE type 3 (802.3bt), peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 45.9 W, margin +33.1 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H5 worn power bank or belt pack, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 18.0 W, margin +8.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H5 worn power bank or belt pack, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 18.0 W, margin +5.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6a low-power Qi pad, 5 W, peak plus top-up (Buffer 20)",
+   "verdict": "FAIL",
+   "detail": "need 11.8 W, offer 5.0 W, margin -6.8 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6a low-power Qi pad, 5 W, peak plus top-up (Full 128)",
+   "verdict": "FAIL",
+   "detail": "need 15.7 W, offer 5.0 W, margin -10.7 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6b Qi2 pad, 15 W, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 15.0 W, margin +5.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6b Qi2 pad, 15 W, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 15.0 W, margin +2.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6c Qi2.2 pad, 25 W, peak plus top-up (Buffer 20)",
+   "verdict": "PASS",
+   "detail": "need 9.6 W, offer 25.0 W, margin +15.4 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "H6c Qi2.2 pad, 25 W, peak plus top-up (Full 128)",
+   "verdict": "PASS",
+   "detail": "need 12.8 W, offer 25.0 W, margin +12.2 W"
+  },
+  {
+   "condition": "1 power",
+   "test": "weak host H6a 5 W, outdoor 7.5 W 15 min, Buffer 20 cells S, float 60 %",
+   "verdict": "FAIL",
+   "detail": "pack assist; bus under the 3.40 V seat floor 12 s; final pack SOC 0.18"
+  },
+  {
+   "condition": "1 power",
+   "test": "weak host H6a 5 W, outdoor 7.5 W 15 min, Full 128 cells S",
+   "verdict": "PASS",
+   "detail": "pack assist; bus under the 3.40 V seat floor 0 s; final pack SOC 0.46"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "energy form, 3 s at 8.7 W, Buffer 20 cells floated",
+   "verdict": "PASS",
+   "detail": "usable 0.559 Wh against 0.0072 Wh, a factor of 77"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "power form, 8.7 W for 3 s, Buffer 20 cells at 3 C",
+   "verdict": "FAIL",
+   "detail": "20 cells carry 3.1 W at 3 C, short by 5.6 W; the peak needs 53 cells at 3 C (33 at 5 C)"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "walk of 5 min at the delta session 2.24 W, Buffer floated at 60 %",
+   "verdict": "PASS",
+   "detail": "15 cells (0.86 Wh nominal), inside the 0.3 to 1.5 Wh of the BRIEF"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "30 min at the delta session, Buffer floated at 60 %",
+   "verdict": "FAIL",
+   "detail": "41 cells, 2.36 Wh nominal, against the 1.5 Wh top of the BRIEF, over by 58 %"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "30 min at the delta session, Buffer topped to 100 % before the gap",
+   "verdict": "PASS",
+   "detail": "23 cells, 1.33 Wh nominal, but the seat floor of 3.40 V limits it (v)"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "Bare capacitor store, 3 s at 8.7 W, in the 0.24 mm margin",
+   "verdict": "FAIL",
+   "detail": "best EDLC needs 2.32 cm3 against 1.54 cm3 of margin, and no published part is under 0.9 mm thick"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "Bare capacitor store, 3 s at the safe screen 0.219 W, to close a session",
+   "verdict": "PASS (in cell volume)",
+   "detail": "0.06 to 0.23 cm3 of EDLC (1 to 3 tiles of cell volume), 0.9 mm thick: it needs cell layer room, not the margin"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "Bare thin solid-state store in the margin, standby 0.061 W for 5 min",
+   "verdict": "PASS",
+   "detail": "fits at 0.24 mm; it cannot carry a screen, because of its 100 ohm resistance (10 mA pulse)"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "island rail (U7 and U4 ROM) over all 13 simulated runs",
+   "verdict": "PASS",
+   "detail": "1V8_AON never dropped in brownout, host loss, vanish, hot swap and 5 W host runs"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "quadrant swap with no host, Buffer cells spread over four quadrants",
+   "verdict": "PASS",
+   "detail": "bus min 3.72 V, no mode change"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "quadrant swap with no host, all Buffer cells in the removed quadrant",
+   "verdict": "FAIL",
+   "detail": "body bus lost for 3.0 s (ISLAND 3.0 s). Place Buffer cells in all four quadrants"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "island-only hours from 60 %",
+   "verdict": "INFO",
+   "detail": "2.5 h"
+  },
+  {
+   "condition": "4 continuity",
+   "test": "island-only hours from 100 %",
+   "verdict": "INFO",
+   "detail": "4.4 h"
+  },
+  {
+   "condition": "2 heat",
+   "test": "interface heat in the Leaf at 8.7 W, contact (H0 to H5)",
+   "verdict": "INFO",
+   "detail": "0.28 W, set by U_Q loss"
+  },
+  {
+   "condition": "2 heat",
+   "test": "interface heat in the Leaf at 8.7 W, Qi pad (H6)",
+   "verdict": "INFO",
+   "detail": "0.76 W, 2.7 times the contact value"
+  },
+  {
+   "condition": "3 trust",
+   "test": "host input enters at VHV behind the OR diode; VBUS and U7 are never connected to a host before the proof",
+   "verdict": "BY DESIGN",
+   "detail": "simulator: host qualified only after 3 ms challenge, the contract and 20 ms; before that VHV leaves stay at 0 V"
+  }
+ ]
+}

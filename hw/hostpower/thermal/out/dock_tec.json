@@ -1,0 +1,176 @@
+{
+ "25C|delta|battery|float": {
+  "q_need": 2.66,
+  "P_tec": 0.38,
+  "Q_hot": 3.09,
+  "T_hot": 25.93,
+  "COP": 6.94
+ },
+ "25C|delta|contact_hi|float": {
+  "q_need": 2.94,
+  "P_tec": 0.44,
+  "Q_hot": 3.52,
+  "T_hot": 26.05,
+  "COP": 6.68
+ },
+ "25C|delta|qi_mpp|float": {
+  "q_need": 2.98,
+  "P_tec": 0.44,
+  "Q_hot": 3.51,
+  "T_hot": 26.05,
+  "COP": 6.78
+ },
+ "25C|delta|qi_mpp|charge": {
+  "q_need": 9.9,
+  "P_tec": 2.47,
+  "Q_hot": 12.42,
+  "T_hot": 28.73,
+  "COP": 4.0
+ },
+ "25C|video_wifi|battery|float": {
+  "q_need": 3.35,
+  "P_tec": 0.5,
+  "Q_hot": 3.93,
+  "T_hot": 26.18,
+  "COP": 6.69
+ },
+ "25C|video_wifi|contact_hi|float": {
+  "q_need": 3.62,
+  "P_tec": 0.57,
+  "Q_hot": 4.35,
+  "T_hot": 26.31,
+  "COP": 6.4
+ },
+ "25C|video_wifi|qi_mpp|float": {
+  "q_need": 3.78,
+  "P_tec": 0.6,
+  "Q_hot": 4.57,
+  "T_hot": 26.37,
+  "COP": 6.31
+ },
+ "25C|video_wifi|qi_mpp|charge": {
+  "q_need": 10.52,
+  "P_tec": 2.76,
+  "Q_hot": 13.33,
+  "T_hot": 29.0,
+  "COP": 3.81
+ },
+ "25C|5g_outdoor|battery|float": {
+  "q_need": 4.17,
+  "P_tec": 0.67,
+  "Q_hot": 4.98,
+  "T_hot": 26.49,
+  "COP": 6.23
+ },
+ "25C|5g_outdoor|contact_hi|float": {
+  "q_need": 4.43,
+  "P_tec": 0.71,
+  "Q_hot": 5.18,
+  "T_hot": 26.56,
+  "COP": 6.26
+ },
+ "25C|5g_outdoor|qi_mpp|float": {
+  "q_need": 4.73,
+  "P_tec": 0.78,
+  "Q_hot": 5.61,
+  "T_hot": 26.68,
+  "COP": 6.04
+ },
+ "25C|5g_outdoor|qi_mpp|charge": {
+  "q_need": 11.24,
+  "P_tec": 3.14,
+  "Q_hot": 14.49,
+  "T_hot": 29.35,
+  "COP": 3.58
+ },
+ "35C|delta|battery|float": {
+  "q_need": 4.16,
+  "P_tec": 3.75,
+  "Q_hot": 8.05,
+  "T_hot": 37.41,
+  "COP": 1.11
+ },
+ "35C|delta|contact_hi|float": {
+  "q_need": 4.44,
+  "P_tec": 3.93,
+  "Q_hot": 8.53,
+  "T_hot": 37.56,
+  "COP": 1.13
+ },
+ "35C|delta|qi_mpp|float": {
+  "q_need": 4.48,
+  "P_tec": 3.93,
+  "Q_hot": 8.52,
+  "T_hot": 37.56,
+  "COP": 1.14
+ },
+ "35C|delta|qi_mpp|charge": {
+  "q_need": 11.4,
+  "P_tec": 9.61,
+  "Q_hot": 21.07,
+  "T_hot": 41.32,
+  "COP": 1.19
+ },
+ "35C|video_wifi|battery|float": {
+  "q_need": 4.85,
+  "P_tec": 4.11,
+  "Q_hot": 8.99,
+  "T_hot": 37.7,
+  "COP": 1.18
+ },
+ "35C|video_wifi|contact_hi|float": {
+  "q_need": 5.12,
+  "P_tec": 4.29,
+  "Q_hot": 9.48,
+  "T_hot": 37.84,
+  "COP": 1.19
+ },
+ "35C|video_wifi|qi_mpp|float": {
+  "q_need": 5.28,
+  "P_tec": 4.38,
+  "Q_hot": 9.72,
+  "T_hot": 37.91,
+  "COP": 1.21
+ },
+ "35C|video_wifi|qi_mpp|charge": {
+  "q_need": 12.02,
+  "P_tec": 10.31,
+  "Q_hot": 22.4,
+  "T_hot": 41.72,
+  "COP": 1.17
+ },
+ "35C|5g_outdoor|battery|float": {
+  "q_need": 5.67,
+  "P_tec": 4.67,
+  "Q_hot": 10.45,
+  "T_hot": 38.13,
+  "COP": 1.22
+ },
+ "35C|5g_outdoor|contact_hi|float": {
+  "q_need": 5.93,
+  "P_tec": 4.86,
+  "Q_hot": 10.94,
+  "T_hot": 38.28,
+  "COP": 1.22
+ },
+ "35C|5g_outdoor|qi_mpp|float": {
+  "q_need": 6.23,
+  "P_tec": 5.06,
+  "Q_hot": 11.43,
+  "T_hot": 38.43,
+  "COP": 1.23
+ },
+ "35C|5g_outdoor|qi_mpp|charge": {
+  "q_need": 12.74,
+  "P_tec": 11.19,
+  "Q_hot": 24.0,
+  "T_hot": 42.2,
+  "COP": 1.14
+ },
+ "qmax_W": {
+  "20C": 32.0,
+  "25C": 32.0,
+  "30C": 30.72,
+  "35C": 27.0
+ }
+}

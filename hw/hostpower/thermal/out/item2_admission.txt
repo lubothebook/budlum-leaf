@@ -1,0 +1,126 @@
+ITEM 2 - ADMISSION TABLE: highest sustained session power at the loads that holds 36.2 C
+Value in W at the loads, for the shape of each session. ON = the full session is always-on. C = the host cap binds.
+Columns: bat battery only in air; tbl battery lying on a table; ct.10, ct.34 contact with 0.10 or 0.34 W loss; BPP, EPP, MPP = Qi class 5, 15, 25 W.
+float = the host feeds the load. +t = the cell also gains 0.2 C. +chg = the host input sits at its class cap and the cell takes the rest.
+Nominal powers: delta 2.50 W, video Wi-Fi 3.27 W, 5G outdoor 4.18 W.
+Entries: host feeds the load with the cell floating (float), or the cell also gains 0.2 C (topup).
+limit: T = thermal, C = host cap (the Qi class cannot carry the load).
+
+=== no cold plate | still air | delta 2.5 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   2.47       2.67 ON    2.34       1.91       2.34       2.37       2.37       2.15       2.21       2.22       1.82       0.00       0.00       
+25 C   1.73       1.84       1.60       1.09       1.62       1.63       1.64       1.44       1.48       1.49       0.97       0.00       0.00       
+30 C   0.97       1.00       0.82       0.25       0.88       0.88       0.88       0.72       0.74       0.74       0.11       0.00       0.00       
+35 C   0.19       0.14       0.00       0.00       0.12       0.12       0.12       0.00       0.00       0.00       0.00       0.00       0.00       
+
+=== no cold plate | still air | video Wi-Fi 3.3 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   2.27       2.43       2.16       1.77       2.15       2.17       2.18       1.98       2.03       2.04       1.65       0.00       0.00       
+25 C   1.59       1.67       1.47       1.01       1.49       1.50       1.50       1.33       1.36       1.36       0.88       0.00       0.00       
+30 C   0.89       0.90       0.76       0.23       0.81       0.81       0.81       0.66       0.68       0.68       0.10       0.00       0.00       
+35 C   0.17       0.12       0.00       0.00       0.11       0.11       0.11       0.00       0.00       0.00       0.00       0.00       0.00       
+
+=== no cold plate | still air | 5G outdoor 4.2 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   2.47       2.68       2.35       1.91       2.34       2.38       2.38       2.15       2.22       2.22       1.83       0.00       0.00       
+25 C   1.73       1.85       1.60       1.09       1.62       1.64       1.64       1.45       1.49       1.49       0.97       0.00       0.00       
+30 C   0.97       1.00       0.82       0.25       0.88       0.89       0.89       0.72       0.74       0.74       0.11       0.00       0.00       
+35 C   0.19       0.14       0.00       0.00       0.12       0.12       0.12       0.00       0.00       0.00       0.00       0.00       0.00       
+
+=== no cold plate | light wind | delta 2.5 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   3.39 ON    3.19 ON    3.28 ON    2.94 ON    2.78 ON    2.82 ON    2.83 ON    2.58 ON    2.66 ON    2.67 ON    2.35       0.04       0.00       
+25 C   2.37       2.20       2.24       1.76       1.93       1.95       1.95       1.75       1.80       1.80       1.34       0.00       0.00       
+30 C   1.33       1.20       1.19       0.56       1.06       1.06       1.06       0.89       0.92       0.92       0.32       0.00       0.00       
+35 C   0.26       0.18       0.01       0.00       0.16       0.16       0.16       0.01       0.02       0.02       0.00       0.00       0.00       
+
+=== no cold plate | light wind | video Wi-Fi 3.3 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   3.09       2.88       2.99       2.69       2.55       2.58       2.59       2.37       2.44       2.44       2.12       0.04       0.00       
+25 C   2.16       1.99       2.04       1.62       1.77       1.78       1.79       1.60       1.64       1.65       1.21       0.00       0.00       
+30 C   1.21       1.08       1.08       0.51       0.97       0.97       0.97       0.82       0.84       0.84       0.28       0.00       0.00       
+35 C   0.24       0.16       0.01       0.00       0.15       0.15       0.15       0.01       0.02       0.02       0.00       0.00       0.00       
+
+=== no cold plate | light wind | 5G outdoor 4.2 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   3.40       3.19       3.29       2.94       2.79       2.83       2.83       2.59       2.67       2.67       2.36       0.04       0.00       
+25 C   2.38       2.21       2.25       1.77       1.93       1.96       1.96       1.75       1.80       1.80       1.34       0.00       0.00       
+30 C   1.33       1.20       1.20       0.56       1.06       1.07       1.07       0.90       0.92       0.92       0.32       0.00       0.00       
+35 C   0.26       0.18       0.01       0.00       0.16       0.16       0.16       0.01       0.02       0.02       0.00       0.00       0.00       
+
+=== dock cold plate | still air | delta 2.5 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   7.19 ON    7.19 ON    7.13 ON    6.87 ON    4.67 ON    6.28 ON    6.29 ON    4.67 ON    6.09 ON    6.10 ON    4.67 ON    4.61 ON    2.15       
+25 C   6.96 ON    6.96 ON    6.90 ON    6.64 ON    4.67 ON    6.08 ON    6.09 ON    4.67 ON    5.89 ON    5.91 ON    4.67 ON    4.37 ON    1.91       
+30 C   6.73 ON    6.73 ON    6.67 ON    6.41 ON    4.67 ON    5.88 ON    5.89 ON    4.67 ON    5.69 ON    5.70 ON    4.67 ON    4.13 ON    1.67       
+35 C   6.49 ON    6.49 ON    6.43 ON    6.17 ON    4.67 ON    5.67 ON    5.68 ON    4.67 ON    5.49 ON    5.50 ON    4.67 ON    3.88 ON    1.41       
+
+=== dock cold plate | still air | video Wi-Fi 3.3 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   6.33 ON    6.33 ON    6.27 ON    6.04 ON    4.67 ON    5.61 ON    5.62 ON    4.67 ON    5.45 ON    5.46 ON    4.67 ON    4.04 ON    1.88       
+25 C   6.13 ON    6.13 ON    6.07 ON    5.84 ON    4.67 ON    5.44 ON    5.44 ON    4.67 ON    5.27 ON    5.28 ON    4.67 ON    3.83 ON    1.67       
+30 C   5.92 ON    5.92 ON    5.86 ON    5.63 ON    4.67 ON    5.25 ON    5.26 ON    4.67 ON    5.09 ON    5.10 ON    4.67 ON    3.62 ON    1.46       
+35 C   5.71 ON    5.71 ON    5.65 ON    5.42 ON    4.67 ON    5.07 ON    5.07 ON    4.67 ON    4.91 ON    4.91 ON    4.67 ON    3.40 ON    1.24       
+
+=== dock cold plate | still air | 5G outdoor 4.2 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   7.22 ON    7.22 ON    7.16 ON    6.90 ON    4.67 ON    6.30 ON    6.31 ON    4.67 ON    6.11 ON    6.12 ON    4.67 ON    4.63 ON    2.16       
+25 C   6.99 ON    6.99 ON    6.93 ON    6.67 ON    4.67 ON    6.10 ON    6.11 ON    4.67 ON    5.91 ON    5.92 ON    4.67 ON    4.39 ON    1.92       
+30 C   6.76 ON    6.76 ON    6.69 ON    6.43 ON    4.67 ON    5.90 ON    5.91 ON    4.67 ON    5.71 ON    5.72 ON    4.67 ON    4.15       1.67       
+35 C   6.52 ON    6.52 ON    6.45 ON    6.19 ON    4.67 ON    5.69 ON    5.70 ON    4.67 ON    5.50 ON    5.51 ON    4.67 ON    3.90       1.42       
+
+=== dock cold plate | light wind | delta 2.5 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   7.54 ON    7.54 ON    7.48 ON    7.23 ON    4.67 ON    6.58 ON    6.59 ON    4.67 ON    6.39 ON    6.40 ON    4.67 ON    4.98 ON    2.52 ON    
+25 C   7.18 ON    7.18 ON    7.12 ON    6.86 ON    4.67 ON    6.27 ON    6.28 ON    4.67 ON    6.08 ON    6.09 ON    4.67 ON    4.60 ON    2.15       
+30 C   6.81 ON    6.81 ON    6.75 ON    6.49 ON    4.67 ON    5.95 ON    5.96 ON    4.67 ON    5.76 ON    5.77 ON    4.67 ON    4.22 ON    1.76       
+35 C   6.44 ON    6.44 ON    6.37 ON    6.12 ON    4.67 ON    5.62 ON    5.63 ON    4.67 ON    5.44 ON    5.45 ON    4.67 ON    3.83 ON    1.37       
+
+=== dock cold plate | light wind | video Wi-Fi 3.3 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   6.63 ON    6.63 ON    6.58 ON    6.35 ON    4.67 ON    5.88 ON    5.89 ON    4.67 ON    5.72 ON    5.73 ON    4.67 ON    4.36 ON    2.21       
+25 C   6.32 ON    6.32 ON    6.26 ON    6.03 ON    4.67 ON    5.60 ON    5.61 ON    4.67 ON    5.44 ON    5.45 ON    4.67 ON    4.03 ON    1.88       
+30 C   5.99 ON    5.99 ON    5.93 ON    5.70 ON    4.67 ON    5.32 ON    5.32 ON    4.67 ON    5.15 ON    5.16 ON    4.67 ON    3.69 ON    1.54       
+35 C   5.67 ON    5.67 ON    5.60 ON    5.37 ON    4.67 ON    5.02 ON    5.03 ON    4.67 ON    4.86 ON    4.87 ON    4.67 ON    3.35 ON    1.20       
+
+=== dock cold plate | light wind | 5G outdoor 4.2 W ===
+T_amb  bat        tbl        ct.10      ct.34      BPP        EPP        MPP        BPP+t      EPP+t      MPP+t      BPP+chg    EPP+chg    MPP+chg    
+20 C   7.57 ON    7.57 ON    7.51 ON    7.26 ON    4.67 ON    6.60 ON    6.61 ON    4.67 ON    6.41 ON    6.42 ON    4.67 ON    5.00 ON    2.53       
+25 C   7.21 ON    7.21 ON    7.15 ON    6.89 ON    4.67 ON    6.29 ON    6.30 ON    4.67 ON    6.10 ON    6.11 ON    4.67 ON    4.62 ON    2.15       
+30 C   6.84 ON    6.84 ON    6.78 ON    6.52 ON    4.67 ON    5.97 ON    5.98 ON    4.67 ON    5.78 ON    5.79 ON    4.67 ON    4.24 ON    1.77       
+35 C   6.47 ON    6.47 ON    6.40 ON    6.14 ON    4.67 ON    5.64 ON    5.65 ON    4.67 ON    5.46 ON    5.47 ON    4.67 ON    3.85       1.38       
+
+=== the Qi classes that allow an always-on session. Rule A: cell floats. Rule B: host charges the cell at its cap ===
+plate  wind   T_amb    rule   delta 2.5 W    video Wi-Fi 3  5G outdoor 4. 
+none   still  20 C     A      none           none           none          
+none   still  20 C     B      none           none           none          
+none   still  25 C     A      none           none           none          
+none   still  25 C     B      none           none           none          
+none   still  30 C     A      none           none           none          
+none   still  30 C     B      none           none           none          
+none   still  35 C     A      none           none           none          
+none   still  35 C     B      none           none           none          
+none   wind   20 C     A      BPP/EPP/MPP    none           none          
+none   wind   20 C     B      none           none           none          
+none   wind   25 C     A      none           none           none          
+none   wind   25 C     B      none           none           none          
+none   wind   30 C     A      none           none           none          
+none   wind   30 C     B      none           none           none          
+none   wind   35 C     A      none           none           none          
+none   wind   35 C     B      none           none           none          
+dock   still  20 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   still  20 C     B      BPP/EPP        BPP/EPP        BPP/EPP       
+dock   still  25 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   still  25 C     B      BPP/EPP        BPP/EPP        BPP/EPP       
+dock   still  30 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   still  30 C     B      BPP/EPP        BPP/EPP        BPP           
+dock   still  35 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   still  35 C     B      BPP/EPP        BPP/EPP        BPP           
+dock   wind   20 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   wind   20 C     B      BPP/EPP/MPP    BPP/EPP        BPP/EPP       
+dock   wind   25 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   wind   25 C     B      BPP/EPP        BPP/EPP        BPP/EPP       
+dock   wind   30 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   wind   30 C     B      BPP/EPP        BPP/EPP        BPP/EPP       
+dock   wind   35 C     A      BPP/EPP/MPP    BPP/EPP/MPP    BPP/EPP/MPP   
+dock   wind   35 C     B      BPP/EPP        BPP/EPP        BPP           

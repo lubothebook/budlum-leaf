@@ -1,0 +1,35 @@
+HOST MARGIN against the worst peak of 8.7 W
+cls  host                               P_avail   eta  margin W  verdict
+H0   wall dock, USB-C 40 W                40.00  0.90     27.30  carries the peak
+H2a  desk PC port, USB 2.0 5 V 0.5 A       2.50  0.90     -6.45  needs the Buffer tier
+H2b  desk PC port, USB 3.0 5 V 0.9 A       4.50  0.90     -4.65  needs the Buffer tier
+H2c  desk USB-C PD 9 V 2.3 A              20.70  0.90      9.93  carries the peak
+H4a  PoE class 1, PD 3.84 W                3.84  0.85     -5.44  needs the Buffer tier
+H4b  PoE class 2, PD 6.49 W                6.49  0.85     -3.18  needs the Buffer tier
+H4c  PoE class 3, PD 13 W                 13.00  0.85      2.35  carries the peak
+H4d  PoE class 4, PD 25.5 W               25.50  0.85     12.98  carries the peak
+H6a  Qi basic power profile, 5 W           5.00  0.75     -4.95  needs the Buffer tier
+H6b  Qi2 15 W                             15.00  0.75      2.55  carries the peak
+H6c  Qi2 25 W                             25.00  0.75     10.05  carries the peak
+
+Qi2 25 W receive efficiency from the BRIEF heat: 0.72 to 0.77
+Mean session power bracket (5.9 Wh over 3.7 h to 7.4 Wh over 2 h): 1.59 to 3.70 W
+
+Buffer energy to carry the peak gap for a hand-over of t seconds, 8.7 W peak:
+  t =   2 s: 17.4 J = 0.0048 Wh
+  t =  10 s: 87.0 J = 0.0242 Wh
+  t =  30 s: 261.0 J = 0.0725 Wh
+  t =  60 s: 522.0 J = 0.1450 Wh
+
+Source and tag of each row
+  H0   [TREE] FINAL/00 answer 11 for 40 W; eta [HYPOTHESIS] (port part, VHV rail)
+  H2a  [PUBLICATION] Samsung DeX support page; eta [HYPOTHESIS] (no PD contract)
+  H2b  [PUBLICATION] Samsung DeX support page; eta [HYPOTHESIS] (no PD contract)
+  H2c  [PUBLICATION] Samsung Tab Active5 page for 9 V 2.3 A; eta [HYPOTHESIS] (PD contract)
+  H4a  [PUBLICATION] Ethernet Alliance 802.3bt overview; eta [HYPOTHESIS] (802.3af)
+  H4b  [PUBLICATION] Ethernet Alliance 802.3bt overview; eta [HYPOTHESIS] (802.3af)
+  H4c  [PUBLICATION] Ethernet Alliance 802.3bt overview; eta [HYPOTHESIS] (802.3af)
+  H4d  [PUBLICATION] Ethernet Alliance 802.3bt overview; eta [HYPOTHESIS] (802.3at)
+  H6a  [PUBLICATION] Granite River Labs Qi2 authentication note; eta from BRIEF heat (before authentication)
+  H6b  [PUBLICATION] WPC Qi page; eta from BRIEF heat (after authentication)
+  H6c  [PUBLICATION] WPC Qi page; eta from BRIEF heat (after authentication)

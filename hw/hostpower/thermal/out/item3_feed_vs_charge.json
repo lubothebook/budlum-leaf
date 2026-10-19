@@ -1,0 +1,1462 @@
+{
+ "25C|open|contact_lo|delta|float": {
+  "Q_leaf": 2.617,
+  "saved_vs_float": 0.0,
+  "T_skin": 42.08,
+  "dT_vs_float": 0.0,
+  "P_wall": 2.73,
+  "P_cell_net": 0.0,
+  "P_rx": 2.5,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|delta|topup": {
+  "Q_leaf": 2.834,
+  "saved_vs_float": 0.217,
+  "T_skin": 44.09,
+  "dT_vs_float": 2.01,
+  "P_wall": 4.145,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|delta|c1.0": {
+  "Q_leaf": 3.313,
+  "saved_vs_float": 0.695,
+  "T_skin": 47.78,
+  "dT_vs_float": 5.7,
+  "P_wall": 9.356,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|delta|charge": {
+  "Q_leaf": 6.246,
+  "saved_vs_float": 3.629,
+  "T_skin": 67.0,
+  "dT_vs_float": 24.92,
+  "P_wall": 26.146,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|video_wifi|float": {
+  "Q_leaf": 3.4,
+  "saved_vs_float": 0.0,
+  "T_skin": 48.95,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.548,
+  "P_cell_net": 0.0,
+  "P_rx": 3.27,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|video_wifi|topup": {
+  "Q_leaf": 3.663,
+  "saved_vs_float": 0.264,
+  "T_skin": 51.4,
+  "dT_vs_float": 2.45,
+  "P_wall": 5.013,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|video_wifi|c1.0": {
+  "Q_leaf": 4.165,
+  "saved_vs_float": 0.766,
+  "T_skin": 55.24,
+  "dT_vs_float": 6.3,
+  "P_wall": 10.254,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|video_wifi|charge": {
+  "Q_leaf": 6.95,
+  "saved_vs_float": 3.55,
+  "T_skin": 73.57,
+  "dT_vs_float": 24.63,
+  "P_wall": 26.146,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|5g_outdoor|float": {
+  "Q_leaf": 4.329,
+  "saved_vs_float": 0.0,
+  "T_skin": 45.36,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.519,
+  "P_cell_net": 0.0,
+  "P_rx": 4.18,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|5g_outdoor|topup": {
+  "Q_leaf": 4.648,
+  "saved_vs_float": 0.319,
+  "T_skin": 47.61,
+  "dT_vs_float": 2.25,
+  "P_wall": 6.045,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|5g_outdoor|c1.0": {
+  "Q_leaf": 5.178,
+  "saved_vs_float": 0.849,
+  "T_skin": 50.57,
+  "dT_vs_float": 5.2,
+  "P_wall": 11.321,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|open|contact_lo|5g_outdoor|charge": {
+  "Q_leaf": 7.784,
+  "saved_vs_float": 3.455,
+  "T_skin": 62.91,
+  "dT_vs_float": 17.54,
+  "P_wall": 26.146,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|delta|float": {
+  "Q_leaf": 2.895,
+  "saved_vs_float": 0.0,
+  "T_skin": 42.23,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.239,
+  "P_cell_net": -0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|delta|topup": {
+  "Q_leaf": 3.211,
+  "saved_vs_float": 0.316,
+  "T_skin": 43.6,
+  "dT_vs_float": 1.37,
+  "P_wall": 4.865,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|delta|c1.0": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 45.02,
+  "dT_vs_float": 2.8,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|delta|charge": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 45.02,
+  "dT_vs_float": 2.8,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|video_wifi|float": {
+  "Q_leaf": 3.867,
+  "saved_vs_float": 0.0,
+  "T_skin": 49.57,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.327,
+  "P_cell_net": -0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|video_wifi|topup": {
+  "Q_leaf": 4.242,
+  "saved_vs_float": 0.375,
+  "T_skin": 51.07,
+  "dT_vs_float": 1.5,
+  "P_wall": 6.018,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|video_wifi|c1.0": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 51.45,
+  "dT_vs_float": 1.88,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|video_wifi|charge": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 51.45,
+  "dT_vs_float": 1.88,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|5g_outdoor|float": {
+  "Q_leaf": 5.067,
+  "saved_vs_float": 0.0,
+  "T_skin": 49.4,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.669,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|5g_outdoor|topup": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 49.98,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 49.98,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_bpp|5g_outdoor|charge": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 49.98,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|delta|float": {
+  "Q_leaf": 2.756,
+  "saved_vs_float": 0.0,
+  "T_skin": 41.98,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.083,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|delta|topup": {
+  "Q_leaf": 2.914,
+  "saved_vs_float": 0.158,
+  "T_skin": 43.06,
+  "dT_vs_float": 1.08,
+  "P_wall": 4.532,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|delta|c1.0": {
+  "Q_leaf": 3.862,
+  "saved_vs_float": 1.106,
+  "T_skin": 48.8,
+  "dT_vs_float": 6.83,
+  "P_wall": 10.615,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|delta|charge": {
+  "Q_leaf": 5.671,
+  "saved_vs_float": 2.915,
+  "T_skin": 58.07,
+  "dT_vs_float": 16.09,
+  "P_wall": 18.418,
+  "P_cell_net": 11.072,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|video_wifi|float": {
+  "Q_leaf": 3.628,
+  "saved_vs_float": 0.0,
+  "T_skin": 49.13,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.059,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|video_wifi|topup": {
+  "Q_leaf": 3.803,
+  "saved_vs_float": 0.175,
+  "T_skin": 50.28,
+  "dT_vs_float": 1.15,
+  "P_wall": 5.527,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|video_wifi|c1.0": {
+  "Q_leaf": 4.822,
+  "saved_vs_float": 1.194,
+  "T_skin": 56.36,
+  "dT_vs_float": 7.22,
+  "P_wall": 11.689,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|video_wifi|charge": {
+  "Q_leaf": 6.403,
+  "saved_vs_float": 2.776,
+  "T_skin": 64.42,
+  "dT_vs_float": 15.29,
+  "P_wall": 18.418,
+  "P_cell_net": 10.302,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|5g_outdoor|float": {
+  "Q_leaf": 4.673,
+  "saved_vs_float": 0.0,
+  "T_skin": 48.82,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.228,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|5g_outdoor|topup": {
+  "Q_leaf": 4.868,
+  "saved_vs_float": 0.195,
+  "T_skin": 49.9,
+  "dT_vs_float": 1.08,
+  "P_wall": 6.719,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.974,
+  "saved_vs_float": 1.301,
+  "T_skin": 55.27,
+  "dT_vs_float": 6.45,
+  "P_wall": 12.977,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|open|qi_epp|5g_outdoor|charge": {
+  "Q_leaf": 7.273,
+  "saved_vs_float": 2.599,
+  "T_skin": 60.77,
+  "dT_vs_float": 11.95,
+  "P_wall": 18.418,
+  "P_cell_net": 9.392,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|delta|float": {
+  "Q_leaf": 2.745,
+  "saved_vs_float": 0.0,
+  "T_skin": 41.96,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.071,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|delta|topup": {
+  "Q_leaf": 2.891,
+  "saved_vs_float": 0.146,
+  "T_skin": 43.02,
+  "dT_vs_float": 1.06,
+  "P_wall": 4.507,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|delta|c1.0": {
+  "Q_leaf": 3.744,
+  "saved_vs_float": 0.999,
+  "T_skin": 48.59,
+  "dT_vs_float": 6.63,
+  "P_wall": 10.483,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|delta|charge": {
+  "Q_leaf": 9.191,
+  "saved_vs_float": 6.446,
+  "T_skin": 77.03,
+  "dT_vs_float": 35.08,
+  "P_wall": 30.992,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|video_wifi|float": {
+  "Q_leaf": 3.61,
+  "saved_vs_float": 0.0,
+  "T_skin": 49.1,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.038,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|video_wifi|topup": {
+  "Q_leaf": 3.77,
+  "saved_vs_float": 0.16,
+  "T_skin": 50.22,
+  "dT_vs_float": 1.12,
+  "P_wall": 5.489,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|video_wifi|c1.0": {
+  "Q_leaf": 4.68,
+  "saved_vs_float": 1.071,
+  "T_skin": 56.1,
+  "dT_vs_float": 7.0,
+  "P_wall": 11.53,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|video_wifi|charge": {
+  "Q_leaf": 9.895,
+  "saved_vs_float": 6.285,
+  "T_skin": 82.8,
+  "dT_vs_float": 33.69,
+  "P_wall": 30.992,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|5g_outdoor|float": {
+  "Q_leaf": 4.643,
+  "saved_vs_float": 0.0,
+  "T_skin": 48.78,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.195,
+  "P_cell_net": -0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|5g_outdoor|topup": {
+  "Q_leaf": 4.82,
+  "saved_vs_float": 0.176,
+  "T_skin": 49.83,
+  "dT_vs_float": 1.05,
+  "P_wall": 6.664,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.801,
+  "saved_vs_float": 1.157,
+  "T_skin": 55.02,
+  "dT_vs_float": 6.24,
+  "P_wall": 12.783,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|open|qi_mpp|5g_outdoor|charge": {
+  "Q_leaf": 10.73,
+  "saved_vs_float": 6.086,
+  "T_skin": 75.99,
+  "dT_vs_float": 27.21,
+  "P_wall": 30.992,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|delta|float": {
+  "Q_leaf": 2.617,
+  "saved_vs_float": 0.0,
+  "T_skin": 27.43,
+  "dT_vs_float": 0.0,
+  "P_wall": 2.73,
+  "P_cell_net": 0.0,
+  "P_rx": 2.5,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|delta|topup": {
+  "Q_leaf": 2.834,
+  "saved_vs_float": 0.217,
+  "T_skin": 28.14,
+  "dT_vs_float": 0.71,
+  "P_wall": 4.145,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|delta|c1.0": {
+  "Q_leaf": 3.313,
+  "saved_vs_float": 0.695,
+  "T_skin": 29.24,
+  "dT_vs_float": 1.81,
+  "P_wall": 9.356,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|delta|charge": {
+  "Q_leaf": 6.246,
+  "saved_vs_float": 3.629,
+  "T_skin": 33.95,
+  "dT_vs_float": 6.52,
+  "P_wall": 26.146,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|video_wifi|float": {
+  "Q_leaf": 3.4,
+  "saved_vs_float": 0.0,
+  "T_skin": 29.85,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.548,
+  "P_cell_net": 0.0,
+  "P_rx": 3.27,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|video_wifi|topup": {
+  "Q_leaf": 3.663,
+  "saved_vs_float": 0.264,
+  "T_skin": 30.72,
+  "dT_vs_float": 0.87,
+  "P_wall": 5.013,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|video_wifi|c1.0": {
+  "Q_leaf": 4.165,
+  "saved_vs_float": 0.766,
+  "T_skin": 31.85,
+  "dT_vs_float": 2.0,
+  "P_wall": 10.254,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|video_wifi|charge": {
+  "Q_leaf": 6.95,
+  "saved_vs_float": 3.55,
+  "T_skin": 36.34,
+  "dT_vs_float": 6.49,
+  "P_wall": 26.146,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|5g_outdoor|float": {
+  "Q_leaf": 4.329,
+  "saved_vs_float": 0.0,
+  "T_skin": 30.53,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.519,
+  "P_cell_net": 0.0,
+  "P_rx": 4.18,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|5g_outdoor|topup": {
+  "Q_leaf": 4.648,
+  "saved_vs_float": 0.319,
+  "T_skin": 31.53,
+  "dT_vs_float": 1.01,
+  "P_wall": 6.045,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|5g_outdoor|c1.0": {
+  "Q_leaf": 5.178,
+  "saved_vs_float": 0.849,
+  "T_skin": 32.65,
+  "dT_vs_float": 2.13,
+  "P_wall": 11.321,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|dock|contact_lo|5g_outdoor|charge": {
+  "Q_leaf": 7.784,
+  "saved_vs_float": 3.455,
+  "T_skin": 36.7,
+  "dT_vs_float": 6.17,
+  "P_wall": 26.146,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|delta|float": {
+  "Q_leaf": 2.895,
+  "saved_vs_float": 0.0,
+  "T_skin": 27.98,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.239,
+  "P_cell_net": -0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|delta|topup": {
+  "Q_leaf": 3.211,
+  "saved_vs_float": 0.316,
+  "T_skin": 28.41,
+  "dT_vs_float": 0.42,
+  "P_wall": 4.865,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|delta|c1.0": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 28.83,
+  "dT_vs_float": 0.85,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|delta|charge": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 28.83,
+  "dT_vs_float": 0.85,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|video_wifi|float": {
+  "Q_leaf": 3.867,
+  "saved_vs_float": 0.0,
+  "T_skin": 30.68,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.327,
+  "P_cell_net": -0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|video_wifi|topup": {
+  "Q_leaf": 4.242,
+  "saved_vs_float": 0.375,
+  "T_skin": 31.13,
+  "dT_vs_float": 0.45,
+  "P_wall": 6.018,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|video_wifi|c1.0": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 31.24,
+  "dT_vs_float": 0.56,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|video_wifi|charge": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 31.24,
+  "dT_vs_float": 0.56,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|5g_outdoor|float": {
+  "Q_leaf": 5.067,
+  "saved_vs_float": 0.0,
+  "T_skin": 31.64,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.669,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|5g_outdoor|topup": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 31.84,
+  "dT_vs_float": 0.2,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 31.84,
+  "dT_vs_float": 0.2,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_bpp|5g_outdoor|charge": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 31.84,
+  "dT_vs_float": 0.2,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|delta|float": {
+  "Q_leaf": 2.756,
+  "saved_vs_float": 0.0,
+  "T_skin": 27.94,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.083,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|delta|topup": {
+  "Q_leaf": 2.914,
+  "saved_vs_float": 0.158,
+  "T_skin": 28.31,
+  "dT_vs_float": 0.37,
+  "P_wall": 4.532,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|delta|c1.0": {
+  "Q_leaf": 3.862,
+  "saved_vs_float": 1.106,
+  "T_skin": 30.03,
+  "dT_vs_float": 2.09,
+  "P_wall": 10.615,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|delta|charge": {
+  "Q_leaf": 5.671,
+  "saved_vs_float": 2.915,
+  "T_skin": 32.55,
+  "dT_vs_float": 4.61,
+  "P_wall": 18.418,
+  "P_cell_net": 11.072,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|video_wifi|float": {
+  "Q_leaf": 3.628,
+  "saved_vs_float": 0.0,
+  "T_skin": 30.6,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.059,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|video_wifi|topup": {
+  "Q_leaf": 3.803,
+  "saved_vs_float": 0.175,
+  "T_skin": 30.99,
+  "dT_vs_float": 0.39,
+  "P_wall": 5.527,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|video_wifi|c1.0": {
+  "Q_leaf": 4.822,
+  "saved_vs_float": 1.194,
+  "T_skin": 32.77,
+  "dT_vs_float": 2.16,
+  "P_wall": 11.689,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|video_wifi|charge": {
+  "Q_leaf": 6.403,
+  "saved_vs_float": 2.776,
+  "T_skin": 34.95,
+  "dT_vs_float": 4.35,
+  "P_wall": 18.418,
+  "P_cell_net": 10.302,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|5g_outdoor|float": {
+  "Q_leaf": 4.673,
+  "saved_vs_float": 0.0,
+  "T_skin": 31.52,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.228,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|5g_outdoor|topup": {
+  "Q_leaf": 4.868,
+  "saved_vs_float": 0.195,
+  "T_skin": 31.91,
+  "dT_vs_float": 0.39,
+  "P_wall": 6.719,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.974,
+  "saved_vs_float": 1.301,
+  "T_skin": 33.68,
+  "dT_vs_float": 2.16,
+  "P_wall": 12.977,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|dock|qi_epp|5g_outdoor|charge": {
+  "Q_leaf": 7.273,
+  "saved_vs_float": 2.599,
+  "T_skin": 35.38,
+  "dT_vs_float": 3.86,
+  "P_wall": 18.418,
+  "P_cell_net": 9.392,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|delta|float": {
+  "Q_leaf": 2.745,
+  "saved_vs_float": 0.0,
+  "T_skin": 27.94,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.071,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|delta|topup": {
+  "Q_leaf": 2.891,
+  "saved_vs_float": 0.146,
+  "T_skin": 28.31,
+  "dT_vs_float": 0.37,
+  "P_wall": 4.507,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|delta|c1.0": {
+  "Q_leaf": 3.744,
+  "saved_vs_float": 0.999,
+  "T_skin": 30.0,
+  "dT_vs_float": 2.06,
+  "P_wall": 10.483,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|delta|charge": {
+  "Q_leaf": 9.191,
+  "saved_vs_float": 6.446,
+  "T_skin": 37.34,
+  "dT_vs_float": 9.41,
+  "P_wall": 30.992,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|video_wifi|float": {
+  "Q_leaf": 3.61,
+  "saved_vs_float": 0.0,
+  "T_skin": 30.6,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.038,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|video_wifi|topup": {
+  "Q_leaf": 3.77,
+  "saved_vs_float": 0.16,
+  "T_skin": 30.98,
+  "dT_vs_float": 0.38,
+  "P_wall": 5.489,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|video_wifi|c1.0": {
+  "Q_leaf": 4.68,
+  "saved_vs_float": 1.071,
+  "T_skin": 32.72,
+  "dT_vs_float": 2.12,
+  "P_wall": 11.53,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|video_wifi|charge": {
+  "Q_leaf": 9.895,
+  "saved_vs_float": 6.285,
+  "T_skin": 39.73,
+  "dT_vs_float": 9.14,
+  "P_wall": 30.992,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|5g_outdoor|float": {
+  "Q_leaf": 4.643,
+  "saved_vs_float": 0.0,
+  "T_skin": 31.51,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.195,
+  "P_cell_net": -0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|5g_outdoor|topup": {
+  "Q_leaf": 4.82,
+  "saved_vs_float": 0.176,
+  "T_skin": 31.89,
+  "dT_vs_float": 0.38,
+  "P_wall": 6.664,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.801,
+  "saved_vs_float": 1.157,
+  "T_skin": 33.62,
+  "dT_vs_float": 2.11,
+  "P_wall": 12.783,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "25C|dock|qi_mpp|5g_outdoor|charge": {
+  "Q_leaf": 10.73,
+  "saved_vs_float": 6.086,
+  "T_skin": 39.95,
+  "dT_vs_float": 8.43,
+  "P_wall": 30.992,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|delta|float": {
+  "Q_leaf": 2.617,
+  "saved_vs_float": 0.0,
+  "T_skin": 46.93,
+  "dT_vs_float": 0.0,
+  "P_wall": 2.73,
+  "P_cell_net": 0.0,
+  "P_rx": 2.5,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|delta|topup": {
+  "Q_leaf": 2.834,
+  "saved_vs_float": 0.217,
+  "T_skin": 48.92,
+  "dT_vs_float": 2.0,
+  "P_wall": 4.145,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|delta|c1.0": {
+  "Q_leaf": 3.313,
+  "saved_vs_float": 0.695,
+  "T_skin": 52.58,
+  "dT_vs_float": 5.65,
+  "P_wall": 9.356,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|delta|charge": {
+  "Q_leaf": 6.246,
+  "saved_vs_float": 3.629,
+  "T_skin": 71.62,
+  "dT_vs_float": 24.7,
+  "P_wall": 26.146,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|video_wifi|float": {
+  "Q_leaf": 3.4,
+  "saved_vs_float": 0.0,
+  "T_skin": 53.74,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.548,
+  "P_cell_net": 0.0,
+  "P_rx": 3.27,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|video_wifi|topup": {
+  "Q_leaf": 3.663,
+  "saved_vs_float": 0.264,
+  "T_skin": 56.17,
+  "dT_vs_float": 2.43,
+  "P_wall": 5.013,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|video_wifi|c1.0": {
+  "Q_leaf": 4.165,
+  "saved_vs_float": 0.766,
+  "T_skin": 59.99,
+  "dT_vs_float": 6.24,
+  "P_wall": 10.254,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|video_wifi|charge": {
+  "Q_leaf": 6.95,
+  "saved_vs_float": 3.55,
+  "T_skin": 78.15,
+  "dT_vs_float": 24.41,
+  "P_wall": 26.146,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|5g_outdoor|float": {
+  "Q_leaf": 4.329,
+  "saved_vs_float": 0.0,
+  "T_skin": 50.25,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.519,
+  "P_cell_net": 0.0,
+  "P_rx": 4.18,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|5g_outdoor|topup": {
+  "Q_leaf": 4.648,
+  "saved_vs_float": 0.319,
+  "T_skin": 52.49,
+  "dT_vs_float": 2.23,
+  "P_wall": 6.045,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|5g_outdoor|c1.0": {
+  "Q_leaf": 5.178,
+  "saved_vs_float": 0.849,
+  "T_skin": 55.43,
+  "dT_vs_float": 5.18,
+  "P_wall": 11.321,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "30C|open|contact_lo|5g_outdoor|charge": {
+  "Q_leaf": 7.784,
+  "saved_vs_float": 3.455,
+  "T_skin": 67.7,
+  "dT_vs_float": 17.44,
+  "P_wall": 26.146,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|delta|float": {
+  "Q_leaf": 2.895,
+  "saved_vs_float": 0.0,
+  "T_skin": 47.13,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.239,
+  "P_cell_net": -0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|delta|topup": {
+  "Q_leaf": 3.211,
+  "saved_vs_float": 0.316,
+  "T_skin": 48.49,
+  "dT_vs_float": 1.36,
+  "P_wall": 4.865,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|delta|c1.0": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 49.91,
+  "dT_vs_float": 2.78,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|delta|charge": {
+  "Q_leaf": 3.579,
+  "saved_vs_float": 0.684,
+  "T_skin": 49.91,
+  "dT_vs_float": 2.78,
+  "P_wall": 6.424,
+  "P_cell_net": 2.175,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|video_wifi|float": {
+  "Q_leaf": 3.867,
+  "saved_vs_float": 0.0,
+  "T_skin": 54.43,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.327,
+  "P_cell_net": -0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|video_wifi|topup": {
+  "Q_leaf": 4.242,
+  "saved_vs_float": 0.375,
+  "T_skin": 55.93,
+  "dT_vs_float": 1.5,
+  "P_wall": 6.018,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|video_wifi|c1.0": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 56.31,
+  "dT_vs_float": 1.87,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|video_wifi|charge": {
+  "Q_leaf": 4.342,
+  "saved_vs_float": 0.475,
+  "T_skin": 56.31,
+  "dT_vs_float": 1.87,
+  "P_wall": 6.424,
+  "P_cell_net": 1.405,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|5g_outdoor|float": {
+  "Q_leaf": 5.067,
+  "saved_vs_float": 0.0,
+  "T_skin": 54.29,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.669,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|5g_outdoor|topup": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 54.87,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 54.87,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_bpp|5g_outdoor|charge": {
+  "Q_leaf": 5.248,
+  "saved_vs_float": 0.181,
+  "T_skin": 54.87,
+  "dT_vs_float": 0.58,
+  "P_wall": 6.424,
+  "P_cell_net": 0.495,
+  "P_rx": 5.0,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|delta|float": {
+  "Q_leaf": 2.756,
+  "saved_vs_float": 0.0,
+  "T_skin": 46.88,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.083,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|delta|topup": {
+  "Q_leaf": 2.914,
+  "saved_vs_float": 0.158,
+  "T_skin": 47.96,
+  "dT_vs_float": 1.08,
+  "P_wall": 4.532,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|delta|c1.0": {
+  "Q_leaf": 3.862,
+  "saved_vs_float": 1.106,
+  "T_skin": 53.67,
+  "dT_vs_float": 6.79,
+  "P_wall": 10.615,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|delta|charge": {
+  "Q_leaf": 5.671,
+  "saved_vs_float": 2.915,
+  "T_skin": 62.88,
+  "dT_vs_float": 16.0,
+  "P_wall": 18.418,
+  "P_cell_net": 11.072,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|video_wifi|float": {
+  "Q_leaf": 3.628,
+  "saved_vs_float": 0.0,
+  "T_skin": 54.01,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.059,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|video_wifi|topup": {
+  "Q_leaf": 3.803,
+  "saved_vs_float": 0.175,
+  "T_skin": 55.14,
+  "dT_vs_float": 1.14,
+  "P_wall": 5.527,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|video_wifi|c1.0": {
+  "Q_leaf": 4.822,
+  "saved_vs_float": 1.194,
+  "T_skin": 61.19,
+  "dT_vs_float": 7.18,
+  "P_wall": 11.689,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|video_wifi|charge": {
+  "Q_leaf": 6.403,
+  "saved_vs_float": 2.776,
+  "T_skin": 69.21,
+  "dT_vs_float": 15.2,
+  "P_wall": 18.418,
+  "P_cell_net": 10.302,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|5g_outdoor|float": {
+  "Q_leaf": 4.673,
+  "saved_vs_float": 0.0,
+  "T_skin": 53.72,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.228,
+  "P_cell_net": 0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|5g_outdoor|topup": {
+  "Q_leaf": 4.868,
+  "saved_vs_float": 0.195,
+  "T_skin": 54.79,
+  "dT_vs_float": 1.07,
+  "P_wall": 6.719,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.974,
+  "saved_vs_float": 1.301,
+  "T_skin": 60.14,
+  "dT_vs_float": 6.42,
+  "P_wall": 12.977,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "30C|open|qi_epp|5g_outdoor|charge": {
+  "Q_leaf": 7.273,
+  "saved_vs_float": 2.599,
+  "T_skin": 65.61,
+  "dT_vs_float": 11.89,
+  "P_wall": 18.418,
+  "P_cell_net": 9.392,
+  "P_rx": 15.0,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|delta|float": {
+  "Q_leaf": 2.745,
+  "saved_vs_float": 0.0,
+  "T_skin": 46.87,
+  "dT_vs_float": 0.0,
+  "P_wall": 3.071,
+  "P_cell_net": 0.0,
+  "P_rx": 2.654,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|delta|topup": {
+  "Q_leaf": 2.891,
+  "saved_vs_float": 0.146,
+  "T_skin": 47.92,
+  "dT_vs_float": 1.06,
+  "P_wall": 4.507,
+  "P_cell_net": 1.14,
+  "P_rx": 3.879,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|delta|c1.0": {
+  "Q_leaf": 3.744,
+  "saved_vs_float": 0.999,
+  "T_skin": 53.46,
+  "dT_vs_float": 6.6,
+  "P_wall": 10.483,
+  "P_cell_net": 5.7,
+  "P_rx": 8.882,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|delta|charge": {
+  "Q_leaf": 9.191,
+  "saved_vs_float": 6.446,
+  "T_skin": 81.74,
+  "dT_vs_float": 34.87,
+  "P_wall": 30.992,
+  "P_cell_net": 19.366,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|video_wifi|float": {
+  "Q_leaf": 3.61,
+  "saved_vs_float": 0.0,
+  "T_skin": 53.97,
+  "dT_vs_float": 0.0,
+  "P_wall": 4.038,
+  "P_cell_net": 0.0,
+  "P_rx": 3.481,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|video_wifi|topup": {
+  "Q_leaf": 3.77,
+  "saved_vs_float": 0.16,
+  "T_skin": 55.09,
+  "dT_vs_float": 1.11,
+  "P_wall": 5.489,
+  "P_cell_net": 1.14,
+  "P_rx": 4.713,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|video_wifi|c1.0": {
+  "Q_leaf": 4.68,
+  "saved_vs_float": 1.071,
+  "T_skin": 60.93,
+  "dT_vs_float": 6.96,
+  "P_wall": 11.53,
+  "P_cell_net": 5.7,
+  "P_rx": 9.743,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|video_wifi|charge": {
+  "Q_leaf": 9.895,
+  "saved_vs_float": 6.285,
+  "T_skin": 87.47,
+  "dT_vs_float": 33.49,
+  "P_wall": 30.992,
+  "P_cell_net": 18.596,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|5g_outdoor|float": {
+  "Q_leaf": 4.643,
+  "saved_vs_float": 0.0,
+  "T_skin": 53.68,
+  "dT_vs_float": 0.0,
+  "P_wall": 5.195,
+  "P_cell_net": -0.0,
+  "P_rx": 4.463,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|5g_outdoor|topup": {
+  "Q_leaf": 4.82,
+  "saved_vs_float": 0.176,
+  "T_skin": 54.72,
+  "dT_vs_float": 1.04,
+  "P_wall": 6.664,
+  "P_cell_net": 1.14,
+  "P_rx": 5.703,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|5g_outdoor|c1.0": {
+  "Q_leaf": 5.801,
+  "saved_vs_float": 1.157,
+  "T_skin": 59.88,
+  "dT_vs_float": 6.21,
+  "P_wall": 12.783,
+  "P_cell_net": 5.7,
+  "P_rx": 10.768,
+  "host_limited": false
+ },
+ "30C|open|qi_mpp|5g_outdoor|charge": {
+  "Q_leaf": 10.73,
+  "saved_vs_float": 6.086,
+  "T_skin": 80.76,
+  "dT_vs_float": 27.09,
+  "P_wall": 30.992,
+  "P_cell_net": 17.686,
+  "P_rx": 25.0,
+  "host_limited": false
+ },
+ "sustained_delta_puck_25C": {
+  "qi_bpp": {
+   "float": 1.619,
+   "topup": 1.443,
+   "c1.0": 0.97,
+   "charge": 0.97
+  },
+  "qi_epp": {
+   "float": 1.635,
+   "topup": 1.483,
+   "c1.0": 0.737,
+   "charge": 0.0
+  },
+  "qi_mpp": {
+   "float": 1.636,
+   "topup": 1.486,
+   "c1.0": 0.755,
+   "charge": 0.0
+  }
+ }
+}

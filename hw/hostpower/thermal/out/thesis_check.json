@@ -1,0 +1,728 @@
+{
+ "open|20C|delta|battery": {
+  "margin": -0.22,
+  "T_skin": 36.42,
+  "passes": false
+ },
+ "open|20C|delta|contact_lo": {
+  "margin": -1.03,
+  "T_skin": 37.23,
+  "passes": false
+ },
+ "open|20C|delta|contact_hi": {
+  "margin": -3.57,
+  "T_skin": 39.77,
+  "passes": false
+ },
+ "open|20C|delta|qi_bpp": {
+  "margin": -1.12,
+  "T_skin": 37.32,
+  "passes": false
+ },
+ "open|20C|delta|qi_epp": {
+  "margin": -0.87,
+  "T_skin": 37.07,
+  "passes": false
+ },
+ "open|20C|delta|qi_mpp": {
+  "margin": -0.85,
+  "T_skin": 37.05,
+  "passes": false
+ },
+ "open|20C|video_wifi|battery": {
+  "margin": -7.2,
+  "T_skin": 43.4,
+  "passes": false
+ },
+ "open|20C|video_wifi|contact_lo": {
+  "margin": -7.95,
+  "T_skin": 44.15,
+  "passes": false
+ },
+ "open|20C|video_wifi|contact_hi": {
+  "margin": -10.06,
+  "T_skin": 46.26,
+  "passes": false
+ },
+ "open|20C|video_wifi|qi_bpp": {
+  "margin": -8.5,
+  "T_skin": 44.7,
+  "passes": false
+ },
+ "open|20C|video_wifi|qi_epp": {
+  "margin": -8.06,
+  "T_skin": 44.26,
+  "passes": false
+ },
+ "open|20C|video_wifi|qi_mpp": {
+  "margin": -8.03,
+  "T_skin": 44.23,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|battery": {
+  "margin": -3.77,
+  "T_skin": 39.97,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|contact_lo": {
+  "margin": -4.27,
+  "T_skin": 40.47,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|contact_hi": {
+  "margin": -5.82,
+  "T_skin": 42.02,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|qi_bpp": {
+  "margin": -8.31,
+  "T_skin": 44.51,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|qi_epp": {
+  "margin": -7.73,
+  "T_skin": 43.93,
+  "passes": false
+ },
+ "open|20C|5g_outdoor|qi_mpp": {
+  "margin": -7.68,
+  "T_skin": 43.88,
+  "passes": false
+ },
+ "open|25C|delta|battery": {
+  "margin": -5.08,
+  "T_skin": 41.28,
+  "passes": false
+ },
+ "open|25C|delta|contact_lo": {
+  "margin": -5.88,
+  "T_skin": 42.08,
+  "passes": false
+ },
+ "open|25C|delta|contact_hi": {
+  "margin": -8.4,
+  "T_skin": 44.6,
+  "passes": false
+ },
+ "open|25C|delta|qi_bpp": {
+  "margin": -6.03,
+  "T_skin": 42.23,
+  "passes": false
+ },
+ "open|25C|delta|qi_epp": {
+  "margin": -5.78,
+  "T_skin": 41.98,
+  "passes": false
+ },
+ "open|25C|delta|qi_mpp": {
+  "margin": -5.76,
+  "T_skin": 41.96,
+  "passes": false
+ },
+ "open|25C|video_wifi|battery": {
+  "margin": -12.0,
+  "T_skin": 48.2,
+  "passes": false
+ },
+ "open|25C|video_wifi|contact_lo": {
+  "margin": -12.75,
+  "T_skin": 48.95,
+  "passes": false
+ },
+ "open|25C|video_wifi|contact_hi": {
+  "margin": -14.84,
+  "T_skin": 51.04,
+  "passes": false
+ },
+ "open|25C|video_wifi|qi_bpp": {
+  "margin": -13.37,
+  "T_skin": 49.57,
+  "passes": false
+ },
+ "open|25C|video_wifi|qi_epp": {
+  "margin": -12.93,
+  "T_skin": 49.13,
+  "passes": false
+ },
+ "open|25C|video_wifi|qi_mpp": {
+  "margin": -12.9,
+  "T_skin": 49.1,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|battery": {
+  "margin": -8.66,
+  "T_skin": 44.86,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|contact_lo": {
+  "margin": -9.16,
+  "T_skin": 45.36,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|contact_hi": {
+  "margin": -10.7,
+  "T_skin": 46.9,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|qi_bpp": {
+  "margin": -13.2,
+  "T_skin": 49.4,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|qi_epp": {
+  "margin": -12.62,
+  "T_skin": 48.82,
+  "passes": false
+ },
+ "open|25C|5g_outdoor|qi_mpp": {
+  "margin": -12.58,
+  "T_skin": 48.78,
+  "passes": false
+ },
+ "open|30C|delta|battery": {
+  "margin": -9.94,
+  "T_skin": 46.14,
+  "passes": false
+ },
+ "open|30C|delta|contact_lo": {
+  "margin": -10.73,
+  "T_skin": 46.93,
+  "passes": false
+ },
+ "open|30C|delta|contact_hi": {
+  "margin": -13.23,
+  "T_skin": 49.43,
+  "passes": false
+ },
+ "open|30C|delta|qi_bpp": {
+  "margin": -10.93,
+  "T_skin": 47.13,
+  "passes": false
+ },
+ "open|30C|delta|qi_epp": {
+  "margin": -10.68,
+  "T_skin": 46.88,
+  "passes": false
+ },
+ "open|30C|delta|qi_mpp": {
+  "margin": -10.67,
+  "T_skin": 46.87,
+  "passes": false
+ },
+ "open|30C|video_wifi|battery": {
+  "margin": -16.81,
+  "T_skin": 53.01,
+  "passes": false
+ },
+ "open|30C|video_wifi|contact_lo": {
+  "margin": -17.54,
+  "T_skin": 53.74,
+  "passes": false
+ },
+ "open|30C|video_wifi|contact_hi": {
+  "margin": -19.62,
+  "T_skin": 55.82,
+  "passes": false
+ },
+ "open|30C|video_wifi|qi_bpp": {
+  "margin": -18.23,
+  "T_skin": 54.43,
+  "passes": false
+ },
+ "open|30C|video_wifi|qi_epp": {
+  "margin": -17.81,
+  "T_skin": 54.01,
+  "passes": false
+ },
+ "open|30C|video_wifi|qi_mpp": {
+  "margin": -17.77,
+  "T_skin": 53.97,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|battery": {
+  "margin": -13.56,
+  "T_skin": 49.76,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|contact_lo": {
+  "margin": -14.05,
+  "T_skin": 50.25,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|contact_hi": {
+  "margin": -15.58,
+  "T_skin": 51.78,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|qi_bpp": {
+  "margin": -18.09,
+  "T_skin": 54.29,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|qi_epp": {
+  "margin": -17.52,
+  "T_skin": 53.72,
+  "passes": false
+ },
+ "open|30C|5g_outdoor|qi_mpp": {
+  "margin": -17.48,
+  "T_skin": 53.68,
+  "passes": false
+ },
+ "open|35C|delta|battery": {
+  "margin": -14.79,
+  "T_skin": 50.99,
+  "passes": false
+ },
+ "open|35C|delta|contact_lo": {
+  "margin": -15.58,
+  "T_skin": 51.78,
+  "passes": false
+ },
+ "open|35C|delta|contact_hi": {
+  "margin": -18.06,
+  "T_skin": 54.26,
+  "passes": false
+ },
+ "open|35C|delta|qi_bpp": {
+  "margin": -15.84,
+  "T_skin": 52.04,
+  "passes": false
+ },
+ "open|35C|delta|qi_epp": {
+  "margin": -15.59,
+  "T_skin": 51.79,
+  "passes": false
+ },
+ "open|35C|delta|qi_mpp": {
+  "margin": -15.57,
+  "T_skin": 51.77,
+  "passes": false
+ },
+ "open|35C|video_wifi|battery": {
+  "margin": -21.61,
+  "T_skin": 57.81,
+  "passes": false
+ },
+ "open|35C|video_wifi|contact_lo": {
+  "margin": -22.34,
+  "T_skin": 58.54,
+  "passes": false
+ },
+ "open|35C|video_wifi|contact_hi": {
+  "margin": -24.4,
+  "T_skin": 60.6,
+  "passes": false
+ },
+ "open|35C|video_wifi|qi_bpp": {
+  "margin": -23.1,
+  "T_skin": 59.3,
+  "passes": false
+ },
+ "open|35C|video_wifi|qi_epp": {
+  "margin": -22.68,
+  "T_skin": 58.88,
+  "passes": false
+ },
+ "open|35C|video_wifi|qi_mpp": {
+  "margin": -22.64,
+  "T_skin": 58.84,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|battery": {
+  "margin": -18.45,
+  "T_skin": 54.65,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|contact_lo": {
+  "margin": -18.94,
+  "T_skin": 55.14,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|contact_hi": {
+  "margin": -20.46,
+  "T_skin": 56.66,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|qi_bpp": {
+  "margin": -22.98,
+  "T_skin": 59.18,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|qi_epp": {
+  "margin": -22.41,
+  "T_skin": 58.61,
+  "passes": false
+ },
+ "open|35C|5g_outdoor|qi_mpp": {
+  "margin": -22.37,
+  "T_skin": 58.57,
+  "passes": false
+ },
+ "dock|20C|delta|battery": {
+  "margin": 9.45,
+  "T_skin": 26.75,
+  "passes": true
+ },
+ "dock|20C|delta|contact_lo": {
+  "margin": 9.24,
+  "T_skin": 26.96,
+  "passes": true
+ },
+ "dock|20C|delta|contact_hi": {
+  "margin": 8.72,
+  "T_skin": 27.48,
+  "passes": true
+ },
+ "dock|20C|delta|qi_bpp": {
+  "margin": 8.69,
+  "T_skin": 27.51,
+  "passes": true
+ },
+ "dock|20C|delta|qi_epp": {
+  "margin": 8.73,
+  "T_skin": 27.47,
+  "passes": true
+ },
+ "dock|20C|delta|qi_mpp": {
+  "margin": 8.73,
+  "T_skin": 27.47,
+  "passes": true
+ },
+ "dock|20C|video_wifi|battery": {
+  "margin": 7.01,
+  "T_skin": 29.19,
+  "passes": true
+ },
+ "dock|20C|video_wifi|contact_lo": {
+  "margin": 6.81,
+  "T_skin": 29.39,
+  "passes": true
+ },
+ "dock|20C|video_wifi|contact_hi": {
+  "margin": 6.29,
+  "T_skin": 29.91,
+  "passes": true
+ },
+ "dock|20C|video_wifi|qi_bpp": {
+  "margin": 5.99,
+  "T_skin": 30.21,
+  "passes": true
+ },
+ "dock|20C|video_wifi|qi_epp": {
+  "margin": 6.06,
+  "T_skin": 30.14,
+  "passes": true
+ },
+ "dock|20C|video_wifi|qi_mpp": {
+  "margin": 6.07,
+  "T_skin": 30.13,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|battery": {
+  "margin": 6.55,
+  "T_skin": 29.65,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|contact_lo": {
+  "margin": 6.38,
+  "T_skin": 29.82,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|contact_hi": {
+  "margin": 5.88,
+  "T_skin": 30.32,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|qi_bpp": {
+  "margin": 5.27,
+  "T_skin": 30.93,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|qi_epp": {
+  "margin": 5.39,
+  "T_skin": 30.81,
+  "passes": true
+ },
+ "dock|20C|5g_outdoor|qi_mpp": {
+  "margin": 5.4,
+  "T_skin": 30.8,
+  "passes": true
+ },
+ "dock|25C|delta|battery": {
+  "margin": 8.98,
+  "T_skin": 27.22,
+  "passes": true
+ },
+ "dock|25C|delta|contact_lo": {
+  "margin": 8.77,
+  "T_skin": 27.43,
+  "passes": true
+ },
+ "dock|25C|delta|contact_hi": {
+  "margin": 8.25,
+  "T_skin": 27.95,
+  "passes": true
+ },
+ "dock|25C|delta|qi_bpp": {
+  "margin": 8.22,
+  "T_skin": 27.98,
+  "passes": true
+ },
+ "dock|25C|delta|qi_epp": {
+  "margin": 8.26,
+  "T_skin": 27.94,
+  "passes": true
+ },
+ "dock|25C|delta|qi_mpp": {
+  "margin": 8.26,
+  "T_skin": 27.94,
+  "passes": true
+ },
+ "dock|25C|video_wifi|battery": {
+  "margin": 6.54,
+  "T_skin": 29.66,
+  "passes": true
+ },
+ "dock|25C|video_wifi|contact_lo": {
+  "margin": 6.35,
+  "T_skin": 29.85,
+  "passes": true
+ },
+ "dock|25C|video_wifi|contact_hi": {
+  "margin": 5.83,
+  "T_skin": 30.37,
+  "passes": true
+ },
+ "dock|25C|video_wifi|qi_bpp": {
+  "margin": 5.52,
+  "T_skin": 30.68,
+  "passes": true
+ },
+ "dock|25C|video_wifi|qi_epp": {
+  "margin": 5.6,
+  "T_skin": 30.6,
+  "passes": true
+ },
+ "dock|25C|video_wifi|qi_mpp": {
+  "margin": 5.6,
+  "T_skin": 30.6,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|battery": {
+  "margin": 5.85,
+  "T_skin": 30.35,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|contact_lo": {
+  "margin": 5.67,
+  "T_skin": 30.53,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|contact_hi": {
+  "margin": 5.18,
+  "T_skin": 31.02,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|qi_bpp": {
+  "margin": 4.56,
+  "T_skin": 31.64,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|qi_epp": {
+  "margin": 4.68,
+  "T_skin": 31.52,
+  "passes": true
+ },
+ "dock|25C|5g_outdoor|qi_mpp": {
+  "margin": 4.69,
+  "T_skin": 31.51,
+  "passes": true
+ },
+ "dock|30C|delta|battery": {
+  "margin": 8.5,
+  "T_skin": 27.7,
+  "passes": true
+ },
+ "dock|30C|delta|contact_lo": {
+  "margin": 8.29,
+  "T_skin": 27.91,
+  "passes": true
+ },
+ "dock|30C|delta|contact_hi": {
+  "margin": 7.77,
+  "T_skin": 28.43,
+  "passes": true
+ },
+ "dock|30C|delta|qi_bpp": {
+  "margin": 7.74,
+  "T_skin": 28.46,
+  "passes": true
+ },
+ "dock|30C|delta|qi_epp": {
+  "margin": 7.78,
+  "T_skin": 28.42,
+  "passes": true
+ },
+ "dock|30C|delta|qi_mpp": {
+  "margin": 7.78,
+  "T_skin": 28.42,
+  "passes": true
+ },
+ "dock|30C|video_wifi|battery": {
+  "margin": 6.06,
+  "T_skin": 30.14,
+  "passes": true
+ },
+ "dock|30C|video_wifi|contact_lo": {
+  "margin": 5.87,
+  "T_skin": 30.33,
+  "passes": true
+ },
+ "dock|30C|video_wifi|contact_hi": {
+  "margin": 5.35,
+  "T_skin": 30.85,
+  "passes": true
+ },
+ "dock|30C|video_wifi|qi_bpp": {
+  "margin": 5.04,
+  "T_skin": 31.16,
+  "passes": true
+ },
+ "dock|30C|video_wifi|qi_epp": {
+  "margin": 5.12,
+  "T_skin": 31.08,
+  "passes": true
+ },
+ "dock|30C|video_wifi|qi_mpp": {
+  "margin": 5.13,
+  "T_skin": 31.07,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|battery": {
+  "margin": 5.13,
+  "T_skin": 31.07,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|contact_lo": {
+  "margin": 4.96,
+  "T_skin": 31.24,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|contact_hi": {
+  "margin": 4.46,
+  "T_skin": 31.74,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|qi_bpp": {
+  "margin": 3.84,
+  "T_skin": 32.36,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|qi_epp": {
+  "margin": 3.96,
+  "T_skin": 32.24,
+  "passes": true
+ },
+ "dock|30C|5g_outdoor|qi_mpp": {
+  "margin": 3.97,
+  "T_skin": 32.23,
+  "passes": true
+ },
+ "dock|35C|delta|battery": {
+  "margin": 8.01,
+  "T_skin": 28.19,
+  "passes": true
+ },
+ "dock|35C|delta|contact_lo": {
+  "margin": 7.8,
+  "T_skin": 28.4,
+  "passes": true
+ },
+ "dock|35C|delta|contact_hi": {
+  "margin": 7.28,
+  "T_skin": 28.92,
+  "passes": true
+ },
+ "dock|35C|delta|qi_bpp": {
+  "margin": 7.25,
+  "T_skin": 28.95,
+  "passes": true
+ },
+ "dock|35C|delta|qi_epp": {
+  "margin": 7.29,
+  "T_skin": 28.91,
+  "passes": true
+ },
+ "dock|35C|delta|qi_mpp": {
+  "margin": 7.29,
+  "T_skin": 28.91,
+  "passes": true
+ },
+ "dock|35C|video_wifi|battery": {
+  "margin": 5.57,
+  "T_skin": 30.63,
+  "passes": true
+ },
+ "dock|35C|video_wifi|contact_lo": {
+  "margin": 5.38,
+  "T_skin": 30.82,
+  "passes": true
+ },
+ "dock|35C|video_wifi|contact_hi": {
+  "margin": 4.86,
+  "T_skin": 31.34,
+  "passes": true
+ },
+ "dock|35C|video_wifi|qi_bpp": {
+  "margin": 4.55,
+  "T_skin": 31.65,
+  "passes": true
+ },
+ "dock|35C|video_wifi|qi_epp": {
+  "margin": 4.63,
+  "T_skin": 31.57,
+  "passes": true
+ },
+ "dock|35C|video_wifi|qi_mpp": {
+  "margin": 4.64,
+  "T_skin": 31.56,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|battery": {
+  "margin": 4.4,
+  "T_skin": 31.8,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|contact_lo": {
+  "margin": 4.23,
+  "T_skin": 31.97,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|contact_hi": {
+  "margin": 3.73,
+  "T_skin": 32.47,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|qi_bpp": {
+  "margin": 3.12,
+  "T_skin": 33.08,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|qi_epp": {
+  "margin": 3.24,
+  "T_skin": 32.96,
+  "passes": true
+ },
+ "dock|35C|5g_outdoor|qi_mpp": {
+  "margin": 3.24,
+  "T_skin": 32.96,
+  "passes": true
+ },
+ "_counts": {
+  "open_pass": 0,
+  "open_total": 72,
+  "dock_pass": 72,
+  "dock_total": 72
+ }
+}

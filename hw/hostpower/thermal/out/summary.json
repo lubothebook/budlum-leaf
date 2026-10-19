@@ -1,0 +1,11 @@
+{
+ "selfcheck_pass": true,
+ "item1_file": "out/item1_cases.txt",
+ "thesis_counts": {
+  "open_pass": 0,
+  "open_total": 72,
+  "dock_pass": 72,
+  "dock_total": 72
+ },
+ "runtime_s": 5.7
+}

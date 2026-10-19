@@ -53,8 +53,13 @@
 | G-41 | the rotating-square tile: the CAD, the coupon, the edge-on hinge and the micro cell of Part 21 | **B** | the stretch claim and the energy figure | the drawing line and the energy line | a `4 x 4` tile coupon, gates MEC-39, MEC-42 and ENR-22 |
 | G-42 | the validator Leaf duty in the Budlum tree: session state, deterministic render, frame receipts, re-execution | **B** | every session that the Leaf shows | the network line | research order RG-18 |
 | G-43 | the floating back skin and the lattice-continuous seam: the seal, the kerf and the swap repeatability | **M** | the stretch and scratch claims | the partner line | skin and seam coupons, gates MEC-40 and MEC-41 |
+| G-44 | the secure element for a host: NVM counters, the HostRecord program and the anchor age rule in `fw/u7` | **B** | every host power claim | the firmware line | Part 22, Section 22.8, gates HST-15 to HST-19 |
+| G-45 | the Bare store that fits the margin, and one name per power state | **M** | the Bare tier and the state vocabulary | the energy line and the firmware line | Part 22, Sections 22.3 and 22.9, gates HST-1 and HST-20 |
+| G-46 | the heat of the body in free air, and the dew point of the dock plate | **M** | the always-on claim | the heat line | Part 22, Section 22.5, gates HST-9, HST-10 and HST-13 |
+| G-47 | the host power claim: the prior art search, the patent opinion and the legal questions | **M** | the word "first" and the Article 11 reading | the program line | Part 22, Section 22.11, gates HST-25 to HST-27 |
+| G-48 | the host authority: who enrols a host, and the chain revocation of a host key | **M** | the trust of every paired host | the network line and the program line | Part 22, Section 22.8, gate HST-15 |
 
-**The count**. **43 items: 14 blockers, 22 major and 7 minor**. The 14 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41 and G-42. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
+**The count**. **48 items: 15 blockers, 26 major and 7 minor**. The 15 blockers are G-01 to G-07, G-11, G-15, G-20, G-36, G-37, G-41, G-42 and G-44. The number is held in `tools/canon.json` and measured by gate PRG-15, so a second count cannot survive. `[DECISION]`
 
 ---
 
@@ -67,7 +72,7 @@
 | the link, the classes, the fail-safe ladder and the distance doctrine | written, with numbers and gates |
 | the firmware interfaces and the refusal set | written, at implementable depth |
 | the Budlum integration boundary and the orders RG-1 to RG-17 | written, with acceptance tests |
-| the verification plan and the claim policy | written, with 276 gates and one record format |
+| the verification plan and the claim policy | written, with 306 gates and one record format |
 | the drawing form and the check discipline | proven: the nine sheets P01 to P09 pass the strict check at zero collisions, zero overflows and zero missing labels |
 
 ---

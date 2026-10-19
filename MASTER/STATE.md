@@ -1,6 +1,6 @@
 # BUDLUM LEAF · PROGRAM STATE
 
-**Revision:** L.6.0 · 2026-10-12 · the living picture. The first file a new collaborator reads.
+**Revision:** L.6.1 · 2026-10-19 · the living picture. The first file a new collaborator reads.
 **Owner:** the Leaf Program Lead. It is rewritten in every working block (Volume XII, Section 7).
 
 ---
@@ -21,6 +21,21 @@
 | `LEAF/tools/check_crossrefs.py` + `canon.json` | **the count check**, gate PRG-15: one number per count, held in one file |
 | `LEAF/tools/multi_agent_optimize.py` | **multi-agent Arena API self-optimization runner**: coordinates CAD, Pafta, Hardware, and QA agents using `ARENA_API_KEY` from the environment |
 | `LEAF/pafta/P01` to `P22`, and `E01` to `E03` | **all 25 SVG sheets pass `OVER 0, COVERED 0, COLLIDE 0`**: `E01..E03` engineering sections, `P01..P13` core sheets, and `P14..P22` part-by-part sheets |
+
+---
+
+## 2b · The block of Revision L.6.1 (2026-10-19 · host power and the living Leaf)
+
+Part 22 (`FINAL/22-host-power-and-the-living-leaf.md`) holds the numbers. It adds to Part 21 and changes no L.6.0 number. The work lives in `hw/hostpower/`.
+
+- **The order**. Ayaz asked for a Leaf that lives as long as its host, with the main energy in the hardware. Ayaz gave the management of the program to the Program Lead.
+- **The Host Life Law**. On a paired host with a heat path, a Leaf lives as long as the host feeds it. Between hosts, a bridge store keeps the session.
+- **The first host-power tier is Buffer**: `15` to `20` micro cells over four quadrants. Bare does not fit the margin. Full stays.
+- **The host feeds the load and the cell floats near `50 %`**. The model gives `13.4` years of cell life against `1.8` years cycled daily.
+- **Always-on needs a host that pulls heat**. The dock plate passes `72` of `72` cases. Free air passes none, with a battery or with a host.
+- **The word "first" is held**. A wallet with a screen, a tablet with the cell removed and a display with no cell all exist.
+- **Not yet done**: the secure element has no NVM counters (G-44). The prior art search and the legal opinion are not ordered (G-47).
+- **The count**. `29` new gates `HST-1` to `HST-29`, research order RG-19, and gaps G-44 to G-48.
 
 ---
 

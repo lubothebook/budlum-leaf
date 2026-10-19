@@ -1,0 +1,182 @@
+POWER-PATH · question 1 · tiers Bare, Buffer, Full
+loads (W at VBUS): standby 0.061, safe screen 0.219, delta session 2.242, video 3.646, outdoor 7.482, peak 8.700
+assumptions: C-rate cap 3.0 C [H], seat floor 3.40 V [D], SOC reserve 10 %, storage float top 60 %, converter 0.90 [H]
+
+cell G at the target density: 0.0461 Wh, 11.85 mAh, DCIR 4.84 ohm, 0.115 g. Usable swing: float 60 to 10 % = 0.485 of the energy, topped 100 to 10 % = 0.911
+cell S at the target density: 0.0577 Wh, 14.81 mAh, DCIR 4.36 ohm, 0.114 g. Usable swing: float 60 to 10 % = 0.485 of the energy, topped 100 to 10 % = 0.911
+
+BUFFER: least number n of the 128 cells, by time-stepped discharge (S cell, 750 Wh/L target)
+  S    floated at 60 %     0.1 s      1 s      3 s     30 s    5 min   30 min
+  standby                      1        1        1        1        1       2e
+  safe screen                 2i       2i       2i       2i       2i       5e
+  delta session              14i      14i      14i      14i      15i      41e
+  video                      22i      22i      22i      23i      24i      67e
+  outdoor                    46i      46i      46i      46i      48i        -
+  peak                       53i      53i      53i      53i      56i        -
+  (e energy limit, i C-rate limit, v voltage or seat floor limit, x more than 128 cells)
+
+  G    floated at 60 %     0.1 s      1 s      3 s     30 s    5 min   30 min
+  standby                      1        1        1        1        1       2e
+  safe screen                 2i       2i       2i       2i       2i       6e
+  delta session              17i      17i      17i      17i      18i      52e
+  video                      28i      28i      28i      28i      29i      84e
+  outdoor                    57i      57i      57i      57i      59i        -
+  peak                       66i      66i      66i      66i      69i        -
+  (e energy limit, i C-rate limit, v voltage or seat floor limit, x more than 128 cells)
+
+  S    topped to 100 %     0.1 s      1 s      3 s     30 s    5 min   30 min
+  standby                      1        1        1        1        1        1
+  safe screen                 2i       2i       2i       2i       2i       3v
+  delta session              12i      12i      12i      12i      13i      23v
+  video                      20i      20i      20i      20i      22i      37v
+  outdoor                    40i      40i      40i      41i      44i      76v
+  peak                       47i      47i      47i      47i      51i      89v
+  (e energy limit, i C-rate limit, v voltage or seat floor limit, x more than 128 cells)
+
+  G    topped to 100 %     0.1 s      1 s      3 s     30 s    5 min   30 min
+  standby                      1        1        1        1        1        1
+  safe screen                 2i       2i       2i       2i       2i       3v
+  delta session              15i      15i      15i      15i      17i      28v
+  video                      24i      24i      24i      25i      27i      46v
+  outdoor                    50i      50i      50i      50i      54i      93v
+  peak                       58i      58i      58i      58i      63i     108v
+  (e energy limit, i C-rate limit, v voltage or seat floor limit, x more than 128 cells)
+
+BUFFER with the quadrant swap: cells spread over four quadrants, one removed, three carry the 3 s swap
+  standby        3 s on three quadrants needs 1 cells, so 4 cells in total (a multiple of 4)
+  safe screen    3 s on three quadrants needs 2 cells, so 4 cells in total (a multiple of 4)
+  delta session  3 s on three quadrants needs 14 cells, so 20 cells in total (a multiple of 4)
+  video          3 s on three quadrants needs 22 cells, so 32 cells in total (a multiple of 4)
+  outdoor        3 s on three quadrants needs 46 cells, so 64 cells in total (a multiple of 4)
+  peak           3 s on three quadrants needs 53 cells, so 72 cells in total (a multiple of 4)
+
+BRIEF Buffer 0.3 Wh nominal is 7 G cells, 0.8 g, 5 % of the 128
+BRIEF Buffer 0.3 Wh nominal is 6 S cells, 0.7 g, 5 % of the 128
+BRIEF Buffer 1.5 Wh nominal is 33 G cells, 3.8 g, 26 % of the 128
+BRIEF Buffer 1.5 Wh nominal is 27 S cells, 3.1 g, 21 % of the 128
+
+FULL: hours that all 128 cells carry each load, S target and G target (from 100 % to the 10 % reserve; from the 60 % float)
+  standby        G  40.00 h (40.00 h from 60 %)   S  40.00 h (40.00 h from 60 %)
+  safe screen    G  24.50 h (13.04 h from 60 %)   S  30.62 h (16.30 h from 60 %)
+  delta session  G   2.38 h ( 1.27 h from 60 %)   S   2.98 h ( 1.59 h from 60 %)
+  video          G   1.46 h ( 0.78 h from 60 %)   S   1.83 h ( 0.97 h from 60 %)
+  outdoor        G   0.70 h ( 0.37 h from 60 %)   S   0.88 h ( 0.47 h from 60 %)
+  peak           G   0.60 h ( 0.32 h from 60 %)   S   0.76 h ( 0.40 h from 60 %)
+
+BARE: capacitor technologies from published figures
+  EDLC, large cell (Maxwell BCAP3000)                     4.8 Wh/L usable,    6.4 Wh/L at full voltage, ESR x volume 0.109 ohm.cm3, thinnest part 60.40 mm
+      [PUBLICATION] Maxwell BCAP3000 P270 datasheet 3003279-EN.3: 3000 F min, 2.7 V, 0.23 mOhm max, 475 g, diameter 60.4 mm by about 166 mm, volume 0.476 L from the product matrix. Vmin 1.35 V is the converter cut [HYPOTHESIS]
+  EDLC, thin chip (Seiko CPH3225A)                        1.7 Wh/L usable,    2.3 Wh/L at full voltage, ESR x volume 1.15 ohm.cm3, thinnest part 0.90 mm
+      [PUBLICATION] Seiko CPH3225A: 11 mF, 3.3 V, 3.2 x 2.5 x 0.9 mm. The 160 ohm ESR comes from a distributor listing and is unconfirmed [HYPOTHESIS]
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)    11.3 Wh/L usable,   17.0 Wh/L at full voltage, ESR x volume 9.42 ohm.cm3, thinnest part 10.00 mm
+      [PUBLICATION] Taiyo Yuden LIC1030RS3R8206: 20 F, 3.8 V upper limit, 2.2 V lower limit, 10 mm diameter by 30 mm, internal resistance 4000 mOhm max (device sheet, non-preferred status)
+  thin solid-state cell (ST EFL700A39)                   21.2 Wh/L usable,   79.7 Wh/L at full voltage, ESR x volume 15.5 ohm.cm3, thinnest part 0.20 mm
+      [PUBLICATION] ST EnFilm EFL700A39 (DocID 17370): 0.7 mAh, 3.9 V nominal, 3.6 to 4.2 V, 25.4 x 25.4 x 0.2 mm, Rint 100 to 120 ohm, 10 mA pulse (100 ms on, 900 ms off), 5 mA continuous. The cell is treated as a linear capacitor over 3.6 to 4.2 V [HYPOTHESIS]
+  micro cell at 750 Wh/L and 850 Wh/L for scale: the capacitor store is 40 to 130 times less dense
+
+room for a Bare store: 50 % of the 12800 mm2 of the body (hinge corners, magnets and coil keep the rest) [H]
+  margin 0.24 mm, all of the margin                                     1.536 cm3
+  margin 0.12 mm, half                                                  0.768 cm3
+  margin 0.04 mm, after the 0.20 mm coil (FINAL/21 21.2.6 item 4)       0.256 cm3
+
+BARE minimum volume in cm3 (store behind a 0.90 converter). 'x' means no volume carries the load, because the ESR limits the power
+  EDLC, large cell (Maxwell BCAP3000)
+    load                0.1 s        1 s        3 s       30 s      5 min     30 min
+    standby           0.00457    0.00834     0.0163      0.123       1.19        7.1
+    safe screen        0.0164       0.03     0.0586      0.441       4.26       25.5
+    delta session       0.168      0.306      0.599        4.5       43.5        260
+    video               0.273      0.497      0.974       7.32       70.8        423
+    outdoor              0.56       1.02          2         15        145        869
+    peak                0.651       1.19       2.32       17.5        169   1.01e+03
+  EDLC, thin chip (Seiko CPH3225A)
+    load                0.1 s        1 s        3 s       30 s      5 min     30 min
+    standby            0.0301     0.0412     0.0638      0.358        3.3       19.6
+    safe screen         0.108      0.148      0.229       1.29       11.8       70.5
+    delta session         1.1       1.51       2.34       13.1        121        720
+    video                1.79       2.46       3.81       21.4        197   1.17e+03
+    outdoor              3.68       5.04       7.81       43.9        403    2.4e+03
+    peak                 4.28       5.86       9.08         51        469   2.79e+03
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)
+    load                0.1 s        1 s        3 s       30 s      5 min     30 min
+    standby             0.182      0.184      0.188       0.24      0.701        3.2
+    safe screen         0.653      0.661      0.674      0.861       2.52       11.5
+    delta session        6.67       6.75       6.89        8.8       25.7        117
+    video                10.8         11       11.2       14.3       41.8        191
+    outdoor              22.3       22.5         23       29.4       85.8        392
+    peak                 25.9       26.2       26.7       34.1       99.8        456
+  thin solid-state cell (ST EFL700A39)
+    load                0.1 s        1 s        3 s       30 s      5 min     30 min
+    standby             0.487      0.487      0.489      0.514      0.765       2.12
+    safe screen          1.75       1.75       1.76       1.84       2.75        7.6
+    delta session        17.9       17.9       17.9       18.8       28.1       77.6
+    video                  29         29       29.2       30.6       45.6        126
+    outdoor              59.6       59.6       59.8       62.9       93.7        259
+    peak                 69.3       69.3       69.6       73.1        109        301
+
+BARE reach: the longest time a store that fills the margin carries a load (s). Thin parts must also be thin enough
+  store volume 1.536 cm3 (0.24 mm, all of the margin)
+    EDLC, large cell (Maxwell BCAP3000)                  thickness NO : standby 389 s safe 107 s delta 9.47 s video 5.38 s outdoor 2.05 s peak 1.61 s
+    EDLC, thin chip (Seiko CPH3225A)                     thickness NO : standby 138 s safe 36.4 s delta 1.06 s video 0 s outdoor 0 s peak 0 s
+    lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  thickness NO : standby 800 s safe 138 s delta 0 s video 0 s outdoor 0 s peak 0 s
+    thin solid-state cell (ST EFL700A39)                 thickness ok : standby 1.15e+03 s safe 0 s delta 0 s video 0 s outdoor 0 s peak 0 s
+  store volume 0.768 cm3 (0.12 mm, half)
+    EDLC, large cell (Maxwell BCAP3000)                  thickness NO : standby 194 s safe 53.1 s delta 4.16 s video 2.13 s outdoor 0.494 s peak 0.288 s
+    EDLC, thin chip (Seiko CPH3225A)                     thickness NO : standby 67.7 s safe 16.7 s delta 0 s video 0 s outdoor 0 s peak 0 s
+    lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  thickness NO : standby 340 s safe 16 s delta 0 s video 0 s outdoor 0 s peak 0 s
+    thin solid-state cell (ST EFL700A39)                 thickness NO : standby 302 s safe 0 s delta 0 s video 0 s outdoor 0 s peak 0 s
+  store volume 0.256 cm3 (0.04 mm, after the 0.20 mm coil (FINAL/21 21.2.6 item 4))
+    EDLC, large cell (Maxwell BCAP3000)                  thickness NO : standby 63.8 s safe 16.9 s delta 0.664 s video 0.0425 s outdoor 0 s peak 0 s
+    EDLC, thin chip (Seiko CPH3225A)                     thickness NO : standby 20.6 s safe 3.67 s delta 0 s video 0 s outdoor 0 s peak 0 s
+    lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  thickness NO : standby 38.8 s safe 0 s delta 0 s video 0 s outdoor 0 s peak 0 s
+    thin solid-state cell (ST EFL700A39)                 thickness NO : standby 0 s safe 0 s delta 0 s video 0 s outdoor 0 s peak 0 s
+
+BARE verdict: does a store of the 0.24 mm margin (half the body area) carry the gap, thickness included
+  EDLC, large cell (Maxwell BCAP3000)                  standby        0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, large cell (Maxwell BCAP3000)                  safe screen    0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, large cell (Maxwell BCAP3000)                  delta session  0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, large cell (Maxwell BCAP3000)                  peak           0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, thin chip (Seiko CPH3225A)                     standby        0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, thin chip (Seiko CPH3225A)                     safe screen    0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, thin chip (Seiko CPH3225A)                     delta session  0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  EDLC, thin chip (Seiko CPH3225A)                     peak           0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  standby        0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  safe screen    0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  delta session  0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  peak           0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  thin solid-state cell (ST EFL700A39)                 standby        0.1 s=yes 1 s=yes 3 s=yes 30 s=yes 5 min=yes 30 min=no
+  thin solid-state cell (ST EFL700A39)                 safe screen    0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  thin solid-state cell (ST EFL700A39)                 delta session  0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+  thin solid-state cell (ST EFL700A39)                 peak           0.1 s=no 1 s=no 3 s=no 30 s=no 5 min=no 30 min=no
+
+BARE in the cell layer: the cell layer is 0.90 mm, so a 0.9 mm chip EDLC fits it. Tiles of cell volume (0.0769 cm3 each) the store needs
+  EDLC, large cell (Maxwell BCAP3000)                  safe screen    0.1 s=1 1 s=1 3 s=1 30 s=6
+  EDLC, large cell (Maxwell BCAP3000)                  delta session  0.1 s=3 1 s=4 3 s=8 30 s=59
+  EDLC, large cell (Maxwell BCAP3000)                  peak           0.1 s=9 1 s=16 3 s=31 30 s=228
+  EDLC, thin chip (Seiko CPH3225A)                     safe screen    0.1 s=2 1 s=2 3 s=3 30 s=17
+  EDLC, thin chip (Seiko CPH3225A)                     delta session  0.1 s=15 1 s=20 3 s=31 30 s=172
+  EDLC, thin chip (Seiko CPH3225A)                     peak           0.1 s=56 1 s=77 3 s=119 30 s=664
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  safe screen    0.1 s=9 1 s=9 3 s=9 30 s=12
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  delta session  0.1 s=87 1 s=88 3 s=90 30 s=115
+  lithium-ion capacitor (Taiyo Yuden LIC1030RS3R8206)  peak           0.1 s=337 1 s=341 3 s=348 30 s=445
+  thin solid-state cell (ST EFL700A39)                 safe screen    0.1 s=23 1 s=23 3 s=23 30 s=24
+  thin solid-state cell (ST EFL700A39)                 delta session  0.1 s=233 1 s=233 3 s=234 30 s=246
+  thin solid-state cell (ST EFL700A39)                 peak           0.1 s=902 1 s=902 3 s=905 30 s=952
+  The same loads on micro cells need 2 cells (safe screen) and 14 to 53 cells (delta to peak), see the Buffer table. Cells are 40 to 400 times denser.
+
+CERAMIC: 0.1 s at the 8.7 W peak needs 0.204 F on VBUS between 4.48 and 3.40 V, so 4089 of a 100 uF 0805 part (12.8 cm3) at 50 % bias loss [HYPOTHESIS]
+CERAMIC: 1 s at the 8.7 W peak needs 2.04 F on VBUS between 4.48 and 3.40 V, so 40891 of a 100 uF 0805 part (127.8 cm3) at 50 % bias loss [HYPOTHESIS]
+
+BUFFER sensitivity to the C-rate cap, S cell floated at 60 %, 3 s gap
+     2 C: safe screen 2, delta session 20, video 33, peak 78
+     3 C: safe screen 2, delta session 14, video 22, peak 53
+     5 C: safe screen 1, delta session 9, video 14, peak 33
+    10 C: safe screen 1, delta session 6, video 9, peak 22
+
+SAVINGS against Full (128 cells, S at 750 Wh/L: 7.38 Wh, 14.6 g of cells)
+  Bare               0 cells, 0.00 Wh, 0.0 g of cells, saves 14.6 g (100 %). A tile with no cell is 1.10 mm thick. A flat body is 1.10 mm thick, so it saves 0.90 mm
+  Buffer 14 cells   14 cells, 0.81 Wh, 1.6 g of cells, saves 13.0 g (89 %). A tile with no cell is 1.10 mm thick. A flat body is 2.00 mm thick, so it saves 0.00 mm
+  Buffer 23 cells   23 cells, 1.33 Wh, 2.6 g of cells, saves 12.0 g (82 %). A tile with no cell is 1.10 mm thick. A flat body is 2.00 mm thick, so it saves 0.00 mm
+  Buffer 52 cells   52 cells, 3.00 Wh, 5.9 g of cells, saves 8.7 g (59 %). A tile with no cell is 1.10 mm thick. A flat body is 2.00 mm thick, so it saves 0.00 mm
+  Full             128 cells, 7.38 Wh, 14.6 g of cells, saves 0.0 g (0 %). A tile with no cell is 1.10 mm thick. A flat body is 2.00 mm thick, so it saves 0.00 mm
+  A Buffer body is flat at 2.00 mm only if the cells sit in tiles of the full stack. Cells held outside the body (the B module) leave a 1.10 mm body.
+

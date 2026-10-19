@@ -1,0 +1,209 @@
+// Budlum Leaf wire protocol, additions for wire version 1.1 (RG-19 draft).
+//
+// This file is a DRAFT of the continuity team of hw/hostpower. It does not
+// edit proto/budlum/leaf/v1/leaf.proto. It follows the conventions of
+// proto/VERSIONING.md:
+//   * the same package, budlum.leaf.v1, and an additive minor version (1.1);
+//   * new messages, new LeafMessage bodies (33 to 38) and new ErrorCode values
+//     (1000 to 1009) only. No field number is reused or retyped;
+//   * enum values are prefixed with the enum name, zero is *_UNSPECIFIED;
+//   * none of these messages is parsed by U1 or U6 hardware, so a new field in
+//     a later minor is allowed (VERSIONING.md rule 2);
+//   * canonical bytes, SHA3-256 hashes, ML-DSA signatures as in leaf.proto.
+//
+// How to merge (a proposal for the wire-protocol team):
+//   1. append the enums and messages below to leaf.proto, before LeafMessage;
+//   2. append the six oneof bodies listed at the end to LeafMessage;
+//   3. append the ErrorCode values listed at the end to ErrorCode;
+//   4. raise the wire minor to 1.1 and add the domain tags of RG-19.
+// tests/test_proto_draft.py does the merge in memory and checks the result.
+//
+// Session ids are uint64 here, as in Hello, Admission and Receipt. The crate
+// validator/leaf-duty uses a 32-byte session id. That mismatch is an open
+// issue of the README, and the state_root below is 32 bytes either way.
+
+syntax = "proto3";
+
+package budlum.leaf.v1;
+
+// The power states of hw/hostpower/continuity/POWER-STATES.md.
+enum PowerState {
+  POWER_STATE_UNSPECIFIED = 0;
+  POWER_STATE_HOST = 1;
+  POWER_STATE_BRIDGE = 2;
+  POWER_STATE_ISLAND = 3;
+  POWER_STATE_SUSPENDED = 4;
+  POWER_STATE_RESUMING = 5;
+}
+
+enum PauseReason {
+  PAUSE_REASON_UNSPECIFIED = 0;
+  PAUSE_REASON_HOST_LOST = 1;
+  PAUSE_REASON_ENERGY_FLOOR = 2;
+  PAUSE_REASON_USER = 3;
+  // Set only by a validator, in a LapseNotice. The Leaf never signs it.
+  PAUSE_REASON_LAPSE = 4;
+}
+
+enum HostClass {
+  HOST_CLASS_UNSPECIFIED = 0;
+  HOST_CLASS_DOCK_PADS = 1;
+  HOST_CLASS_QI = 2;
+  HOST_CLASS_USB_PD = 3;
+  HOST_CLASS_WORN = 4;
+}
+
+enum PendingKind {
+  PENDING_KIND_UNSPECIFIED = 0;
+  // Shown by U1 from a speculative branch, never sent. The resume drops it.
+  PENDING_KIND_PREDICTED = 1;
+  // A wallet-signed value action held in the U7 outbox. The resume resends it.
+  PENDING_KIND_OUTBOX_ACTION = 2;
+  // An input batch that was in flight at the cut. The resume drops it.
+  PENDING_KIND_INPUT_IN_FLIGHT = 3;
+}
+
+enum ResumeSigner {
+  RESUME_SIGNER_UNSPECIFIED = 0;
+  RESUME_SIGNER_SESSION_KEY = 1;
+  // The grant expired during the gap: the wallet key signs, with a new grant.
+  RESUME_SIGNER_WALLET = 2;
+}
+
+message PendingAction {
+  PendingKind kind = 1;
+  uint64 batch_seq = 2;
+  uint32 taken_branch = 3;
+  // SHA3-256 of the canonical action bytes.
+  bytes action_hash = 4;
+}
+
+// Leaf to validator, from U7, signed with the session key. It is also a chain
+// transaction: the validator submits it. The signing scope is the canonical
+// bytes with the signature absent, under the tag BDLM_LEAF_SESSION_PAUSE_V1.
+message SessionPause {
+  uint64 session_id = 1;
+  // One more than the last committed pause. Never reused.
+  uint32 pause_seq = 2;
+  PauseReason reason = 3;
+  uint64 last_frame_no = 4;
+  // FrameCommit.chain_hash of the last frame the Leaf showed.
+  bytes last_frame_chain_hash = 5;
+  // The session state root the Leaf last verified.
+  bytes state_root = 6;
+  uint64 last_input_seq = 7;
+  // Receipt.input_chain_head at the cut.
+  bytes input_chain_head = 8;
+  TrustAnchor anchor = 9;
+  repeated PendingAction pending = 10;
+  PowerState power_state = 11;
+  HostClass last_host = 12;
+  // Energy left when the pause was signed, in millijoules. A planning hint.
+  uint32 store_remaining_mj = 13;
+  uint64 scan_tick = 14;
+  Signature signature = 15;
+}
+
+// Validator to Leaf. It names the slot that will hold the pause on chain.
+message SessionPauseAck {
+  uint64 session_id = 1;
+  uint32 pause_seq = 2;
+  bytes validator_id = 3;
+  bool accepted = 4;
+  ErrorCode code = 5;
+  // The slot that is expected to finalize the pause.
+  uint64 anchored_slot = 6;
+  // The slot whose snapshot any validator can use to rebuild the state.
+  uint64 snapshot_slot = 7;
+  Signature validator_signature = 8;
+}
+
+// Validator to chain, and to the Leaf at resume. The Leaf sent no pause and
+// no receipt for LAPSE_AFTER_S seconds. It changes no state and has no
+// authority: only a SessionResume of the Leaf ends it.
+message LapseNotice {
+  uint64 session_id = 1;
+  uint32 pause_seq = 2;
+  // The last second for which the chain holds a Leaf-signed receipt or input.
+  uint64 last_receipt_second = 3;
+  uint64 last_frame_no = 4;
+  bytes last_frame_chain_hash = 5;
+  bytes validator_id = 6;
+  uint64 detected_at_us = 7;
+  Signature validator_signature = 8;
+}
+
+// Leaf to validator, after a Hello with resume_session_id. A chain transaction.
+// Tag: BDLM_LEAF_SESSION_RESUME_V1.
+message SessionResume {
+  uint64 session_id = 1;
+  uint32 pause_seq = 2;
+  uint32 resume_seq = 3;
+  // The paused state root that the Leaf checked against a finality proof.
+  bytes expected_state_root = 4;
+  TrustAnchor anchor = 5;
+  ResumeSigner signer = 6;
+  // Present only when the signer is the wallet: the new grant.
+  SessionGrant renewed_grant = 7;
+  PowerState power_state = 8;
+  HostClass host = 9;
+  // Hashes of the PREDICTED and INPUT_IN_FLIGHT actions the Leaf drops.
+  repeated bytes drop_pending = 10;
+  uint64 last_frame_shown = 11;
+  Signature signature = 12;
+}
+
+// Validator to Leaf. The state root must equal expected_state_root.
+message ResumeAck {
+  uint64 session_id = 1;
+  uint32 resume_seq = 2;
+  bytes validator_id = 3;
+  bytes state_root = 4;
+  // The session frame number of the first frame after the resume.
+  uint64 resume_frame_no = 5;
+  // True when the Leaf frame store was lost: send a full intra refresh.
+  bool intra_refresh = 6;
+  // The input epoch, equal to resume_seq, and the next input sequence.
+  uint32 epoch = 7;
+  uint64 next_input_seq = 8;
+  uint64 finality_height = 9;
+  repeated bytes dropped = 10;
+  ErrorCode code = 11;
+  uint64 unconfirmed_frames = 12;
+  Signature validator_signature = 13;
+}
+
+// Leaf to validator. A hint with a KMAC tag, as InputBatch. It lets the
+// validator thin the stream to a dark face and prepare the shadow.
+message PowerNotice {
+  PowerState state = 1;
+  HostClass host = 2;
+  // Milliseconds of live session left at the present load.
+  uint32 store_ms_live = 3;
+  // Milliseconds of hold (radios kept, face dark) after that.
+  uint32 store_ms_hold = 4;
+  bool face_lit = 5;
+  EnergyTier tier = 6;
+  uint64 notice_seq = 7;
+  bytes tag = 15;
+}
+
+// ---- additions to LeafMessage.body, field numbers 33 to 38 (wire 1.1) ----
+//     SessionPause session_pause = 33;
+//     SessionPauseAck session_pause_ack = 34;
+//     LapseNotice lapse_notice = 35;
+//     SessionResume session_resume = 36;
+//     ResumeAck resume_ack = 37;
+//     PowerNotice power_notice = 38;
+
+// ---- additions to ErrorCode (wire 1.1) ----
+//     ERROR_CODE_RESUME_STATE_MISMATCH = 1000;
+//     ERROR_CODE_PAUSE_UNKNOWN = 1001;
+//     ERROR_CODE_SESSION_NOT_PAUSED = 1002;
+//     ERROR_CODE_SESSION_NOT_ACTIVE = 1003;
+//     ERROR_CODE_STALE_EPOCH = 1004;
+//     ERROR_CODE_PAUSE_TTL_EXPIRED = 1005;
+//     ERROR_CODE_LAPSE_TOO_EARLY = 1006;
+//     ERROR_CODE_LAPSE_BAD_EVIDENCE = 1007;
+//     ERROR_CODE_PAUSE_RATE_LIMIT = 1008;
+//     ERROR_CODE_INPUT_EXPIRED = 1009;

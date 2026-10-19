@@ -1,0 +1,768 @@
+{
+ "thresholds": {
+  "V_HOST_OK_RISE": 9.0,
+  "V_HOST_OK_FALL": 8.0,
+  "T_HOST_QUAL": 0.02,
+  "T_MATE": 0.003,
+  "T_UNMATE": 0.0008,
+  "SOC_TOP_LO": 0.45,
+  "SOC_TOP_HI": 0.55,
+  "SOC_CLASS_DELTA": 0.3,
+  "SOC_CLASS_SAFE": 0.18,
+  "SOC_CLOSE": 0.12,
+  "SOC_FLOOR": 0.1,
+  "B_SOC_TARGET": 0.6,
+  "B_SOC_RING_MIN": 0.15,
+  "C_TOPUP": 0.5,
+  "CMAX": 3.0,
+  "V_SEAT_FLOOR": 3.4,
+  "ETA_UQ": 0.97,
+  "ETA_U4": 0.95,
+  "ETA_AON": 0.8,
+  "P_UQ_EACH": 6.25,
+  "I_JOIN": 0.38,
+  "V_AON_MIN": 2.3
+ },
+ "scenarios": {
+  "S1 Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S1 Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.480642967036374,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.2737528135180174,
+    "e_from_host_Wh": 0.19479985745069942,
+    "e_pack_Wh": 0.11439872882593284,
+    "e_bcell_Wh": -1.242382456866934e-10,
+    "mode_seconds": {
+     "BRIDGE": 241.66603826250568,
+     "HOST_TOPUP": 238.33396173749415
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.23919560699438375,
+    "soc_b_final": 0.5999998904669793
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.350, host ok)"
+    ],
+    [
+     60.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     60.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.358, host no)"
+    ],
+    [
+     300.37301275416894,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     300.37301275416894,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.215, host ok)"
+    ],
+    [
+     360.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     360.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.223, host no)"
+    ],
+    [
+     361.2700127541689,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     361.2700127541689,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.223, host ok)"
+    ]
+   ]
+  },
+  "S1 Full 128 cells S": {
+   "summary": {
+    "name": "S1 Full 128 cells S",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.7421068514858,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 0.5000001626440801,
+    "e_from_host_Wh": 0.4019703026828043,
+    "e_pack_Wh": -0.08655660352805833,
+    "e_bcell_Wh": -8.130264240629187e-11,
+    "mode_seconds": {
+     "BRIDGE": 241.66603826250568,
+     "HOST_TOPUP": 238.33396173749415
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.3616170605904506,
+    "soc_b_final": 0.60000039415799
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.350, host ok)"
+    ],
+    [
+     60.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     60.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.358, host no)"
+    ],
+    [
+     300.37301275416894,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     300.37301275416894,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.337, host ok)"
+    ],
+    [
+     360.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     360.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.345, host no)"
+    ],
+    [
+     361.2700127541689,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     361.2700127541689,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.345, host ok)"
+    ]
+   ]
+  },
+  "S1 Bare, 0.23 cm3 EDLC, close in 3 s": {
+   "summary": {
+    "name": "S1 Bare, 0.23 cm3 EDLC, close in 3 s",
+    "tier": "bare",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.8,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 0.0,
+    "e_from_host_Wh": 0.15786237315797536,
+    "e_pack_Wh": 0.0003981327975449019,
+    "e_bcell_Wh": -1.6064501695635e-09,
+    "mode_seconds": {
+     "BRIDGE": 4.491876158125842,
+     "HOST_FEED": 237.80542545974205,
+     "ISLAND": 237.17416210437932,
+     "HOST_TOPUP": 0.5285362777520788
+    },
+    "closed_clean_at_s": 63.04652442837054,
+    "final_soc": 0.9829530605908979,
+    "soc_b_final": 0.600000005964975
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)"
+    ],
+    [
+     60.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     60.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.998, host no)"
+    ],
+    [
+     63.04652442837054,
+     "Bare tier: session closed and the state saved, body dark"
+    ],
+    [
+     63.198850649789065,
+     "mode BRIDGE -> ISLAND (SOC 0.774, host no)"
+    ],
+    [
+     300.37301275416894,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     300.37301275416894,
+     "mode ISLAND -> HOST_TOPUP (SOC 0.774, host ok)"
+    ],
+    [
+     300.6920675332209,
+     "mode HOST_TOPUP -> HOST_FEED (SOC 0.981, host ok)"
+    ],
+    [
+     360.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     360.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.981, host no)"
+    ],
+    [
+     361.2700127541689,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     361.2700127541689,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.845, host ok)"
+    ],
+    [
+     361.4794942528692,
+     "mode HOST_TOPUP -> HOST_FEED (SOC 0.983, host ok)"
+    ]
+   ]
+  },
+  "S2 Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S2 Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.719678568977957,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.1727648981943877,
+    "e_from_host_Wh": 0.047197076303779305,
+    "e_pack_Wh": -0.007861836647280785,
+    "e_bcell_Wh": -3.417824060334267e-09,
+    "mode_seconds": {
+     "BRIDGE": 2.2130382625043428,
+     "HOST_TOPUP": 57.7869617374957
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.5067605624628517,
+    "soc_b_final": 0.599999994537945
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.500, host ok)"
+    ],
+    [
+     20.0,
+     "host lost, VHV 6.0 V"
+    ],
+    [
+     20.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.503, host no)"
+    ],
+    [
+     20.17001275416808,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     20.17001275416808,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.503, host ok)"
+    ],
+    [
+     40.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     40.0,
+     "mode HOST_TOPUP -> BRIDGE (SOC 0.505, host no)"
+    ],
+    [
+     42.020012754168086,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     42.020012754168086,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.504, host ok)"
+    ]
+   ]
+  },
+  "S2 Bare, 0.23 cm3 EDLC, close in 3 s": {
+   "summary": {
+    "name": "S2 Bare, 0.23 cm3 EDLC, close in 3 s",
+    "tier": "bare",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.8,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 0.0,
+    "e_from_host_Wh": 0.037815162152371594,
+    "e_pack_Wh": 0.00017598764056603008,
+    "e_bcell_Wh": -3.417824060334267e-09,
+    "mode_seconds": {
+     "BRIDGE": 2.2130382625043428,
+     "HOST_FEED": 57.56600552616146,
+     "HOST_TOPUP": 0.22095621133424756
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.9855377405803392,
+    "soc_b_final": 0.599999994537945
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)"
+    ],
+    [
+     20.0,
+     "host lost, VHV 6.0 V"
+    ],
+    [
+     20.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.998, host no)"
+    ],
+    [
+     20.17001275416808,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     20.17001275416808,
+     "mode BRIDGE -> HOST_FEED (SOC 0.986, host ok)"
+    ],
+    [
+     40.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     40.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.986, host no)"
+    ],
+    [
+     42.020012754168086,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     42.020012754168086,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.840, host ok)"
+    ],
+    [
+     42.240968965502326,
+     "mode HOST_TOPUP -> HOST_FEED (SOC 0.986, host ok)"
+    ]
+   ]
+  },
+  "S3 Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S3 Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.437783485366292,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 3.0491231086434856,
+    "e_from_host_Wh": 0.031600652600974444,
+    "e_pack_Wh": 0.4572654185222909,
+    "e_bcell_Wh": 0.07515290979853481,
+    "mode_seconds": {
+     "BRIDGE": 1571.3396258047542,
+     "HOST_TOPUP": 0.13531798952688665,
+     "HOST_FEED": 29.841669256304982,
+     "ISLAND": 7398.6833869494185
+    },
+    "closed_clean_at_s": 1600.816613050586,
+    "final_soc": 0.11999478756810104,
+    "soc_b_final": 0.0785802451292739
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> video"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)"
+    ],
+    [
+     0.15833074369502176,
+     "mode HOST_TOPUP -> HOST_FEED (SOC 0.550, host ok)"
+    ],
+    [
+     30.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     30.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.550, host no)"
+    ],
+    [
+     1600.816613050586,
+     "pack at 0.12: session closed, state saved, body goes dark at the floor"
+    ],
+    [
+     1601.316613050586,
+     "mode BRIDGE -> ISLAND (SOC 0.120, host no)"
+    ]
+   ]
+  },
+  "S3 Full 128 cells S": {
+   "summary": {
+    "name": "S3 Full 128 cells S",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.6388130479951655,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 0.5408402117638592,
+    "e_from_host_Wh": 0.03160334920819863,
+    "e_pack_Wh": 2.989571833491225,
+    "e_bcell_Wh": 0.06262686813186619,
+    "mode_seconds": {
+     "BRIDGE": 8970.023012754169,
+     "HOST_TOPUP": 0.02367257834902168,
+     "HOST_FEED": 29.953314667482843
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.1284096509521025,
+    "soc_b_final": 0.16564573741392496
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> video"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)"
+    ],
+    [
+     0.04668533251715678,
+     "mode HOST_TOPUP -> HOST_FEED (SOC 0.550, host ok)"
+    ],
+    [
+     30.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     30.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.550, host no)"
+    ]
+   ]
+  },
+  "S3 Bare, 0.23 cm3 EDLC, close in 3 s": {
+   "summary": {
+    "name": "S3 Bare, 0.23 cm3 EDLC, close in 3 s",
+    "tier": "bare",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.8,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 0.0,
+    "e_from_host_Wh": 0.031578111538433616,
+    "e_pack_Wh": 0.00024821909153322446,
+    "e_bcell_Wh": 0.07783452114580387,
+    "mode_seconds": {
+     "BRIDGE": 3.221863403958026,
+     "HOST_FEED": 29.976987245831864,
+     "ISLAND": 8966.801149350213
+    },
+    "closed_clean_at_s": 33.04652442837133,
+    "final_soc": 0.7741307602984422,
+    "soc_b_final": 0.05985038778648436
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> video"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_FEED (SOC 0.998, host ok)"
+    ],
+    [
+     30.0,
+     "host lost, VHV 0.0 V"
+    ],
+    [
+     30.0,
+     "mode HOST_FEED -> BRIDGE (SOC 0.998, host no)"
+    ],
+    [
+     33.04652442837133,
+     "Bare tier: session closed and the state saved, body dark"
+    ],
+    [
+     33.1988506497899,
+     "mode BRIDGE -> ISLAND (SOC 0.774, host no)"
+    ]
+   ]
+  },
+  "S4 Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S4 Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.719678568977957,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.1727648981943877,
+    "e_from_host_Wh": 0.048054557835394376,
+    "e_pack_Wh": -0.009445382853440886,
+    "e_bcell_Wh": -2.1967085270608393e-09,
+    "mode_seconds": {
+     "BRIDGE": 0.023012754168135103,
+     "HOST_TOPUP": 59.976987245831864
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.4575227966985659,
+    "soc_b_final": 0.6000001630580708
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.500, host ok)"
+    ],
+    [
+     20.0,
+     "quadrant Q3 removed, U_Q opens, its cells leave the bus"
+    ],
+    [
+     20.0,
+     "B module unseated: S_SEAT opens, VSYS_B on the B cell"
+    ],
+    [
+     23.0,
+     "quadrant Q3 joins in current limit 0.38 A, 5 cells at SOC 0.30"
+    ],
+    [
+     23.0,
+     "B module seated: S_SEAT closes after the 3 ms challenge"
+    ]
+   ]
+  },
+  "S5a Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S5a Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.7211556431540536,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.885773584375092,
+    "e_from_host_Wh": 0.0,
+    "e_pack_Wh": 0.03791932790644369,
+    "e_bcell_Wh": -3.841569258208259e-09,
+    "mode_seconds": {
+     "BRIDGE": 60.0
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.49373607972537786,
+    "soc_b_final": 0.5999999429341276
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     20.0,
+     "quadrant Q3 removed, U_Q opens, its cells leave the bus"
+    ],
+    [
+     23.0,
+     "quadrant Q3 joins in current limit 0.38 A, 5 cells at SOC 0.30"
+    ]
+   ]
+  },
+  "S5b Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S5b Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.545166503973391,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.135714204311848,
+    "e_from_host_Wh": 0.0,
+    "e_pack_Wh": 0.035685277728876245,
+    "e_bcell_Wh": 0.00034721751470339664,
+    "mode_seconds": {
+     "BRIDGE": 57.0,
+     "ISLAND": 2.9999999999999867
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.2781250920508374,
+    "soc_b_final": 0.5975898853886477
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> delta session"
+    ],
+    [
+     20.0,
+     "quadrant Q3 removed, U_Q opens, its cells leave the bus"
+    ],
+    [
+     20.0,
+     "mode BRIDGE -> ISLAND (SOC 0.000, host no)"
+    ],
+    [
+     23.0,
+     "quadrant Q3 joins in current limit 0.38 A, 20 cells at SOC 0.30"
+    ],
+    [
+     23.0,
+     "mode ISLAND -> BRIDGE (SOC 0.300, host no)"
+    ]
+   ]
+  },
+  "S6 Buffer 20 cells S, float 60 %": {
+   "summary": {
+    "name": "S6 Buffer 20 cells S, float 60 %",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.372416175959352,
+    "bus_below_seat_floor_s": 12.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 2.978758728929644,
+    "e_from_host_Wh": 1.2499643613636608,
+    "e_pack_Wh": 0.3966773992117297,
+    "e_bcell_Wh": -2.3212212307761376e-09,
+    "mode_seconds": {
+     "BRIDGE": 0.023012754168135103,
+     "HOST_TOPUP": 899.9769872458319
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.17677228930167083,
+    "soc_b_final": 0.6000010174842437
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> outdoor"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)"
+    ]
+   ]
+  },
+  "S6 Full 128 cells S": {
+   "summary": {
+    "name": "S6 Full 128 cells S",
+    "tier": "buffer",
+    "vaon_min": 1.8,
+    "vaon_dropped": false,
+    "vbus_min": 3.8102076158965787,
+    "bus_below_seat_floor_s": 0.0,
+    "brownout_s": 0.0,
+    "collapse_steps": 0,
+    "c_rate_max": 1.0521220592527663,
+    "e_from_host_Wh": 1.2499670324103094,
+    "e_pack_Wh": 0.6662518195831673,
+    "e_bcell_Wh": -2.3212212307761376e-09,
+    "mode_seconds": {
+     "BRIDGE": 0.023012754168135103,
+     "HOST_TOPUP": 899.9769872458319
+    },
+    "closed_clean_at_s": null,
+    "final_soc": 0.45849157857165657,
+    "soc_b_final": 0.6000010174842437
+   },
+   "events": [
+    [
+     0.0,
+     "session class -> outdoor"
+    ],
+    [
+     0.023012754168135103,
+     "host qualified at 12.0 V after 20 ms"
+    ],
+    [
+     0.023012754168135103,
+     "mode BRIDGE -> HOST_TOPUP (SOC 0.550, host ok)"
+    ]
+   ]
+  }
+ },
+ "island_never_dropped": true
+}
