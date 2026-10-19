@@ -1,0 +1,99 @@
+FLEET seat · economics of a shared Core · every figure is a [HYPOTHESIS] unless tagged. Spectrum and stake are excluded (UNKNOWN).
+
+1 · the cost of a C2 site: 3 sectors of 256 elements, 100 W each, one reference compute box, a 4 h UPS
+  line                                low         base         high
+  arrays                           121800       220560       410400
+  compute box (server, 4 eng        50800        80180       131000
+  arrays, build, backhaul, U       166136       307064       585517
+  capex                            216936       387244       716517
+  annualised capex                  50151        88367       161595
+  opex per year                     27151        69436       281743
+  annual cost                       77302       157803       443338
+  the reference box alone: 50800 / 80180 / 131000 USD. The silicon that the Leaf also carries is not in this table.
+  power: arrays 2.39 kW, compute box 1.22 kW, peak 3.61 kW, average 2.53 kW; energy 3456 USD per year at the base.
+  a 64T64R AAU draws about 1 kW [PUBLICATION, inferred from a 3 kW three-sector site of China Mobile]; this model gives 0.80 kW per 256-element sector.
+
+2 · registered Leafs per site at the peak mix, and the cost per Leaf, capacity bound (a city dense enough that capacity, not coverage, sets the sites)
+  The compute is right-sized: each device type is bought on its own limit (servers, frame engines, MA35D encoders, signers).
+  radius sectors Leafs/site    radio    servers/engines/enc/hsm delta ses USD/Leaf-yr USD/Leaf-mo
+     0.5       1       1074     ctrl             1 / 3 / 10 / 1       249      107.5       8.96
+     0.5       3       3222     ctrl             1 / 8 / 29 / 2       747       57.9       4.82
+     1.0       1       1074     ctrl             1 / 3 / 10 / 1       249      107.5       8.96
+     1.0       3       3222     ctrl             1 / 8 / 29 / 2       747       57.9       4.82
+     2.0       1        133       dl              1 / 1 / 2 / 1        76      797.7      66.47
+     2.0       3        398       dl              1 / 1 / 4 / 1       229      380.7      31.73
+  Leafs per site count the registered Leafs at the 15 percent session peak of net/discovery/density.py.
+
+3 · the cost per Leaf by fleet size. A metro of 400 km2 (20 x 20 km), the Leafs spread evenly. Sector radius 1 km, 3 sectors.
+  A site must cover the area (coverage) and carry the Leafs (capacity). Replicas: R sites reach every point, none above (R-1)/R of its capacity.
+  one site covers 3.1 km2 and carries 3222 registered Leafs; the capacity at the peak is 1026 Leafs per km2 of cover.
+  A coverage-bound site below the capacity bound holds the smallest compute (1 server, 1 engine, 1 encoder, 1 signer): the cost per Leaf then falls with the fleet.
+       Leafs   per km2 | R = 1: sites, USD/Leaf-month      | R = 2: sites, USD/Leaf-month     
+        1000       2.5 |     153 sites,    1902.35  cov    |     306 sites,    3804.70  cov   
+       10000      25.0 |     153 sites,     190.24  cov    |     306 sites,     380.47  cov   
+      100000     250.0 |     153 sites,      19.73  cov    |     306 sites,      38.39  cov   
+     1000000    2500.0 |     310 sites,       4.82  cap    |     621 sites,       9.65  cap   
+    10000000   25000.0 |    3103 sites,       4.82  cap    |    6207 sites,       9.65  cap   
+  cov = coverage bound, cap = capacity bound. Below about 492347 Leafs in the metro the coverage sets the cost.
+
+4 · the unit cost of each network function, per session-hour, capacity bound, base case (gate SW-19)
+  one site of 3 sectors at 1 km, compute right-sized: 1 servers, 8 engines, 29 encoders, 2 signers.
+  annual cost 186513 USD per site (the categories sum to 186513; the table above adds a spectrum line of 0)
+  function    USD/year | USD per delta session-hour at 10 / 25 / 50 % utilisation
+  array          62949 |   0.0962   0.0385   0.0192
+  compute        58868 |   0.0900   0.0360   0.0180
+  site           45231 |   0.0692   0.0277   0.0138
+  backhaul       15000 |   0.0229   0.0092   0.0046
+  power           4466 |   0.0068   0.0027   0.0014
+  all, delta    186513 |   0.2852   0.1141   0.0570
+  all, video    186513 |   1.6103   0.6441   0.3221   (132 video sessions per site)
+  The meter of H-15 counts bytes of the class: a delta session hour is 0.90 GB down, a video session hour 13.5 GB.
+  Cost per GB at 25 % utilisation: delta 0.127 USD, video 0.048 USD. Per session minute: delta 0.0019 USD, video 0.0107 USD.
+  The session price is deferred by Ayaz. These are the costs the price must cover. A 20 percent margin raises each by 25 percent.
+
+5 · the cost per Leaf-year at C0, C1 and C2 (the Core part only; the Leaf is the same Leaf)
+  the L.6.0 Leaf, unit cost at 1 M a year, base: 1575 USD; over 4 years 394 USD per year [TREE] program/budget.py
+  case                                Core USD     Leafs USD/Leaf-yr
+  C0 dock Core, 1 Leaf on the pad         3600         1     949.7
+  C0 dock Core, 2 pads                    3600         2     474.8
+  C1 room Core, 1 Leaf                    4000         1    1055.2
+  C1 room Core, 3 Leafs                   4000         3     351.7
+  C1 room Core, 6 Leafs                   4000         6     175.9
+  C2 site, 3 sectors at 1 km            457818      3222      57.9   (annual cost incl. opex, capacity bound)
+  The Core part of a room costs 176 to 1055 USD per Leaf-year; a shared site costs 58. The Leaf keeps its silicon in all three.
+
+6 · the Monte Carlo: cost per registered Leaf-month at the capacity bound, 3 sectors, 1 km. 300 draws over the cost and the capacity ranges.
+  USD per Leaf-month: p10 4.92, p50 8.38, p90 79.81. Binding radio limit: radio.dl 74%, radio.ctrl 25%, radio.ul 0%
+
+7 · the failure and the power of a Core site, and the replica count
+  rates [HYPOTHESIS]: radio and array 1 per 80 000 h, compute box 1 per 40 000 h, site power 1 per 100 000 h, repair 6 h by a truck.
+  hardware: 0.42 failures per year, 2.50 h dark per year, availability 0.99972
+  grid: outages per year and mean length are the unknown. Rows: the UPS hours that survive the outage law.
+  grid (per year, mean h)      UPS 1 h   UPS 4 h   UPS 8 h  UPS 24 h
+  good, 0.5 per year, 1 h    0.18 ev  0.2h 0.01 ev  0.0h 0.00 ev  0.0h 0.00 ev  0.0h
+  fair, 3 per year, 1.5 h    1.54 ev  2.3h 0.21 ev  0.3h 0.01 ev  0.0h 0.00 ev  0.0h
+  poor, 12 per year, 3 h     8.60 ev 25.8h 3.16 ev  9.5h 0.83 ev  2.5h 0.00 ev  0.0h
+  cells: dark events per year and dark hours per year of the site. UPS cost at 4 h: 11504 USD, 8 h: 18007 USD at the base.
+  Replicas. q is the share of time that one site is dark; R sites reach the same Leaf; beta is the common cause (one feeder, one firmware).
+  q of one site, fair grid, 4 h UPS: 3.21e-04 (168.5 min per year)
+  R   beta       dark min/yr    events/yr   capacity  USD/Leaf-mo x
+  1   0.02            168.51        0.625       1.00           1.00
+  2   0.02              3.42        0.012       0.50           2.00
+  2   0.30             50.61        0.187       0.50           2.00
+  3   0.02              3.37        0.012       0.67           1.50
+  3   0.30             50.55        0.187       0.67           1.50
+  The grid is a common cause for sites that share a feeder. With beta 0.3 a second site gains little: put the second site on another feeder.
+  What a failure does to the Leaf: the shadow takes over, 4 to 5 frames covered by U1 at p50 and p99 [TREE] hw/dock dockpair;
+  a cold start is 133 ms at p50 and 152 ms at p99. Without any Core in reach the Leaf falls back to a far validator, 93 ms RTT: the delta class holds, video does not.
+  A dock pair in one box makes the joint loss of power and primary 60 times more frequent [TREE] hw/dock: never put the shadow in the primary site.
+  Recommended: R = 2 sites reach every Leaf, on two feeders; each site holds at most 50 to 60 percent of its sessions; one spare compute box per site;
+  a UPS of 4 h on the fair grid, 8 h on the poor grid; the shadow of a session lives in the other site. The site cost rises by 2 times for the same Leafs.
+  Blast radius: one site holds 3222 registered Leafs, up to 747 live delta sessions. One event touches all of them. [HYPOTHESIS]
+  Power of the site at capacity: 4.7 kW peak, 3.3 kW average. Per registered Leaf 1.01 W; per live delta session 6.3 W against 2.19 W in the Leaf.
+
+8 · the receipts. Part 21 has one receipt per session and second; the Core can settle them in one transaction per slot.
+  one site, 3222 registered Leafs at the peak mix: 757 receipts per second (483 live, 274 idle).
+  naive on chain: 7.6 MB/s with the key inline (10039 B each), 5.6 MB/s with the key by reference (7447 B).
+  aggregated by the Core: one transaction per 6 s slot of 3509 B, 0.58 kB/s. The receipts stay with the Core and each Leaf holds its Merkle path.
+  the ratio is 12999 times (key inline). For 1 000 000 registered Leafs at 3222 per site: 310 sites, naive 2 GB/s, aggregated 0.18 MB/s.
+  the aggregate needs a rule: the Leaf attestation of each second stays checkable by a challenger for the challenge period. Gate HC-C9.

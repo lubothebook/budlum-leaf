@@ -1,0 +1,687 @@
+{
+ "avail": [
+  {
+   "n": 1,
+   "design": "split",
+   "core": 8.333298611162832e-06,
+   "skin": 2.0333126612537278e-05,
+   "all_dark": 2.8666255781684136e-05,
+   "mean_dark_screens": 2.8666255781684136e-05,
+   "events_per_h": 9e-05
+  },
+  {
+   "n": 1,
+   "design": "leafs",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 2.8332931948260587e-05,
+   "mean_dark_screens": 2.8332931948149565e-05,
+   "events_per_h": 7.000000000000001e-05
+  },
+  {
+   "n": 2,
+   "design": "split",
+   "core": 8.333298611162832e-06,
+   "skin": 2.0333126612537278e-05,
+   "all_dark": 8.333712043784303e-06,
+   "mean_dark_screens": 5.733251156336827e-05,
+   "events_per_h": 0.00013000000000000002
+  },
+  {
+   "n": 2,
+   "design": "leafs",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 1.6745999142919743e-07,
+   "mean_dark_screens": 5.666586389629913e-05,
+   "events_per_h": 0.00014000000000000001
+  },
+  {
+   "n": 3,
+   "design": "split",
+   "core": 8.333298611162832e-06,
+   "skin": 2.0333126612537278e-05,
+   "all_dark": 8.333298619600527e-06,
+   "mean_dark_screens": 8.599876734505241e-05,
+   "events_per_h": 0.00017
+  },
+  {
+   "n": 3,
+   "design": "leafs",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 1.6666667512765798e-07,
+   "mean_dark_screens": 8.49987958444487e-05,
+   "events_per_h": 0.00021
+  },
+  {
+   "n": 4,
+   "design": "split",
+   "core": 8.333298611162832e-06,
+   "skin": 2.0333126612537278e-05,
+   "all_dark": 8.333298611162832e-06,
+   "mean_dark_screens": 0.00011466502312673654,
+   "events_per_h": 0.00021
+  },
+  {
+   "n": 4,
+   "design": "leafs",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 1.6666665281217519e-07,
+   "mean_dark_screens": 0.00011333172779259826,
+   "events_per_h": 0.00028000000000000003
+  },
+  {
+   "n": 6,
+   "design": "split",
+   "core": 8.333298611162832e-06,
+   "skin": 2.0333126612537278e-05,
+   "all_dark": 8.333298611162832e-06,
+   "mean_dark_screens": 0.00017199753469010481,
+   "events_per_h": 0.00029000000000000006
+  },
+  {
+   "n": 6,
+   "design": "leafs",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 1.6666665281217519e-07,
+   "mean_dark_screens": 0.0001699975916888974,
+   "events_per_h": 0.00042
+  },
+  {
+   "n": 3,
+   "design": "split",
+   "tether": "mmwave",
+   "core": 8.333298611162832e-06,
+   "skin": 0.0005753899552290997,
+   "all_dark": 8.333489106004954e-06,
+   "mean_dark_screens": 0.0017511553768316812,
+   "events_per_h": 6.00011
+  },
+  {
+   "n": 3,
+   "design": "leafs",
+   "tether": "mmwave",
+   "core": 8.333298611162832e-06,
+   "skin": 1.999980000133572e-05,
+   "leaf": 2.8166269989804427e-05,
+   "all_dark": 1.6666667512765798e-07,
+   "mean_dark_screens": 8.49987958444487e-05,
+   "events_per_h": 0.00021
+  }
+ ],
+ "power": [
+  {
+   "n": 1,
+   "design": "split",
+   "lit_s": 1400.103777681285,
+   "restarts_year": 1.4856888897502023
+  },
+  {
+   "n": 3,
+   "design": "split",
+   "lit_s": 744.1585506577428,
+   "restarts_year": 1.5549296685893663
+  },
+  {
+   "n": 6,
+   "design": "split",
+   "lit_s": 437.0342911358091,
+   "restarts_year": 1.5884495143538062
+  }
+ ],
+ "case": [
+  {
+   "case": "C1 host power lost, the Core store carries",
+   "cost": "all 3 Skins keep the session for 12 min lit (one Skin: 23 min), then 16 min dark; one store, 3 loads",
+   "back": "on a host: the live frame in 0.3 s (Wi-Fi) to 2.4 s (cold 5G)",
+   "state": "none finalized; the flush rule holds"
+  },
+  {
+   "case": "C2 one Skin link lost",
+   "cost": "that Skin shows the ROM screen in 15 ms; the other Skins and the session are untouched",
+   "back": "relink and the last frame in 109 ms (cable), 76 ms (60 GHz)",
+   "state": "none; touches on a dark Skin are lost"
+  },
+  {
+   "case": "C3 the Core box dies",
+   "cost": "all 3 Skins go dark at once; the session lapses after 2 s",
+   "back": "Skins on another Core: the live frame in 0.30 s; the Core must be reached by hand",
+   "state": "none finalized; up to 7 s if the Core had no other radio path and no flush"
+  },
+  {
+   "case": "C4 the validator role fails on the Core",
+   "cost": "a shadow in another power domain takes over: 4 to 5 frames covered by the Core compositor; the Skins see no break",
+   "back": "at once; a cold start without a shadow takes about 130 ms",
+   "state": "none"
+  },
+  {
+   "case": "C5 a Skin dies",
+   "cost": "that screen only; the Core and the session are untouched",
+   "back": "a new Skin pairs: a wallet action, then the live frame in 0.3 s",
+   "state": "none"
+  }
+ ],
+ "link": [
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 0.05,
+   "store": "none",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.58459777461394,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 0.05,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.67995110499612,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 0.05,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.57336690560417,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 1.0,
+   "store": "none",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.40338474788868,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 1.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.57491568200004,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 1.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.50889829848619,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 10.0,
+   "store": "none",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.32277096631013,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 10.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.50123244210737,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 10.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.71402247853919,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 60.0,
+   "store": "none",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.51816948968076,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 60.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.7966898520108,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 60.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.4538558616086,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 900.0,
+   "store": "none",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.67183258283931,
+   "missed": 216000
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 900.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.4674992423464,
+   "missed": 216000
+  },
+  {
+   "tether": "cable",
+   "kind": "glitch",
+   "outage_s": 900.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 105.44823994933718,
+   "missed": 216000
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 0.05,
+   "store": "none",
+   "shows": "black",
+   "rom_ms": null,
+   "back_ms": 155.5618331832673,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 0.05,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.55665713193142,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 0.05,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.59405811033815,
+   "missed": 12
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 1.0,
+   "store": "none",
+   "shows": "black",
+   "rom_ms": null,
+   "back_ms": 155.48441288227033,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 1.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.77533861385842,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 1.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.46225889214244,
+   "missed": 240
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 10.0,
+   "store": "none",
+   "shows": "black",
+   "rom_ms": null,
+   "back_ms": 155.59639740385626,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 10.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.48685576205224,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 10.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.47364407150428,
+   "missed": 2400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 60.0,
+   "store": "none",
+   "shows": "black",
+   "rom_ms": null,
+   "back_ms": 155.42394565687204,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 60.0,
+   "store": "seconds",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.52427762496117,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 60.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.5378350079066,
+   "missed": 14400
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 900.0,
+   "store": "none",
+   "shows": "black",
+   "rom_ms": null,
+   "back_ms": 155.65454861404345,
+   "missed": 216000
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 900.0,
+   "store": "seconds",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.5098678523883,
+   "missed": 216000
+  },
+  {
+   "tether": "cable",
+   "kind": "unplug",
+   "outage_s": 900.0,
+   "store": "minutes",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 155.58386519353112,
+   "missed": 216000
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 0.05,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.71510888679607,
+   "missed": 12
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 0.05,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.49688953782311,
+   "missed": 12
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 1.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.70864106697876,
+   "missed": 240
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 1.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.58657652952499,
+   "missed": 240
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 10.0,
+   "store": "seconds",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.35752020367447,
+   "missed": 2400
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 10.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.57495681504936,
+   "missed": 2400
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 60.0,
+   "store": "seconds",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.39614790161319,
+   "missed": 14400
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 60.0,
+   "store": "minutes",
+   "shows": "the ROM screen",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.45991197972549,
+   "missed": 14400
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 900.0,
+   "store": "seconds",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.46464240784611,
+   "missed": 216000
+  },
+  {
+   "tether": "mmwave",
+   "kind": "glitch",
+   "outage_s": 900.0,
+   "store": "minutes",
+   "shows": "the ROM screen, then black",
+   "rom_ms": 14.833333333333334,
+   "back_ms": 73.62713810037116,
+   "missed": 216000
+  }
+ ],
+ "rates": {
+  "core_box": [
+   5e-05,
+   600.0
+  ],
+  "skin_panel": [
+   2e-05,
+   3600.0
+  ],
+  "cable_link": [
+   2e-05,
+   60.0
+  ],
+  "mmwave_link": [
+   2.0,
+   1.0
+  ],
+  "host_power": [
+   0.01,
+   null
+  ],
+  "validator_crash": [
+   0.5,
+   120.0
+  ]
+ },
+ "ratio_all_dark_n3": 49.999789179316465,
+ "check": [
+  {
+   "n": 2,
+   "design": "split",
+   "closed": 0.013313365657457998,
+   "sim": 0.013393548970542997
+  },
+  {
+   "n": 2,
+   "design": "leafs",
+   "closed": 0.0017313533595635366,
+   "sim": 0.0017186189740582773
+  },
+  {
+   "n": 3,
+   "design": "split",
+   "closed": 0.012448969752261063,
+   "sim": 0.012549563725705863
+  },
+  {
+   "n": 3,
+   "design": "leafs",
+   "closed": 7.20408073101586e-05,
+   "sim": 7.531204069606701e-05
+  }
+ ],
+ "spof": [
+  {
+   "path": "C2 km, 5G cell-site, large Core antenna",
+   "rtt": 3.6577379670563426,
+   "warm50": 4,
+   "warm99": 5,
+   "cold50": 133.20982085175353,
+   "cold99": 152.05984315196244
+  },
+  {
+   "path": "C2 far, far validator",
+   "rtt": 83.948820071688,
+   "warm50": 23,
+   "warm99": 25,
+   "cold50": 494.51969032259603,
+   "cold99": 517.7071063755036
+  }
+ ],
+ "valav": [
+  {
+   "fleet": "stress fleet of net/discovery",
+   "k": 1,
+   "minutes_year": 8684.589504299112
+  },
+  {
+   "fleet": "stress fleet of net/discovery",
+   "k": 2,
+   "minutes_year": 311.6064762572838
+  },
+  {
+   "fleet": "stress fleet of net/discovery",
+   "k": 3,
+   "minutes_year": 175.98110436011396
+  },
+  {
+   "fleet": "stress fleet of net/discovery",
+   "k": 4,
+   "minutes_year": 173.78424794219418
+  },
+  {
+   "fleet": "healthy fleet, one tenth of the crash rate",
+   "k": 1,
+   "minutes_year": 875.2418370335845
+  },
+  {
+   "fleet": "healthy fleet, one tenth of the crash rate",
+   "k": 2,
+   "minutes_year": 18.905210782084136
+  },
+  {
+   "fleet": "healthy fleet, one tenth of the crash rate",
+   "k": 3,
+   "minutes_year": 17.507692547874232
+  },
+  {
+   "fleet": "healthy fleet, one tenth of the crash rate",
+   "k": 4,
+   "minutes_year": 17.50541183587817
+  }
+ ]
+}

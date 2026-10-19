@@ -1,0 +1,369 @@
+BUDLUM LEAF · THE FAR LINK · block HP-3 seat far link · study, all [HYPOTHESIS] unless tagged
+
+0 · the self test of the path loss models (known values)
+  fspl_2.44GHz_1km_dB          100.2
+  uma_nlos_3.5GHz_1km_dB       141.7
+  uma_los_3.5GHz_1km_dB        109.4
+  hata_0.73GHz_1km_dB          124.0
+  uma_nlos_0.73GHz_1km_dB      128.1
+  rma_nlos_0.73GHz_5km_dB      143.8
+  o2i_low_3.5GHz_dB            18.9
+  o2i_high_3.5GHz_dB           33.1
+  p1238_5.2GHz_30m_dB          92.1
+  o2_60GHz_1km_dB              15.0
+
+1 · the Leaf antenna gains used (realised gain = directivity + efficiency)
+  Wi-Fi 7 2.4 GHz (A1)                           design  +0.1 dBi   stress  -7.1 dBi   Tx class 20.0 dBm   NF 6 dB
+  Wi-Fi 7 5 GHz (A2/A3)                          design  +0.6 dBi   stress  -6.6 dBi   Tx class 20.0 dBm   NF 6 dB
+  Wi-Fi 7 6 GHz (A2/A3)                          design  +0.6 dBi   stress  -6.6 dBi   Tx class 20.0 dBm   NF 6 dB
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          design  -1.2 dBi   stress  -8.4 dBi   Tx class 23.0 dBm   NF 7 dB
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      design  -4.0 dBi   stress -11.2 dBi   Tx class 23.0 dBm   NF 7 dB
+  60 GHz 802.11ay, 2.16 GHz (A4)                 design  +8.8 dBi   stress  +1.6 dBi   Tx class 10.0 dBm   NF 9 dB
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)          design  +8.8 dBi   stress  +1.6 dBi   Tx class 10.0 dBm   NF 9 dB
+  stress = the A1 gap of hw/rf (MoM -9.7 dB against the -2.5 dB gate) applied to every antenna: 7.2 dB
+
+2 · the rates the architectures need
+  raw pixel stream                                           DL   36864.0 Mbit/s   UL   1.99 Mbit/s
+  compressed pixel stream 3:1                                DL   12288.0 Mbit/s   UL   1.99 Mbit/s
+  compressed pixel stream 6:1                                DL    6144.0 Mbit/s   UL   1.99 Mbit/s
+  slice stream, upper (full screen, 2 speculative frames)    DL     150.2 Mbit/s   UL   1.99 Mbit/s
+  slice stream, lower (video class)                          DL      25.0 Mbit/s   UL   1.99 Mbit/s
+  uplink with a 16 B session tag in place of the signature: 0.41 Mbit/s
+  uplink camera: HEVC class 40 Mbit/s, raw 50 MP 10 bit 30 fps 15.0 Gbit/s
+  slice: 0.163 bit/px x 307 Mpx/s = 50 Mbit/s full screen; x3 with two speculative frames = 150 Mbit/s
+
+2b · the ceiling of each Leaf radio, best case, no path loss (bit/s: bandwidth x streams x top spectral efficiency x MAC)
+  Wi-Fi 7 320 MHz 2x2 (6 GHz)          all air time     3.84 Gbit/s   with the duplex share     2.88 Gbit/s   raw needs x12.8   6:1 needs x2.13
+  5G n78 80 MHz 2 layers               all air time     1.02 Gbit/s   with the duplex share     0.75 Gbit/s   raw needs x48.9   6:1 needs x8.15
+  5G n28 2 x 10 MHz 2 layers           all air time     0.13 Gbit/s   with the duplex share     0.13 Gbit/s   raw needs x289.6   6:1 needs x48.27
+  802.11ay 8.64 GHz, 1 stream (A4)     all air time    18.14 Gbit/s   with the duplex share    13.61 Gbit/s   raw needs x2.7   6:1 needs x0.45
+  802.11ay 2.16 GHz, 1 stream (A4)     all air time     4.54 Gbit/s   with the duplex share     3.40 Gbit/s   raw needs x10.8   6:1 needs x1.81
+
+3 · the link per Leaf, Core 18 dBi, BTK rules, Leaf as designed, 90 % shadow margin, Mbit/s (DL / UL)
+  scenario IN
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                               43 /  74.0             n/a            n/a            n/a            n/a            n/a
+  Wi-Fi 7 5 GHz (A2/A3)                              45 /  42.8             n/a            n/a            n/a            n/a            n/a
+  Wi-Fi 7 6 GHz (A2/A3)                               0 /  59.3             n/a            n/a            n/a            n/a            n/a
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  87.0             n/a            n/a            n/a            n/a            n/a
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3             n/a            n/a            n/a            n/a            n/a
+  60 GHz 802.11ay, 2.16 GHz (A4)                      0 /   0.0             n/a            n/a            n/a            n/a            n/a
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)               0 /   0.0             n/a            n/a            n/a            n/a            n/a
+  scenario IN-1F
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                                0 /  15.9             n/a            n/a            n/a            n/a            n/a
+  Wi-Fi 7 5 GHz (A2/A3)                               0 /   0.0             n/a            n/a            n/a            n/a            n/a
+  Wi-Fi 7 6 GHz (A2/A3)                               0 /   0.0             n/a            n/a            n/a            n/a            n/a
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  31.5             n/a            n/a            n/a            n/a            n/a
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  44.3             n/a            n/a            n/a            n/a            n/a
+  scenario FS
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                              240 / 120.0     131 / 113.1      55 /  59.2       0 /  33.2       0 /  22.5       0 /  10.6 
+  Wi-Fi 7 5 GHz (A2/A3)                             488 / 225.3     266 / 126.5     113 /  66.0       0 /  24.0       0 /   9.7       0 /   0.0 
+  Wi-Fi 7 6 GHz (A2/A3)                             229 / 234.3      27 / 131.6       0 /  41.7       0 /   4.8       0 /   0.0       0 /   0.0 
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  87.0     753 /  87.0     753 /  87.0     753 /  55.5     685 /  35.5     486 /  15.0 
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3     127 /  47.3     127 /  47.3     127 /  47.3     127 /  47.3     127 /  47.3 
+  60 GHz 802.11ay, 2.16 GHz (A4)                   1071 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0 
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)               0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0 
+  scenario UMa-LOS
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                              167 / 120.0      88 /  83.5       0 /  22.4       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 5 GHz (A2/A3)                             339 / 173.6     180 /  90.6      24 /  31.4       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 6 GHz (A2/A3)                              91 / 178.9       0 /  78.1       0 /   9.3       0 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  87.0     753 /  87.0     753 /  48.7     258 /   1.9     122 /   0.2      17 /   0.0*
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3     127 /  47.3     127 /  47.3      49 /   5.4      25 /   0.8       4 /   0.0*
+  scenario UMa-NLOS
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                                0 /  47.7       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 5 GHz (A2/A3)                              24 /  32.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 6 GHz (A2/A3)                               0 /   8.4       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  66.0     465 /   5.2      44 /   0.0       1 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3     127 /  40.9      46 /   2.7       3 /   0.0       0 /   0.0       0 /   0.0*
+  scenario UMa-NLOS+O2I-low
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                                0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 5 GHz (A2/A3)                               0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 6 GHz (A2/A3)                               0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             383 /   3.0      41 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  40.5      56 /   4.0       3 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  60 GHz 802.11ay, 2.16 GHz (A4)                      0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)               0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  scenario RMa-LOS
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                              159 / 120.0      85 /  81.3       0 /  39.0       0 /   5.4       0 /   0.0       0 /   0.0 
+  Wi-Fi 7 5 GHz (A2/A3)                             322 / 162.6     174 /  88.4      24 /  32.5       0 /   0.0       0 /   0.0       0 /   0.0 
+  Wi-Fi 7 6 GHz (A2/A3)                              79 / 167.8       0 /  74.5       0 /   8.6       0 /   0.0       0 /   0.0       0 /   0.0 
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  87.0     753 /  87.0     753 /  66.7     492 /  15.5     255 /   1.9      80 /   0.1 
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3     127 /  47.3     127 /  47.3     102 /  28.0      57 /   9.3      24 /   0.8 
+  scenario RMa-NLOS
+  radio                                                   100 m          300 m           1 km           3 km           5 km          10 km
+  Wi-Fi 7 2.4 GHz (A1)                               58 /  86.6       0 /  15.6       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 5 GHz (A2/A3)                             119 /  79.1       0 /   4.7       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  Wi-Fi 7 6 GHz (A2/A3)                               0 /  44.4       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0       0 /   0.0*
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)             753 /  87.0     744 /  23.2     144 /   0.4       6 /   0.0       1 /   0.0       0 /   0.0*
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)         127 /  47.3     127 /  47.3      92 /  12.6      15 /   0.3       3 /   0.0       0 /   0.0*
+  * outside the validity range of the 38.901 formula (an extrapolation)
+
+4 · which side limits the link (margin over the SNR floor, dB; the smaller one limits). Core 18 dBi, urban NLOS, BTK
+  radio                                                     100 m            300 m             1 km             3 km             5 km            10 km
+  Wi-Fi 7 2.4 GHz (A1)                             DL    -1/  +17   DL   -20/   -1   DL   -40/  -21   DL   -59/  -40   DL   -67/  -49   DL   -79/  -60
+  Wi-Fi 7 5 GHz (A2/A3)                            DL    +2/  +11   DL   -16/   -7   DL   -37/  -28   DL   -55/  -46   DL   -64/  -55   DL   -76/  -67
+  Wi-Fi 7 6 GHz (A2/A3)                            DL   -15/   +3   DL   -33/  -15   DL   -54/  -35   DL   -72/  -54   DL   -81/  -63   DL   -93/  -74
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)            UL   +59/  +37   UL   +41/  +19   UL   +21/   -2   UL    +2/  -20   UL    -6/  -29   UL   -18/  -41
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)        UL   +68/  +51   UL   +49/  +33   UL   +29/  +12   UL   +10/   -6   UL    +2/  -15   UL   -10/  -27
+  60 GHz 802.11ay, 2.16 GHz (A4)                   UL   -23/  -31   UL   -44/  -52   UL   -75/  -83   UL  -123/ -131   UL  -162/ -170   UL  -249/ -257
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)            UL   -29/  -37   UL   -50/  -58   UL   -81/  -89   UL  -130/ -138   UL  -168/ -176   UL  -255/ -263
+  format: limiting side, DL margin / UL margin in dB over the floor. Negative = no link.
+
+5 · the distance at which each architecture stops (best radio, Core gain 25 dBi, BTK rules, Leaf as designed)
+  scenario FS
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     30 m  (60 GHz 802.11ay, 8.64 GHz bonded (A4))
+    compressed pixel stream 6:1                                     50 m  (60 GHz 802.11ay, 8.64 GHz bonded (A4))
+    slice stream, upper (full screen, 2 speculative frames)       >64 km  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                             >64 km  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+  scenario UMa-LOS
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     <3 m  (no radio)
+    compressed pixel stream 6:1                                     <3 m  (no radio)
+    slice stream, upper (full screen, 2 speculative frames)       4.4 km  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                             5.9 km  (5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5))
+  scenario RMa-LOS
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     <3 m  (no radio)
+    compressed pixel stream 6:1                                     <3 m  (no radio)
+    slice stream, upper (full screen, 2 speculative frames)       7.3 km  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                            11.7 km  (5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5))
+  scenario UMa-NLOS
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     <3 m  (no radio)
+    compressed pixel stream 6:1                                     <3 m  (no radio)
+    slice stream, upper (full screen, 2 speculative frames)        570 m  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                             1.6 km  (5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5))
+  scenario UMa-NLOS+O2I-low
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     <3 m  (no radio)
+    compressed pixel stream 6:1                                     <3 m  (no radio)
+    slice stream, upper (full screen, 2 speculative frames)        170 m  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                              550 m  (5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5))
+  scenario RMa-NLOS
+    raw pixel stream                                                <3 m  (no radio)
+    compressed pixel stream 3:1                                     <3 m  (no radio)
+    compressed pixel stream 6:1                                     <3 m  (no radio)
+    slice stream, upper (full screen, 2 speculative frames)        960 m  (5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5))
+    slice stream, lower (video class)                             2.7 km  (5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5))
+  The 60 GHz row is a free space LOS line. The other scenarios drop it (no NLOS at 60 GHz).
+
+6 · the range extension per Core gain, slice stream (DL 25 Mbit/s and 150 Mbit/s, UL 2.1 Mbit/s), Leaf as designed
+  scenario UMa-LOS, BTK rules, km
+  radio                                          need         6 dBi    12 dBi    18 dBi    25 dBi
+  Wi-Fi 7 2.4 GHz (A1)                           DL25         550 m     550 m     550 m     550 m
+  Wi-Fi 7 2.4 GHz (A1)                           DL150        130 m     130 m     130 m     130 m
+  Wi-Fi 7 2.4 GHz (A1)                           UL2.1        930 m    1.3 km    1.8 km    2.8 km
+  Wi-Fi 7 5 GHz (A2/A3)                          DL25         960 m     960 m     960 m     960 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL150        370 m     370 m     370 m     370 m
+  Wi-Fi 7 5 GHz (A2/A3)                          UL2.1        910 m    1.3 km    1.8 km    2.7 km
+  Wi-Fi 7 6 GHz (A2/A3)                          DL25         180 m     180 m     180 m     180 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL150         80 m      80 m      80 m      80 m
+  Wi-Fi 7 6 GHz (A2/A3)                          UL2.1        430 m     810 m    1.3 km    1.9 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL25        4.5 km    6.3 km    8.9 km   13.2 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL150       2.2 km    3.1 km    4.4 km    6.6 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          UL2.1       1.5 km    2.1 km    3.0 km    4.4 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL25        2.5 km    3.5 km    5.0 km    7.4 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL150         <3 m      <3 m      <3 m      <3 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      UL2.1       2.0 km    2.8 km    4.0 km    5.9 km
+  scenario RMa-LOS, BTK rules, km
+  radio                                          need         6 dBi    12 dBi    18 dBi    25 dBi
+  Wi-Fi 7 2.4 GHz (A1)                           DL25         700 m     700 m     700 m     700 m
+  Wi-Fi 7 2.4 GHz (A1)                           DL150        110 m     110 m     110 m     110 m
+  Wi-Fi 7 2.4 GHz (A1)                           UL2.1       1.7 km    2.7 km    3.3 km    5.0 km
+  Wi-Fi 7 5 GHz (A2/A3)                          DL25         960 m     960 m     960 m     960 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL150        360 m     360 m     360 m     360 m
+  Wi-Fi 7 5 GHz (A2/A3)                          UL2.1        890 m    1.6 km    2.6 km    4.3 km
+  Wi-Fi 7 6 GHz (A2/A3)                          DL25         160 m     160 m     160 m     160 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL150         70 m      70 m      70 m      70 m
+  Wi-Fi 7 6 GHz (A2/A3)                          UL2.1        420 m     770 m    1.4 km    2.5 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL25        7.4 km   10.4 km   14.6 km   21.8 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL150       3.9 km    5.2 km    7.3 km   10.8 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          UL2.1       2.6 km    3.9 km    4.9 km    7.3 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL25        4.9 km    7.0 km    9.8 km   14.6 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL150         <3 m      <3 m      <3 m      <3 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      UL2.1       3.9 km    5.6 km    7.9 km   11.7 km
+  scenario UMa-NLOS, BTK rules, km
+  radio                                          need         6 dBi    12 dBi    18 dBi    25 dBi
+  Wi-Fi 7 2.4 GHz (A1)                           DL25          80 m      80 m      80 m      80 m
+  Wi-Fi 7 2.4 GHz (A1)                           DL150         30 m      30 m      30 m      30 m
+  Wi-Fi 7 2.4 GHz (A1)                           UL2.1        140 m     200 m     290 m     430 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL25         100 m     100 m     100 m     100 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL150         50 m      50 m      50 m      50 m
+  Wi-Fi 7 5 GHz (A2/A3)                          UL2.1         90 m     130 m     190 m     290 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL25          30 m      30 m      30 m      30 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL150         10 m      10 m      10 m      10 m
+  Wi-Fi 7 6 GHz (A2/A3)                          UL2.1         60 m      80 m     120 m     180 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL25         590 m     840 m    1.2 km    1.8 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL150        290 m     410 m     570 m     870 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          UL2.1        190 m     270 m     380 m     570 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL25         660 m     950 m    1.3 km    2.0 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL150         <3 m      <3 m      <3 m      <3 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      UL2.1        530 m     760 m    1.1 km    1.6 km
+  scenario UMa-NLOS+O2I-low, BTK rules, km
+  radio                                          need         6 dBi    12 dBi    18 dBi    25 dBi
+  Wi-Fi 7 2.4 GHz (A1)                           DL25          10 m      10 m      10 m      10 m
+  Wi-Fi 7 2.4 GHz (A1)                           DL150         <3 m      <3 m      <3 m      <3 m
+  Wi-Fi 7 2.4 GHz (A1)                           UL2.1         40 m      60 m      80 m     130 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL25          20 m      20 m      20 m      20 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL150         <3 m      <3 m      <3 m      <3 m
+  Wi-Fi 7 5 GHz (A2/A3)                          UL2.1         10 m      30 m      50 m      80 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL25          <3 m      <3 m      <3 m      <3 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL150         <3 m      <3 m      <3 m      <3 m
+  Wi-Fi 7 6 GHz (A2/A3)                          UL2.1         <3 m      10 m      30 m      50 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL25         170 m     240 m     350 m     530 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL150         80 m     120 m     170 m     250 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          UL2.1         50 m      70 m     110 m     170 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL25         220 m     320 m     450 m     690 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL150         <3 m      <3 m      <3 m      <3 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      UL2.1        180 m     250 m     360 m     550 m
+  scenario RMa-NLOS, BTK rules, km
+  radio                                          need         6 dBi    12 dBi    18 dBi    25 dBi
+  Wi-Fi 7 2.4 GHz (A1)                           DL25         130 m     130 m     130 m     130 m
+  Wi-Fi 7 2.4 GHz (A1)                           DL150         50 m      50 m      50 m      50 m
+  Wi-Fi 7 2.4 GHz (A1)                           UL2.1        230 m     330 m     470 m     710 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL25         160 m     160 m     160 m     160 m
+  Wi-Fi 7 5 GHz (A2/A3)                          DL150         80 m      80 m      80 m      80 m
+  Wi-Fi 7 5 GHz (A2/A3)                          UL2.1        150 m     220 m     320 m     480 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL25          50 m      50 m      50 m      50 m
+  Wi-Fi 7 6 GHz (A2/A3)                          DL150         20 m      20 m      20 m      20 m
+  Wi-Fi 7 6 GHz (A2/A3)                          UL2.1         90 m     140 m     200 m     300 m
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL25         980 m    1.4 km    2.0 km    3.0 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          DL150        470 m     670 m     960 m    1.5 km
+  5G SA 3.5 GHz TDD, 80 MHz (A5/A6, U5)          UL2.1        310 m     440 m     630 m     960 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL25        1.1 km    1.6 km    2.3 km    3.4 km
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      DL150         <3 m      <3 m      <3 m      <3 m
+  5G SA 700 MHz FDD, 2 x 10 MHz (A5/A6, U5)      UL2.1        870 m    1.3 km    1.8 km    2.7 km
+
+7 · the regulator: the Wi-Fi downlink range (150 Mbit/s) in urban NLOS for each rule set, Core 25 dBi
+  Wi-Fi 7 2.4 GHz (A1)         TR: DL150 30 m DL25 80 m UL 430 m (EIRP 19 dBm)   ETSI: DL150 30 m DL25 80 m UL 430 m (EIRP 19 dBm)   FCC: DL150 100 m DL25 210 m UL 430 m (EIRP 35 dBm)
+  Wi-Fi 7 5 GHz (A2/A3)        TR: DL150 50 m DL25 100 m UL 290 m (EIRP 29 dBm)   ETSI: DL150 50 m DL25 100 m UL 290 m (EIRP 29 dBm)   FCC: DL150 80 m DL25 140 m UL 290 m (EIRP 35 dBm)
+  Wi-Fi 7 6 GHz (A2/A3)        TR: DL150 10 m DL25 30 m UL 180 m (EIRP 13 dBm)   ETSI: DL150 10 m DL25 30 m UL 180 m (EIRP 13 dBm)   FCC: DL150 90 m DL25 130 m UL 270 m (EIRP 35 dBm)
+
+8 · the Core antenna as an object: aperture for each gain (eta 0.60, square aperture, HPBW = 70 lambda / D)
+  band     G dBi    A_eff m2   A_phys m2    square side        HPBW deg     elements  
+  nr07     6        0.053      0.089        0.30 x 0.30 m      96.3         1         
+  nr07     12       0.213      0.355        0.60 x 0.60 m      48.3         5         
+  nr07     18       0.847      1.411        1.19 x 1.19 m      24.2         20        
+  nr07     25       4.244      7.074        2.66 x 2.66 m      10.8         100       
+  wifi24   6        0.005      0.008        0.09 x 0.09 m      96.3         1         
+  wifi24   12       0.019      0.032        0.18 x 0.18 m      48.3         5         
+  wifi24   18       0.076      0.126        0.36 x 0.36 m      24.2         20        
+  wifi24   25       0.380      0.633        0.80 x 0.80 m      10.8         100       
+  nr35     6        0.002      0.004        0.06 x 0.06 m      96.3         1         
+  nr35     12       0.009      0.015        0.12 x 0.12 m      48.3         5         
+  nr35     18       0.035      0.058        0.24 x 0.24 m      24.2         20        
+  nr35     25       0.175      0.291        0.54 x 0.54 m      10.8         100       
+  wifi5    6        0.001      0.002        0.04 x 0.04 m      96.3         1         
+  wifi5    12       0.004      0.006        0.08 x 0.08 m      48.3         5         
+  wifi5    18       0.014      0.024        0.15 x 0.15 m      24.2         20        
+  wifi5    25       0.072      0.120        0.35 x 0.35 m      10.8         100       
+  wifi6    6        0.001      0.001        0.04 x 0.04 m      96.3         1         
+  wifi6    12       0.003      0.005        0.07 x 0.07 m      48.3         5         
+  wifi6    18       0.012      0.020        0.14 x 0.14 m      24.2         20        
+  wifi6    25       0.059      0.098        0.31 x 0.31 m      10.8         100       
+  v60      6        0.000      0.000        0.00 x 0.00 m      96.3         1         
+  v60      12       0.000      0.000        0.01 x 0.01 m      48.3         5         
+  v60      18       0.000      0.000        0.01 x 0.01 m      24.2         20        
+  v60      25       0.001      0.001        0.03 x 0.03 m      10.8         100       
+
+9 · beamforming: Leafs served per Core (3 sectors, 120 deg each), slice stream 150 Mbit/s, all Leafs at the range shown,
+    urban NLOS, BTK rules, hybrid array with up to 16 simultaneous beams, element gain 5 dBi
+  nr35   G 12 dBi HPBW  48.3 deg,  2 beams, d   300 m: single beam   279.6 Mbit/s, per Leaf with  2 beams   198.2, Leafs at 150:   6, at 25:  45
+  nr35   G 12 dBi HPBW  48.3 deg,  2 beams, d  1000 m: single beam    12.8 Mbit/s, per Leaf with  2 beams     6.4, Leafs at 150:   0, at 25:   0
+  nr35   G 12 dBi HPBW  48.3 deg,  2 beams, d  3000 m: single beam     0.0 Mbit/s, per Leaf with  2 beams     0.0, Leafs at 150:   0, at 25:   0
+  nr35   G 18 dBi HPBW  24.2 deg,  4 beams, d   300 m: single beam   465.2 Mbit/s, per Leaf with  4 beams   279.0, Leafs at 150:  21, at 25: 132
+  nr35   G 18 dBi HPBW  24.2 deg,  4 beams, d  1000 m: single beam    44.3 Mbit/s, per Leaf with  4 beams    12.7, Leafs at 150:   0, at 25:   6
+  nr35   G 18 dBi HPBW  24.2 deg,  4 beams, d  3000 m: single beam     0.7 Mbit/s, per Leaf with  4 beams     0.0, Leafs at 150:   0, at 25:   0
+  nr35   G 25 dBi HPBW  10.8 deg, 11 beams, d   300 m: single beam   696.9 Mbit/s, per Leaf with 11 beams   356.9, Leafs at 150:  78, at 25: 471
+  nr35   G 25 dBi HPBW  10.8 deg, 11 beams, d  1000 m: single beam   120.4 Mbit/s, per Leaf with 11 beams    23.5, Leafs at 150:   3, at 25:  30
+  nr35   G 25 dBi HPBW  10.8 deg, 11 beams, d  3000 m: single beam     3.4 Mbit/s, per Leaf with 11 beams     0.0, Leafs at 150:   0, at 25:   0
+  nr07   G 12 dBi HPBW  48.3 deg,  2 beams, d   300 m: single beam   123.9 Mbit/s, per Leaf with  2 beams    92.0, Leafs at 150:   3, at 25:  21
+  nr07   G 12 dBi HPBW  48.3 deg,  2 beams, d  1000 m: single beam    22.9 Mbit/s, per Leaf with  2 beams    16.1, Leafs at 150:   0, at 25:   3
+  nr07   G 12 dBi HPBW  48.3 deg,  2 beams, d  3000 m: single beam     0.8 Mbit/s, per Leaf with  2 beams     0.4, Leafs at 150:   0, at 25:   0
+  nr07   G 18 dBi HPBW  24.2 deg,  4 beams, d   300 m: single beam   127.3 Mbit/s, per Leaf with  4 beams    92.0, Leafs at 150:   6, at 25:  42
+  nr07   G 18 dBi HPBW  24.2 deg,  4 beams, d  1000 m: single beam    45.8 Mbit/s, per Leaf with  4 beams    22.8, Leafs at 150:   0, at 25:   9
+  nr07   G 18 dBi HPBW  24.2 deg,  4 beams, d  3000 m: single beam     3.2 Mbit/s, per Leaf with  4 beams     0.8, Leafs at 150:   0, at 25:   0
+  nr07   G 25 dBi HPBW  10.8 deg, 11 beams, d   300 m: single beam   127.3 Mbit/s, per Leaf with 11 beams    92.0, Leafs at 150:  18, at 25: 120
+  nr07   G 25 dBi HPBW  10.8 deg, 11 beams, d  1000 m: single beam    82.4 Mbit/s, per Leaf with 11 beams    30.6, Leafs at 150:   6, at 25:  39
+  nr07   G 25 dBi HPBW  10.8 deg, 11 beams, d  3000 m: single beam    11.1 Mbit/s, per Leaf with 11 beams     1.5, Leafs at 150:   0, at 25:   0
+  wifi5  G 12 dBi HPBW  48.3 deg,  2 beams, d   300 m: single beam     0.0 Mbit/s, per Leaf with  2 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 12 dBi HPBW  48.3 deg,  2 beams, d  1000 m: single beam     0.0 Mbit/s, per Leaf with  2 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 12 dBi HPBW  48.3 deg,  2 beams, d  3000 m: single beam     0.0 Mbit/s, per Leaf with  2 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 18 dBi HPBW  24.2 deg,  4 beams, d   300 m: single beam     0.0 Mbit/s, per Leaf with  4 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 18 dBi HPBW  24.2 deg,  4 beams, d  1000 m: single beam     0.0 Mbit/s, per Leaf with  4 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 18 dBi HPBW  24.2 deg,  4 beams, d  3000 m: single beam     0.0 Mbit/s, per Leaf with  4 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 25 dBi HPBW  10.8 deg, 11 beams, d   300 m: single beam     0.0 Mbit/s, per Leaf with 11 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 25 dBi HPBW  10.8 deg, 11 beams, d  1000 m: single beam     0.0 Mbit/s, per Leaf with 11 beams     0.0, Leafs at 150:   0, at 25:   0
+  wifi5  G 25 dBi HPBW  10.8 deg, 11 beams, d  3000 m: single beam     0.0 Mbit/s, per Leaf with 11 beams     0.0, Leafs at 150:   0, at 25:   0
+
+10 · what the big Core antenna does not buy: slice stream DL 25 Mbit/s and UL 2.1 Mbit/s, urban NLOS, BTK rules, Core 25 dBi
+  wifi24   UMa-NLOS           Leaf as designed, free hand      DL25     80 m   UL2.1    430 m
+  wifi24   UMa-NLOS           hand grip -6 dB                  DL25     50 m   UL2.1    300 m
+  wifi24   UMa-NLOS           SAR stress, Tx -10 dB            DL25     80 m   UL2.1    240 m
+  wifi24   UMa-NLOS           hw/rf A1 gap -7.2 dB             DL25     50 m   UL2.1    280 m
+  wifi24   UMa-NLOS           hw/rf gap + hand + SAR -10 dB    DL25     30 m   UL2.1    110 m
+  wifi24   UMa-NLOS+O2I-low   Leaf as designed, free hand      DL25     10 m   UL2.1    130 m
+  wifi24   UMa-NLOS+O2I-low   hand grip -6 dB                  DL25     <3 m   UL2.1     90 m
+  wifi24   UMa-NLOS+O2I-low   SAR stress, Tx -10 dB            DL25     10 m   UL2.1     70 m
+  wifi24   UMa-NLOS+O2I-low   hw/rf A1 gap -7.2 dB             DL25     <3 m   UL2.1     80 m
+  wifi24   UMa-NLOS+O2I-low   hw/rf gap + hand + SAR -10 dB    DL25     <3 m   UL2.1     20 m
+  wifi5    UMa-NLOS           Leaf as designed, free hand      DL25    100 m   UL2.1    290 m
+  wifi5    UMa-NLOS           hand grip -6 dB                  DL25     70 m   UL2.1    200 m
+  wifi5    UMa-NLOS           SAR stress, Tx -10 dB            DL25    100 m   UL2.1    160 m
+  wifi5    UMa-NLOS           hw/rf A1 gap -7.2 dB             DL25     60 m   UL2.1    190 m
+  wifi5    UMa-NLOS           hw/rf gap + hand + SAR -10 dB    DL25     40 m   UL2.1     70 m
+  wifi5    UMa-NLOS+O2I-low   Leaf as designed, free hand      DL25     20 m   UL2.1     80 m
+  wifi5    UMa-NLOS+O2I-low   hand grip -6 dB                  DL25     <3 m   UL2.1     50 m
+  wifi5    UMa-NLOS+O2I-low   SAR stress, Tx -10 dB            DL25     20 m   UL2.1     40 m
+  wifi5    UMa-NLOS+O2I-low   hw/rf A1 gap -7.2 dB             DL25     <3 m   UL2.1     50 m
+  wifi5    UMa-NLOS+O2I-low   hw/rf gap + hand + SAR -10 dB    DL25     <3 m   UL2.1     <3 m
+  nr35     UMa-NLOS           Leaf as designed, free hand      DL25   1.8 km   UL2.1    570 m
+  nr35     UMa-NLOS           hand grip -6 dB                  DL25   1.3 km   UL2.1    410 m
+  nr35     UMa-NLOS           SAR stress, Tx -10 dB            DL25   1.8 km   UL2.1    320 m
+  nr35     UMa-NLOS           hw/rf A1 gap -7.2 dB             DL25   1.2 km   UL2.1    380 m
+  nr35     UMa-NLOS           hw/rf gap + hand + SAR -10 dB    DL25    820 m   UL2.1    140 m
+  nr35     UMa-NLOS+O2I-low   Leaf as designed, free hand      DL25    530 m   UL2.1    170 m
+  nr35     UMa-NLOS+O2I-low   hand grip -6 dB                  DL25    370 m   UL2.1    120 m
+  nr35     UMa-NLOS+O2I-low   SAR stress, Tx -10 dB            DL25    530 m   UL2.1     90 m
+  nr35     UMa-NLOS+O2I-low   hw/rf A1 gap -7.2 dB             DL25    340 m   UL2.1    110 m
+  nr35     UMa-NLOS+O2I-low   hw/rf gap + hand + SAR -10 dB    DL25    240 m   UL2.1     40 m
+  nr07     UMa-NLOS           Leaf as designed, free hand      DL25   2.0 km   UL2.1   1.6 km
+  nr07     UMa-NLOS           hand grip -6 dB                  DL25   1.4 km   UL2.1   1.1 km
+  nr07     UMa-NLOS           SAR stress, Tx -10 dB            DL25   2.0 km   UL2.1    890 m
+  nr07     UMa-NLOS           hw/rf A1 gap -7.2 dB             DL25   1.3 km   UL2.1   1.1 km
+  nr07     UMa-NLOS           hw/rf gap + hand + SAR -10 dB    DL25    930 m   UL2.1    410 m
+  nr07     UMa-NLOS+O2I-low   Leaf as designed, free hand      DL25    690 m   UL2.1    550 m
+  nr07     UMa-NLOS+O2I-low   hand grip -6 dB                  DL25    480 m   UL2.1    380 m
+  nr07     UMa-NLOS+O2I-low   SAR stress, Tx -10 dB            DL25    690 m   UL2.1    300 m
+  nr07     UMa-NLOS+O2I-low   hw/rf A1 gap -7.2 dB             DL25    450 m   UL2.1    360 m
+  nr07     UMa-NLOS+O2I-low   hw/rf gap + hand + SAR -10 dB    DL25    320 m   UL2.1    140 m
+
+11 · 60 GHz, line of sight, A4 +8.8 dBi, Core 25 dBi, 40 dBm EIRP cap: rate per Leaf (Gbit/s, DL)
+  60 GHz 802.11ay, 2.16 GHz (A4)           design  d = 3, 10, 30, 100, 300, 1000 m:    3.40    3.40    3.40    1.48    0.00    0.00
+  60 GHz 802.11ay, 2.16 GHz (A4)           stress  d = 3, 10, 30, 100, 300, 1000 m:    3.40    3.40    2.62    0.00    0.00    0.00
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    design  d = 3, 10, 30, 100, 300, 1000 m:   13.61   13.61   11.92    2.04    0.00    0.00
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    stress  d = 3, 10, 30, 100, 300, 1000 m:   13.61   13.61    4.50    0.00    0.00    0.00
+  raw stream needs 36.9 Gbit/s; 6:1 needs 6.1; 3:1 needs 12.3
+  the A4 array is 1 x 4 and one polarisation, so one stream: the 802.11ay ceiling is the bandwidth times 3.0 bit/s/Hz
+
+12 · 60 GHz reach of the pixel streams, line of sight (free space and oxygen), search from 1 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           design  Core 12 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 38 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 38 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 38 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           design  Core 18 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 71 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 71 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 71 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           design  Core 25 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 141 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 141 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 141 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           stress  Core 12 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 17 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 17 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 17 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           stress  Core 18 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 33 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 33 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 33 m
+  60 GHz 802.11ay, 2.16 GHz (A4)           stress  Core 25 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 69 m; 3:1 12.3 Gbit/s DL to never, UL 2 Mbit/s to 69 m; 6:1 6.1 Gbit/s DL to never, UL 2 Mbit/s to 69 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    design  Core 12 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 19 m; 3:1 12.3 Gbit/s DL to 12 m, UL 2 Mbit/s to 19 m; 6:1 6.1 Gbit/s DL to 22 m, UL 2 Mbit/s to 19 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    design  Core 18 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 37 m; 3:1 12.3 Gbit/s DL to 23 m, UL 2 Mbit/s to 37 m; 6:1 6.1 Gbit/s DL to 42 m, UL 2 Mbit/s to 37 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    design  Core 25 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 79 m; 3:1 12.3 Gbit/s DL to 29 m, UL 2 Mbit/s to 79 m; 6:1 6.1 Gbit/s DL to 52 m, UL 2 Mbit/s to 79 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    stress  Core 12 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 9 m; 3:1 12.3 Gbit/s DL to 5 m, UL 2 Mbit/s to 9 m; 6:1 6.1 Gbit/s DL to 10 m, UL 2 Mbit/s to 9 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    stress  Core 18 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 17 m; 3:1 12.3 Gbit/s DL to 10 m, UL 2 Mbit/s to 17 m; 6:1 6.1 Gbit/s DL to 19 m, UL 2 Mbit/s to 17 m
+  60 GHz 802.11ay, 8.64 GHz bonded (A4)    stress  Core 25 dBi: raw 36.9 Gbit/s DL to never, UL 2 Mbit/s to 37 m; 3:1 12.3 Gbit/s DL to 13 m, UL 2 Mbit/s to 37 m; 6:1 6.1 Gbit/s DL to 24 m, UL 2 Mbit/s to 37 m
+

@@ -1,0 +1,99 @@
+POWER seat · question 3 · the Core for 1, 2, 4 and 8 Skins
+model: Core load = radio + authority + hub fixed + per Skin (hub variable + link TX). Core at its cell /0.90, Skin supply /0.93, host input /0.95
+check of the hub fit against FINAL/04 4.6: Leaf 80 delta 0.60 W (table 0.60), Leaf 160 delta 0.70 W (0.70), Leaf 160 video 1.20 W (1.20), Leaf 160 squared video 1.40 W (1.40)
+
+THE SKIN CATALOGUE (loads at VBUS, nominal, delta-class and heavy-class)
+  Leaf 80     2.6 Mpx, body 0.45 / 0.76 W -> Skin 0.60 / 0.95 W at VBUS, link 1.68 / 3.36 Gb/s   [FINAL/04 4.6 Leaf 80 delta 0.35 + 0.10 W; heavy scaled by 1.35/0.80 [H]]
+  Leaf 160    5.1 Mpx, body 0.80 / 1.35 W -> Skin 1.03 / 1.65 W at VBUS, link 3.36 / 6.71 Gb/s   [hw/energy/04 delta 0.80 W, video 1.35 W [T]]
+  Leaf 480    4.1 Mpx, body 5.80 / 9.79 W -> Skin 6.97 / 11.32 W at VBUS, link 0.45 / 2.70 Gb/s   [FINAL/04 4.6 static work session 5.00 + 0.80 W; heavy scaled [H]]
+  Frame      16.6 Mpx, body 0.80 / 1.20 W -> Skin 1.00 / 1.46 W at VBUS, link 10.88 / 16.31 Gb/s   [FINAL/07 7.5: 0.4 to 1.2 W with the display on, 0.8 W nominal [D]]
+
+THE CORE FOR N SKINS, W
+  N   mix                                    class  | core load core cell    Skins      bus  host in core heat
+  1   L160                                   delta  |     1.28     1.42     1.03     2.53     2.66     1.63   (host in low 2.56 high 2.84)
+  1   L160                                   heavy  |     2.00     2.23     1.65     4.00     4.21     2.56   (host in low 4.10 high 4.41)
+  1   L160                                   peak   |     4.08     4.54     4.79     9.69    10.20     5.41   (host in low 10.09 high 10.40)
+  2   L160,L80                               delta  |     1.42     1.58     1.63     3.33     3.51     1.88   (host in low 3.34 high 3.82)
+  2   L160,L80                               heavy  |     2.16     2.40     2.60     5.19     5.46     2.87   (host in low 5.28 high 5.81)
+  2   L160,L80                               peak   |     4.24     4.71     5.74    10.88    11.45     5.72   (host in low 11.27 high 11.80)
+  4   L160,L160,L80,Frame                    delta  |     2.44     2.71     3.66     6.65     7.00     3.34   (host in low 6.65 high 7.64)
+  4   L160,L160,L80,Frame                    heavy  |     3.25     3.61     5.71     9.75    10.26     4.56   (host in low 9.88 high 10.99)
+  4   L160,L160,L80,Frame                    peak   |     5.33     5.93     8.85    15.44    16.25     7.40   (host in low 15.87 high 16.98)
+  8   L480,L160,L160,L160,L80,L80,Frame,Frame delta  |     3.80     4.22    13.26    18.49    19.46     6.20   (host in low 18.42 high 21.31)
+  8   L480,L160,L160,L160,L80,L80,Frame,Frame heavy  |     4.71     5.24    21.08    27.91    29.38     8.29   (host in low 28.27 high 31.40)
+  8   L480,L160,L160,L160,L80,L80,Frame,Frame peak   |     6.79     7.55    24.22    33.60    35.37    11.14   (host in low 34.25 high 37.38)
+
+THE PRICE OF THE SPLIT at N = 1 (Leaf 160 plus its Core), bus power against the L.6.0 battery power of hw/energy/04
+  delta: 2.53 W against 2.24 W, +13 %
+  video: 4.00 W against 3.65 W, +10 %
+  peak:  9.69 W against 8.70 W, +11 %
+  The extra is the second conversion of the Skin supply (0.93), the link transmitter and the link receiver.
+
+THE CORE ENERGY: nominal Wh of cells for a session on the Core alone (no host), delta class, usable 0.96 and path 0.97
+  N=1: 1 h: 2.7 Wh, 5 g of cells, 4 cm3 at 750 Wh/L   4 h: 10.9 Wh, 19 g of cells, 14 cm3 at 750 Wh/L   8 h: 21.7 Wh, 38 g of cells, 29 cm3 at 750 Wh/L
+  N=2: 1 h: 3.6 Wh, 6 g of cells, 5 cm3 at 750 Wh/L   4 h: 14.3 Wh, 25 g of cells, 19 cm3 at 750 Wh/L   8 h: 28.6 Wh, 50 g of cells, 38 cm3 at 750 Wh/L
+  N=4: 1 h: 7.1 Wh, 12 g of cells, 10 cm3 at 750 Wh/L   4 h: 28.6 Wh, 50 g of cells, 38 cm3 at 750 Wh/L   8 h: 57.1 Wh, 100 g of cells, 76 cm3 at 750 Wh/L
+  N=8: 1 h: 19.9 Wh, 35 g of cells, 26 cm3 at 750 Wh/L   4 h: 79.4 Wh, 138 g of cells, 106 cm3 at 750 Wh/L   8 h: 158.8 Wh, 277 g of cells, 212 cm3 at 750 Wh/L
+  Cells are at the S model of 574 Wh/kg and 750 Wh/L. A pack adds structure, about 1.3 times the mass [H].
+
+THE CORE POWER LIMIT OF THE CELL: the least Wh of cells that carry the heavy and the peak power at a C-rate
+  N=1 heavy   4.00 W on the cell: 3 C: 1.3 Wh, 5 C: 0.8 Wh, 10 C: 0.4 Wh
+  N=1 peak    9.69 W on the cell: 3 C: 3.2 Wh, 5 C: 1.9 Wh, 10 C: 1.0 Wh
+  N=2 heavy   5.19 W on the cell: 3 C: 1.7 Wh, 5 C: 1.0 Wh, 10 C: 0.5 Wh
+  N=2 peak   10.88 W on the cell: 3 C: 3.6 Wh, 5 C: 2.2 Wh, 10 C: 1.1 Wh
+  N=4 heavy   9.75 W on the cell: 3 C: 3.2 Wh, 5 C: 1.9 Wh, 10 C: 1.0 Wh
+  N=4 peak   15.44 W on the cell: 3 C: 5.1 Wh, 5 C: 3.1 Wh, 10 C: 1.5 Wh
+  N=8 heavy  27.91 W on the cell: 3 C: 9.3 Wh, 5 C: 5.6 Wh, 10 C: 2.8 Wh
+  N=8 peak   33.60 W on the cell: 3 C: 11.2 Wh, 5 C: 6.7 Wh, 10 C: 3.4 Wh
+  Part 22: the 128 micro cells carry 8.7 W at 3 C with 53 cells, 3.1 Wh. The Core with 4 Skins at peak needs a cell that carries the table above.
+
+CELL LIFE OF A HOST-FED CORE CELL, Schmalstieg model of hw/hostpower/powerpath/celllife.py, float at 50 %, 25 C, 6 hand-overs a day of 4 min at the delta class
+  N=1 (2.5 W): Buffer 5 min 0.5 Wh 2.17 cycles/day 2.7 y   Buffer 30 min 2.8 Wh 0.36 cycles/day 10.8 y   Core 4 h 22.4 Wh 0.05 cycles/day 14.6 y   Core 8 h 44.8 Wh 0.02 cycles/day 15.2 y
+  N=4 (6.7 W): Buffer 5 min 1.2 Wh 2.17 cycles/day 2.7 y   Buffer 30 min 7.4 Wh 0.36 cycles/day 10.8 y   Core 4 h 59.0 Wh 0.05 cycles/day 14.6 y   Core 8 h 117.9 Wh 0.02 cycles/day 15.2 y
+  N=8 (18.5 W): Buffer 5 min 3.4 Wh 2.17 cycles/day 2.7 y   Buffer 30 min 20.5 Wh 0.36 cycles/day 10.8 y   Core 4 h 163.9 Wh 0.05 cycles/day 14.6 y   Core 8 h 327.9 Wh 0.02 cycles/day 15.2 y
+  A Core cell sized for minutes cycles hard and ages fast. The Core cell wants hours of energy, or the host is the life.
+
+WHAT N SKINS COST THE HOST CLASSES OF PART 22 SECTION 22.6
+  need on VHV = Core host input power of the class + top-up at 0.2 C of a 4 h Core cell; offered power of hosts.py
+  id    host                       offer W | N1 d/h/p N2 d/h/p N4 d/h/p N8 d/h/p
+  H0    wall dock                     25.0 |    y/y/y    y/y/y    y/y/y    -/-/-
+  H1    dock pack, 20 Wh              25.0 |    y/y/y    y/y/y    y/y/y    -/-/-
+  H2    desk USB-C PD                 45.0 |    y/y/y    y/y/y    y/y/y    y/-/-
+  H3a   vehicle 12 V                  45.0 |    y/y/y    y/y/y    y/y/y    y/-/-
+  H3b   vehicle 24 V                  45.0 |    y/y/y    y/y/y    y/y/y    y/-/-
+  H4a   industrial 24 V               25.0 |    y/y/y    y/y/y    y/y/y    -/-/-
+  H4b   PoE type 2 (802.3at)          22.9 |    y/y/y    y/y/y    y/y/y    -/-/-
+  H4c   PoE type 3 (802.3bt)          45.9 |    y/y/y    y/y/y    y/y/y    y/y/-
+  H5    worn power bank or belt pack    18.0 |    y/y/y    y/y/y    y/y/-    -/-/-
+  H6a   low-power Qi pad, 5 W          5.0 |    -/-/-    -/-/-    -/-/-    -/-/-
+  H6b   Qi2 pad, 15 W                 15.0 |    y/y/y    y/y/y    y/-/-    -/-/-
+  H6c   Qi2.2 pad, 25 W               25.0 |    y/y/y    y/y/y    y/y/y    -/-/-
+  d is the delta class, h the heavy (video) class, p the peak class. y carries it, - does not.
+
+  Largest of the four sets each host carries, at the delta, heavy and peak class:
+    H0    wall dock                  delta N<=4  heavy N<=4  peak N<=4
+    H1    dock pack, 20 Wh           delta N<=4  heavy N<=4  peak N<=4
+    H2    desk USB-C PD              delta N<=8  heavy N<=4  peak N<=4
+    H3a   vehicle 12 V               delta N<=8  heavy N<=4  peak N<=4
+    H3b   vehicle 24 V               delta N<=8  heavy N<=4  peak N<=4
+    H4a   industrial 24 V            delta N<=4  heavy N<=4  peak N<=4
+    H4b   PoE type 2 (802.3at)       delta N<=4  heavy N<=4  peak N<=4
+    H4c   PoE type 3 (802.3bt)       delta N<=8  heavy N<=8  peak N<=4
+    H5    worn power bank or belt pack delta N<=4  heavy N<=4  peak N<=2
+    H6a   low-power Qi pad, 5 W      delta N<=0  heavy N<=0  peak N<=0
+    H6b   Qi2 pad, 15 W              delta N<=4  heavy N<=2  peak N<=2
+    H6c   Qi2.2 pad, 25 W            delta N<=4  heavy N<=4  peak N<=4
+
+  Host energy per hour of Core at 8 Skins (delta class), Wh per hour, and the run time of the host batteries H1 and H5:
+    H0    wall dock                    22.0 Wh per hour
+    H1    dock pack, 20 Wh             22.2 Wh per hour  battery 17.7 Wh runs 0.9 h
+    H2    desk USB-C PD                22.1 Wh per hour
+    H3a   vehicle 12 V                 22.1 Wh per hour
+    H3b   vehicle 24 V                 22.3 Wh per hour
+    H4a   industrial 24 V              21.2 Wh per hour
+    H4b   PoE type 2 (802.3at)         22.3 Wh per hour
+    H4c   PoE type 3 (802.3bt)         22.3 Wh per hour
+    H5    worn power bank or belt pack   22.6 Wh per hour  battery 15.2 Wh runs 0.8 h
+    H6a   low-power Qi pad, 5 W        24.3 Wh per hour
+    H6b   Qi2 pad, 15 W                24.3 Wh per hour
+    H6c   Qi2.2 pad, 25 W              24.3 Wh per hour

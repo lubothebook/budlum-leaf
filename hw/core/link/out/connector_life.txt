@@ -1,0 +1,12 @@
+F. CONNECTOR AND CABLE LIFE. A tether is a product. [GENERAL] unless marked.
+====================================================================================================
+part                                                       cycles | years at 1, 4, 20 mates (or bends) a day
+FPC ZIF or board-to-board                                      30 |      0.1      0.0      0.0
+USB-C receptacle, rated [PUBLICATION] USB-IF                10000 |     27.4      6.8      1.4
+pogo or gold leaf, consumer wearable class                  30000 |     82.2     20.5      4.1
+expanded-beam optical, dust tolerant                         5000 |     13.7      3.4      0.7
+near-field coupler on a kinematic seat                     100000 |    274.0     68.5     13.7
+flex, RA copper, r = 5 mm, bends                           200000 |    547.9    137.0     27.4
+  A ZIF connector gives 30 cycles: one month at one mate a day. It is not a user connector.
+  Gold wear: a 0.5 to 3 um gold layer on a leaf wears to the nickel at 5 000 to 50 000 cycles; contact resistance then climbs. [GENERAL]
+  A seat that mates 4 times a day on 12 leaves needs 10 000 cycles for 7 years. Pass HC-L7.

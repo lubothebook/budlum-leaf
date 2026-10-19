@@ -1,0 +1,1136 @@
+{
+ "table": {
+  "C0/idle": {
+   "n": 1.0,
+   "bind": "radio.ports",
+   "groups": {
+    "radio": 1.0,
+    "compute": 2400.0,
+    "memnet": 960.0
+   },
+   "group_bind": {
+    "radio": "radio.ports",
+    "compute": "compute.sign",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C0/delta": {
+   "n": 1.0,
+   "bind": "radio.ports",
+   "groups": {
+    "radio": 1.0,
+    "compute": 2.4801587301587302,
+    "memnet": 44.55666122085252
+   },
+   "group_bind": {
+    "radio": "radio.ports",
+    "compute": "compute.enc",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C0/video": {
+   "n": 1.0,
+   "bind": "radio.ports",
+   "groups": {
+    "radio": 1.0,
+    "compute": 1.3020833333333335,
+    "memnet": 28.54682004737141
+   },
+   "group_bind": {
+    "radio": "radio.ports",
+    "compute": "compute.enc",
+    "memnet": "memnet.wan"
+   }
+  },
+  "C0/camera": {
+   "n": 1.0,
+   "bind": "radio.ports",
+   "groups": {
+    "radio": 1.0,
+    "compute": 5.208333333333334,
+    "memnet": 18.56339478877774
+   },
+   "group_bind": {
+    "radio": "radio.ports",
+    "compute": "compute.enc",
+    "memnet": "memnet.wan"
+   }
+  },
+  "C0/mix": {
+   "n": 1.0,
+   "bind": "radio.ports",
+   "groups": {
+    "radio": 1.0,
+    "compute": 14.000896057347672,
+    "memnet": 228.3148461728724
+   },
+   "group_bind": {
+    "radio": "radio.ports",
+    "compute": "compute.enc",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C1/idle": {
+   "n": 256,
+   "bind": "radio.conn",
+   "groups": {
+    "radio": 256,
+    "compute": 4000.0,
+    "memnet": 3520.0
+   },
+   "group_bind": {
+    "radio": "radio.conn",
+    "compute": "compute.sign",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C1/delta": {
+   "n": 4.9603174603174605,
+   "bind": "compute.enc",
+   "groups": {
+    "radio": 65.98895735490083,
+    "compute": 4.9603174603174605,
+    "memnet": 163.37442447645924
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C1/video": {
+   "n": 2.604166666666667,
+   "bind": "compute.enc",
+   "groups": {
+    "radio": 12.990762744201273,
+    "compute": 2.604166666666667,
+    "memnet": 28.54682004737141
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.wan"
+   }
+  },
+  "C1/camera": {
+   "n": 10.416666666666668,
+   "bind": "compute.enc",
+   "groups": {
+    "radio": 11.43437687219116,
+    "compute": 10.416666666666668,
+    "memnet": 18.56339478877774
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.wan"
+   }
+  },
+  "C1/mix": {
+   "n": 28.001792114695345,
+   "bind": "compute.enc",
+   "groups": {
+    "radio": 238.2536738103106,
+    "compute": 28.001792114695345,
+    "memnet": 820.2574145880017
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.wan"
+   }
+  },
+  "C2/idle": {
+   "n": 8000,
+   "bind": "radio.conn",
+   "groups": {
+    "radio": 8000,
+    "compute": 16000.0,
+    "memnet": 162240.0
+   },
+   "group_bind": {
+    "radio": "radio.conn",
+    "compute": "compute.sign",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C2/delta": {
+   "n": 76.39000118898706,
+   "bind": "radio.dl",
+   "groups": {
+    "radio": 76.39000118898706,
+    "compute": 78.99428571428572,
+    "memnet": 7530.075746324076
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.ram"
+   }
+  },
+  "C2/video": {
+   "n": 5.038351075483664,
+   "bind": "radio.dl",
+   "groups": {
+    "radio": 5.038351075483664,
+    "compute": 41.47200000000001,
+    "memnet": 1277.021967258908
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.nic"
+   }
+  },
+  "C2/camera": {
+   "n": 9.477348141936975,
+   "bind": "radio.ul",
+   "groups": {
+    "radio": 9.477348141936975,
+    "compute": 165.88800000000003,
+    "memnet": 1735.0520064488414
+   },
+   "group_bind": {
+    "radio": "radio.ul",
+    "compute": "compute.enc",
+    "memnet": "memnet.nic"
+   }
+  },
+  "C2/mix": {
+   "n": 132.61152535577313,
+   "bind": "radio.dl",
+   "groups": {
+    "radio": 132.61152535577313,
+    "compute": 445.93548387096786,
+    "memnet": 35782.63127026971
+   },
+   "group_bind": {
+    "radio": "radio.dl",
+    "compute": "compute.enc",
+    "memnet": "memnet.nic"
+   }
+  }
+ },
+ "c2_sublimits": {
+  "idle": {
+   "radio.dl": 54461.12911783331,
+   "radio.ul": 57828.84206743949,
+   "radio.ctrl": 9180.327868852459,
+   "radio.conn": 8000,
+   "compute.cpu": 562215.6760240762,
+   "compute.engine": 749901.5339272557,
+   "compute.dram": 179025.07458784318,
+   "compute.sign": 16000.0,
+   "compute.isp": Infinity,
+   "compute.enc": Infinity,
+   "compute.dec": Infinity,
+   "memnet.ram": 162240.0,
+   "memnet.nic": 11049374.921075894,
+   "memnet.wan": 1307726.7971902555
+  },
+  "delta": {
+   "radio.dl": 76.39000118898706,
+   "radio.ul": 2101.7726435705445,
+   "radio.ctrl": 248.88888888888889,
+   "radio.conn": 1000,
+   "compute.cpu": 3377.9365565022276,
+   "compute.engine": 282.2893031911371,
+   "compute.dram": 12007.324911788097,
+   "compute.sign": 266.6666666666667,
+   "compute.isp": Infinity,
+   "compute.enc": 78.99428571428572,
+   "compute.dec": Infinity,
+   "memnet.ram": 7530.075746324076,
+   "memnet.nic": 27413.311277366316,
+   "memnet.wan": 116249.71767925705
+  },
+  "video": {
+   "radio.dl": 5.038351075483664,
+   "radio.ul": 247.54453632776867,
+   "radio.ctrl": 84.21052631578948,
+   "radio.conn": 1000,
+   "compute.cpu": 2943.946708483697,
+   "compute.engine": 196.78317908167847,
+   "compute.dram": 11235.745164224098,
+   "compute.sign": 1066.6666666666667,
+   "compute.isp": Infinity,
+   "compute.enc": 41.47200000000001,
+   "compute.dec": 50.9607936,
+   "memnet.ram": 6327.2182703107455,
+   "memnet.nic": 1277.021967258908,
+   "memnet.wan": 2854.6820047371407
+  },
+  "camera": {
+   "radio.dl": 56.9187405098681,
+   "radio.ul": 9.477348141936975,
+   "radio.ctrl": 167.16417910447763,
+   "radio.conn": 1000,
+   "compute.cpu": 4544.473320414513,
+   "compute.engine": 681.6459410689049,
+   "compute.dram": 32531.778699177372,
+   "compute.sign": 1066.6666666666667,
+   "compute.isp": 3555.5555555555557,
+   "compute.enc": 165.88800000000003,
+   "compute.dec": Infinity,
+   "memnet.ram": 7742.82223579719,
+   "memnet.nic": 1735.0520064488414,
+   "memnet.wan": 1856.3394788777741
+  }
+ },
+ "reach": {
+  "delta | RULED split | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 2023.0514629896463,
+   "reach": 2023.0514629896463
+  },
+  "delta | L.6.0 key inline | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1164.706520117075,
+   "reach": 1164.706520117075
+  },
+  "delta | L.6.0 MAC + 1 sig/s | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1908.2335270828708,
+   "reach": 1908.2335270828708
+  },
+  "video | RULED split | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1271.442259583839,
+   "reach": 1271.442259583839
+  },
+  "video | L.6.0 key inline | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1215.481164051438,
+   "reach": 1215.481164051438
+  },
+  "video | L.6.0 MAC + 1 sig/s | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1259.375264840157,
+   "reach": 1259.375264840157
+  },
+  "delta | ruled, env 0 dB | env 0 | UMa | 20 dBm": {
+   "dl": 4324.463035853942,
+   "ul": 3241.403466225532,
+   "reach": 3241.403466225532
+  },
+  "delta | ruled, env 8 dB | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 2023.0514629896463,
+   "reach": 2023.0514629896463
+  },
+  "delta | ruled, env 15 dB | env 15 | UMa | 20 dBm": {
+   "dl": 1786.7878857546887,
+   "ul": 1339.2129300311724,
+   "reach": 1339.2129300311724
+  },
+  "delta | ruled, env 0 dB | env 0 | RMa | 20 dBm": {
+   "dl": 8597.937265797116,
+   "ul": 6423.183223558618,
+   "reach": 6423.183223558618
+  },
+  "delta | ruled, env 8 dB | env 8 | RMa | 20 dBm": {
+   "dl": 5337.209855432978,
+   "ul": 3987.182566421536,
+   "reach": 3987.182566421536
+  },
+  "delta | ruled, env 15 dB | env 15 | RMa | 20 dBm": {
+   "dl": 3516.516954596049,
+   "ul": 2626.9734886850983,
+   "reach": 2626.9734886850983
+  },
+  "delta | ruled, P_ue 17 dBm | env 8 | UMa | 17 dBm": {
+   "dl": 2510.362061383111,
+   "ul": 1695.2309469014822,
+   "reach": 1695.2309469014822
+  },
+  "delta | ruled, P_ue 23 dBm | env 8 | UMa | 23 dBm": {
+   "dl": 2884.0232473335536,
+   "ul": 2414.2446017763527,
+   "reach": 2414.2446017763527
+  },
+  "video | ruled, ACK 0.3 % | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 1747.7862334115002,
+   "reach": 1747.7862334115002
+  },
+  "camera | ruled, camera upload | env 8 | UMa | 20 dBm": {
+   "dl": 2699.068194934109,
+   "ul": 313.10977901312134,
+   "reach": 313.10977901312134
+  }
+ },
+ "sweeps": {
+  "radius_0.3": {
+   "urban": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 84.21052631578948,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   },
+   "rural": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 84.21052631578948,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   }
+  },
+  "radius_0.5": {
+   "urban": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 84.21052631578948,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   },
+   "rural": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 84.21052631578948,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   }
+  },
+  "radius_1": {
+   "urban": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 44.074508501255615,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   },
+   "rural": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 84.21052631578948,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   }
+  },
+  "radius_2": {
+   "urban": {
+    "delta": 76.39000118898706,
+    "video": 5.038351075483664,
+    "delta_radio": 76.39000118898706,
+    "video_radio": 5.038351075483664,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.9752264195724425,
+    "video_cov": 0.40661545465366666
+   },
+   "rural": {
+    "delta": 78.99428571428572,
+    "video": 41.47200000000001,
+    "delta_radio": 248.88888888888889,
+    "video_radio": 47.44988679323582,
+    "delta_bind": "compute.enc",
+    "video_bind": "compute.enc",
+    "delta_cov": 1.0,
+    "video_cov": 1.0
+   }
+  },
+  "radius_3": {
+   "urban": {
+    "delta": 14.49555634226906,
+    "video": 0.9560636307115864,
+    "delta_radio": 14.49555634226906,
+    "video_radio": 0.9560636307115864,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.45394997468375264,
+    "video_cov": 0.18197905319187602
+   },
+   "rural": {
+    "delta": 78.99428571428572,
+    "video": 16.087694574172104,
+    "delta_radio": 243.91690639205686,
+    "video_radio": 16.087694574172104,
+    "delta_bind": "compute.enc",
+    "video_bind": "radio.dl",
+    "delta_cov": 1.0,
+    "video_cov": 0.7193253994901982
+   }
+  },
+  "radius_5": {
+   "urban": {
+    "delta": 13.335293275624323,
+    "video": 0.87953774278535,
+    "delta_radio": 13.335293275624323,
+    "video_radio": 0.87953774278535,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.17918743189258568,
+    "video_cov": 0.08022599005598119
+   },
+   "rural": {
+    "delta": 27.690766521970954,
+    "video": 1.8263621038803308,
+    "delta_radio": 27.690766521970954,
+    "video_radio": 1.8263621038803308,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.6294161421173805,
+    "video_cov": 0.2699377322482728
+   }
+  },
+  "radius_8": {
+   "urban": {
+    "delta": 11.700455061889595,
+    "video": 0.7717109494327188,
+    "delta_radio": 11.700455061889595,
+    "video_radio": 0.7717109494327188,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.07826624378395952,
+    "video_cov": 0.02878171753544234
+   },
+   "rural": {
+    "delta": 13.749962684807585,
+    "video": 0.9068875271970546,
+    "delta_radio": 13.749962684807585,
+    "video_radio": 0.9068875271970546,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.2527914730913281,
+    "video_cov": 0.10875526284197379
+   }
+  },
+  "radius_10": {
+   "urban": {
+    "delta": 14.14142159272184,
+    "video": 0.9327064482469185,
+    "delta_radio": 14.14142159272184,
+    "video_radio": 0.9327064482469185,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.05279299502716761,
+    "video_cov": 0.02732780809826152
+   },
+   "rural": {
+    "delta": 15.301301315045558,
+    "video": 1.0092070524548407,
+    "delta_radio": 15.301301315045558,
+    "video_radio": 1.0092070524548407,
+    "delta_bind": "radio.dl",
+    "video_bind": "radio.dl",
+    "delta_cov": 0.15203006126891405,
+    "video_cov": 0.05691543185492087
+   }
+  },
+  "elem_16": {
+   "delta_radio": 53.20006545219503,
+   "video_radio": 3.508844126389552,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.9018473804148466,
+   "video_cov": 0.41323460575368076
+  },
+  "elem_64": {
+   "delta_radio": 244.7449495299019,
+   "video_radio": 16.142308685563293,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 0.8038005918228852
+  },
+  "elem_128": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 29.181922603574023,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "elem_256": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 44.074508501255615,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "elem_512": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 59.518268380634574,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "elem_1024": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 74.5156164472023,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "pue_14": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 42.61456158278892,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 0.8038005918228852
+  },
+  "pue_17": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 43.5741305456967,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "pue_20": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 44.074508501255615,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "pue_23": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 44.33045712522768,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "env_0": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 82.68276853736062,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "env_8": {
+   "delta_radio": 248.88888888888889,
+   "video_radio": 44.074508501255615,
+   "delta_bind": "radio.ctrl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 1.0
+  },
+  "env_15": {
+   "delta_radio": 239.11607411970164,
+   "video_radio": 15.771052630643444,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 1.0,
+   "video_cov": 0.7058802457777605
+  },
+  "env_25": {
+   "delta_radio": 14.50552232270365,
+   "video_radio": 0.9567209432846894,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.5593020915704965,
+   "video_cov": 0.24395665228878194
+  },
+  "sectors_1": {
+   "delta": 76.39000118898706,
+   "video": 5.038351075483664,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl"
+  },
+  "sectors_3": {
+   "delta": 78.99428571428572,
+   "video": 15.115053226450993,
+   "delta_bind": "compute.enc",
+   "video_bind": "radio.dl"
+  },
+  "rate_video": {
+   "n": 5.038351075483664,
+   "radio": 5.038351075483664,
+   "bind": "radio.dl"
+  },
+  "rate_video80": {
+   "n": 1.9028608123983513,
+   "radio": 1.9028608123983513,
+   "bind": "radio.dl"
+  },
+  "rate_video150": {
+   "n": 1.0168904056426418,
+   "radio": 1.0168904056426418,
+   "bind": "radio.dl"
+  },
+  "ul_mode_3": {
+   "delta": 76.39000118898706,
+   "video": 5.038351075483664,
+   "ul_delta": 0.052152,
+   "ul_video": 0.47112,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.9752264195724425,
+   "video_cov": 0.40661545465366666
+  },
+  "ul_mode_0": {
+   "delta": 31.809034708466207,
+   "video": 5.038351075483664,
+   "ul_delta": 0.681184,
+   "ul_video": 0.570016,
+   "delta_bind": "radio.ul",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.3573506081986153,
+   "video_cov": 0.3819769034161191
+  },
+  "ul_mode_1": {
+   "delta": 76.39000118898706,
+   "video": 5.038351075483664,
+   "ul_delta": 0.453088,
+   "ul_video": 0.5285439999999999,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.40661545465366666,
+   "video_cov": 0.3819769034161191
+  },
+  "ul_mode_2": {
+   "delta": 76.39000118898706,
+   "video": 5.038351075483664,
+   "ul_delta": 0.071408,
+   "ul_video": 0.4903759999999999,
+   "delta_bind": "radio.dl",
+   "video_bind": "radio.dl",
+   "delta_cov": 0.900923680574531,
+   "video_cov": 0.40661545465366666
+  }
+ },
+ "compute_tiers": {
+  "C2/cpu": {
+   "idle": 3549.9440844362875,
+   "idle_bind": "compute.dram",
+   "idle_render": 3549.9440844362875,
+   "idle_render_bind": "compute.dram",
+   "delta": 78.99428571428572,
+   "delta_bind": "compute.enc",
+   "delta_render": 93.60879425416073,
+   "delta_render_bind": "compute.dram",
+   "video": 41.47200000000001,
+   "video_bind": "compute.enc",
+   "video_render": 87.71256301504428,
+   "video_render_bind": "compute.dram",
+   "full240": 3.456000000000001,
+   "full240_bind": "compute.enc",
+   "full240_render": 4.1998123949402935,
+   "full240_render_bind": "compute.dram",
+   "mix_compute": 445.93548387096786,
+   "mix": 132.61152535577313,
+   "mix_bind": "radio.dl"
+  },
+  "C2/fpga": {
+   "idle": 16000.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 16000.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 78.99428571428572,
+   "delta_bind": "compute.enc",
+   "delta_render": 266.6666666666667,
+   "delta_render_bind": "compute.sign",
+   "video": 41.47200000000001,
+   "video_bind": "compute.enc",
+   "video_render": 196.78317908167847,
+   "video_render_bind": "compute.engine",
+   "full240": 3.456000000000001,
+   "full240_bind": "compute.enc",
+   "full240_render": 12.350157014612247,
+   "full240_render_bind": "compute.engine",
+   "mix_compute": 445.93548387096786,
+   "mix": 132.61152535577313,
+   "mix_bind": "radio.dl"
+  },
+  "C2/asic": {
+   "idle": 16000.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 16000.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 78.99428571428572,
+   "delta_bind": "compute.enc",
+   "delta_render": 266.6666666666667,
+   "delta_render_bind": "compute.sign",
+   "video": 41.47200000000001,
+   "video_bind": "compute.enc",
+   "video_render": 1066.6666666666667,
+   "video_render_bind": "compute.sign",
+   "full240": 3.456000000000001,
+   "full240_bind": "compute.enc",
+   "full240_render": 266.6666666666667,
+   "full240_render_bind": "compute.sign",
+   "mix_compute": 445.93548387096786,
+   "mix": 132.61152535577313,
+   "mix_bind": "radio.dl"
+  },
+  "C1/base": {
+   "idle": 4000.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 4000.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 4.9603174603174605,
+   "delta_bind": "compute.enc",
+   "delta_render": 66.66666666666667,
+   "delta_render_bind": "compute.sign",
+   "video": 2.604166666666667,
+   "video_bind": "compute.enc",
+   "video_render": 49.19579477041962,
+   "video_render_bind": "compute.engine",
+   "full240": 0.21701388888888892,
+   "full240_bind": "compute.enc",
+   "full240_render": 3.0875392536530617,
+   "full240_render_bind": "compute.engine",
+   "mix_compute": 28.001792114695345,
+   "mix": 28.001792114695345,
+   "mix_bind": "compute.enc"
+  },
+  "C1/ma35d": {
+   "idle": 4000.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 4000.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 24.70888888888889,
+   "delta_bind": "compute.enc",
+   "delta_render": 66.66666666666667,
+   "delta_render_bind": "compute.sign",
+   "video": 12.972166666666668,
+   "video_bind": "compute.enc",
+   "video_render": 49.19579477041962,
+   "video_render_bind": "compute.engine",
+   "full240": 1.0810138888888892,
+   "full240_bind": "compute.enc",
+   "full240_render": 3.0875392536530617,
+   "full240_render_bind": "compute.engine",
+   "mix_compute": 139.4856630824373,
+   "mix": 139.4856630824373,
+   "mix_bind": "compute.enc"
+  },
+  "C0/base": {
+   "idle": 2400.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 2400.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 2.4801587301587302,
+   "delta_bind": "compute.enc",
+   "delta_render": 40.0,
+   "delta_render_bind": "compute.sign",
+   "video": 1.3020833333333335,
+   "video_bind": "compute.enc",
+   "video_render": 49.19579477041962,
+   "video_render_bind": "compute.engine",
+   "full240": 0.10850694444444446,
+   "full240_bind": "compute.enc",
+   "full240_render": 3.0875392536530617,
+   "full240_render_bind": "compute.engine",
+   "mix_compute": 14.000896057347672,
+   "mix": 1.0,
+   "mix_bind": "radio.ports"
+  },
+  "C0/ma35d": {
+   "idle": 2400.0,
+   "idle_bind": "compute.sign",
+   "idle_render": 2400.0,
+   "idle_render_bind": "compute.sign",
+   "delta": 22.228730158730162,
+   "delta_bind": "compute.enc",
+   "delta_render": 40.0,
+   "delta_render_bind": "compute.sign",
+   "video": 11.670083333333334,
+   "video_bind": "compute.enc",
+   "video_render": 49.19579477041962,
+   "video_render_bind": "compute.engine",
+   "full240": 0.9725069444444446,
+   "full240_bind": "compute.enc",
+   "full240_render": 3.0875392536530617,
+   "full240_render_bind": "compute.engine",
+   "mix_compute": 125.48476702508962,
+   "mix": 1.0,
+   "mix_bind": "radio.ports"
+  }
+ },
+ "family": {
+  "Leaf 80": {
+   "px_factor": 0.5,
+   "video": 9.963774665781559,
+   "delta": 76.39000118898706,
+   "video_bind": "radio.dl",
+   "delta_bind": "radio.dl",
+   "video_compute": 82.94400000000002,
+   "delta_compute": 157.98857142857145
+  },
+  "Leaf 160": {
+   "px_factor": 1.0,
+   "video": 5.038351075483664,
+   "delta": 76.39000118898706,
+   "video_bind": "radio.dl",
+   "delta_bind": "radio.dl",
+   "video_compute": 41.47200000000001,
+   "delta_compute": 78.99428571428572
+  },
+  "Leaf 480": {
+   "px_factor": 0.81,
+   "video": 6.203693701697265,
+   "delta": 76.39000118898706,
+   "video_bind": "radio.dl",
+   "delta_bind": "radio.dl",
+   "video_compute": 51.2,
+   "delta_compute": 97.52380952380953
+  }
+ },
+ "skin": {
+  "per_skin": {
+   "hash_gbps": 4.9152,
+   "touched_gpx": 2.7697152,
+   "lut_k": 38.21824000000001,
+   "enc_mpix": 1228.8
+  },
+  "C0": {
+   "compute": 9.764342889677806,
+   "link": 2.0,
+   "link_note": "tether ports of the dock, 2 per dock [HYPOTHESIS], one Skin per tether"
+  },
+  "C1": {
+   "compute": 9.764342889677806,
+   "link": {
+    "3:1": 1.365853658536585,
+    "4:1": 1.826086956521739,
+    "6:1": 2.754098360655737
+   },
+   "link_note": "60 GHz room link, 16.8 Gbit/s aggregate per Core [HYPOTHESIS]"
+  },
+  "C2": {
+   "compute": NaN,
+   "link": 0.0,
+   "link_note": "6 Gbit/s does not cross a kilometre to a Leaf antenna: BRIEF Section 8.2"
+  }
+ },
+ "monte_carlo": {
+  "C0/idle": {
+   "p10": 1.0,
+   "p50": 1.0,
+   "p90": 1.0,
+   "bind": {
+    "radio.ports": 1.0
+   }
+  },
+  "C0/delta": {
+   "p10": 0.9337971113735187,
+   "p50": 1.0,
+   "p90": 1.0,
+   "bind": {
+    "radio.ports": 0.877,
+    "compute.enc": 0.122
+   }
+  },
+  "C0/video": {
+   "p10": 0.9670821559374947,
+   "p50": 1.0,
+   "p90": 1.0,
+   "bind": {
+    "radio.ports": 0.885,
+    "compute.dec": 0.065,
+    "compute.enc": 0.05
+   }
+  },
+  "C0/camera": {
+   "p10": 1.0,
+   "p50": 1.0,
+   "p90": 1.0,
+   "bind": {
+    "radio.ports": 1.0
+   }
+  },
+  "C1/idle": {
+   "p10": 256.0,
+   "p50": 256.0,
+   "p90": 256.0,
+   "bind": {
+    "radio.conn": 1.0
+   }
+  },
+  "C1/delta": {
+   "p10": 1.8675942227470375,
+   "p50": 4.252079894322743,
+   "p90": 12.296339693562706,
+   "bind": {
+    "compute.enc": 0.995,
+    "compute.sign": 0.005
+   }
+  },
+  "C1/video": {
+   "p10": 1.9341643118749894,
+   "p50": 3.1639925635041175,
+   "p90": 4.361189001077968,
+   "bind": {
+    "compute.dec": 0.64,
+    "compute.enc": 0.36
+   }
+  },
+  "C1/camera": {
+   "p10": 6.0584767227152865,
+   "p50": 8.386960356960127,
+   "p90": 11.575712698089298,
+   "bind": {
+    "radio.dl": 0.6,
+    "compute.enc": 0.4
+   }
+  },
+  "C2/idle": {
+   "p10": 4066.7,
+   "p50": 7092.221447702225,
+   "p90": 11370.000000000002,
+   "bind": {
+    "radio.conn": 0.59,
+    "radio.ctrl": 0.315,
+    "radio.dl": 0.085,
+    "radio.ul": 0.01
+   }
+  },
+  "C2/delta": {
+   "p10": 11.34889089220036,
+   "p50": 33.6219047242698,
+   "p90": 111.0473150777148,
+   "bind": {
+    "radio.dl": 0.522,
+    "compute.enc": 0.43,
+    "compute.sign": 0.043,
+    "radio.ctrl": 0.005
+   }
+  },
+  "C2/video": {
+   "p10": 0.7677214244684886,
+   "p50": 4.709951060437859,
+   "p90": 23.439330287803507,
+   "bind": {
+    "radio.dl": 0.985,
+    "compute.dec": 0.01,
+    "compute.enc": 0.003,
+    "radio.ul": 0.003
+   }
+  },
+  "C2/camera": {
+   "p10": 3.799435074175766,
+   "p50": 7.867659261395897,
+   "p90": 9.778916860476675,
+   "bind": {
+    "radio.ul": 0.945,
+    "radio.dl": 0.055
+   }
+  },
+  "C0/mix": {
+   "p10": 1.0,
+   "p50": 1.0,
+   "p90": 1.0,
+   "bind": {
+    "radio.ports": 1.0
+   }
+  },
+  "C1/mix": {
+   "p10": 13.445174049469548,
+   "p50": 27.09709623455157,
+   "p90": 55.95264510529037,
+   "bind": {
+    "compute.enc": 1.0
+   }
+  },
+  "C2/mix": {
+   "p10": 20.17354035693602,
+   "p50": 122.57754930426205,
+   "p90": 437.36634376209554,
+   "bind": {
+    "radio.dl": 0.772,
+    "compute.enc": 0.228
+   }
+  }
+ },
+ "base_params": {
+  "fc_ghz": 3.5,
+  "bw_mhz": 100.0,
+  "scs_khz": 30.0,
+  "n_prb": 273,
+  "dl_frac": 0.743,
+  "ul_frac": 0.229,
+  "ovh_dl": 0.75,
+  "ovh_ul": 0.8,
+  "n_elem": 256,
+  "g_elem": 6.0,
+  "p_tot_dbm": 50.0,
+  "nf_bs": 3.0,
+  "nf_ue": 7.0,
+  "leaf_gain_db": 0.5,
+  "body_db": 3.0,
+  "env_db": 8.0,
+  "p_ue_dbm": 20.0,
+  "kappa": 0.75,
+  "se_max_dl": 5.5,
+  "se_max_ul": 4.0,
+  "sinr_min_db": -6.5,
+  "k_max": 16,
+  "k_ul_max": 8,
+  "csi_q": 0.6,
+  "srs_prb": 4,
+  "srs_accum": 8,
+  "rho_cap": 0.7,
+  "conn_active": 1000,
+  "conn_inactive": 8000,
+  "slots_per_s": 2000,
+  "users_per_slot": 8,
+  "cg_ul_grant_share": 0.1,
+  "sectors": 1,
+  "h_bs": 25.0,
+  "urban": 1,
+  "wf_fc_ghz": 6.5,
+  "wf_bw_mhz": 320.0,
+  "wf_ap_eirp_dbm": 23.0,
+  "wf_nf": 6.0,
+  "wf_p_ue_dbm": 20.0,
+  "wf_mac_eff": 0.65,
+  "wf_avail": 0.7,
+  "wf_mu": 3.0,
+  "wf_t_ovh_us": 100.0,
+  "wf_assoc": 256,
+  "wf_room_radius_m": 15.0,
+  "c0_radius_m": 1.5,
+  "c0_ports": 1,
+  "batches_delta": 10.0,
+  "batches_video": 1.0,
+  "ack_share": 0.015,
+  "ul_mode": 3,
+  "ident_sig": 2420,
+  "sign_ms": 1.0,
+  "dirty_delta": 0.35,
+  "fps_delta": 30.0,
+  "fps_video": 60.0,
+  "spec_delta": 2,
+  "shadow_share": 0.1,
+  "sample_share": 0.0625,
+  "sha_x": 1.0,
+  "lut_x": 1.0,
+  "codec_x": 1.0,
+  "asic_lut_eq": 10000000.0,
+  "mem_x": 1.0,
+  "rho_net": 0.7
+ },
+ "mix": {
+  "idle": 0.85,
+  "delta": 0.12,
+  "video": 0.03
+ }
+}

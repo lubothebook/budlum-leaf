@@ -1,0 +1,45 @@
+G. DISTANCE CLASSES (hw/core/BRIEF.md Section 8): C0 up to 2 m, C1 up to about 30 m, C2 kilometres
+====================================================================================================
+G1. which option exists at which class
+opt  link                                                          C0    C1    C2   note
+a    contact leaves on a seat or dock                             yes    no    no   touching; 0 m
+b    thin flex or ribbon                                          yes    no    no   0.25 to 0.8 m by loss (B2); twinax 1 to 3 m
+b2   active copper or round cable (USB4 class)                    yes    no    no   2 m passive, to 5 m active; not a Leaf part
+c    optical fibre tether                                         yes   yes    no   to 100 m by loss; power by copper pair or local
+d    60 GHz close-range radio                                     yes LOS only    no   to 18 m LOS at 2.6 Gb/s, 8 m at 5.1 Gb/s (B1); a hand blocks it
+e    near-field coupler in-plane                                mm only    no    no   a seat, not a tether
+f1   Wi-Fi 7                                                      yes   yes    no   outdoors 100 m to 1 km only at low rate (far seat)
+f2   UWB                                                          yes   yes    no   control, ranging, no pixels
+g    the Leaf radios: 5G modem U5, Wi-Fi 7 U2A, bar and ring antennas   yes   yes   yes   slice streams only, tens to 150 Mb/s
+
+G2. the stream that crosses each class
+  C0 and C1 wired or fibre: DSC slices, 0.004 to 13.1 Gb/s (use cases, Section A3).
+  C1 radio: DSC or VDC-M slices of the changed tiles, 0.2 to 3 Gb/s at 60 Hz. 60 GHz carries up to about 4 Gb/s net in line of sight.
+  C2: only the Leaf radios. The stream is an AV1 or HEVC slice stream. The bitrate model below uses bits per pixel of coded video.
+content                               fps bpp (coded)  dirty     Mb/s   [HYPOTHESIS] AV1 low-latency slices, screen content costs more per changed pixel
+static page, cursor and clock          10       0.800  0.002      0.1  (high estimate, bpp x 4: 0.3)
+UI, typing, small animation            60       0.500  0.060      9.2  (high estimate, bpp x 4: 36.9)
+scroll at 60 Hz                        60       0.120  0.850     31.3  (high estimate, bpp x 4: 125.3)
+video 16:9, 30 fps                     30       0.090  0.280      3.9  (high estimate, bpp x 4: 15.5)
+video vertical, 60 fps                 60       0.040  0.890     10.9  (high estimate, bpp x 4: 43.7)
+full motion, 240 Hz game              240       0.025  1.000     30.7  (high estimate, bpp x 4: 122.9)
+  Range of C2 stream: 0.1 Mb/s (static) to about 150 Mb/s (full motion at 240 Hz), the figure of the brief. The compressed
+  rate is 40 to 100 times under the DSC rate: DSC is intra-only at 3:1 to 5:1. AV1 and HEVC use motion search and inter frames.
+  The ratio DSC 10 bpp / AV1 for full motion at 240 Hz: 427:1 (low) to 107:1 (high).
+
+G3. what stays on the Skin at each class
+  C0 and C1 wired: the common Skin of Section C (hubs with DSC decoders, no frame store, no compositor). 17 g, 1.00 mm.
+  C1 radio (Wi-Fi 7, 60 GHz): the common Skin + a radio end + a cell + a small link MAC core. Decoder stays the DSC hub.
+  C2: the Skin is the L.6.0 Leaf. It needs, because the slice stream is 100 times thinner and the path is long:
+    U6 AV1 and HEVC slice decoder; the frame store: 15.36 MB (8 bit RGB), 19.2 MB (10 bit), 30.7 MB for the more-room canvas;
+    U1 compositor: cursor, scroll offset, typed-glyph echo, stretch warp (4.92 Gtap/s); U2A, U2B, U5; U7; the cell 5.9 Wh.
+  Why the compositor and the store cannot leave: at C2 the round trip is 1 to 20+ ms by air alone plus the fibre (0.005 ms per km each way,
+  0.1 ms at 20 km). The predicted-action path of Part 21 (4.4 ms mean) needs the store on the Leaf.
+  The C2 Skin is the Leaf: the smallest Skin is a C0 and C1 result. [HYPOTHESIS]
+
+G4. mass and load of the Skin by class (video session, Wi-Fi)
+  C0 wired: Skin 17 g, load 1.57 W, no cell (bridge only)
+  C1 fibre with clip: Skin 17 g plus a 4 g clip, load 1.57 W
+  C1 60 GHz: Skin 48 g with its cell (4.8 Wh), load 2.17 W
+  C1 Wi-Fi 7: Skin 52 g with its cell (5.7 Wh), load 2.57 W
+  C2: the Leaf body 47 g plus the module of 20 g; load 2.02 W (delta) and 3.27 W (video), hw/energy 04 body plus ring

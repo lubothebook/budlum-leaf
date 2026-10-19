@@ -31,7 +31,7 @@ CANON = os.path.join(HERE, "canon.json")
 ASSEMBLED = os.path.join(LEAF, "BUDLUM-LEAF-FINAL-DIRECTIVE-v5.md")
 
 DEVICE_PREFIXES = ("MEC", "ENR", "DSP", "RF", "CAM", "CLR", "FLD", "SW", "DST",
-                    "DUO", "SZ", "B", "EY", "RL", "MON", "HST")
+                    "DUO", "SZ", "B", "EY", "RL", "MON", "HST", "CSK")
 PROGRAM_PREFIX = "PRG"
 RESEARCH_PREFIX = "RG"
 

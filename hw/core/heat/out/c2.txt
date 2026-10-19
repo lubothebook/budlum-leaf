@@ -1,0 +1,148 @@
+CLASS C2 - the Leaf keeps the radio, the 5G modem, the decoder and the compositor (BRIEF Section 8)
+The body is the L.6.0 fixed body with the B ring. The ring carries hub + authority + radio.
+hub (decoder, compositor, frame store): delta 0.70 W, video 1.20 W. authority 0.12 W. Radio domain swept 0.4 to 1.6 W.
+Tiles carry display + address: delta 0.60 + 0.20 W, video 1.10 + 0.25 W (hw/energy body column).
+Energy is local: the Leaf cells (cells), or a near contact host (f.10, f.34).
+
+=== ambient 20 C, still air ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    34.6    +1.6 ring shell        31.9
+delta    cells      0.8    2.42    38.5    -2.3 ring shell        35.8  X
+delta    cells      1.2    2.82    42.5    -6.3 ring shell        39.8  X
+delta    cells      1.6    3.22    46.5   -10.3 ring shell        43.7  X
+delta    feed034    0.4    2.02    38.0    -1.8 back skin         35.4  X
+video    cells      0.4    3.07    41.4    -5.2 ring shell        36.8  X
+video    cells      0.8    3.47    45.4    -9.2 ring shell        40.8  X
+video    cells      1.2    3.87    49.4   -13.2 ring shell        44.7  X
+video    cells      1.6    4.27    53.4   -17.2 ring shell        48.7  X
+video    feed034    0.4    3.07    44.3    -8.1 ring shell        39.8  X
+
+=== ambient 25 C, still air ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    39.5    -3.3 ring shell        36.8  X
+delta    cells      0.8    2.42    43.4    -7.2 ring shell        40.7  X
+delta    cells      1.2    2.82    47.3   -11.1 ring shell        44.6  X
+delta    cells      1.6    3.22    51.2   -15.0 ring shell        48.5  X
+delta    feed034    0.4    2.02    42.9    -6.7 back skin         40.3  X
+video    cells      0.4    3.07    46.2   -10.0 ring shell        41.7  X
+video    cells      0.8    3.47    50.2   -14.0 ring shell        45.6  X
+video    cells      1.2    3.87    54.1   -17.9 ring shell        49.5  X
+video    cells      1.6    4.27    58.1   -21.9 ring shell        53.4  X
+video    feed034    0.4    3.07    49.1   -12.9 ring shell        44.6  X
+
+=== ambient 30 C, still air ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    44.4    -8.2 ring shell        41.7  X
+delta    cells      0.8    2.42    48.2   -12.0 ring shell        45.6  X
+delta    cells      1.2    2.82    52.1   -15.9 ring shell        49.5  X
+delta    cells      1.6    3.22    56.0   -19.8 ring shell        53.4  X
+delta    feed034    0.4    2.02    47.7   -11.5 back skin         45.2  X
+video    cells      0.4    3.07    51.1   -14.9 ring shell        46.6  X
+video    cells      0.8    3.47    55.0   -18.8 ring shell        50.4  X
+video    cells      1.2    3.87    58.9   -22.7 ring shell        54.3  X
+video    cells      1.6    4.27    62.8   -26.6 ring shell        58.2  X
+video    feed034    0.4    3.07    53.9   -17.7 ring shell        49.5  X
+
+=== ambient 35 C, still air ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    49.2   -13.0 ring shell        46.6  X
+delta    cells      0.8    2.42    53.1   -16.9 ring shell        50.5  X
+delta    cells      1.2    2.82    57.0   -20.8 ring shell        54.3  X
+delta    cells      1.6    3.22    60.8   -24.6 ring shell        58.2  X
+delta    feed034    0.4    2.02    52.6   -16.4 back skin         50.0  X
+video    cells      0.4    3.07    55.9   -19.7 ring shell        51.4  X
+video    cells      0.8    3.47    59.8   -23.6 ring shell        55.3  X
+video    cells      1.2    3.87    63.6   -27.4 ring shell        59.1  X
+video    cells      1.6    4.27    67.5   -31.3 ring shell        63.0  X
+video    feed034    0.4    3.07    58.7   -22.5 ring shell        54.3  X
+
+=== ambient 20 C, light wind ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    30.7    +5.5 ring shell        29.0
+delta    cells      0.8    2.42    33.7    +2.5 ring shell        32.0
+delta    cells      1.2    2.82    36.7    -0.5 ring shell        35.0  X
+delta    cells      1.6    3.22    39.7    -3.5 ring shell        38.0  X
+delta    feed034    0.4    2.02    33.2    +3.0 back skin         31.6
+video    cells      0.4    3.07    35.6    +0.6 ring shell        32.8
+video    cells      0.8    3.47    38.6    -2.4 ring shell        35.7  X
+video    cells      1.2    3.87    41.6    -5.4 ring shell        38.7  X
+video    cells      1.6    4.27    44.7    -8.5 ring shell        41.7  X
+video    feed034    0.4    3.07    37.7    -1.5 ring shell        34.9  X
+
+=== ambient 25 C, light wind ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    35.7    +0.5 ring shell        34.0
+delta    cells      0.8    2.42    38.6    -2.4 ring shell        37.0  X
+delta    cells      1.2    2.82    41.6    -5.4 ring shell        39.9  X
+delta    cells      1.6    3.22    44.6    -8.4 ring shell        42.9  X
+delta    feed034    0.4    2.02    38.2    -2.0 back skin         36.6  X
+video    cells      0.4    3.07    40.5    -4.3 ring shell        37.7  X
+video    cells      0.8    3.47    43.5    -7.3 ring shell        40.7  X
+video    cells      1.2    3.87    46.5   -10.3 ring shell        43.6  X
+video    cells      1.6    4.27    49.5   -13.3 ring shell        46.6  X
+video    feed034    0.4    3.07    42.6    -6.4 ring shell        39.8  X
+
+=== ambient 30 C, light wind ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    40.6    -4.4 ring shell        39.0  X
+delta    cells      0.8    2.42    43.6    -7.4 ring shell        41.9  X
+delta    cells      1.2    2.82    46.5   -10.3 ring shell        44.9  X
+delta    cells      1.6    3.22    49.5   -13.3 ring shell        47.8  X
+delta    feed034    0.4    2.02    43.1    -6.9 back skin         41.5  X
+video    cells      0.4    3.07    45.5    -9.3 ring shell        42.6  X
+video    cells      0.8    3.47    48.4   -12.2 ring shell        45.6  X
+video    cells      1.2    3.87    51.4   -15.2 ring shell        48.6  X
+video    cells      1.6    4.27    54.4   -18.2 ring shell        51.5  X
+video    feed034    0.4    3.07    47.5   -11.3 ring shell        44.8  X
+
+=== ambient 35 C, light wind ===
+session  feed     radio   P_L W   T hot  margin hot spot     ring only
+delta    cells      0.4    2.02    45.5    -9.3 ring shell        43.9  X
+delta    cells      0.8    2.42    48.5   -12.3 ring shell        46.8  X
+delta    cells      1.2    2.82    51.4   -15.2 ring shell        49.8  X
+delta    cells      1.6    3.22    54.4   -18.2 ring shell        52.7  X
+delta    feed034    0.4    2.02    48.0   -11.8 back skin         46.5  X
+video    cells      0.4    3.07    50.4   -14.2 ring shell        47.6  X
+video    cells      0.8    3.47    53.3   -17.1 ring shell        50.5  X
+video    cells      1.2    3.87    56.3   -20.1 ring shell        53.5  X
+video    cells      1.6    4.27    59.3   -23.1 ring shell        56.4  X
+video    feed034    0.4    3.07    52.5   -16.3 ring shell        49.7  X
+
+--- sustained display + address power at C2, ring fixed (W; 0.00 = the ring alone is over 36.2 C) ---
+session  wind     radio             20 C    25 C    30 C    35 C
+delta    still    0.4               1.27    0.00    0.00    0.00
+delta    still    0.8               0.11    0.00    0.00    0.00
+delta    still    1.2               0.00    0.00    0.00    0.00
+delta    still    1.6               0.00    0.00    0.00    0.00
+delta    wind     0.4               3.34    1.06    0.00    0.00
+delta    wind     0.8               1.96    0.00    0.00    0.00
+delta    wind     1.2               0.57    0.00    0.00    0.00
+delta    wind     1.6               0.00    0.00    0.00    0.00
+video    still    0.4               0.00    0.00    0.00    0.00
+video    still    0.8               0.00    0.00    0.00    0.00
+video    still    1.2               0.00    0.00    0.00    0.00
+video    still    1.6               0.00    0.00    0.00    0.00
+video    wind     0.4               1.62    0.00    0.00    0.00
+video    wind     0.8               0.22    0.00    0.00    0.00
+video    wind     1.2               0.00    0.00    0.00    0.00
+video    wind     1.6               0.00    0.00    0.00    0.00
+
+--- the ring alone (display off): the highest ambient where it holds 36.2 C, still air ---
+delta  radio 0.4 W: the ring alone holds up to 24.2 C ambient
+delta  radio 0.8 W: the ring alone holds up to 20.2 C ambient
+delta  radio 1.2 W: the ring alone holds up to 16.2 C ambient
+delta  radio 1.6 W: the ring alone holds up to 12.0 C ambient
+video  radio 0.4 W: the ring alone holds up to 19.2 C ambient
+video  radio 0.8 W: the ring alone holds up to 15.2 C ambient
+video  radio 1.2 W: the ring alone holds up to 11.0 C ambient
+video  radio 1.6 W: the ring alone holds up to 9.8 C ambient
+
+--- C2 on the dock plate at 22 C (reference: the ring has a heat path again), 35 C ambient, still air ---
+delta  radio 0.4 W: hottest 27.9 C (ring shell)
+delta  radio 0.8 W: hottest 29.3 C (ring shell)
+delta  radio 1.2 W: hottest 30.8 C (ring shell)
+delta  radio 1.6 W: hottest 32.2 C (ring shell)
+video  radio 0.4 W: hottest 29.9 C (ring shell)
+video  radio 0.8 W: hottest 31.3 C (ring shell)
+video  radio 1.2 W: hottest 32.8 C (ring shell)
+video  radio 1.6 W: hottest 34.2 C (ring shell)

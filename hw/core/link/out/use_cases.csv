@@ -1,0 +1,10 @@
+use_case,fps,tile_dsc10_mbps,strip_dsc10_mbps,tile_dsc8_mbps,tile_vdcm6_mbps,raw10_mbps
+static page, cursor and clock,10,10.6,2.2,8.5,6.5,31.0
+UI, typing, small animation,60,762.3,278.3,614.9,467.4,2235.4
+mixed delta session,60,1323.5,902.0,1067.5,811.5,3881.0
+scroll at 60 Hz, 85 % view,60,2700.0,2760.0,2177.7,1655.5,7917.2
+scroll at 120 Hz, 85 % view,120,5400.0,5520.1,4355.5,3311.0,15834.3
+video 16:9 in portrait, 30 fps,30,495.9,456.2,400.0,304.0,1454.1
+video vertical, 60 fps,60,2827.0,2889.9,2280.2,1733.4,8289.7
+full motion, 120 Hz,120,6352.9,6494.2,5124.1,3895.3,18628.6
+full motion, 240 Hz,240,12705.8,12988.4,10248.2,7790.6,37257.2

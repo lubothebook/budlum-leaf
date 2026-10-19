@@ -1,0 +1,330 @@
+{
+ "validation": "ok",
+ "module_stated_sum_g": 10.8,
+ "mass": {
+  "today": {
+   "body_derived": 40.6,
+   "body_lo": 35.93,
+   "body_hi": 45.9,
+   "module_H13": 10.8,
+   "module_with_placement_parts": 10.875,
+   "leaf_derived": 51.475,
+   "leaf_lo": 46.805,
+   "leaf_hi": 56.775,
+   "leaf_stated_68_plus_H13": 78.8,
+   "leaf_stated_88": 88.0
+  },
+  "C0": {
+   "leaves_g": 20.846,
+   "leaves_lo": 19.624,
+   "leaves_hi": 21.330000000000002,
+   "added_g": 0.06,
+   "skin_g": 30.689,
+   "share_leaving": 0.4049732880038854,
+   "stays_g": 30.629,
+   "basis_A_leaves_g": 36.306,
+   "basis_A_skin_g": 42.554,
+   "basis_A_share": 0.46073604060913703,
+   "module_leaves_g": 1.906,
+   "module_after_g": 9.029
+  },
+  "C0R": {
+   "leaves_g": 19.84,
+   "leaves_lo": 18.62,
+   "leaves_hi": 20.32,
+   "added_g": 0.06,
+   "skin_g": 31.695,
+   "share_leaving": 0.38542982030111705,
+   "stays_g": 31.635,
+   "basis_A_leaves_g": 35.3,
+   "basis_A_skin_g": 43.56,
+   "basis_A_share": 0.4479695431472081,
+   "module_leaves_g": 0.9,
+   "module_after_g": 10.035
+  },
+  "C1": {
+   "leaves_g": 0.0,
+   "leaves_lo": 0.0,
+   "leaves_hi": 0.0,
+   "added_g": 0,
+   "skin_g": 51.475,
+   "share_leaving": 0.0,
+   "stays_g": 51.475,
+   "basis_A_leaves_g": 0.0,
+   "basis_A_skin_g": 78.8,
+   "basis_A_share": 0.0,
+   "module_leaves_g": 0.0,
+   "module_after_g": 10.875
+  },
+  "C2": {
+   "leaves_g": 0.0,
+   "leaves_lo": 0.0,
+   "leaves_hi": 0.0,
+   "added_g": 0,
+   "skin_g": 51.475,
+   "share_leaving": 0.0,
+   "stays_g": 51.475,
+   "basis_A_leaves_g": 0.0,
+   "basis_A_skin_g": 78.8,
+   "basis_A_share": 0.0,
+   "module_leaves_g": 0.0,
+   "module_after_g": 10.875
+  }
+ },
+ "volume": {
+  "ring_envelope_mm3": 3216.990877275948,
+  "ring_layer_above_board_mm3": 1572.0333289022476,
+  "b_cell_mm3": 240.0,
+  "bar_envelope_mm3": 128.0,
+  "body_cell_layer_mm3_each": 77.00625000000001,
+  "body_cell_layer_mm3_all": 9856.800000000001,
+  "classes": {
+   "C0": {
+    "ring_volume_freed_mm3": 377.308,
+    "items": [
+     [
+      "M16",
+      12.168000000000001
+     ],
+     [
+      "M17",
+      15.0
+     ],
+     [
+      "M18",
+      13.5
+     ],
+     [
+      "M19",
+      64.0
+     ],
+     [
+      "M20",
+      25.2
+     ],
+     [
+      "M21",
+      1.6
+     ],
+     [
+      "M27",
+      3.6
+     ],
+     [
+      "M29",
+      240.0
+     ],
+     [
+      "X03",
+      2.2399999999999998
+     ]
+    ],
+    "share_of_layer": 0.2400127230530631,
+    "times_b_cell": 1.5721166666666666,
+    "body_cell_volume_freed_mm3": 9856.800000000001,
+    "body_cells_leaving": 128
+   },
+   "C0R": {
+    "ring_volume_freed_mm3": 282.568,
+    "items": [
+     [
+      "M16",
+      12.168000000000001
+     ],
+     [
+      "M20",
+      25.2
+     ],
+     [
+      "M21",
+      1.6
+     ],
+     [
+      "M27",
+      3.6
+     ],
+     [
+      "M29",
+      240.0
+     ]
+    ],
+    "share_of_layer": 0.17974682521350707,
+    "times_b_cell": 1.1773666666666667,
+    "body_cell_volume_freed_mm3": 9856.800000000001,
+    "body_cells_leaving": 128
+   },
+   "C1": {
+    "ring_volume_freed_mm3": 0.0,
+    "items": [],
+    "share_of_layer": 0.0,
+    "times_b_cell": 0.0,
+    "body_cell_volume_freed_mm3": 0.0,
+    "body_cells_leaving": 0
+   },
+   "C2": {
+    "ring_volume_freed_mm3": 0.0,
+    "items": [],
+    "share_of_layer": 0.0,
+    "times_b_cell": 0.0,
+    "body_cell_volume_freed_mm3": 0.0,
+    "body_cells_leaving": 0
+   }
+  }
+ },
+ "energy": {
+  "per_cell": {
+   "G_target": 0.04609375,
+   "S_target": 0.05765625,
+   "G_model": 0.053359375,
+   "S_model": 0.0653125
+  },
+  "buffer_wh": {
+   "G_target": 0.921875,
+   "S_target": 1.153125,
+   "G_model": 1.0671875,
+   "S_model": 1.30625
+  },
+  "leaving_wh": {
+   "G_target": 4.978125,
+   "S_target": 6.226875,
+   "G_model": 5.7628125,
+   "S_model": 7.053749999999999
+  },
+  "body_wh": {
+   "G_target": 5.9,
+   "S_target": 7.38,
+   "G_model": 6.83,
+   "S_model": 8.36
+  }
+ },
+ "cost_summary": {
+  "100000": {
+   "C0": {
+    "leaves_low": 205.53101604278075,
+    "leaves_base": 295.81711229946524,
+    "leaves_high": 431.46524064171126,
+    "share_base": 0.07491785005720203,
+    "missing_base": 2.4,
+    "royalty_base": 151.86742857142858,
+    "added_base": 8.0
+   },
+   "C0R": {
+    "leaves_low": 143.53101604278075,
+    "leaves_base": 217.81711229946524,
+    "leaves_high": 327.46524064171126,
+    "share_base": 0.05516377883719059,
+    "missing_base": 1.0285714285714285,
+    "royalty_base": 0.0,
+    "added_base": 8.0
+   },
+   "C1": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   },
+   "C2": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   }
+  },
+  "1000000": {
+   "C0": {
+    "leaves_low": 111.02299465240642,
+    "leaves_base": 158.09251336898396,
+    "leaves_high": 231.1475935828877,
+    "share_base": 0.10036408405426941,
+    "missing_base": 1.5999999999999999,
+    "royalty_base": 60.584235294117654,
+    "added_base": 5.35
+   },
+   "C0R": {
+    "leaves_low": 68.02299465240642,
+    "leaves_base": 104.09251336898396,
+    "leaves_high": 160.1475935828877,
+    "share_base": 0.06608250788449092,
+    "missing_base": 0.6857142857142856,
+    "royalty_base": 0.0,
+    "added_base": 5.35
+   },
+   "C1": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   },
+   "C2": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   }
+  },
+  "5000000": {
+   "C0": {
+    "leaves_low": 78.91508021390375,
+    "leaves_base": 110.7288770053476,
+    "leaves_high": 162.64898395721926,
+    "share_base": 0.13781835747748133,
+    "missing_base": 1.2,
+    "royalty_base": 30.901565217391305,
+    "added_base": 4.3
+   },
+   "C0R": {
+    "leaves_low": 44.91508021390374,
+    "leaves_base": 67.2288770053476,
+    "leaves_high": 105.64898395721926,
+    "share_base": 0.08367621576695981,
+    "missing_base": 0.5142857142857142,
+    "royalty_base": 0.0,
+    "added_base": 4.3
+   },
+   "C1": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   },
+   "C2": {
+    "leaves_low": 0.0,
+    "leaves_base": 0.0,
+    "leaves_high": 0.0,
+    "share_base": 0.0,
+    "missing_base": 0.0,
+    "royalty_base": 0.0,
+    "added_base": 0
+   }
+  }
+ },
+ "lanes": {
+  "rear panel 480 x 480, 24 bit, 120 Hz, raw": 0.663552,
+  "rear panel 480 x 480, 24 bit, 120 Hz, DSC 3:1": 0.221184,
+  "rear panel clock at 10 Hz, raw": 0.055296,
+  "audio: 2 mics and stereo out, 48 kHz, 24 bit": 0.004608,
+  "IMU, 6 axes, 16 bit, 1 kHz": 9.6e-05,
+  "camera still 50 MP, 12 bit, per frame (Gbit, not Gbit/s)": 0.6,
+  "camera 12.5 MP binned, 10 bit, 30 fps": 3.75,
+  "camera 12.5 MP binned, 10 bit, 60 fps": 7.5,
+  "camera 4K, 10 bit, 120 fps raw": 9.95328,
+  "cal_ms_bc": 3.145728,
+  "cal_ms_pair": 0.12978764311500773,
+  "wifi_phy": 5.764705882352941
+ }
+}

@@ -1,0 +1,134 @@
+// RG-19A: additions for Skins, pairing and writer moves. DRAFT of the session seat of hw/core.
+//
+// Package budlum.leaf.v1, wire version 1.2, additive on top of the continuity draft
+// hw/hostpower/continuity/proto/session_continuity.proto (wire 1.1). It edits no
+// existing file. It follows proto/VERSIONING.md: new messages, new LeafMessage bodies
+// (39 to 41), new ErrorCode values (1100 to 1104), new enum values, and new fields of
+// SessionPause and SessionResume with numbers above 15. Neither message is parsed by
+// U1 or U6, so a new field is allowed (rule 2 of VERSIONING.md).
+//
+// How to merge:
+//   1. append the enums and messages below to leaf.proto, before LeafMessage;
+//   2. append the fields listed at the end to SessionPause and SessionResume;
+//   3. append the PauseReason value, the three LeafMessage bodies and the error codes;
+//   4. raise the wire minor to 1.2.
+// tests/test_proto.py merges them in memory, on top of the continuity draft.
+//
+// The Skin to Core link has its own package, budlum.skin.v1, in skin_link.proto.
+// A Skin never speaks to a validator. A Skin never signs.
+
+syntax = "proto3";
+
+package budlum.leaf.v1;
+
+enum ViewMode {
+  VIEW_MODE_UNSPECIFIED = 0;
+  VIEW_MODE_MIRROR = 1;
+  VIEW_MODE_EXTEND = 2;
+  VIEW_MODE_SPLIT = 3;
+  VIEW_MODE_HANDOFF = 4;
+}
+
+enum SkinClass {
+  SKIN_CLASS_UNSPECIFIED = 0;
+  SKIN_CLASS_LEAF_80 = 1;
+  SKIN_CLASS_LEAF_160 = 2;
+  SKIN_CLASS_LEAF_480 = 3;
+  SKIN_CLASS_FRAME = 4;
+}
+
+// The distance classes of hw/core/BRIEF.md Section 8.
+enum CoreDistance {
+  CORE_DISTANCE_UNSPECIFIED = 0;
+  // A contact or a tether, up to 2 m. The device is a Skin.
+  CORE_DISTANCE_C0 = 1;
+  // A room, up to about 30 m. The device is a Skin on a 60 GHz link.
+  CORE_DISTANCE_C1 = 2;
+  // Far, up to kilometres. The device is the Leaf with its own decoder.
+  CORE_DISTANCE_C2 = 3;
+}
+
+enum SkinLinkKind {
+  SKIN_LINK_KIND_UNSPECIFIED = 0;
+  SKIN_LINK_KIND_CABLE = 1;
+  SKIN_LINK_KIND_MMWAVE = 2;
+}
+
+// One view of a session on one Skin. A view holds no state. A pause stores the
+// list, so a resume on another Core can rebind the same Skins.
+message ViewRef {
+  bytes skin_id = 1;
+  uint32 view_id = 2;
+  ViewMode mode = 3;
+  // The tile rectangle of the Skin on the canvas of the session, in pixels.
+  Rect rect = 4;
+  // The bind epoch: it rises at every bind and every handoff.
+  uint32 bind_epoch = 5;
+  // The pairing epoch the view was bound under.
+  uint32 pairing_epoch = 6;
+}
+
+// The chain record that says which Core a Skin belongs to. One Core at a time.
+// A new pairing needs the wallet. A move to an allowed Core needs no wallet.
+message PairingRecord {
+  bytes skin_id = 1;
+  bytes core_id = 2;
+  uint32 pairing_epoch = 3;
+  SkinClass skin_class = 4;
+  SkinLinkKind link = 5;
+  // Cores of the same wallet that may take this Skin without a new wallet action.
+  repeated bytes allowed_cores = 6;
+  uint64 paired_at_height = 7;
+  bool revoked = 8;
+  Signature wallet_signature = 9;
+}
+
+// The wallet authorises a Core as a writer of one session. A chain transaction.
+message WriterGrant {
+  uint64 session_id = 1;
+  bytes core_id = 2;
+  uint64 expiry_height = 3;
+  CoreDistance distance = 4;
+  Signature wallet_signature = 5;
+}
+
+// A granted writer takes a live session in one transaction. No pause, no lapse.
+// The epoch rises, so the old writer's later inputs are refused.
+message WriterTakeOver {
+  uint64 session_id = 1;
+  bytes from_core_id = 2;
+  bytes to_core_id = 3;
+  // The epoch the new writer saw. A stale epoch is refused.
+  uint32 resume_seq = 4;
+  CoreDistance to_distance = 5;
+  Signature signature = 6;
+}
+
+// Core to validator: a view went dark. The validator thins nothing; the Core decides.
+message SkinLinkLost {
+  bytes skin_id = 1;
+  uint32 view_id = 2;
+  uint64 since_frame = 3;
+  uint32 outage_ms = 4;
+}
+
+// ---- new fields, numbers above 15 ----
+// SessionPause (continuity draft):
+//     repeated ViewRef views = 16;
+//     bytes core_id = 17;
+// SessionResume (continuity draft):
+//     bytes core_id = 13;
+//     repeated ViewRef views = 14;
+//     bytes prev_core_id = 15;
+//     CoreDistance distance = 16;
+// PauseReason: PAUSE_REASON_VIEWS_LOST = 5;   // the last Skin left the Core
+// LeafMessage.body (wire 1.2):
+//     WriterGrant writer_grant = 39;
+//     WriterTakeOver writer_take_over = 40;
+//     SkinLinkLost skin_link_lost = 41;
+// ErrorCode (wire 1.2):
+//     ERROR_CODE_VIEW_UNKNOWN = 1100;
+//     ERROR_CODE_PAIRING_STALE = 1101;
+//     ERROR_CODE_PAIRING_REVOKED = 1102;
+//     ERROR_CODE_NOT_A_WRITER = 1103;
+//     ERROR_CODE_SKIN_NOT_ALLOWED = 1104;

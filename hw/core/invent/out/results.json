@@ -1,0 +1,991 @@
+{
+ "rows": [
+  {
+   "door": "RF beam at the exposure cap, 10 W/m2 (ICNIRP, FCC), rectenna 20 %",
+   "arrives_W": 0.0256,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "the whole face as an ideal rectenna; the cap is on the person, not on the room",
+   "tag": "P"
+  },
+  {
+   "door": "RF beam at the exposure cap, 10 W/m2 (ICNIRP, FCC), rectenna 50 %",
+   "arrives_W": 0.064,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "the whole face as an ideal rectenna; the cap is on the person, not on the room",
+   "tag": "P"
+  },
+  {
+   "door": "RF beam at the exposure cap, 40 W/m2 (FCC localised, >6 GHz, optimistic), rectenna 20 %",
+   "arrives_W": 0.1024,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "the whole face as an ideal rectenna; the cap is on the person, not on the room",
+   "tag": "P"
+  },
+  {
+   "door": "RF beam at the exposure cap, 40 W/m2 (FCC localised, >6 GHz, optimistic), rectenna 50 %",
+   "arrives_W": 0.256,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "the whole face as an ideal rectenna; the cap is on the person, not on the room",
+   "tag": "P"
+  },
+  {
+   "door": "RF beam from Wi-Fi 20 dBm EIRP at 1 m, rectenna 30 %",
+   "arrives_W": 3.0557749073643905e-05,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from Wi-Fi 20 dBm EIRP at 3 m, rectenna 30 %",
+   "arrives_W": 3.395305452627101e-06,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from Wi-Fi 20 dBm EIRP at 10 m, rectenna 30 %",
+   "arrives_W": 3.0557749073643905e-07,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from Wi-Fi 36 dBm EIRP (FCC 2.4 GHz) at 1 m, rectenna 30 %",
+   "arrives_W": 0.001222309962945756,
+   "need_W": 0.061,
+   "verdict": "EDGE",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from Wi-Fi 36 dBm EIRP (FCC 2.4 GHz) at 3 m, rectenna 30 %",
+   "arrives_W": 0.00013581221810508404,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from Wi-Fi 36 dBm EIRP (FCC 2.4 GHz) at 10 m, rectenna 30 %",
+   "arrives_W": 1.2223099629457563e-05,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from licensed 50 dBm EIRP at 1 m, rectenna 30 %",
+   "arrives_W": 0.030557749073643902,
+   "need_W": 0.061,
+   "verdict": "EDGE",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from licensed 50 dBm EIRP at 3 m, rectenna 30 %",
+   "arrives_W": 0.0033953054526271007,
+   "need_W": 0.061,
+   "verdict": "EDGE",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "RF beam from licensed 50 dBm EIRP at 10 m, rectenna 30 %",
+   "arrives_W": 0.000305577490736439,
+   "need_W": 0.061,
+   "verdict": "FAIL",
+   "note": "free space, no wall, no hand; S capped at 10 W/m2",
+   "tag": "G"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 40 %, free air still",
+   "arrives_W": 0.6920000000000001,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "optical input at the heat cap = 1.73 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 40 %, free air light wind",
+   "arrives_W": 0.9480000000000001,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "optical input at the heat cap = 2.37 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 40 %, free air Skin alone, still",
+   "arrives_W": 1.1720000000000002,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.93 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 55 %, free air still",
+   "arrives_W": 0.9515,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 1.73 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 55 %, free air light wind",
+   "arrives_W": 1.3035,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.37 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 55 %, free air Skin alone, still",
+   "arrives_W": 1.6115000000000002,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.93 W; electrical = eta x cap; Skin video needs 1.57 W: PASS",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 65 %, free air still",
+   "arrives_W": 1.1245,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 1.73 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 65 %, free air light wind",
+   "arrives_W": 1.5405000000000002,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.37 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 65 %, free air Skin alone, still",
+   "arrives_W": 1.9045,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.93 W; electrical = eta x cap; Skin video needs 1.57 W: PASS",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 69 %, free air still",
+   "arrives_W": 1.19197,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 1.73 W; electrical = eta x cap; Skin video needs 1.57 W: FAIL",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 69 %, free air light wind",
+   "arrives_W": 1.63293,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.37 W; electrical = eta x cap; Skin video needs 1.57 W: PASS",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam into a back PV panel, receiver 69 %, free air Skin alone, still",
+   "arrives_W": 2.01877,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "optical input at the heat cap = 2.93 W; electrical = eta x cap; Skin video needs 1.57 W: PASS",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam 3 W optical, geometry 0.85, receiver 40 %",
+   "arrives_W": 1.02,
+   "need_W": 1.57,
+   "verdict": "n.a.",
+   "note": "the beam power is not the limit; the heat is",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam 3 W optical, geometry 0.85, receiver 55 %",
+   "arrives_W": 1.4025,
+   "need_W": 1.57,
+   "verdict": "n.a.",
+   "note": "the beam power is not the limit; the heat is",
+   "tag": "P"
+  },
+  {
+   "door": "IR beam 3 W optical, geometry 0.85, receiver 69 %",
+   "arrives_W": 1.7569499999999998,
+   "need_W": 1.57,
+   "verdict": "n.a.",
+   "note": "the beam power is not the limit; the heat is",
+   "tag": "P"
+  },
+  {
+   "door": "IR receiver area for 2 W optical at 100 mW/cm2",
+   "arrives_W": 20.0,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "cm2; fits the 128 cm2 back, does not fit the 8 cm2 ring",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 1 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "WEAK",
+   "note": "k = 2.49e-02, best link efficiency 48.77 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 5 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "WEAK",
+   "note": "k = 1.42e-02, best link efficiency 29.83 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 10 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 5.27e-03, best link efficiency 7.18 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 30 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 3.54e-04, best link efficiency 0.04 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 50 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 8.12e-05, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 100 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.04e-05, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx pad 150 mm, Rx coil 46 mm, coaxial, 200 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.31e-06, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 1 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 5.18e-03, best link efficiency 6.96 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 5 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 4.74e-03, best link efficiency 5.96 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 10 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 3.70e-03, best link efficiency 3.81 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 30 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 8.81e-04, best link efficiency 0.23 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 50 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 2.65e-04, best link efficiency 0.02 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 100 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 3.90e-05, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx desk mat 400 mm, Rx coil 46 mm, coaxial, 200 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 5.10e-06, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 1 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.21e-03, best link efficiency 0.44 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 5 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.19e-03, best link efficiency 0.42 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 10 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.14e-03, best link efficiency 0.39 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 30 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 7.63e-04, best link efficiency 0.17 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 50 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 4.28e-04, best link efficiency 0.05 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 100 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.08e-04, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "magnetic resonance, Tx ceiling loop 1 m, Rx coil 46 mm, coaxial, 200 cm",
+   "arrives_W": null,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "k = 1.73e-05, best link efficiency 0.00 %",
+   "tag": "G"
+  },
+  {
+   "door": "galvanic path through the body, SELV 60 V, 0.5 mA",
+   "arrives_W": 0.024,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "touch-current limits recalled from IEC 60990; skin irritation; two contacts needed",
+   "tag": "H"
+  },
+  {
+   "door": "galvanic path through the body, SELV 60 V, 2 mA (DC)",
+   "arrives_W": 0.096,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "touch-current limits recalled from IEC 60990; skin irritation; two contacts needed",
+   "tag": "H"
+  },
+  {
+   "door": "indoor light 100 lux, back PV, GaAs 25 %, back faces the light",
+   "arrives_W": 0.0008076800000000001,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "32 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 100 lux, back PV, the Leaf lies face up",
+   "arrives_W": 0.0,
+   "need_W": 5e-05,
+   "verdict": "FAIL",
+   "note": "32 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 100 lux, face as photodiode, micro-LED 1 %",
+   "arrives_W": 1.81728e-05,
+   "need_W": 5e-05,
+   "verdict": "FAIL",
+   "note": "32 uW/cm2 incident",
+   "tag": "H"
+  },
+  {
+   "door": "indoor light 300 lux, back PV, GaAs 25 %, back faces the light",
+   "arrives_W": 0.0024230400000000004,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "95 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 300 lux, back PV, the Leaf lies face up",
+   "arrives_W": 0.0,
+   "need_W": 5e-05,
+   "verdict": "FAIL",
+   "note": "95 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 300 lux, face as photodiode, micro-LED 1 %",
+   "arrives_W": 5.45184e-05,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "95 uW/cm2 incident",
+   "tag": "H"
+  },
+  {
+   "door": "indoor light 1000 lux, back PV, GaAs 25 %, back faces the light",
+   "arrives_W": 0.0080768,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "316 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 1000 lux, back PV, the Leaf lies face up",
+   "arrives_W": 0.0,
+   "need_W": 5e-05,
+   "verdict": "FAIL",
+   "note": "316 uW/cm2 incident",
+   "tag": "P"
+  },
+  {
+   "door": "indoor light 1000 lux, face as photodiode, micro-LED 1 %",
+   "arrives_W": 0.00018172800000000003,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "316 uW/cm2 incident",
+   "tag": "H"
+  },
+  {
+   "door": "outdoors, one sun, back PV, GaAs 25 %, faces the sun",
+   "arrives_W": 2.5600000000000005,
+   "need_W": 0.95,
+   "verdict": "PASS",
+   "note": "the heat of the absorbed sun is not counted here",
+   "tag": "H"
+  },
+  {
+   "door": "outdoors, one sun, face as photodiode, micro-LED 1 %",
+   "arrives_W": 0.057600000000000005,
+   "need_W": 0.95,
+   "verdict": "FAIL",
+   "note": "the heat of the absorbed sun is not counted here",
+   "tag": "H"
+  },
+  {
+   "door": "pocket body heat, TEG 20 uW/cm2, half the face",
+   "arrives_W": 0.00128,
+   "need_W": 5e-05,
+   "verdict": "PASS",
+   "note": "the pocket is dark, so heat is the harvest there",
+   "tag": "H"
+  },
+  {
+   "door": "walking, kinetic harvester",
+   "arrives_W": 5e-05,
+   "need_W": 5e-05,
+   "verdict": "EDGE",
+   "note": "recalled range 10 to 100 uW; not sourced",
+   "tag": "H"
+  },
+  {
+   "door": "stretch harvest, dielectric elastomer 5 %, 10 000 cycles",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "0.09 Wh over the whole hinge life (one video hour is 3.65 Wh); one stretch stores 0.64 J",
+   "tag": "H"
+  },
+  {
+   "door": "stretch harvest, dielectric elastomer 30 %, 10 000 cycles",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "0.53 Wh over the whole hinge life (one video hour is 3.65 Wh); one stretch stores 0.64 J",
+   "tag": "H"
+  },
+  {
+   "door": "NFC tap, 15 mW for 1 s",
+   "arrives_W": 0.015,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "15 mJ per tap; the trust seat puts one signature at 1 to 20 mJ; an e-paper update is 15 to 40 mJ",
+   "tag": "P"
+  },
+  {
+   "door": "NFC tap, 20 mW for 2 s",
+   "arrives_W": 0.04,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "40 mJ per tap; the trust seat puts one signature at 1 to 20 mJ; an e-paper update is 15 to 40 mJ",
+   "tag": "P"
+  },
+  {
+   "door": "one beam for power and pixels, GaAs multi-segment converter, 3.8 Gbit/s",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "carries 3.8 Gbit/s; the Skin pixel stream needs 13.1 Gbit/s (3.4 times more)",
+   "tag": "P"
+  },
+  {
+   "door": "one beam for power and pixels, InGaAsP multi-junction, about 1 Gbit/s",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "carries 1.0 Gbit/s; the Skin pixel stream needs 13.1 Gbit/s (13.1 times more)",
+   "tag": "P"
+  },
+  {
+   "door": "separate data diode 5 pJ/bit, Skin delta + receiver 66 mW, L.6.0 body cap 1.73 W",
+   "arrives_W": null,
+   "need_W": 1.0154999999999998,
+   "verdict": "PASS",
+   "note": "the power converter must reach 59 % (lab record 68.9 %)",
+   "tag": "H"
+  },
+  {
+   "door": "separate data diode 5 pJ/bit, Skin delta + receiver 66 mW, Skin alone cap 2.93 W",
+   "arrives_W": null,
+   "need_W": 1.0154999999999998,
+   "verdict": "PASS",
+   "note": "the power converter must reach 35 % (lab record 68.9 %)",
+   "tag": "H"
+  },
+  {
+   "door": "separate data diode 10 pJ/bit, Skin delta + receiver 131 mW, L.6.0 body cap 1.73 W",
+   "arrives_W": null,
+   "need_W": 1.081,
+   "verdict": "PASS",
+   "note": "the power converter must reach 62 % (lab record 68.9 %)",
+   "tag": "H"
+  },
+  {
+   "door": "separate data diode 10 pJ/bit, Skin delta + receiver 131 mW, Skin alone cap 2.93 W",
+   "arrives_W": null,
+   "need_W": 1.081,
+   "verdict": "PASS",
+   "note": "the power converter must reach 37 % (lab record 68.9 %)",
+   "tag": "H"
+  },
+  {
+   "door": "Sheet at 100 nits, diffuse white, rho 0.8: flux on the Leaf",
+   "arrives_W": 0.25132741228718347,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "5.03 lm at the screen, about 0.25 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 100 nits, retroreflective, gain 10: flux on the Leaf",
+   "arrives_W": 0.025132741228718346,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "0.50 lm at the screen, about 0.03 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 100 nits, retroreflective, gain 50: flux on the Leaf",
+   "arrives_W": 0.005026548245743669,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "0.10 lm at the screen, about 0.01 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 250 nits, diffuse white, rho 0.8: flux on the Leaf",
+   "arrives_W": 0.6283185307179586,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "12.57 lm at the screen, about 0.63 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 250 nits, retroreflective, gain 10: flux on the Leaf",
+   "arrives_W": 0.06283185307179587,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "1.26 lm at the screen, about 0.06 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 250 nits, retroreflective, gain 50: flux on the Leaf",
+   "arrives_W": 0.012566370614359173,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "0.25 lm at the screen, about 0.01 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 800 nits, diffuse white, rho 0.8: flux on the Leaf",
+   "arrives_W": 2.0106192982974678,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "40.21 lm at the screen, about 2.01 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 800 nits, retroreflective, gain 10: flux on the Leaf",
+   "arrives_W": 0.20106192982974677,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "4.02 lm at the screen, about 0.20 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 800 nits, retroreflective, gain 50: flux on the Leaf",
+   "arrives_W": 0.04021238596594935,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "0.80 lm at the screen, about 0.04 W at the Core (20 lm/W)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet ambient wash on a diffuse white sheet, office 500 lux",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "PASS",
+   "note": "127 nits of ambient against a 250 nit image",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet ambient wash on a diffuse white sheet, shade 10000 lux",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "2,546 nits of ambient against a 250 nit image",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet ambient wash on a diffuse white sheet, direct sun 100000 lux",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "25,465 nits of ambient against a 250 nit image",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 0.4 m: pixels the viewer resolves at 60 ppd",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "685 x 1357 px on the sheet (11.4 x 22.6 deg)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet at 3 m: pixels the viewer resolves at 60 ppd",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "92 x 183 px on the sheet (1.5 x 3.1 deg)",
+   "tag": "G"
+  },
+  {
+   "door": "Sheet, laser scanning, 1356 lines at 60 Hz",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "line rate 81 kHz against about 60 kHz for a fast MEMS mirror (recalled)",
+   "tag": "H"
+  },
+  {
+   "door": "Sheet, laser scanning, 1356 lines at 120 Hz",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "line rate 163 kHz against about 60 kHz for a fast MEMS mirror (recalled)",
+   "tag": "H"
+  },
+  {
+   "door": "Sheet, laser scanning, 1356 lines at 240 Hz",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "FAIL",
+   "note": "line rate 325 kHz against about 60 kHz for a fast MEMS mirror (recalled)",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (0.25 J) fed by RF at the 10 W/m2 cap, 25 mW",
+   "arrives_W": 0.025,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 10 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (0.25 J) fed by RF at the cap, 64 mW",
+   "arrives_W": 0.064,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 4 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (0.25 J) fed by indoor light 1000 lux, back PV, 8 mW",
+   "arrives_W": 0.008,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 32 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (0.25 J) fed by pocket heat TEG, 1.3 mW",
+   "arrives_W": 0.0013,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 194 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.08 J) fed by RF at the 10 W/m2 cap, 25 mW",
+   "arrives_W": 0.025,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 3 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.08 J) fed by RF at the cap, 64 mW",
+   "arrives_W": 0.064,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 1 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.08 J) fed by indoor light 1000 lux, back PV, 8 mW",
+   "arrives_W": 0.008,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 11 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.08 J) fed by pocket heat TEG, 1.3 mW",
+   "arrives_W": 0.0013,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 65 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (1.26 J) fed by RF at the 10 W/m2 cap, 25 mW",
+   "arrives_W": 0.025,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 51 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (1.26 J) fed by RF at the cap, 64 mW",
+   "arrives_W": 0.064,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 20 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (1.26 J) fed by indoor light 1000 lux, back PV, 8 mW",
+   "arrives_W": 0.008,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 158 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer full refresh (1.26 J) fed by pocket heat TEG, 1.3 mW",
+   "arrives_W": 0.0013,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 972 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.42 J) fed by RF at the 10 W/m2 cap, 25 mW",
+   "arrives_W": 0.025,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 17 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.42 J) fed by RF at the cap, 64 mW",
+   "arrives_W": 0.064,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 7 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.42 J) fed by indoor light 1000 lux, back PV, 8 mW",
+   "arrives_W": 0.008,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 53 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer partial refresh (0.42 J) fed by pocket heat TEG, 1.3 mW",
+   "arrives_W": 0.0013,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "one update every 324 s",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer from one NFC tap, 15 mJ",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "covers 5.9 to 1.2 % of a full face: a badge, not a page",
+   "tag": "H"
+  },
+  {
+   "door": "Paper layer from one NFC tap, 40 mJ",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "covers 15.8 to 3.2 % of a full face: a badge, not a page",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 100 Paper updates of 0.08 J, 0 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "2.5 mWh a day, the B cell lasts 52.8 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 100 Paper updates of 0.08 J, 5 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "81.6 mWh a day, the B cell lasts 1.6 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 100 Paper updates of 0.08 J, 15 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "240.0 mWh a day, the B cell lasts 0.5 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 300 Paper updates of 0.42 J, 0 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "35.2 mWh a day, the B cell lasts 3.7 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 300 Paper updates of 0.42 J, 5 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "114.4 mWh a day, the B cell lasts 1.1 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor low 9.6 uW, 300 Paper updates of 0.42 J, 15 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "272.7 mWh a day, the B cell lasts 0.5 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 100 Paper updates of 0.08 J, 0 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "3.2 mWh a day, the B cell lasts 40.1 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 100 Paper updates of 0.08 J, 5 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "82.4 mWh a day, the B cell lasts 1.6 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 100 Paper updates of 0.08 J, 15 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "240.7 mWh a day, the B cell lasts 0.5 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 300 Paper updates of 0.42 J, 0 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "36.0 mWh a day, the B cell lasts 3.6 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 300 Paper updates of 0.42 J, 5 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "115.2 mWh a day, the B cell lasts 1.1 days",
+   "tag": "H"
+  },
+  {
+   "door": "day away from a host: floor high 42 uW, 300 Paper updates of 0.42 J, 15 min active",
+   "arrives_W": null,
+   "need_W": null,
+   "verdict": "INFO",
+   "note": "273.5 mWh a day, the B cell lasts 0.5 days",
+   "tag": "H"
+  }
+ ],
+ "idle_floor_W": [
+  9.6e-06,
+  4.2000000000000004e-05
+ ],
+ "autonomy_h": {
+  "today": 2.124590163934426,
+  "floor_high": 3085.7142857142853,
+  "floor_low": 13500.0,
+  "target": 2591.9999999999995
+ },
+ "energy_cost_kwh_year": 10.658
+}

@@ -1,0 +1,154 @@
+FLEET seat · the two hosts · energy and heat of a Leaf at C2 (the B module as ruled, the compute remote)
+Loads: hw/energy/04 with the authority domain cut by the ruling. At C2 the Wi-Fi radio is replaced by a 5G radio. Near-cell 5G radio: idle 0.050, delta 0.60, video 1.10 W.
+The model adds the increment of the radio duty over a Leaf at 300 m outdoors. Heat limit: free air 1.73 W still, 2.37 W light wind, dock plate 5.7 W.
+
+1 · the Leaf at C0 and C1, Wi-Fi radio, under the ruling (W at the cells, hours on the cell alone)
+  The ruling cuts the authority domain from 0.12 to 0.07 W. The L.6.0 value is in the last column.
+  activity        W  Full S h  Full G h Buf S min B cell min   L.6.0 W
+  idle        0.052    138.16    110.95    1422.5     167.7     0.061
+  delta       2.186      3.30      2.65      34.0       6.7     2.242
+  video       3.589      2.01      1.61      20.7       4.2     3.646
+  check: hw/energy/04 gives delta 2.242 W, video 3.646 W, Full S 3.2 h and 2.0 h, for the L.6.0 split (last column).
+
+2 · the Leaf at C2 (loads of the L.6.0 split), L.6.0 split: the wallet in the Leaf, key inline, ACK 1.5 %, 8 dB; sector loaded with 2 layers, Leaf at 20 dBm
+      km act     dutyDL  dutyUL Ptx dBm  radio W   Leaf W |    heat Full S h Buf S min  B cell m cells pk
+     0.3 delta    0.007   0.106     5.4    0.607    2.475 |   plate     2.92      30.0       5.5       54
+     0.3 video    0.099   0.089     5.4    1.105    4.222 |   plate     1.71      17.6       3.2       54
+     0.5 delta    0.007   0.106    14.8    0.622    2.493 |   plate     2.89      29.8       5.5       54
+     0.5 video    0.099   0.089    14.8    1.118    4.237 |   plate     1.70      17.5       3.2       54
+     1.0 delta    0.012   0.174    19.6    0.691    2.571 |   plate     2.81      28.9       5.2       54
+     1.0 video    0.181   0.190    19.6    1.282    4.424 |   plate     1.63      16.8       3.0       55
+     1.5 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     1.5 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     2.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     2.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+  heat: ok at or under 1.73 W free air still; wind at or under 2.37 W; plate at or under 5.7 W (dock or cradle); FAIL beyond.
+
+2 · the Leaf at C2 (loads of the ruled split), the RULED split: wallet signer in the Core, ACK 1.5 %, 8 dB; sector loaded with 2 layers, Leaf at 20 dBm
+      km act     dutyDL  dutyUL Ptx dBm  radio W   Leaf W |    heat Full S h Buf S min  B cell m cells pk
+     0.3 delta    0.007   0.020     5.4    0.601    2.413 |   plate     2.99      30.8       5.7       54
+     0.3 video    0.099   0.074     5.4    1.105    4.164 |   plate     1.73      17.8       3.3       54
+     0.5 delta    0.007   0.020    14.8    0.604    2.416 |   plate     2.99      30.7       5.7       54
+     0.5 video    0.099   0.074    14.8    1.115    4.176 |   plate     1.73      17.8       3.3       54
+     1.0 delta    0.012   0.020    19.6    0.613    2.426 |   plate     2.97      30.6       5.7       54
+     1.0 video    0.181   0.157    19.6    1.264    4.347 |   plate     1.66      17.1       3.1       55
+     1.5 delta    0.025   0.052    19.8    0.648    2.466 |   plate     2.93      30.1       5.6       54
+     1.5 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     2.0 delta    0.066   0.138    19.9    0.748    2.579 |   plate     2.80      28.8       5.2       54
+     2.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+  heat: ok at or under 1.73 W free air still; wind at or under 2.37 W; plate at or under 5.7 W (dock or cradle); FAIL beyond.
+
+2 · the Leaf at C2 (loads of the ruled split), the ruled split with ACK 0.3 %, 8 dB; sector loaded with 2 layers, Leaf at 20 dBm
+      km act     dutyDL  dutyUL Ptx dBm  radio W   Leaf W |    heat Full S h Buf S min  B cell m cells pk
+     0.3 delta    0.007   0.020     5.4    0.601    2.413 |   plate     2.99      30.8       5.7       54
+     0.3 video    0.099   0.060     5.4    1.104    4.163 |   plate     1.73      17.8       3.3       54
+     0.5 delta    0.007   0.020    14.8    0.604    2.416 |   plate     2.99      30.7       5.7       54
+     0.5 video    0.099   0.060    14.8    1.112    4.173 |   plate     1.73      17.8       3.3       54
+     1.0 delta    0.012   0.020    19.6    0.613    2.426 |   plate     2.97      30.6       5.7       54
+     1.0 video    0.181   0.060    19.6    1.202    4.276 |   plate     1.69      17.4       3.2       54
+     1.5 delta    0.025   0.030    19.8    0.633    2.449 |   plate     2.95      30.3       5.6       54
+     1.5 video    0.384   0.110    19.8    1.437    4.545 |   plate     1.59      16.3       2.9       56
+     2.0 delta    0.066   0.081    19.9    0.708    2.534 |   plate     2.85      29.3       5.3       54
+     2.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     3.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 delta    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+  heat: ok at or under 1.73 W free air still; wind at or under 2.37 W; plate at or under 5.7 W (dock or cradle); FAIL beyond.
+
+2 · the Leaf at C2 (loads of the ruled split), the ruled split with ACK 0.3 %, outdoors 0 dB; sector loaded with 2 layers, Leaf at 20 dBm
+      km act     dutyDL  dutyUL Ptx dBm  radio W   Leaf W |    heat Full S h Buf S min  B cell m cells pk
+     0.3 delta    0.007   0.020    -2.6    0.600    2.412 |   plate     2.99      30.8       5.8       54
+     0.3 video    0.099   0.060    -2.6    1.100    4.159 |   plate     1.74      17.9       3.3       54
+     0.5 delta    0.007   0.020     6.8    0.601    2.413 |   plate     2.99      30.8       5.7       54
+     0.5 video    0.099   0.060     6.8    1.104    4.164 |   plate     1.73      17.8       3.3       54
+     1.0 delta    0.007   0.020    19.1    0.608    2.420 |   plate     2.98      30.7       5.7       54
+     1.0 video    0.110   0.060    19.1    1.131    4.195 |   plate     1.72      17.7       3.3       54
+     1.5 delta    0.011   0.020    19.7    0.612    2.425 |   plate     2.98      30.6       5.7       54
+     1.5 video    0.166   0.060    19.7    1.188    4.260 |   plate     1.69      17.4       3.2       54
+     2.0 delta    0.017   0.020    19.8    0.618    2.432 |   plate     2.97      30.6       5.7       54
+     2.0 video    0.258   0.064    19.8    1.282    4.367 |   plate     1.65      17.0       3.1       55
+     3.0 delta    0.051   0.064    19.9    0.682    2.504 |   plate     2.88      29.7       5.4       54
+     3.0 video    no link: the UL does not close (the SAR uplink is too weak for the signed traffic)
+     5.0 delta    0.029   0.036    19.9    0.641    2.458 |   plate     2.94      30.2       5.6       54
+     5.0 video    0.442   0.131    19.9    1.508    4.626 |   plate     1.56      16.1       2.8       56
+  heat: ok at or under 1.73 W free air still; wind at or under 2.37 W; plate at or under 5.7 W (dock or cradle); FAIL beyond.
+
+3 · the radio duty as a free parameter. Leaf W and Full S hours, delta session, radio = near figure plus the duty terms
+  duty is the share of the time that the receiver decodes data. The UL duty is the share that the PA transmits.
+   dutyDL  dutyUL  Ptx dBm |  radio W   Leaf W Full S h
+     0.10    0.02        0 |    0.603    2.415     2.99
+     0.10    0.10       10 |    0.640    2.456     2.94
+     0.10    0.20       20 |    0.737    2.567     2.81
+     0.25    0.02        0 |    0.750    2.581     2.80
+     0.25    0.10       10 |    0.787    2.622     2.75
+     0.25    0.20       20 |    0.884    2.733     2.64
+     0.50    0.02        0 |    0.995    2.859     2.52
+     0.50    0.10       10 |    1.032    2.900     2.49
+     0.50    0.20       20 |    1.129    3.011     2.40
+     0.75    0.02        0 |    1.240    3.137     2.30
+     0.75    0.10       10 |    1.277    3.178     2.27
+     0.75    0.20       20 |    1.374    3.289     2.19
+     1.00    0.02        0 |    1.485    3.415     2.11
+     1.00    0.10       10 |    1.522    3.456     2.09
+     1.00    0.20       20 |    1.619    3.568     2.02
+
+4 · the near host: energy per hour of Leaf at the host input, and the run time of a host store
+  Leaf at C2, 1 km, 8 dB, the ruled split, ACK 0.3 %. The host feeds the load. The cell floats (Part 22.4).
+  The ruling puts the energy host in the Core. At C0 that is the pad or the tether. At C2 power does not travel, so the host below is a near host.
+  Leaf load at 1 km: delta 2.43 W, video 4.28 W (Wi-Fi: 2.19, 3.59 W)
+  host  name                   delta Wh/h video Wh/h wifi delta store h dlt
+  H0    wall dock                    3.03       5.17       2.75          -
+  H1    dock pack, 20 Wh             3.06       5.22       2.78        6.5
+  H2    desk USB-C PD                2.84       5.00       2.56          -
+  H3a   vehicle 12 V                 2.84       5.00       2.56          -
+  H4a   industrial 24 V              2.72       4.79       2.45          -
+  H5    worn power bank or belt pack       2.90       5.12       2.61        6.1
+  H1 and H5 hours count the host store only. The dock radios are off: at C2 the Leaf uses its own 5G.
+
+5 · what the Leaf needs when the energy host and the compute host are different places
+  numbers from hw/hostpower/continuity (Part 22.9) and hw/dock, read only
+  - a compute gap, energy host alive: the Core dies, a shadow takes over: 4 to 5 frames covered by U1; cold start 133 ms p50, 152 ms p99 [hw/dock dockpair]
+  - a compute gap, no shadow, no other Core in reach: the local safe screen in 15 ms; the Leaf own radio finds a far validator, mean 93 ms RTT [FINAL/21 21.5.7, session seat]
+  - an energy gap, compute alive: host swap on a 75 s walk: Buffer and Full: 0 frames lost in 95 % of draws, 3 at p99 [Part 22.9.1]
+  - both at once: a vehicle stops and the cell site is cold: live frame 0.48 s warm 5G, 2.4 s cold 5G, after the host pass [Part 22.9.1]
+  - a power gap longer than the store at far radio load: Buffer 20 cells: about 31 min of delta at 1 km, then pause on chain; Full S: 3.0 h [this file]
+  - the peak at far radio: cells for 3 C: 8.7 W peak plus the radio increment needs 54 cells of 128 at 1 km (8 dB), 54 at 3 km outdoors [this file, tiers.py]
+
+6 · power does not travel: what a far-field RF energy host could give a Leaf. 915 MHz, 36 dBm EIRP [PUBLICATION] FCC 15.247, 2 dBi, 50 % rectifier
+    metres   harvest uW       short by
+       0.5     8590.345            254
+       1.0     2147.586           1018
+       2.0      536.897           4071
+       5.0       85.903          25446
+      10.0       21.476         101782
+      30.0        2.386         916041
+    1000.0        0.002     1017823534
+  The Leaf needs 2.19 W in a delta session. Near-field contact or a pad at 0 to 2 m is the only energy host that closes (Part 22).
+  So the energy host sits in the Core at C0 only. At C1 and C2 the energy is in a near host or the cell: the rule of necessity.
+
+7 · the photograph at C2: the image processing is in the Core, so the burst goes up the SAR-limited link (a deferred job, Part 10)
+  two payloads [HYPOTHESIS]: a fusion burst of 8 frames of 12.5 MP at 0.5 bit per pixel is 6.3 MB; one finished 50 MP frame is 12 MB.
+      km    env  max UL Mbit   6.3 MB s    12 MB s   energy J
+     0.1      0       72.020        0.7        1.3        1.1
+     0.3      0       72.020        0.7        1.3        1.1
+     0.5      0       42.761        1.2        2.2        1.8
+     1.0      0        9.056        5.6       10.6        8.7
+     2.0      0        1.250       40.3       76.8       63.2
+     3.0      0        0.403      124.9      238.0      196.0
+     0.1      8       72.020        0.7        1.3        1.1
+     0.3      8       46.091        1.1        2.1        1.7
+     0.5      8       17.302        2.9        5.5        4.6
+     1.0      8        2.698       18.7       35.6       29.3
+     2.0      8        0.485      103.8      197.8      162.9
+     3.0      8        0.133      378.0      720.0      593.0
+  The live camera stream of the capacity model needs 37.5 Mbit/s up. The link carries it only where the table shows 40 Mbit/s or more.
+  The energy is small against a cell of 26 kJ (Full S). The time is the cost: seconds at 1 km, minutes beyond 2 km.

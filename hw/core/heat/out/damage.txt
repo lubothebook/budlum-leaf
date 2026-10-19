@@ -1,0 +1,42 @@
+ITEM 6 - DAMAGE REPORT numbers: dock plate, dew point, TEC, throttle
+
+--- the warmest dock plate set-point that holds the Skin at 36.2 C (PHY 0.25 W, own cells) ---
+ambient  load                      plate max C    dew 60 % RH         margin    dew 80 % RH         margin
+25 C     delta 0.80 W                     36.3           16.7          +19.6           21.3          +15.0
+25 C     video 1.35 W                     36.2           16.7          +19.5           21.3          +14.9
+25 C     5G-like 2.10 W                   36.0           16.7          +19.3           21.3          +14.7
+30 C     delta 0.80 W                     36.2           21.4          +14.8           26.2          +10.0
+30 C     video 1.35 W                     36.0           21.4          +14.6           26.2           +9.8
+30 C     5G-like 2.10 W                   35.7           21.4          +14.3           26.2           +9.5
+35 C     delta 0.80 W                     35.8           26.1           +9.8           31.0           +4.8
+35 C     video 1.35 W                     35.6           26.1           +9.5           31.0           +4.6
+35 C     5G-like 2.10 W                   35.3           26.1           +9.2           31.0           +4.2
+
+--- the same plate limit for the L.6.0 body with the ring (delta 2.5 W, battery) ---
+25 C: plate max 31.9 C, dew point 16.7 C at 60 % RH, 21.3 C at 80 % RH
+35 C: plate max 30.9 C, dew point 26.1 C at 60 % RH, 31.0 C at 80 % RH
+
+--- the TEC electric power for the plate at 22 C, W (hw/dock/budget.py solve_tec) ---
+ambient  case                         q_need    P_tec
+25 C     L.6.0 delta, battery           2.66     0.38
+25 C     Skin video 1.35 W + PHY        1.85     0.28
+25 C     Skin delta 0.80 W + PHY        1.37     0.21
+35 C     L.6.0 delta, battery           4.16     3.75
+35 C     Skin video 1.35 W + PHY        3.35     3.25
+35 C     Skin delta 0.80 W + PHY        2.87     3.01
+
+--- TEC electric power at 35 C ambient for a warmer plate set-point, Skin video 1.35 W + PHY, W ---
+set-point 22 C: q_need 3.35 W, TEC 3.25 W
+set-point 26 C: q_need 2.75 W, TEC 1.58 W
+set-point 28 C: q_need 2.45 W, TEC 1.02 W
+set-point 30 C: q_need 2.15 W, TEC 0.58 W
+
+--- the throttle law on the Skin at 30 C: the steady display scale (PHY fixed 0.25 W) ---
+still    delta 1.25 W (map a)     display scale 0.85
+still    video 1.35 W             display scale 0.81
+still    5G-like 2.10 W           display scale 0.59
+still    outdoor 800 nit 4.24 W   display scale 0.33
+wind     delta 1.25 W (map a)     display scale 1.00
+wind     video 1.35 W             display scale 1.00
+wind     5G-like 2.10 W           display scale 0.85
+wind     outdoor 800 nit 4.24 W   display scale 0.51

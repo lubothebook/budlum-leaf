@@ -1,0 +1,384 @@
+{
+ "meta": {
+  "title": "Budlum Leaf part allocation under the Split, by distance class",
+  "revision": "L.7 candidate study, block HP-3, seat parts, 2026-10-19",
+  "tags": "Every mass marked derived, and every cost marked hypothesis, is [HYPOTHESIS]. Stated masses are [TREE] copies of the cited file.",
+  "codes": {
+   "P": "must stay in the Leaf: physics, law or an order of Ayaz",
+   "S": "stays on the Leaf by design: it can move only with a Leaf redesign, or moving it gains nothing",
+   "M": "can move to a Core (the frac field says how much of the part moves)",
+   "A": "added by the Split at that class",
+   "W": "in an older catalogue and not in the L.6.0 design, so it counts for nothing",
+   "D": "a dock part: it is not on the Leaf"
+  },
+  "classes": {
+   "C0": "contact or tether, up to 2 m: the maximum Split, under the rule of necessity. The radio SiPs move whole (upper bound)",
+   "C0R": "C0 with the radio SiPs kept (lower bound of the line item L3). Ayaz named the antennas and the 5G modem as staying",
+   "C1": "a room, up to about 30 m, with the stream of Part 21 (compressed slices, decoder on the Leaf)",
+   "C2": "far, up to kilometres: the Skin is the L.6.0 Leaf"
+  },
+  "buffer_cells": 20,
+  "n_cells": 128,
+  "density_g_cm3": {
+   "PC": 1.2,
+   "glass": 2.45,
+   "OCA": 1.05,
+   "TPU": 1.15,
+   "IC_package": 2.5,
+   "inductor": 4.0
+  },
+  "rule": "Ayaz, 2026-10-19. A part stays in the B module only if physics forces it at the distance class. The body keeps the emitters and the tile drivers. Everything else is Core."
+ },
+ "sources": {
+  "H03": "HARDWARE/03-PART-CATALOGUE.md",
+  "H13": "HARDWARE/13-B-MODULE-PART-BY-PART.md",
+  "H14": "HARDWARE/14-PORT-RAIL-PART-BY-PART.md",
+  "H15": "HARDWARE/15-THE-ENERGY-SHEET-PART-BY-PART.md",
+  "H16": "HARDWARE/16-THE-SCREEN-PART-BY-PART.md",
+  "H17": "HARDWARE/17-BODY-AND-SANDWICH-PART-BY-PART.md",
+  "H18": "HARDWARE/18-THE-DOCK-PART-BY-PART.md",
+  "H19": "HARDWARE/19-THE-RADIO-AND-ANTENNAS-PART-BY-PART.md",
+  "H20": "HARDWARE/20-THE-BUDLUM-MONOGRAM.md",
+  "F03": "FINAL/03-body.md",
+  "F06": "FINAL/06-module.md",
+  "F17": "FINAL/17-energy-architecture.md",
+  "F21": "FINAL/21-stretch-stem-and-projection.md",
+  "F22": "FINAL/22-host-power-and-the-living-leaf.md",
+  "M09": "MASTER/09-CAMERA-MODULE-AND-PROCESSING.md",
+  "PL": "hw/electronics/placement.py",
+  "PLR": "hw/electronics/placement_results.txt",
+  "E03": "hw/energy/03-POWER-TREE-AND-BAR-PINS.md",
+  "E04": "hw/energy/04-ENERGY-BUDGET.md",
+  "E05": "hw/energy/05-DOCK-PACK-AND-B-CELL.md",
+  "E06": "hw/energy/06-EU-2023-1542-REMOVABILITY.md",
+  "CS": "hw/energy/out/cell_spec.txt",
+  "DK": "hw/dock/params.py",
+  "AU": "hw/audio/params.py",
+  "DI": "hw/display/out/interface.txt",
+  "DR": "hw/display/README.md",
+  "FZ": "fw/boot/ZERO-CPU.md",
+  "FS": "fw/boot/STATE-MACHINE.md",
+  "BUD": "program/budget.py",
+  "PW": "hw/core/power/out/skin_tree.txt",
+  "STU": "hw/core/study/cost.py",
+  "BR": "hw/core/BRIEF.md"
+ },
+ "cost_groups": {
+  "display": {
+   "budget": "micro-LED tiles x 128"
+  },
+  "cells": {
+   "budget": "micro cells x 128"
+  },
+  "tilemech": {
+   "budget": "tile mechanics: PC caps, hinges, skin, seats, magnets, 128 tiles"
+  },
+  "tcm": {
+   "budget": "TCM protection IC x 128"
+  },
+  "qi": {
+   "budget": "Qi2.2 sector coils, shield, rectifier"
+  },
+  "touch": {
+   "budget": "touch grid, AgNW, on the caps"
+  },
+  "u1u6": {
+   "budget": "U1 and U6 ASICs with 16 MB store"
+  },
+  "u5": {
+   "budget": "U5 5G modem SiP with RF front end and eSIM"
+  },
+  "u2": {
+   "budget": "U2A Wi-Fi 7 and BT 6.0, U2B 60 GHz and UWB"
+  },
+  "misc_si": {
+   "budget": "U7 secure element, U8 IMU, U3 audio, U4 power, NOR"
+  },
+  "cam": {
+   "budget": "50 MP camera column with sapphire L1"
+  },
+  "bmech": {
+   "budget": "B module mechanics: LCP shells, LDS, windows, jack, speaker, mics"
+  },
+  "rear": {
+   "budget": "rear round AMOLED"
+  },
+  "pcba": {
+   "budget": "ring PCBA, 8-layer HDI, assembly"
+  },
+  "bcell": {
+   "budget": "B cell 0.14 Wh"
+  },
+  "hub": {
+   "budget": null,
+   "label": "tile hub die x 128 (not in budget.py)",
+   "usd": {
+    "100000": [
+     7.0,
+     14.0,
+     26.0
+    ],
+    "1000000": [
+     5.0,
+     10.0,
+     19.0
+    ],
+    "5000000": [
+     3.5,
+     7.0,
+     13.0
+    ]
+   }
+  },
+  "skinmisc": {
+   "budget": null,
+   "label": "ocular NTCs, hinge sensors, seam strips, seat controllers (not in budget.py)",
+   "usd": {
+    "100000": [
+     5.0,
+     10.0,
+     20.0
+    ],
+    "1000000": [
+     3.0,
+     6.0,
+     12.0
+    ],
+    "5000000": [
+     2.0,
+     4.0,
+     8.0
+    ]
+   }
+  },
+  "ringsmall": {
+   "budget": null,
+   "label": "ring small parts: flash, tuners, mux, magnets, gaskets, spreader, cans, TCXO, xtal, inductors, flex (not in budget.py)",
+   "usd": {
+    "100000": [
+     5.0,
+     9.0,
+     15.0
+    ],
+    "1000000": [
+     3.0,
+     6.0,
+     10.0
+    ],
+    "5000000": [
+     2.2,
+     4.5,
+     7.5
+    ]
+   }
+  },
+  "splitadd": {
+   "budget": null,
+   "label": "parts the Split adds to the Skin at C0 (identity chip, safe-screen die, ring serdes)",
+   "usd": {
+    "100000": [
+     4.5,
+     8.0,
+     14.0
+    ],
+    "1000000": [
+     3.3,
+     5.35,
+     8.5
+    ],
+    "5000000": [
+     2.6,
+     4.3,
+     6.8
+    ]
+   }
+  },
+  "portpart": {
+   "budget": null,
+   "label": "port part, sold separately (not in the Leaf unit cost)",
+   "usd": {
+    "100000": [
+     9.0,
+     15.0,
+     25.0
+    ],
+    "1000000": [
+     6.0,
+     10.0,
+     16.0
+    ],
+    "5000000": [
+     4.5,
+     7.5,
+     12.0
+    ]
+   }
+  },
+  "none": {
+   "budget": null,
+   "label": "no cost counted",
+   "usd": {
+    "100000": [
+     0,
+     0,
+     0
+    ],
+    "1000000": [
+     0,
+     0,
+     0
+    ],
+    "5000000": [
+     0,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "line_items": [
+  {"id": "L1", "title": "energy at C1 and C2", "parts": ["BD06", "BD07", "BD08", "BD09", "BD23", "M27", "M29"], "rule": "The ruling lists no energy part, so the rule says Core.", "held": "Cells, TCMs, mux, B cell, coil and rectifier stay at C1 and C2. They move at C0.", "why": "Physics: watts do not cross 30 m or a kilometre. Brief section 8 item 4 says energy is local at C2."},
+  {"id": "L2", "title": "the Buffer store at C0", "parts": ["BD08", "BD09"], "rule": "All 128 cells are Core at C0.", "held": "The table sends all 128 cells to the Core. The sensitivity keeps 20 cells: 2.4 g with their TCMs and the mux, about 12 USD at 1 M.", "why": "Law, not physics: the Host Life Law (Part 22, condition 4) asks for a bridge store at a host swap. Without it the Skin goes dark for 3 s."},
+  {"id": "L3", "title": "the radio SiPs at C0", "parts": ["M17", "M18", "M19", "M32", "X03", "M25"], "rule": "The antennas and the radio front end stay. The baseband is Core.", "held": "U2A, U2B and U5 hold front end and baseband in one SiP. C0 moves them whole (upper bound). C0R keeps them whole (lower bound).", "why": "Physics keeps the front end at the antenna. No part list splits the SiP, so the truth lies between C0 and C0R."},
+  {"id": "L4", "title": "the safe-screen ROM", "parts": ["N02", "M16"], "rule": "The compositor U1 is Core at C0, and its ROM with it.", "held": "A ROM-only die N02 stays on the Skin.", "why": "Law, not physics: every fault ends in a visible state (FINAL/08 8.2). Without it a link loss gives a dark Skin."},
+  {"id": "L5", "title": "identity", "parts": ["M21", "N01"], "rule": "A hardened identity element stays at C1 and C2.", "held": "U7 stays at C1 and C2. At C0 the small chip N01 holds the identity and the part records, and the wallet moves to the Core.", "why": "The identity must stay (BRIEF section 4 item 4). The dead-pad law needs a verifier on the Skin."},
+  {"id": "L6", "title": "touch front end, hinge and seam sensors, tile hubs", "parts": ["BD18", "BD19", "BD04", "BD20"], "rule": "The body keeps the emitters and the tile drivers only.", "held": "The touch front ends and the sensors stay. The tile hubs and seat controllers stay as tile drivers and link end.", "why": "Physics: an electrode or a strain sensor is read at the tile, because a long trace adds noise and delay. Scan logic can move."},
+  {"id": "L7", "title": "the 36.2 C hardware cut-off", "parts": ["BD17"], "rule": "Not an emitter or a tile driver, so Core.", "held": "The NTCs and the comparator stay in the body.", "why": "Physics and law: a surface temperature is measured at the surface, and the cut-off acts with the link lost (ENR-16)."},
+  {"id": "L8", "title": "the IMU", "parts": ["M22"], "rule": "Not in the list of the ruling, so Core.", "held": "U8 stays in the module.", "why": "Physics: it senses the seat, the face and the grip of the Leaf. A Core IMU senses the Core."},
+  {"id": "L9", "title": "audio codec, power chip, boot NOR, rail parts", "parts": ["M23", "X01", "X05", "X02"], "rule": "Not in the list, so Core.", "held": "U3, U4, U9, U4B and the rail inductors stay in the module.", "why": "Physics: the DAC and amplifier sit at the speaker and jack, and the camera, panel and flash rails are local. U4 also answers the dead-pad law. U9 holds the firmware of the stayers."},
+  {"id": "L10", "title": "heat parts of the camera", "parts": ["M31", "M10", "BD16"], "rule": "Not in the list, so Core.", "held": "The spreader, phase change buffer, Cu-graphite shield and graphite shield stay.", "why": "Physics: the camera and the emitters make heat where they are. The buffer was sized for the camera sentinel, so it can shrink after the move (candidate K-1)."},
+  {"id": "L11", "title": "the seat interface and the dead-pad law", "parts": ["BD14", "BD15", "M04", "N03"], "rule": "Not an emitter or a tile driver, so Core.", "held": "The seat fields, seam leaves, 12 bar leaves and the ring serdes stay.", "why": "Law and physics: the 12 leaves are the only wired seat and the tether interface at C0. The dead-pad responder must sit at the pads (ENR-19)."},
+  {"id": "L12", "title": "the camera encoder and the uplink", "parts": ["M20"], "rule": "Sentinel work is processing, so Core.", "held": "At C1 and C2 the encoder in U6 stays. At C0 it moves if a display pair is switched to uplink.", "why": "Physics: the uplink under SAR is weak, and 12.5 MP at 30 fps needs 3.75 Gbit/s. Only compressed video crosses a room or a kilometre."}
+ ],
+ "parts": [
+  {"id": "BD01", "g": "body", "n": "PC caps, hard coat, AgNW touch grid", "cnt": 128, "m": 3.84, "mb": "derived", "lo": 3.5, "hi": 4.3, "ms": "derived: 12800 mm2 x 0.25 mm x 1.20 g/cm3 (F21 21.2.7, density from meta)", "ref": 12.8, "refs": "H16 #1 (8 shells, 0.20 mm, L.5.0)", "today": "front face of each tile", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The cap is the touch surface and the hard coat. Touch sensing is physics.", "cg": "tilemech", "cw": 3, "svc": "quadrant", "gates": "MEC-41, DSP-18", "col": []},
+  {"id": "BD02", "g": "body", "n": "optical adhesive, cap to glass", "cnt": 128, "m": 0.64, "mb": "derived", "lo": 0.55, "hi": 0.75, "ms": "derived: 12800 mm2 x 0.05 mm x 1.05 g/cm3 (F21 21.2.7)", "today": "tile stack, layer 2", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "A layer of the tile stack. It leaves with no part above or below it.", "cg": "tilemech", "cw": 0.5, "svc": "quadrant", "gates": "MEC-39", "col": []},
+  {"id": "BD03", "g": "body", "n": "micro-LED layer: 5.12 M chips, 1.28 M pixel uICs, TGV glass", "cnt": 128, "m": 7.84, "mb": "derived", "lo": 6.5, "hi": 8.5, "ms": "derived: 12800 mm2 x 0.25 mm x 2.45 g/cm3 (F21 21.2.7, DR)", "ref": 8.4, "refs": "H03 row 2 (T-OLED + OCA, L.5.0)", "today": "tile stack, layer 3", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The emitters at 50 um pitch and their uICs. Light must be made at the surface.", "cg": "display", "cw": 1, "svc": "quadrant", "gates": "DSP-19, MEC-40", "col": ["X5"]},
+  {"id": "BD04", "g": "body", "n": "tile hub die: DSC decode, demura, 4 retimed ports", "cnt": 128, "m": 0.3, "mb": "derived", "lo": 0.2, "hi": 0.6, "ms": "derived: 3 x 3 x 0.1 mm die and package, hypothesis (DR open issue 5)", "today": "coil or spreader layer of each tile", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Each tile latches its 105 Mbit/s packets locally. This is the minimal decoder of the Skin.", "cg": "hub", "cw": 1, "svc": "quadrant", "gates": "DSP-19", "col": [], "line": ["L6"]},
+  {"id": "BD05", "g": "body", "n": "slip OCA between glass and coil layer", "cnt": 128, "m": 0.38, "mb": "derived", "lo": 0.33, "hi": 0.45, "ms": "derived: 12800 mm2 x 0.03 mm x 1.05 g/cm3 (F21 21.2.7)", "ref": 1.6, "refs": "H16 #2 (8 layers, 0.05 mm, L.5.0)", "today": "tile stack, layer 4", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "A layer of the tile stack, so it stays with the tile.", "cg": "tilemech", "cw": 0.3, "svc": "quadrant", "gates": "MEC-39", "col": []},
+  {"id": "BD06", "g": "body", "n": "Qi2.2 sector coils x4, ferrite and Mu-metal shield, NP0 bank", "cnt": 4, "m": 3.0, "mb": "derived", "lo": 2.0, "hi": 3.2, "ms": "STU mass_and_stack qi_g 3.0 [HYPOTHESIS]; H17 group 9 states 3.2 g with Q-local coils", "ref": 3.2, "refs": "H17 group 9", "today": "0.20 mm coil layer, ring of about 45 mm", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "Rule of necessity: at C0 the tether carries power, so the coil is not forced. The Skin omits it and the Core charges itself. At C1 and C2 energy is local, so it stays.", "cg": "qi", "cw": 6, "svc": "quadrant", "gates": "ENR-24", "col": ["X14"], "line": ["L1"]},
+  {"id": "BD07", "g": "body", "n": "U_Q x4 rectifier and 3:1 charger", "cnt": 4, "m": 0.24, "mb": "stated", "ms": "H14 #5 (0.24 g, 4 tiles)", "today": "crossing tile of each quadrant", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "It goes with the coil at C0. At C1 and C2 it feeds the local cells from the seat field and the coil.", "cg": "qi", "cw": 3, "svc": "quadrant", "gates": "ENR-12, ENR-24", "col": ["X14"], "line": ["L1"]},
+  {"id": "BD08", "g": "body", "n": "hermetic micro cells, 9.25 x 9.25 x 0.90 mm, 30 um can", "cnt": 128, "m": 14.72, "mb": "derived", "lo": 14.6, "hi": 14.8, "ms": "CS: 0.115 g (G) or 0.114 g (S) per cell, times 128", "ref": 34.4, "refs": "H15 #1-4, H17 group 7 (LLZO pouch, withdrawn by F21 21.1)", "today": "0.90 mm cell layer of every tile", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "Energy is not forced at C0, so all 128 cells go. At C1 and C2 power does not travel 30 m (BR 8.4), so they stay. Buffer: line item L2.", "cg": "cells", "cw": 1, "svc": "quadrant", "gates": "ENR-22, ENR-23", "col": ["X15", "X16", "X19"], "line": ["L1", "L2"]},
+  {"id": "BD09", "g": "body", "n": "TCM protection IC, fuse and balance channel per cell", "cnt": 128, "m": 0.3, "mb": "derived", "lo": 0.2, "hi": 0.5, "ms": "derived: 128 dies at about 2 mg, hypothesis (F21 21.2.5)", "today": "routing layer of each tile", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "It follows its cell.", "cg": "tcm", "cw": 1, "svc": "quadrant", "gates": "ENR-23", "col": ["X15", "X19"], "line": ["L1", "L2"]},
+  {"id": "BD10", "g": "body", "n": "floating back skin, TPU or silicone, 0.08 mm", "cnt": 1, "m": 1.18, "mb": "derived", "lo": 1.0, "hi": 1.3, "ms": "derived: 12800 mm2 x 0.08 mm x 1.15 g/cm3 (F21 21.2.2, 21.2.7)", "today": "back face, bonded to tile-centre pads", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The outer surface of the stretching body.", "cg": "tilemech", "cw": 1, "svc": "quadrant", "gates": "MEC-41", "col": []},
+  {"id": "BD11", "g": "body", "n": "edge-on polyimide hinges (232), copper and EGaIn lanes, routing layer", "cnt": 232, "m": 0.5, "mb": "derived", "lo": 0.2, "hi": 1.0, "ms": "derived: ribbon volume is about 3 mm3, routing copper dominates, hypothesis (F21 21.2.2, DI section C)", "today": "chamfered tile corners", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The hinge is the stretch mechanism and carries the 13 display lines.", "cg": "tilemech", "cw": 3, "svc": "quadrant", "gates": "MEC-42", "col": []},
+  {"id": "BD12", "g": "body", "n": "Ti hub, 8 Ti pins, 24 N52H magnets, kinematic seat balls and vees", "cnt": 1, "m": 2.9, "mb": "stated", "ms": "H16 group 8 (2.9 g); H15 #15-17 sum 2.88 g", "ref": 2.9, "refs": "H16 group 8", "today": "the plus crossing and the quadrant lines", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The quadrant seat is mechanical. L.6.0 changed its parts, so the stated mass is a reference only.", "cg": "tilemech", "cw": 3, "svc": "quadrant", "gates": "MEC-40", "col": []},
+  {"id": "BD13", "g": "body", "n": "seam lip and plus seam optical lip", "cnt": 1, "m": 0.2, "mb": "stated", "ms": "H16 group 7 (0.2 g); H15 #19", "today": "quadrant lines", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The seam is part of the face.", "cg": "tilemech", "cw": 0.3, "svc": "quadrant", "gates": "DSP-19", "col": []},
+  {"id": "BD14", "g": "body", "n": "four seat fields: 12 gold lands per edge, keepers, dead-pad pad, first-break pad, gasket land, moisture pad", "cnt": 4, "m": 0.54, "mb": "stated", "ms": "H14 #9-14 (0.20+0.16+0.04+0.04+0.06+0.04 g)", "today": "one seat tile per edge", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The contact interface of the bar, the port part and the Core plug. The dead-pad law lives here.", "cg": "tilemech", "cw": 1.5, "svc": "fixed", "gates": "ENR-19, MON-23, RL-7", "col": ["X4", "X5"], "line": ["L11"]},
+  {"id": "BD15", "g": "body", "n": "64 seam gold leaves and 4 dead-pad switches", "cnt": 68, "m": 0.88, "mb": "stated", "ms": "H15 #18 (0.72 g) and #13 (0.16 g)", "today": "quadrant lines", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "They join the quadrants. L.6.0 turns them into split couplers, so the mass is a reference.", "cg": "tilemech", "cw": 1.5, "svc": "quadrant", "gates": "ENR-19, MEC-40", "col": ["X5"], "line": ["L11"]},
+  {"id": "BD16", "g": "body", "n": "graphite spreader and Mu-metal ocular shield", "cnt": 4, "m": 1.5, "mb": "derived", "lo": 0.8, "hi": 3.4, "ms": "derived: shares the 0.20 mm layer with the coil (F21 21.2.7); H16 group 6 states 3.4 g (L.5.0)", "ref": 3.4, "refs": "H16 group 6", "today": "coil or spreader layer", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "It spreads heat at the eye. The 36.2 C limit is a surface fact.", "cg": "qi", "cw": 1, "svc": "quadrant", "gates": "ENR-16, MEC-38", "col": [], "line": ["L10"]},
+  {"id": "BD17", "g": "body", "n": "36.2 C ocular NTC limiter with hardware comparator", "cnt": 8, "m": 0.06, "mb": "stated", "ms": "H14 #8 (0.06 g)", "today": "two per quadrant", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "A hardware cut-off must act at the surface in every class. A link cannot carry it.", "cg": "skinmisc", "cw": 1, "svc": "quadrant", "gates": "ENR-16", "col": [], "line": ["L7"]},
+  {"id": "BD18", "g": "body", "n": "AgNW touch front end per tile, scan at 480 Hz", "cnt": 128, "m": 0.3, "mb": "derived", "lo": 0.2, "hi": 0.5, "ms": "derived: 128 small dies, hypothesis (F21 21.5.5, E03 section 1.1)", "today": "each tile node", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Touch sensing is physics. Scan results can travel, the electrodes cannot.", "cg": "touch", "cw": 1, "svc": "quadrant", "gates": "DSP-18", "col": [], "line": ["L6"]},
+  {"id": "BD19", "g": "body", "n": "hinge-angle sensor, seam capacitive strip, thermistor per tile", "cnt": 128, "m": 0.2, "mb": "derived", "lo": 0.1, "hi": 0.4, "ms": "derived: small sensors, hypothesis (F21 21.2.4, E03 section 1.1)", "today": "each tile", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Physical sensors of the closed loops. The loop logic can move, the sensor cannot.", "cg": "skinmisc", "cw": 2, "svc": "quadrant", "gates": "DSP-17, MEC-40", "col": ["X10"], "line": ["L6"]},
+  {"id": "BD20", "g": "body", "n": "seat controller and edge router, one per seat tile", "cnt": 4, "m": 0.1, "mb": "derived", "lo": 0.05, "hi": 0.2, "ms": "derived: 4 small dies, hypothesis (E03 section 1.1)", "today": "seat tile of each edge", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "The link end of the Skin. It receives the pixel pairs and routes them over the hinge mesh.", "cg": "skinmisc", "cw": 1, "svc": "quadrant", "gates": "MON-23, DSP-20", "col": [], "line": ["L6"]},
+  {"id": "BD21", "g": "body", "n": "ultrasonic edge weld, IP67 seal, edge gasket lands", "cnt": 1, "m": 0.3, "mb": "derived", "lo": 0.2, "hi": 0.5, "ms": "derived: H14 #13 states 0.06 g for the gasket land, weld bead added, hypothesis", "today": "perimeter", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The seal is a property of the surface.", "cg": "tilemech", "cw": 1, "svc": "fixed", "gates": "MEC-7, MEC-19", "col": []},
+  {"id": "BD22", "g": "body", "n": "body antennas A5, A6 (5G slots), A7 (GNSS), A8 (NFC loop) in AgNW", "cnt": 4, "m": 0.0, "mb": "none", "ms": "no mass stated; the conductors are in the AgNW layer (H19 section 2). F21 does not restate A5 to A8", "today": "tile perimeter and the plus crossing", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Antennas as designed stay. Part 21 names no A5 to A8, which is an open item.", "cg": "none", "cw": 1, "svc": "quadrant", "gates": "RF-18, RF-21", "col": ["X13"]},
+  {"id": "BD23", "g": "body", "n": "Qi alignment magnets (16 N52 in tile corners) and QI2_AC_RING seam leaves", "cnt": 24, "m": 0.68, "mb": "stated", "ms": "H14 #4 (0.52 g, L.5.0 ring arcs; F21 21.2.6 item 5 gives 16 magnets) and #6 (0.16 g)", "today": "chamfered tile corners and quadrant lines", "a0": "M", "a1": "P", "a2": "P", "f0": 1, "f1": 0, "f2": 0, "why": "Part of the Qi path. It leaves with the coil at C0 and stays at C1 and C2.", "cg": "qi", "cw": 1, "svc": "quadrant", "gates": "ENR-12, RL-8", "col": [], "line": ["L1"]},
+  {"id": "M01", "g": "module", "n": "bar shell with the moulded 90 degree corner", "cnt": 1, "m": 0.2, "mb": "stated", "ms": "H13 #1", "dim": [32.0, 4.0, 1.0], "today": "top edge of the body", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "It carries the antennas as designed. The order of Ayaz keeps the bar.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-23", "col": ["X13"]},
+  {"id": "M02", "g": "module", "n": "A1 inverted-F and A2 coupled arm, LDS copper", "cnt": 2, "m": 0.02, "mb": "stated", "ms": "H13 #2", "dim": [29.4, 3.6, 0.05], "today": "bar antenna layer", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Antennas as designed. The Core cannot hold them.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "RF-9, RF-22", "col": ["X13"]},
+  {"id": "M03", "g": "module", "n": "A4 1x4 60 GHz patch array", "cnt": 1, "m": 0.05, "mb": "stated", "ms": "H13 #3", "dim": [14.0, 3.2, 0.1], "today": "bar mmWave layer", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Antenna as designed. A large Core array adds gain on its own end.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "RF-19", "col": ["X13"]},
+  {"id": "M04", "g": "module", "n": "12 gold body-link leaves over the seat tile", "cnt": 12, "m": 0.08, "mb": "stated", "ms": "H13 #4", "dim": [9.6, 3.0, 0.25], "today": "bar contact layer", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The one wired interface of the Leaf. At C0 it is the tether interface.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-18, MON-23", "col": ["X4", "X5"], "line": ["L11"]},
+  {"id": "M05", "g": "module", "n": "corner flex, 20 lines, through the moulded bend", "cnt": 1, "m": 0.1, "mb": "stated", "ms": "H13 #5", "dim": [16.0, 3.5, 0.1], "today": "bar to ring", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "It feeds the bar antennas from the ring. At C0 its antenna lines end in no radio.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-11", "col": ["X13"]},
+  {"id": "M06", "g": "module", "n": "ring shell, LCP-GF40", "cnt": 1, "m": 2.2, "mb": "stated", "ms": "H13 #6", "dim": [32.0, 32.0, 4.0], "today": "face of the body", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "It houses the camera, panel, audio and jack that stay. Shrinking it is a Leaf redesign.", "cg": "bmech", "cw": 2, "svc": "module", "gates": "MON-1, RF-23", "col": []},
+  {"id": "M07", "g": "module", "n": "front sapphire window, camera L1", "cnt": 1, "m": 0.54, "mb": "stated", "ms": "H13 #7", "dim": [24.0, 24.0, 0.3], "today": "ring front", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The lens stays with the sensor (BR 4.3).", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-3, CAM-21", "col": ["X1"]},
+  {"id": "M08", "g": "module", "n": "rear sapphire window", "cnt": 1, "m": 0.54, "mb": "stated", "ms": "H13 #8", "dim": [24.0, 24.0, 0.3], "today": "ring back", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Window of the rear panel.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-4", "col": []},
+  {"id": "M09", "g": "module", "n": "rear round LTPO AMOLED, 480 x 480", "cnt": 1, "m": 0.25, "mb": "stated", "ms": "H13 #9", "dim": [23.2, 23.2, 0.4], "today": "ring back", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "An emitter on the back of the Leaf. Its stream can come over the link at C0.", "cg": "rear", "cw": 1, "svc": "module", "gates": "MON-4", "col": ["X18"]},
+  {"id": "M10", "g": "module", "n": "Cu-graphite shield between camera and rear panel", "cnt": 1, "m": 0.15, "mb": "stated", "ms": "H13 #10", "dim": [23.6, 23.6, 0.15], "today": "ring mid-plane", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "It guards the sensor from the panel. The camera stays.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-13", "col": [], "line": ["L10"]},
+  {"id": "M11", "g": "module", "n": "50 MP camera column, f/2.0, 0.12 mm focus, in-plane stabiliser", "cnt": 1, "m": 0.45, "mb": "stated", "ms": "H13 #11", "dim": [7.0, 6.0, 3.9], "today": "ring centre", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Lens, sensor, focus and stabiliser must sit at the view. The column sets the 4.00 mm floor.", "cg": "cam", "cw": 1, "svc": "module", "gates": "CAM-21, MON-23", "col": ["X1", "X2", "X3"]},
+  {"id": "M12", "g": "module", "n": "LED flash, two colour temperatures", "cnt": 1, "m": 0.1, "mb": "stated", "ms": "H13 #12", "dim": [2.4, 1.6, 0.65], "today": "ring face", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "An emitter. Light is made where the scene is.", "cg": "ringsmall", "cw": 0.5, "svc": "module", "gates": "MON-8", "col": []},
+  {"id": "M13", "g": "module", "n": "micro-speaker", "cnt": 1, "m": 0.6, "mb": "stated", "ms": "H13 #13", "dim": [9.0, 3.2, 2.2], "today": "ring rim", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "A transducer at the user. A Core 2 m away is not at the ear.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-6", "col": []},
+  {"id": "M14", "g": "module", "dpp": true, "n": "two MEMS microphones, ePTFE mesh", "cnt": 2, "m": 0.06, "mb": "stated", "ms": "H13 #14", "dim": [2.7, 1.8, 0.9], "today": "ring rim", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Transducers at the mouth. They stay with the Leaf.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-7", "col": []},
+  {"id": "M15", "g": "module", "n": "ring PCBA, 8-layer HDI", "cnt": 1, "m": 1.4, "mb": "stated", "ms": "H13 #15", "dim": [30.0, 30.0, 0.55], "today": "ring mid-plane", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "It still routes the camera, panel, audio and jack. A smaller board is a candidate for Ayaz.", "cg": "pcba", "cw": 1, "svc": "module", "gates": "MON-10", "col": []},
+  {"id": "M16", "g": "module", "n": "U1 TCON and local compositor (safe-screen ROM inside)", "cnt": 1, "m": 0.1, "mb": "stated", "ms": "H13 #16", "dim": [5.2, 5.2, 0.45], "pl": ["U1 TCON"], "today": "ring PCBA", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "At C0 the compositor is not forced and moves. At C1 and C2 the rule keeps it. Its safe-screen ROM needs a Skin stub (N02).", "cg": "u1u6", "cw": 27, "svc": "module", "gates": "DSP-17, SW-21", "col": ["X7", "X9", "X10", "X11"], "line": ["L4"]},
+  {"id": "M17", "g": "module", "n": "U2A Wi-Fi 7 and BT 6.0 combo", "cnt": 1, "m": 0.1, "mb": "stated", "ms": "H13 #17", "dim": [5.0, 5.0, 0.6], "pl": ["U2A WiFi7/BT6"], "today": "ring PCBA, under a shield can", "a0": "M", "a1": "P", "a2": "P", "f0": 1, "f1": 0, "f2": 0, "radio": true, "why": "One SiP holds the front end and the baseband. The front end stays, the baseband can move: line item L3. At C1 and C2 it is the link PHY.", "cg": "u2", "cw": 25, "svc": "module", "gates": "RF-22, RF-23", "col": ["X13", "X12"], "line": ["L3"]},
+  {"id": "M18", "g": "module", "n": "U2B 60 GHz and UWB", "cnt": 1, "m": 0.1, "mb": "stated", "ms": "H13 #18", "dim": [5.0, 4.5, 0.6], "pl": ["U2B 60G/UWB"], "today": "ring PCBA, under a shield can", "a0": "M", "a1": "P", "a2": "P", "f0": 1, "f1": 0, "f2": 0, "radio": true, "why": "One SiP holds the front end and the baseband: line item L3. At C1 and C2 it is the link PHY and the UWB ranging.", "cg": "u2", "cw": 22.5, "svc": "module", "gates": "RF-19, SW-24", "col": ["X13", "X12"], "line": ["L3"]},
+  {"id": "M19", "g": "module", "n": "U5 5G standalone modem with RF front end and eSIM", "cnt": 1, "m": 0.5, "mb": "stated", "ms": "H13 #19", "dim": [10.0, 8.0, 0.8], "pl": ["U5 5G modem"], "today": "ring PCBA, under a shield can", "a0": "M", "a1": "P", "a2": "P", "f0": 1, "f1": 0, "f2": 0, "radio": true, "why": "One SiP holds the front end and the baseband: line item L3. Ayaz named the 5G modem as staying. The eSIM moves with it at C0.", "cg": "u5", "cw": 1, "svc": "module", "gates": "RF-17, DST-11", "col": ["X13", "X16"], "line": ["L3"]},
+  {"id": "M20", "g": "module", "n": "U6 slice decoder, camera encoder block and 16 MB frame store", "cnt": 1, "m": 0.15, "mb": "stated", "ms": "H13 #20; encoder block named in PL as U6 codec", "dim": [6.0, 6.0, 0.7], "pl": ["U6 codec+store"], "today": "ring PCBA", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "At C0 decoder and store are not forced. At C1 and C2 the rule keeps them. The encoder needs an uplink lane at C0.", "cg": "u1u6", "cw": 36, "svc": "module", "gates": "SW-21, CAM-3", "col": ["X1", "X11", "X12"], "line": ["L12"]},
+  {"id": "M21", "g": "module", "n": "U7 secure element: wallet keys, validator set, receipts", "cnt": 1, "m": 0.02, "mb": "stated", "ms": "H13 #21", "dim": [2.0, 2.0, 0.4], "pl": ["U7 SE"], "today": "ring PCBA, always-on from the B cell", "a0": "M", "a1": "P", "a2": "P", "f0": 1, "f1": 0, "f2": 0, "why": "At C0 a Skin identity chip replaces it (N01). At C1 and C2 it is the hardened identity element and the wallet.", "cg": "misc_si", "cw": 3.0, "svc": "module", "gates": "SW-22, ENR-19", "col": ["X3", "X5", "X8", "X18"], "line": ["L5"]},
+  {"id": "M22", "g": "module", "n": "U8 IMU", "cnt": 1, "m": 0.02, "mb": "stated", "ms": "H13 #22", "dim": [2.0, 2.0, 0.7], "pl": ["U8 IMU"], "today": "ring PCBA", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "It senses the seat, the face and the grip of the Leaf. A Core IMU senses the Core.", "cg": "misc_si", "cw": 1.2, "svc": "module", "gates": "RF-23", "col": [], "line": ["L8"]},
+  {"id": "M23", "g": "module", "n": "U3 audio codec and U4 power chip with dead-pad switch", "cnt": 2, "m": 0.1, "mb": "stated", "ms": "H13 #23", "dim": [3.2, 3.2, 0.4], "pl": ["U4 PMIC", "U3 audio"], "today": "ring PCBA", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "The codec sits at the jack and speaker. U4 regulates the camera, panel and flash rails and answers the dead-pad law.", "cg": "misc_si", "cw": 3.3, "svc": "module", "gates": "MON-16, ENR-19", "col": ["X5"], "line": ["L9"]},
+  {"id": "M24", "g": "module", "n": "A3 ring loop, LDS copper", "cnt": 1, "m": 0.02, "mb": "stated", "ms": "H13 #24", "today": "ring rim, around the jack groove", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "Antenna as designed. It is the second Wi-Fi antenna of the 2 x 2 pair.", "cg": "bmech", "cw": 0.5, "svc": "module", "gates": "RF-22", "col": ["X13"]},
+  {"id": "M25", "g": "module", "dpp": true, "n": "aperture tuners, three switched networks", "cnt": 3, "m": 0.03, "mb": "stated", "ms": "H13 #25", "dim": [1.5, 1.0, 0.4], "pl": ["TUN1 tuner", "TUN2 tuner", "TUN3 tuner"], "today": "ring PCBA, at the antenna feeds", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "A tuner sits at the feed of an antenna that stays. It idles at C0.", "cg": "ringsmall", "cw": 0.6, "svc": "module", "gates": "RF-23", "col": ["X13"], "line": ["L3"]},
+  {"id": "M26", "g": "module", "n": "3.5 mm jack in the ring rim", "cnt": 1, "m": 0.3, "mb": "stated", "ms": "H13 #26", "dim": [14.0, 4.0, 4.0], "today": "ring rim, chord at 13.8 mm", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "A connector for a plug at the Leaf. Order of Ayaz.", "cg": "bmech", "cw": 1, "svc": "module", "gates": "MON-22", "col": []},
+  {"id": "M27", "g": "module", "n": "cell multiplexer, 4 x 32 channels", "cnt": 1, "m": 0.03, "mb": "stated", "ms": "H13 #27", "dim": [3.0, 3.0, 0.4], "pl": ["U_BMS mux"], "today": "ring PCBA", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "It watches the 128 cells and goes with them at C0. At C1 and C2 it stays with the cells.", "cg": "ringsmall", "cw": 0.6, "svc": "module", "gates": "ENR-23", "col": ["X15"], "line": ["L1"]},
+  {"id": "M28", "g": "module", "dpp": true, "n": "8 N52H seat magnets in the sliding pad", "cnt": 8, "m": 0.34, "mb": "stated", "ms": "H13 #28 (0.34 g; H14 #32 states 1.55 g for the same 8 magnets)", "dim": [3.2, 1.6, 1.1], "today": "ring underside", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The ring holds to the face by magnets.", "cg": "ringsmall", "cw": 0.5, "svc": "module", "gates": "MON-5, MON-21", "col": []},
+  {"id": "M29", "g": "module", "n": "B cell, 0.14 Wh, 20 x 8 x 1.50 mm", "cnt": 1, "m": 0.6, "mb": "stated", "ms": "H13 #29; E05 section 1.1", "dim": [20.0, 8.0, 1.5], "pl": ["BT1a cell", "BT1b cell", "BT1 cell 20x8"], "today": "ring PCBA, stacked over cold parts", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "why": "It is the island rail of the wallet and radios. At C0 power comes by tether and the Buffer cells bridge.", "cg": "bcell", "cw": 1, "svc": "module", "gates": "ENR-22", "col": ["X18"], "line": ["L1"]},
+  {"id": "M30", "g": "module", "n": "FKM gaskets and the jack contact pocket", "cnt": 1, "m": 0.25, "mb": "stated", "ms": "H13 #30", "dim": [30.0, 3.6, 0.4], "today": "ring seams", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "The seal is a property of the ring.", "cg": "ringsmall", "cw": 0.2, "svc": "module", "gates": "MON-12", "col": []},
+  {"id": "M31", "g": "module", "n": "graphite spreader and 1.0 g phase change buffer", "cnt": 1, "m": 1.1, "mb": "stated", "ms": "H13 #31", "dim": [28.0, 28.0, 0.8], "today": "ring top layer", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "The camera still makes heat. Shrinking the buffer needs a thermal re-run (heat seat). Candidate only.", "cg": "ringsmall", "cw": 0.8, "svc": "module", "gates": "MEC-11", "col": [], "line": ["L10"]},
+  {"id": "M32", "g": "module", "n": "shield cans, nickel silver, over U2A, U2B, U5", "cnt": 3, "m": 0.3, "mb": "stated", "ms": "H13 #32", "today": "ring PCBA", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "radio": true, "why": "A can follows its SiP: line item L3.", "cg": "ringsmall", "cw": 0.35, "svc": "module", "gates": "RF-17", "col": ["X13"], "line": ["L3"]},
+  {"id": "X01", "g": "placement", "n": "U9 boot NOR, 16 MiB", "cnt": 1, "m": 0.008, "mb": "derived", "lo": 0.005, "hi": 0.02, "ms": "derived: 2.0 x 3.0 x 0.55 mm x 2.5 g/cm3 (PL parts); not in H13", "dim": [2.0, 3.0, 0.55], "pl": ["U9 NOR"], "today": "ring PCBA", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "It holds the firmware of U3, U8 and the camera sequencer, which stay. FZ section 4.", "cg": "misc_si", "cw": 1.0, "svc": "module", "gates": "SW-22", "col": [], "line": ["L9"]},
+  {"id": "X02", "g": "placement", "n": "U4B bias and flash driver", "cnt": 1, "m": 0.004, "mb": "derived", "lo": 0.003, "hi": 0.01, "ms": "derived: 2.0 x 2.0 x 0.40 mm x 2.5 g/cm3 (PL parts); not in H13", "dim": [2.0, 2.0, 0.4], "pl": ["U4B bias/flash"], "today": "ring PCBA", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "It drives the flash and camera bias at the emitter.", "cg": "ringsmall", "cw": 0.3, "svc": "module", "gates": "MON-8", "col": [], "line": ["L9"]},
+  {"id": "X03", "g": "placement", "n": "Y1 TCXO", "cnt": 1, "m": 0.006, "mb": "derived", "lo": 0.004, "hi": 0.01, "ms": "derived: 2.0 x 1.6 x 0.70 mm x 2.5 g/cm3 (PL parts); not in H13", "dim": [2.0, 1.6, 0.7], "pl": ["Y1 TCXO"], "today": "ring PCBA", "a0": "M", "a1": "S", "a2": "S", "f0": 1, "f1": 0, "f2": 0, "radio": true, "why": "It clocks the baseband and follows the SiPs: line item L3.", "cg": "ringsmall", "cw": 0.45, "svc": "module", "gates": "RF-17", "col": ["X13"], "line": ["L3"]},
+  {"id": "X04", "g": "placement", "n": "Y2 32 kHz crystal", "cnt": 1, "m": 0.002, "mb": "derived", "lo": 0.001, "hi": 0.005, "ms": "derived: 1.6 x 1.0 x 0.45 mm x 2.5 g/cm3 (PL parts); not in H13", "dim": [1.6, 1.0, 0.45], "pl": ["Y2 32k"], "today": "ring PCBA", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "A real-time clock for the ring stub.", "cg": "ringsmall", "cw": 0.15, "svc": "module", "gates": "MON-10", "col": []},
+  {"id": "X05", "g": "placement", "dpp": true, "n": "inductors L1 to L7", "cnt": 7, "m": 0.045, "mb": "derived", "lo": 0.03, "hi": 0.08, "ms": "derived: 7 x 2.0 x 1.25 x 0.65 mm x 4.0 g/cm3 (PL parts); not in H13", "dim": [2.0, 1.25, 0.65], "pl": ["L1", "L2", "L3", "L4", "L5", "L6", "L7"], "today": "ring PCBA", "a0": "S", "a1": "S", "a2": "S", "f0": 0, "f1": 0, "f2": 0, "why": "Rail inductors of U4 and the camera and panel rails. Some serve moved chips, which a redesign can drop.", "cg": "ringsmall", "cw": 0.3, "svc": "module", "gates": "MON-16", "col": [], "line": ["L9"]},
+  {"id": "X06", "g": "placement", "n": "camera flex and display flex", "cnt": 2, "m": 0.01, "mb": "derived", "lo": 0.005, "hi": 0.02, "ms": "derived: 3.0 x 1.6 x 0.5 and 4.0 x 1.6 x 0.5 mm, hypothesis (PL parts); not in H13", "pl": ["CAMFLEX", "DISPFLEX"], "today": "ring PCBA", "a0": "P", "a1": "P", "a2": "P", "f0": 0, "f1": 0, "f2": 0, "why": "They connect the camera and the rear panel.", "cg": "ringsmall", "cw": 0.5, "svc": "module", "gates": "MON-10", "col": []},
+  {"id": "N01", "g": "split", "n": "Skin identity chip: pairing, part record (law L9), verify only, no signing key", "cnt": 1, "m": 0.02, "mb": "derived", "lo": 0.01, "hi": 0.05, "ms": "derived: size of U7 (H13 #21); study seat prices it at 1.0 to 1.5 USD (STU)", "today": "added at C0 only", "a0": "A", "a1": "-", "a2": "-", "f0": 0, "f1": 0, "f2": 0, "why": "The identity must stay (BR 4). It answers the dead-pad challenge by verifying the Core and holds the part records.", "cg": "splitadd", "cw": 1.25, "svc": "module", "gates": "HC-A7, ENR-19", "col": ["X5", "X8"], "line": ["L5"]},
+  {"id": "N02", "g": "split", "n": "Skin safe-screen ROM die (the U1 ROM path kept on the Skin)", "cnt": 1, "m": 0.01, "mb": "derived", "lo": 0.005, "hi": 0.03, "ms": "derived: small ROM-only die, hypothesis (FZ section 4: 256 KiB ROM and timing)", "today": "added at C0 only", "a0": "A", "a1": "-", "a2": "-", "f0": 0, "f1": 0, "f2": 0, "why": "The safe screen shows on a link loss in 60 ms. The session seat already assumes a ROM screen in 15 ms.", "cg": "splitadd", "cw": 0.6, "svc": "quadrant", "gates": "HC-A3, SW-22", "col": ["X9"], "line": ["L4"]},
+  {"id": "N03", "g": "split", "n": "ring serdes bridge for camera, rear panel, audio and IMU over the leaves", "cnt": 1, "m": 0.03, "mb": "derived", "lo": 0.02, "hi": 0.08, "ms": "derived: one small die, hypothesis", "today": "added at C0 only", "a0": "A", "a1": "-", "a2": "-", "f0": 0, "f1": 0, "f2": 0, "why": "The 12 leaves carry two display pairs and a 0.4 Gbit/s back channel. The ring streams need a bridge and a lane.", "cg": "splitadd", "cw": 3.5, "svc": "module", "gates": "HC-A5", "col": ["X1", "X4"], "line": ["L11"]},
+  {"id": "PP01", "g": "port", "n": "USB-C receptacle, IP68, with strain relief", "cnt": 1, "m": 0.95, "mb": "stated", "ms": "H14 #17 (0.85 g) and #37 (0.10 g); L.5.0 value reused for the L.6.0 port part [HYPOTHESIS]", "today": "clip-on on a free body edge", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "A separate product (F21 21.3.4). A Core tether at C0 can use the same clip-on family. Candidate.", "cg": "portpart", "cw": 1, "svc": "port", "gates": "RL-1, RL-17", "col": ["X4"]},
+  {"id": "PP02", "g": "port", "n": "PD controller, inductor, filter, decoupling, ESD, redriver", "cnt": 1, "m": 0.46, "mb": "stated", "ms": "H14 #22 #28 #29 #27 #21 #26 (0.10+0.20+0.05+0.03+0.05+0.03 g)", "today": "port part board", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "Power negotiation of the port part.", "cg": "portpart", "cw": 1, "svc": "port", "gates": "RL-2", "col": []},
+  {"id": "PP03", "g": "port", "n": "12 gold pogo pins and O-rings", "cnt": 12, "m": 0.5, "mb": "stated", "ms": "H14 #30 (0.45 g) and #31 (0.05 g)", "today": "port part face", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "They mate with the 12 pads of a seat field.", "cg": "portpart", "cw": 1, "svc": "port", "gates": "RL-8, RL-9", "col": ["X4"]},
+  {"id": "PP04", "g": "port", "n": "latch magnets x8 and orientation Hall sensor", "cnt": 9, "m": 1.57, "mb": "stated", "ms": "H14 #32 (1.55 g) and #34 (0.02 g); 8 N52H of 3.2 x 1.6 x 1.1 mm weigh 0.34 g by volume", "today": "port part body", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "Holds the clip-on to an edge.", "cg": "portpart", "cw": 1, "svc": "port", "gates": "RL-13, RL-18", "col": []},
+  {"id": "PP05", "g": "port", "n": "dead-pad authenticator, FKM skirt, potting", "cnt": 1, "m": 0.43, "mb": "stated", "ms": "H14 #25 (0.02 g), #33 (0.25 g), #42 (0.16 g)", "today": "port part body", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "The port part answers the dead-pad challenge as role port.", "cg": "portpart", "cw": 1, "svc": "port", "gates": "RL-14, RL-9", "col": ["X5"]},
+  {"id": "PP06", "g": "port", "n": "RF and power isolation shield, regulatory plate, optional PORT-CJ and PORT-CA adapters", "cnt": 1, "m": 0.22, "mb": "stated", "ms": "H14 #36 (0.17 g), #39 (0.05 g); #40 and #41 are optional accessories with no mass stated", "today": "port part body", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "Support parts of the port part. L.5.0 values reused.", "cg": "portpart", "cw": 0.5, "svc": "port", "gates": "RF-9, RL-4", "col": []},
+  {"id": "DK00", "g": "dock", "n": "dock complete, 240 x 120 x 12 mm class", "cnt": 1, "m": 310.0, "mb": "stated", "ms": "H18 section 1 (310 g, or 360 g with the 45 TOPS board); L.5.0 figure, hw/dock/params.py redraws it", "today": "desk host", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "A host for C0 contact. A Core at C0 can be built as the dock. Candidate.", "cg": "none", "cw": 1, "svc": "dock", "gates": "SW-20, DK-1", "col": []},
+  {"id": "DK01", "g": "dock", "n": "deck, seat land, Qi2.2 transmitter coil, pad set, pad springs, VESA mount, guide pins, feet", "cnt": 1, "m": null, "mb": "none", "ms": "no part masses stated (H18 parts 1 to 9 and 23 to 25)", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "The contact side of the dock.", "cg": "none", "cw": 1, "svc": "dock", "gates": "DK-2, DK-3", "col": []},
+  {"id": "DK02", "g": "dock", "n": "deck board, PD sink, Qi and pad power stage, 2.5 GbE PHY, switch", "cnt": 1, "m": null, "mb": "none", "ms": "no part masses stated (H18 parts 10 to 15)", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "The power and network side of the dock.", "cg": "none", "cw": 1, "svc": "dock", "gates": "DK-3, DK-4", "col": []},
+  {"id": "DK03", "g": "dock", "n": "regulated pad: AlN window, TEC, heat sink, blower", "cnt": 1, "m": null, "mb": "none", "ms": "hw/dock/params.py PAD_STACK; no masses stated", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "The heat path of Part 22. The Skin load of 1.0 to 1.6 W passes only on a pulled heat path in still air.", "cg": "none", "cw": 1, "svc": "dock", "gates": "DK-6", "col": []},
+  {"id": "DK04", "g": "dock", "n": "dock pack, 20 Wh, two pouch cells, and its protector", "cnt": 1, "m": null, "mb": "none", "ms": "E05 section 2.1: 2 x 70 x 60 x 3.7 mm, no mass stated", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "A near energy host for C0 contact. The Core can share it. Candidate.", "cg": "none", "cw": 1, "svc": "dock", "gates": "SW-20", "col": ["X15"]},
+  {"id": "DK05", "g": "dock", "n": "validator bay and 45 TOPS validator board (option), Wi-Fi 7 AP, 60 GHz radio, UWB anchor", "cnt": 1, "m": null, "mb": "none", "ms": "H18 parts 14 and 17 to 20; hw/dock/params.py LOADS and VALIDATOR", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "The room validator and radios. This is a C1 Core in all but name.", "cg": "none", "cw": 1, "svc": "dock", "gates": "SW-20, DK-7", "col": ["X6"]},
+  {"id": "DK06", "g": "dock", "n": "dock secure element, serial plate, status bar, B module post", "cnt": 1, "m": null, "mb": "none", "ms": "H18 parts 21, 22, 26, 27; no masses stated", "today": "dock deck", "a0": "D", "a1": "D", "a2": "D", "f0": 0, "f1": 0, "f2": 0, "why": "Dock identity and the post for large members.", "cg": "none", "cw": 1, "svc": "dock", "gates": "DK-8, DK-10", "col": []},
+  {"id": "W01", "g": "withdrawn", "n": "LLZO/PEO pouch cells x4 with Al-laminate pouches and foil tabs", "cnt": 4, "m": 0.0, "mb": "none", "ref": 36.2, "refs": "H15 #1-6 (34.4 + 1.40 + 0.40 g)", "ms": "withdrawn by F21 21.1: 128 hermetic micro cells replace them", "today": "L.5.0 body", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Not in the L.6.0 design. The stated 68 g body still counts these cells.", "cg": "none", "cw": 1, "svc": "none", "gates": "", "col": ["X17"]},
+  {"id": "W02", "g": "withdrawn", "n": "T-OLED panels x8 and ITO/AgNW mesh x8", "cnt": 16, "m": 0.0, "mb": "none", "ref": 8.4, "refs": "H15 #23 (6.80 g) and #24 (1.60 g)", "ms": "withdrawn by F21 21.1: micro-LED tiles and AgNW", "today": "L.5.0 body", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Replaced by BD03 and BD01.", "cg": "none", "cw": 1, "svc": "none", "gates": "", "col": []},
+  {"id": "W03", "g": "withdrawn", "n": "PC shells x8 and OCA slip layers x8", "cnt": 16, "m": 0.0, "mb": "none", "ref": 14.4, "refs": "H15 #21 (12.80 g) and #22 (1.60 g)", "ms": "replaced by 128 caps (BD01, BD02, BD05)", "today": "L.5.0 body", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Replaced by the tile stack.", "cg": "none", "cw": 1, "svc": "none", "gates": "", "col": []},
+  {"id": "W04", "g": "withdrawn", "n": "PDLC privacy film x4", "cnt": 4, "m": 0.0, "mb": "none", "ref": 1.88, "refs": "H15 #25", "ms": "the 21.2.7 stack has no PDLC layer; Part 21 does not name it as withdrawn", "today": "L.5.0 body", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Open: not in the L.6.0 stack. The Split does not touch it.", "cg": "none", "cw": 1, "svc": "none", "gates": "CLR-1", "col": []},
+  {"id": "W05", "g": "withdrawn", "n": "holdover capacitors x4 and local Qi coils x4", "cnt": 8, "m": 0.0, "mb": "none", "ref": 1.48, "refs": "H15 #14 (0.48 g) and H14 #2 (1.00 g)", "ms": "not in the 21.2.7 stack nor in 21.2.6 (four sector coils only)", "today": "L.5.0 body", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Open: Part 22 needs a hold-up path, and the stack has no room for these.", "cg": "none", "cw": 1, "svc": "none", "gates": "ENR-13", "col": []},
+  {"id": "W06", "g": "withdrawn", "n": "L.5.0 stem, Ti hinge, USB-C, aluminium ring, folded camera, 0.45 Wh bridge cell", "cnt": 1, "m": 0.0, "mb": "none", "ref": 22.0, "refs": "H17 groups 11 to 14 (7.6 + 9.8 + 3.8 + 0.8 g)", "ms": "F21 21.1 replaces the module with the 32 parts of H13 (10.80 g)", "today": "L.5.0 module", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "The 20 g and 22 g module figures are withdrawn.", "cg": "none", "cw": 1, "svc": "none", "gates": "", "col": ["X17"]},
+  {"id": "W07", "g": "withdrawn", "n": "L.5.0 stem parts: Ti shells, Ti hinge barrel, hinge flex, stem board, headset codec and amplifier", "cnt": 7, "m": 0.0, "mb": "none", "ref": 3.94, "refs": "H14 #15, #16, #18, #19, #20, #23, #24 (1.20+1.15+0.95+0.20+0.35+0.05+0.04 g)", "ms": "withdrawn by F21 21.1 (stem and hinge) and by H13 (the codec is U3 in the ring)", "today": "L.5.0 stem", "a0": "W", "a1": "W", "a2": "W", "f0": 0, "f1": 0, "f2": 0, "why": "Not in the L.6.0 design.", "cg": "none", "cw": 1, "svc": "none", "gates": "", "col": ["X17"]}
+ ],
+ "collisions": [
+  {"id": "X1", "title": "the 50 MP camera column and the Core taking camera processing", "where": "CAM-21, MON-23, F21 21.3.5, M09 sections 3.1 and 3.2, CAM-3", "what": "The lens and sensor must stay. The sentinel (remosaic, compression, encode) needs an uplink. The leaves hold a 0.4 Gbit/s back channel, and 12.5 MP at 30 fps needs 3.75 Gbit/s.", "C0": "Zone 1 stays. Move the sentinel only if a display pair is switched to camera uplink in capture mode (HC-A5), or keep the encoder in U6.", "C1": "No change. The sentinel stays, because the uplink carries 30 to 80 Mbit/s of compressed video and 12 to 30 MB stills.", "C2": "No change. A weak uplink under SAR forbids raw video.", "parts": ["M11", "M20", "N03"]},
+  {"id": "X2", "title": "the 4.00 mm module is set by the camera column", "where": "F21 21.3.5 (3.90 mm column), MON-23 (4.00 +- 0.05 mm), CAM-21", "what": "Moving silicon frees area and volume in the ring. It does not thin the module, because the column stands 3.90 mm.", "C0": "Module stays 4.00 mm. Freed volume is room, not thickness.", "C1": "Nothing leaves the ring. Module stays 4.00 mm.", "C2": "Nothing leaves the ring. Module stays 4.00 mm.", "parts": ["M11", "M06"]},
+  {"id": "X3", "title": "camera state declaration and hardware indicator", "where": "M09 section 5 item 2 (RG-5), CAM-5", "what": "A hardware indicator and a signed sensor declaration stop software from hiding camera use. U7 signs today. The Skin signs nothing.", "C0": "Wire the indicator to the sensor supply rail on the Skin. The Core signs the declaration and names the Skin identity (HC-A5).", "C1": "No change. U7 stays on the Leaf.", "C2": "No change.", "parts": ["M11", "M21", "N01"]},
+  {"id": "X4", "title": "the 12 gold leaves and the one wired seat", "where": "MON-23, MON-18, MON-21, F21 21.3.2 and 21.3.3, E03 section 2", "what": "The leaves carry two display pairs, a 0.4 Gbit/s back channel, VBUS, VHV, sideband and ground. The ring slides on a stretching face and a cable pulls on the bar.", "C0": "A Core plug takes the leaves in place of the ring chips, or a port-part clip-on takes another edge. Test a 30 N pull on a seat (HC-A4).", "C1": "No change. The leaves carry the ring only.", "C2": "No change.", "parts": ["M04", "BD14", "PP01", "PP03", "N03"]},
+  {"id": "X5", "title": "the dead-pad law", "where": "ENR-19, MON-16, FS state PAD_AUTH, RL-7, RL-14", "what": "Every pad holds 0 V until a 3 ms challenge. The challenger verifies a signed answer. At C0 the answer comes from the Core, and the Skin holds no signing key.", "C0": "The Skin identity chip verifies the Core certificate in 3 ms. First break opens the FET in under 0.8 ms (HC-A4).", "C1": "Not used. No pad touches a Core. The pairing key of the trust seat replaces the challenge.", "C2": "Not used. The law holds on the bar and the port part as designed.", "parts": ["BD14", "BD15", "M04", "M21", "M23", "N01"]},
+  {"id": "X6", "title": "the Zero CPU definition", "where": "F21 21.5.1, F21 21.4.2, FZ section 4, naming law of BR section 7", "what": "Part 21 gives the Leaf no general-purpose processor and no operating system. The Core holds the validator role, which needs both.", "C0": "Relocated silicon stays fixed-function. Claim Zero CPU for the Skin and the relocated block. Name the validator role as a separate node (HC-A10).", "C1": "Same. A room validator is a node, as the dock validator is today.", "C2": "No change. The Core is a validator, not part of the Leaf.", "parts": ["M16", "M20", "DK05"]},
+  {"id": "X7", "title": "the local compositor, the stretch warp and the Part 21 interaction budget", "where": "F21 21.5.6, SW-21, SW-23, DSP-17", "what": "U1 moves cursor, scroll, glyph echo and the per-tile warp in under 10 ms. SW-23 needs a predicted action with the network cut.", "C0": "The Core runs the compositor. The tether round trip is well under 1 ms. SW-23 cuts the Core uplink, not the tether.", "C1": "Compositor stays on the Leaf, as the ruling of Ayaz says.", "C2": "No change. The far round trip is 80 ms, so the Leaf compositor and speculative frames are essential.", "parts": ["M16"]},
+  {"id": "X8", "title": "the stream check and the wallet on the Leaf", "where": "F21 21.5.4, F21 21.5.8, SW-22, BR section 4 item 4", "what": "U7 accepts a stream only from an active validator key. With U7 on the Core, the Skin trusts the paired Core key and nothing else.", "C0": "SW-22 moves to the Core. The Skin refuses an unpaired Core key. The rogue Skin reads every pixel (HC-A11).", "C1": "No change. U7 stays as the hardened identity element.", "C2": "No change. U7 stays.", "parts": ["M21", "M20", "N01"]},
+  {"id": "X9", "title": "the safe-screen ROM lives in U1", "where": "FS (U1 ROM path), FINAL/08 section 8.2 safe-screen law, I2 (60 ms)", "what": "Every fault ends in a visible state. If U1 leaves and the link fails, the Skin is dark and the law is broken.", "C0": "Keep a ROM-only safe-screen die on the Skin (N02). Show it within 60 ms of a link loss (HC-A3).", "C1": "No change. U1 stays.", "C2": "No change.", "parts": ["M16", "N02"]},
+  {"id": "X10", "title": "the seam loop and the 3 ms recalibration after a swap", "where": "F21 21.2.4 items 4 and 5, MEC-40, DSP-17", "what": "U1 shifts the image in 3.125 um steps and recalibrates in the 3 ms window. The calibration of 32 tiles is about 154 KB, so the back channel needs 3.1 ms.", "C0": "Read the calibration over a pair (0.2 ms), or keep the closed loop in the tile hubs (HC-A6).", "C1": "No change. U1 stays.", "C2": "No change.", "parts": ["M16", "BD19", "BD04"]},
+  {"id": "X11", "title": "frame store, decoder and compositor at C1 and C2", "where": "F21 21.5.1, BR section 8 item 2, DSC link of DI", "what": "Slices of tens to 150 Mbit/s cross a room. The raw stream of 6 to 12 Gbit/s needs the 60 GHz array, and Wi-Fi 7 2 x 2 tops out at 5.76 Gbit/s PHY.", "C0": "Not needed. The tether carries 13.43 Gbit/s over two pairs.", "C1": "U6, the frame store and the compositor stay. The ruling of Ayaz keeps them at C1 and C2. HC-A9 measures the link and confirms the necessity.", "C2": "U6 stays. No raw stream crosses a kilometre.", "parts": ["M20", "M16"]},
+  {"id": "X12", "title": "the radios and the antennas are one design", "where": "RF-9, RF-17, RF-19, RF-22, RF-23, F21 21.4", "what": "A1 to A4 are tuned to U2A and U2B with the tuners. A SiP holds the front end and the baseband together. Ayaz keeps the antennas and the 5G modem on the Leaf.", "C0": "The rule keeps the front end and moves the baseband, which no part list splits. C0 moves the SiPs whole. C0R keeps them. The truth lies between.", "C1": "All three radios stay. They are the Leaf end of the link.", "C2": "All three radios stay.", "parts": ["M17", "M18", "M19", "M25"]},
+  {"id": "X13", "title": "dormant antennas and a Leaf that cannot roam at C0", "where": "BR section 8, F21 21.4.1, RF-21 to RF-23", "what": "If the radios move, the bar antennas and the corner flex lines end in no radio. A Skin off its tether is then dark. An RF cable of 2 m loses many dB at 60 GHz.", "C0": "Choose C0R (radios stay), or accept a tether-only Skin. The choice is for Ayaz (candidate K-3).", "C1": "No change. The antennas feed the radios on the Leaf.", "C2": "No change.", "parts": ["M01", "M02", "M03", "M05", "M17", "M18", "M19", "M24", "M25", "M32", "X03"]},
+  {"id": "X14", "title": "Qi2.2 on a Skin with no cell behind it", "where": "F21 21.2.6, ENR-24, F22 D-10", "what": "At C0 the tether carries power, so the rule omits the coil, the rectifier and the alignment magnets. A Skin that must charge off its tether needs them.", "C0": "The Skin omits the Qi path (3.9 g). The Core charges its own cells. Candidate K-2 puts it back.", "C1": "No change. Energy is local, so the coil stays.", "C2": "No change.", "parts": ["BD06", "BD07", "BD23"]},
+  {"id": "X15", "title": "Article 11, the removable quadrant and the Buffer rule", "where": "FINAL/17 17.6, F22 22.12, E06 section 2, ENR-13, ENR-22", "what": "The quadrant is the user battery today: 32 cells, TCMs, U_Q and bonded tiles. With all cells in the Core, Article 11 applies to the Core battery.", "C0": "The Core cells need tool-free removal. The Skin quadrant holds no cell and is display only (HC-A6).", "C1": "No change. Cells stay in the quadrants.", "C2": "No change.", "parts": ["BD08", "BD09", "M27", "DK04"]},
+  {"id": "X16", "title": "the legal class of the Leaf", "where": "E06 section 1 (2023/1670 class with modem and voice path)", "what": "The Leaf sits in a regulation class because it has a 5G modem and a voice path. A Skin with no modem can fall outside it, and the Core can enter it.", "C0": "Ask a lawyer which box is the product. Hypothesis only.", "C1": "No change.", "C2": "No change.", "parts": ["M19", "BD08"]},
+  {"id": "X17", "title": "the mass figures of the catalogues", "where": "FINAL/03 3.1, MEC-2, H03, H17, F21 21.1", "what": "The stated 68 g body counts 34.4 g of withdrawn LLZO cells. The L.6.0 body has no mass list. The 88 g total counts a withdrawn 20 g module.", "C0": "State the mass of Skin, Core and tether as three configurations (the mass rule of FINAL/03 3.1).", "C1": "State Leaf and Core mass as two configurations.", "C2": "No change.", "parts": ["W01", "W06", "BD08"]},
+  {"id": "X18", "title": "the rear display and wallet standby with no Core", "where": "E04 section 3 (rear glance 75 min, wallet standby 143 min on the B cell), E05 section 1.3 rule 5", "what": "At C0 the rear glance, the clock and the wallet standby need the Core, because U1, U7 and the B cell leave.", "C0": "The Skin alone shows the safe screen only. State it in the product text.", "C1": "No change. The B cell, U1 and U7 stay.", "C2": "No change.", "parts": ["M09", "M21", "M29"]},
+  {"id": "X19", "title": "the Host Life Law and a Skin with no store", "where": "F22 22.2 condition 4, F22 D-9, HST-1, HST-2, HST-5", "what": "Part 22 asks for a bridge store, so a host swap loses no session. The rule of necessity sends all cells to the Core at C0.", "C0": "Line item L2. Keep 20 Buffer cells (2.4 g) or accept a dark Skin for 3 s at a host swap. Ayaz decides (K-7).", "C1": "No change. The cells stay.", "C2": "No change. The cells stay.", "parts": ["BD08", "BD09", "M29"]}
+ ],
+ "gates": [
+  {"id": "HC-A1", "test": "the allocation table against the catalogues", "pass": "Each part of HARDWARE/13 (32 rows) and each group of HARDWARE/14 to 19 has one cited row. parts.py exits 0. The module sum is 10.80 g within 0.01 g."},
+  {"id": "HC-A2", "test": "the ring after the move, by area and by packing", "pass": "At C0 the staying ring parts fill 60 percent or less of the free board area. The packer places every part with 0 errors."},
+  {"id": "HC-A3", "test": "the safe screen with the link cut or the Core off", "pass": "At C0 the Skin shows the ROM safe screen within 60 ms of a link loss. No updatable code is on the path. 65 536 fault sets pass."},
+  {"id": "HC-A4", "test": "the Core plug on a seat: dead-pad law, first break and pull", "pass": "Pads stay at 0 V until the 3 ms answer. First break opens the FET in under 0.8 ms under a 30 N side pull. 1 000 mates, no damage."},
+  {"id": "HC-A5", "test": "the camera path at C0", "pass": "A display pair switched to uplink carries 12.5 MP at 60 fps (7.5 Gbit/s) with no dropped frame. The hardware indicator follows the sensor rail, with no software path."},
+  {"id": "HC-A6", "test": "the quadrant swap on a Skin with no cells", "pass": "Swap under 3 s. The calibration of 32 tiles loads in under 3 ms. Core cells leave with no tool in under 30 s."},
+  {"id": "HC-A7", "test": "the part record on the Core and the Skin identity chip", "pass": "Every moved part carries a record on the Core. The identity chip signs challenges only and holds no wallet key. A mismatched Core and Skin pair is refused."},
+  {"id": "HC-A8", "test": "the first weighed build", "pass": "Each part is weighed (MEC-2). The Skin mass at C0 is within 10 percent of out/summary.txt. The weighed Leaf replaces the 68 g and 88 g figures."},
+  {"id": "HC-A9", "test": "the necessity test at C1: decoder, store and compositor", "pass": "The 60 GHz array measured at 30 m for 1 h gives under 13.43 Gbit/s. That confirms the rule. A higher rate goes to Ayaz and no part moves."},
+  {"id": "HC-A10", "test": "the Zero CPU and naming claims", "pass": "No text calls a Core that hosts the validator role Zero CPU. The word Leaf names the Skin. A search for the banned product names returns 0 hits."},
+  {"id": "HC-A11", "test": "the stream check on the Skin", "pass": "A stream from an unpaired Core key shows the safe screen in 1 000 of 1 000 trials. A rogue Skin gets no key."},
+  {"id": "HC-A12", "test": "the antennas at C0 and C0R", "pass": "In C0R the gates RF-21 to RF-23 pass unchanged. In C0 the antennas keep their return loss with the radios removed, and the Leaf states that it cannot roam."},
+  {"id": "HC-A13", "test": "the host swap on a Skin with no store (line item L2)", "pass": "The Skin shows the safe screen through a 3 s host swap and resumes. If not, the 20-cell Buffer is added and HST-2 passes."}
+ ],
+ "candidates": [
+  {"id": "K-1", "text": "Shrink the ring board and the spreader after the C0 move, to buy thickness or a larger camera sensor. It needs a Leaf redesign.", "touches": "Part 21 decision 6, MON-23"},
+  {"id": "K-2", "text": "Put the Qi coil, rectifier and magnets (3.9 g) back on the C0 Skin, if it must charge off its tether.", "touches": "Part 21 decision 4"},
+  {"id": "K-3", "text": "Choose C0 or C0R for the radio SiPs. C0R keeps 1.0 g and 54 USD on the Leaf at 1 M a year, plus the 61 USD royalty.", "touches": "order of Ayaz, message 3"},
+  {"id": "K-4", "text": "Build the C0 Core as the dock family. The dock already holds the pad, the heat path, the 20 Wh pack and the validator bay.", "touches": "Part 22 D-12"},
+  {"id": "K-5", "text": "Add a mass list of the L.6.0 body to HARDWARE, and retire the 68 g and 88 g figures.", "touches": "FINAL/03 3.1, MEC-2"},
+  {"id": "K-6", "text": "Delete the cell layer from all 128 tiles at C0. The tile stack falls from 2.00 mm to 1.10 mm, or 0.90 mm without the coil layer.", "touches": "F21 21.2.7, MEC-39"},
+  {"id": "K-7", "text": "Keep 20 Buffer cells on the C0 Skin for the Host Life Law. They weigh 2.4 g with their TCMs and the mux, hold 0.9 to 1.2 Wh and cost about 12 USD at 1 M.", "touches": "Part 22 D-9, condition 4"}
+ ]
+}

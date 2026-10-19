@@ -1,0 +1,46 @@
+{
+ "rows": [
+  {
+   "topic": "BARE STORE (Part 22: no store fits the 0.24 mm margin, 3 s of the safe screen needs 3 tiles)",
+   "verdict": "STRENGTHENED at C0, unchanged at C2",
+   "C0": "the 3 s store shrinks 2.8 times (0.21 against 0.60 cm3 at the delta class, 0.36 against 0.97 at video). It fits the vacated cell layer in 3 to 5 tiles at large-cell density, 11 to 19 tiles of chip EDLC. It misses both margins on thickness.",
+   "C1": "the C1a Skin load is 1.70 W at delta, so the store is 0.46 cm3 for 3 s: the gain is gone, and the Skin needs a near host or a cell.",
+   "C2": "none. The Skin is the L.6.0 Leaf, the Part 22 answer stands: no fit in the margin."
+  },
+  {
+   "topic": "BUFFER POWER LIMIT (Part 22: the 3 C cap sets the cell count, peak 8.7 W needs 53 cells)",
+   "verdict": "WEAKENED for the Skin, STRENGTHENED for the Core",
+   "C0": "the Skin needs 5 to 10 cells at 3 s (0.80 to 1.65 W) against 14 and 22. It needs no Buffer. The limit moves to the Core, which needs 5.1 Wh of cells at 3 C for 4 Skins at peak and 11.2 Wh for 8.",
+   "C1": "the C1a Skin on a near host is power limited as at C0, with 11 to 17 cells at 3 s.",
+   "C2": "unchanged: 14, 22 and 53 cells at 3 s for the delta, video and peak classes."
+  },
+  {
+   "topic": "HOST PEAK (Part 22: a host carries 8.7 W, 9.0 W on VHV; a 5 W pad does not)",
+   "verdict": "WEAKENED",
+   "C0": "the Split costs +13 percent at the delta class, +10 percent at video and +11 percent at peak for one Skin and its Core (2.53 W against 2.24 W at delta). With the 0.2 C top-up, H0 carries at most 4 Skins at every class, H5 at most 2 at peak, H6a none. 8 Skins need 19.5 W at delta on the host.",
+   "C1": "the Core carries a radio array (3.9 W) and the Skin sits on its own host. The system at N = 1 takes 5.59 W against 2.24 W.",
+   "C2": "the energy host of the Leaf is the Part 22 host and its numbers stand. The Core runs on mains: 18.0 W per validator, 2.2 W per Leaf at N = 8."
+  },
+  {
+   "topic": "CELL LIFE (Part 22: host-fed Full 13.4 years against 1.8 cycled; a small Buffer works hard)",
+   "verdict": "STRENGTHENED",
+   "C0": "no cell on the Skin, so no cell aging in a surface at the skin limit. The Core cell sits in a part the user can swap. A Core Buffer of 5 min lives 2.7 years, 30 min 10.8 years, a 4 h cell 14.6 years (4 Skins, host-fed, float 50 percent).",
+   "C1": "unchanged where the Skin has no cell. A roaming C1a Skin with a cell ages as Part 22 says.",
+   "C2": "unchanged: the Leaf cell is the energy host, so 13.4 years host-fed and 1.8 years cycled stand."
+  },
+  {
+   "topic": "HEAT of the Skin against the free-air ceiling (Part 22 thermal: the L.6.0 Leaf fails everywhere)",
+   "verdict": "STRENGTHENED at C0 only",
+   "C0": "the Skin takes 1.03 W at delta (margin +0.70 W to 1.73 W still) and 1.65 W at video (margin +0.08 W, and -0.10 W with the high add-ons). The pad interface adds 13 mW at video.",
+   "C1": "C1a: 1.70 W at delta, 2.76 W at video. It passes delta by +0.03 W and fails video.",
+   "C2": "the Skin is the L.6.0 Leaf: 2.24 W and 3.65 W, over the ceiling by 0.51 and 1.92 W."
+  },
+  {
+   "topic": "MASS AND ENERGY OF THE SPLIT (Part 22 gave capacity moving, not vanishing)",
+   "verdict": "MIXED",
+   "C0": "the Skin weighs 53.5 g (coil kept) or 46.1 g (pads power), 25.3 to 32.7 g lighter than the 78.8 g device. The Core takes 33 g for 3 h and the pair is +0 percent against one Leaf at N = 1 (S1). Break-even on mass is N = 2.",
+   "C1": "the energy costs more: +149 percent at N = 1 because of the Core radio array.",
+   "C2": "the Split buys nothing on energy: the Leaf keeps its 2.24 W and the validator adds its share."
+  }
+ ]
+}

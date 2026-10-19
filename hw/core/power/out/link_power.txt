@@ -1,0 +1,90 @@
+POWER seat · question 2 · power over the link, at the Skin load
+Skin load at VBUS, nominal: delta 1.03 W, camera 1.42 W, video 1.65 W, outdoor 4.79 W
+limits: free-air still 1.73 W, light wind 2.37 W for the whole Skin [H]; the pad leaf rating is 1.5 A [H]
+
+NEW PADS
+  option                               load          V    I,A   R,mohm   path,mW  iface,mW     skinW     eff | verdict vs 1.73 / 2.37 W
+  P1 pads, VBUS direct                 delta       3.9   0.26       18       1.3       1.3     1.032   99.9% | pass
+  P2 pads, VHV 12 V + U_Q              delta      12.0   0.09       18      32.0      32.0     1.063   97.0% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     delta      12.0   0.09      244      33.8      32.2     1.063   96.8% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     delta      12.0   0.09      735      37.6      32.2     1.063   96.5% | pass
+  P4 Qi, power only                    delta      12.0   0.09        -     295.9      62.8     1.094   77.7% | pass
+  P4 Qi + 60 GHz radio for the pixels  delta      12.0   0.15        -     491.6     108.5     1.821   77.7% | wind only
+  P5 hybrid cable                      delta      12.0   0.11      193      40.0      38.0     1.262   96.8% | pass
+
+  P1 pads, VBUS direct                 camera      3.9   0.36       18       2.4       2.4     1.422   99.8% | pass
+  P2 pads, VHV 12 V + U_Q              camera     12.0   0.12       18      44.2      44.2     1.464   97.0% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     camera     12.0   0.12      244      47.5      44.5     1.464   96.8% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     camera     12.0   0.12      735      54.8      44.5     1.464   96.3% | pass
+  P4 Qi, power only                    camera     12.0   0.12        -     407.5      88.5     1.508   77.7% | pass
+  P4 Qi + 60 GHz radio for the pixels  camera     12.0   0.18        -     603.2     136.0     2.237   77.7% | wind only
+  P5 hybrid cable                      camera     12.0   0.14      193      53.6      50.1     1.663   96.8% | pass
+
+  P1 pads, VBUS direct                 video       3.9   0.42       18       3.2       3.2     1.651   99.8% | pass
+  P2 pads, VHV 12 V + U_Q              video      12.0   0.14       18      51.3      51.3     1.699   97.0% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     video      12.0   0.14      244      55.8      51.8     1.699   96.7% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     video      12.0   0.14      735      65.7      51.8     1.699   96.2% | pass
+  P4 Qi, power only                    video      12.0   0.14        -     472.9     104.0     1.752   77.7% | wind only
+  P4 Qi + 60 GHz radio for the pixels  video      12.0   0.20        -     668.7     152.6     2.482   77.7% | FAIL
+  P5 hybrid cable                      video      12.0   0.16      193      61.8      57.2     1.898   96.8% | wind only
+
+  P1 pads, VBUS direct                 outdoor     3.9   1.23       18      27.1      27.1     4.816   99.4% | FAIL
+  P2 pads, VHV 12 V + U_Q              outdoor    12.0   0.41       18     151.2     151.2     4.940   96.9% | FAIL
+  P3 flex tether 0.5 m, 12 V + U_Q     outdoor    12.0   0.41      244     189.4     154.9     4.944   96.2% | FAIL
+  P3 flex tether 2.0 m, 12 V + U_Q     outdoor    12.0   0.41      735     272.6     154.9     4.944   94.6% | FAIL
+  P4 Qi, power only                    outdoor    12.0   0.41        -    1374.7     355.1     5.144   77.7% | FAIL
+  P4 Qi + 60 GHz radio for the pixels  outdoor    12.0   0.47        -    1570.4     418.7     5.889   77.7% | FAIL
+  P5 hybrid cable                      outdoor    12.0   0.43      193     189.4     156.4     5.138   96.3% | FAIL
+
+WORN PADS
+  option                               load          V    I,A   R,mohm   path,mW  iface,mW     skinW     eff | verdict vs 1.73 / 2.37 W
+  P1 pads, VBUS direct                 delta       3.9   0.26       71       5.0       5.0     1.036   99.5% | pass
+  P2 pads, VHV 12 V + U_Q              delta      12.0   0.09       71      32.4      32.4     1.063   96.9% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     delta      12.0   0.09      244      33.8      32.2     1.063   96.8% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     delta      12.0   0.09      735      37.6      32.2     1.063   96.5% | pass
+  P4 Qi, power only                    delta      12.0   0.09        -     295.9      62.8     1.094   77.7% | pass
+  P4 Qi + 60 GHz radio for the pixels  delta      12.0   0.15        -     491.6     108.5     1.821   77.7% | wind only
+  P5 hybrid cable                      delta      12.0   0.11      193      40.0      38.0     1.262   96.8% | pass
+
+  P1 pads, VBUS direct                 camera      3.9   0.36       71       9.5       9.5     1.429   99.3% | pass
+  P2 pads, VHV 12 V + U_Q              camera     12.0   0.12       71      45.0      45.0     1.465   96.9% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     camera     12.0   0.12      244      47.5      44.5     1.464   96.8% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     camera     12.0   0.12      735      54.8      44.5     1.464   96.3% | pass
+  P4 Qi, power only                    camera     12.0   0.12        -     407.5      88.5     1.508   77.7% | pass
+  P4 Qi + 60 GHz radio for the pixels  camera     12.0   0.18        -     603.2     136.0     2.237   77.7% | wind only
+  P5 hybrid cable                      camera     12.0   0.14      193      53.6      50.1     1.663   96.8% | pass
+
+  P1 pads, VBUS direct                 video       3.9   0.42       71      12.8      12.8     1.660   99.2% | pass
+  P2 pads, VHV 12 V + U_Q              video      12.0   0.14       71      52.4      52.4     1.700   96.9% | pass
+  P3 flex tether 0.5 m, 12 V + U_Q     video      12.0   0.14      244      55.8      51.8     1.699   96.7% | pass
+  P3 flex tether 2.0 m, 12 V + U_Q     video      12.0   0.14      735      65.7      51.8     1.699   96.2% | pass
+  P4 Qi, power only                    video      12.0   0.14        -     472.9     104.0     1.752   77.7% | wind only
+  P4 Qi + 60 GHz radio for the pixels  video      12.0   0.20        -     668.7     152.6     2.482   77.7% | FAIL
+  P5 hybrid cable                      video      12.0   0.16      193      61.8      57.2     1.898   96.8% | wind only
+
+  P1 pads, VBUS direct                 outdoor     3.9   1.23       71     107.7     107.7     4.897   97.8% | FAIL
+  P2 pads, VHV 12 V + U_Q              outdoor    12.0   0.41       71     160.2     160.2     4.949   96.8% | FAIL
+  P3 flex tether 0.5 m, 12 V + U_Q     outdoor    12.0   0.41      244     189.4     154.9     4.944   96.2% | FAIL
+  P3 flex tether 2.0 m, 12 V + U_Q     outdoor    12.0   0.41      735     272.6     154.9     4.944   94.6% | FAIL
+  P4 Qi, power only                    outdoor    12.0   0.41        -    1374.7     355.1     5.144   77.7% | FAIL
+  P4 Qi + 60 GHz radio for the pixels  outdoor    12.0   0.47        -    1570.4     418.7     5.889   77.7% | FAIL
+  P5 hybrid cable                      outdoor    12.0   0.43      193     189.4     156.4     5.138   96.3% | FAIL
+
+READING (worn pads shown, the worst case)
+  delta    interface heat on the Skin: lowest P1 pads, VBUS direct 5 mW, highest P4 Qi + 60 GHz radio for the pixels 109 mW
+  camera   interface heat on the Skin: lowest P1 pads, VBUS direct 9 mW, highest P4 Qi + 60 GHz radio for the pixels 136 mW
+  video    interface heat on the Skin: lowest P1 pads, VBUS direct 13 mW, highest P4 Qi + 60 GHz radio for the pixels 153 mW
+  outdoor  interface heat on the Skin: lowest P1 pads, VBUS direct 108 mW, highest P4 Qi + 60 GHz radio for the pixels 419 mW
+
+  P1 at the video load: 0.42 A, 3.2 mW new and 12.8 mW worn, drop 30 mV worn, 0.21 A per leaf of 1.5 A
+  Qi at the video load: 104 mW of interface heat on the Skin, 32.4 times the pads. With a pixel radio the Skin total is 2.48 W
+  hybrid cable at the video load: Skin total 1.90 W, the PHY and PD sink add 0.19 W to the Skin
+
+THE RULING FOR THE STUDY [HYPOTHESIS]
+  1. The pads win. The Core regulates VBUS and the Skin has no stage. Interface heat at the video load is 3 mW new and 13 mW worn.
+  2. The Core must sense the VBUS leaves through the back channel BC and hold 3.90 V at the tiles. The worn drop is 30 mV at the video load.
+  3. The U_Q stage costs the Skin 40 mW more than the direct feed at the video load. It buys a lower current for a long cable.
+  4. A 2 m flex tether at 12 V adds 13 mW to the cable over the pads and nothing on the Skin beyond the stage.
+  5. Qi-class power puts 104 mW on the Skin, 2.0 times the 12 V pads, and gives no pixels. The pixel radio adds 0.68 W to the Skin.
+  6. The hybrid cable shares a connector with the pixels. It is the best product shape and it costs the Skin the PHY: +0.19 W.
+  7. Every option fails the 1.73 W ceiling at the outdoor video load of 4.79 W. The load, not the interface, causes that.

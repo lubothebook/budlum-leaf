@@ -1,0 +1,86 @@
+FLEET seat · the roaming fleet · a simulated day in a city of 20 x 20 km, 1500 Leafs, steps of 10 s
+The Leaf is the ruled B module of fleet.py. Cores: C2 sites on a hexagonal grid, C1 room Cores, C0 docks. Every assumption is a [HYPOTHESIS].
+
+1 · the base day. Sector radius 1.0 km (inter-site distance 1.73 km), room Cores at 60 % of homes and desks, docks at 50 %.
+  hours per Leaf and day: C0 7.2, C1 8.8, C2 8.0  (shares 30 %, 37 %, 33 %)
+  session hours per Leaf and day: idle 16.5, delta 6.4, video 1.1
+  activity share inside each class (rows C0, C1, C2; columns idle, delta, video):
+    C0  0.78  0.20  0.02
+    C1  0.65  0.29  0.05
+    C2  0.64  0.30  0.06
+  time by segment (hours on C0, C1, C2):
+    00 sleep    3.55  2.16  1.30
+    01 home     0.09  0.40  0.26
+    02 walk     0.00  0.00  0.25
+    03 vehicle  0.00  0.00  0.29
+    04 walk     0.00  0.00  0.17
+    05 desk     1.20  1.61  1.23
+    06 cafe     0.00  0.08  0.67
+    07 desk     1.25  1.70  1.28
+    08 walk     0.00  0.00  0.17
+    09 vehicle  0.00  0.00  0.29
+    10 walk     0.00  0.00  0.25
+    11 home     0.63  2.50  1.66
+    12 sleep    0.52  0.31  0.18
+
+2 · the hand-overs
+  C2 to C2 hand-overs while walking: 3.3 per hour; in a vehicle: 25.1 per hour [net/discovery city run: 4.5 per hour, mixed]
+  per Leaf and day: 17.6 C2 hand-overs, 7.8 class changes (a compute host change each), 8.4 energy host changes
+  Each compute host change is a hot-shadow switch: 0 frames lost in the planned case [TREE] net/discovery policy C, 4 to 5 covered on a failure.
+
+3 · the energy and the heat of the day
+  load energy 19.7 Wh per Leaf and day; from a host 12.6 Wh; from the cell 7.2 Wh
+  the cell alone: 1.01 cycles per day on Full S (7.1 Wh usable); the cell floats on a host (Part 22.4)
+  time above the free-air limit of 1.73 W with no heat path: 5.7 h per Leaf and day (a dock plate or a cradle is a heat path)
+  by class, per Leaf and day:                   C0       C1       C2
+    load energy, Wh                             4.1      7.6      8.1
+    from the cell, Wh                           0.0      3.1      4.0
+    hours above 1.73 W, no plate                0.0      3.0      2.7
+    mean load per hour on the class, W: C0 0.56, C1 0.86, C2 1.01
+  C2 session time with no link at this site spacing: idle 0.0 %, delta 0.0 %, video 9.9 %; C2 session hours per day: 5.12, 2.39, 0.49
+
+4 · the C2 sessions by the hour (share of all Leafs in a C2 session of that kind, mean of the hour)
+  hour   delta  video   busiest site: delta, video (5 min peaks of the 1500-Leaf city)
+  00    0.000  0.000   -
+  01    0.000  0.000   -
+  02    0.000  0.000   -
+  03    0.000  0.000   -
+  04    0.000  0.000   -
+  05    0.001  0.000   1, 0
+  06    0.020  0.007   3, 2
+  07    0.112  0.036   7, 4
+  08    0.171  0.037   7, 4
+  09    0.158  0.013   7, 3
+  10    0.159  0.009   7, 3
+  11    0.161  0.007   6, 2
+  12    0.235  0.065   12, 4
+  13    0.202  0.040   8, 4
+  14    0.153  0.009   7, 2
+  15    0.161  0.010   7, 3
+  16    0.163  0.010   6, 2
+  17    0.177  0.034   7, 4
+  18    0.133  0.045   6, 4
+  19    0.101  0.041   5, 3
+  20    0.091  0.045   6, 3
+  21    0.096  0.043   6, 4
+  22    0.073  0.031   4, 4
+  23    0.024  0.010   4, 2
+  The peak hour is 12:00. C2 delta share 23.5 %, C2 video share 6.5 % of all Leafs.
+  A site of 3 sectors at R = 1 km (2.6 km2) has radio capacity for 747 delta or 132 video sessions.
+  At the real peak this carries 475 registered Leafs per km2. The mix of fleet.py (15 % in a session) would give 993.
+
+5 · the deployment of room Cores and docks changes the C2 share (sector radius 1 km)
+  deployment                   C0 h   C1 h   C2 h   cell Wh    hot h   HO/day  cls/day
+  no room Core, no dock         0.0    0.0   24.0       8.7      7.3     17.8      0.0
+  docks only                    7.3    0.0   16.7       7.4      5.7     17.8      5.2
+  base: 60 % room, 50 % dock    7.2    8.8    8.0       7.2      5.7     17.6      7.8
+  everyone has both            14.3    7.7    1.9       5.8      4.2     17.7     13.2
+
+6 · the sector radius of the C2 grid changes the hand-over rate and the outage (deployment: base)
+      R km   ISD km  HO/h walk   HO/h veh out dlt % out vid %    HO/day
+       0.5     0.87        7.0       49.6       0.0       0.0      35.6
+       1.0     1.73        3.3       25.1       0.0       9.9      17.6
+       1.5     2.60        2.2       16.6       1.2      54.4      11.7
+       2.0     3.46        1.6       12.5      34.1      71.8       8.8
+       3.0     5.20        0.9        8.4      63.4      88.3       5.8
+  The outage is the share of C2 session minutes where the SAR uplink or the downlink does not close at the base case of fleet.py.

@@ -1,0 +1,510 @@
+{
+ "reach_m": {
+  "FS": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 28.671418579740394,
+    "radio": "v60w"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 52.20513610828249,
+    "radio": "v60w"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 64000.0,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 64000.0,
+    "radio": "nr35"
+   }
+  },
+  "UMa-LOS": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 4402.174073475893,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 5940.174968019552,
+    "radio": "nr07"
+   }
+  },
+  "RMa-LOS": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 7253.605317203836,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 11715.616906691377,
+    "radio": "nr07"
+   }
+  },
+  "UMa-NLOS": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 573.8117504306176,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 1621.4135308778023,
+    "radio": "nr07"
+   }
+  },
+  "UMa-NLOS+O2I-low": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 169.6546886616397,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 551.3387289169707,
+    "radio": "nr07"
+   }
+  },
+  "RMa-NLOS": {
+   "raw pixel stream": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 3:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "compressed pixel stream 6:1": {
+    "range_m": 0.0,
+    "radio": "none"
+   },
+   "slice stream, upper (full screen, 2 speculative frames)": {
+    "range_m": 964.5652576808263,
+    "radio": "nr35"
+   },
+   "slice stream, lower (video class)": {
+    "range_m": 2725.5614041445697,
+    "radio": "nr07"
+   }
+  }
+ },
+ "limit_side": {
+  "wifi24": [
+   "DL    -1/  +17",
+   "DL   -20/   -1",
+   "DL   -40/  -21",
+   "DL   -59/  -40",
+   "DL   -67/  -49",
+   "DL   -79/  -60"
+  ],
+  "wifi5": [
+   "DL    +2/  +11",
+   "DL   -16/   -7",
+   "DL   -37/  -28",
+   "DL   -55/  -46",
+   "DL   -64/  -55",
+   "DL   -76/  -67"
+  ],
+  "wifi6": [
+   "DL   -15/   +3",
+   "DL   -33/  -15",
+   "DL   -54/  -35",
+   "DL   -72/  -54",
+   "DL   -81/  -63",
+   "DL   -93/  -74"
+  ],
+  "nr35": [
+   "UL   +59/  +37",
+   "UL   +41/  +19",
+   "UL   +21/   -2",
+   "UL    +2/  -20",
+   "UL    -6/  -29",
+   "UL   -18/  -41"
+  ],
+  "nr07": [
+   "UL   +68/  +51",
+   "UL   +49/  +33",
+   "UL   +29/  +12",
+   "UL   +10/   -6",
+   "UL    +2/  -15",
+   "UL   -10/  -27"
+  ],
+  "v60": [
+   "UL   -23/  -31",
+   "UL   -44/  -52",
+   "UL   -75/  -83",
+   "UL  -123/ -131",
+   "UL  -162/ -170",
+   "UL  -249/ -257"
+  ],
+  "v60w": [
+   "UL   -29/  -37",
+   "UL   -50/  -58",
+   "UL   -81/  -89",
+   "UL  -130/ -138",
+   "UL  -168/ -176",
+   "UL  -255/ -263"
+  ]
+ },
+ "v60": {
+  "v60": {
+   "design": {
+    "3": {
+     "dl_gbps": 3.402,
+     "ul_mbps": 1134.0,
+     "snr_dl": 37.57242038224898
+    },
+    "10": {
+     "dl_gbps": 3.402,
+     "ul_mbps": 1134.0,
+     "snr_dl": 27.009845476642226
+    },
+    "30": {
+     "dl_gbps": 3.402,
+     "ul_mbps": 1134.0,
+     "snr_dl": 17.167420382248977
+    },
+    "100": {
+     "dl_gbps": 1.4763293515521034,
+     "ul_mbps": 300.3246433486697,
+     "snr_dl": 5.659845476642232
+    },
+    "300": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -6.88257961775102
+    },
+    "1000": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -27.840154523357782
+    }
+   },
+   "stress": {
+    "3": {
+     "dl_gbps": 3.402,
+     "ul_mbps": 1134.0,
+     "snr_dl": 30.372420382248983
+    },
+    "10": {
+     "dl_gbps": 3.402,
+     "ul_mbps": 1134.0,
+     "snr_dl": 19.80984547664223
+    },
+    "30": {
+     "dl_gbps": 2.617059665928845,
+     "ul_mbps": 595.5321784450754,
+     "snr_dl": 9.967420382248982
+    },
+    "100": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -1.5401545233577565
+    },
+    "300": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -14.082579617751009
+    },
+    "1000": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -35.040154523357785
+    }
+   }
+  },
+  "v60w": {
+   "design": {
+    "3": {
+     "dl_gbps": 13.608,
+     "ul_mbps": 4536.0,
+     "snr_dl": 31.551820468969353
+    },
+    "10": {
+     "dl_gbps": 13.608,
+     "ul_mbps": 4536.0,
+     "snr_dl": 20.9892455633626
+    },
+    "30": {
+     "dl_gbps": 11.923274308809521,
+     "ul_mbps": 2793.11471326905,
+     "snr_dl": 11.146820468969352
+    },
+    "100": {
+     "dl_gbps": 2.042798251155307,
+     "ul_mbps": 0.0,
+     "snr_dl": -0.36075443663739293
+    },
+    "300": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -12.903179531030645
+    },
+    "1000": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -33.86075443663741
+    }
+   },
+   "stress": {
+    "3": {
+     "dl_gbps": 13.608,
+     "ul_mbps": 4536.0,
+     "snr_dl": 24.351820468969358
+    },
+    "10": {
+     "dl_gbps": 13.608,
+     "ul_mbps": 3824.886524705781,
+     "snr_dl": 13.789245563362606
+    },
+    "30": {
+     "dl_gbps": 4.496056486642452,
+     "ul_mbps": 877.3077822285854,
+     "snr_dl": 3.9468204689693565
+    },
+    "100": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -7.560754436637382
+    },
+    "300": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -20.103179531030634
+    },
+    "1000": {
+     "dl_gbps": 0.0,
+     "ul_mbps": 0.0,
+     "snr_dl": -41.06075443663741
+    }
+   }
+  }
+ },
+ "v60_reach": {
+  "v60": {
+   "design": {
+    "12": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 37.92442981290083
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 37.92442981290083
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 37.92442981290083
+     }
+    },
+    "18": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 71.31672395025092
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 71.31672395025092
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 71.31672395025092
+     }
+    },
+    "25": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 141.15686569042953
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 141.15686569042953
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 141.15686569042953
+     }
+    }
+   },
+   "stress": {
+    "12": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 17.002746491470134
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 17.002746491470134
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 17.002746491470134
+     }
+    },
+    "18": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 33.08391799337388
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 33.08391799337388
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 33.08391799337388
+     }
+    },
+    "25": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 68.92326680987446
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 68.92326680987446
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 68.92326680987446
+     }
+    }
+   }
+  },
+  "v60w": {
+   "design": {
+    "12": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 19.49042027221355
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 11.880945488067418,
+      "ul2_m": 19.49042027221355
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 21.963955882222645,
+      "ul2_m": 19.49042027221355
+     }
+    },
+    "18": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 37.28260884417597
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 23.1179254721089,
+      "ul2_m": 37.28260884417597
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 42.014156923802645,
+      "ul2_m": 37.28260884417597
+     }
+    },
+    "25": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 79.007437847308
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 28.861228374222105,
+      "ul2_m": 79.007437847308
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 52.4519459754819,
+      "ul2_m": 79.007437847308
+     }
+    }
+   },
+   "stress": {
+    "12": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 8.59030251201226
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 5.2364656300782295,
+      "ul2_m": 8.59030251201226
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 9.847150653487988,
+      "ul2_m": 8.59030251201226
+     }
+    },
+    "18": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 17.002746491470134
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 10.364512483118649,
+      "ul2_m": 17.002746491470134
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 19.16057060850915,
+      "ul2_m": 17.002746491470134
+     }
+    },
+    "25": {
+     "raw 36.9 Gbit/s": {
+      "dl_m": 0.0,
+      "ul2_m": 36.65164984906356
+     },
+     "3:1 12.3 Gbit/s": {
+      "dl_m": 12.939420629401095,
+      "ul2_m": 36.65164984906356
+     },
+     "6:1 6.1 Gbit/s": {
+      "dl_m": 23.92072786893294,
+      "ul2_m": 36.65164984906356
+     }
+    }
+   }
+  }
+ }
+}

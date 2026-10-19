@@ -10,16 +10,26 @@
 4. A task is one brief with one deliverable. A correction round on the same brief counts as one task.
 5. The Lead never lets two agents write in the same directory.
 
-## 2 · The seats of block `HP-1` (host power, 2026-10-19)
+## 2 · The seats
 
-| Seat | Directory | Tasks done | Next task |
+Block `HP-1` (host power) ran from the first brief of 2026-10-19. Block `HP-2` (Core and Skin) opened on the same day after Ayaz's second order. Block `HP-3` (distance) opened after the third order. Ayaz asked for new agents on the distance work, so three new seats took it, and the older seats kept their tasks. A seat keeps its task count across blocks.
+
+| Seat | Directory | Tasks done | The last task |
 |---|---|---|---|
-| Power-path | `hw/hostpower/powerpath/` | `1` | the cross-check of the heat numbers against the thermal seat |
-| Thermal | `hw/hostpower/thermal/` | `1` | the contact pad heat measured against the dock cold plate |
-| Trust | `hw/hostpower/trust/` | `1` | the review of the continuity states for a trust hole |
-| Continuity | `hw/hostpower/continuity/` | `1` | the RG-19 text against the `validator/leaf-duty` crate |
-| Study | `hw/hostpower/study/` | `1` | the wording of the claim after the integration |
+| Power-path | `hw/hostpower/powerpath/`, `hw/core/power/` | `2` | HP-2: the Skin power tree and N Skins on one Core |
+| Thermal | `hw/hostpower/thermal/`, `hw/core/heat/` | `2` | HP-2: the heat of the Skin alone and of the Core alone |
+| Trust | `hw/hostpower/trust/`, `hw/core/trust/` | `2` | HP-2: the zero-key Skin, pairing and the lying Skin |
+| Continuity | `hw/hostpower/continuity/`, `hw/core/session/` | `2` | HP-2: one session on many Skins, and a Skin that roams |
+| Study | `hw/hostpower/study/`, `hw/core/study/` | `2` | HP-2: prior art of the Split, cost and break-even |
+| Link | `hw/core/link/` | `1` | HP-2: the pixel link and the smallest Skin |
+| Far link | `hw/core/far/` | `1` | HP-3: the link budget at kilometres |
+| Parts | `hw/core/parts/` | `1` | HP-3: every Leaf part by distance class |
+| Fleet | `hw/core/fleet/` | `1` | HP-3: Leafs per Core and the two hosts law |
 
-## 3 · The Lead's own work in block `HP-1`
+The Lead ran block `HP-4` alone, by the order of Ayaz: no new agent. The notebook is `hw/core/invent/LAB-NOTEBOOK.md`.
 
-The Lead writes Part 22, the canon, the map and the state files. No agent edits `FINAL/`, `tools/`, `MASTER/` or `HARDWARE/`.
+Every seat is far from `10` tasks, so no seat is replaced. The Lead sends the next task to the same agent.
+
+## 3 · The Lead's own work in blocks `HP-1` and `HP-2`
+
+The Lead writes Parts 22 and later, the canon, the map and the state files. No agent edits `FINAL/`, `tools/`, `MASTER/` or `HARDWARE/`.

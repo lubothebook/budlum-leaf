@@ -1,0 +1,190 @@
+{
+ "skin_load": {
+  "C0": {
+   "delta": 1.0306842720551108,
+   "heavy": 1.6475839591299846
+  },
+  "C1a": {
+   "delta": 1.7047924901185771,
+   "heavy": 2.7571640316205537
+  },
+  "C1b": {
+   "delta": 2.2422646872619554,
+   "heavy": 3.645618051519124
+  },
+  "C2": {
+   "delta": 2.2422646872619554,
+   "heavy": 3.645618051519124
+  }
+ },
+ "tree": {
+  "C0": "the tree of skin_tree.py: pads or tether into VBUS, no cell, no ring. Energy comes with the pixels from the Core.",
+  "C1a": "the C0 tree plus a radio client and a stream decoder on the Skin. Power cannot cross a room: the VBUS grid is fed by a near energy host (a Part 22 host H0 to H6) or by a cell.",
+  "C1b": "the L.6.0 tree of hw/energy/03 in full: body, ring, U4, B cell, U7. The near host or the Leaf cells feed it.",
+  "C2": "the L.6.0 tree of hw/energy/03 in full. The energy host is local to the Leaf. The compute host is the remote Core. Two hosts, two laws."
+ },
+ "tier": {
+  "C1a delta": {
+   "buffer": {
+    "3 s": {
+     "n": 11,
+     "limit": "current"
+    },
+    "5 min": {
+     "n": 11,
+     "limit": "current"
+    },
+    "30 min": {
+     "n": 32,
+     "limit": "energy"
+    }
+   },
+   "bare_1s_cm3": 0.23263430903552385,
+   "bare_3s_cm3": 0.45542514910938914
+  },
+  "C1a video": {
+   "buffer": {
+    "3 s": {
+     "n": 17,
+     "limit": "current"
+    },
+    "5 min": {
+     "n": 18,
+     "limit": "current"
+    },
+    "30 min": {
+     "n": 51,
+     "limit": "energy"
+    }
+   },
+   "bare_1s_cm3": 0.3762398961230955,
+   "bare_3s_cm3": 0.7365599317794368
+  }
+ },
+ "core": {
+  "N1": {
+   "c0_delta": 2.6599906681614467,
+   "c0_heavy": 4.208359470659543,
+   "c1a_delta": 3.883040935672515,
+   "c1a_heavy": 4.4678362573099415,
+   "c2_core_W": 18.0,
+   "c2_leaf_delta_W": 2.2422646872619554,
+   "c2_leaf_heavy_W": 3.645618051519124,
+   "c2_system_delta_W": 20.242264687261954,
+   "c2_core_share_per_leaf_W": 18.0
+  },
+  "N2": {
+   "c0_delta": 3.5094839834019664,
+   "c0_heavy": 5.464971498148676,
+   "c1a_delta": 4.350877192982456,
+   "c1a_heavy": 4.935672514619883,
+   "c2_core_W": 18.0,
+   "c2_leaf_delta_W": 2.2422646872619554,
+   "c2_leaf_heavy_W": 3.645618051519124,
+   "c2_system_delta_W": 22.48452937452391,
+   "c2_core_share_per_leaf_W": 9.0
+  },
+  "N4": {
+   "c0_delta": 7.0000060469758125,
+   "c0_heavy": 10.263120802753955,
+   "c1a_delta": 6.044444444444443,
+   "c1a_heavy": 6.62923976608187,
+   "c2_core_W": 18.0,
+   "c2_leaf_delta_W": 2.2422646872619554,
+   "c2_leaf_heavy_W": 3.645618051519124,
+   "c2_system_delta_W": 26.96905874904782,
+   "c2_core_share_per_leaf_W": 4.5
+  },
+  "N8": {
+   "c0_delta": 19.458728920692348,
+   "c0_heavy": 29.377925525657027,
+   "c1a_delta": 8.745147660818713,
+   "c1a_heavy": 9.329942982456139,
+   "c2_core_W": 18.0,
+   "c2_leaf_delta_W": 2.2422646872619554,
+   "c2_leaf_heavy_W": 3.645618051519124,
+   "c2_system_delta_W": 35.93811749809564,
+   "c2_core_share_per_leaf_W": 2.25
+  }
+ },
+ "system_N1_delta_W": {
+  "C0": 2.5269911347533744,
+  "C1a": 5.587833425791092,
+  "C2_leaf": 2.2422646872619554,
+  "C2_with_validator": 20.242264687261954
+ },
+ "carry": {
+  "H0": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H1": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H2": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H3a": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H3b": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H4a": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H4b": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H4c": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H5": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H6a": {
+   "C0_core_N1": false,
+   "C1a_skin": true,
+   "C1a_core": false,
+   "C2_leaf_peak": false
+  },
+  "H6b": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  },
+  "H6c": {
+   "C0_core_N1": true,
+   "C1a_skin": true,
+   "C1a_core": true,
+   "C2_leaf_peak": true
+  }
+ }
+}

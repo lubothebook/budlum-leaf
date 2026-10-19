@@ -1,0 +1,48 @@
+SWEEP: 6000 draws at 1 M per year. Every budget group and every PARAMS term is sampled.
+P10, P50, P90 in USD per unit unless said. All [HYPOTHESIS].
+
+== link wired
+   all-in-one Leaf 160          P10    1113  P50    1604  P90    2452
+   Skin Leaf 160 with camera    P10     887  P50    1356  P90    2185
+   Core, N=1                    P10     147  P50     168  P90     192
+   Core, N=2                    P10     161  P50     185  P90     210
+   Core, N=4                    P10     189  P50     218  P90     250
+   Core, N=8                    P10     241  P50     284  P90     333
+   micro-LED share of the all-in-one P10 0.67 P50 0.76 P90 0.83
+   N=1 saving USD P10     -16 P50      15 P90      49 | percent P50   0.9 | P(split cheaper) 0.72
+   N=2 saving USD P10     130 P50     187 P90     254 | percent P50   5.6 | P(split cheaper) 1.00
+   N=4 saving USD P10     415 P50     532 P90     667 | percent P50   8.1 | P(split cheaper) 1.00
+   N=8 saving USD P10     982 P50    1223 P90    1498 | percent P50   9.4 | P(split cheaper) 1.00
+   break-even Skins per Core, royalty on the system: 1:4350 2:1650 3:0 4:0 never:0 of 6000
+   break-even Skins per Core, royalty on the Core only: 1:5978 2:22 3:0 4:0 never:0 of 6000
+
+== link wireless
+   all-in-one Leaf 160          P10    1113  P50    1604  P90    2452
+   Skin Leaf 160 with camera    P10     932  P50    1402  P90    2225
+   Core, N=1                    P10     157  P50     181  P90     207
+   Core, N=2                    P10     180  P50     209  P90     240
+   Core, N=4                    P10     222  P50     266  P90     310
+   Core, N=8                    P10     299  P50     378  P90     456
+   micro-LED share of the all-in-one P10 0.67 P50 0.76 P90 0.83
+   N=1 saving USD P10     -75 P50     -43 P90     -11 | percent P50  -2.5 | P(split cheaper) 0.04
+   N=2 saving USD P10      16 P50      72 P90     133 | percent P50   2.1 | P(split cheaper) 0.95
+   N=4 saving USD P10     192 P50     304 P90     427 | percent P50   4.6 | P(split cheaper) 1.00
+   N=8 saving USD P10     540 P50     768 P90    1018 | percent P50   5.8 | P(split cheaper) 1.00
+   break-even Skins per Core, royalty on the system: 1:259 2:5463 3:277 4:1 never:0 of 6000
+   break-even Skins per Core, royalty on the Core only: 1:4110 2:1890 3:0 4:0 never:0 of 6000
+
+== link wifi
+   all-in-one Leaf 160          P10    1113  P50    1604  P90    2452
+   Skin Leaf 160 with camera    P10     937  P50    1406  P90    2230
+   Core, N=1                    P10     137  P50     158  P90     181
+   Core, N=2                    P10     143  P50     165  P90     189
+   Core, N=4                    P10     155  P50     181  P90     211
+   Core, N=8                    P10     179  P50     214  P90     258
+   micro-LED share of the all-in-one P10 0.67 P50 0.76 P90 0.83
+   N=1 saving USD P10     -52 P50     -25 P90       3 | percent P50  -1.5 | P(split cheaper) 0.12
+   N=2 saving USD P10      63 P50     106 P90     157 | percent P50   3.2 | P(split cheaper) 1.00
+   N=4 saving USD P10     282 P50     366 P90     469 | percent P50   5.6 | P(split cheaper) 1.00
+   N=8 saving USD P10     713 P50     886 P90    1094 | percent P50   6.8 | P(split cheaper) 1.00
+   break-even Skins per Core, royalty on the system: 1:733 2:5267 3:0 4:0 never:0 of 6000
+   break-even Skins per Core, royalty on the Core only: 1:5331 2:669 3:0 4:0 never:0 of 6000
+

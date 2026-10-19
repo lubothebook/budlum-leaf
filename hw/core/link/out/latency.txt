@@ -1,0 +1,63 @@
+D. LATENCY: Part 21 Section 21.5.7 plus the tether hop. Baseline from sim/latency/model.py (read only), 400 000 samples.
+====================================================================================================
+  baseline wifi_room : mean  12.8  p99  16.1  p99.9  17.2 ms
+  baseline wifi_city : mean  13.9  p99  17.3  p99.9  18.4 ms
+  baseline nr_cell   : mean  16.5  p99  21.5  p99.9  23.5 ms
+  baseline wifi_room with the tile-local scan restart: mean  10.8  p99  13.1 ms
+  The Part 21 chain already holds U1 compose (0.2 ms) and the scan. The Split adds two things: the touch event crosses
+  the tether to the Core, and the dirty tiles cross it from the Core to the hubs. The Core runs the Wi-Fi or 5G side as before.
+
+D1. total p99 (ms) of a new action, tether options added to the baseline path. K = tiles that change.
+opt  link                                         |   rate |  Wi-Fi room K=4    K=32   K=128 |  5G cell K=4   K=128 |  p99.9 room K=4 | verdict (30 ms p99)
+a    contact leaves on a seat or dock (12 gold le |  19.40 |            16.2    16.8    18.9 |         21.6    24.3 |            17.3 | holds for all K
+b    thin flex or ribbon with a connector         |  19.40 |            16.2    16.8    18.9 |         21.6    24.3 |            17.3 | holds for all K
+c    optical fibre tether (hybrid with two copper |  19.40 |            16.2    16.8    18.9 |         21.6    24.3 |            17.3 | holds for all K
+d    60 GHz close-range radio (802.11ad or ay cla |   3.70 |            18.8    21.5    32.3 |         24.5    38.2 |            41.2 | holds for K=4, fails a full-face change
+e    near-field coupler in-plane (transmission-li |  18.00 |            16.2    16.9    19.2 |         21.6    24.6 |            17.3 | holds for all K
+f1   Wi-Fi 7 (2 x 2, 320 MHz)                     |   2.50 |            18.4    23.0    38.9 |         23.7    44.2 |            19.7 | holds for K=4, fails a full-face change
+f2   UWB (IEEE 802.15.4z HRP)                     |   0.03 |            79.1   508.1  1978.6 |         84.5  1984.0 |            80.3 | fails
+  UWB at 27 Mb/s needs 15 ms per tile at DSC 10 bpp. It cannot carry pixels. It carries touch, angles and heartbeat.
+
+D2. the time to draw a full face (a page turn, K = 128 tiles) at the link rate, DSC 10 bpp and VDC-M 6 bpp
+  a   contact leaves on a seat or dock (12 gold leav DSC 10        2.81 ms
+  a   contact leaves on a seat or dock (12 gold leav VDC-M 6       1.73 ms
+  b   thin flex or ribbon with a connector           DSC 10        2.81 ms
+  b   thin flex or ribbon with a connector           VDC-M 6       1.73 ms
+  c   optical fibre tether (hybrid with two copper p DSC 10        2.81 ms
+  c   optical fibre tether (hybrid with two copper p VDC-M 6       1.73 ms
+  d   60 GHz close-range radio (802.11ad or ay class DSC 10       14.31 ms
+  d   60 GHz close-range radio (802.11ad or ay class VDC-M 6       8.77 ms
+  e   near-field coupler in-plane (transmission-line DSC 10        3.03 ms
+  e   near-field coupler in-plane (transmission-line VDC-M 6       1.86 ms
+  f1  Wi-Fi 7 (2 x 2, 320 MHz)                       DSC 10       21.18 ms
+  f1  Wi-Fi 7 (2 x 2, 320 MHz)                       VDC-M 6      12.98 ms
+  f2  UWB (IEEE 802.15.4z HRP)                       DSC 10     1960.77 ms
+  f2  UWB (IEEE 802.15.4z HRP)                       VDC-M 6    1202.25 ms
+
+D3. the tether's own share, mean and p99 of the added delay for K = 4 tiles (ms)
+  a   mean   0.094  p99   0.094  p99.9   0.094
+  b   mean   0.094  p99   0.094  p99.9   0.094
+  c   mean   0.102  p99   0.102  p99.9   0.102
+  d   mean   1.067  p99   6.314  p99.9  28.397
+  e   mean   0.102  p99   0.102  p99.9   0.102
+  f1  mean   2.087  p99   3.559  p99.9   4.953
+  f2  mean  62.874  p99  63.732  p99.9  63.829
+
+D4. the warp reads angles. The Core warps from angles that are old when the frame lights.
+    age = angle sample U(0, 2.08 ms) + uplink + warp 0.2 ms + encode 0.1 ms + downlink of one tile + tile scan U(0, 0.26 ms) + LED 0.05 ms
+    error = rate x age. DSP-17 limit 1.0 deg rms; target 0.1 deg (hw/display SPEC 4). With a linear predictor only the jitter remains.
+opt  mean age ms  rms age jitter sd |  35 deg/s  100 deg/s  300 deg/s  no predictor |  100 deg/s  300 deg/s  predictor
+a           1.55     1.66      0.61 |      0.06       0.17       0.50               |      0.061      0.182
+b           1.55     1.66      0.61 |      0.06       0.17       0.50               |      0.061      0.182
+c           1.56     1.67      0.61 |      0.06       0.17       0.50               |      0.061      0.182
+d           2.25     3.00      1.99 |      0.11       0.30       0.90               |      0.199      0.598
+e           1.55     1.67      0.61 |      0.06       0.17       0.50               |      0.061      0.182
+f1          3.11     3.19      0.71 |      0.11       0.32       0.96               |      0.071      0.212
+  The 480 Hz angle sample (mean 1.04 ms) dominates the age. The wired tether adds 0.1 ms.
+  Wired: 0.17 deg rms at 100 deg/s and 0.50 at 300 deg/s, no predictor. 100 deg/s is a 17.5 deg pull in 0.17 s.
+  Wi-Fi 7: 0.32 and 0.96; the 300 deg/s case sits at the 1.0 deg limit. 60 GHz jitter (blockage) gives 0.60 deg with a predictor at 300 deg/s.
+  The 0.1 deg target holds only for a wired tether with a predictor at 100 deg/s (0.061 deg). [HYPOTHESIS]
+
+D5. the touch and angle uplink (the back channel, BC)
+  angles: 128 x 16 bit x 480 Hz = 0.98 Mb/s. Raw touch image 800 nodes x 12 bit x 480 Hz = 4.61 Mb/s.
+  total 5.59 Mb/s against the 400 Mb/s of the BC pair. UWB (27 Mb/s) could carry it. Heartbeat 100 us on the sideband.
