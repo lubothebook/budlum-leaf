@@ -1,6 +1,11 @@
 # BUDLUM LEAF · THE DIRECTIVE · FINAL EDITION v5.0
 
-**Date:** 2026-10-05 · **Owner:** the Leaf Program Lead · **Status:** the single source of truth for the program
+**Date:** 2026-10-20 · **Owner:** the Leaf Program Lead · **Status:** the single source of truth for the program
+
+**Battery-free authority, Revision L.8**. Part 24 governs all earlier parts on panel energy, stack, module placement, charging, security and attachment.
+The panel has no battery and is passive without its attached Core. `2.00 mm` is an upper limit, not a thickness target.
+Earlier panel cell, Qi receiver and distant-Core product designs are retired. Historic data stays in the audit record, not in a live specification. `[DECISION]`
+
 **Supersedes by consolidation:** `BUDLUM-LEAF-DIRECTIVE.md` v3.1 and the working annex set `MASTER/00` to `MASTER/16`. Those files remain as the detailed record; **this document is what is built from**.
 
 ---
@@ -111,7 +116,8 @@ A Budlum Leaf is a light, flexible and emissive surface. It carries a removable 
 | 20 | **The charge path, the Budlum module, the port rail and the seat**: no wireless charging, contact dock, upright B module, side rail, and trial plan | MEC-6, MEC-25, MEC-26, MEC-28 to MEC-32, CAM-1 to CAM-20, MON-1 to MON-20, RL-1 to RL-12, DSP-13, DSP-14, ENR-11 to ENR-13, RF-3 |
 | 21 | **The stretch, the one millimetre stem and the projection**: stretch, the `1.00 mm` stem, Wi-Fi and the projection | MEC-39 to MEC-42, ENR-22, ENR-23, DSP-17 to DSP-19, RF-21 to RF-23, MON-21 to MON-23, CAM-21, SW-20 to SW-23, DST-11, DST-12, RG-18 |
 | 22 | **Host power and the living Leaf**: the Host Life Law, the tiers, the power path, the heat, the power door and the claim | HST-1 to HST-29, RG-19 |
-| 23 | **The Core, the Skin and the Heartbeat**: the Rule of Necessity, the distance classes, the Split and the search for unlimited energy | CSK-1 to CSK-29, RG-20 |
+| 23 | **The Core, the Skin and the Heartbeat**: the retired L.7 investigation. The old energy tiers and remote Core modes are not product rules | CSK-1 to CSK-29, RG-20 |
+| 24 | **The battery-free panel**: the active architecture, link, Core power, flexible PC stack, trust, glasses and patent screen | BFP series |
 
 ### 0.7 What is fixed and what is open
 

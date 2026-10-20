@@ -30,6 +30,24 @@ The Lead ran block `HP-4` alone, by the order of Ayaz: no new agent. The noteboo
 
 Every seat is far from `10` tasks, so no seat is replaced. The Lead sends the next task to the same agent.
 
+## 2a · Battery-free panel seats, 2026-10-20
+
+The battery-free directive retires panel cells, far Core modes and the L.7 Heartbeat product tier.
+The study brief is `hw/panelfree/BRIEF.md`.
+The seats keep one directory each and stay for at least ten tasks.
+
+| Seat | Directory | Tasks done | Current task |
+|---|---|---|---|
+| S1 Stack | `hw/panelfree/stack/` | `0` | H4 to H7: PC stack, coat, barrier and neutral plane |
+| S2 Link | `hw/panelfree/link/` | `0` | H1 and H2: panel parts, driver silicon and sealed link |
+| S3 Core | `hw/panelfree/core/` | `0` | H3 and H8: power, runtime, cell, charge and heat |
+| S4 Trust/Glasses | `hw/panelfree/trust/`, `hw/panelfree/glasses/` | `0` | H9 and H10: pairing and prescription eyewear |
+| S5 Patents | `hw/panelfree/patents/` | `0` | H11: freedom-to-operate screen |
+
+The Lead owns H12 and each integration pass. A correction to one brief stays one task.
+On 2026-10-20 the founder stopped new agent openings and task assignments.
+The Lead takes all further work directly after the initial seat reports arrive. `[DECISION]`
+
 ## 3 · The Lead's own work in blocks `HP-1` and `HP-2`
 
 The Lead writes Parts 22 and later, the canon, the map and the state files. No agent edits `FINAL/`, `tools/`, `MASTER/` or `HARDWARE/`.
